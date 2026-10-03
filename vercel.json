@@ -1,6 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
+    { "source": "/sparql", "destination": "/api/sparql" },
     { "source": "/scheme.jsonld", "destination": "/api/resolve?kind=scheme&format=jsonld" },
     { "source": "/scheme", "destination": "/api/resolve?kind=scheme" },
     { "source": "/concepts/:id.jsonld", "destination": "/api/resolve?kind=concept&id=:id&format=jsonld" },
