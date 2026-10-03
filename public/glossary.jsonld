@@ -21,7 +21,7 @@
       "dcterms:rights": "Mixed rights. I2IDL-original material defaults to CC BY 4.0; source-specific rights are preserved at the source and evidence level.",
       "gs:editorialStatus": "approved",
       "gs:semanticProfileVersion": "0.4.0",
-      "gs:publicationVersion": "v0.0.60",
+      "gs:publicationVersion": "v0.0.61",
       "gs:baseUri": "https://id.i2idl.org"
     },
     {
@@ -2854,7 +2854,8 @@
           "gs:citationDetail": "Equitable Conditions for Remote Learning · PDF p. 4",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=4",
           "gs:pdfPage": 4,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -3333,7 +3334,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=35",
           "gs:pdfPage": 35,
           "gs:pdfPrintedPage": 25,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -3503,7 +3505,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=35",
           "gs:pdfPage": 35,
           "gs:pdfPrintedPage": 25,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -4379,7 +4382,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=40",
           "gs:pdfPage": 40,
           "gs:pdfPrintedPage": 30,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "supporting"
         },
         {
           "@type": "gs:Evidence",
@@ -4463,7 +4467,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=213",
           "gs:pdfPage": 213,
           "gs:pdfPrintedPage": 203,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -4524,7 +4529,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=88",
           "gs:pdfPage": 88,
           "gs:pdfPrintedPage": 78,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -4584,7 +4590,8 @@
           "gs:citationDetail": "Online Modalities · PDF p. 5",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=5",
           "gs:pdfPage": 5,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -4810,7 +4817,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=100",
           "gs:pdfPage": 100,
           "gs:pdfPrintedPage": 90,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -4936,7 +4944,8 @@
           "gs:citationDetail": "Building Expertise · PDF p. 9",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=9",
           "gs:pdfPage": 9,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -5004,7 +5013,8 @@
           },
           "gs:sourceLabel": "IEEE ICICLE",
           "gs:citationDetail": "Learning Engineering Process",
-          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/"
+          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -5061,7 +5071,8 @@
           "gs:citationDetail": "How People Learn to Apply Knowledge · PDF p. 8",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=8",
           "gs:pdfPage": 8,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -5132,7 +5143,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=31",
           "gs:pdfPage": 31,
           "gs:pdfPrintedPage": 21,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "supporting"
         },
         {
           "@type": "gs:Evidence",
@@ -5146,7 +5158,8 @@
           "gs:citationDetail": "How Do Learners Understand New Ideas · PDF p. 6",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=6",
           "gs:pdfPage": 6,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -5318,7 +5331,8 @@
           "gs:citationDetail": "Building Expertise · PDF p. 9",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=9",
           "gs:pdfPage": 9,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "supporting"
         },
         {
           "@type": "gs:Evidence",
@@ -5389,7 +5403,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=253",
           "gs:pdfPage": 253,
           "gs:pdfPrintedPage": 243,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -5451,7 +5466,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=253",
           "gs:pdfPage": 253,
           "gs:pdfPrintedPage": 243,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -5509,7 +5525,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=29",
           "gs:pdfPage": 29,
           "gs:pdfPrintedPage": 19,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -5566,7 +5583,8 @@
           "gs:citationDetail": "How People Retain Information and Abilities · PDF p. 7",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=7",
           "gs:pdfPage": 7,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "direct"
         },
         {
           "@type": "gs:Evidence",
@@ -5580,7 +5598,8 @@
           "gs:citationDetail": "Review of Literature; concept maps as external representations supporting reflection and iteration; TechTrends p. 818; PDF p. 3",
           "schema:url": "https://link.springer.com/content/pdf/10.1007/s11528-025-01076-y.pdf#page=3",
           "gs:pdfPage": 3,
-          "gs:host": "Springer"
+          "gs:host": "Springer",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -5640,7 +5659,8 @@
           "gs:citationDetail": "How People Learn to Apply Knowledge · PDF p. 8",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=8",
           "gs:pdfPage": 8,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -5698,7 +5718,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=42",
           "gs:pdfPage": 42,
           "gs:pdfPrintedPage": 32,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -5759,7 +5780,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=42",
           "gs:pdfPage": 42,
           "gs:pdfPrintedPage": 32,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -6043,7 +6065,8 @@
           "gs:citationDetail": "Discussion and Appendix 1 codebook; contextual influences on design; PDF pp. 12, 14",
           "schema:url": "https://link.springer.com/content/pdf/10.1007/s11528-025-01076-y.pdf#page=12",
           "gs:pdfPage": 12,
-          "gs:host": "Springer"
+          "gs:host": "Springer",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -6111,7 +6134,8 @@
           },
           "gs:sourceLabel": "IEEE ICICLE",
           "gs:citationDetail": "Learning Engineering Process",
-          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/"
+          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -6396,7 +6420,8 @@
           },
           "gs:sourceLabel": "IEEE ICICLE",
           "gs:citationDetail": "Learning Engineering Process · Creation",
-          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/"
+          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -6464,7 +6489,8 @@
           },
           "gs:sourceLabel": "IEEE ICICLE",
           "gs:citationDetail": "Learning Engineering Process",
-          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/"
+          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -6581,7 +6607,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=349",
           "gs:pdfPage": 349,
           "gs:pdfPrintedPage": 339,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -6769,7 +6796,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=175",
           "gs:pdfPage": 175,
           "gs:pdfPrintedPage": 165,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -6952,7 +6980,8 @@
           },
           "gs:sourceLabel": "IEEE ICICLE",
           "gs:citationDetail": "Learning Engineering Process",
-          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/"
+          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/",
+          "gs:evidenceRelation": "supporting"
         },
         {
           "@type": "gs:Evidence",
@@ -6966,7 +6995,8 @@
           "gs:citationDetail": "Introduction and Discussion; instrumentation and intent to collect future data; PDF pp. 2, 12, 14",
           "schema:url": "https://link.springer.com/content/pdf/10.1007/s11528-025-01076-y.pdf#page=2",
           "gs:pdfPage": 2,
-          "gs:host": "Springer"
+          "gs:host": "Springer",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -7037,7 +7067,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=40",
           "gs:pdfPage": 40,
           "gs:pdfPrintedPage": 30,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -7233,7 +7264,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=153",
           "gs:pdfPage": 153,
           "gs:pdfPrintedPage": 143,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "supporting"
         },
         {
           "@type": "gs:Evidence",
@@ -7442,7 +7474,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=139",
           "gs:pdfPage": 139,
           "gs:pdfPrintedPage": 129,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -7556,7 +7589,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=161",
           "gs:pdfPage": 161,
           "gs:pdfPrintedPage": 151,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -7680,7 +7714,8 @@
           },
           "gs:sourceLabel": "IEEE ICICLE",
           "gs:citationDetail": "Learning Engineering Process",
-          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/"
+          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/",
+          "gs:evidenceRelation": "supporting"
         },
         {
           "@type": "gs:Evidence",
@@ -7694,7 +7729,8 @@
           "gs:citationDetail": "Discussion; data as a source of influence and future iteration; TechTrends p. 827; PDF p. 12",
           "schema:url": "https://link.springer.com/content/pdf/10.1007/s11528-025-01076-y.pdf#page=12",
           "gs:pdfPage": 12,
-          "gs:host": "Springer"
+          "gs:host": "Springer",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -7810,7 +7846,8 @@
           "gs:citationDetail": "Abstract, Introduction, and Implications; systematic tracking of design decisions across projects; PDF pp. 1-2, 12",
           "schema:url": "https://link.springer.com/content/pdf/10.1007/s11528-025-01076-y.pdf#page=1",
           "gs:pdfPage": 1,
-          "gs:host": "Springer"
+          "gs:host": "Springer",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -7926,7 +7963,8 @@
           "gs:citationDetail": "Introduction; design decisions as the what and how of design; TechTrends p. 816; PDF p. 1",
           "schema:url": "https://link.springer.com/content/pdf/10.1007/s11528-025-01076-y.pdf#page=1",
           "gs:pdfPage": 1,
-          "gs:host": "Springer"
+          "gs:host": "Springer",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -7986,7 +8024,8 @@
           "gs:citationDetail": "Introduction and Conclusion; decisions are formed, enacted, revisited, and revised in context; PDF pp. 1, 13",
           "schema:url": "https://link.springer.com/content/pdf/10.1007/s11528-025-01076-y.pdf#page=1",
           "gs:pdfPage": 1,
-          "gs:host": "Springer"
+          "gs:host": "Springer",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -8043,7 +8082,8 @@
           "gs:citationDetail": "Introduction and Review of Literature; design judgment as the why behind decisions; PDF pp. 1-3",
           "schema:url": "https://link.springer.com/content/pdf/10.1007/s11528-025-01076-y.pdf#page=1",
           "gs:pdfPage": 1,
-          "gs:host": "Springer"
+          "gs:host": "Springer",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -8103,7 +8143,8 @@
           "gs:citationDetail": "Introduction, Methods, and Implications; LEED records decisions with justifications and influences; PDF pp. 2, 4, 12",
           "schema:url": "https://link.springer.com/content/pdf/10.1007/s11528-025-01076-y.pdf#page=2",
           "gs:pdfPage": 2,
-          "gs:host": "Springer"
+          "gs:host": "Springer",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -8219,7 +8260,8 @@
           "gs:citationDetail": "Results and Appendix 1 codebook; revisions are changes to prior decisions or existing design elements; PDF pp. 10-14",
           "schema:url": "https://link.springer.com/content/pdf/10.1007/s11528-025-01076-y.pdf#page=10",
           "gs:pdfPage": 10,
-          "gs:host": "Springer"
+          "gs:host": "Springer",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -8277,7 +8319,8 @@
           },
           "gs:sourceLabel": "IEEE ICICLE",
           "gs:citationDetail": "Learning Engineering Process · Iterate the design",
-          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/"
+          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -8335,7 +8378,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=50",
           "gs:pdfPage": 50,
           "gs:pdfPrintedPage": 40,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -8862,7 +8906,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=27",
           "gs:pdfPage": 27,
           "gs:pdfPrintedPage": 17,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -8920,7 +8965,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=34",
           "gs:pdfPage": 34,
           "gs:pdfPrintedPage": 24,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -10350,7 +10396,8 @@
           },
           "gs:sourceLabel": "IEEE ICICLE",
           "gs:citationDetail": "Learning Engineering Process",
-          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/"
+          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/",
+          "gs:evidenceRelation": "supporting"
         },
         {
           "@type": "gs:Evidence",
@@ -10364,7 +10411,8 @@
           "gs:citationDetail": "Introduction; human-centered engineering design in learning engineering; TechTrends p. 817; PDF p. 2",
           "schema:url": "https://link.springer.com/content/pdf/10.1007/s11528-025-01076-y.pdf#page=2",
           "gs:pdfPage": 2,
-          "gs:host": "Springer"
+          "gs:host": "Springer",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -10490,7 +10538,8 @@
           "gs:citationDetail": "Equitable Conditions for Remote Learning · PDF p. 4",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=4",
           "gs:pdfPage": 4,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "supporting"
         },
         {
           "@type": "gs:Evidence",
@@ -10747,7 +10796,8 @@
           "gs:citationDetail": "Discussion; learning sciences research used to support evidence-based decisions; TechTrends p. 827; PDF p. 12",
           "schema:url": "https://link.springer.com/content/pdf/10.1007/s11528-025-01076-y.pdf#page=12",
           "gs:pdfPage": 12,
-          "gs:host": "Springer"
+          "gs:host": "Springer",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -10821,7 +10871,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=48",
           "gs:pdfPage": 48,
           "gs:pdfPrintedPage": 38,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "supporting"
         },
         {
           "@type": "gs:Evidence",
@@ -10895,7 +10946,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=98",
           "gs:pdfPage": 98,
           "gs:pdfPrintedPage": 88,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -10953,7 +11005,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=99",
           "gs:pdfPage": 99,
           "gs:pdfPrintedPage": 89,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -11014,7 +11067,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=47",
           "gs:pdfPage": 47,
           "gs:pdfPrintedPage": 37,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -11074,7 +11128,8 @@
           "gs:citationDetail": "Review of Literature; external representations support reflection, iteration, communication, collaboration, and sharing design knowledge; TechTrends p. 818; PDF p. 3",
           "schema:url": "https://link.springer.com/content/pdf/10.1007/s11528-025-01076-y.pdf#page=3",
           "gs:pdfPage": 3,
-          "gs:host": "Springer"
+          "gs:host": "Springer",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -11300,7 +11355,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=43",
           "gs:pdfPage": 43,
           "gs:pdfPrintedPage": 33,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -11414,7 +11470,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=182",
           "gs:pdfPage": 182,
           "gs:pdfPrintedPage": 172,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "supporting"
         },
         {
           "@type": "gs:Evidence",
@@ -11428,7 +11485,8 @@
           "gs:citationDetail": "How Do Learners Understand New Ideas · PDF p. 6",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=6",
           "gs:pdfPage": 6,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "supporting"
         },
         {
           "@type": "gs:Evidence",
@@ -11499,7 +11557,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=14",
           "gs:pdfPage": 14,
           "gs:pdfPrintedPage": 4,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -11569,7 +11628,8 @@
           "gs:citationDetail": "Motivation and Learning · PDF p. 10",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=10",
           "gs:pdfPage": 10,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -11811,7 +11871,8 @@
           },
           "gs:sourceLabel": "IEEE ICICLE",
           "gs:citationDetail": "Learning Engineering Process",
-          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/"
+          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/",
+          "gs:evidenceRelation": "supporting"
         },
         {
           "@type": "gs:Evidence",
@@ -11825,7 +11886,8 @@
           "gs:citationDetail": "Introduction; learning engineering definition; TechTrends p. 817; PDF p. 2",
           "schema:url": "https://link.springer.com/content/pdf/10.1007/s11528-025-01076-y.pdf#page=2",
           "gs:pdfPage": 2,
-          "gs:host": "Springer"
+          "gs:host": "Springer",
+          "gs:evidenceRelation": "supporting"
         },
         {
           "@type": "gs:Evidence",
@@ -12132,7 +12194,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=101",
           "gs:pdfPage": 101,
           "gs:pdfPrintedPage": 91,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -13216,7 +13279,8 @@
           },
           "gs:sourceLabel": "IEEE ICICLE",
           "gs:citationDetail": "Learning Engineering Process",
-          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/"
+          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -13330,7 +13394,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=311",
           "gs:pdfPage": 311,
           "gs:pdfPrintedPage": 301,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         },
         {
           "@type": "gs:Evidence",
@@ -13344,7 +13409,8 @@
           "gs:citationDetail": "Introduction and literature review; instructional designers included within LDP framing; PDF pp. 1-3",
           "schema:url": "https://link.springer.com/content/pdf/10.1007/s11528-025-01076-y.pdf#page=1",
           "gs:pdfPage": 1,
-          "gs:host": "Springer"
+          "gs:host": "Springer",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -13404,7 +13470,8 @@
           "gs:citationDetail": "Online Modalities · PDF p. 5",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=5",
           "gs:pdfPage": 5,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -13472,7 +13539,8 @@
           },
           "gs:sourceLabel": "IEEE ICICLE",
           "gs:citationDetail": "Learning Engineering Process",
-          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/"
+          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -13533,7 +13601,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=29",
           "gs:pdfPage": 29,
           "gs:pdfPrintedPage": 19,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         },
         {
           "@type": "gs:Evidence",
@@ -13547,7 +13616,8 @@
           "gs:citationDetail": "Online Modalities · PDF p. 5",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=5",
           "gs:pdfPage": 5,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -13805,7 +13875,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=117",
           "gs:pdfPage": 117,
           "gs:pdfPrintedPage": 107,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "supporting"
         },
         {
           "@type": "gs:Evidence",
@@ -13961,7 +14032,8 @@
           },
           "gs:sourceLabel": "IEEE ICICLE",
           "gs:citationDetail": "Learning Engineering Process · Investigation",
-          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/"
+          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -14029,7 +14101,8 @@
           },
           "gs:sourceLabel": "IEEE ICICLE",
           "gs:citationDetail": "Learning Engineering Process",
-          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/"
+          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/",
+          "gs:evidenceRelation": "supporting"
         },
         {
           "@type": "gs:Evidence",
@@ -14043,7 +14116,8 @@
           "gs:citationDetail": "Introduction and Discussion; revisiting and revising decisions across LE cycles; PDF pp. 2, 12-13",
           "schema:url": "https://link.springer.com/content/pdf/10.1007/s11528-025-01076-y.pdf#page=2",
           "gs:pdfPage": 2,
-          "gs:host": "Springer"
+          "gs:host": "Springer",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -14300,7 +14374,8 @@
           "gs:citationDetail": "How People Retain Information and Abilities · PDF p. 7",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=7",
           "gs:pdfPage": 7,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -14531,7 +14606,8 @@
           "gs:citationDetail": "Equitable Conditions for Remote Learning · PDF p. 4",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=4",
           "gs:pdfPage": 4,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "direct"
         },
         {
           "@type": "gs:Evidence",
@@ -14545,7 +14621,8 @@
           "gs:citationDetail": "Motivation and Learning · PDF p. 10",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=10",
           "gs:pdfPage": 10,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -14663,7 +14740,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=198",
           "gs:pdfPage": 198,
           "gs:pdfPrintedPage": 188,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -14721,7 +14799,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=153",
           "gs:pdfPage": 153,
           "gs:pdfPrintedPage": 143,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -14792,7 +14871,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=173",
           "gs:pdfPage": 173,
           "gs:pdfPrintedPage": 163,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -14850,7 +14930,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=180",
           "gs:pdfPage": 180,
           "gs:pdfPrintedPage": 170,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -14963,7 +15044,8 @@
           "gs:citationDetail": "Building Expertise · PDF p. 9",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=9",
           "gs:pdfPage": 9,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -15023,7 +15105,8 @@
           "gs:citationDetail": "Introduction; LDP is used deliberately as an inclusive term across practitioner job titles; TechTrends p. 816; PDF p. 1",
           "schema:url": "https://link.springer.com/content/pdf/10.1007/s11528-025-01076-y.pdf#page=1",
           "gs:pdfPage": 1,
-          "gs:host": "Springer"
+          "gs:host": "Springer",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -15081,7 +15164,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=332",
           "gs:pdfPage": 332,
           "gs:pdfPrintedPage": 322,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -15139,7 +15223,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=50",
           "gs:pdfPage": 50,
           "gs:pdfPrintedPage": 40,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -15210,7 +15295,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=21",
           "gs:pdfPage": 21,
           "gs:pdfPrintedPage": 11,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "supporting"
         },
         {
           "@type": "gs:Evidence",
@@ -15222,7 +15308,8 @@
           },
           "gs:sourceLabel": "IEEE ICICLE",
           "gs:citationDetail": "Learning Engineering Process",
-          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/"
+          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/",
+          "gs:evidenceRelation": "supporting"
         },
         {
           "@type": "gs:Evidence",
@@ -15236,7 +15323,8 @@
           "gs:citationDetail": "Introduction; LE definition and framing; TechTrends pp. 816-817; PDF pp. 1-2",
           "schema:url": "https://link.springer.com/content/pdf/10.1007/s11528-025-01076-y.pdf#page=2",
           "gs:pdfPage": 2,
-          "gs:host": "Springer"
+          "gs:host": "Springer",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -15296,7 +15384,8 @@
           "gs:citationDetail": "Introduction and Implications; structure and purpose of the LEED tracker; PDF pp. 2-3, 12",
           "schema:url": "https://link.springer.com/content/pdf/10.1007/s11528-025-01076-y.pdf#page=2",
           "gs:pdfPage": 2,
-          "gs:host": "Springer"
+          "gs:host": "Springer",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -15354,7 +15443,8 @@
           },
           "gs:sourceLabel": "IEEE ICICLE",
           "gs:citationDetail": "Learning Engineering Process",
-          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/"
+          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/",
+          "gs:evidenceRelation": "direct"
         },
         {
           "@type": "gs:Evidence",
@@ -15368,7 +15458,8 @@
           "gs:citationDetail": "Introduction; iterative LE cycles; TechTrends p. 817; PDF p. 2",
           "schema:url": "https://link.springer.com/content/pdf/10.1007/s11528-025-01076-y.pdf#page=2",
           "gs:pdfPage": 2,
-          "gs:host": "Springer"
+          "gs:host": "Springer",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -15426,7 +15517,8 @@
           },
           "gs:sourceLabel": "IEEE ICICLE",
           "gs:citationDetail": "Learning Engineering Process · Team",
-          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/"
+          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/",
+          "gs:evidenceRelation": "direct"
         },
         {
           "@type": "gs:Evidence",
@@ -15440,7 +15532,8 @@
           "gs:citationDetail": "Discussion; stakeholders with different expertise inform design decisions; TechTrends p. 827; PDF p. 12",
           "schema:url": "https://link.springer.com/content/pdf/10.1007/s11528-025-01076-y.pdf#page=12",
           "gs:pdfPage": 12,
-          "gs:host": "Springer"
+          "gs:host": "Springer",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -15510,7 +15603,8 @@
           "gs:citationDetail": "Equitable Conditions for Remote Learning · PDF p. 4",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=4",
           "gs:pdfPage": 4,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -15752,7 +15846,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=93",
           "gs:pdfPage": 93,
           "gs:pdfPrintedPage": 83,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -16263,7 +16358,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=143",
           "gs:pdfPage": 143,
           "gs:pdfPrintedPage": 133,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "supporting"
         },
         {
           "@type": "gs:Evidence",
@@ -16357,7 +16453,8 @@
           },
           "gs:sourceLabel": "IEEE ICICLE",
           "gs:citationDetail": "Learning Engineering Process",
-          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/"
+          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/",
+          "gs:evidenceRelation": "supporting"
         },
         {
           "@type": "gs:Evidence",
@@ -16371,7 +16468,8 @@
           "gs:citationDetail": "Introduction and Discussion; learning sciences research as an influence on design decisions; PDF pp. 2, 12",
           "schema:url": "https://link.springer.com/content/pdf/10.1007/s11528-025-01076-y.pdf#page=2",
           "gs:pdfPage": 2,
-          "gs:host": "Springer"
+          "gs:host": "Springer",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -16429,7 +16527,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=71",
           "gs:pdfPage": 71,
           "gs:pdfPrintedPage": 61,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -16543,7 +16642,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=301",
           "gs:pdfPage": 301,
           "gs:pdfPrintedPage": 291,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -16613,7 +16713,8 @@
           "gs:citationDetail": "How Do Learners Understand New Ideas · PDF p. 6",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=6",
           "gs:pdfPage": 6,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -16684,7 +16785,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=205",
           "gs:pdfPage": 205,
           "gs:pdfPrintedPage": 195,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -16745,7 +16847,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=42",
           "gs:pdfPage": 42,
           "gs:pdfPrintedPage": 32,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -16803,7 +16906,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=32",
           "gs:pdfPage": 32,
           "gs:pdfPrintedPage": 22,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         },
         {
           "@type": "gs:Evidence",
@@ -16817,7 +16921,8 @@
           "gs:citationDetail": "How Do Learners Understand New Ideas · PDF p. 6",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=6",
           "gs:pdfPage": 6,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -16934,7 +17039,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=245",
           "gs:pdfPage": 245,
           "gs:pdfPrintedPage": 235,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         },
         {
           "@type": "gs:Evidence",
@@ -16948,7 +17054,8 @@
           "gs:citationDetail": "How People Learn to Apply Knowledge · PDF p. 8",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=8",
           "gs:pdfPage": 8,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -17008,7 +17115,8 @@
           "gs:citationDetail": "Building Expertise · PDF p. 9",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=9",
           "gs:pdfPage": 9,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -17066,7 +17174,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=202",
           "gs:pdfPage": 202,
           "gs:pdfPrintedPage": 192,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -17137,7 +17246,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=78",
           "gs:pdfPage": 78,
           "gs:pdfPrintedPage": 68,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "supporting"
         },
         {
           "@type": "gs:Evidence",
@@ -17151,7 +17261,8 @@
           "gs:citationDetail": "Strategies for Remote Learners · PDF p. 11",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=11",
           "gs:pdfPage": 11,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -17209,7 +17320,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=298",
           "gs:pdfPage": 298,
           "gs:pdfPrintedPage": 288,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         },
         {
           "@type": "gs:Evidence",
@@ -17223,7 +17335,8 @@
           "gs:citationDetail": "Strategies for Remote Learners · PDF p. 11",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=11",
           "gs:pdfPage": 11,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -17479,7 +17592,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=50",
           "gs:pdfPage": 50,
           "gs:pdfPrintedPage": 40,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -17537,7 +17651,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=41",
           "gs:pdfPage": 41,
           "gs:pdfPrintedPage": 31,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -17657,7 +17772,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=38",
           "gs:pdfPage": 38,
           "gs:pdfPrintedPage": 28,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -17718,7 +17834,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=40",
           "gs:pdfPage": 40,
           "gs:pdfPrintedPage": 30,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -17789,7 +17906,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=34",
           "gs:pdfPage": 34,
           "gs:pdfPrintedPage": 24,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -17859,7 +17977,8 @@
           "gs:citationDetail": "Motivation and Learning · PDF p. 10",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=10",
           "gs:pdfPage": 10,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -18029,7 +18148,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=60",
           "gs:pdfPage": 60,
           "gs:pdfPrintedPage": 50,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -18205,7 +18325,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=100",
           "gs:pdfPage": 100,
           "gs:pdfPrintedPage": 90,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -18321,7 +18442,8 @@
           "gs:citationDetail": "Online Modalities · PDF p. 5",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=5",
           "gs:pdfPage": 5,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -18382,7 +18504,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=42",
           "gs:pdfPage": 42,
           "gs:pdfPrintedPage": 32,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -18664,7 +18787,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=35",
           "gs:pdfPage": 35,
           "gs:pdfPrintedPage": 25,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -18903,7 +19027,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=191",
           "gs:pdfPage": 191,
           "gs:pdfPrintedPage": 181,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -19075,7 +19200,8 @@
           "gs:citationDetail": "How Do Learners Understand New Ideas · PDF p. 6",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=6",
           "gs:pdfPage": 6,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -19133,7 +19259,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=153",
           "gs:pdfPage": 153,
           "gs:pdfPrintedPage": 143,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -19191,7 +19318,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=167",
           "gs:pdfPage": 167,
           "gs:pdfPrintedPage": 157,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -19246,7 +19374,8 @@
           },
           "gs:sourceLabel": "IEEE ICICLE",
           "gs:citationDetail": "Learning Engineering Process · Challenge and context",
-          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/"
+          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -19306,7 +19435,8 @@
           "gs:citationDetail": "How People Learn to Apply Knowledge · PDF p. 8",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=8",
           "gs:pdfPage": 8,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -19807,7 +19937,8 @@
           "gs:citationDetail": "Review of Literature; prototypes as external representations supporting reflection and iteration; TechTrends p. 818; PDF p. 3",
           "schema:url": "https://link.springer.com/content/pdf/10.1007/s11528-025-01076-y.pdf#page=3",
           "gs:pdfPage": 3,
-          "gs:host": "Springer"
+          "gs:host": "Springer",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -19920,7 +20051,8 @@
           "gs:citationDetail": "Review of Literature and Implications; documents and journals externalize reflection and decisions; PDF pp. 3, 12",
           "schema:url": "https://link.springer.com/content/pdf/10.1007/s11528-025-01076-y.pdf#page=3",
           "gs:pdfPage": 3,
-          "gs:host": "Springer"
+          "gs:host": "Springer",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -20049,7 +20181,8 @@
           "gs:citationDetail": "About The Science of Remote Learning · PDF p. 2",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=2",
           "gs:pdfPage": 2,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -20237,7 +20370,8 @@
           "gs:citationDetail": "Online Modalities · PDF p. 5",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=5",
           "gs:pdfPage": 5,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -20504,7 +20638,8 @@
           "gs:citationDetail": "How People Retain Information and Abilities · PDF p. 7",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=7",
           "gs:pdfPage": 7,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -20680,7 +20815,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=62",
           "gs:pdfPage": 62,
           "gs:pdfPrintedPage": 52,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -20751,7 +20887,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=246",
           "gs:pdfPage": 246,
           "gs:pdfPrintedPage": 236,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         },
         {
           "@type": "gs:Evidence",
@@ -20765,7 +20902,8 @@
           "gs:citationDetail": "How People Retain Information and Abilities · PDF p. 7",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=7",
           "gs:pdfPage": 7,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "supporting"
         },
         {
           "@type": "gs:Evidence",
@@ -20779,7 +20917,8 @@
           "gs:citationDetail": "Limitations and Future Research; LEED as possible scaffolding for novice practitioners; TechTrends p. 829; PDF p. 14",
           "schema:url": "https://link.springer.com/content/pdf/10.1007/s11528-025-01076-y.pdf#page=14",
           "gs:pdfPage": 14,
-          "gs:host": "Springer"
+          "gs:host": "Springer",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -20978,7 +21117,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=139",
           "gs:pdfPage": 139,
           "gs:pdfPrintedPage": 129,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -21049,7 +21189,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=296",
           "gs:pdfPage": 296,
           "gs:pdfPrintedPage": 286,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "supporting"
         },
         {
           "@type": "gs:Evidence",
@@ -21063,7 +21204,8 @@
           "gs:citationDetail": "Motivation and Learning · PDF p. 10",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=10",
           "gs:pdfPage": 10,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -21120,7 +21262,8 @@
           "gs:citationDetail": "Strategies for Remote Learners · PDF p. 11",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=11",
           "gs:pdfPage": 11,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -21191,7 +21334,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=295",
           "gs:pdfPage": 295,
           "gs:pdfPrintedPage": 285,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "supporting"
         },
         {
           "@type": "gs:Evidence",
@@ -21205,7 +21349,8 @@
           "gs:citationDetail": "Strategies for Remote Learners · PDF p. 11",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=11",
           "gs:pdfPage": 11,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -21319,7 +21464,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=286",
           "gs:pdfPage": 286,
           "gs:pdfPrintedPage": 276,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -21689,7 +21835,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=34",
           "gs:pdfPage": 34,
           "gs:pdfPrintedPage": 24,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -21760,7 +21907,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=32",
           "gs:pdfPage": 32,
           "gs:pdfPrintedPage": 22,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -21818,7 +21966,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=149",
           "gs:pdfPage": 149,
           "gs:pdfPrintedPage": 139,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -21876,7 +22025,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=279",
           "gs:pdfPage": 279,
           "gs:pdfPrintedPage": 269,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         },
         {
           "@type": "gs:Evidence",
@@ -21890,7 +22040,8 @@
           "gs:citationDetail": "Building Expertise · PDF p. 9",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=9",
           "gs:pdfPage": 9,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -22065,7 +22216,8 @@
           "gs:citationDetail": "Abstract, Methods, and Appendix 1 codebook; influence categories used to characterize decisions; PDF pp. 1, 5, 14",
           "schema:url": "https://link.springer.com/content/pdf/10.1007/s11528-025-01076-y.pdf#page=1",
           "gs:pdfPage": 1,
-          "gs:host": "Springer"
+          "gs:host": "Springer",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -22135,7 +22287,8 @@
           "gs:citationDetail": "How People Retain Information and Abilities · PDF p. 7",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=7",
           "gs:pdfPage": 7,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -22275,7 +22428,8 @@
           },
           "gs:sourceLabel": "IEEE ICICLE",
           "gs:citationDetail": "Learning Engineering Process",
-          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/"
+          "schema:url": "https://sagroups.ieee.org/icicle/learning-engineering-process/",
+          "gs:evidenceRelation": "supporting"
         },
         {
           "@type": "gs:Evidence",
@@ -22289,7 +22443,8 @@
           "gs:citationDetail": "Results and Discussion; stakeholder requirements and communication shape design decisions; PDF pp. 10-13",
           "schema:url": "https://link.springer.com/content/pdf/10.1007/s11528-025-01076-y.pdf#page=10",
           "gs:pdfPage": 10,
-          "gs:host": "Springer"
+          "gs:host": "Springer",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -22346,7 +22501,8 @@
           "gs:citationDetail": "Results, Discussion, and Appendix 1 codebook; stakeholder requirements as sources of influence; PDF pp. 10-12, 14",
           "schema:url": "https://link.springer.com/content/pdf/10.1007/s11528-025-01076-y.pdf#page=10",
           "gs:pdfPage": 10,
-          "gs:host": "Springer"
+          "gs:host": "Springer",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -22924,7 +23080,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=367",
           "gs:pdfPage": 367,
           "gs:pdfPrintedPage": 357,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -22986,7 +23143,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=173",
           "gs:pdfPage": 173,
           "gs:pdfPrintedPage": 163,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -23218,7 +23376,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=179",
           "gs:pdfPage": 179,
           "gs:pdfPrintedPage": 169,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "supporting"
         },
         {
           "@type": "gs:Evidence",
@@ -23350,7 +23509,8 @@
           "gs:citationDetail": "Online Modalities · PDF p. 5",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=5",
           "gs:pdfPage": 5,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -23421,7 +23581,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=14",
           "gs:pdfPage": 14,
           "gs:pdfPrintedPage": 4,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -23741,7 +23902,8 @@
           "gs:citationDetail": "Appendix 1 codebook; Technology Affordance influence; TechTrends p. 829; PDF p. 14",
           "schema:url": "https://link.springer.com/content/pdf/10.1007/s11528-025-01076-y.pdf#page=14",
           "gs:pdfPage": 14,
-          "gs:host": "Springer"
+          "gs:host": "Springer",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -23798,7 +23960,8 @@
           "gs:citationDetail": "Appendix 1 codebook; Technology Constraint influence; TechTrends p. 829; PDF p. 14",
           "schema:url": "https://link.springer.com/content/pdf/10.1007/s11528-025-01076-y.pdf#page=14",
           "gs:pdfPage": 14,
-          "gs:host": "Springer"
+          "gs:host": "Springer",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -23974,7 +24137,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=48",
           "gs:pdfPage": 48,
           "gs:pdfPrintedPage": 38,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -24094,7 +24258,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=76",
           "gs:pdfPage": 76,
           "gs:pdfPrintedPage": 66,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -24320,7 +24485,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=154",
           "gs:pdfPage": 154,
           "gs:pdfPrintedPage": 144,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -24634,7 +24800,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=33",
           "gs:pdfPage": 33,
           "gs:pdfPrintedPage": 23,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -24692,7 +24859,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=33",
           "gs:pdfPage": 33,
           "gs:pdfPrintedPage": 23,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -24875,7 +25043,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=78",
           "gs:pdfPage": 78,
           "gs:pdfPrintedPage": 68,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -24935,7 +25104,8 @@
           "gs:citationDetail": "How Do Learners Understand New Ideas · PDF p. 6",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=6",
           "gs:pdfPage": 6,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -24992,7 +25162,8 @@
           "gs:citationDetail": "How Do Learners Understand New Ideas · PDF p. 6",
           "schema:url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=6",
           "gs:pdfPage": 6,
-          "gs:host": "MIT Open Learning"
+          "gs:host": "MIT Open Learning",
+          "gs:evidenceRelation": "direct"
         }
       ]
     },
@@ -25769,7 +25940,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=184",
           "gs:pdfPage": 184,
           "gs:pdfPrintedPage": 174,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "supporting"
         },
         {
           "@type": "gs:Evidence",
@@ -25879,7 +26051,8 @@
           "schema:url": "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=143",
           "gs:pdfPage": 143,
           "gs:pdfPrintedPage": 133,
-          "gs:host": "ERIC"
+          "gs:host": "ERIC",
+          "gs:evidenceRelation": "supporting"
         },
         {
           "@type": "gs:Evidence",
