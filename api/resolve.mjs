@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: Apache-2.0
 const BASE = "https://id.i2idl.org";
 const HUMAN_GLOSSARY = "https://www.i2idl.org/glossary";
 
