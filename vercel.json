@@ -1,0 +1,24 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    { "source": "/scheme.jsonld", "destination": "/api/resolve?kind=scheme&format=jsonld" },
+    { "source": "/scheme", "destination": "/api/resolve?kind=scheme" },
+    { "source": "/concepts/:id.jsonld", "destination": "/api/resolve?kind=concept&id=:id&format=jsonld" },
+    { "source": "/concepts/:id", "destination": "/api/resolve?kind=concept&id=:id" },
+    { "source": "/definitions/:id.jsonld", "destination": "/api/resolve?kind=definition&id=:id&format=jsonld" },
+    { "source": "/definitions/:id", "destination": "/api/resolve?kind=definition&id=:id" },
+    { "source": "/sources/:id.jsonld", "destination": "/api/resolve?kind=source&id=:id&format=jsonld" },
+    { "source": "/sources/:id", "destination": "/api/resolve?kind=source&id=:id" },
+    { "source": "/glossary", "destination": "/api/resolve?kind=glossary" }
+  ],
+  "headers": [
+    {
+      "source": "/glossary.jsonld",
+      "headers": [
+        { "key": "Content-Type", "value": "application/ld+json; charset=utf-8" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" }
+      ]
+    }
+  ]
+}
