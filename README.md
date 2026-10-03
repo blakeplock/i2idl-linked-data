@@ -21,3 +21,5 @@ This project publishes the I2IDL Digital Learning Glossary as JSON-LD and makes 
 
 Run `npx vercel --prod`, then add `id.i2idl.org` to the Vercel project and configure the exact CNAME that Vercel provides in Squarespace DNS.
 # i2idl-linked-data
+
+Deployment pipeline verified via GitHub and Vercel.
