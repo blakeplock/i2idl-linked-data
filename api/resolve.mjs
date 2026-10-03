@@ -17,113 +17,68 @@ function commonHeaders(extra = {}) {
   };
 }
 
-function jsonLdResponse(
-  data,
-  method = 'GET',
-  status = 200
-) {
+function jsonLdResponse(data, method = 'GET', status = 200) {
   return new Response(
-    method === 'HEAD'
-      ? null
-      : JSON.stringify(data, null, 2),
+    method === 'HEAD' ? null : JSON.stringify(data, null, 2),
     {
       status,
       headers: commonHeaders({
-        'Content-Type':
-          'application/ld+json; charset=utf-8',
-        'Cache-Control':
-          'public, max-age=3600'
+        'Content-Type': 'application/ld+json; charset=utf-8',
+        'Cache-Control': 'public, max-age=3600'
       })
     }
   );
 }
 
-function turtleResponse(
-  turtle,
-  method = 'GET',
-  status = 200
-) {
+function turtleResponse(turtle, method = 'GET', status = 200) {
   return new Response(
-    method === 'HEAD'
-      ? null
-      : turtle,
+    method === 'HEAD' ? null : turtle,
     {
       status,
       headers: commonHeaders({
-        'Content-Type':
-          'text/turtle; charset=utf-8',
-        'Cache-Control':
-          'public, max-age=3600'
+        'Content-Type': 'text/turtle; charset=utf-8',
+        'Cache-Control': 'public, max-age=3600'
       })
     }
   );
 }
 
-function textResponse(
-  message,
-  method = 'GET',
-  status = 200
-) {
+function textResponse(message, method = 'GET', status = 200) {
   return new Response(
-    method === 'HEAD'
-      ? null
-      : message,
+    method === 'HEAD' ? null : message,
     {
       status,
       headers: commonHeaders({
-        'Content-Type':
-          'text/plain; charset=utf-8'
+        'Content-Type': 'text/plain; charset=utf-8'
       })
     }
   );
 }
 
 function wantsJsonLd(request, url) {
-  if (
-    url.searchParams.get('format') ===
-    'jsonld'
-  ) {
-    return true;
-  }
+  if (url.searchParams.get('format') === 'jsonld') return true;
 
-  const accept =
-    request.headers.get('accept') || '';
+  const accept = request.headers.get('accept') || '';
 
   return (
-    accept.includes(
-      'application/ld+json'
-    ) ||
-    accept.includes(
-      'application/json'
-    )
+    accept.includes('application/ld+json') ||
+    accept.includes('application/json')
   );
 }
 
 function wantsTurtle(request, url) {
-  if (
-    url.searchParams.get('format') ===
-    'ttl'
-  ) {
-    return true;
-  }
+  if (url.searchParams.get('format') === 'ttl') return true;
 
-  const accept =
-    request.headers.get('accept') || '';
+  const accept = request.headers.get('accept') || '';
 
   return (
     accept.includes('text/turtle') ||
-    accept.includes(
-      'application/x-turtle'
-    )
+    accept.includes('application/x-turtle')
   );
 }
 
 async function loadGraph(request) {
-  const url = new URL(
-    '/glossary.jsonld',
-    request.url
-  );
-
+  const url = new URL('/glossary.jsonld', request.url);
   const response = await fetch(url);
 
   if (!response.ok) {
@@ -136,9 +91,7 @@ async function loadGraph(request) {
 }
 
 function graphNodes(data) {
-  return Array.isArray(
-    data?.['@graph']
-  )
+  return Array.isArray(data?.['@graph'])
     ? data['@graph']
     : [];
 }
@@ -151,10 +104,157 @@ function findById(data, id) {
 
 function compactNode(graph, node) {
   return {
-    '@context':
-      graph['@context'],
+    '@context': graph['@context'],
     ...node
   };
+}
+
+function graphDocument(graph, nodes) {
+  return {
+    '@context': graph['@context'],
+    '@graph': nodes
+  };
+}
+
+function asArray(value) {
+  if (value == null) return [];
+  return Array.isArray(value) ? value : [value];
+}
+
+function refId(value) {
+  if (typeof value === 'string') {
+    return value;
+  }
+
+  if (
+    value &&
+    typeof value === 'object'
+  ) {
+    return value['@id'] || null;
+  }
+
+  return null;
+}
+
+function sourceIdsFromDefinition(definition) {
+  const ids = new Set();
+
+  for (
+    const evidence
+    of asArray(definition?.['gs:evidence'])
+  ) {
+    for (
+      const key
+      of ['dcterms:source', 'prov:wasDerivedFrom']
+    ) {
+      for (
+        const value
+        of asArray(evidence?.[key])
+      ) {
+        const id = refId(value);
+
+        if (id) {
+          ids.add(id);
+        }
+      }
+    }
+  }
+
+  return [...ids];
+}
+
+function definitionSubgraph(
+  graph,
+  definition
+) {
+  const nodes = [definition];
+
+  for (
+    const sourceId
+    of sourceIdsFromDefinition(definition)
+  ) {
+    const source =
+      findById(
+        graph,
+        sourceId
+      );
+
+    if (source) {
+      nodes.push(source);
+    }
+  }
+
+  return graphDocument(
+    graph,
+    nodes
+  );
+}
+
+function conceptSubgraph(
+  graph,
+  concept
+) {
+  const nodes = [concept];
+  const definitionIds = new Set();
+
+  for (
+    const value
+    of asArray(
+      concept?.['gs:activeDefinition']
+    )
+  ) {
+    const id = refId(value);
+
+    if (id) {
+      definitionIds.add(id);
+    }
+  }
+
+  for (
+    const definitionId
+    of definitionIds
+  ) {
+    const definition =
+      findById(
+        graph,
+        definitionId
+      );
+
+    if (!definition) {
+      continue;
+    }
+
+    nodes.push(definition);
+
+    for (
+      const sourceId
+      of sourceIdsFromDefinition(
+        definition
+      )
+    ) {
+      const source =
+        findById(
+          graph,
+          sourceId
+        );
+
+      if (
+        source &&
+        !nodes.some(
+          node =>
+            node?.['@id'] ===
+            source['@id']
+        )
+      ) {
+        nodes.push(source);
+      }
+    }
+  }
+
+  return graphDocument(
+    graph,
+    nodes
+  );
 }
 
 async function jsonLdToTurtle(data) {
@@ -169,9 +269,10 @@ async function jsonLdToTurtle(data) {
       Readable.from([input])
     );
 
-  const writer = new Writer({
-    format: 'text/turtle'
-  });
+  const writer =
+    new Writer({
+      format: 'text/turtle'
+    });
 
   for await (
     const quad
@@ -198,16 +299,9 @@ async function jsonLdToTurtle(data) {
 async function semanticResponse(
   request,
   url,
-  graph,
-  node,
+  data,
   method
 ) {
-  const data =
-    compactNode(
-      graph,
-      node
-    );
-
   if (
     wantsTurtle(
       request,
@@ -347,8 +441,10 @@ export default {
           return await semanticResponse(
             request,
             url,
-            graph,
-            node,
+            compactNode(
+              graph,
+              node
+            ),
             method
           );
         }
@@ -394,40 +490,62 @@ export default {
         }
 
         if (
-          wantsTurtle(
-            request,
-            url
-          ) ||
-          wantsJsonLd(
-            request,
-            url
-          )
-        ) {
-          return await semanticResponse(
-            request,
-            url,
-            graph,
-            node,
-            method
-          );
-        }
-
-        if (
           kind === 'concept'
         ) {
+          if (
+            wantsTurtle(
+              request,
+              url
+            ) ||
+            wantsJsonLd(
+              request,
+              url
+            )
+          ) {
+            return await semanticResponse(
+              request,
+              url,
+              conceptSubgraph(
+                graph,
+                node
+              ),
+              method
+            );
+          }
+
           return Response.redirect(
             `${HUMAN_GLOSSARY}#${encodeURIComponent(decodedId)}`,
             303
           );
         }
 
-        return jsonLdResponse(
-          compactNode(
-            graph,
-            node
-          ),
-          method
-        );
+        if (
+          kind === 'definition'
+        ) {
+          return await semanticResponse(
+            request,
+            url,
+            definitionSubgraph(
+              graph,
+              node
+            ),
+            method
+          );
+        }
+
+        if (
+          kind === 'source'
+        ) {
+          return await semanticResponse(
+            request,
+            url,
+            compactNode(
+              graph,
+              node
+            ),
+            method
+          );
+        }
       }
 
       return textResponse(
