@@ -1,24 +1,89 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
-    { "source": "/sparql", "destination": "/api/sparql" },
-    { "source": "/scheme.jsonld", "destination": "/api/resolve?kind=scheme&format=jsonld" },
-    { "source": "/scheme", "destination": "/api/resolve?kind=scheme" },
-    { "source": "/concepts/:id.jsonld", "destination": "/api/resolve?kind=concept&id=:id&format=jsonld" },
-    { "source": "/concepts/:id", "destination": "/api/resolve?kind=concept&id=:id" },
-    { "source": "/definitions/:id.jsonld", "destination": "/api/resolve?kind=definition&id=:id&format=jsonld" },
-    { "source": "/definitions/:id", "destination": "/api/resolve?kind=definition&id=:id" },
-    { "source": "/sources/:id.jsonld", "destination": "/api/resolve?kind=source&id=:id&format=jsonld" },
-    { "source": "/sources/:id", "destination": "/api/resolve?kind=source&id=:id" },
-    { "source": "/glossary", "destination": "/api/resolve?kind=glossary" }
+    {
+      "source": "/sparql",
+      "destination": "/api/sparql"
+    },
+
+    {
+      "source": "/glossary.ttl",
+      "destination": "/api/resolve?kind=glossary&format=ttl"
+    },
+    {
+      "source": "/glossary",
+      "destination": "/api/resolve?kind=glossary"
+    },
+
+    {
+      "source": "/scheme.jsonld",
+      "destination": "/api/resolve?kind=scheme&format=jsonld"
+    },
+    {
+      "source": "/scheme.ttl",
+      "destination": "/api/resolve?kind=scheme&format=ttl"
+    },
+    {
+      "source": "/scheme",
+      "destination": "/api/resolve?kind=scheme"
+    },
+
+    {
+      "source": "/concepts/:id.jsonld",
+      "destination": "/api/resolve?kind=concept&id=:id&format=jsonld"
+    },
+    {
+      "source": "/concepts/:id.ttl",
+      "destination": "/api/resolve?kind=concept&id=:id&format=ttl"
+    },
+    {
+      "source": "/concepts/:id",
+      "destination": "/api/resolve?kind=concept&id=:id"
+    },
+
+    {
+      "source": "/definitions/:id.jsonld",
+      "destination": "/api/resolve?kind=definition&id=:id&format=jsonld"
+    },
+    {
+      "source": "/definitions/:id.ttl",
+      "destination": "/api/resolve?kind=definition&id=:id&format=ttl"
+    },
+    {
+      "source": "/definitions/:id",
+      "destination": "/api/resolve?kind=definition&id=:id"
+    },
+
+    {
+      "source": "/sources/:id.jsonld",
+      "destination": "/api/resolve?kind=source&id=:id&format=jsonld"
+    },
+    {
+      "source": "/sources/:id.ttl",
+      "destination": "/api/resolve?kind=source&id=:id&format=ttl"
+    },
+    {
+      "source": "/sources/:id",
+      "destination": "/api/resolve?kind=source&id=:id"
+    }
   ],
+
   "headers": [
     {
       "source": "/glossary.jsonld",
       "headers": [
-        { "key": "Content-Type", "value": "application/ld+json; charset=utf-8" },
-        { "key": "Access-Control-Allow-Origin", "value": "*" },
-        { "key": "Cache-Control", "value": "public, max-age=3600" }
+        {
+          "key": "Content-Type",
+          "value": "application/ld+json; charset=utf-8"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
       ]
     }
   ]
