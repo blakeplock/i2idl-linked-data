@@ -18,9 +18,60 @@ const UPDATE_KEYWORDS =
   /\b(INSERT|DELETE|LOAD|CLEAR|CREATE|DROP|COPY|MOVE|ADD|WITH|USING)\b/i;
 
 const MAX_QUERY_LENGTH = 12000;
+const QUERY_TIMEOUT_MS = 10000;
+const MAX_RESULT_ROWS = 5000;
+const MAX_GRAPH_QUADS = 5000;
+
+class QueryTimeoutError extends Error {
+  constructor() {
+    super(
+      `SPARQL query exceeded the ${QUERY_TIMEOUT_MS / 1000}-second execution limit.`
+    );
+    this.name = 'QueryTimeoutError';
+  }
+}
+
+class ResultLimitError extends Error {
+  constructor(message) {
+    super(message);
+    this.name = 'ResultLimitError';
+  }
+}
+
+function deadlineFromNow() {
+  return Date.now() + QUERY_TIMEOUT_MS;
+}
+
+function checkDeadline(deadline) {
+  if (Date.now() > deadline) {
+    throw new QueryTimeoutError();
+  }
+}
+
+function promiseWithTimeout(promise) {
+  let timeout;
+
+  const timeoutPromise = new Promise((_, reject) => {
+    timeout = setTimeout(
+      () => reject(new QueryTimeoutError()),
+      QUERY_TIMEOUT_MS
+    );
+  });
+
+  return Promise.race([
+    promise,
+    timeoutPromise
+  ]).finally(() => {
+    clearTimeout(timeout);
+  });
+}
 
 async function loadStore(request) {
-  const graphUrl = new URL('/glossary.jsonld', request.url);
+  const graphUrl = new URL(
+    '/glossary.jsonld',
+    request.url
+  );
+
   const response = await fetch(graphUrl);
 
   if (!response.ok) {
@@ -49,8 +100,10 @@ async function loadStore(request) {
 function corsHeaders(extra = {}) {
   return {
     'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
-    'Access-Control-Allow-Headers': 'Accept, Content-Type',
+    'Access-Control-Allow-Methods':
+      'GET, POST, OPTIONS',
+    'Access-Control-Allow-Headers':
+      'Accept, Content-Type',
     ...extra
   };
 }
@@ -58,7 +111,8 @@ function corsHeaders(extra = {}) {
 function jsonResponse(
   data,
   status = 200,
-  contentType = 'application/json; charset=utf-8'
+  contentType =
+    'application/json; charset=utf-8'
 ) {
   return new Response(
     JSON.stringify(data, null, 2),
@@ -74,7 +128,8 @@ function jsonResponse(
 function textResponse(
   text,
   status = 200,
-  contentType = 'text/plain; charset=utf-8'
+  contentType =
+    'text/plain; charset=utf-8'
 ) {
   return new Response(text, {
     status,
@@ -84,11 +139,15 @@ function textResponse(
   });
 }
 
-function htmlResponse(html, status = 200) {
+function htmlResponse(
+  html,
+  status = 200
+) {
   return new Response(html, {
     status,
     headers: corsHeaders({
-      'Content-Type': 'text/html; charset=utf-8'
+      'Content-Type':
+        'text/html; charset=utf-8'
     })
   });
 }
@@ -97,7 +156,9 @@ async function getQuery(request) {
   const url = new URL(request.url);
 
   if (request.method === 'GET') {
-    const raw = url.searchParams.get('query') || '';
+    const raw =
+      url.searchParams.get('query') || '';
+
     return raw.replace(/\+/g, ' ');
   }
 
@@ -105,7 +166,9 @@ async function getQuery(request) {
     request.headers.get('content-type') || '';
 
   if (
-    contentType.includes('application/sparql-query')
+    contentType.includes(
+      'application/sparql-query'
+    )
   ) {
     return await request.text();
   }
@@ -116,15 +179,22 @@ async function getQuery(request) {
     )
   ) {
     const body = await request.text();
-    const params = new URLSearchParams(body);
+
+    const params =
+      new URLSearchParams(body);
 
     return (
       params.get('query') || ''
     ).replace(/\+/g, ' ');
   }
 
-  if (contentType.includes('application/json')) {
+  if (
+    contentType.includes(
+      'application/json'
+    )
+  ) {
     const body = await request.json();
+
     return body?.query || '';
   }
 
@@ -150,48 +220,88 @@ function validateQuery(query) {
     return 'Missing SPARQL query.';
   }
 
-  if (query.length > MAX_QUERY_LENGTH) {
-    return `SPARQL query exceeds the ${MAX_QUERY_LENGTH}-character limit.`;
+  if (
+    query.length >
+    MAX_QUERY_LENGTH
+  ) {
+    return (
+      `SPARQL query exceeds the ` +
+      `${MAX_QUERY_LENGTH}-character limit.`
+    );
   }
 
-  if (UPDATE_KEYWORDS.test(query)) {
-    return 'SPARQL Update operations are not permitted.';
+  if (
+    UPDATE_KEYWORDS.test(query)
+  ) {
+    return (
+      'SPARQL Update operations ' +
+      'are not permitted.'
+    );
   }
 
-  const type = queryType(query);
+  const type =
+    queryType(query);
 
   if (
     !type ||
     !ALLOWED_QUERY_TYPES.has(type)
   ) {
-    return 'Only SELECT, ASK, CONSTRUCT, and DESCRIBE queries are permitted.';
+    return (
+      'Only SELECT, ASK, CONSTRUCT, ' +
+      'and DESCRIBE queries are permitted.'
+    );
   }
 
   return null;
 }
 
-async function bindingsToJson(result) {
+async function bindingsToJson(
+  result,
+  deadline
+) {
   const bindings = [];
 
   for await (const binding of result) {
+    checkDeadline(deadline);
+
+    if (
+      bindings.length >=
+      MAX_RESULT_ROWS
+    ) {
+      throw new ResultLimitError(
+        `SELECT result exceeds the ${MAX_RESULT_ROWS}-row limit.`
+      );
+    }
+
     const row = {};
 
-    for (const [variable, term] of binding) {
+    for (
+      const [variable, term]
+      of binding
+    ) {
       row[variable.value] = {
         type:
           term.termType === 'Literal'
             ? 'literal'
-            : 'uri',
+            : term.termType ===
+              'BlankNode'
+              ? 'bnode'
+              : 'uri',
         value: term.value
       };
 
-      if (term.termType === 'Literal') {
+      if (
+        term.termType === 'Literal'
+      ) {
         if (term.language) {
-          row[variable.value]['xml:lang'] =
-            term.language;
+          row[variable.value][
+            'xml:lang'
+          ] = term.language;
         }
 
-        if (term.datatype?.value) {
+        if (
+          term.datatype?.value
+        ) {
           row[variable.value].datatype =
             term.datatype.value;
         }
@@ -204,30 +314,50 @@ async function bindingsToJson(result) {
   return bindings;
 }
 
-async function quadsToTurtle(result) {
+async function quadsToTurtle(
+  result,
+  deadline
+) {
   const writer = new Writer({
     format: 'text/turtle'
   });
 
+  let count = 0;
+
   for await (const quad of result) {
+    checkDeadline(deadline);
+
+    if (
+      count >=
+      MAX_GRAPH_QUADS
+    ) {
+      throw new ResultLimitError(
+        `Graph result exceeds the ${MAX_GRAPH_QUADS}-quad limit.`
+      );
+    }
+
     writer.addQuad(quad);
+    count += 1;
   }
 
   return await new Promise(
     (resolve, reject) => {
-      writer.end((error, output) => {
-        if (error) {
-          reject(error);
-        } else {
-          resolve(output);
+      writer.end(
+        (error, output) => {
+          if (error) {
+            reject(error);
+          } else {
+            resolve(output);
+          }
         }
-      });
+      );
     }
   );
 }
 
 function browserInterface() {
-  const exampleSelect = `PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+  const exampleSelect =
+`PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 SELECT ?concept ?label
 WHERE {
@@ -237,32 +367,52 @@ WHERE {
 ORDER BY ?label
 LIMIT 25`;
 
-  const exampleAsk = `PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+  const exampleAsk =
+`PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 ASK {
   <https://id.i2idl.org/concepts/data-privacy>
     a skos:Concept .
 }`;
 
-  const exampleConstruct = `PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+  const exampleConstruct =
+`PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 CONSTRUCT {
-  <https://id.i2idl.org/concepts/data-privacy> ?p ?o .
+  <https://id.i2idl.org/concepts/data-privacy>
+    ?p ?o .
 }
 WHERE {
-  <https://id.i2idl.org/concepts/data-privacy> ?p ?o .
+  <https://id.i2idl.org/concepts/data-privacy>
+    ?p ?o .
 }`;
+
+  const exampleDescribe =
+`DESCRIBE <https://id.i2idl.org/concepts/data-privacy>`;
 
   return `<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>I2IDL SPARQL Endpoint</title>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>
+    I2IDL SPARQL Endpoint
+  </title>
+
   <style>
     :root {
       color-scheme: light;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
     }
 
     body {
@@ -279,7 +429,8 @@ WHERE {
 
     h1 {
       margin: 0 0 12px;
-      font-size: clamp(2rem, 6vw, 4rem);
+      font-size:
+        clamp(2rem, 6vw, 4rem);
       line-height: 1;
     }
 
@@ -292,12 +443,22 @@ WHERE {
       margin-bottom: 32px;
     }
 
+    .notice {
+      margin: 18px 0 32px;
+      padding: 14px 16px;
+      background: #eee9f1;
+      border-left: 4px solid #3b174b;
+      line-height: 1.5;
+    }
+
     form {
       background: white;
       border: 1px solid #ddd8cf;
       border-radius: 16px;
       padding: 20px;
-      box-shadow: 0 8px 28px rgba(0,0,0,.06);
+      box-shadow:
+        0 8px 28px
+        rgba(0,0,0,.06);
     }
 
     label {
@@ -312,8 +473,16 @@ WHERE {
       box-sizing: border-box;
       resize: vertical;
       padding: 16px;
-      font: 14px/1.5 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-      border: 1px solid #cfc9bf;
+      font:
+        14px/1.5
+        ui-monospace,
+        SFMono-Regular,
+        Menlo,
+        Monaco,
+        Consolas,
+        monospace;
+      border:
+        1px solid #cfc9bf;
       border-radius: 10px;
       background: #fcfbf8;
     }
@@ -337,7 +506,8 @@ WHERE {
 
     details {
       background: white;
-      border: 1px solid #ddd8cf;
+      border:
+        1px solid #ddd8cf;
       border-radius: 12px;
       padding: 14px 16px;
     }
@@ -362,41 +532,93 @@ WHERE {
     }
   </style>
 </head>
+
 <body>
   <main>
-    <h1>I2IDL SPARQL Endpoint</h1>
+    <h1>
+      I2IDL SPARQL Endpoint
+    </h1>
 
     <p class="meta">
-      Read-only SPARQL access to the I2IDL Digital Learning Glossary.
-      Supported query forms: SELECT, ASK, CONSTRUCT, and DESCRIBE.
+      Read-only SPARQL access to
+      the I2IDL Digital Learning
+      Glossary.
     </p>
 
-    <form method="get" action="/sparql">
-      <label for="query">SPARQL query</label>
-      <textarea id="query" name="query">${exampleSelect}</textarea>
-      <button type="submit">Run query</button>
+    <div class="notice">
+      Supported query forms:
+      SELECT, ASK, CONSTRUCT,
+      and DESCRIBE.
+      SPARQL Update operations
+      are disabled.
+      Queries are subject to
+      execution and result limits.
+    </div>
+
+    <form
+      method="get"
+      action="/sparql"
+    >
+      <label for="query">
+        SPARQL query
+      </label>
+
+      <textarea
+        id="query"
+        name="query"
+      >${exampleSelect}</textarea>
+
+      <button type="submit">
+        Run query
+      </button>
     </form>
 
     <div class="examples">
       <details>
-        <summary>Example SELECT query</summary>
+        <summary>
+          Example SELECT query
+        </summary>
+
         <pre>${exampleSelect}</pre>
       </details>
 
       <details>
-        <summary>Example ASK query</summary>
+        <summary>
+          Example ASK query
+        </summary>
+
         <pre>${exampleAsk}</pre>
       </details>
 
       <details>
-        <summary>Example CONSTRUCT query</summary>
+        <summary>
+          Example CONSTRUCT query
+        </summary>
+
         <pre>${exampleConstruct}</pre>
+      </details>
+
+      <details>
+        <summary>
+          Example DESCRIBE query
+        </summary>
+
+        <pre>${exampleDescribe}</pre>
       </details>
     </div>
 
     <p style="margin-top:32px">
       Full JSON-LD graph:
-      <a href="/glossary.jsonld">/glossary.jsonld</a>
+      <a href="/glossary.jsonld">
+        /glossary.jsonld
+      </a>
+    </p>
+
+    <p>
+      Human-readable glossary:
+      <a href="https://www.i2idl.org/glossary">
+        www.i2idl.org/glossary
+      </a>
     </p>
   </main>
 </body>
@@ -405,15 +627,22 @@ WHERE {
 
 export default {
   async fetch(request) {
-    if (request.method === 'OPTIONS') {
-      return new Response(null, {
-        status: 204,
-        headers: corsHeaders()
-      });
+    if (
+      request.method ===
+      'OPTIONS'
+    ) {
+      return new Response(
+        null,
+        {
+          status: 204,
+          headers: corsHeaders()
+        }
+      );
     }
 
     if (
-      !['GET', 'POST'].includes(request.method)
+      !['GET', 'POST']
+        .includes(request.method)
     ) {
       return textResponse(
         'Method Not Allowed',
@@ -422,7 +651,8 @@ export default {
     }
 
     try {
-      const query = await getQuery(request);
+      const query =
+        await getQuery(request);
 
       if (
         request.method === 'GET' &&
@@ -438,32 +668,49 @@ export default {
 
       if (validationError) {
         return jsonResponse(
-          { error: validationError },
+          {
+            error:
+              validationError
+          },
           400
         );
       }
 
-      const type = queryType(query);
-      const store = await loadStore(request);
+      const type =
+        queryType(query);
+
+      const store =
+        await loadStore(request);
+
+      const deadline =
+        deadlineFromNow();
 
       if (type === 'SELECT') {
         const result =
-          await engine.queryBindings(
-            query,
-            {
-              sources: [store]
-            }
+          await promiseWithTimeout(
+            engine.queryBindings(
+              query,
+              {
+                sources: [store]
+              }
+            )
           );
 
         const bindings =
-          await bindingsToJson(result);
+          await bindingsToJson(
+            result,
+            deadline
+          );
 
         return jsonResponse(
           {
             head: {
-              vars: bindings.length
-                ? Object.keys(bindings[0])
-                : []
+              vars:
+                bindings.length
+                  ? Object.keys(
+                      bindings[0]
+                    )
+                  : []
             },
             results: {
               bindings
@@ -476,11 +723,13 @@ export default {
 
       if (type === 'ASK') {
         const boolean =
-          await engine.queryBoolean(
-            query,
-            {
-              sources: [store]
-            }
+          await promiseWithTimeout(
+            engine.queryBoolean(
+              query,
+              {
+                sources: [store]
+              }
+            )
           );
 
         return jsonResponse(
@@ -498,15 +747,20 @@ export default {
         type === 'DESCRIBE'
       ) {
         const result =
-          await engine.queryQuads(
-            query,
-            {
-              sources: [store]
-            }
+          await promiseWithTimeout(
+            engine.queryQuads(
+              query,
+              {
+                sources: [store]
+              }
+            )
           );
 
         const turtle =
-          await quadsToTurtle(result);
+          await quadsToTurtle(
+            result,
+            deadline
+          );
 
         return textResponse(
           turtle,
@@ -524,6 +778,30 @@ export default {
       );
     } catch (error) {
       console.error(error);
+
+      if (
+        error instanceof
+        QueryTimeoutError
+      ) {
+        return jsonResponse(
+          {
+            error: error.message
+          },
+          408
+        );
+      }
+
+      if (
+        error instanceof
+        ResultLimitError
+      ) {
+        return jsonResponse(
+          {
+            error: error.message
+          },
+          413
+        );
+      }
 
       return jsonResponse(
         {
