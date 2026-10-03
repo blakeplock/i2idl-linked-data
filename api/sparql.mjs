@@ -17,6 +17,8 @@ const ALLOWED_QUERY_TYPES = new Set([
 const UPDATE_KEYWORDS =
   /\b(INSERT|DELETE|LOAD|CLEAR|CREATE|DROP|COPY|MOVE|ADD|WITH|USING)\b/i;
 
+const MAX_QUERY_LENGTH = 12000;
+
 async function loadStore(request) {
   const graphUrl = new URL('/glossary.jsonld', request.url);
   const response = await fetch(graphUrl);
@@ -82,6 +84,15 @@ function textResponse(
   });
 }
 
+function htmlResponse(html, status = 200) {
+  return new Response(html, {
+    status,
+    headers: corsHeaders({
+      'Content-Type': 'text/html; charset=utf-8'
+    })
+  });
+}
+
 async function getQuery(request) {
   const url = new URL(request.url);
 
@@ -122,11 +133,11 @@ async function getQuery(request) {
 
 function queryType(query) {
   const cleaned = query
-    .replace(/#[^\n\r]*/g, '')
+    .replace(/^\s*#.*$/gm, '')
     .trim();
 
   const match = cleaned.match(
-    /^(?:PREFIX\s+\S+:\s*<[^>]+>\s*)*(SELECT|ASK|CONSTRUCT|DESCRIBE)\b/i
+    /^(?:(?:PREFIX\s+\S+:\s*<[^>]+>|BASE\s+<[^>]+>)\s*)*(SELECT|ASK|CONSTRUCT|DESCRIBE)\b/i
   );
 
   return match
@@ -137,6 +148,10 @@ function queryType(query) {
 function validateQuery(query) {
   if (!query.trim()) {
     return 'Missing SPARQL query.';
+  }
+
+  if (query.length > MAX_QUERY_LENGTH) {
+    return `SPARQL query exceeds the ${MAX_QUERY_LENGTH}-character limit.`;
   }
 
   if (UPDATE_KEYWORDS.test(query)) {
@@ -211,6 +226,183 @@ async function quadsToTurtle(result) {
   );
 }
 
+function browserInterface() {
+  const exampleSelect = `PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?concept ?label
+WHERE {
+  ?concept a skos:Concept ;
+           skos:prefLabel ?label .
+}
+ORDER BY ?label
+LIMIT 25`;
+
+  const exampleAsk = `PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+ASK {
+  <https://id.i2idl.org/concepts/data-privacy>
+    a skos:Concept .
+}`;
+
+  const exampleConstruct = `PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+CONSTRUCT {
+  <https://id.i2idl.org/concepts/data-privacy> ?p ?o .
+}
+WHERE {
+  <https://id.i2idl.org/concepts/data-privacy> ?p ?o .
+}`;
+
+  return `<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>I2IDL SPARQL Endpoint</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #f7f5f0;
+      color: #1f1f1f;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 48px 24px 72px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 6vw, 4rem);
+      line-height: 1;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .meta {
+      color: #5d5a54;
+      margin-bottom: 32px;
+    }
+
+    form {
+      background: white;
+      border: 1px solid #ddd8cf;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 8px 28px rgba(0,0,0,.06);
+    }
+
+    label {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 320px;
+      box-sizing: border-box;
+      resize: vertical;
+      padding: 16px;
+      font: 14px/1.5 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      border: 1px solid #cfc9bf;
+      border-radius: 10px;
+      background: #fcfbf8;
+    }
+
+    button {
+      margin-top: 14px;
+      border: 0;
+      border-radius: 10px;
+      padding: 12px 18px;
+      background: #3b174b;
+      color: white;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .examples {
+      margin-top: 32px;
+      display: grid;
+      gap: 16px;
+    }
+
+    details {
+      background: white;
+      border: 1px solid #ddd8cf;
+      border-radius: 12px;
+      padding: 14px 16px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    pre {
+      overflow-x: auto;
+      white-space: pre-wrap;
+      word-break: break-word;
+      background: #f3f1eb;
+      border-radius: 8px;
+      padding: 14px;
+      margin-bottom: 0;
+    }
+
+    a {
+      color: #3b174b;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>I2IDL SPARQL Endpoint</h1>
+
+    <p class="meta">
+      Read-only SPARQL access to the I2IDL Digital Learning Glossary.
+      Supported query forms: SELECT, ASK, CONSTRUCT, and DESCRIBE.
+    </p>
+
+    <form method="get" action="/sparql">
+      <label for="query">SPARQL query</label>
+      <textarea id="query" name="query">${exampleSelect}</textarea>
+      <button type="submit">Run query</button>
+    </form>
+
+    <div class="examples">
+      <details>
+        <summary>Example SELECT query</summary>
+        <pre>${exampleSelect}</pre>
+      </details>
+
+      <details>
+        <summary>Example ASK query</summary>
+        <pre>${exampleAsk}</pre>
+      </details>
+
+      <details>
+        <summary>Example CONSTRUCT query</summary>
+        <pre>${exampleConstruct}</pre>
+      </details>
+    </div>
+
+    <p style="margin-top:32px">
+      Full JSON-LD graph:
+      <a href="/glossary.jsonld">/glossary.jsonld</a>
+    </p>
+  </main>
+</body>
+</html>`;
+}
+
 export default {
   async fetch(request) {
     if (request.method === 'OPTIONS') {
@@ -231,6 +423,15 @@ export default {
 
     try {
       const query = await getQuery(request);
+
+      if (
+        request.method === 'GET' &&
+        !query.trim()
+      ) {
+        return htmlResponse(
+          browserInterface()
+        );
+      }
 
       const validationError =
         validateQuery(query);
