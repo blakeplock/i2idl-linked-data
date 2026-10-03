@@ -299,13 +299,18 @@ but normal production publishing should occur automatically through GitHub after
 
 Changes to the Linked Data service should not require changes to the root I2IDL domain or the `www` Squarespace records.
 
-## Provenance and licensing
+## Licensing
 
-The Linked Data graph preserves source, citation, provenance, and rights information at the record level.
+The software and deployment code in this repository are licensed under the Apache License 2.0. See the repository `LICENSE` file.
 
-I2IDL-original glossary definitions, editorial material, and compilation are published under **CC BY 4.0 unless otherwise noted**. Third-party material retains its source-specific rights and licensing conditions. Individual source and evidence records should be consulted for the terms that apply to source-derived material.
+The I2IDL Digital Learning Glossary data and editorial content are governed separately. 
+Unless otherwise noted, I2IDL-original glossary definitions, editorial explanations, semantic modeling, classifications, and compilation are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).
 
-This repository does not currently declare a separate software license for the resolver/deployment code.
+Third-party source-derived material remains subject to its original licensing and rights conditions.
+
+See `DATA-LICENSE.md` for details.
+
+The JSON-LD graph preserves source, citation, provenance, and rights information at the record level where available.
 
 ## Project status
 
