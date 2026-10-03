@@ -21,7 +21,7 @@
       "dcterms:rights": "Mixed rights. I2IDL-original material defaults to CC BY 4.0; source-specific rights are preserved at the source and evidence level.",
       "gs:editorialStatus": "approved",
       "gs:semanticProfileVersion": "0.4.0",
-      "gs:publicationVersion": "v0.0.61",
+      "gs:publicationVersion": "v0.0.62",
       "gs:baseUri": "https://id.i2idl.org"
     },
     {
@@ -9319,7 +9319,7 @@
             "@id": "https://id.i2idl.org/sources/unesco-uis-national-education-statistical-capacity-assessment"
           },
           "gs:sourceLabel": "UNESCO UIS National Education Statistical Capacity Assessment",
-          "gs:evidenceRelation": "supporting",
+          "gs:evidenceRelation": "direct",
           "gs:citationDetail": "PDF p. 27 · report p. 30 — §1.3 Fully leveraging the education data ecosystem — integrating disparate sources and linking databases through common identifiers",
           "schema:url": "https://tcg.uis.unesco.org/wp-content/uploads/sites/4/2025/02/LASER-2025-National-Education-Statistical-Capacity-Assessment-1.pdf#page=27"
         }
@@ -9496,7 +9496,7 @@
             "@id": "https://id.i2idl.org/sources/unesco-uis-national-education-statistical-capacity-assessment"
           },
           "gs:sourceLabel": "UNESCO UIS National Education Statistical Capacity Assessment",
-          "gs:evidenceRelation": "supporting",
+          "gs:evidenceRelation": "direct",
           "gs:citationDetail": "PDF p. 50 · report p. 53 — §4.1 Introduction to LASER — assessing and strengthening national education data capacity",
           "schema:url": "https://tcg.uis.unesco.org/wp-content/uploads/sites/4/2025/02/LASER-2025-National-Education-Statistical-Capacity-Assessment-1.pdf#page=50"
         },
@@ -9509,7 +9509,7 @@
             "@id": "https://id.i2idl.org/sources/unesco-uis-national-education-statistical-capacity-assessment"
           },
           "gs:sourceLabel": "UNESCO UIS National Education Statistical Capacity Assessment",
-          "gs:evidenceRelation": "supporting",
+          "gs:evidenceRelation": "direct",
           "gs:citationDetail": "PDF p. 52 · report p. 55 — §4.2, Step 3 — LASER Statistical Capacity Score",
           "schema:url": "https://tcg.uis.unesco.org/wp-content/uploads/sites/4/2025/02/LASER-2025-National-Education-Statistical-Capacity-Assessment-1.pdf#page=52"
         }
@@ -15714,7 +15714,7 @@
             "@id": "https://id.i2idl.org/sources/lebok"
           },
           "gs:sourceLabel": "LeBOK",
-          "gs:evidenceRelation": "supporting",
+          "gs:evidenceRelation": "direct",
           "gs:citationDetail": "7.4.1 Learning Event Record Data Pipeline Basics",
           "schema:url": "https://lebok.wiki/en/knowledge-area-7-data-instrumentation/7-4-stages-of-data-collection-and-refinement/7-4-1-learning-event-record-data-pipeline-basics"
         }
@@ -15901,7 +15901,7 @@
             "@id": "https://id.i2idl.org/sources/lebok"
           },
           "gs:sourceLabel": "LeBOK",
-          "gs:evidenceRelation": "supporting",
+          "gs:evidenceRelation": "direct",
           "gs:citationDetail": "7.3.2 Metadata Tagging of Learning Resources",
           "schema:url": "https://lebok.wiki/en/knowledge-area-7-data-instrumentation/7-3-standards-based-approaches-to-data-instrumentation/7-3-2-metadata-tagging-of-learning-resources"
         }
@@ -21404,7 +21404,7 @@
             "@id": "https://id.i2idl.org/sources/xapi-profiles-specification"
           },
           "gs:sourceLabel": "xAPI Profiles Specification",
-          "gs:evidenceRelation": "supporting",
+          "gs:evidenceRelation": "direct",
           "gs:citationDetail": "Part One §1.0 — semantic interoperability problem statement",
           "schema:url": "https://github.com/adlnet/xapi-profiles/blob/master/xapi-profiles-about.md#introduction:~:text=profiles%20to%20support%20semantic%20interoperability%20are%20apparent"
         }
