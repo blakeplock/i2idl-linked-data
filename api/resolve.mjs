@@ -6,13 +6,18 @@ import { Readable } from 'node:stream';
 
 const BASE = 'https://id.i2idl.org';
 const HUMAN_GLOSSARY = 'https://www.i2idl.org/glossary';
+const SAFE_ID = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+const MAX_ID_LENGTH = 160;
 
 function commonHeaders(extra = {}) {
   return {
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Methods': 'GET, HEAD, OPTIONS',
     'Access-Control-Allow-Headers': 'Accept, Content-Type',
-    Vary: 'Accept',
+    'Vary': 'Accept',
+    'X-Content-Type-Options': 'nosniff',
+    'Referrer-Policy': 'no-referrer',
+    'Permissions-Policy': 'camera=(), microphone=(), geolocation=()',
     ...extra
   };
 }
@@ -49,7 +54,8 @@ function textResponse(message, method = 'GET', status = 200) {
     {
       status,
       headers: commonHeaders({
-        'Content-Type': 'text/plain; charset=utf-8'
+        'Content-Type': 'text/plain; charset=utf-8',
+        'Cache-Control': 'no-store'
       })
     }
   );
@@ -59,7 +65,6 @@ function wantsJsonLd(request, url) {
   if (url.searchParams.get('format') === 'jsonld') return true;
 
   const accept = request.headers.get('accept') || '';
-
   return (
     accept.includes('application/ld+json') ||
     accept.includes('application/json')
@@ -70,36 +75,44 @@ function wantsTurtle(request, url) {
   if (url.searchParams.get('format') === 'ttl') return true;
 
   const accept = request.headers.get('accept') || '';
-
   return (
     accept.includes('text/turtle') ||
     accept.includes('application/x-turtle')
   );
 }
 
+function assertInlineContext(data) {
+  const context = data?.['@context'];
+
+  if (!context || Array.isArray(context) || typeof context !== 'object') {
+    throw new Error('Glossary JSON-LD must use an inline @context object.');
+  }
+
+  if (Object.hasOwn(context, '@import')) {
+    throw new Error('Remote JSON-LD @context imports are not permitted.');
+  }
+}
+
 async function loadGraph(request) {
+  // Fixed same-origin URL only. Request parameters never influence this fetch.
   const url = new URL('/glossary.jsonld', request.url);
   const response = await fetch(url);
 
   if (!response.ok) {
-    throw new Error(
-      `Unable to load glossary graph (${response.status})`
-    );
+    throw new Error(`Unable to load glossary graph (${response.status})`);
   }
 
-  return response.json();
+  const graph = await response.json();
+  assertInlineContext(graph);
+  return graph;
 }
 
 function graphNodes(data) {
-  return Array.isArray(data?.['@graph'])
-    ? data['@graph']
-    : [];
+  return Array.isArray(data?.['@graph']) ? data['@graph'] : [];
 }
 
 function findById(data, id) {
-  return graphNodes(data).find(
-    node => node?.['@id'] === id
-  );
+  return graphNodes(data).find(node => node?.['@id'] === id);
 }
 
 function compactNode(graph, node) {
@@ -122,40 +135,19 @@ function asArray(value) {
 }
 
 function refId(value) {
-  if (typeof value === 'string') {
-    return value;
-  }
-
-  if (
-    value &&
-    typeof value === 'object'
-  ) {
-    return value['@id'] || null;
-  }
-
+  if (typeof value === 'string') return value;
+  if (value && typeof value === 'object') return value['@id'] || null;
   return null;
 }
 
 function sourceIdsFromDefinition(definition) {
   const ids = new Set();
 
-  for (
-    const evidence
-    of asArray(definition?.['gs:evidence'])
-  ) {
-    for (
-      const key
-      of ['dcterms:source', 'prov:wasDerivedFrom']
-    ) {
-      for (
-        const value
-        of asArray(evidence?.[key])
-      ) {
+  for (const evidence of asArray(definition?.['gs:evidence'])) {
+    for (const key of ['dcterms:source', 'prov:wasDerivedFrom']) {
+      for (const value of asArray(evidence?.[key])) {
         const id = refId(value);
-
-        if (id) {
-          ids.add(id);
-        }
+        if (id) ids.add(id);
       }
     }
   }
@@ -163,296 +155,145 @@ function sourceIdsFromDefinition(definition) {
   return [...ids];
 }
 
-function definitionSubgraph(
-  graph,
-  definition
-) {
+function definitionSubgraph(graph, definition) {
   const nodes = [definition];
 
-  for (
-    const sourceId
-    of sourceIdsFromDefinition(definition)
-  ) {
-    const source =
-      findById(
-        graph,
-        sourceId
-      );
-
-    if (source) {
-      nodes.push(source);
-    }
+  for (const sourceId of sourceIdsFromDefinition(definition)) {
+    const source = findById(graph, sourceId);
+    if (source) nodes.push(source);
   }
 
-  return graphDocument(
-    graph,
-    nodes
-  );
+  return graphDocument(graph, nodes);
 }
 
-function conceptSubgraph(
-  graph,
-  concept
-) {
+function conceptSubgraph(graph, concept) {
   const nodes = [concept];
   const definitionIds = new Set();
 
-  for (
-    const value
-    of asArray(
-      concept?.['gs:activeDefinition']
-    )
-  ) {
+  for (const value of asArray(concept?.['gs:activeDefinition'])) {
     const id = refId(value);
-
-    if (id) {
-      definitionIds.add(id);
-    }
+    if (id) definitionIds.add(id);
   }
 
-  for (
-    const definitionId
-    of definitionIds
-  ) {
-    const definition =
-      findById(
-        graph,
-        definitionId
-      );
-
-    if (!definition) {
-      continue;
-    }
+  for (const definitionId of definitionIds) {
+    const definition = findById(graph, definitionId);
+    if (!definition) continue;
 
     nodes.push(definition);
 
-    for (
-      const sourceId
-      of sourceIdsFromDefinition(
-        definition
-      )
-    ) {
-      const source =
-        findById(
-          graph,
-          sourceId
-        );
-
+    for (const sourceId of sourceIdsFromDefinition(definition)) {
+      const source = findById(graph, sourceId);
       if (
         source &&
-        !nodes.some(
-          node =>
-            node?.['@id'] ===
-            source['@id']
-        )
+        !nodes.some(node => node?.['@id'] === source['@id'])
       ) {
         nodes.push(source);
       }
     }
   }
 
-  return graphDocument(
-    graph,
-    nodes
-  );
+  return graphDocument(graph, nodes);
 }
 
 async function jsonLdToTurtle(data) {
-  const parser =
-    new ParserJsonld();
+  assertInlineContext(data);
 
-  const input =
-    JSON.stringify(data);
+  const parser = new ParserJsonld();
+  const input = JSON.stringify(data);
+  const quadStream = parser.import(Readable.from([input]));
+  const writer = new Writer({ format: 'text/turtle' });
 
-  const quadStream =
-    parser.import(
-      Readable.from([input])
-    );
-
-  const writer =
-    new Writer({
-      format: 'text/turtle'
-    });
-
-  for await (
-    const quad
-    of quadStream
-  ) {
+  for await (const quad of quadStream) {
     writer.addQuad(quad);
   }
 
-  return await new Promise(
-    (resolve, reject) => {
-      writer.end(
-        (error, output) => {
-          if (error) {
-            reject(error);
-          } else {
-            resolve(output);
-          }
-        }
-      );
-    }
-  );
+  return await new Promise((resolve, reject) => {
+    writer.end((error, output) => {
+      if (error) reject(error);
+      else resolve(output);
+    });
+  });
 }
 
-async function semanticResponse(
-  request,
-  url,
-  data,
-  method
-) {
-  if (
-    wantsTurtle(
-      request,
-      url
-    )
-  ) {
-    const turtle =
-      await jsonLdToTurtle(
-        data
-      );
-
-    return turtleResponse(
-      turtle,
-      method
-    );
+async function semanticResponse(request, url, data, method) {
+  if (wantsTurtle(request, url)) {
+    const turtle = await jsonLdToTurtle(data);
+    return turtleResponse(turtle, method);
   }
 
-  return jsonLdResponse(
-    data,
-    method
-  );
+  return jsonLdResponse(data, method);
+}
+
+function safeDecodedId(rawId) {
+  if (typeof rawId !== 'string' || rawId.length > MAX_ID_LENGTH * 3) {
+    return null;
+  }
+
+  let decoded;
+  try {
+    decoded = decodeURIComponent(rawId);
+  } catch (_) {
+    return null;
+  }
+
+  if (decoded.length > MAX_ID_LENGTH || !SAFE_ID.test(decoded)) {
+    return null;
+  }
+
+  return decoded;
 }
 
 export default {
   async fetch(request) {
-    const method =
-      request.method.toUpperCase();
+    const method = request.method.toUpperCase();
+    const url = new URL(request.url);
 
-    const url =
-      new URL(request.url);
-
-    if (
-      method === 'OPTIONS'
-    ) {
-      return new Response(
-        null,
-        {
-          status: 204,
-          headers:
-            commonHeaders()
-        }
-      );
+    if (method === 'OPTIONS') {
+      return new Response(null, {
+        status: 204,
+        headers: commonHeaders()
+      });
     }
 
-    if (
-      !['GET', 'HEAD']
-        .includes(method)
-    ) {
-      return textResponse(
-        'Method Not Allowed',
-        method,
-        405
-      );
+    if (!['GET', 'HEAD'].includes(method)) {
+      return textResponse('Method Not Allowed', method, 405);
     }
 
     try {
-      const kind =
-        url.searchParams.get(
-          'kind'
-        );
+      const kind = url.searchParams.get('kind');
+      const id = url.searchParams.get('id');
+      const graph = await loadGraph(request);
 
-      const id =
-        url.searchParams.get(
-          'id'
-        );
-
-      const graph =
-        await loadGraph(
-          request
-        );
-
-      if (
-        kind === 'glossary'
-      ) {
-        if (
-          wantsTurtle(
-            request,
-            url
-          )
-        ) {
-          const turtle =
-            await jsonLdToTurtle(
-              graph
-            );
-
-          return turtleResponse(
-            turtle,
-            method
-          );
+      if (kind === 'glossary') {
+        if (wantsTurtle(request, url)) {
+          const turtle = await jsonLdToTurtle(graph);
+          return turtleResponse(turtle, method);
         }
 
-        if (
-          wantsJsonLd(
-            request,
-            url
-          )
-        ) {
-          return jsonLdResponse(
-            graph,
-            method
-          );
+        if (wantsJsonLd(request, url)) {
+          return jsonLdResponse(graph, method);
         }
 
-        return Response.redirect(
-          HUMAN_GLOSSARY,
-          303
-        );
+        return Response.redirect(HUMAN_GLOSSARY, 303);
       }
 
-      if (
-        kind === 'scheme'
-      ) {
-        const node =
-          findById(
-            graph,
-            `${BASE}/scheme`
-          );
+      if (kind === 'scheme') {
+        const node = findById(graph, `${BASE}/scheme`);
 
         if (!node) {
-          return textResponse(
-            'Scheme not found',
-            method,
-            404
-          );
+          return textResponse('Scheme not found', method, 404);
         }
 
-        if (
-          wantsTurtle(
-            request,
-            url
-          ) ||
-          wantsJsonLd(
-            request,
-            url
-          )
-        ) {
+        if (wantsTurtle(request, url) || wantsJsonLd(request, url)) {
           return await semanticResponse(
             request,
             url,
-            compactNode(
-              graph,
-              node
-            ),
+            compactNode(graph, node),
             method
           );
         }
 
-        return Response.redirect(
-          HUMAN_GLOSSARY,
-          303
-        );
+        return Response.redirect(HUMAN_GLOSSARY, 303);
       }
 
       const prefixes = {
@@ -461,54 +302,30 @@ export default {
         source: 'sources'
       };
 
-      if (
-        prefixes[kind] &&
-        id
-      ) {
-        const decodedId =
-          decodeURIComponent(id);
+      if (prefixes[kind] && id) {
+        const decodedId = safeDecodedId(id);
 
-        const canonicalId =
-          `${BASE}/${prefixes[kind]}/${decodedId}`;
+        if (!decodedId) {
+          return textResponse('Invalid identifier', method, 400);
+        }
 
-        const node =
-          findById(
-            graph,
-            canonicalId
-          );
+        const canonicalId = `${BASE}/${prefixes[kind]}/${decodedId}`;
+        const node = findById(graph, canonicalId);
 
         if (!node) {
           return textResponse(
-            `${
-              kind[0]
-                .toUpperCase() +
-              kind.slice(1)
-            } not found`,
+            `${kind[0].toUpperCase() + kind.slice(1)} not found`,
             method,
             404
           );
         }
 
-        if (
-          kind === 'concept'
-        ) {
-          if (
-            wantsTurtle(
-              request,
-              url
-            ) ||
-            wantsJsonLd(
-              request,
-              url
-            )
-          ) {
+        if (kind === 'concept') {
+          if (wantsTurtle(request, url) || wantsJsonLd(request, url)) {
             return await semanticResponse(
               request,
               url,
-              conceptSubgraph(
-                graph,
-                node
-              ),
+              conceptSubgraph(graph, node),
               method
             );
           }
@@ -519,48 +336,29 @@ export default {
           );
         }
 
-        if (
-          kind === 'definition'
-        ) {
+        if (kind === 'definition') {
           return await semanticResponse(
             request,
             url,
-            definitionSubgraph(
-              graph,
-              node
-            ),
+            definitionSubgraph(graph, node),
             method
           );
         }
 
-        if (
-          kind === 'source'
-        ) {
+        if (kind === 'source') {
           return await semanticResponse(
             request,
             url,
-            compactNode(
-              graph,
-              node
-            ),
+            compactNode(graph, node),
             method
           );
         }
       }
 
-      return textResponse(
-        'Not found',
-        method,
-        404
-      );
+      return textResponse('Not found', method, 404);
     } catch (error) {
       console.error(error);
-
-      return textResponse(
-        'Linked Data service error',
-        method,
-        500
-      );
+      return textResponse('Linked Data service error', method, 500);
     }
   }
 };

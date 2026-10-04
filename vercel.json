@@ -5,7 +5,6 @@
       "source": "/sparql",
       "destination": "/api/sparql"
     },
-
     {
       "source": "/glossary.ttl",
       "destination": "/api/resolve?kind=glossary&format=ttl"
@@ -14,7 +13,6 @@
       "source": "/glossary",
       "destination": "/api/resolve?kind=glossary"
     },
-
     {
       "source": "/scheme.jsonld",
       "destination": "/api/resolve?kind=scheme&format=jsonld"
@@ -27,7 +25,6 @@
       "source": "/scheme",
       "destination": "/api/resolve?kind=scheme"
     },
-
     {
       "source": "/concepts/:id.jsonld",
       "destination": "/api/resolve?kind=concept&id=:id&format=jsonld"
@@ -40,7 +37,6 @@
       "source": "/concepts/:id",
       "destination": "/api/resolve?kind=concept&id=:id"
     },
-
     {
       "source": "/definitions/:id.jsonld",
       "destination": "/api/resolve?kind=definition&id=:id&format=jsonld"
@@ -53,7 +49,6 @@
       "source": "/definitions/:id",
       "destination": "/api/resolve?kind=definition&id=:id"
     },
-
     {
       "source": "/sources/:id.jsonld",
       "destination": "/api/resolve?kind=source&id=:id&format=jsonld"
@@ -67,8 +62,50 @@
       "destination": "/api/resolve?kind=source&id=:id"
     }
   ],
-
   "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "no-referrer"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
+      ]
+    },
+    {
+      "source": "/sparql",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'none'; img-src 'none'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        }
+      ]
+    },
+    {
+      "source": "/",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'none'; img-src 'none'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        }
+      ]
+    },
     {
       "source": "/glossary.jsonld",
       "headers": [
