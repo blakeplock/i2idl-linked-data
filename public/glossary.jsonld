@@ -21,7 +21,7 @@
       "dcterms:rights": "Mixed rights. I2IDL-original material defaults to CC BY 4.0; source-specific rights are preserved at the source and evidence level.",
       "gs:editorialStatus": "approved",
       "gs:semanticProfileVersion": "0.4.0",
-      "gs:publicationVersion": "v0.0.68",
+      "gs:publicationVersion": "v0.0.69",
       "gs:baseUri": "https://id.i2idl.org"
     },
     {
@@ -27617,6 +27617,23 @@
           "gs:host": "CIRCLS / Digital Promise"
         }
       ]
+    },
+    {
+      "@id": "https://id.i2idl.org/sources/oecd-education-at-a-glance-2026",
+      "@type": "dcterms:BibliographicResource",
+      "dcterms:title": "Education at a Glance 2026: OECD Indicators",
+      "dcterms:creator": "OECD",
+      "dcterms:publisher": "OECD Publishing",
+      "dcterms:date": "2026-09-29",
+      "dcterms:identifier": "https://doi.org/10.1787/b4968bbc-en",
+      "schema:url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/09/education-at-a-glance-2026_3bce4131/b4968bbc-en.pdf",
+      "dcterms:rights": "CC BY 4.0",
+      "gs:rightsUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "gs:publicationPage": "https://www.oecd.org/en/publications/2026/09/education-at-a-glance-2026_3bce4131.html",
+      "gs:preferredCitation": "OECD (2026), Education at a Glance 2026: OECD Indicators, OECD Publishing, Paris, https://doi.org/10.1787/b4968bbc-en.",
+      "gs:adaptationNotice": "This is an adaptation of an original work by the OECD.",
+      "gs:adaptationDisclaimer": "The opinions expressed and arguments employed in this adaptation should not be reported as representing the official views of the OECD or of its Member countries.",
+      "gs:thirdPartyMaterialNotice": "The CC BY 4.0 license does not apply to third-party material in the work; permission may be required from the relevant rights holder."
     }
   ]
 }
