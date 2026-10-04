@@ -21,7 +21,7 @@
       "dcterms:rights": "Mixed rights. I2IDL-original material defaults to CC BY 4.0; source-specific rights are preserved at the source and evidence level.",
       "gs:editorialStatus": "approved",
       "gs:semanticProfileVersion": "0.4.0",
-      "gs:publicationVersion": "v0.0.69",
+      "gs:publicationVersion": "v0.0.70",
       "gs:baseUri": "https://id.i2idl.org"
     },
     {
@@ -289,6 +289,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/testing-for-learning-impact"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/formative-evaluation"
         }
       ]
     },
@@ -506,6 +509,30 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/unesco-technical-and-vocational-study-subjects"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/educational-attainment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/classroom-teacher"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/full-time-equivalent-teacher-fte"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/fully-qualified-teacher"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/educational-institution"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/early-childhood-education-and-care-ecec"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/early-childhood-education-ece"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/childcare-gap"
         }
       ]
     },
@@ -693,6 +720,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/xapi-authority"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/school-compliance-reporting"
         }
       ]
     },
@@ -1923,6 +1953,21 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/interdisciplinary-research-identity"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/educational-attainment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/full-time-equivalent-teacher-fte"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/early-childhood-education-and-care-ecec"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/early-childhood-education-ece"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/childcare-gap"
         }
       ]
     },
@@ -1987,6 +2032,9 @@
       "skos:member": [
         {
           "@id": "https://id.i2idl.org/concepts/unesco-educational-evaluation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/formative-evaluation"
         }
       ]
     },
@@ -2055,6 +2103,9 @@
       "skos:member": [
         {
           "@id": "https://id.i2idl.org/concepts/unesco-educational-institutions"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/educational-institution"
         }
       ]
     },
@@ -2445,6 +2496,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/statement-template-validation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/school-compliance-reporting"
         }
       ]
     },
@@ -2459,6 +2513,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/profile-validator"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/classroom-teacher"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/fully-qualified-teacher"
         }
       ]
     },
@@ -27615,6 +27675,621 @@
           "gs:pdfPage": 53,
           "gs:pdfPrintedPage": 53,
           "gs:host": "CIRCLS / Digital Promise"
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/educational-attainment",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "educational-attainment",
+      "skos:prefLabel": "Educational attainment",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "schema:inDefinedTermSet": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:definition": "The highest level of education that an individual has successfully completed.",
+      "gs:editorialStatus": "approved",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/educational-attainment-1"
+      },
+      "gs:editorialExplanation": "Educational attainment provides a common basis for describing education outcomes across populations and for relating completed education to later learning, employment, and social outcomes.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/education"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/concept"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/educational-attainment-1",
+      "@type": [
+        "prov:Entity",
+        "gs:Definition"
+      ],
+      "rdf:value": "The highest level of education that an individual has successfully completed.",
+      "dcterms:language": "en",
+      "dcterms:creator": {
+        "@id": "https://www.i2idl.org/"
+      },
+      "gs:editorialStatus": "approved",
+      "gs:definitionSequence": 1,
+      "gs:evidence": [
+        {
+          "@type": "gs:Evidence",
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/oecd-education-at-a-glance-2026",
+            "dcterms:title": "Education at a Glance 2026: OECD Indicators"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/oecd-education-at-a-glance-2026"
+          },
+          "gs:sourceLabel": "OECD — Education at a Glance 2026",
+          "gs:evidenceRelation": "direct",
+          "gs:citationDetail": "Chapter A1 · Definitions — Educational attainment",
+          "schema:url": "https://www.oecd.org/en/publications/education-at-a-glance-2026_b4968bbc-en/full-report/to-what-level-have-adults-studied_b5466dac.html",
+          "gs:host": "OECD",
+          "gs:adaptationNotice": "This is an adaptation of an original work by the OECD.",
+          "gs:adaptationDisclaimer": "The opinions expressed and arguments employed in this adaptation should not be reported as representing the official views of the OECD or of its Member countries."
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/classroom-teacher",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "classroom-teacher",
+      "skos:prefLabel": "Classroom teacher",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "schema:inDefinedTermSet": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:definition": "Professional teaching personnel primarily responsible for planning, organising, and conducting group learning activities that guide students' learning experiences.",
+      "gs:editorialStatus": "approved",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/classroom-teacher-1"
+      },
+      "gs:editorialExplanation": "The term distinguishes instructional personnel from aides and staff whose main responsibility is management or administration, which is essential for comparable staffing measures.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/education"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/role"
+      },
+      "skos:altLabel": "Classroom teachers"
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/classroom-teacher-1",
+      "@type": [
+        "prov:Entity",
+        "gs:Definition"
+      ],
+      "rdf:value": "Professional teaching personnel primarily responsible for planning, organising, and conducting group learning activities that guide students' learning experiences.",
+      "dcterms:language": "en",
+      "dcterms:creator": {
+        "@id": "https://www.i2idl.org/"
+      },
+      "gs:editorialStatus": "approved",
+      "gs:definitionSequence": 1,
+      "gs:evidence": [
+        {
+          "@type": "gs:Evidence",
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/oecd-education-at-a-glance-2026",
+            "dcterms:title": "Education at a Glance 2026: OECD Indicators"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/oecd-education-at-a-glance-2026"
+          },
+          "gs:sourceLabel": "OECD — Education at a Glance 2026",
+          "gs:evidenceRelation": "direct",
+          "gs:citationDetail": "Chapter D5 · Definitions — Classroom teachers",
+          "schema:url": "https://www.oecd.org/en/publications/education-at-a-glance-2026_b4968bbc-en/full-report/what-are-the-main-characteristics-of-the-teaching-workforce-across-levels-of-education_b9d4aee7.html",
+          "gs:host": "OECD",
+          "gs:adaptationNotice": "This is an adaptation of an original work by the OECD.",
+          "gs:adaptationDisclaimer": "The opinions expressed and arguments employed in this adaptation should not be reported as representing the official views of the OECD or of its Member countries."
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/full-time-equivalent-teacher-fte",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "full-time-equivalent-teacher-fte",
+      "skos:prefLabel": "Full-time equivalent teacher (FTE)",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "schema:inDefinedTermSet": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:definition": "A standardised measure of teacher workload relative to full-time employment, expressed against the normal statutory working hours for the reference period.",
+      "gs:editorialStatus": "approved",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/full-time-equivalent-teacher-fte-1"
+      },
+      "gs:editorialExplanation": "FTE measures make staffing levels comparable when teachers work different schedules and allow ratios and workforce indicators to use a common workload unit.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/education"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/concept"
+      },
+      "skos:altLabel": [
+        "FTE teacher",
+        "Full-time equivalent teachers"
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/full-time-equivalent-teacher-fte-1",
+      "@type": [
+        "prov:Entity",
+        "gs:Definition"
+      ],
+      "rdf:value": "A standardised measure of teacher workload relative to full-time employment, expressed against the normal statutory working hours for the reference period.",
+      "dcterms:language": "en",
+      "dcterms:creator": {
+        "@id": "https://www.i2idl.org/"
+      },
+      "gs:editorialStatus": "approved",
+      "gs:definitionSequence": 1,
+      "gs:evidence": [
+        {
+          "@type": "gs:Evidence",
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/oecd-education-at-a-glance-2026",
+            "dcterms:title": "Education at a Glance 2026: OECD Indicators"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/oecd-education-at-a-glance-2026"
+          },
+          "gs:sourceLabel": "OECD — Education at a Glance 2026",
+          "gs:evidenceRelation": "direct",
+          "gs:citationDetail": "Chapter D5 · Definitions — Full-time equivalent teachers (FTE)",
+          "schema:url": "https://www.oecd.org/en/publications/education-at-a-glance-2026_b4968bbc-en/full-report/what-are-the-main-characteristics-of-the-teaching-workforce-across-levels-of-education_b9d4aee7.html",
+          "gs:host": "OECD",
+          "gs:adaptationNotice": "This is an adaptation of an original work by the OECD.",
+          "gs:adaptationDisclaimer": "The opinions expressed and arguments employed in this adaptation should not be reported as representing the official views of the OECD or of its Member countries."
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/fully-qualified-teacher",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "fully-qualified-teacher",
+      "skos:prefLabel": "Fully qualified teacher",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "schema:inDefinedTermSet": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:definition": "A teacher who has satisfied all training and administrative requirements for teaching a specified grade and subject under a country's formal policy.",
+      "gs:editorialStatus": "approved",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/fully-qualified-teacher-1"
+      },
+      "gs:editorialExplanation": "Qualification status is used in teacher-workforce indicators and helps distinguish staffing shortages from shortages of personnel who meet formal teaching requirements.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/education"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/role"
+      },
+      "skos:altLabel": "Fully qualified teachers"
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/fully-qualified-teacher-1",
+      "@type": [
+        "prov:Entity",
+        "gs:Definition"
+      ],
+      "rdf:value": "A teacher who has satisfied all training and administrative requirements for teaching a specified grade and subject under a country's formal policy.",
+      "dcterms:language": "en",
+      "dcterms:creator": {
+        "@id": "https://www.i2idl.org/"
+      },
+      "gs:editorialStatus": "approved",
+      "gs:definitionSequence": 1,
+      "gs:evidence": [
+        {
+          "@type": "gs:Evidence",
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/oecd-education-at-a-glance-2026",
+            "dcterms:title": "Education at a Glance 2026: OECD Indicators"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/oecd-education-at-a-glance-2026"
+          },
+          "gs:sourceLabel": "OECD — Education at a Glance 2026",
+          "gs:evidenceRelation": "direct",
+          "gs:citationDetail": "Chapter 1 · Definitions — Fully qualified teachers",
+          "schema:url": "https://www.oecd.org/en/publications/2026/09/education-at-a-glance-2026_3bce4131/full-report/teacher-shortages-and-the-attractiveness-of-the-teaching-profession_074961e4.html",
+          "gs:host": "OECD",
+          "gs:adaptationNotice": "This is an adaptation of an original work by the OECD.",
+          "gs:adaptationDisclaimer": "The opinions expressed and arguments employed in this adaptation should not be reported as representing the official views of the OECD or of its Member countries."
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/educational-institution",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "educational-institution",
+      "skos:prefLabel": "Educational institution",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "schema:inDefinedTermSet": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:definition": "An entity whose sole or principal purpose is to provide instructional services, or related clinical, community, or research services.",
+      "gs:editorialStatus": "approved",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/educational-institution-1"
+      },
+      "gs:editorialExplanation": "Educational institutions are a core unit of analysis for education provision, finance, staffing, infrastructure, and system organisation.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/education"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/institutional-concept"
+      },
+      "skos:altLabel": "Educational institutions"
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/educational-institution-1",
+      "@type": [
+        "prov:Entity",
+        "gs:Definition"
+      ],
+      "rdf:value": "An entity whose sole or principal purpose is to provide instructional services, or related clinical, community, or research services.",
+      "dcterms:language": "en",
+      "dcterms:creator": {
+        "@id": "https://www.i2idl.org/"
+      },
+      "gs:editorialStatus": "approved",
+      "gs:definitionSequence": 1,
+      "gs:evidence": [
+        {
+          "@type": "gs:Evidence",
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/oecd-education-at-a-glance-2026",
+            "dcterms:title": "Education at a Glance 2026: OECD Indicators"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/oecd-education-at-a-glance-2026"
+          },
+          "gs:sourceLabel": "OECD — Education at a Glance 2026",
+          "gs:evidenceRelation": "direct",
+          "gs:citationDetail": "Chapter B2 · Definitions — Educational institutions",
+          "schema:url": "https://www.oecd.org/en/publications/education-at-a-glance-2026_b4968bbc-en/full-report/how-is-school-provision-organised-across-education-levels_7aa6e36c.html",
+          "gs:host": "OECD",
+          "gs:adaptationNotice": "This is an adaptation of an original work by the OECD.",
+          "gs:adaptationDisclaimer": "The opinions expressed and arguments employed in this adaptation should not be reported as representing the official views of the OECD or of its Member countries."
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/early-childhood-education-and-care-ecec",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "early-childhood-education-and-care-ecec",
+      "skos:prefLabel": "Early childhood education and care (ECEC)",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "schema:inDefinedTermSet": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:definition": "Services and programmes that support the education, development, well-being, and care of young children before primary education, including ISCED level 0 programmes and regulated childcare outside the formal education system.",
+      "gs:editorialStatus": "approved",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/early-childhood-education-and-care-ecec-1"
+      },
+      "gs:editorialExplanation": "ECEC names the broader early-years service landscape and distinguishes it from the narrower category of programmes classified as formal early childhood education.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/education"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/concept"
+      },
+      "skos:altLabel": [
+        "ECEC",
+        "Early childhood education and care"
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/early-childhood-education-and-care-ecec-1",
+      "@type": [
+        "prov:Entity",
+        "gs:Definition"
+      ],
+      "rdf:value": "Services and programmes that support the education, development, well-being, and care of young children before primary education, including ISCED level 0 programmes and regulated childcare outside the formal education system.",
+      "dcterms:language": "en",
+      "dcterms:creator": {
+        "@id": "https://www.i2idl.org/"
+      },
+      "gs:editorialStatus": "approved",
+      "gs:definitionSequence": 1,
+      "gs:evidence": [
+        {
+          "@type": "gs:Evidence",
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/oecd-education-at-a-glance-2026",
+            "dcterms:title": "Education at a Glance 2026: OECD Indicators"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/oecd-education-at-a-glance-2026"
+          },
+          "gs:sourceLabel": "OECD — Education at a Glance 2026",
+          "gs:evidenceRelation": "direct",
+          "gs:citationDetail": "Chapter B1 · Definitions — Early childhood education and care (ECEC)",
+          "schema:url": "https://www.oecd.org/en/publications/education-at-a-glance-2026_b4968bbc-en/full-report/how-has-participation-in-early-childhood-education-and-care-evolved-across-age-groups-and-countries_ea5deac7.html",
+          "gs:host": "OECD",
+          "gs:adaptationNotice": "This is an adaptation of an original work by the OECD.",
+          "gs:adaptationDisclaimer": "The opinions expressed and arguments employed in this adaptation should not be reported as representing the official views of the OECD or of its Member countries."
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/early-childhood-education-ece",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "early-childhood-education-ece",
+      "skos:prefLabel": "Early childhood education (ECE)",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "schema:inDefinedTermSet": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:definition": "The educational component of early childhood education and care, comprising ISCED level 0 programmes with organised and intentional learning activities that support children's cognitive, physical, social, and emotional development.",
+      "gs:editorialStatus": "approved",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/early-childhood-education-ece-1"
+      },
+      "gs:editorialExplanation": "ECE distinguishes formally classified educational programmes from the broader mix of education and care services included within ECEC.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/education"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/concept"
+      },
+      "skos:altLabel": [
+        "ECE",
+        "Early childhood education"
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/early-childhood-education-ece-1",
+      "@type": [
+        "prov:Entity",
+        "gs:Definition"
+      ],
+      "rdf:value": "The educational component of early childhood education and care, comprising ISCED level 0 programmes with organised and intentional learning activities that support children's cognitive, physical, social, and emotional development.",
+      "dcterms:language": "en",
+      "dcterms:creator": {
+        "@id": "https://www.i2idl.org/"
+      },
+      "gs:editorialStatus": "approved",
+      "gs:definitionSequence": 1,
+      "gs:evidence": [
+        {
+          "@type": "gs:Evidence",
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/oecd-education-at-a-glance-2026",
+            "dcterms:title": "Education at a Glance 2026: OECD Indicators"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/oecd-education-at-a-glance-2026"
+          },
+          "gs:sourceLabel": "OECD — Education at a Glance 2026",
+          "gs:evidenceRelation": "direct",
+          "gs:citationDetail": "Chapter B1 · Definitions — Early childhood education (ECE)",
+          "schema:url": "https://www.oecd.org/en/publications/education-at-a-glance-2026_b4968bbc-en/full-report/how-has-participation-in-early-childhood-education-and-care-evolved-across-age-groups-and-countries_ea5deac7.html",
+          "gs:host": "OECD",
+          "gs:adaptationNotice": "This is an adaptation of an original work by the OECD.",
+          "gs:adaptationDisclaimer": "The opinions expressed and arguments employed in this adaptation should not be reported as representing the official views of the OECD or of its Member countries."
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/childcare-gap",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "childcare-gap",
+      "skos:prefLabel": "Childcare gap",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "schema:inDefinedTermSet": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:definition": "The period between the end of paid parental leave and the age at which children become legally entitled to access early childhood education and care services.",
+      "gs:editorialStatus": "approved",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/childcare-gap-1"
+      },
+      "gs:editorialExplanation": "The childcare gap makes continuity between family leave policy and guaranteed early childhood provision measurable across education and social-policy systems.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/education"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/concept"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/childcare-gap-1",
+      "@type": [
+        "prov:Entity",
+        "gs:Definition"
+      ],
+      "rdf:value": "The period between the end of paid parental leave and the age at which children become legally entitled to access early childhood education and care services.",
+      "dcterms:language": "en",
+      "dcterms:creator": {
+        "@id": "https://www.i2idl.org/"
+      },
+      "gs:editorialStatus": "approved",
+      "gs:definitionSequence": 1,
+      "gs:evidence": [
+        {
+          "@type": "gs:Evidence",
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/oecd-education-at-a-glance-2026",
+            "dcterms:title": "Education at a Glance 2026: OECD Indicators"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/oecd-education-at-a-glance-2026"
+          },
+          "gs:sourceLabel": "OECD — Education at a Glance 2026",
+          "gs:evidenceRelation": "direct",
+          "gs:citationDetail": "Chapter B1 · Definitions — Childcare gap",
+          "schema:url": "https://www.oecd.org/en/publications/education-at-a-glance-2026_b4968bbc-en/full-report/how-has-participation-in-early-childhood-education-and-care-evolved-across-age-groups-and-countries_ea5deac7.html",
+          "gs:host": "OECD",
+          "gs:adaptationNotice": "This is an adaptation of an original work by the OECD.",
+          "gs:adaptationDisclaimer": "The opinions expressed and arguments employed in this adaptation should not be reported as representing the official views of the OECD or of its Member countries."
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/formative-evaluation",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "formative-evaluation",
+      "skos:prefLabel": "Formative evaluation",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "schema:inDefinedTermSet": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:definition": "Evaluation primarily intended to provide feedback that can be used to improve teaching, management, implementation, or school effectiveness.",
+      "gs:editorialStatus": "approved",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/formative-evaluation-1"
+      },
+      "gs:editorialExplanation": "Formative evaluation distinguishes improvement-oriented uses of evaluation from summative uses focused on judgement, outcomes, or accountability.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/assessment-and-measurement"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/evaluation"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/formative-evaluation-1",
+      "@type": [
+        "prov:Entity",
+        "gs:Definition"
+      ],
+      "rdf:value": "Evaluation primarily intended to provide feedback that can be used to improve teaching, management, implementation, or school effectiveness.",
+      "dcterms:language": "en",
+      "dcterms:creator": {
+        "@id": "https://www.i2idl.org/"
+      },
+      "gs:editorialStatus": "approved",
+      "gs:definitionSequence": 1,
+      "gs:evidence": [
+        {
+          "@type": "gs:Evidence",
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/oecd-education-at-a-glance-2026",
+            "dcterms:title": "Education at a Glance 2026: OECD Indicators"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/oecd-education-at-a-glance-2026"
+          },
+          "gs:sourceLabel": "OECD — Education at a Glance 2026",
+          "gs:evidenceRelation": "direct",
+          "gs:citationDetail": "Chapter D6 · Definitions — Formative evaluation",
+          "schema:url": "https://www.oecd.org/en/publications/education-at-a-glance-2026_b4968bbc-en/full-report/what-school-evaluation-mechanisms-are-in-place_c5b860ea.html",
+          "gs:host": "OECD",
+          "gs:adaptationNotice": "This is an adaptation of an original work by the OECD.",
+          "gs:adaptationDisclaimer": "The opinions expressed and arguments employed in this adaptation should not be reported as representing the official views of the OECD or of its Member countries."
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/school-compliance-reporting",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "school-compliance-reporting",
+      "skos:prefLabel": "School compliance reporting",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "schema:inDefinedTermSet": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:definition": "Reports and forms provided to higher-level authorities as part of regulatory accountability requirements.",
+      "gs:editorialStatus": "approved",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/school-compliance-reporting-1"
+      },
+      "gs:editorialExplanation": "The term identifies a specific accountability mechanism through which schools document compliance for education authorities and regulatory oversight.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/enterprise-and-governance"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/process"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/school-compliance-reporting-1",
+      "@type": [
+        "prov:Entity",
+        "gs:Definition"
+      ],
+      "rdf:value": "Reports and forms provided to higher-level authorities as part of regulatory accountability requirements.",
+      "dcterms:language": "en",
+      "dcterms:creator": {
+        "@id": "https://www.i2idl.org/"
+      },
+      "gs:editorialStatus": "approved",
+      "gs:definitionSequence": 1,
+      "gs:evidence": [
+        {
+          "@type": "gs:Evidence",
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/oecd-education-at-a-glance-2026",
+            "dcterms:title": "Education at a Glance 2026: OECD Indicators"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/oecd-education-at-a-glance-2026"
+          },
+          "gs:sourceLabel": "OECD — Education at a Glance 2026",
+          "gs:evidenceRelation": "direct",
+          "gs:citationDetail": "Chapter D6 · Definitions — School compliance reporting",
+          "schema:url": "https://www.oecd.org/en/publications/education-at-a-glance-2026_b4968bbc-en/full-report/what-school-evaluation-mechanisms-are-in-place_c5b860ea.html",
+          "gs:host": "OECD",
+          "gs:adaptationNotice": "This is an adaptation of an original work by the OECD.",
+          "gs:adaptationDisclaimer": "The opinions expressed and arguments employed in this adaptation should not be reported as representing the official views of the OECD or of its Member countries."
         }
       ]
     },
