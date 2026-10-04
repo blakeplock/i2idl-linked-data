@@ -174,6 +174,7 @@ function checkRateLimit(request) {
     for (const [bucketKey, value] of rateBuckets) {
       if (now >= value.resetAt) rateBuckets.delete(bucketKey);
     }
+
     // Bound memory even during a burst of many distinct client addresses.
     if (rateBuckets.size > 10000) {
       rateBuckets.clear();
@@ -182,7 +183,10 @@ function checkRateLimit(request) {
   }
 
   const remaining = Math.max(0, RATE_LIMIT_MAX - bucket.count);
-  const resetSeconds = Math.max(1, Math.ceil((bucket.resetAt - now) / 1000));
+  const resetSeconds = Math.max(
+    1,
+    Math.ceil((bucket.resetAt - now) / 1000)
+  );
 
   const headers = {
     'RateLimit-Limit': String(RATE_LIMIT_MAX),
@@ -217,6 +221,7 @@ function checkDeadline(deadline) {
 
 function promiseWithDeadline(promise, deadline) {
   let timeout;
+
   const remaining = Math.max(1, deadline - Date.now());
 
   const timeoutPromise = new Promise((_, reject) => {
@@ -235,8 +240,14 @@ function promiseWithDeadline(promise, deadline) {
 }
 
 async function readBodyLimited(request) {
-  const declaredLength = Number(request.headers.get('content-length') || 0);
-  if (Number.isFinite(declaredLength) && declaredLength > MAX_POST_BODY_BYTES) {
+  const declaredLength = Number(
+    request.headers.get('content-length') || 0
+  );
+
+  if (
+    Number.isFinite(declaredLength) &&
+    declaredLength > MAX_POST_BODY_BYTES
+  ) {
     throw new PayloadTooLargeError();
   }
 
@@ -249,11 +260,16 @@ async function readBodyLimited(request) {
   try {
     while (true) {
       const { done, value } = await reader.read();
+
       if (done) break;
 
       total += value.byteLength;
+
       if (total > MAX_POST_BODY_BYTES) {
-        try { await reader.cancel(); } catch (_) {}
+        try {
+          await reader.cancel();
+        } catch (_) {}
+
         throw new PayloadTooLargeError();
       }
 
@@ -264,13 +280,18 @@ async function readBodyLimited(request) {
   }
 
   const merged = new Uint8Array(total);
+
   let offset = 0;
+
   for (const chunk of chunks) {
     merged.set(chunk, offset);
     offset += chunk.byteLength;
   }
 
-  return new TextDecoder('utf-8', { fatal: false }).decode(merged);
+  return new TextDecoder(
+    'utf-8',
+    { fatal: false }
+  ).decode(merged);
 }
 
 async function getQuery(request) {
@@ -281,7 +302,9 @@ async function getQuery(request) {
     return raw.replace(/\+/g, ' ');
   }
 
-  const contentType = (request.headers.get('content-type') || '')
+  const contentType = (
+    request.headers.get('content-type') || ''
+  )
     .split(';', 1)[0]
     .trim()
     .toLowerCase();
@@ -310,18 +333,23 @@ async function getQuery(request) {
 
   if (contentType === 'application/x-www-form-urlencoded') {
     const params = new URLSearchParams(body);
-    return (params.get('query') || '').replace(/\+/g, ' ');
+
+    return (params.get('query') || '')
+      .replace(/\+/g, ' ');
   }
 
   if (contentType === 'application/json') {
     let parsed;
+
     try {
       parsed = JSON.parse(body || '{}');
     } catch (_) {
       return '';
     }
 
-    return typeof parsed?.query === 'string' ? parsed.query : '';
+    return typeof parsed?.query === 'string'
+      ? parsed.query
+      : '';
   }
 
   return '';
@@ -338,31 +366,43 @@ function keywordScanText(query) {
     const ch = query[i];
 
     if (ch === '#') {
-      while (i < query.length && query[i] !== '\n') i += 1;
+      while (
+        i < query.length &&
+        query[i] !== '\n'
+      ) {
+        i += 1;
+      }
+
       out += '\n';
       continue;
     }
 
     if (ch === '<') {
       i += 1;
+
       while (i < query.length) {
         if (query[i] === '\\') {
           i += 2;
           continue;
         }
+
         if (query[i] === '>') {
           i += 1;
           break;
         }
+
         i += 1;
       }
+
       out += ' ';
       continue;
     }
 
     if (ch === '"' || ch === "'") {
       const quote = ch;
-      const triple = query.slice(i, i + 3) === quote.repeat(3);
+      const triple =
+        query.slice(i, i + 3) === quote.repeat(3);
+
       i += triple ? 3 : 1;
 
       while (i < query.length) {
@@ -370,14 +410,23 @@ function keywordScanText(query) {
           i += 2;
           continue;
         }
-        if (triple && query.slice(i, i + 3) === quote.repeat(3)) {
+
+        if (
+          triple &&
+          query.slice(i, i + 3) === quote.repeat(3)
+        ) {
           i += 3;
           break;
         }
-        if (!triple && query[i] === quote) {
+
+        if (
+          !triple &&
+          query[i] === quote
+        ) {
           i += 1;
           break;
         }
+
         i += 1;
       }
 
@@ -390,24 +439,215 @@ function keywordScanText(query) {
   }
 
   return out
-    .replace(/[?$][A-Za-z_][A-Za-z0-9_-]*/g, ' ')
-    .replace(/\b[A-Za-z_][A-Za-z0-9_-]*:[A-Za-z0-9_.~-]+/g, ' ');
+    .replace(
+      /[?$][A-Za-z_][A-Za-z0-9_-]*/g,
+      ' '
+    )
+    .replace(
+      /\b[A-Za-z_][A-Za-z0-9_-]*:[A-Za-z0-9_.~-]+/g,
+      ' '
+    );
 }
 
 function queryType(query) {
-  const cleaned = query
-    .replace(/^\s*#.*$/gm, '')
-    .trim();
+  let i = 0;
+  const length = query.length;
 
-  const match = cleaned.match(
-    /^(?:(?:PREFIX\s+\S+:\s*<[^>]+>|BASE\s+<[^>]+>)\s*)*(SELECT|ASK|CONSTRUCT|DESCRIBE)\b/i
-  );
+  const isWhitespace = (ch) =>
+    ch === ' ' ||
+    ch === '\t' ||
+    ch === '\n' ||
+    ch === '\r' ||
+    ch === '\f';
 
-  return match ? match[1].toUpperCase() : null;
+  const skipWhitespaceAndComments = () => {
+    while (i < length) {
+      while (
+        i < length &&
+        isWhitespace(query[i])
+      ) {
+        i += 1;
+      }
+
+      if (query[i] !== '#') {
+        break;
+      }
+
+      while (
+        i < length &&
+        query[i] !== '\n' &&
+        query[i] !== '\r'
+      ) {
+        i += 1;
+      }
+    }
+  };
+
+  const matchesKeyword = (keyword) => {
+    const end = i + keyword.length;
+
+    if (
+      query
+        .slice(i, end)
+        .toUpperCase() !== keyword
+    ) {
+      return false;
+    }
+
+    const next = query[end];
+
+    return (
+      next === undefined ||
+      !/[A-Za-z0-9_]/.test(next)
+    );
+  };
+
+  const consumeKeyword = (keyword) => {
+    if (!matchesKeyword(keyword)) {
+      return false;
+    }
+
+    i += keyword.length;
+    return true;
+  };
+
+  const consumeIriRef = () => {
+    if (query[i] !== '<') {
+      return false;
+    }
+
+    i += 1;
+
+    while (i < length) {
+      const ch = query[i];
+
+      if (ch === '>') {
+        i += 1;
+        return true;
+      }
+
+      if (
+        ch === '\n' ||
+        ch === '\r'
+      ) {
+        return false;
+      }
+
+      i += 1;
+    }
+
+    return false;
+  };
+
+  const consumePrefixLabel = () => {
+    if (query[i] === ':') {
+      i += 1;
+      return true;
+    }
+
+    const start = i;
+
+    while (
+      i < length &&
+      !isWhitespace(query[i]) &&
+      query[i] !== ':'
+    ) {
+      if (
+        query[i] === '<' ||
+        query[i] === '>' ||
+        query[i] === '#'
+      ) {
+        return false;
+      }
+
+      i += 1;
+    }
+
+    if (
+      i === start ||
+      query[i] !== ':'
+    ) {
+      return false;
+    }
+
+    i += 1;
+    return true;
+  };
+
+  skipWhitespaceAndComments();
+
+  while (i < length) {
+    const beforeDeclaration = i;
+
+    if (consumeKeyword('PREFIX')) {
+      if (
+        i >= length ||
+        !isWhitespace(query[i])
+      ) {
+        return null;
+      }
+
+      skipWhitespaceAndComments();
+
+      if (!consumePrefixLabel()) {
+        return null;
+      }
+
+      skipWhitespaceAndComments();
+
+      if (!consumeIriRef()) {
+        return null;
+      }
+
+      skipWhitespaceAndComments();
+      continue;
+    }
+
+    i = beforeDeclaration;
+
+    if (consumeKeyword('BASE')) {
+      if (
+        i >= length ||
+        !isWhitespace(query[i])
+      ) {
+        return null;
+      }
+
+      skipWhitespaceAndComments();
+
+      if (!consumeIriRef()) {
+        return null;
+      }
+
+      skipWhitespaceAndComments();
+      continue;
+    }
+
+    i = beforeDeclaration;
+    break;
+  }
+
+  for (
+    const type of [
+      'SELECT',
+      'ASK',
+      'CONSTRUCT',
+      'DESCRIBE'
+    ]
+  ) {
+    if (matchesKeyword(type)) {
+      return type;
+    }
+  }
+
+  return null;
 }
 
 function validateQuery(query) {
-  if (typeof query !== 'string' || !query.trim()) {
+  if (
+    typeof query !== 'string' ||
+    !query.trim()
+  ) {
     return 'Missing SPARQL query.';
   }
 
@@ -427,7 +667,10 @@ function validateQuery(query) {
 
   const type = queryType(query);
 
-  if (!type || !ALLOWED_QUERY_TYPES.has(type)) {
+  if (
+    !type ||
+    !ALLOWED_QUERY_TYPES.has(type)
+  ) {
     return 'Only SELECT, ASK, CONSTRUCT, and DESCRIBE queries are permitted.';
   }
 
@@ -438,18 +681,35 @@ async function loadStore(request, deadline) {
   checkDeadline(deadline);
 
   // Fixed same-origin URL only. User input is never used to form this fetch.
-  const graphUrl = new URL('/glossary.jsonld', request.url);
-  const response = await promiseWithDeadline(fetch(graphUrl), deadline);
+  const graphUrl =
+    new URL('/glossary.jsonld', request.url);
+
+  const response =
+    await promiseWithDeadline(
+      fetch(graphUrl),
+      deadline
+    );
 
   if (!response.ok) {
-    throw new Error(`Unable to load glossary graph (${response.status})`);
+    throw new Error(
+      `Unable to load glossary graph (${response.status})`
+    );
   }
 
-  const jsonldText = await promiseWithDeadline(response.text(), deadline);
+  const jsonldText =
+    await promiseWithDeadline(
+      response.text(),
+      deadline
+    );
+
   checkDeadline(deadline);
 
   const parser = new ParserJsonld();
-  const quadStream = parser.import(Readable.from([jsonldText]));
+  const quadStream =
+    parser.import(
+      Readable.from([jsonldText])
+    );
+
   const store = new Store();
 
   for await (const quad of quadStream) {
@@ -460,13 +720,19 @@ async function loadStore(request, deadline) {
   return store;
 }
 
-async function bindingsToJson(result, deadline) {
+async function bindingsToJson(
+  result,
+  deadline
+) {
   const bindings = [];
 
   for await (const binding of result) {
     checkDeadline(deadline);
 
-    if (bindings.length >= MAX_RESULT_ROWS) {
+    if (
+      bindings.length >=
+      MAX_RESULT_ROWS
+    ) {
       throw new ResultLimitError(
         `SELECT result exceeds the ${MAX_RESULT_ROWS}-row limit.`
       );
@@ -474,7 +740,10 @@ async function bindingsToJson(result, deadline) {
 
     const row = {};
 
-    for (const [variable, term] of binding) {
+    for (
+      const [variable, term]
+      of binding
+    ) {
       row[variable.value] = {
         type:
           term.termType === 'Literal'
@@ -485,13 +754,17 @@ async function bindingsToJson(result, deadline) {
         value: term.value
       };
 
-      if (term.termType === 'Literal') {
+      if (
+        term.termType === 'Literal'
+      ) {
         if (term.language) {
-          row[variable.value]['xml:lang'] = term.language;
+          row[variable.value]['xml:lang'] =
+            term.language;
         }
 
         if (term.datatype?.value) {
-          row[variable.value].datatype = term.datatype.value;
+          row[variable.value].datatype =
+            term.datatype.value;
         }
       }
     }
@@ -502,7 +775,10 @@ async function bindingsToJson(result, deadline) {
   return bindings;
 }
 
-async function quadsToTurtle(result, deadline) {
+async function quadsToTurtle(
+  result,
+  deadline
+) {
   const writer = new Writer({
     format: 'text/turtle'
   });
@@ -512,7 +788,9 @@ async function quadsToTurtle(result, deadline) {
   for await (const quad of result) {
     checkDeadline(deadline);
 
-    if (count >= MAX_GRAPH_QUADS) {
+    if (
+      count >= MAX_GRAPH_QUADS
+    ) {
       throw new ResultLimitError(
         `Graph result exceeds the ${MAX_GRAPH_QUADS}-quad limit.`
       );
@@ -523,12 +801,19 @@ async function quadsToTurtle(result, deadline) {
   }
 
   return await promiseWithDeadline(
-    new Promise((resolve, reject) => {
-      writer.end((error, output) => {
-        if (error) reject(error);
-        else resolve(output);
-      });
-    }),
+    new Promise(
+      (resolve, reject) => {
+        writer.end(
+          (error, output) => {
+            if (error) {
+              reject(error);
+            } else {
+              resolve(output);
+            }
+          }
+        );
+      }
+    ),
     deadline
   );
 }
@@ -599,19 +884,46 @@ WHERE {
     <h1>I2IDL SPARQL Endpoint</h1>
     <p class="meta">Read-only SPARQL access to the I2IDL Digital Learning Glossary.</p>
     <div class="notice">Supported query forms: SELECT, ASK, CONSTRUCT, and DESCRIBE. SPARQL Update, SERVICE, and remote-dataset clauses are disabled. Queries are subject to execution, result, request-size, and rate limits.</div>
+
     <form method="get" action="/sparql">
       <label for="query">SPARQL query</label>
       <textarea id="query" name="query">${exampleSelect}</textarea>
       <button type="submit">Run query</button>
     </form>
+
     <div class="examples">
-      <details><summary>Example SELECT query</summary><pre>${exampleSelect}</pre></details>
-      <details><summary>Example ASK query</summary><pre>${exampleAsk}</pre></details>
-      <details><summary>Example CONSTRUCT query</summary><pre>${exampleConstruct}</pre></details>
-      <details><summary>Example DESCRIBE query</summary><pre>${exampleDescribe}</pre></details>
+      <details>
+        <summary>Example SELECT query</summary>
+        <pre>${exampleSelect}</pre>
+      </details>
+
+      <details>
+        <summary>Example ASK query</summary>
+        <pre>${exampleAsk}</pre>
+      </details>
+
+      <details>
+        <summary>Example CONSTRUCT query</summary>
+        <pre>${exampleConstruct}</pre>
+      </details>
+
+      <details>
+        <summary>Example DESCRIBE query</summary>
+        <pre>${exampleDescribe}</pre>
+      </details>
     </div>
-    <p style="margin-top:32px">Full JSON-LD graph: <a href="/glossary.jsonld">/glossary.jsonld</a></p>
-    <p>Human-readable glossary: <a href="https://www.i2idl.org/glossary">www.i2idl.org/glossary</a></p>
+
+    <p style="margin-top:32px">
+      Full JSON-LD graph:
+      <a href="/glossary.jsonld">/glossary.jsonld</a>
+    </p>
+
+    <p>
+      Human-readable glossary:
+      <a href="https://www.i2idl.org/glossary">
+        www.i2idl.org/glossary
+      </a>
+    </p>
   </main>
 </body>
 </html>`;
@@ -619,51 +931,103 @@ WHERE {
 
 export default {
   async fetch(request) {
-    if (request.method === 'OPTIONS') {
-      return new Response(null, {
-        status: 204,
-        headers: corsHeaders()
-      });
+    if (
+      request.method === 'OPTIONS'
+    ) {
+      return new Response(
+        null,
+        {
+          status: 204,
+          headers: corsHeaders()
+        }
+      );
     }
 
-    if (!['GET', 'POST'].includes(request.method)) {
-      return textResponse('Method Not Allowed', 405);
+    if (
+      ![
+        'GET',
+        'POST'
+      ].includes(request.method)
+    ) {
+      return textResponse(
+        'Method Not Allowed',
+        405
+      );
     }
 
-    const rateLimit = checkRateLimit(request);
-    if (rateLimit instanceof Response) return rateLimit;
+    const rateLimit =
+      checkRateLimit(request);
+
+    if (
+      rateLimit instanceof Response
+    ) {
+      return rateLimit;
+    }
 
     try {
-      const query = await getQuery(request);
+      const query =
+        await getQuery(request);
 
-      if (request.method === 'GET' && !query.trim()) {
-        return htmlResponse(browserInterface());
+      if (
+        request.method === 'GET' &&
+        !query.trim()
+      ) {
+        return htmlResponse(
+          browserInterface()
+        );
       }
 
-      const validationError = validateQuery(query);
+      const validationError =
+        validateQuery(query);
 
       if (validationError) {
-        return jsonResponse({ error: validationError }, 400);
+        return jsonResponse(
+          { error: validationError },
+          400
+        );
       }
 
-      const type = queryType(query);
-      const deadline = deadlineFromNow();
-      const store = await loadStore(request, deadline);
+      const type =
+        queryType(query);
 
-      if (type === 'SELECT') {
-        const result = await promiseWithDeadline(
-          engine.queryBindings(query, { sources: [store] }),
+      const deadline =
+        deadlineFromNow();
+
+      const store =
+        await loadStore(
+          request,
           deadline
         );
 
-        const bindings = await bindingsToJson(result, deadline);
+      if (type === 'SELECT') {
+        const result =
+          await promiseWithDeadline(
+            engine.queryBindings(
+              query,
+              { sources: [store] }
+            ),
+            deadline
+          );
+
+        const bindings =
+          await bindingsToJson(
+            result,
+            deadline
+          );
 
         return jsonResponse(
           {
             head: {
-              vars: bindings.length ? Object.keys(bindings[0]) : []
+              vars:
+                bindings.length
+                  ? Object.keys(
+                      bindings[0]
+                    )
+                  : []
             },
-            results: { bindings }
+            results: {
+              bindings
+            }
           },
           200,
           'application/sparql-results+json; charset=utf-8'
@@ -671,25 +1035,43 @@ export default {
       }
 
       if (type === 'ASK') {
-        const boolean = await promiseWithDeadline(
-          engine.queryBoolean(query, { sources: [store] }),
-          deadline
-        );
+        const boolean =
+          await promiseWithDeadline(
+            engine.queryBoolean(
+              query,
+              { sources: [store] }
+            ),
+            deadline
+          );
 
         return jsonResponse(
-          { head: {}, boolean },
+          {
+            head: {},
+            boolean
+          },
           200,
           'application/sparql-results+json; charset=utf-8'
         );
       }
 
-      if (type === 'CONSTRUCT' || type === 'DESCRIBE') {
-        const result = await promiseWithDeadline(
-          engine.queryQuads(query, { sources: [store] }),
-          deadline
-        );
+      if (
+        type === 'CONSTRUCT' ||
+        type === 'DESCRIBE'
+      ) {
+        const result =
+          await promiseWithDeadline(
+            engine.queryQuads(
+              query,
+              { sources: [store] }
+            ),
+            deadline
+          );
 
-        const turtle = await quadsToTurtle(result, deadline);
+        const turtle =
+          await quadsToTurtle(
+            result,
+            deadline
+          );
 
         return textResponse(
           turtle,
@@ -698,27 +1080,63 @@ export default {
         );
       }
 
-      return jsonResponse({ error: 'Unsupported query type.' }, 400);
+      return jsonResponse(
+        {
+          error:
+            'Unsupported query type.'
+        },
+        400
+      );
     } catch (error) {
       console.error(error);
 
-      if (error instanceof PayloadTooLargeError) {
-        return jsonResponse({ error: error.message }, 413);
+      if (
+        error instanceof
+        PayloadTooLargeError
+      ) {
+        return jsonResponse(
+          { error: error.message },
+          413
+        );
       }
 
-      if (error instanceof UnsupportedMediaTypeError) {
-        return jsonResponse({ error: error.message }, 415);
+      if (
+        error instanceof
+        UnsupportedMediaTypeError
+      ) {
+        return jsonResponse(
+          { error: error.message },
+          415
+        );
       }
 
-      if (error instanceof QueryTimeoutError) {
-        return jsonResponse({ error: error.message }, 408);
+      if (
+        error instanceof
+        QueryTimeoutError
+      ) {
+        return jsonResponse(
+          { error: error.message },
+          408
+        );
       }
 
-      if (error instanceof ResultLimitError) {
-        return jsonResponse({ error: error.message }, 413);
+      if (
+        error instanceof
+        ResultLimitError
+      ) {
+        return jsonResponse(
+          { error: error.message },
+          413
+        );
       }
 
-      return jsonResponse({ error: 'SPARQL query failed.' }, 500);
+      return jsonResponse(
+        {
+          error:
+            'SPARQL query failed.'
+        },
+        500
+      );
     }
   }
 };
