@@ -21,7 +21,7 @@
       "dcterms:rights": "Mixed rights. I2IDL-original material defaults to CC BY 4.0; source-specific rights are preserved at the source and evidence level.",
       "gs:editorialStatus": "approved",
       "gs:semanticProfileVersion": "0.4.0",
-      "gs:publicationVersion": "v0.0.74",
+      "gs:publicationVersion": "v0.0.75",
       "gs:baseUri": "https://id.i2idl.org"
     },
     {
@@ -216,6 +216,27 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/trustworthy-ai-for-education"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-competency-progression"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-for-professional-development"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-pedagogy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-tool-validation-for-education"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-assisted-teaching"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-enhanced-pedagogical-innovation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-pedagogy-integration"
         }
       ]
     },
@@ -292,6 +313,18 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/formative-evaluation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-evaluation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/fairness"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1484-20-2-2022-defining-competencies"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/mastery-learning"
         }
       ]
     },
@@ -438,6 +471,144 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/xapi-timestamp"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/activity"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/actor"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-analysis"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-analytics"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-mining"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-ownership"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-informed-decision-making"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/document-profile-resource"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/evidence-based-decision-making"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1484-11-1-2022-content-object-communication"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1484-12-1-2020-learning-object-metadata"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1484-12-3-2020-xml-binding-learning-object-metadata"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1484-20-3-2022-shareable-competency-definitions"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1589-2020-ar-learning-experience-model"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-2881-2025-learning-metadata-terms"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-9274-1-1-2023-xapi"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-learning-technology-standards-committee-ltsc"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/interoperability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/inverse-functional-identifier-ifi"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/json"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/json-ld"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/laser-national-education-statistical-capacity-assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-analytics"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-metadata"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-record-consumer-lrc"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/linked-data"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/metadata-consumer"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/metadata-provider"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/metadata-tagging"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/open-standards-and-architecture-for-interoperability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/profile-server"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/profile-validator"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/profile-based-statement-conformance"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/resource-description-framework-rdf"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/rest-api"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/result-object"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/semantic-interoperability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/signed-statement"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/sparql"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-authority"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-client"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-concurrency-control"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-extension"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-pattern"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-profile"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-statement"
         }
       ]
     },
@@ -533,6 +704,48 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/childcare-gap"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-competency-framework-for-teachers-ai-cft"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-explainability-in-education"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-literacy-for-teachers"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-tool-validation-for-education"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-assisted-teaching"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-enhanced-pedagogical-innovation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-pedagogy-integration"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/create-ai-competency-level"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/deepen-ai-competency-level"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/distributed-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/edtech-ecosystem"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-centered-education"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/open-educational-resources-oer"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/formative-evaluation"
         }
       ]
     },
@@ -604,6 +817,66 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/xapi-concurrency-control"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/context-object"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/continuous-integration"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/design-decision-making"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/document-profile-resource"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/endpoint"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1484-11-1-2022-content-object-communication"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1484-11-2-2020-ecmascript-runtime-api"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-9274-1-1-2023-xapi"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/interoperability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-engineering"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-engineering-team"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-record-provider-lrp"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/metadata-provider"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/open-standards-and-architecture-for-interoperability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/privacy-by-design"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/profile-server"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/rest-api"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/total-learning-architecture-tla"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/virtual-classroom"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-client"
         }
       ]
     },
@@ -723,6 +996,60 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/school-compliance-reporting"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-literacy-for-teachers"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-silo"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/deepen-ai-competency-level"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/education-data-ecosystem"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/education-statistical-capacity"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/education-technology-edtech"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-planning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-policy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/enterprise-learner-record"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ethics-of-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-accountability-in-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-centred-approach-to-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-centred-mindset"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-controlled-ai-in-education"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-3527-1-2020-digital-intelligence-framework"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/responsible-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/safe-and-responsible-use-of-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/trustworthy-ai-for-education"
         }
       ]
     },
@@ -803,6 +1130,63 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/user-directed-customization"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/challenge-identification"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/contextual-factor"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/creation-phase"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/cross-domain-collaboration"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/design-decision"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/design-decision-making"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/design-judgment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/design-build-cycle"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/iterative-design"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-engineering"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-engineering-process"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-engineering-team"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/personalization"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/personalized-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/problem-space"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/reflective-design-documentation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/source-of-influence"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/stakeholder-engagement"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/stakeholder-requirement"
         }
       ]
     },
@@ -838,6 +1222,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/predictive-modeling"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-informed-decision-making"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/machine-learning"
         }
       ]
     },
@@ -1068,6 +1458,57 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/learner-variability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/accessibility-and-inclusivity-testing"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/engineering-design"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/experiential-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-centered-design"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-analytics"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-community"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-environment-engineering"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-experience-design-lxd"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/personalized-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/prototype"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/rapid-prototyping"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/technology-affordance"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/technology-constraint"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/usability-testing"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/co-design"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/equitable-co-design"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/contextually-rich-learning-environment"
         }
       ]
     },
@@ -1265,6 +1706,21 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/stakeholder-engagement"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/cognitive-walkthrough"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-centred-mindset"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-teaching-and-training"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/practitioner-expertise"
         }
       ]
     },
@@ -1480,6 +1936,93 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/xapi-statement"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/about-resource"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/account-object"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/activity-definition"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/activity-profile-resource"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/agent-profile-resource"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/anonymous-group"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/attachment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/context-activities"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/context-agent"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/context-group"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/context-object"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/identified-group"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-record-provider-lrp"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-record-store-lrs"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/person-object"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/signed-statement"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/state-resource"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/statement-immutability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/statement-reference"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/statement-resource"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/substatement"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/voided-statement"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-agent"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-authority"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-concurrency-control"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-document"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-duration"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-group"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-timestamp"
         }
       ]
     },
