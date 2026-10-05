@@ -118,6 +118,54 @@ for (const node of list) {
 const concepts = list.filter(node => asArray(node?.['@type']).includes('skos:Concept'));
 const definitions = list.filter(node => asArray(node?.['@type']).includes('gs:Definition'));
 const sources = list.filter(node => String(node?.['@id'] || '').startsWith(`${BASE}/sources/`));
+const collections = list.filter(node => asArray(node?.['@type']).includes('skos:Collection'));
+const fieldCollections = collections.filter(node => node?.['gs:facet'] === 'field');
+
+for (const collection of collections) {
+  const id = collection['@id'];
+  const members = asArray(collection['skos:member']);
+  const seenMembers = new Set();
+
+  for (let index = 0; index < members.length; index += 1) {
+    const memberId = refId(members[index]);
+    const label = `${id} skos:member[${index}]`;
+
+    if (!memberId) {
+      fail(`${label}: missing @id`);
+      continue;
+    }
+
+    if (seenMembers.has(memberId)) {
+      fail(`${id}: duplicate skos:member ${memberId}`);
+      continue;
+    }
+    seenMembers.add(memberId);
+
+    const member = byId.get(memberId);
+    if (!member) {
+      fail(`${label}: referenced concept does not exist: ${memberId}`);
+      continue;
+    }
+
+    if (!asArray(member['@type']).includes('skos:Concept')) {
+      fail(`${label}: referenced node is not a skos:Concept: ${memberId}`);
+    }
+  }
+}
+
+const fieldMembershipsByConcept = new Map();
+
+for (const collection of fieldCollections) {
+  for (const memberRef of asArray(collection['skos:member'])) {
+    const memberId = refId(memberRef);
+    if (!memberId) continue;
+
+    if (!fieldMembershipsByConcept.has(memberId)) {
+      fieldMembershipsByConcept.set(memberId, new Set());
+    }
+    fieldMembershipsByConcept.get(memberId).add(collection['@id']);
+  }
+}
 
 for (const source of sources) {
   const id = source['@id'];
@@ -137,11 +185,22 @@ for (const source of sources) {
 for (const concept of concepts) {
   const id = concept['@id'];
   const definitionId = refId(concept['gs:activeDefinition']);
+  const primaryFieldId = refId(concept['gs:fieldCollection']);
 
   if (!definitionId) {
     fail(`${id}: missing gs:activeDefinition`);
   } else if (!byId.has(definitionId)) {
     fail(`${id}: active definition does not resolve: ${definitionId}`);
+  }
+
+  if (primaryFieldId) {
+    const primaryField = byId.get(primaryFieldId);
+
+    if (!primaryField || !asArray(primaryField['@type']).includes('skos:Collection')) {
+      fail(`${id}: gs:fieldCollection does not resolve to a skos:Collection: ${primaryFieldId}`);
+    } else if (!fieldMembershipsByConcept.get(id)?.has(primaryFieldId)) {
+      fail(`${id}: primary gs:fieldCollection does not include the concept as skos:member`);
+    }
   }
 }
 
@@ -202,8 +261,6 @@ for (const definition of definitions) {
   }
 }
 
-// Enforce safe URL schemes anywhere the semantic model uses the URL fields that
-// are rendered as clickable links in the human glossary.
 function validateUrlFields(value, path = '$') {
   if (Array.isArray(value)) {
     value.forEach((item, index) => validateUrlFields(item, `${path}[${index}]`));
@@ -222,12 +279,18 @@ function validateUrlFields(value, path = '$') {
 
 validateUrlFields(graph);
 
+const multiFieldConcepts = [...fieldMembershipsByConcept.values()]
+  .filter(collectionIds => collectionIds.size > 1)
+  .length;
+
 console.log('I2IDL Glossary Validation');
 console.log('');
 console.log(`${concepts.length} concepts`);
 console.log(`${definitions.length} definitions`);
 console.log(`${sources.length} sources`);
 console.log(`${evidenceCount} evidence records`);
+console.log(`${collections.length} collections`);
+console.log(`${multiFieldConcepts} concepts in multiple field collections`);
 console.log('');
 
 for (const warning of warnings) {
@@ -244,6 +307,9 @@ if (failures.length) {
 
 console.log('PASS: inline JSON-LD context only');
 console.log('PASS: canonical identifiers are unique and safe');
+console.log('PASS: collection members resolve to concepts and contain no duplicates');
+console.log('PASS: primary field memberships are internally consistent');
+console.log('PASS: concepts may belong to multiple field collections');
 console.log('PASS: all active definitions resolve');
 console.log('PASS: all evidence records have complete provenance');
 console.log('PASS: all evidence relations are classified');
