@@ -20,7 +20,7 @@ SPARQL endpoint:
 https://id.i2idl.org/sparql
 ```
 
-**Current glossary release:** `v0.0.68`
+**Current glossary release:** `v0.0.75`
 
 ## Architecture
 
@@ -55,13 +55,13 @@ The human-facing glossary and the machine-readable graph are versioned together 
 
 The glossary uses JSON-LD 1.1 as its canonical interchange representation. Its semantic model is based primarily on established vocabularies and standards:
 
-- **SKOS** for concepts, concept schemes, preferred and alternate labels, definitions, and semantic relationships
+- **SKOS** for concepts, concept schemes, preferred and alternate labels, definitions, semantic relationships, and collections
 - **Schema.org** for `DefinedTerm` and `DefinedTermSet`
 - **Dublin Core Terms** for titles, creators, sources, dates, rights, publishers, and bibliographic metadata
 - **PROV-O** for provenance and derivation
 - **Glossary Studio namespace** for application-specific properties that do not belong in the standard vocabularies above
 
-A glossary concept has a stable identifier independent of any particular wording of its definition. Definitions, evidence, sources, classifications, and relationships can therefore be maintained as connected records rather than collapsed into a single display card.
+A glossary concept has a stable identifier independent of any particular wording of its definition. Definitions, evidence, sources, classifications, collection memberships, and relationships can therefore be maintained as connected records rather than collapsed into a single display card.
 
 Definitions are first-class graph entities. Evidence records distinguish between `direct` and `supporting` source relationships and preserve source identifiers, source titles, citation details, URLs, and provenance.
 
@@ -70,6 +70,75 @@ The canonical concept scheme identifier is:
 ```text
 https://id.i2idl.org/scheme
 ```
+
+## Multi-collection concept model
+
+Beginning with `v0.0.74`, the glossary supports many-to-many membership between concepts and SKOS collections.
+
+A concept keeps one stable URI and one editorially designated primary field while also participating in multiple collections when the concept has substantive relevance across domains.
+
+For example, a concept such as:
+
+```text
+https://id.i2idl.org/concepts/data-informed-decision-making
+```
+
+can be a member of multiple field collections without duplicating the concept record or changing its identifier.
+
+This allows the graph to represent intersections among domains such as:
+
+- Learning Engineering
+- Learning Sciences
+- Data & Instrumentation
+- Learning Analytics
+- Human-Centered Design
+- Standards & Interoperability
+- Engineering & Systems
+- AI & Machine Learning
+- Education
+- Assessment & Measurement
+- Enterprise & Governance
+- Simulation & Immersive Learning
+
+The `v0.0.75` release expanded this model across all 12 field collections.
+
+Current field-membership profile:
+
+```text
+397 concepts
+600 field memberships
+181 newly added cross-field memberships in v0.0.75
+171 concepts in more than one field collection
+140 concepts in 2 field collections
+30 concepts in 3 field collections
+1 concept in 4 field collections
+```
+
+The primary `gs:fieldCollection` value remains unchanged for each concept. Additional membership is represented through `skos:member` on the relevant collections.
+
+This structure supports comparative analysis while preserving stable concept identity.
+
+### Example cross-collection query
+
+The following query returns concepts shared by Learning Engineering and Learning Sciences:
+
+```sparql
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?concept ?label
+WHERE {
+  <https://id.i2idl.org/collections/field/learning-engineering>
+    skos:member ?concept .
+
+  <https://id.i2idl.org/collections/field/learning-sciences>
+    skos:member ?concept .
+
+  ?concept skos:prefLabel ?label .
+}
+ORDER BY ?label
+```
+
+The same model can be used to calculate pairwise intersections, unique-to-field concepts, concepts spanning three or more fields, and collection-similarity measures.
 
 ## URI conventions
 
@@ -80,6 +149,7 @@ https://id.i2idl.org/scheme
 https://id.i2idl.org/concepts/{concept-id}
 https://id.i2idl.org/definitions/{definition-id}
 https://id.i2idl.org/sources/{source-id}
+https://id.i2idl.org/collections/field/{collection-id}
 ```
 
 Example:
@@ -345,6 +415,10 @@ The publication validator checks for:
 - classified `direct` / `supporting` evidence relationships
 - resolvable source references
 - source titles
+- collection members that resolve to concepts
+- duplicate membership within a collection
+- primary-field membership consistency
+- support for concepts belonging to multiple field collections
 - HTTPS-only rendered external URLs
 - inline JSON-LD context use
 - dangerous object keys
@@ -374,7 +448,7 @@ npm run validate:embed -- <glossary-html-file>
 npm run validate:live
 ```
 
-`npm run validate` checks graph integrity and publication security requirements.
+`npm run validate` checks graph integrity, collection membership, provenance, and publication security requirements.
 
 `npm run validate:embed` checks the Squarespace glossary embed for known unsafe rendering patterns.
 
@@ -425,7 +499,8 @@ i2idl-linked-data/
 ├── .github/
 │   ├── dependabot.yml
 │   └── workflows/
-│       └── dependency-security.yml
+│       ├── dependency-security.yml
+│       └── glossary-validation.yml
 ├── api/
 │   ├── resolve.mjs
 │   └── sparql.mjs
@@ -459,7 +534,7 @@ Provides the read-only SPARQL service, browser query interface, query restrictio
 
 ### `scripts/validate-glossary.mjs`
 
-Validates graph structure, identifiers, evidence provenance, source metadata, URL safety, and publication security requirements.
+Validates graph structure, identifiers, collection memberships, evidence provenance, source metadata, URL safety, and publication security requirements.
 
 ### `scripts/validate-embed.mjs`
 
@@ -505,7 +580,7 @@ For each glossary release:
 A useful release commit message is:
 
 ```text
-Publish glossary v0.0.68 JSON-LD
+Publish glossary v0.0.75 JSON-LD
 ```
 
 with the version changed for each release.
@@ -594,6 +669,24 @@ Expected characteristics include:
 ```text
 HTTP/2 200
 content-type: application/sparql-results+json
+```
+
+### Cross-collection SPARQL
+
+```sparql
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?concept ?label
+WHERE {
+  <https://id.i2idl.org/collections/field/learning-engineering>
+    skos:member ?concept .
+
+  <https://id.i2idl.org/collections/field/learning-sciences>
+    skos:member ?concept .
+
+  ?concept skos:prefLabel ?label .
+}
+ORDER BY ?label
 ```
 
 ### SPARQL read-only protection
@@ -760,6 +853,7 @@ Provides:
 - graph validation
 - embed validation
 - live deployment validation
+- deterministic SPARQL query-type parsing
 - automated regression checks for blocked SPARQL attack surfaces
 
 ### Phase 4: Dependency and maintenance monitoring
@@ -775,5 +869,166 @@ Provides:
 - Dependabot GitHub Actions updates
 - protected `main` branch
 - pull-request-based dependency review
+- CodeQL analysis for JavaScript/TypeScript and GitHub Actions
 
-Future work can build on this foundation without changing the stable `https://id.i2idl.org/` namespace.
+### Phase 5: Multi-collection semantic classification
+
+**Complete.**
+
+The glossary now supports many-to-many concept membership across all 12 field collections while retaining one stable identifier and one primary field for each concept.
+
+Provides:
+
+- cross-field `skos:Collection` membership
+- stable concept identity across classifications
+- preservation of primary field assignments
+- collection-member validation
+- duplicate-membership protection
+- multi-field integrity checks
+- pairwise field intersections through SPARQL
+- support for comparative analysis of field overlap
+- 600 field memberships across 397 concepts
+- 171 concepts represented in more than one field collection
+
+## Next development priorities
+
+The next phase moves from multi-dimensional classification toward an explicitly connected and navigable knowledge graph.
+
+### 1. Add semantic relationships between concepts
+
+This is the highest-priority next step.
+
+Concepts should begin to connect through relationships such as:
+
+- `skos:broader`
+- `skos:narrower`
+- `skos:related`
+- `skos:exactMatch`
+- `skos:closeMatch`
+
+Carefully selected domain-specific relationships may also be introduced where standard SKOS relationships are not expressive enough.
+
+This will allow concepts such as adaptive learning, adaptive instructional system, learner model, competency framework, and learning analytics to function as connected parts of a graph rather than isolated glossary entries.
+
+Relationships should be editorially reviewed and defensible. They should not be generated solely from lexical or embedding similarity.
+
+### 2. Build concept neighborhoods into the human UI
+
+Each glossary card should expose a small **Related concepts** section generated from the graph.
+
+This should make semantic structure visible to ordinary users without requiring them to understand Linked Data or SPARQL.
+
+Potential neighborhood signals include:
+
+- broader concepts
+- narrower concepts
+- related concepts
+- shared collections
+- external vocabulary matches
+
+The goal is to make the glossary explorable as well as searchable.
+
+### 3. Create curated collections
+
+The existing field and type collections provide the foundation for additional editorial pathways.
+
+Potential curated collections include:
+
+- AI & adaptive learning
+- Learning data & interoperability
+- Learning engineering
+- Assessment & evaluation
+- Simulation & immersive learning
+- Competencies & skills
+- Governance, ethics & privacy
+
+Curated collections should receive stable collection URIs so they can be used by both humans and machines.
+
+They should complement rather than replace primary field classifications.
+
+### 4. Add crosswalks to external vocabularies
+
+The glossary should begin mapping concepts to external controlled vocabularies and semantic resources where equivalence or close correspondence can be justified.
+
+Priority targets include:
+
+- UNESCO Thesaurus
+- Schema.org
+- IEEE learning-technology terminology
+- xAPI terminology and concepts
+- other relevant controlled vocabularies
+
+SKOS mapping predicates such as the following should be used carefully:
+
+- `skos:exactMatch`
+- `skos:closeMatch`
+- `skos:relatedMatch`
+
+The objective is to make the I2IDL glossary a semantic bridge across learning-technology ecosystems.
+
+### 5. Add an ordinary-user API/query layer
+
+SPARQL remains the canonical graph-query interface, but most application developers and ordinary users will not write SPARQL.
+
+A lightweight API layer could expose routes such as:
+
+```text
+/api/concepts?q=competency
+/api/concepts/data-privacy
+/api/related/data-privacy
+```
+
+This would make the glossary easier to integrate into:
+
+- applications
+- research tools
+- RAG systems
+- AI agents
+- future Glossary Studio namespaces
+
+The API should remain a projection of the same canonical graph rather than creating a second source of truth.
+
+### 6. Make provenance visible in the human interface
+
+The glossary already distinguishes `direct` and `supporting` evidence relationships.
+
+That distinction should be surfaced more clearly on glossary cards.
+
+Examples:
+
+```text
+Definition provenance: Direct source definition
+```
+
+or:
+
+```text
+Definition provenance: I2IDL synthesis supported by source evidence
+```
+
+This exposes editorial lineage as a feature of the glossary and helps users distinguish source-derived definitions from I2IDL synthesis.
+
+### 7. Add machine-readable change history
+
+The project already versions every published release.
+
+A machine-readable change dataset should record events such as:
+
+- concept added
+- definition revised
+- source changed
+- relationship added
+- collection membership changed
+- evidence reclassified
+
+This would improve scholarly traceability, standards work, reproducibility, and downstream synchronization.
+
+The change history should use stable identifiers and, where practical, provenance terms already present in the graph.
+
+## Development principle
+
+Future work should preserve the existing lightweight architecture unless scale or operational requirements justify additional infrastructure.
+
+The canonical graph remains JSON-LD, with RDFJS/N3 and Comunica providing serialization and query capabilities in the current Vercel-based deployment.
+
+The stable `https://id.i2idl.org/` namespace should remain independent of any future implementation change.
