@@ -21,7 +21,7 @@
       "dcterms:rights": "Mixed rights. I2IDL-original material defaults to CC BY 4.0; source-specific rights are preserved at the source and evidence level.",
       "gs:editorialStatus": "approved",
       "gs:semanticProfileVersion": "0.4.0",
-      "gs:publicationVersion": "v0.0.73",
+      "gs:publicationVersion": "v0.0.74",
       "gs:baseUri": "https://id.i2idl.org"
     },
     {
@@ -1029,6 +1029,45 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/interdisciplinary-research-identity"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/cognitive-task-analysis"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/evidence-based-practice"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/mastery-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/metacognition"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/motivation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/multimedia-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/prior-knowledge"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/retrieval-practice"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/scaffolding"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/self-regulated-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/spaced-repetition"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/worked-example"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learner-variability"
         }
       ]
     },
@@ -1199,6 +1238,33 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/learner-variability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/adaptive-instructional-system"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/competency-based-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-informed-decision-making"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/iterative-design"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learner-feedback-loop"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-environment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/personalization"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/pedagogical-agent"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/stakeholder-engagement"
         }
       ]
     },
