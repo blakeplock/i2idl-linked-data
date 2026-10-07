@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import { Worker } from 'node:worker_threads';
+import { Parser as SparqlParser } from 'sparqljs';
 
 const ALLOWED_QUERY_TYPES = new Set([
   'SELECT',
@@ -8,13 +9,6 @@ const ALLOWED_QUERY_TYPES = new Set([
   'CONSTRUCT',
   'DESCRIBE'
 ]);
-
-const UPDATE_KEYWORDS =
-  /\b(INSERT|DELETE|LOAD|CLEAR|CREATE|DROP|COPY|MOVE|ADD|WITH|USING)\b/i;
-
-// SERVICE and FROM/FROM NAMED are intentionally disabled so public queries
-// cannot cause the endpoint to dereference remote datasets or services.
-const FEDERATION_KEYWORDS = /\b(SERVICE|FROM)\b/i;
 
 const MAX_QUERY_LENGTH = 12000;
 const MAX_POST_BODY_BYTES = 16384;
@@ -145,8 +139,6 @@ function clientKey(request) {
 function checkRateLimit(request) {
   const key = clientKey(request);
 
-  // Vercel normally supplies a client IP. If it does not, avoid putting all
-  // clients into one shared fallback bucket; platform/WAF controls still apply.
   if (!key) {
     return null;
   }
@@ -164,39 +156,54 @@ function checkRateLimit(request) {
   bucket.count += 1;
   rateBuckets.set(key, bucket);
 
-  // Opportunistic cleanup keeps a long-lived warm instance bounded.
   if (rateBuckets.size > 5000) {
     for (const [bucketKey, value] of rateBuckets) {
-      if (now >= value.resetAt) rateBuckets.delete(bucketKey);
+      if (now >= value.resetAt) {
+        rateBuckets.delete(bucketKey);
+      }
     }
 
-    // Bound memory even during a burst of many distinct client addresses.
     if (rateBuckets.size > 10000) {
       rateBuckets.clear();
       rateBuckets.set(key, bucket);
     }
   }
 
-  const remaining = Math.max(0, RATE_LIMIT_MAX - bucket.count);
-  const resetSeconds = Math.max(
-    1,
-    Math.ceil((bucket.resetAt - now) / 1000)
-  );
+  const remaining =
+    Math.max(
+      0,
+      RATE_LIMIT_MAX - bucket.count
+    );
+
+  const resetSeconds =
+    Math.max(
+      1,
+      Math.ceil(
+        (bucket.resetAt - now) / 1000
+      )
+    );
 
   const headers = {
-    'RateLimit-Limit': String(RATE_LIMIT_MAX),
-    'RateLimit-Remaining': String(remaining),
-    'RateLimit-Reset': String(resetSeconds)
+    'RateLimit-Limit':
+      String(RATE_LIMIT_MAX),
+    'RateLimit-Remaining':
+      String(remaining),
+    'RateLimit-Reset':
+      String(resetSeconds)
   };
 
   if (bucket.count > RATE_LIMIT_MAX) {
     return jsonResponse(
-      { error: 'Too many SPARQL requests. Please retry later.' },
+      {
+        error:
+          'Too many SPARQL requests. Please retry later.'
+      },
       429,
       'application/json; charset=utf-8',
       {
         ...headers,
-        'Retry-After': String(resetSeconds)
+        'Retry-After':
+          String(resetSeconds)
       }
     );
   }
@@ -205,32 +212,48 @@ function checkRateLimit(request) {
 }
 
 async function readBodyLimited(request) {
-  const declaredLength = Number(
-    request.headers.get('content-length') || 0
-  );
+  const declaredLength =
+    Number(
+      request.headers.get(
+        'content-length'
+      ) || 0
+    );
 
   if (
     Number.isFinite(declaredLength) &&
-    declaredLength > MAX_POST_BODY_BYTES
+    declaredLength >
+      MAX_POST_BODY_BYTES
   ) {
     throw new PayloadTooLargeError();
   }
 
-  if (!request.body) return '';
+  if (!request.body) {
+    return '';
+  }
 
-  const reader = request.body.getReader();
+  const reader =
+    request.body.getReader();
+
   const chunks = [];
   let total = 0;
 
   try {
     while (true) {
-      const { done, value } = await reader.read();
+      const {
+        done,
+        value
+      } = await reader.read();
 
-      if (done) break;
+      if (done) {
+        break;
+      }
 
       total += value.byteLength;
 
-      if (total > MAX_POST_BODY_BYTES) {
+      if (
+        total >
+        MAX_POST_BODY_BYTES
+      ) {
         try {
           await reader.cancel();
         } catch (_) {}
@@ -244,13 +267,19 @@ async function readBodyLimited(request) {
     reader.releaseLock();
   }
 
-  const merged = new Uint8Array(total);
+  const merged =
+    new Uint8Array(total);
 
   let offset = 0;
 
   for (const chunk of chunks) {
-    merged.set(chunk, offset);
-    offset += chunk.byteLength;
+    merged.set(
+      chunk,
+      offset
+    );
+
+    offset +=
+      chunk.byteLength;
   }
 
   return new TextDecoder(
@@ -260,350 +289,170 @@ async function readBodyLimited(request) {
 }
 
 async function getQuery(request) {
-  const url = new URL(request.url);
+  const url =
+    new URL(request.url);
 
   if (request.method === 'GET') {
-    return url.searchParams.get('query') || '';
+    return (
+      url.searchParams.get('query') ||
+      ''
+    );
   }
 
   const contentType = (
-    request.headers.get('content-type') || ''
+    request.headers.get(
+      'content-type'
+    ) || ''
   )
     .split(';', 1)[0]
     .trim()
     .toLowerCase();
 
-  const allowedTypes = new Set([
-    '',
-    'text/plain',
-    'application/sparql-query',
-    'application/x-www-form-urlencoded',
-    'application/json'
-  ]);
+  const allowedTypes =
+    new Set([
+      '',
+      'text/plain',
+      'application/sparql-query',
+      'application/x-www-form-urlencoded',
+      'application/json'
+    ]);
 
-  if (!allowedTypes.has(contentType)) {
+  if (
+    !allowedTypes.has(
+      contentType
+    )
+  ) {
     throw new UnsupportedMediaTypeError();
   }
 
-  const body = await readBodyLimited(request);
+  const body =
+    await readBodyLimited(
+      request
+    );
 
   if (
-    contentType === 'application/sparql-query' ||
-    contentType === 'text/plain' ||
+    contentType ===
+      'application/sparql-query' ||
+    contentType ===
+      'text/plain' ||
     contentType === ''
   ) {
     return body;
   }
 
-  if (contentType === 'application/x-www-form-urlencoded') {
-    const params = new URLSearchParams(body);
+  if (
+    contentType ===
+    'application/x-www-form-urlencoded'
+  ) {
+    const params =
+      new URLSearchParams(body);
 
-    return params.get('query') || '';
+    return (
+      params.get('query') ||
+      ''
+    );
   }
 
-  if (contentType === 'application/json') {
+  if (
+    contentType ===
+    'application/json'
+  ) {
     let parsed;
 
     try {
-      parsed = JSON.parse(body || '{}');
+      parsed =
+        JSON.parse(
+          body || '{}'
+        );
     } catch (_) {
       return '';
     }
 
-    return typeof parsed?.query === 'string'
-      ? parsed.query
-      : '';
+    return (
+      typeof parsed?.query ===
+      'string'
+        ? parsed.query
+        : ''
+    );
   }
 
   return '';
 }
 
-// Removes comments, strings, IRIs, variables, and prefixed-name bodies before
-// keyword scanning. This prevents false positives such as ?service or a literal
-// containing the word SERVICE while still detecting actual SPARQL clauses.
-function keywordScanText(query) {
-  let out = '';
-  let i = 0;
+function containsServicePattern(value) {
+  const seen =
+    new WeakSet();
 
-  while (i < query.length) {
-    const ch = query[i];
-
-    if (ch === '#') {
-      while (
-        i < query.length &&
-        query[i] !== '\n'
-      ) {
-        i += 1;
-      }
-
-      out += '\n';
-      continue;
-    }
-
-    if (ch === '<') {
-      i += 1;
-
-      while (i < query.length) {
-        if (query[i] === '\\') {
-          i += 2;
-          continue;
-        }
-
-        if (query[i] === '>') {
-          i += 1;
-          break;
-        }
-
-        i += 1;
-      }
-
-      out += ' ';
-      continue;
-    }
-
-    if (ch === '"' || ch === "'") {
-      const quote = ch;
-      const triple =
-        query.slice(i, i + 3) === quote.repeat(3);
-
-      i += triple ? 3 : 1;
-
-      while (i < query.length) {
-        if (query[i] === '\\') {
-          i += 2;
-          continue;
-        }
-
-        if (
-          triple &&
-          query.slice(i, i + 3) === quote.repeat(3)
-        ) {
-          i += 3;
-          break;
-        }
-
-        if (
-          !triple &&
-          query[i] === quote
-        ) {
-          i += 1;
-          break;
-        }
-
-        i += 1;
-      }
-
-      out += ' ';
-      continue;
-    }
-
-    out += ch;
-    i += 1;
-  }
-
-  return out
-    .replace(
-      /[?$][A-Za-z_][A-Za-z0-9_-]*/g,
-      ' '
-    )
-    .replace(
-      /\b[A-Za-z_][A-Za-z0-9_-]*:[A-Za-z0-9_.~-]+/g,
-      ' '
-    );
-}
-
-function queryType(query) {
-  let i = 0;
-  const length = query.length;
-
-  const isWhitespace = (ch) =>
-    ch === ' ' ||
-    ch === '\t' ||
-    ch === '\n' ||
-    ch === '\r' ||
-    ch === '\f';
-
-  const skipWhitespaceAndComments = () => {
-    while (i < length) {
-      while (
-        i < length &&
-        isWhitespace(query[i])
-      ) {
-        i += 1;
-      }
-
-      if (query[i] !== '#') {
-        break;
-      }
-
-      while (
-        i < length &&
-        query[i] !== '\n' &&
-        query[i] !== '\r'
-      ) {
-        i += 1;
-      }
-    }
-  };
-
-  const matchesKeyword = (keyword) => {
-    const end = i + keyword.length;
-
+  const visit = (node) => {
     if (
-      query
-        .slice(i, end)
-        .toUpperCase() !== keyword
+      !node ||
+      typeof node !== 'object'
     ) {
       return false;
     }
 
-    const next = query[end];
-
-    return (
-      next === undefined ||
-      !/[A-Za-z0-9_]/.test(next)
-    );
-  };
-
-  const consumeKeyword = (keyword) => {
-    if (!matchesKeyword(keyword)) {
+    if (seen.has(node)) {
       return false;
     }
 
-    i += keyword.length;
-    return true;
-  };
+    seen.add(node);
 
-  const consumeIriRef = () => {
-    if (query[i] !== '<') {
+    if (
+      node.type === 'service'
+    ) {
+      return true;
+    }
+
+    if (Array.isArray(node)) {
+      for (const item of node) {
+        if (visit(item)) {
+          return true;
+        }
+      }
+
       return false;
     }
 
-    i += 1;
-
-    while (i < length) {
-      const ch = query[i];
-
-      if (ch === '>') {
-        i += 1;
+    for (
+      const child
+      of Object.values(node)
+    ) {
+      if (visit(child)) {
         return true;
       }
-
-      if (
-        ch === '\n' ||
-        ch === '\r'
-      ) {
-        return false;
-      }
-
-      i += 1;
     }
 
     return false;
   };
 
-  const consumePrefixLabel = () => {
-    if (query[i] === ':') {
-      i += 1;
-      return true;
-    }
+  return visit(value);
+}
 
-    const start = i;
+function hasDatasetClause(parsed) {
+  const from =
+    parsed?.from;
 
-    while (
-      i < length &&
-      !isWhitespace(query[i]) &&
-      query[i] !== ':'
-    ) {
-      if (
-        query[i] === '<' ||
-        query[i] === '>' ||
-        query[i] === '#'
-      ) {
-        return false;
-      }
-
-      i += 1;
-    }
-
-    if (
-      i === start ||
-      query[i] !== ':'
-    ) {
-      return false;
-    }
-
-    i += 1;
-    return true;
-  };
-
-  skipWhitespaceAndComments();
-
-  while (i < length) {
-    const beforeDeclaration = i;
-
-    if (consumeKeyword('PREFIX')) {
-      if (
-        i >= length ||
-        !isWhitespace(query[i])
-      ) {
-        return null;
-      }
-
-      skipWhitespaceAndComments();
-
-      if (!consumePrefixLabel()) {
-        return null;
-      }
-
-      skipWhitespaceAndComments();
-
-      if (!consumeIriRef()) {
-        return null;
-      }
-
-      skipWhitespaceAndComments();
-      continue;
-    }
-
-    i = beforeDeclaration;
-
-    if (consumeKeyword('BASE')) {
-      if (
-        i >= length ||
-        !isWhitespace(query[i])
-      ) {
-        return null;
-      }
-
-      skipWhitespaceAndComments();
-
-      if (!consumeIriRef()) {
-        return null;
-      }
-
-      skipWhitespaceAndComments();
-      continue;
-    }
-
-    i = beforeDeclaration;
-    break;
-  }
-
-  for (
-    const type of [
-      'SELECT',
-      'ASK',
-      'CONSTRUCT',
-      'DESCRIBE'
-    ]
+  if (
+    !from ||
+    typeof from !== 'object'
   ) {
-    if (matchesKeyword(type)) {
-      return type;
-    }
+    return false;
   }
 
-  return null;
+  const defaults =
+    Array.isArray(from.default)
+      ? from.default
+      : [];
+
+  const named =
+    Array.isArray(from.named)
+      ? from.named
+      : [];
+
+  return (
+    defaults.length > 0 ||
+    named.length > 0
+  );
 }
 
 function validateQuery(query) {
@@ -611,33 +460,86 @@ function validateQuery(query) {
     typeof query !== 'string' ||
     !query.trim()
   ) {
-    return 'Missing SPARQL query.';
+    return {
+      error:
+        'Missing SPARQL query.',
+      type: null
+    };
   }
-
-  if (query.length > MAX_QUERY_LENGTH) {
-    return `SPARQL query exceeds the ${MAX_QUERY_LENGTH}-character limit.`;
-  }
-
-  const scan = keywordScanText(query);
-
-  if (UPDATE_KEYWORDS.test(scan)) {
-    return 'SPARQL Update operations are not permitted.';
-  }
-
-  if (FEDERATION_KEYWORDS.test(scan)) {
-    return 'Federated and remote-dataset SPARQL clauses are not permitted.';
-  }
-
-  const type = queryType(query);
 
   if (
-    !type ||
-    !ALLOWED_QUERY_TYPES.has(type)
+    query.length >
+    MAX_QUERY_LENGTH
   ) {
-    return 'Only SELECT, ASK, CONSTRUCT, and DESCRIBE queries are permitted.';
+    return {
+      error:
+        `SPARQL query exceeds the ${MAX_QUERY_LENGTH}-character limit.`,
+      type: null
+    };
   }
 
-  return null;
+  let parsed;
+
+  try {
+    const parser =
+      new SparqlParser();
+
+    parsed =
+      parser.parse(query);
+  } catch (_) {
+    return {
+      error:
+        'Invalid SPARQL query.',
+      type: null
+    };
+  }
+
+  if (
+    parsed?.type !== 'query'
+  ) {
+    return {
+      error:
+        'SPARQL Update operations are not permitted.',
+      type: null
+    };
+  }
+
+  const type =
+    String(
+      parsed.queryType || ''
+    ).toUpperCase();
+
+  if (
+    !ALLOWED_QUERY_TYPES.has(
+      type
+    )
+  ) {
+    return {
+      error:
+        'Only SELECT, ASK, CONSTRUCT, and DESCRIBE queries are permitted.',
+      type: null
+    };
+  }
+
+  if (
+    containsServicePattern(
+      parsed
+    ) ||
+    hasDatasetClause(
+      parsed
+    )
+  ) {
+    return {
+      error:
+        'Federated and remote-dataset SPARQL clauses are not permitted.',
+      type: null
+    };
+  }
+
+  return {
+    error: null,
+    type
+  };
 }
 
 function runQueryInWorker(
@@ -646,133 +548,185 @@ function runQueryInWorker(
   graphUrl,
   abortSignal
 ) {
-  return new Promise((resolve, reject) => {
-    const worker = new Worker(
-      new URL(
-        '../lib/sparql-query-worker.mjs',
-        import.meta.url
-      ),
-      {
-        workerData: {
-          query,
-          type,
-          graphUrl,
-          maxResultRows: MAX_RESULT_ROWS,
-          maxGraphQuads: MAX_GRAPH_QUADS
+  return new Promise(
+    (resolve, reject) => {
+      const worker =
+        new Worker(
+          new URL(
+            '../lib/sparql-query-worker.mjs',
+            import.meta.url
+          ),
+          {
+            workerData: {
+              query,
+              type,
+              graphUrl,
+              maxResultRows:
+                MAX_RESULT_ROWS,
+              maxGraphQuads:
+                MAX_GRAPH_QUADS
+            }
+          }
+        );
+
+      let settled = false;
+
+      const cleanup = () => {
+        clearTimeout(timeout);
+
+        if (abortSignal) {
+          abortSignal
+            .removeEventListener(
+              'abort',
+              onAbort
+            );
         }
-      }
-    );
+      };
 
-    let settled = false;
+      const finish =
+        (callback) => {
+          if (settled) {
+            return;
+          }
 
-    const cleanup = () => {
-      clearTimeout(timeout);
+          settled = true;
+          cleanup();
+          callback();
+        };
+
+      const terminate = () => {
+        worker
+          .terminate()
+          .catch(() => {});
+      };
+
+      const onAbort = () => {
+        if (settled) {
+          return;
+        }
+
+        finish(() => {
+          terminate();
+
+          const error =
+            new Error(
+              'SPARQL request was cancelled.'
+            );
+
+          error.name =
+            'AbortError';
+
+          reject(error);
+        });
+      };
+
+      const timeout =
+        setTimeout(
+          () => {
+            if (settled) {
+              return;
+            }
+
+            finish(() => {
+              terminate();
+
+              reject(
+                new QueryTimeoutError()
+              );
+            });
+          },
+          QUERY_TIMEOUT_MS
+        );
 
       if (abortSignal) {
-        abortSignal.removeEventListener(
-          'abort',
-          onAbort
-        );
-      }
-    };
+        if (
+          abortSignal.aborted
+        ) {
+          onAbort();
+          return;
+        }
 
-    const finish = (callback) => {
-      if (settled) return;
-      settled = true;
-      cleanup();
-      callback();
-    };
-
-    const terminate = () => {
-      worker
-        .terminate()
-        .catch(() => {});
-    };
-
-    const onAbort = () => {
-      if (settled) return;
-
-      finish(() => {
-        terminate();
-
-        const error = new Error(
-          'SPARQL request was cancelled.'
-        );
-        error.name = 'AbortError';
-        reject(error);
-      });
-    };
-
-    const timeout = setTimeout(() => {
-      if (settled) return;
-
-      finish(() => {
-        terminate();
-        reject(new QueryTimeoutError());
-      });
-    }, QUERY_TIMEOUT_MS);
-
-    if (abortSignal) {
-      if (abortSignal.aborted) {
-        onAbort();
-        return;
+        abortSignal
+          .addEventListener(
+            'abort',
+            onAbort,
+            { once: true }
+          );
       }
 
-      abortSignal.addEventListener(
-        'abort',
-        onAbort,
-        { once: true }
+      worker.once(
+        'message',
+        (message) => {
+          finish(() => {
+            if (message?.ok) {
+              resolve(
+                message.result
+              );
+
+              return;
+            }
+
+            if (
+              message
+                ?.error
+                ?.name ===
+              'ResultLimitError'
+            ) {
+              reject(
+                new ResultLimitError(
+                  message.error
+                    .message
+                )
+              );
+
+              return;
+            }
+
+            const error =
+              new Error(
+                message
+                  ?.error
+                  ?.message ||
+                'SPARQL worker failed.'
+              );
+
+            error.name =
+              message
+                ?.error
+                ?.name ||
+              'Error';
+
+            reject(error);
+          });
+        }
+      );
+
+      worker.once(
+        'error',
+        (error) => {
+          finish(
+            () =>
+              reject(error)
+          );
+        }
+      );
+
+      worker.once(
+        'exit',
+        (code) => {
+          if (!settled) {
+            finish(() => {
+              reject(
+                new Error(
+                  `SPARQL worker exited before returning a result (code ${code}).`
+                )
+              );
+            });
+          }
+        }
       );
     }
-
-    worker.once('message', (message) => {
-      finish(() => {
-        if (message?.ok) {
-          resolve(message.result);
-          return;
-        }
-
-        if (
-          message?.error?.name ===
-          'ResultLimitError'
-        ) {
-          reject(
-            new ResultLimitError(
-              message.error.message
-            )
-          );
-          return;
-        }
-
-        const error = new Error(
-          message?.error?.message ||
-          'SPARQL worker failed.'
-        );
-
-        error.name =
-          message?.error?.name ||
-          'Error';
-
-        reject(error);
-      });
-    });
-
-    worker.once('error', (error) => {
-      finish(() => reject(error));
-    });
-
-    worker.once('exit', (code) => {
-      if (!settled) {
-        finish(() => {
-          reject(
-            new Error(
-              `SPARQL worker exited before returning a result (code ${code}).`
-            )
-          );
-        });
-      }
-    });
-  });
+  );
 }
 
 function browserInterface() {
@@ -889,13 +843,15 @@ WHERE {
 export default {
   async fetch(request) {
     if (
-      request.method === 'OPTIONS'
+      request.method ===
+      'OPTIONS'
     ) {
       return new Response(
         null,
         {
           status: 204,
-          headers: corsHeaders()
+          headers:
+            corsHeaders()
         }
       );
     }
@@ -904,7 +860,9 @@ export default {
       ![
         'GET',
         'POST'
-      ].includes(request.method)
+      ].includes(
+        request.method
+      )
     ) {
       return textResponse(
         'Method Not Allowed',
@@ -913,20 +871,26 @@ export default {
     }
 
     const rateLimit =
-      checkRateLimit(request);
+      checkRateLimit(
+        request
+      );
 
     if (
-      rateLimit instanceof Response
+      rateLimit instanceof
+      Response
     ) {
       return rateLimit;
     }
 
     try {
       const query =
-        await getQuery(request);
+        await getQuery(
+          request
+        );
 
       if (
-        request.method === 'GET' &&
+        request.method ===
+          'GET' &&
         !query.trim()
       ) {
         return htmlResponse(
@@ -934,18 +898,23 @@ export default {
         );
       }
 
-      const validationError =
+      const validation =
         validateQuery(query);
 
-      if (validationError) {
+      if (
+        validation.error
+      ) {
         return jsonResponse(
-          { error: validationError },
+          {
+            error:
+              validation.error
+          },
           400
         );
       }
 
       const type =
-        queryType(query);
+        validation.type;
 
       const graphUrl =
         new URL(
@@ -961,14 +930,18 @@ export default {
           request.signal
         );
 
-      if (type === 'SELECT') {
+      if (
+        type === 'SELECT'
+      ) {
         return jsonResponse(
           {
             head: {
-              vars: result.vars
+              vars:
+                result.vars
             },
             results: {
-              bindings: result.bindings
+              bindings:
+                result.bindings
             }
           },
           200,
@@ -976,11 +949,14 @@ export default {
         );
       }
 
-      if (type === 'ASK') {
+      if (
+        type === 'ASK'
+      ) {
         return jsonResponse(
           {
             head: {},
-            boolean: result.boolean
+            boolean:
+              result.boolean
           },
           200,
           'application/sparql-results+json; charset=utf-8'
@@ -988,8 +964,10 @@ export default {
       }
 
       if (
-        type === 'CONSTRUCT' ||
-        type === 'DESCRIBE'
+        type ===
+          'CONSTRUCT' ||
+        type ===
+          'DESCRIBE'
       ) {
         return textResponse(
           result.turtle,
@@ -1013,7 +991,10 @@ export default {
         PayloadTooLargeError
       ) {
         return jsonResponse(
-          { error: error.message },
+          {
+            error:
+              error.message
+          },
           413
         );
       }
@@ -1023,7 +1004,10 @@ export default {
         UnsupportedMediaTypeError
       ) {
         return jsonResponse(
-          { error: error.message },
+          {
+            error:
+              error.message
+          },
           415
         );
       }
@@ -1033,7 +1017,10 @@ export default {
         QueryTimeoutError
       ) {
         return jsonResponse(
-          { error: error.message },
+          {
+            error:
+              error.message
+          },
           408
         );
       }
@@ -1043,7 +1030,10 @@ export default {
         ResultLimitError
       ) {
         return jsonResponse(
-          { error: error.message },
+          {
+            error:
+              error.message
+          },
           413
         );
       }
