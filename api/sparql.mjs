@@ -1,11 +1,6 @@
 // SPDX-License-Identifier: Apache-2.0
 
-import { QueryEngine } from '@comunica/query-sparql-rdfjs';
-import ParserJsonld from '@rdfjs/parser-jsonld';
-import { Store, Writer } from 'n3';
-import { Readable } from 'node:stream';
-
-const engine = new QueryEngine();
+import { Worker } from 'node:worker_threads';
 
 const ALLOWED_QUERY_TYPES = new Set([
   'SELECT',
@@ -207,36 +202,6 @@ function checkRateLimit(request) {
   }
 
   return { headers };
-}
-
-function deadlineFromNow() {
-  return Date.now() + QUERY_TIMEOUT_MS;
-}
-
-function checkDeadline(deadline) {
-  if (Date.now() > deadline) {
-    throw new QueryTimeoutError();
-  }
-}
-
-function promiseWithDeadline(promise, deadline) {
-  let timeout;
-
-  const remaining = Math.max(1, deadline - Date.now());
-
-  const timeoutPromise = new Promise((_, reject) => {
-    timeout = setTimeout(
-      () => reject(new QueryTimeoutError()),
-      remaining
-    );
-  });
-
-  return Promise.race([
-    promise,
-    timeoutPromise
-  ]).finally(() => {
-    clearTimeout(timeout);
-  });
 }
 
 async function readBodyLimited(request) {
@@ -677,145 +642,139 @@ function validateQuery(query) {
   return null;
 }
 
-async function loadStore(request, deadline) {
-  checkDeadline(deadline);
-
-  // Fixed same-origin URL only. User input is never used to form this fetch.
-  const graphUrl =
-    new URL('/glossary.jsonld', request.url);
-
-  const response =
-    await promiseWithDeadline(
-      fetch(graphUrl),
-      deadline
-    );
-
-  if (!response.ok) {
-    throw new Error(
-      `Unable to load glossary graph (${response.status})`
-    );
-  }
-
-  const jsonldText =
-    await promiseWithDeadline(
-      response.text(),
-      deadline
-    );
-
-  checkDeadline(deadline);
-
-  const parser = new ParserJsonld();
-  const quadStream =
-    parser.import(
-      Readable.from([jsonldText])
-    );
-
-  const store = new Store();
-
-  for await (const quad of quadStream) {
-    checkDeadline(deadline);
-    store.addQuad(quad);
-  }
-
-  return store;
-}
-
-async function bindingsToJson(
-  result,
-  deadline
+function runQueryInWorker(
+  query,
+  type,
+  graphUrl,
+  abortSignal
 ) {
-  const bindings = [];
-
-  for await (const binding of result) {
-    checkDeadline(deadline);
-
-    if (
-      bindings.length >=
-      MAX_RESULT_ROWS
-    ) {
-      throw new ResultLimitError(
-        `SELECT result exceeds the ${MAX_RESULT_ROWS}-row limit.`
-      );
-    }
-
-    const row = {};
-
-    for (
-      const [variable, term]
-      of binding
-    ) {
-      row[variable.value] = {
-        type:
-          term.termType === 'Literal'
-            ? 'literal'
-            : term.termType === 'BlankNode'
-              ? 'bnode'
-              : 'uri',
-        value: term.value
-      };
-
-      if (
-        term.termType === 'Literal'
-      ) {
-        if (term.language) {
-          row[variable.value]['xml:lang'] =
-            term.language;
-        }
-
-        if (term.datatype?.value) {
-          row[variable.value].datatype =
-            term.datatype.value;
+  return new Promise((resolve, reject) => {
+    const worker = new Worker(
+      new URL(
+        '../lib/sparql-query-worker.mjs',
+        import.meta.url
+      ),
+      {
+        workerData: {
+          query,
+          type,
+          graphUrl,
+          maxResultRows: MAX_RESULT_ROWS,
+          maxGraphQuads: MAX_GRAPH_QUADS
         }
       }
-    }
+    );
 
-    bindings.push(row);
-  }
+    let settled = false;
 
-  return bindings;
-}
+    const cleanup = () => {
+      clearTimeout(timeout);
 
-async function quadsToTurtle(
-  result,
-  deadline
-) {
-  const writer = new Writer({
-    format: 'text/turtle'
-  });
-
-  let count = 0;
-
-  for await (const quad of result) {
-    checkDeadline(deadline);
-
-    if (
-      count >= MAX_GRAPH_QUADS
-    ) {
-      throw new ResultLimitError(
-        `Graph result exceeds the ${MAX_GRAPH_QUADS}-quad limit.`
-      );
-    }
-
-    writer.addQuad(quad);
-    count += 1;
-  }
-
-  return await promiseWithDeadline(
-    new Promise(
-      (resolve, reject) => {
-        writer.end(
-          (error, output) => {
-            if (error) {
-              reject(error);
-            } else {
-              resolve(output);
-            }
-          }
+      if (abortSignal) {
+        abortSignal.removeEventListener(
+          'abort',
+          onAbort
         );
       }
-    ),
-    deadline
-  );
+    };
+
+    const finish = (callback) => {
+      if (settled) return;
+      settled = true;
+      cleanup();
+      callback();
+    };
+
+    const terminate = () => {
+      worker
+        .terminate()
+        .catch(() => {});
+    };
+
+    const onAbort = () => {
+      if (settled) return;
+
+      finish(() => {
+        terminate();
+
+        const error = new Error(
+          'SPARQL request was cancelled.'
+        );
+        error.name = 'AbortError';
+        reject(error);
+      });
+    };
+
+    const timeout = setTimeout(() => {
+      if (settled) return;
+
+      finish(() => {
+        terminate();
+        reject(new QueryTimeoutError());
+      });
+    }, QUERY_TIMEOUT_MS);
+
+    if (abortSignal) {
+      if (abortSignal.aborted) {
+        onAbort();
+        return;
+      }
+
+      abortSignal.addEventListener(
+        'abort',
+        onAbort,
+        { once: true }
+      );
+    }
+
+    worker.once('message', (message) => {
+      finish(() => {
+        if (message?.ok) {
+          resolve(message.result);
+          return;
+        }
+
+        if (
+          message?.error?.name ===
+          'ResultLimitError'
+        ) {
+          reject(
+            new ResultLimitError(
+              message.error.message
+            )
+          );
+          return;
+        }
+
+        const error = new Error(
+          message?.error?.message ||
+          'SPARQL worker failed.'
+        );
+
+        error.name =
+          message?.error?.name ||
+          'Error';
+
+        reject(error);
+      });
+    });
+
+    worker.once('error', (error) => {
+      finish(() => reject(error));
+    });
+
+    worker.once('exit', (code) => {
+      if (!settled) {
+        finish(() => {
+          reject(
+            new Error(
+              `SPARQL worker exited before returning a result (code ${code}).`
+            )
+          );
+        });
+      }
+    });
+  });
 }
 
 function browserInterface() {
@@ -990,43 +949,28 @@ export default {
       const type =
         queryType(query);
 
-      const deadline =
-        deadlineFromNow();
+      const graphUrl =
+        new URL(
+          '/glossary.jsonld',
+          request.url
+        ).href;
 
-      const store =
-        await loadStore(
-          request,
-          deadline
+      const result =
+        await runQueryInWorker(
+          query,
+          type,
+          graphUrl,
+          request.signal
         );
 
       if (type === 'SELECT') {
-        const result =
-          await promiseWithDeadline(
-            engine.queryBindings(
-              query,
-              { sources: [store] }
-            ),
-            deadline
-          );
-
-        const bindings =
-          await bindingsToJson(
-            result,
-            deadline
-          );
-
         return jsonResponse(
           {
             head: {
-              vars:
-                bindings.length
-                  ? Object.keys(
-                      bindings[0]
-                    )
-                  : []
+              vars: result.vars
             },
             results: {
-              bindings
+              bindings: result.bindings
             }
           },
           200,
@@ -1035,19 +979,10 @@ export default {
       }
 
       if (type === 'ASK') {
-        const boolean =
-          await promiseWithDeadline(
-            engine.queryBoolean(
-              query,
-              { sources: [store] }
-            ),
-            deadline
-          );
-
         return jsonResponse(
           {
             head: {},
-            boolean
+            boolean: result.boolean
           },
           200,
           'application/sparql-results+json; charset=utf-8'
@@ -1058,23 +993,8 @@ export default {
         type === 'CONSTRUCT' ||
         type === 'DESCRIBE'
       ) {
-        const result =
-          await promiseWithDeadline(
-            engine.queryQuads(
-              query,
-              { sources: [store] }
-            ),
-            deadline
-          );
-
-        const turtle =
-          await quadsToTurtle(
-            result,
-            deadline
-          );
-
         return textResponse(
-          turtle,
+          result.turtle,
           200,
           'text/turtle; charset=utf-8'
         );
