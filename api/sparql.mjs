@@ -729,6 +729,15 @@ function runQueryInWorker(
   );
 }
 
+function escapeHtml(value) {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
 function browserInterface() {
   const exampleSelect =
 `PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -764,6 +773,18 @@ WHERE {
   const exampleDescribe =
 `DESCRIBE <https://id.i2idl.org/concepts/data-privacy>`;
 
+  const escapedSelect =
+    escapeHtml(exampleSelect);
+
+  const escapedAsk =
+    escapeHtml(exampleAsk);
+
+  const escapedConstruct =
+    escapeHtml(exampleConstruct);
+
+  const escapedDescribe =
+    escapeHtml(exampleDescribe);
+
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -798,29 +819,29 @@ WHERE {
 
     <form method="get" action="/sparql">
       <label for="query">SPARQL query</label>
-      <textarea id="query" name="query">${exampleSelect}</textarea>
+      <textarea id="query" name="query">${escapedSelect}</textarea>
       <button type="submit">Run query</button>
     </form>
 
     <div class="examples">
       <details>
         <summary>Example SELECT query</summary>
-        <pre>${exampleSelect}</pre>
+        <pre>${escapedSelect}</pre>
       </details>
 
       <details>
         <summary>Example ASK query</summary>
-        <pre>${exampleAsk}</pre>
+        <pre>${escapedAsk}</pre>
       </details>
 
       <details>
         <summary>Example CONSTRUCT query</summary>
-        <pre>${exampleConstruct}</pre>
+        <pre>${escapedConstruct}</pre>
       </details>
 
       <details>
         <summary>Example DESCRIBE query</summary>
-        <pre>${exampleDescribe}</pre>
+        <pre>${escapedDescribe}</pre>
       </details>
     </div>
 
