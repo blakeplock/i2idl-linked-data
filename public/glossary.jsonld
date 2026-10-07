@@ -5141,7 +5141,23 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:narrower": [
+        {
+          "@id": "https://id.i2idl.org/concepts/formative-assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/summative-assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-assessment"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/competency-based-learning"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/assessment-1",
@@ -6111,7 +6127,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/competency-based-learning"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/competency-1",
@@ -6175,6 +6196,14 @@
       "skos:altLabel": [
         "CBL",
         "competency-based education"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/competency"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/assessment"
+        }
       ]
     },
     {
@@ -7281,6 +7310,11 @@
       },
       "skos:altLabel": [
         "CNA"
+      ],
+      "skos:broader": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-assessment"
+        }
       ]
     },
     {
@@ -12303,7 +12337,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:broader": [
+        {
+          "@id": "https://id.i2idl.org/concepts/assessment"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/formative-assessment-1",
@@ -15918,7 +15957,17 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/method"
-      }
+      },
+      "skos:broader": [
+        {
+          "@id": "https://id.i2idl.org/concepts/assessment"
+        }
+      ],
+      "skos:narrower": [
+        {
+          "@id": "https://id.i2idl.org/concepts/cross-national-assessment"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/learning-assessment-1",
@@ -24496,7 +24545,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:broader": [
+        {
+          "@id": "https://id.i2idl.org/concepts/assessment"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/summative-assessment-1",
