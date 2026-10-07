@@ -3731,7 +3731,20 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:narrower": [
+        {
+          "@id": "https://id.i2idl.org/concepts/interaction-activity"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-statement"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/activity-definition"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/activity-1",
@@ -3802,7 +3815,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/activity"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/activity-definition-1",
@@ -3859,7 +3877,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/system"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-document"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/activity-profile-resource-1",
@@ -3916,7 +3939,20 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:narrower": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-agent"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-group"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-statement"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/actor-1",
@@ -4234,7 +4270,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/system"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-document"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/agent-profile-resource-1",
@@ -7059,7 +7100,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-profile"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/simple-knowledge-organization-system-skos"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/controlled-vocabulary-1",
@@ -11739,6 +11788,17 @@
       },
       "skos:altLabel": [
         "xAPI"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-9274-1-1-2023-xapi"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/interoperability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/total-learning-architecture-tla"
+        }
       ]
     },
     {
@@ -14085,6 +14145,11 @@
       "skos:altLabel": [
         "xAPI",
         "Experience API"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/experience-api-xapi"
+        }
       ]
     },
     {
@@ -14623,7 +14688,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/standard"
-      }
+      },
+      "skos:broader": [
+        {
+          "@id": "https://id.i2idl.org/concepts/activity"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/interaction-activity-1",
@@ -14683,6 +14753,19 @@
       },
       "skos:altLabel": [
         "IRI"
+      ],
+      "skos:narrower": [
+        {
+          "@id": "https://id.i2idl.org/concepts/internationalized-resource-locator-irl"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/verb"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/linked-data"
+        }
       ]
     },
     {
@@ -14757,6 +14840,11 @@
       },
       "skos:altLabel": [
         "IRL"
+      ],
+      "skos:broader": [
+        {
+          "@id": "https://id.i2idl.org/concepts/internationalized-resource-identifier-iri"
+        }
       ]
     },
     {
@@ -14814,7 +14902,23 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:narrower": [
+        {
+          "@id": "https://id.i2idl.org/concepts/semantic-interoperability"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/experience-api-xapi"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/standards-compliance"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/open-standards-and-architecture-for-interoperability"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/interoperability-1",
@@ -15140,6 +15244,11 @@
       },
       "skos:altLabel": [
         "JavaScript Object Notation"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/json-ld"
+        }
       ]
     },
     {
@@ -15200,6 +15309,20 @@
       },
       "skos:altLabel": [
         "JavaScript Object Notation for Linked Data"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/json"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/linked-data"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/resource-description-framework-rdf"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-profile"
+        }
       ]
     },
     {
@@ -17255,6 +17378,11 @@
       },
       "skos:altLabel": [
         "LRC"
+      ],
+      "skos:broader": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-client"
+        }
       ]
     },
     {
@@ -17315,6 +17443,11 @@
       },
       "skos:altLabel": [
         "LRP"
+      ],
+      "skos:broader": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-client"
+        }
       ]
     },
     {
@@ -17389,6 +17522,11 @@
       },
       "skos:altLabel": [
         "LRS"
+      ],
+      "skos:broader": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-client"
+        }
       ]
     },
     {
@@ -17638,7 +17776,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/json-ld"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/resource-description-framework-rdf"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/internationalized-resource-identifier-iri"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/linked-data-1",
@@ -19657,7 +19806,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/interoperability"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/open-standards-and-architecture-for-interoperability-1",
@@ -19828,7 +19982,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/process"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-pattern"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/pattern-validation-1",
@@ -20672,7 +20831,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/role"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-profile"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/profile-author-1",
@@ -20729,7 +20893,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/system"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-profile"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/profile-server-1",
@@ -20800,7 +20969,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/role"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-profile"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/profile-validator-1",
@@ -20857,7 +21031,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:broader": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-profile"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/profile-version-1",
@@ -20942,7 +21121,21 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-profile"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-statement"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/statement-template"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-pattern"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/profile-based-statement-conformance-1",
@@ -21245,7 +21438,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-statement"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/subregistration"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/registration-1",
@@ -21438,6 +21639,23 @@
       },
       "skos:altLabel": [
         "RDF"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/json-ld"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/linked-data"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/sparql"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/simple-knowledge-organization-system-skos"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-profile"
+        }
       ]
     },
     {
@@ -22576,7 +22794,17 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:broader": [
+        {
+          "@id": "https://id.i2idl.org/concepts/interoperability"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-profile"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/semantic-interoperability-1",
@@ -22867,7 +23095,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:broader": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-statement"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/signed-statement-1",
@@ -22927,6 +23160,17 @@
       },
       "skos:altLabel": [
         "SKOS"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/resource-description-framework-rdf"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/controlled-vocabulary"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-profile"
+        }
       ]
     },
     {
@@ -23537,6 +23781,11 @@
       },
       "skos:altLabel": [
         "SPARQL Protocol and RDF Query Language"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/resource-description-framework-rdf"
+        }
       ]
     },
     {
@@ -23754,7 +24003,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/interoperability"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/standards-compliance-1",
@@ -23811,7 +24065,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/system"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-document"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/state-resource-1",
@@ -23868,7 +24127,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-statement"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/statement-immutability-1",
@@ -23928,6 +24192,11 @@
       },
       "skos:altLabel": [
         "StatementRef"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-statement"
+        }
       ]
     },
     {
@@ -23985,7 +24254,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/system"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-statement"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/statement-result"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/statement-resource-1",
@@ -24042,7 +24319,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/system"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/statement-resource"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/statement-result-1",
@@ -24099,7 +24381,21 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-profile"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/statement-template-rule"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/statement-template-validation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/profile-based-statement-conformance"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/statement-template-1",
@@ -24170,7 +24466,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/statement-template"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/statement-template-rule-1",
@@ -24227,7 +24528,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/process"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/statement-template"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/statement-template-validation-1",
@@ -24468,7 +24774,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/registration"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/subregistration-1",
@@ -24528,6 +24839,11 @@
       },
       "skos:altLabel": [
         "Sub-Statement"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-statement"
+        }
       ]
     },
     {
@@ -25368,6 +25684,11 @@
       },
       "skos:altLabel": [
         "TLA"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/experience-api-xapi"
+        }
       ]
     },
     {
@@ -25913,7 +26234,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-statement"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/internationalized-resource-identifier-iri"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/verb-1",
@@ -26164,7 +26493,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:broader": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-statement"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/voided-statement-1",
@@ -26547,7 +26881,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:broader": [
+        {
+          "@id": "https://id.i2idl.org/concepts/actor"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/xapi-agent-1",
@@ -26604,7 +26943,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-statement"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/xapi-authority-1",
@@ -26664,6 +27008,17 @@
       },
       "skos:altLabel": [
         "Client"
+      ],
+      "skos:narrower": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-record-provider-lrp"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-record-consumer-lrc"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-record-store-lrs"
+        }
       ]
     },
     {
@@ -26721,7 +27076,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-document"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/xapi-concurrency-control-1",
@@ -26792,7 +27152,21 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/state-resource"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/agent-profile-resource"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/activity-profile-resource"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-concurrency-control"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/xapi-document-1",
@@ -26877,7 +27251,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-statement"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/xapi-duration-1",
@@ -26948,7 +27327,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-statement"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/xapi-extension-1",
@@ -27005,7 +27389,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:broader": [
+        {
+          "@id": "https://id.i2idl.org/concepts/actor"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/xapi-group-1",
@@ -27065,6 +27454,17 @@
       },
       "skos:altLabel": [
         "Pattern"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-profile"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/pattern-validation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/profile-based-statement-conformance"
+        }
       ]
     },
     {
@@ -27196,7 +27596,47 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/standard"
-      }
+      },
+      "skos:narrower": [
+        {
+          "@id": "https://id.i2idl.org/concepts/profile-version"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/controlled-vocabulary"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/semantic-interoperability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/statement-template"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-pattern"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/profile-server"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/profile-author"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/profile-validator"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/profile-based-statement-conformance"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/json-ld"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/resource-description-framework-rdf"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/simple-knowledge-organization-system-skos"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/xapi-profile-1",
@@ -27312,7 +27752,56 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/standard"
-      }
+      },
+      "skos:narrower": [
+        {
+          "@id": "https://id.i2idl.org/concepts/signed-statement"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/voided-statement"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/actor"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/verb"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/activity"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/statement-reference"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/substatement"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/registration"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/statement-resource"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/statement-immutability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-authority"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-timestamp"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-duration"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-extension"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/profile-based-statement-conformance"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/xapi-statement-1",
@@ -27414,7 +27903,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-statement"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/xapi-timestamp-1",
