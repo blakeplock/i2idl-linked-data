@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "validate": "node scripts/validate-glossary.mjs",
+    "validate": "node scripts/validate-glossary.mjs && node scripts/validate-curated-collections.mjs",
     "validate:live": "node scripts/validate-live.mjs",
     "validate:embed": "node scripts/validate-embed.mjs",
     "deploy": "vercel --prod"
