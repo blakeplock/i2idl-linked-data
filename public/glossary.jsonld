@@ -7494,7 +7494,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-analytics"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/data-analysis-1",
@@ -7551,7 +7556,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/method"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-analytics"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/data-analytics-1",
@@ -8495,7 +8505,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-analytics"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/decision-support"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/data-informed-decision-making-1",
@@ -8582,7 +8600,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/system"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/data-informed-decision-making"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/predictive-modeling"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/decision-support-1",
@@ -15817,6 +15843,15 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/learning-analytics-dashboard"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-analytics"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-analysis"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-informed-decision-making"
         }
       ]
     },
@@ -20217,7 +20252,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/method"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/decision-support"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/predictive-modeling-1",
