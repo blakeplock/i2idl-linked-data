@@ -4047,7 +4047,20 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/system"
-      }
+      },
+      "skos:narrower": [
+        {
+          "@id": "https://id.i2idl.org/concepts/intelligent-tutoring-system"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learner-model"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/personalization"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/adaptive-instructional-system-1",
@@ -14464,6 +14477,11 @@
       },
       "skos:altLabel": [
         "ITS"
+      ],
+      "skos:broader": [
+        {
+          "@id": "https://id.i2idl.org/concepts/adaptive-instructional-system"
+        }
       ]
     },
     {
@@ -15631,6 +15649,11 @@
       "skos:altLabel": [
         "Student model",
         "user model"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/adaptive-instructional-system"
+        }
       ]
     },
     {
@@ -15751,7 +15774,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/discipline"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-analytics-dashboard"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/learning-analytics-1",
@@ -15825,7 +15853,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/system"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-analytics"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/learning-analytics-dashboard-1",
@@ -19999,7 +20032,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/adaptive-instructional-system"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/personalization-1",
