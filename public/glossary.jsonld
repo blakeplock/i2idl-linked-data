@@ -29050,6 +29050,93 @@
       "gs:adaptationNotice": "This is an adaptation of an original work by the OECD.",
       "gs:adaptationDisclaimer": "The opinions expressed and arguments employed in this adaptation should not be reported as representing the official views of the OECD or of its Member countries.",
       "gs:thirdPartyMaterialNotice": "The CC BY 4.0 license does not apply to third-party material in the work; permission may be required from the relevant rights holder."
+    },
+    {
+      "@id": "https://id.i2idl.org/collections/curated/adaptive-learning-systems",
+      "@type": "skos:Collection",
+      "skos:prefLabel": "Adaptive Learning Systems",
+      "dcterms:description": "Concepts concerned with systems, models, and design approaches that adjust learning experiences in response to evidence about learners or context.",
+      "gs:facet": "curated",
+      "skos:member": [
+        {
+          "@id": "https://id.i2idl.org/concepts/adaptive-hypermedia"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/adaptive-instructional-system"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/intelligent-tutoring-system"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learner-model"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/personalization"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/personalized-learning"
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/collections/curated/competency-and-assessment",
+      "@type": "skos:Collection",
+      "skos:prefLabel": "Competency and Assessment",
+      "dcterms:description": "Concepts concerned with defining capability, organizing learning around competency, and collecting evidence of learner knowledge, skill, performance, or outcomes.",
+      "gs:facet": "curated",
+      "skos:member": [
+        {
+          "@id": "https://id.i2idl.org/concepts/assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/competency"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/competency-based-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/cross-national-assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/formative-assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/summative-assessment"
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/collections/curated/learning-analytics-and-decision-support",
+      "@type": "skos:Collection",
+      "skos:prefLabel": "Learning Analytics and Decision Support",
+      "dcterms:description": "Concepts concerned with analyzing learning data and using evidence, models, interfaces, and analytics to support interpretation and decision making.",
+      "gs:facet": "curated",
+      "skos:member": [
+        {
+          "@id": "https://id.i2idl.org/concepts/data-analysis"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-analytics"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-informed-decision-making"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/decision-support"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-analytics"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-analytics-dashboard"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/predictive-modeling"
+        }
+      ]
     }
   ]
 }
