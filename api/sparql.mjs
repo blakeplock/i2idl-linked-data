@@ -263,8 +263,7 @@ async function getQuery(request) {
   const url = new URL(request.url);
 
   if (request.method === 'GET') {
-    const raw = url.searchParams.get('query') || '';
-    return raw.replace(/\+/g, ' ');
+    return url.searchParams.get('query') || '';
   }
 
   const contentType = (
@@ -299,8 +298,7 @@ async function getQuery(request) {
   if (contentType === 'application/x-www-form-urlencoded') {
     const params = new URLSearchParams(body);
 
-    return (params.get('query') || '')
-      .replace(/\+/g, ' ');
+    return params.get('query') || '';
   }
 
   if (contentType === 'application/json') {
