@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "scripts": {
-    "validate": "node scripts/validate-glossary.mjs && node scripts/validate-curated-collections.mjs",
-    "validate:live": "node scripts/validate-live.mjs",
-    "validate:embed": "node scripts/validate-embed.mjs",
-    "deploy": "vercel --prod"
-  },
+"scripts": {
+  "validate": "node scripts/validate-glossary.mjs && node scripts/validate-curated-collections.mjs",
+  "validate:live": "node scripts/validate-live.mjs",
+  "validate:embed": "node scripts/validate-embed.mjs",
+  "relationships:coverage": "node scripts/report-relationship-coverage.mjs",
+  "deploy": "vercel --prod"
+},
   "dependencies": {
     "@comunica/query-sparql-rdfjs": "^5.4.1",
     "@rdfjs/parser-jsonld": "^2.1.3",
