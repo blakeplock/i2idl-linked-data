@@ -4872,6 +4872,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ai-for-professional-development"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/digital-literacies"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/digital-skills"
         }
       ]
     },
@@ -5481,6 +5487,15 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/result-object"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-evaluation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/testing-for-learning-impact"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/minimum-proficiency-level"
         }
       ]
     },
@@ -5559,6 +5574,20 @@
       },
       "skos:altLabel": [
         "Strengths-based model"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learner-variability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/personalized-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/competency-based-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/mastery-learning"
+        }
       ]
     },
     {
@@ -5816,7 +5845,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/field"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-curriculum"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/unesco-basic-and-general-study-subjects-1",
@@ -6581,6 +6615,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ieee-1484-20-3-2022-shareable-competency-definitions"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/minimum-proficiency-level"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1484-20-2-2022-defining-competencies"
         }
       ]
     },
@@ -6656,6 +6696,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/mastery-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/asset-model"
         }
       ]
     },
@@ -7444,6 +7487,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/evidence-based-practice"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/formative-evaluation"
         }
       ]
     },
@@ -7924,6 +7970,14 @@
         {
           "@id": "https://id.i2idl.org/concepts/learning-assessment"
         }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-poverty"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/minimum-proficiency-level"
+        }
       ]
     },
     {
@@ -8046,6 +8100,23 @@
         "Course content",
         "programme of study",
         "syllabus"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-education-domain"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-basic-and-general-study-subjects"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-technical-and-vocational-study-subjects"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/pedagogy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/early-childhood-education-ece"
+        }
       ]
     },
     {
@@ -10114,7 +10185,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/multi-channel-remote-learning"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/digital-divide-1",
@@ -10296,7 +10372,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/open-educational-resources-oer"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/digital-global-public-goods-1",
@@ -10353,7 +10434,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/open-educational-resources-oer"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-metadata"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/online-learning-modality"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/digital-learning-materials-1",
@@ -10413,6 +10505,14 @@
       },
       "skos:altLabel": [
         "Digital literacy"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/digital-skills"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-literacy-for-teachers"
+        }
       ]
     },
     {
@@ -10541,7 +10641,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/digital-literacies"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-literacy-for-teachers"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/digital-skills-1",
@@ -10619,6 +10727,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/future-learning-ecosystem"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/multi-channel-remote-learning"
         }
       ]
     },
@@ -10825,6 +10936,23 @@
       },
       "skos:altLabel": [
         "Education technology ecosystem"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-network"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/education-technology-edtech"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-ecosystem-governance"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/multi-stakeholder-approach"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/education-data-ecosystem"
+        }
       ]
     },
     {
@@ -10882,7 +11010,21 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-curriculum"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-systems-and-levels"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-institutions"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-policy"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/unesco-education-domain-1",
@@ -11029,6 +11171,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/data-ownership"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-policy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/edtech-ecosystem"
         }
       ]
     },
@@ -11303,6 +11451,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/laser-national-education-statistical-capacity-assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/full-time-equivalent-teacher-fte"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/educational-attainment"
         }
       ]
     },
@@ -11378,6 +11532,11 @@
       },
       "skos:altLabel": [
         "EdTech"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/edtech-ecosystem"
+        }
       ]
     },
     {
@@ -11435,7 +11594,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-institutions"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-management"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-policy"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/unesco-educational-administration-1",
@@ -11492,7 +11662,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/evaluation"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/formative-evaluation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/testing-for-learning-impact"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/unesco-educational-evaluation-1",
@@ -11553,6 +11734,11 @@
       "skos:altLabel": [
         "Academic facilities",
         "school facilities"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-institutions"
+        }
       ]
     },
     {
@@ -11610,7 +11796,29 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/institutional-concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-education-domain"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-facilities"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-management"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-administration"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-systems-and-levels"
+        }
+      ],
+      "skos:narrower": [
+        {
+          "@id": "https://id.i2idl.org/concepts/educational-institution"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/unesco-educational-institutions-1",
@@ -11667,7 +11875,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-institutions"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-administration"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-planning"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/unesco-educational-management-1",
@@ -11724,7 +11943,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-management"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-policy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/evidence-based-decision-making"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/unesco-educational-planning-1",
@@ -11781,7 +12011,24 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/policy"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-education-domain"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-administration"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-planning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/education-data-ecosystem"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/childcare-gap"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/unesco-educational-policy-1",
@@ -11838,7 +12085,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/population"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/classroom-teacher"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/fully-qualified-teacher"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/unesco-educational-population-1",
@@ -11895,7 +12150,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/field"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-sciences"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/pedagogy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-environment"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/unesco-educational-sciences-and-environment-1",
@@ -11966,7 +12232,21 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/system"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-education-domain"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-institutions"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/educational-attainment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/early-childhood-education-and-care-ecec"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/unesco-educational-systems-and-levels-1",
@@ -12627,6 +12907,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/data-analysis"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-planning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/educational-attainment"
         }
       ]
     },
@@ -12698,6 +12984,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ai-tool-validation-for-education"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/testing-for-learning-impact"
         }
       ]
     },
@@ -13480,6 +13769,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ai-assisted-teaching"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/formative-evaluation"
         }
       ]
     },
@@ -14991,6 +15283,20 @@
       "skos:altLabel": [
         "IEEE 1484.20.2",
         "Defining Competencies"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/competency"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1484-20-3-2022-shareable-competency-definitions"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/shareable-competency-definition-scd"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/interoperability"
+        }
       ]
     },
     {
@@ -15062,6 +15368,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ieee-learning-technology-standards-committee-ltsc"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1484-20-2-2022-defining-competencies"
         }
       ]
     },
@@ -16249,6 +16558,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ieee-learning-technology-standards-committee-ltsc"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1484-20-2-2022-defining-competencies"
         }
       ]
     },
@@ -17629,6 +17941,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/lifelong-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-network"
         }
       ]
     },
@@ -17759,7 +18074,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/edtech-ecosystem"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/learning-ecosystem-governance-1",
@@ -18316,6 +18636,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/experiential-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-sciences-and-environment"
         }
       ]
     },
@@ -18716,6 +19039,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ieee-2881-2025-learning-metadata-terms"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/digital-learning-materials"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/open-educational-resources-oer"
         }
       ]
     },
@@ -18774,7 +19103,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-community"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/networked-community"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/edtech-ecosystem"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/learning-network-1",
@@ -18902,7 +19242,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/minimum-proficiency-level"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/cross-national-assessment"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/learning-poverty-1",
@@ -19316,6 +19664,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/pedagogy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-sciences-and-environment"
         }
       ]
     },
@@ -19871,6 +20222,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/adaptive-instructional-system"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/asset-model"
         }
       ]
     },
@@ -20796,6 +21150,20 @@
       },
       "skos:altLabel": [
         "MPL"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-poverty"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/cross-national-assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/competency"
+        }
       ]
     },
     {
@@ -21157,7 +21525,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/remote-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/distributed-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/digital-divide"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/multi-channel-remote-learning-1",
@@ -21214,7 +21593,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/edtech-ecosystem"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/multi-stakeholder-approach-1",
@@ -21609,6 +21993,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/flipped-classroom"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/digital-learning-materials"
         }
       ]
     },
@@ -21672,6 +22059,17 @@
       },
       "skos:altLabel": [
         "OER"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/digital-learning-materials"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/digital-global-public-goods"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-metadata"
+        }
       ]
     },
     {
@@ -22054,6 +22452,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/unesco-teaching-and-training"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-curriculum"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-sciences-and-environment"
         }
       ]
     },
@@ -22341,6 +22745,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/learner-variability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/asset-model"
         }
       ]
     },
@@ -23588,6 +23995,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/distributed-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/multi-channel-remote-learning"
         }
       ]
     },
@@ -25214,6 +25624,11 @@
       },
       "skos:altLabel": [
         "IEEE 1484.20.3"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1484-20-2-2022-defining-competencies"
+        }
       ]
     },
     {
@@ -27748,7 +28163,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/field"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-curriculum"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/unesco-technical-and-vocational-study-subjects-1",
@@ -27962,7 +28382,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/method"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-evaluation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/evidence-based-practice"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/testing-for-learning-impact-1",
@@ -31039,6 +31470,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/learner-model"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/asset-model"
         }
       ]
     },
@@ -31295,6 +31729,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/connectivism"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-network"
         }
       ]
     },
@@ -31600,7 +32037,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-systems-and-levels"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/education-statistical-capacity"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/evidence-based-decision-making"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/educational-attainment-1",
@@ -31661,7 +32109,18 @@
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/role"
       },
-      "skos:altLabel": "Classroom teachers"
+      "skos:altLabel": "Classroom teachers",
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-population"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/fully-qualified-teacher"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/full-time-equivalent-teacher-fte"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/classroom-teacher-1",
@@ -31725,6 +32184,14 @@
       "skos:altLabel": [
         "FTE teacher",
         "Full-time equivalent teachers"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/classroom-teacher"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/education-statistical-capacity"
+        }
       ]
     },
     {
@@ -31786,7 +32253,15 @@
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/role"
       },
-      "skos:altLabel": "Fully qualified teachers"
+      "skos:altLabel": "Fully qualified teachers",
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-population"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/classroom-teacher"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/fully-qualified-teacher-1",
@@ -31847,7 +32322,12 @@
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/institutional-concept"
       },
-      "skos:altLabel": "Educational institutions"
+      "skos:altLabel": "Educational institutions",
+      "skos:broader": [
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-institutions"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/educational-institution-1",
@@ -31911,6 +32391,19 @@
       "skos:altLabel": [
         "ECEC",
         "Early childhood education and care"
+      ],
+      "skos:narrower": [
+        {
+          "@id": "https://id.i2idl.org/concepts/early-childhood-education-ece"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-systems-and-levels"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/childcare-gap"
+        }
       ]
     },
     {
@@ -31975,6 +32468,16 @@
       "skos:altLabel": [
         "ECE",
         "Early childhood education"
+      ],
+      "skos:broader": [
+        {
+          "@id": "https://id.i2idl.org/concepts/early-childhood-education-and-care-ecec"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-curriculum"
+        }
       ]
     },
     {
@@ -32035,7 +32538,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/early-childhood-education-and-care-ecec"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-policy"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/childcare-gap-1",
@@ -32095,7 +32606,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/evaluation"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-evaluation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/continuous-improvement"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/formative-assessment"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/formative-evaluation-1",
