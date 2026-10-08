@@ -4235,6 +4235,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/education-statistical-capacity"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/education-management-information-system"
         }
       ]
     },
@@ -4429,7 +4432,27 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/software-engineering"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/iterative-design"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/continuous-improvement"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/lean-agile"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/scrum"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/kanban"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/agile-development-1",
@@ -7490,6 +7513,24 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/formative-evaluation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/control-theory"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/agile-development"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/lean-agile"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/scrum"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/continuous-integration"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/value-stream-mapping"
         }
       ]
     },
@@ -7562,7 +7603,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/software-engineering"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/continuous-improvement"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/iterative-design"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/continuous-integration-1",
@@ -7619,7 +7671,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/feedback-loop"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/systems-thinking"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/continuous-improvement"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/control-theory-1",
@@ -8706,6 +8769,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/data-quality"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/education-management-information-system"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/value-stream-mapping"
         }
       ]
     },
@@ -10247,7 +10316,24 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/engineering-design"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/systems-thinking"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-environment-engineering"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-engineering"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/interoperability"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/digital-engineering-for-learning-systems-1",
@@ -10791,7 +10877,20 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/system"
-      }
+      },
+      "skos:broader": [
+        {
+          "@id": "https://id.i2idl.org/concepts/simulation"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/interoperability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/system-of-systems"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/distributed-simulation-1",
@@ -11177,6 +11276,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/edtech-ecosystem"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/education-management-information-system"
         }
       ]
     },
@@ -11251,6 +11353,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/data-quality"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/education-management-information-system"
         }
       ]
     },
@@ -11372,6 +11477,20 @@
       },
       "skos:altLabel": [
         "EMIS"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/administrative-data"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/education-data-ecosystem"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/education-data-integration"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-pipeline"
+        }
       ]
     },
     {
@@ -11885,6 +12004,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/unesco-educational-planning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/resource-allocation"
         }
       ]
     },
@@ -11953,6 +12075,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/evidence-based-decision-making"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/resource-allocation"
         }
       ]
     },
@@ -12431,7 +12556,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/system"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/rest-api"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-record-store-lrs"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-client"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/endpoint-1",
@@ -12498,6 +12634,18 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/technology-constraint"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/digital-engineering-for-learning-systems"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-systems-integration-hsi"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/software-engineering"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/project-management"
         }
       ]
     },
@@ -13564,6 +13712,11 @@
         {
           "@id": "https://id.i2idl.org/concepts/learner-feedback-loop"
         }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/control-theory"
+        }
       ]
     },
     {
@@ -14238,6 +14391,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/cognitive-walkthrough"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-systems-integration-hsi"
         }
       ]
     },
@@ -14642,6 +14798,17 @@
       },
       "skos:altLabel": [
         "HSI"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/human-centered-design"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/engineering-design"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/systems-thinking"
+        }
       ]
     },
     {
@@ -14778,6 +14945,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ieee-learning-technology-standards-committee-ltsc"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1484-11-2-2020-ecmascript-runtime-api"
         }
       ]
     },
@@ -14840,6 +15010,17 @@
       "skos:altLabel": [
         "IEEE 1484.11.2",
         "ECMAScript Runtime API"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1484-11-1-2022-content-object-communication"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/interoperability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/standards-compliance"
+        }
       ]
     },
     {
@@ -16561,6 +16742,21 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ieee-1484-20-2-2022-defining-competencies"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/system-of-systems"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/digital-engineering-for-learning-systems"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/distributed-simulation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/scalability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1484-11-2-2020-ecmascript-runtime-api"
         }
       ]
     },
@@ -16829,6 +17025,15 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/design-pattern"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/agile-development"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/scrum"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/continuous-integration"
         }
       ]
     },
@@ -17070,7 +17275,21 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/method"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/agile-development"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/lean-agile"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/value-stream-mapping"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/project-management"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/kanban-1",
@@ -17336,7 +17555,21 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/agile-development"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/continuous-improvement"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/kanban"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/value-stream-mapping"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/lean-agile-1",
@@ -18232,6 +18465,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/evidence-based-practice"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/digital-engineering-for-learning-systems"
         }
       ]
     },
@@ -18723,6 +18959,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/systems-thinking"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/digital-engineering-for-learning-systems"
         }
       ]
     },
@@ -18853,6 +19092,12 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/ieee-1589-2020-ar-learning-experience-model"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/simulation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/virtual-world"
         }
       ]
     },
@@ -19554,6 +19799,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/enterprise-learner-record"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/endpoint"
         }
       ]
     },
@@ -21224,6 +21472,14 @@
       },
       "skos:altLabel": [
         "MR"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/simulation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/virtual-world"
+        }
       ]
     },
     {
@@ -21355,7 +21611,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/method"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/simulation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/systems-thinking"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/modeling-and-simulation-1",
@@ -23639,7 +23903,21 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/discipline"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/kanban"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/scrum"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/resource-allocation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/engineering-design"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/project-management-1",
@@ -24058,7 +24336,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/project-management"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-management"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-planning"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/resource-allocation-1",
@@ -24401,6 +24690,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/learning-record-store-lrs"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/endpoint"
         }
       ]
     },
@@ -24953,7 +25245,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/software-engineering"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/system-of-systems"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/interoperability"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/scalability-1",
@@ -25027,7 +25330,21 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/method"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/agile-development"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/iterative-design"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/continuous-improvement"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/project-management"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/scrum-1",
@@ -25895,7 +26212,26 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/system"
-      }
+      },
+      "skos:narrower": [
+        {
+          "@id": "https://id.i2idl.org/concepts/distributed-simulation"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/modeling-and-simulation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-experience"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/mixed-reality"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/virtual-world"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/simulation-1",
@@ -26281,7 +26617,21 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/discipline"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/engineering-design"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/continuous-integration"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/agile-development"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/scalability"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/software-engineering-1",
@@ -26740,6 +27090,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ieee-learning-technology-standards-committee-ltsc"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1484-11-2-2020-ecmascript-runtime-api"
         }
       ]
     },
@@ -27867,7 +28220,24 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/systems-thinking"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/interoperability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/total-learning-architecture-tla"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/distributed-simulation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/scalability"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/system-of-systems-1",
@@ -27945,6 +28315,21 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/learning-environment-engineering"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/control-theory"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/system-of-systems"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/digital-engineering-for-learning-systems"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-systems-integration-hsi"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/modeling-and-simulation"
         }
       ]
     },
@@ -28517,6 +28902,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/experience-api-xapi"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/system-of-systems"
         }
       ]
     },
@@ -28979,7 +29367,21 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/method"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/lean-agile"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/kanban"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/continuous-improvement"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-pipeline"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/value-stream-mapping-1",
@@ -29314,7 +29716,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/system"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/mixed-reality"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/simulation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-experience"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/virtual-world-1",
@@ -29951,6 +30364,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/rest-api"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/endpoint"
         }
       ]
     },
