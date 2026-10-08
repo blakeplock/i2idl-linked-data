@@ -3690,6 +3690,14 @@
       },
       "skos:altLabel": [
         "Acquire"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-competency-progression"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-literacy-for-teachers"
+        }
       ]
     },
     {
@@ -4039,7 +4047,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/system"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/adaptive-instructional-system"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learner-model"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/personalization"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/adaptive-hypermedia-1",
@@ -4120,6 +4139,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/mastery-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/adaptive-hypermedia"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/meta-adaptation"
         }
       ]
     },
@@ -4235,7 +4260,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/discipline"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/artificial-intelligence-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learner-model"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/personalization"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/affective-computing-1",
@@ -4417,6 +4453,20 @@
       },
       "skos:altLabel": [
         "AI CFT"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-competency-progression"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-literacy-for-teachers"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-centred-mindset"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-pedagogy"
+        }
       ]
     },
     {
@@ -4477,6 +4527,23 @@
       },
       "skos:altLabel": [
         "AI CFT progression"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-competency-framework-for-teachers-ai-cft"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/acquire-ai-competency-level"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/deepen-ai-competency-level"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/create-ai-competency-level"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-for-professional-development"
+        }
       ]
     },
     {
@@ -4537,6 +4604,23 @@
       },
       "skos:altLabel": [
         "Explainability"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/responsible-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-accountability-in-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/trustworthy-ai-for-education"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/decision-support"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-tool-validation-for-education"
+        }
       ]
     },
     {
@@ -4597,6 +4681,17 @@
       },
       "skos:altLabel": [
         "AI for professional learning"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-competency-progression"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-literacy-for-teachers"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-pedagogy"
+        }
       ]
     },
     {
@@ -4654,7 +4749,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/artificial-intelligence-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/machine-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-literacy-for-teachers"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/ai-foundations-and-applications-1",
@@ -4714,6 +4820,23 @@
       },
       "skos:altLabel": [
         "Teachers’ AI literacy"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-foundations-and-applications"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-competency-framework-for-teachers-ai-cft"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/acquire-ai-competency-level"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-assisted-teaching"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-for-professional-development"
+        }
       ]
     },
     {
@@ -4771,7 +4894,30 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-competency-framework-for-teachers-ai-cft"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/deepen-ai-competency-level"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-assisted-teaching"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-enhanced-pedagogical-innovation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-pedagogy-integration"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-centered-education"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-for-professional-development"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/ai-pedagogy-1",
@@ -4831,6 +4977,23 @@
       },
       "skos:altLabel": [
         "Educational AI validation"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/trustworthy-ai-for-education"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-explainability-in-education"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/responsible-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/evidence-based-practice"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-quality"
+        }
       ]
     },
     {
@@ -4888,7 +5051,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-pedagogy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-literacy-for-teachers"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/formative-assessment"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/ai-assisted-teaching-1",
@@ -4945,7 +5119,21 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/create-ai-competency-level"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-pedagogy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-centered-education"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learner-agency"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/ai-enhanced-pedagogical-innovation-1",
@@ -5005,6 +5193,17 @@
       },
       "skos:altLabel": [
         "AI-pedagogy integration"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-pedagogy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/personalization"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-centered-education"
+        }
       ]
     },
     {
@@ -5119,7 +5318,23 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:narrower": [
+        {
+          "@id": "https://id.i2idl.org/concepts/machine-learning"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/affective-computing"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/decision-support"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-foundations-and-applications"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/artificial-intelligence-ai-1",
@@ -5661,7 +5876,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/fairness"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/responsible-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/machine-learning"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/bias-1",
@@ -7271,6 +7497,14 @@
       },
       "skos:altLabel": [
         "Create"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-competency-progression"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-enhanced-pedagogical-innovation"
+        }
       ]
     },
     {
@@ -8010,7 +8244,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/method"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/machine-learning"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/data-mining-1",
@@ -8212,7 +8451,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/responsible-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/safe-and-responsible-use-of-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/trustworthy-ai-for-education"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/data-privacy-1",
@@ -8314,7 +8564,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/trustworthy-ai-for-education"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-tool-validation-for-education"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/data-quality-1",
@@ -8442,7 +8700,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/responsible-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/safe-and-responsible-use-of-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/trustworthy-ai-for-education"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/data-security-1",
@@ -8784,6 +9053,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/predictive-modeling"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/artificial-intelligence-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-explainability-in-education"
         }
       ]
     },
@@ -8915,6 +9190,17 @@
       },
       "skos:altLabel": [
         "Deepen"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-competency-progression"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/responsible-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-pedagogy"
+        }
       ]
     },
     {
@@ -11703,7 +11989,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/fairness"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/social-responsibility-in-ai-education"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/equity-1",
@@ -11793,6 +12087,17 @@
       },
       "skos:altLabel": [
         "Ethical design of AI"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/ethics-of-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/responsible-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/privacy-by-design"
+        }
       ]
     },
     {
@@ -11853,6 +12158,20 @@
       },
       "skos:altLabel": [
         "AI ethics"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/ethics-by-design"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/responsible-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/safe-and-responsible-use-of-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/social-responsibility-in-ai-education"
+        }
       ]
     },
     {
@@ -11977,6 +12296,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/continuous-improvement"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-tool-validation-for-education"
         }
       ]
     },
@@ -12471,7 +12793,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/bias"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/responsible-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/equity"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/fairness-1",
@@ -12727,6 +13060,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/mastery-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-assisted-teaching"
         }
       ]
     },
@@ -12970,6 +13306,20 @@
       },
       "skos:altLabel": [
         "Human accountability"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-explainability-in-education"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/responsible-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-agency-in-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-controlled-ai-in-education"
+        }
       ]
     },
     {
@@ -13030,6 +13380,17 @@
       },
       "skos:altLabel": [
         "Human agency"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/human-accountability-in-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-controlled-ai-in-education"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-centred-mindset"
+        }
       ]
     },
     {
@@ -13159,6 +13520,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/learning-experience-design-lxd"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-centred-approach-to-ai"
         }
       ]
     },
@@ -13261,7 +13625,24 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/human-centred-approach-to-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-centred-mindset"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-pedagogy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-pedagogy-integration"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-enhanced-pedagogical-innovation"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/human-centered-education-1",
@@ -13321,6 +13702,23 @@
       },
       "skos:altLabel": [
         "Human-centered approach to AI"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/human-centred-mindset"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/responsible-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-centered-education"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-centered-design"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/social-responsibility-in-ai-education"
+        }
       ]
     },
     {
@@ -13381,6 +13779,20 @@
       },
       "skos:altLabel": [
         "Human-centered mindset"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-competency-framework-for-teachers-ai-cft"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-agency-in-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-centred-approach-to-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-centered-education"
+        }
       ]
     },
     {
@@ -13441,6 +13853,17 @@
       },
       "skos:altLabel": [
         "Human-controlled AI"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/human-accountability-in-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-agency-in-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/safe-and-responsible-use-of-ai"
+        }
       ]
     },
     {
@@ -16094,6 +16517,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/motivation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-enhanced-pedagogical-innovation"
         }
       ]
     },
@@ -16254,6 +16680,15 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/pedagogical-agent"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/adaptive-hypermedia"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/affective-computing"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/meta-adaptation"
         }
       ]
     },
@@ -18571,7 +19006,26 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/method"
-      }
+      },
+      "skos:broader": [
+        {
+          "@id": "https://id.i2idl.org/concepts/artificial-intelligence-ai"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/predictive-modeling"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-mining"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-foundations-and-applications"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/bias"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/machine-learning-1",
@@ -19003,7 +19457,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/adaptive-instructional-system"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learner-model"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/personalization"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/meta-adaptation-1",
@@ -20982,6 +21447,18 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/learner-variability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/adaptive-hypermedia"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/affective-computing"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/meta-adaptation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-pedagogy-integration"
         }
       ]
     },
@@ -21129,6 +21606,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/decision-support"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/machine-learning"
         }
       ]
     },
@@ -21257,7 +21737,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/ethics-by-design"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/privacy-by-design-1",
@@ -22556,7 +23041,48 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/deepen-ai-competency-level"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-explainability-in-education"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/bias"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/fairness"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ethics-by-design"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ethics-of-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/safe-and-responsible-use-of-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/trustworthy-ai-for-education"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-accountability-in-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-privacy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-security"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-centred-approach-to-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-tool-validation-for-education"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/responsible-ai-1",
@@ -22899,6 +23425,23 @@
       },
       "skos:altLabel": [
         "Responsible use of AI"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/ethics-of-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/responsible-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-controlled-ai-in-education"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-privacy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-security"
+        }
       ]
     },
     {
@@ -24352,6 +24895,17 @@
       },
       "skos:altLabel": [
         "AI social responsibility"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/ethics-of-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/equity"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-centred-approach-to-ai"
+        }
       ]
     },
     {
@@ -26658,6 +27212,26 @@
       },
       "skos:altLabel": [
         "Trustable AI for education"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-explainability-in-education"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/responsible-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-privacy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-security"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-quality"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-tool-validation-for-education"
+        }
       ]
     },
     {
