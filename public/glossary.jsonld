@@ -3427,7 +3427,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/system"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-record-store-lrs"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-client"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/about-resource-1",
@@ -3630,7 +3638,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/inverse-functional-identifier-ifi"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-agent"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-group"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/account-object-1",
@@ -3767,6 +3786,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/activity-definition"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/context-activities"
         }
       ]
     },
@@ -3905,6 +3927,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/xapi-document"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/document-profile-resource"
         }
       ]
     },
@@ -4203,7 +4228,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/education-data-ecosystem"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/education-statistical-capacity"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/administrative-data-1",
@@ -4335,6 +4368,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/xapi-document"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/document-profile-resource"
         }
       ]
     },
@@ -5261,7 +5297,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:broader": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-group"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/anonymous-group-1",
@@ -5437,6 +5478,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/competency-based-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/result-object"
         }
       ]
     },
@@ -5645,7 +5689,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-statement"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/attachment-1",
@@ -6529,6 +6578,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/competency-based-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1484-20-3-2022-shareable-competency-definitions"
         }
       ]
     },
@@ -7037,7 +7089,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/context-object"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/activity"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/context-activities-1",
@@ -7094,7 +7154,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/context-object"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-agent"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/context-agent-1",
@@ -7151,7 +7219,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/context-object"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-group"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/context-group-1",
@@ -7208,7 +7284,24 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-statement"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/context-activities"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/context-agent"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/context-group"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/registration"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/context-object-1",
@@ -7544,6 +7637,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/simple-knowledge-organization-system-skos"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/metadata-tagging"
         }
       ]
     },
@@ -8011,6 +8107,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/learning-analytics"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/evidence-based-decision-making"
         }
       ]
     },
@@ -8148,7 +8247,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/data-quality"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/education-statistical-capacity"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/data-availability-1",
@@ -8265,7 +8372,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/instrumentation"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/data-instrumentation-1",
@@ -8431,7 +8543,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/data-stewardship"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-privacy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/education-data-ecosystem"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/data-ownership-1",
@@ -8502,7 +8625,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/system"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/streaming-learning-data"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/education-data-integration"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-quality"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/data-pipeline-1",
@@ -8569,6 +8703,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/trustworthy-ai-for-education"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-ownership"
         }
       ]
     },
@@ -8679,6 +8816,15 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ai-tool-validation-for-education"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-pipeline"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/education-data-integration"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-availability"
         }
       ]
     },
@@ -8751,7 +8897,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/education-data-cycle"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/education-statistical-capacity"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/data-reporting-1",
@@ -8879,7 +9033,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/education-data-integration"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/interoperability"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/data-silo-1",
@@ -8936,7 +9098,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/data-ownership"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/data-stewardship-1",
@@ -9066,6 +9233,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/evidence-based-practice"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/evidence-based-decision-making"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/education-data-cycle"
         }
       ]
     },
@@ -9167,6 +9340,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ai-explainability-in-education"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/evidence-based-decision-making"
         }
       ]
     },
@@ -10052,7 +10228,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/instrumentation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/streaming-learning-data"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-analytics"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/digital-footprint-1",
@@ -10553,7 +10740,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/system"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-document"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/agent-profile-resource"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/activity-profile-resource"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/document-profile-resource-1",
@@ -10741,7 +10939,21 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/data-reporting"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/education-data-ecosystem"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/evidence-based-decision-making"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-informed-decision-making"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/education-data-cycle-1",
@@ -10798,7 +11010,27 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/system"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/education-data-integration"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/administrative-data"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/survey-data"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/education-data-cycle"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/education-statistical-capacity"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-ownership"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/education-data-ecosystem-1",
@@ -10858,6 +11090,20 @@
       },
       "skos:altLabel": [
         "Data integration"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/data-pipeline"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-silo"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/education-data-ecosystem"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-quality"
+        }
       ]
     },
     {
@@ -11038,6 +11284,26 @@
       },
       "skos:altLabel": [
         "Statistical capacity"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/administrative-data"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/survey-data"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-availability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-reporting"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/education-data-ecosystem"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/laser-national-education-statistical-capacity-assessment"
+        }
       ]
     },
     {
@@ -12040,7 +12306,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/system"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-record"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-record-store-lrs"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/interoperability"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/enterprise-learner-record-1",
@@ -12337,7 +12614,21 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/education-data-cycle"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-informed-decision-making"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/decision-support"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-analysis"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/evidence-based-decision-making-1",
@@ -14119,7 +14410,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:broader": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-group"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/identified-group-1",
@@ -14180,6 +14476,17 @@
       "skos:altLabel": [
         "IEEE 1484.11.1",
         "Content Object Communication"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/interoperability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-record"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-learning-technology-standards-committee-ltsc"
+        }
       ]
     },
     {
@@ -14302,6 +14609,17 @@
       "skos:altLabel": [
         "IEEE 1484.12.1",
         "LOM"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-metadata"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1484-12-3-2020-xml-binding-learning-object-metadata"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-learning-technology-standards-committee-ltsc"
+        }
       ]
     },
     {
@@ -14363,6 +14681,11 @@
       "skos:altLabel": [
         "IEEE 1484.12.3",
         "LOM XML Binding"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1484-12-1-2020-learning-object-metadata"
+        }
       ]
     },
     {
@@ -14729,6 +15052,17 @@
       "skos:altLabel": [
         "IEEE 1484.20.3",
         "SCD"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/competency"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/interoperability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-learning-technology-standards-committee-ltsc"
+        }
       ]
     },
     {
@@ -14791,6 +15125,14 @@
         "IEEE 1589",
         "AR Learning Experience Model",
         "AR-LEM"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-experience"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/interoperability"
+        }
       ]
     },
     {
@@ -14852,6 +15194,17 @@
       "skos:altLabel": [
         "IEEE 2881",
         "Learning Metadata"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-metadata"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/resource-description-framework-rdf"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-learning-technology-standards-committee-ltsc"
+        }
       ]
     },
     {
@@ -15100,6 +15453,26 @@
       },
       "skos:altLabel": [
         "IEEE LTSC"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/standards-compliance"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/interoperability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1484-11-1-2022-content-object-communication"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1484-12-1-2020-learning-object-metadata"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1484-20-3-2022-shareable-competency-definitions"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-2881-2025-learning-metadata-terms"
+        }
       ]
     },
     {
@@ -15446,7 +15819,21 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/data-instrumentation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/sensor"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-event"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/digital-footprint"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/instrumentation-1",
@@ -15683,6 +16070,15 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/linked-data"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/metadata-tagging"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/metadata-provider"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/metadata-consumer"
         }
       ]
     },
@@ -15835,6 +16231,24 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/open-standards-and-architecture-for-interoperability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/enterprise-learner-record"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-silo"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1484-20-3-2022-shareable-competency-definitions"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1484-11-1-2022-content-object-communication"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1589-2020-ar-learning-experience-model"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-learning-technology-standards-committee-ltsc"
         }
       ]
     },
@@ -15941,6 +16355,20 @@
       },
       "skos:altLabel": [
         "IFI"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/account-object"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-agent"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-group"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/person-object"
+        }
       ]
     },
     {
@@ -16531,6 +16959,14 @@
       },
       "skos:altLabel": [
         "National Education Statistical Capacity Assessment"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/education-statistical-capacity"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/maturity-model"
+        }
       ]
     },
     {
@@ -16964,6 +17400,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/data-informed-decision-making"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/digital-footprint"
         }
       ]
     },
@@ -18019,7 +18458,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/instrumentation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-record"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/streaming-learning-data"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/learning-event-1",
@@ -18076,7 +18526,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1589-2020-ar-learning-experience-model"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/learning-experience-1",
@@ -18242,7 +18697,27 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/metadata-tagging"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/metadata-provider"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/metadata-consumer"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/linked-data"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1484-12-1-2020-learning-object-metadata"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-2881-2025-learning-metadata-terms"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/learning-metadata-1",
@@ -18484,7 +18959,21 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-event"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-statement"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/enterprise-learner-record"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1484-11-1-2022-content-object-communication"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/learning-record-1",
@@ -18706,6 +19195,17 @@
       "skos:broader": [
         {
           "@id": "https://id.i2idl.org/concepts/xapi-client"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/about-resource"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/rest-api"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/enterprise-learner-record"
         }
       ]
     },
@@ -18985,6 +19485,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/internationalized-resource-identifier-iri"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-metadata"
         }
       ]
     },
@@ -19448,6 +19951,11 @@
       },
       "skos:altLabel": [
         "Capability maturity model"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/laser-national-education-statistical-capacity-assessment"
+        }
       ]
     },
     {
@@ -19918,7 +20426,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-metadata"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/internationalized-resource-identifier-iri"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/metadata-provider"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/metadata-consumer-1",
@@ -19989,7 +20508,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-metadata"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/internationalized-resource-identifier-iri"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/metadata-consumer"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/metadata-provider-1",
@@ -20060,7 +20590,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-metadata"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/controlled-vocabulary"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/internationalized-resource-identifier-iri"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/metadata-tagging-1",
@@ -21571,7 +22112,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-agent"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/inverse-functional-identifier-ifi"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/person-object-1",
@@ -22954,6 +23503,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/subregistration"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/context-object"
         }
       ]
     },
@@ -23172,6 +23724,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/xapi-profile"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-2881-2025-learning-metadata-terms"
         }
       ]
     },
@@ -23429,6 +23984,14 @@
       },
       "skos:altLabel": [
         "Representational State Transfer API"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-client"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-record-store-lrs"
+        }
       ]
     },
     {
@@ -23500,7 +24063,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-statement"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/assessment"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/result-object-1",
@@ -24578,7 +25149,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/system"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/instrumentation"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/sensor-1",
@@ -25746,6 +26322,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/interoperability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-learning-technology-standards-committee-ltsc"
         }
       ]
     },
@@ -26393,6 +26972,17 @@
       "skos:altLabel": [
         "Activity stream",
         "event stream"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-event"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-pipeline"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/digital-footprint"
+        }
       ]
     },
     {
@@ -26727,6 +27317,14 @@
       },
       "skos:altLabel": [
         "Household survey data"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/education-data-ecosystem"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/education-statistical-capacity"
+        }
       ]
     },
     {
@@ -28768,6 +29366,20 @@
         {
           "@id": "https://id.i2idl.org/concepts/actor"
         }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/account-object"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/inverse-functional-identifier-ifi"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/person-object"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/context-agent"
+        }
       ]
     },
     {
@@ -28900,6 +29512,14 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/learning-record-store-lrs"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/about-resource"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/rest-api"
         }
       ]
     },
@@ -29047,6 +29667,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/xapi-concurrency-control"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/document-profile-resource"
         }
       ]
     },
@@ -29275,6 +29898,25 @@
       "skos:broader": [
         {
           "@id": "https://id.i2idl.org/concepts/actor"
+        }
+      ],
+      "skos:narrower": [
+        {
+          "@id": "https://id.i2idl.org/concepts/anonymous-group"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/identified-group"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/account-object"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/inverse-functional-identifier-ifi"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/context-group"
         }
       ]
     },
@@ -29682,6 +30324,18 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/profile-based-statement-conformance"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/context-object"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/attachment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/result-object"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-record"
         }
       ]
     },
