@@ -5702,7 +5702,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/working-memory"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/cognitive-load"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/attention-1",
@@ -5944,7 +5952,21 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/prior-knowledge"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/procedural-knowledge"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/conceptual-knowledge"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/worked-example"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/building-expertise-1",
@@ -6096,7 +6118,21 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/meaningful-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/motivation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/flow"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/yerkes-dodson-law"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/cognitive-engagement-1",
@@ -6165,6 +6201,14 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/worked-example"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/attention"
+        }
+      ],
+      "skos:narrower": [
+        {
+          "@id": "https://id.i2idl.org/concepts/extraneous-cognitive-load"
         }
       ]
     },
@@ -6326,7 +6370,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/method"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/usability-testing"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/user-testing"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-centered-design"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/cognitive-walkthrough-1",
@@ -6390,6 +6445,12 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/learning-community"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/social-constructivism"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/mentorship"
         }
       ]
     },
@@ -6669,7 +6730,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/method"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/conceptual-knowledge"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/meaningful-learning"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/concept-map-1",
@@ -6747,6 +6816,20 @@
       },
       "skos:altLabel": [
         "Knowing why"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/building-expertise"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/procedural-knowledge"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/meaningful-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/concept-map"
+        }
       ]
     },
     {
@@ -6806,7 +6889,21 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/social-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/networked-community"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/lifelong-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/connectivist-mooc-cmooc"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/connectivism-1",
@@ -6869,6 +6966,17 @@
       },
       "skos:altLabel": [
         "cMOOC"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/connectivism"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/massive-open-online-course-mooc"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/social-learning"
+        }
       ]
     },
     {
@@ -12736,7 +12844,17 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:broader": [
+        {
+          "@id": "https://id.i2idl.org/concepts/cognitive-load"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/multimedia-learning"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/extraneous-cognitive-load-1",
@@ -12994,7 +13112,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/motivation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/cognitive-engagement"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/flow-1",
@@ -13229,6 +13355,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/motivation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/productive-mindset"
         }
       ]
     },
@@ -13523,6 +13652,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/human-centred-approach-to-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/cognitive-walkthrough"
         }
       ]
     },
@@ -13641,6 +13773,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ai-enhanced-pedagogical-innovation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/whole-person-development"
         }
       ]
     },
@@ -16259,6 +16394,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/spaced-repetition"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/long-term-memory"
         }
       ]
     },
@@ -16520,6 +16658,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ai-enhanced-pedagogical-innovation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/locus-of-control"
         }
       ]
     },
@@ -17040,6 +17181,15 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/social-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/social-constructivism"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/sensemaking"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/lifelong-learning"
         }
       ]
     },
@@ -18011,6 +18161,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/experiential-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/pedagogy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-teaching-and-training"
         }
       ]
     },
@@ -18657,6 +18813,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/learning-engineering"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/pedagogy"
         }
       ]
     },
@@ -18745,7 +18904,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/connectivism"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/whole-person-development"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-community"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/lifelong-learning-1",
@@ -18873,7 +19043,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learner-agency"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/self-regulated-learning"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/locus-of-control-1",
@@ -18933,7 +19111,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/knowledge-retention"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/retrieval-practice"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/long-term-memory-1",
@@ -19106,6 +19292,11 @@
       "skos:narrower": [
         {
           "@id": "https://id.i2idl.org/concepts/extended-mooc-xmooc"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/connectivist-mooc-cmooc"
         }
       ]
     },
@@ -19318,6 +19509,15 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/prior-knowledge"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/conceptual-knowledge"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/concept-map"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/cognitive-engagement"
         }
       ]
     },
@@ -19398,6 +19598,17 @@
       },
       "skos:altLabel": [
         "Mentoring"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/observational-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/community-of-practice"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/scaffolding"
+        }
       ]
     },
     {
@@ -20319,6 +20530,18 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/growth-mindset"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/cognitive-engagement"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/flow"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/productive-mindset"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/yerkes-dodson-law"
         }
       ]
     },
@@ -20514,6 +20737,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/working-memory"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/extraneous-cognitive-load"
         }
       ]
     },
@@ -20755,7 +20981,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/mentorship"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/social-learning"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/observational-learning-1",
@@ -21266,7 +21500,21 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-sciences"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-experience-design-lxd"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/scaffolding"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-teaching-and-training"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/pedagogy-1",
@@ -21677,6 +21925,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/scaffolding"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/building-expertise"
         }
       ]
     },
@@ -21933,6 +22184,17 @@
       },
       "skos:altLabel": [
         "Knowing how"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/building-expertise"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/conceptual-knowledge"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/task-analysis"
+        }
       ]
     },
     {
@@ -21992,7 +22254,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/growth-mindset"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/motivation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/self-efficacy"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/productive-mindset-1",
@@ -23291,6 +23564,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/spaced-repetition"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/long-term-memory"
         }
       ]
     },
@@ -23583,6 +23859,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/cognitive-load"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/mentorship"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/pedagogy"
         }
       ]
     },
@@ -23899,6 +24181,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/motivation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/productive-mindset"
         }
       ]
     },
@@ -24064,6 +24349,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/learner-agency"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/locus-of-control"
         }
       ]
     },
@@ -24222,7 +24510,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/social-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-community"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/sensemaking-1",
@@ -24399,7 +24695,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/working-memory"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/short-term-memory-1",
@@ -24677,7 +24978,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/social-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-community"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/community-of-practice"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/social-constructivism-1",
@@ -24815,6 +25127,21 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/learning-community"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/connectivism"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/connectivist-mooc-cmooc"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/social-constructivism"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/sensemaking"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/observational-learning"
         }
       ]
     },
@@ -26668,6 +26995,11 @@
         {
           "@id": "https://id.i2idl.org/concepts/cognitive-task-analysis"
         }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/procedural-knowledge"
+        }
       ]
     },
     {
@@ -26725,7 +27057,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/pedagogy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-experience-design-lxd"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/unesco-teaching-and-training-1",
@@ -27370,6 +27710,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/accessibility-and-inclusivity-testing"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/cognitive-walkthrough"
         }
       ]
     },
@@ -27428,7 +27771,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/method"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/cognitive-walkthrough"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/user-testing-1",
@@ -28130,7 +28478,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/lifelong-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-centered-education"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/whole-person-development-1",
@@ -28200,6 +28556,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/cognitive-load"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/building-expertise"
         }
       ]
     },
@@ -28264,6 +28623,12 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/multimedia-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/attention"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/short-term-memory"
         }
       ]
     },
@@ -29496,7 +29861,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/motivation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/cognitive-engagement"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/yerkes-dodson-law-1",
@@ -30265,6 +30638,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/coordination-network"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/connectivism"
         }
       ]
     },
