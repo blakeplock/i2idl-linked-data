@@ -1,14 +1,22 @@
 # I2IDL Glossary Semantic Relationships
 
-The I2IDL Digital Learning Glossary publishes relationships among concepts as an editorial layer of the glossary graph.
+The I2IDL Digital Learning Glossary publishes editorially reviewed semantic relationships among concepts as part of its Linked Data graph.
 
-Relationships are intended to express defensible conceptual structure. They are not generated from lexical similarity, embedding similarity, shared keywords, or automated clustering alone.
+Beginning with release `v0.0.80`, every published glossary concept participates in at least one internal semantic relationship.
 
-Automated methods may assist editors in identifying candidates for review. Publication of a relationship requires editorial judgment.
+## Editorial principle
+
+Relationships are intended to express defensible conceptual structure.
+
+They are not generated automatically from lexical similarity, shared keywords, embedding similarity, vector proximity, or automated clustering.
+
+Automated methods may assist editors in identifying candidates for review, but publication of a semantic relationship requires editorial judgment.
+
+Field membership and curated-collection membership are not treated as semantic relationships by themselves. A concept may belong to one or more collections without implying hierarchy or conceptual equivalence.
 
 ## Internal concept relationships
 
-The initial internal relationship model uses three SKOS properties:
+The internal relationship model currently uses three SKOS properties:
 
 ```text
 skos:broader

@@ -20,7 +20,7 @@ SPARQL endpoint:
 https://id.i2idl.org/sparql
 ```
 
-**Current glossary release:** `v0.0.75`
+**Current glossary release:** `v0.0.80`
 
 ## Architecture
 
@@ -55,7 +55,7 @@ The human-facing glossary and the machine-readable graph are versioned together 
 
 The glossary uses JSON-LD 1.1 as its canonical interchange representation. Its semantic model is based primarily on established vocabularies and standards:
 
-- **SKOS** for concepts, concept schemes, preferred and alternate labels, definitions, semantic relationships, and collections
+- **SKOS** for concepts, concept schemes, preferred and alternate labels, definitions, semantic relationships, mappings, and collections
 - **Schema.org** for `DefinedTerm` and `DefinedTermSet`
 - **Dublin Core Terms** for titles, creators, sources, dates, rights, publishers, and bibliographic metadata
 - **PROV-O** for provenance and derivation
@@ -77,7 +77,7 @@ Beginning with `v0.0.74`, the glossary supports many-to-many membership between 
 
 A concept keeps one stable URI and one editorially designated primary field while also participating in multiple collections when the concept has substantive relevance across domains.
 
-For example, a concept such as:
+For example:
 
 ```text
 https://id.i2idl.org/concepts/data-informed-decision-making
@@ -85,29 +85,28 @@ https://id.i2idl.org/concepts/data-informed-decision-making
 
 can be a member of multiple field collections without duplicating the concept record or changing its identifier.
 
-This allows the graph to represent intersections among domains such as:
+The glossary currently uses 12 field collections:
 
+- Agile & Operations
+- AI & Machine Learning
+- Assessment & Measurement
+- Data & Instrumentation
+- Education
+- Engineering & Systems
+- Enterprise & Governance
+- Human-Centered Design
+- Learning Analytics
 - Learning Engineering
 - Learning Sciences
-- Data & Instrumentation
-- Learning Analytics
-- Human-Centered Design
 - Standards & Interoperability
-- Engineering & Systems
-- AI & Machine Learning
-- Education
-- Assessment & Measurement
-- Enterprise & Governance
-- Simulation & Immersive Learning
 
-The `v0.0.75` release expanded this model across all 12 field collections.
+The `v0.0.75` release expanded this model across all field collections.
 
 Current field-membership profile:
 
 ```text
 397 concepts
 600 field memberships
-181 newly added cross-field memberships in v0.0.75
 171 concepts in more than one field collection
 140 concepts in 2 field collections
 30 concepts in 3 field collections
@@ -140,6 +139,94 @@ ORDER BY ?label
 
 The same model can be used to calculate pairwise intersections, unique-to-field concepts, concepts spanning three or more fields, and collection-similarity measures.
 
+## Semantic relationships
+
+Release `v0.0.80` establishes complete internal semantic relationship coverage across the glossary.
+
+The internal relationship model currently uses:
+
+```text
+skos:broader
+skos:narrower
+skos:related
+```
+
+Current relationship profile:
+
+```text
+397 concepts
+397 concepts with semantic relationships
+31 broader/narrower relationship pairs
+644 related relationship pairs
+0 isolated concepts
+100.0% semantic relationship coverage
+```
+
+Relationships are editorially reviewed and intended to express defensible conceptual structure. They are not generated solely from lexical similarity, shared keywords, embedding similarity, or automated clustering.
+
+The graph validator enforces:
+
+- resolvable relationship targets
+- no duplicate relationships
+- no self-references
+- reciprocal broader/narrower relationships
+- reciprocal related relationships
+- separation between hierarchical and related assertions
+
+Detailed editorial policy is documented in:
+
+```text
+SEMANTIC-RELATIONSHIPS.md
+```
+
+Relationship coverage can be inspected with:
+
+```bash
+npm run relationships:coverage
+```
+
+To list isolated concepts if any are introduced in a future release:
+
+```bash
+npm run relationships:coverage -- --isolated
+```
+
+The coverage report is informational rather than a publication failure condition so that new concepts can be introduced and reviewed before a relationship is necessarily assigned.
+
+## Curated collections
+
+The glossary supports curated SKOS collections in addition to field and type collections.
+
+The current curated collections are:
+
+- **Adaptive Learning Systems**
+- **Competency and Assessment**
+- **Learning Analytics and Decision Support**
+
+Curated collections provide editorial pathways through the graph while remaining distinct from semantic hierarchy.
+
+Collection membership does not imply:
+
+```text
+skos:broader
+skos:narrower
+skos:related
+```
+
+This distinction allows classification, curation, and conceptual structure to coexist without being conflated.
+
+## Human-readable concept neighborhoods
+
+Semantic relationships are also surfaced in the human-facing glossary.
+
+Where applicable, glossary concepts expose:
+
+- broader concepts
+- narrower concepts
+- related concepts
+
+This allows ordinary users to navigate the knowledge graph without needing to understand RDF, JSON-LD, SKOS, or SPARQL.
+
 ## URI conventions
 
 Stable identifiers follow these patterns:
@@ -150,6 +237,8 @@ https://id.i2idl.org/concepts/{concept-id}
 https://id.i2idl.org/definitions/{definition-id}
 https://id.i2idl.org/sources/{source-id}
 https://id.i2idl.org/collections/field/{collection-id}
+https://id.i2idl.org/collections/type/{collection-id}
+https://id.i2idl.org/collections/curated/{collection-id}
 ```
 
 Example:
@@ -419,6 +508,10 @@ The publication validator checks for:
 - duplicate membership within a collection
 - primary-field membership consistency
 - support for concepts belonging to multiple field collections
+- resolvable internal semantic relationships
+- duplicate and self-referential relationship protection
+- reciprocal broader/narrower and related relationships
+- separation of hierarchical and related relationships
 - HTTPS-only rendered external URLs
 - inline JSON-LD context use
 - dangerous object keys
@@ -438,21 +531,49 @@ Permissions-Policy: camera=(), microphone=(), geolocation=()
 
 The SPARQL browser interface also uses a restrictive Content Security Policy and frame protection.
 
-### Automated validation
+## Validation and monitoring
 
-The repository includes three validation tools:
+The repository includes graph, curated-collection, embed, live-service, and semantic-coverage tools.
+
+### Graph validation
 
 ```bash
 npm run validate
+```
+
+This runs both the glossary graph validator and curated-collection validator.
+
+It checks graph integrity, identifiers, collection membership, semantic relationships, provenance, source metadata, and publication security requirements.
+
+### Relationship coverage
+
+```bash
+npm run relationships:coverage
+```
+
+Reports overall and field-level semantic relationship coverage.
+
+To show isolated concepts:
+
+```bash
+npm run relationships:coverage -- --isolated
+```
+
+### Embed validation
+
+```bash
 npm run validate:embed -- <glossary-html-file>
+```
+
+Checks the Squarespace glossary embed for known unsafe rendering patterns.
+
+### Live validation
+
+```bash
 npm run validate:live
 ```
 
-`npm run validate` checks graph integrity, collection membership, provenance, and publication security requirements.
-
-`npm run validate:embed` checks the Squarespace glossary embed for known unsafe rendering patterns.
-
-`npm run validate:live` verifies the deployed Linked Data and SPARQL services, including:
+Verifies the deployed Linked Data and SPARQL services, including:
 
 - full JSON-LD publication
 - concept provenance subgraphs
@@ -504,20 +625,25 @@ i2idl-linked-data/
 ├── api/
 │   ├── resolve.mjs
 │   └── sparql.mjs
+├── lib/
+│   └── sparql-query-worker.mjs
 ├── public/
 │   ├── glossary.jsonld
 │   └── index.html
 ├── scripts/
+│   ├── report-relationship-coverage.mjs
+│   ├── validate-curated-collections.mjs
 │   ├── validate-embed.mjs
 │   ├── validate-glossary.mjs
 │   └── validate-live.mjs
 ├── DATA-LICENSE.md
 ├── LICENSE
+├── README.md
+├── SEMANTIC-RELATIONSHIPS.md
 ├── package.json
 ├── package-lock.json
 ├── vercel.json
-├── .gitignore
-└── README.md
+└── .gitignore
 ```
 
 ### `public/glossary.jsonld`
@@ -532,9 +658,21 @@ Handles content negotiation and individual scheme, concept, definition, source, 
 
 Provides the read-only SPARQL service, browser query interface, query restrictions, execution limits, and response security controls.
 
+### `lib/sparql-query-worker.mjs`
+
+Executes bounded SPARQL queries separately from the HTTP request handler.
+
 ### `scripts/validate-glossary.mjs`
 
-Validates graph structure, identifiers, collection memberships, evidence provenance, source metadata, URL safety, and publication security requirements.
+Validates graph structure, identifiers, collection memberships, semantic relationships, evidence provenance, source metadata, URL safety, and publication security requirements.
+
+### `scripts/validate-curated-collections.mjs`
+
+Validates identifiers, metadata, and membership requirements for curated editorial collections.
+
+### `scripts/report-relationship-coverage.mjs`
+
+Reports overall and field-level semantic relationship coverage.
 
 ### `scripts/validate-embed.mjs`
 
@@ -543,6 +681,10 @@ Validates the human-readable glossary embed for unsafe source URL handling, unsa
 ### `scripts/validate-live.mjs`
 
 Tests the deployed Linked Data and SPARQL service, including security regression checks.
+
+### `SEMANTIC-RELATIONSHIPS.md`
+
+Documents the glossary's editorial relationship policy, internal semantic model, integrity rules, coverage model, and principles for future external vocabulary mappings.
 
 ### `vercel.json`
 
@@ -556,31 +698,36 @@ For each glossary release:
 
 1. Update the glossary source and increment its visible version number.
 2. Update the visible Eastern Time "last updated" timestamp.
-3. Generate the corresponding JSON-LD graph from the same semantic model.
-4. Run the graph validator:
+3. Generate or update the corresponding JSON-LD graph from the same semantic model.
+4. Update `gs:publicationVersion` in the concept scheme.
+5. Run:
    ```bash
    npm run validate
    ```
-5. Run the embed validator against the release HTML:
+6. Review semantic relationship coverage:
+   ```bash
+   npm run relationships:coverage
+   ```
+7. Run the embed validator against the release HTML:
    ```bash
    npm run validate:embed -- <glossary-html-file>
    ```
-6. Publish the new HTML/embed version to the I2IDL Squarespace glossary page.
-7. Replace `public/glossary.jsonld` with the JSON-LD file for the same release.
-8. Create a branch and pull request.
-9. Allow required GitHub checks to pass.
-10. Merge into the protected `main` branch.
-11. Vercel automatically deploys the new `main` commit.
-12. Run the live deployment validator:
+8. Publish the new HTML/embed version to the I2IDL Squarespace glossary page.
+9. Replace or update `public/glossary.jsonld` for the same release.
+10. Create a branch and pull request.
+11. Allow required GitHub checks to pass.
+12. Merge into the protected `main` branch.
+13. Vercel automatically deploys the new `main` commit.
+14. Run:
    ```bash
    npm run validate:live
    ```
-13. Confirm the human-readable page and machine-readable publication report the same release version.
+15. Confirm that the human-readable page and machine-readable publication report the same release version.
 
 A useful release commit message is:
 
 ```text
-Publish glossary v0.0.75 JSON-LD
+Publish glossary v0.0.80
 ```
 
 with the version changed for each release.
@@ -591,6 +738,12 @@ with the version changed for each release.
 
 ```bash
 npm run validate
+```
+
+### Relationship coverage
+
+```bash
+npm run relationships:coverage
 ```
 
 ### Full graph
@@ -791,7 +944,7 @@ Changes to the Linked Data service should not require changes to the root I2IDL 
 
 The software and deployment code in this repository are licensed under the Apache License 2.0. See `LICENSE`.
 
-The I2IDL Digital Learning Glossary data and editorial content are governed separately. Unless otherwise noted, I2IDL-original glossary definitions, editorial explanations, semantic modeling, classifications, and compilation are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).
+The I2IDL Digital Learning Glossary data and editorial content are governed separately. Unless otherwise noted, I2IDL-original glossary definitions, editorial explanations, semantic modeling, classifications, relationships, and compilation are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).
 
 Third-party source-derived material remains subject to its original licensing and rights conditions.
 
@@ -875,7 +1028,7 @@ Provides:
 
 **Complete.**
 
-The glossary now supports many-to-many concept membership across all 12 field collections while retaining one stable identifier and one primary field for each concept.
+The glossary supports many-to-many concept membership across all 12 field collections while retaining one stable identifier and one primary field for each concept.
 
 Provides:
 
@@ -890,83 +1043,70 @@ Provides:
 - 600 field memberships across 397 concepts
 - 171 concepts represented in more than one field collection
 
+### Phase 6: Semantic relationships and graph navigation
+
+**Complete in v0.0.80.**
+
+The glossary now operates as an explicitly connected knowledge graph.
+
+Provides:
+
+- editorially reviewed `skos:broader`
+- editorially reviewed `skos:narrower`
+- editorially reviewed `skos:related`
+- reciprocal relationship validation
+- protection against duplicate relationships and self-references
+- separation of hierarchical and associative relationships
+- 397 of 397 concepts participating in the semantic graph
+- 31 broader/narrower relationship pairs
+- 644 related relationship pairs
+- 100% internal semantic relationship coverage
+- permanent relationship-coverage reporting
+- human-readable concept neighborhoods
+- broader, narrower, and related concept navigation
+
+### Phase 7: Curated semantic pathways
+
+**Complete.**
+
+Provides:
+
+- three curated SKOS collections
+- stable curated collection URIs
+- curated collection validation
+- human-readable collection exploration
+- machine-readable collection membership
+- separation of curated pathways from semantic hierarchy
+
 ## Next development priorities
 
-The next phase moves from multi-dimensional classification toward an explicitly connected and navigable knowledge graph.
+### 1. Add crosswalks to external vocabularies
 
-### 1. Add semantic relationships between concepts
+This is the next major semantic-development phase.
 
-This is the highest-priority next step.
-
-Concepts should begin to connect through relationships such as:
-
-- `skos:broader`
-- `skos:narrower`
-- `skos:related`
-- `skos:exactMatch`
-- `skos:closeMatch`
-
-Carefully selected domain-specific relationships may also be introduced where standard SKOS relationships are not expressive enough.
-
-This will allow concepts such as adaptive learning, adaptive instructional system, learner model, competency framework, and learning analytics to function as connected parts of a graph rather than isolated glossary entries.
-
-Relationships should be editorially reviewed and defensible. They should not be generated solely from lexical or embedding similarity.
-
-### 2. Build concept neighborhoods into the human UI
-
-Each glossary card should expose a small **Related concepts** section generated from the graph.
-
-This should make semantic structure visible to ordinary users without requiring them to understand Linked Data or SPARQL.
-
-Potential neighborhood signals include:
-
-- broader concepts
-- narrower concepts
-- related concepts
-- shared collections
-- external vocabulary matches
-
-The goal is to make the glossary explorable as well as searchable.
-
-### 3. Create curated collections
-
-The existing field and type collections provide the foundation for additional editorial pathways.
-
-Potential curated collections include:
-
-- AI & adaptive learning
-- Learning data & interoperability
-- Learning engineering
-- Assessment & evaluation
-- Simulation & immersive learning
-- Competencies & skills
-- Governance, ethics & privacy
-
-Curated collections should receive stable collection URIs so they can be used by both humans and machines.
-
-They should complement rather than replace primary field classifications.
-
-### 4. Add crosswalks to external vocabularies
-
-The glossary should begin mapping concepts to external controlled vocabularies and semantic resources where equivalence or close correspondence can be justified.
+The glossary should map concepts to authoritative concepts in external vocabularies where equivalence or correspondence can be editorially justified.
 
 Priority targets include:
 
-- UNESCO Thesaurus
+- UNESCO Thesaurus and related UNESCO vocabularies
 - Schema.org
 - IEEE learning-technology terminology
 - xAPI terminology and concepts
-- other relevant controlled vocabularies
+- other relevant controlled vocabularies and standards
 
-SKOS mapping predicates such as the following should be used carefully:
+External mappings should use SKOS mapping predicates carefully:
 
-- `skos:exactMatch`
-- `skos:closeMatch`
-- `skos:relatedMatch`
+```text
+skos:exactMatch
+skos:closeMatch
+skos:relatedMatch
+```
 
-The objective is to make the I2IDL glossary a semantic bridge across learning-technology ecosystems.
+Internal semantic relationships and external vocabulary mappings should remain distinct.
 
-### 5. Add an ordinary-user API/query layer
+The objective is to make the I2IDL glossary a semantic bridge across learning-technology ecosystems while avoiding overstated equivalence.
+
+### 2. Add an ordinary-user API/query layer
 
 SPARQL remains the canonical graph-query interface, but most application developers and ordinary users will not write SPARQL.
 
@@ -988,7 +1128,7 @@ This would make the glossary easier to integrate into:
 
 The API should remain a projection of the same canonical graph rather than creating a second source of truth.
 
-### 6. Make provenance visible in the human interface
+### 3. Make provenance visible in the human interface
 
 The glossary already distinguishes `direct` and `supporting` evidence relationships.
 
@@ -1008,7 +1148,7 @@ Definition provenance: I2IDL synthesis supported by source evidence
 
 This exposes editorial lineage as a feature of the glossary and helps users distinguish source-derived definitions from I2IDL synthesis.
 
-### 7. Add machine-readable change history
+### 4. Add machine-readable change history
 
 The project already versions every published release.
 
@@ -1020,6 +1160,7 @@ A machine-readable change dataset should record events such as:
 - relationship added
 - collection membership changed
 - evidence reclassified
+- external mapping added or revised
 
 This would improve scholarly traceability, standards work, reproducibility, and downstream synchronization.
 
