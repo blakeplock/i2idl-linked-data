@@ -3484,7 +3484,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/accessibility-and-inclusivity-testing"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/accessibility-1",
@@ -3557,7 +3562,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/method"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learner-variability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/accessibility"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/usability-testing"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/accessibility-and-inclusivity-testing-1",
@@ -4095,6 +4111,15 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/personalization"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/personalized-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/pedagogical-agent"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/mastery-learning"
         }
       ]
     },
@@ -5342,6 +5367,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/online-learning-modality"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/flipped-classroom"
         }
       ]
     },
@@ -5767,6 +5795,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/learning-engineering-process"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/problem-space"
         }
       ]
     },
@@ -5898,7 +5929,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/multimedia-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/scaffolding"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/worked-example"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/cognitive-load-1",
@@ -5988,7 +6030,20 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/method"
-      }
+      },
+      "skos:broader": [
+        {
+          "@id": "https://id.i2idl.org/concepts/task-analysis"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/practitioner-expertise"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/instructional-designer"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/cognitive-task-analysis-1",
@@ -6105,6 +6160,11 @@
       },
       "skos:altLabel": [
         "CoP"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-community"
+        }
       ]
     },
     {
@@ -6254,6 +6314,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/mastery-learning"
         }
       ]
     },
@@ -6875,6 +6938,15 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/design-decision-making"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/problem-space"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/technology-constraint"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/contextually-rich-learning-environment"
         }
       ]
     },
@@ -6942,6 +7014,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/learner-feedback-loop"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/evidence-based-practice"
         }
       ]
     },
@@ -7322,6 +7397,15 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/learning-engineering-team"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/networked-community"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/coordination-network"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/interdisciplinary-research-identity"
         }
       ]
     },
@@ -8602,6 +8686,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/learning-engineering"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/evidence-based-practice"
         }
       ]
     },
@@ -8983,6 +9070,15 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/reflective-design-documentation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/design-pattern"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/technology-affordance"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/technology-constraint"
         }
       ]
     },
@@ -9177,7 +9273,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/design-decision-making"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/iterative-design"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/design-pattern-1",
@@ -11448,6 +11552,12 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/learning-engineering"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/technology-affordance"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/technology-constraint"
         }
       ]
     },
@@ -11857,7 +11967,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-engineering"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-informed-decision-making"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/continuous-improvement"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/evidence-based-practice-1",
@@ -12095,7 +12216,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-experience-design-lxd"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-environment"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/experiential-learning-1",
@@ -12461,7 +12590,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/online-learning-modality"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/asynchronous-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/synchronous-learning"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/flipped-classroom-1",
@@ -12582,6 +12722,11 @@
       "skos:broader": [
         {
           "@id": "https://id.i2idl.org/concepts/assessment"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/mastery-learning"
         }
       ]
     },
@@ -12744,7 +12889,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/motivation"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/growth-mindset-1",
@@ -12937,7 +13087,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/system"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/instructor-facilitated-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-environment"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/human-support-system-1",
@@ -14579,6 +14737,11 @@
         {
           "@id": "https://id.i2idl.org/concepts/learning-design-practitioner"
         }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/cognitive-task-analysis"
+        }
       ]
     },
     {
@@ -14662,6 +14825,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/online-learning-modality"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-support-system"
         }
       ]
     },
@@ -14800,6 +14966,11 @@
       "skos:broader": [
         {
           "@id": "https://id.i2idl.org/concepts/adaptive-instructional-system"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/pedagogical-agent"
         }
       ]
     },
@@ -15357,6 +15528,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/learning-experience-design-lxd"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/design-pattern"
         }
       ]
     },
@@ -15655,7 +15829,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/retrieval-practice"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/spaced-repetition"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/knowledge-retention-1",
@@ -15905,6 +16087,14 @@
       },
       "skos:altLabel": [
         "Student agency"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/self-regulated-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/motivation"
+        }
       ]
     },
     {
@@ -16058,6 +16248,12 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/adaptive-instructional-system"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learner-variability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/pedagogical-agent"
         }
       ]
     },
@@ -16399,7 +16595,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/networked-community"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/community-of-practice"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/social-learning"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/learning-community-1",
@@ -16675,6 +16882,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/learning-environment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-environment-engineering"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/evidence-based-practice"
         }
       ]
     },
@@ -17067,6 +17280,18 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/future-learning-ecosystem"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-environment-engineering"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/contextually-rich-learning-environment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-support-system"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/experiential-learning"
         }
       ]
     },
@@ -17141,7 +17366,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/discipline"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-engineering"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-environment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/systems-thinking"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/learning-environment-engineering-1",
@@ -17334,6 +17570,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/co-design"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/samr-model"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/experiential-learning"
         }
       ]
     },
@@ -18471,7 +18713,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/competency-based-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/formative-assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/adaptive-instructional-system"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/mastery-learning-1",
@@ -18607,7 +18860,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/prior-knowledge"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/meaningful-learning-1",
@@ -18805,7 +19063,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/metacognitive-monitoring"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/self-regulated-learning"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/metacognition-1",
@@ -18895,7 +19161,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/metacognition"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/metacognitive-monitoring-1",
@@ -19234,7 +19505,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/mobile-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/resource-facilitated-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ubiquitous-learning"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/microlearning-1",
@@ -19424,6 +19706,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/distributed-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/microlearning"
         }
       ]
     },
@@ -19559,7 +19844,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learner-agency"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/self-efficacy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/growth-mindset"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/motivation-1",
@@ -19746,7 +20042,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/cognitive-load"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/working-memory"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/multimedia-learning-1",
@@ -20062,6 +20366,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/remote-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/flipped-classroom"
         }
       ]
     },
@@ -20423,7 +20730,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/system"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/adaptive-instructional-system"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/intelligent-tutoring-system"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learner-model"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/pedagogical-agent-1",
@@ -20658,6 +20976,12 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/adaptive-instructional-system"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/personalized-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learner-variability"
         }
       ]
     },
@@ -20733,7 +21057,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/personalization"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/adaptive-instructional-system"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learner-variability"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/personalized-learning-1",
@@ -20855,6 +21190,14 @@
       },
       "skos:altLabel": [
         "Background knowledge"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/meaningful-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/scaffolding"
+        }
       ]
     },
     {
@@ -21034,7 +21377,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/challenge-identification"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/contextual-factor"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/stakeholder-requirement"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/problem-space-1",
@@ -22139,6 +22493,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/online-learning-modality"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/microlearning"
         }
       ]
     },
@@ -22401,7 +22758,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/method"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/knowledge-retention"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/spaced-repetition"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/retrieval-practice-1",
@@ -22594,6 +22959,17 @@
       },
       "skos:altLabel": [
         "Substitution, Augmentation, Modification, Redefinition"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/technology-affordance"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/technology-constraint"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-experience-design-lxd"
+        }
       ]
     },
     {
@@ -22654,7 +23030,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/method"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/prior-knowledge"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/worked-example"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/cognitive-load"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/scaffolding-1",
@@ -22965,7 +23352,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/motivation"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/self-efficacy-1",
@@ -23055,7 +23447,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/self-regulated-learning"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/self-monitoring-1",
@@ -23114,7 +23511,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/metacognition"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/self-monitoring"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learner-agency"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/self-regulated-learning-1",
@@ -23860,7 +24268,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-community"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/social-learning-1",
@@ -24123,7 +24536,15 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/method"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/retrieval-practice"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/knowledge-retention"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/spaced-repetition-1",
@@ -24377,6 +24798,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/stakeholder-engagement"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/problem-space"
         }
       ]
     },
@@ -25486,6 +25910,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/online-learning-modality"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/flipped-classroom"
         }
       ]
     },
@@ -25620,7 +26047,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-environment-engineering"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/systems-thinking-1",
@@ -25677,7 +26109,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/method"
-      }
+      },
+      "skos:narrower": [
+        {
+          "@id": "https://id.i2idl.org/concepts/cognitive-task-analysis"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/task-analysis-1",
@@ -25890,7 +26327,18 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/design-decision-making"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/engineering-design"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/samr-model"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/technology-affordance-1",
@@ -25949,7 +26397,21 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/design-decision-making"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/contextual-factor"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/engineering-design"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/samr-model"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/technology-constraint-1",
@@ -26260,6 +26722,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/future-learning-ecosystem"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/microlearning"
         }
       ]
     },
@@ -26328,6 +26793,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/design-build-cycle"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/accessibility-and-inclusivity-testing"
         }
       ]
     },
@@ -27151,6 +27619,14 @@
       },
       "skos:altLabel": [
         "Worked example effect"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/scaffolding"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/cognitive-load"
+        }
       ]
     },
     {
@@ -27210,7 +27686,12 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
-      }
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/multimedia-learning"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/working-memory-1",
@@ -28503,6 +28984,11 @@
         {
           "@id": "https://id.i2idl.org/concepts/interdisciplinary-exploratory-research"
         }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/emergent-impact"
+        }
       ]
     },
     {
@@ -28584,6 +29070,17 @@
       "skos:broader": [
         {
           "@id": "https://id.i2idl.org/concepts/exploratory-research"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/coordination-network"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/interdisciplinary-research-identity"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/emergent-impact"
         }
       ]
     },
@@ -28833,7 +29330,18 @@
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
       },
-      "skos:altLabel": "Context-rich learning environment"
+      "skos:altLabel": "Context-rich learning environment",
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-environment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/contextual-factor"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learner-variability"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/contextually-rich-learning-environment-1",
@@ -28914,6 +29422,23 @@
       "skos:altLabel": [
         "Student variability",
         "user variability"
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/contextually-rich-learning-environment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/personalized-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/personalization"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/accessibility-and-inclusivity-testing"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learner-model"
+        }
       ]
     },
     {
@@ -29074,6 +29599,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/learning-engineering-team"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/cognitive-task-analysis"
         }
       ]
     },
@@ -29153,7 +29681,18 @@
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
       },
-      "skos:altLabel": "Networked research community"
+      "skos:altLabel": "Networked research community",
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-community"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/cross-domain-collaboration"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/coordination-network"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/networked-community-1",
@@ -29231,7 +29770,15 @@
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
       },
-      "skos:altLabel": "Emerging impact"
+      "skos:altLabel": "Emerging impact",
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/exploratory-research"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/interdisciplinary-exploratory-research"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/emergent-impact-1",
@@ -29309,7 +29856,18 @@
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/system"
       },
-      "skos:altLabel": "Research coordination network"
+      "skos:altLabel": "Research coordination network",
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/networked-community"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/cross-domain-collaboration"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/interdisciplinary-exploratory-research"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/coordination-network-1",
@@ -29370,7 +29928,15 @@
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
       },
-      "skos:altLabel": "Interdisciplinary exploratory identity"
+      "skos:altLabel": "Interdisciplinary exploratory identity",
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/interdisciplinary-exploratory-research"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/cross-domain-collaboration"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/interdisciplinary-research-identity-1",
