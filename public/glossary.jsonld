@@ -21,7 +21,7 @@
       "dcterms:rights": "Mixed rights. I2IDL-original material defaults to CC BY 4.0; source-specific rights are preserved at the source and evidence level.",
       "gs:editorialStatus": "approved",
       "gs:semanticProfileVersion": "0.4.0",
-      "gs:publicationVersion": "v0.0.81",
+      "gs:publicationVersion": "v0.0.82",
       "gs:baseUri": "https://id.i2idl.org"
     },
     {
@@ -10300,7 +10300,10 @@
       },
       "skos:altLabel": [
         "EMIS"
-      ]
+      ],
+      "skos:exactMatch": {
+        "@id": "http://vocabularies.unesco.org/thesaurus/concept9261"
+      }
     },
     {
       "@id": "https://id.i2idl.org/definitions/education-management-information-system-1",
@@ -10494,6 +10497,9 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
+      },
+      "skos:exactMatch": {
+        "@id": "http://vocabularies.unesco.org/thesaurus/concept21"
       }
     },
     {
@@ -10726,6 +10732,9 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
+      },
+      "skos:exactMatch": {
+        "@id": "http://vocabularies.unesco.org/thesaurus/concept31"
       }
     },
     {
@@ -10783,6 +10792,9 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/practice"
+      },
+      "skos:exactMatch": {
+        "@id": "http://vocabularies.unesco.org/thesaurus/concept14"
       }
     },
     {
@@ -10840,6 +10852,9 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/policy"
+      },
+      "skos:exactMatch": {
+        "@id": "http://vocabularies.unesco.org/thesaurus/concept9"
       }
     },
     {
