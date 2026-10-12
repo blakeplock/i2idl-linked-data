@@ -35,5 +35,33 @@ function renderAnalytics(){const out=$('analytics-result');out.replaceChildren()
 for(const btn of document.querySelectorAll('[data-tab]'))btn.addEventListener('click',()=>{for(const b of document.querySelectorAll('[data-tab]')){const yes=b===btn;b.setAttribute('aria-selected',yes?'true':'false');$(b.dataset.tab+'-panel').hidden=!yes}});
 $('share').addEventListener('click',()=>{const url=new URL(location.href);url.searchParams.set('concept',active?slug(active):'competency');const text=url.toString();if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(text).then(()=>{$('status').textContent='Explorer link copied.'}).catch(()=>window.prompt('Copy this explorer URL:',text))}else{window.prompt('Copy this explorer URL:',text)}});$('find-path').addEventListener('click',runPath);$('run-compare').addEventListener('click',runCompare);
 
-for(const id of ['depth','collection','cluster'])$(id).addEventListener('change',()=>{if(active)focus(active,false)});$('search').addEventListener('input',e=>{const val=e.target.value.trim().toLowerCase(),res=$('results');res.replaceChildren();if(!val){res.style.display='none';return}for(const n of nodes.filter(n=>label(n).toLowerCase().includes(val)).slice(0,12)){const b=document.createElement('button');b.textContent=label(n);b.type='button';b.addEventListener('click',()=>{$('search').value='';focus(n)});res.append(b)}res.style.display=res.childNodes.length?'block':'none'});$('back').onclick=()=>{const prev=history.pop();if(prev)focus(prev,false);$('back').disabled=history.length===0};$('reset').onclick=()=>{history=[];focus(nodes.find(n=>slug(n)==='competency')||nodes[0],false)};fetch('https://id.i2idl.org/glossary.jsonld',{headers:{Accept:'application/ld+json'},cache:'no-store'}).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(onGraph).catch(err=>{$('status').textContent='Unable to load the published graph ('+err.message+'). Please try again later.';const detail=$('detail');detail.replaceChildren();const caption=document.createElement('span');caption.className='caption';caption.textContent='PREVIEW';const heading=document.createElement('h2');heading.textContent='Load the glossary graph';const explanation=document.createElement('p');explanation.textContent='This prototype reads real SKOS relationships from the published graph. If local-file browser restrictions prevent fetching it directly, use the file chooser above.';detail.append(caption,heading,explanation)})})();
+for(const id of ['depth','collection','cluster'])$(id).addEventListener('change',()=>{if(active)focus(active,false)});
+// Rank concept names and aliases first, before less precise description matches.
+// All dynamic suggestion labels are inserted with textContent, never as HTML.
+function normalizeSearch(value){return String(value??'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim()}
+function rankedConceptSearch(query){
+  const q=normalizeSearch(query);if(!q)return [];
+  const tokens=q.split(' ').filter(Boolean);
+  const scored=[];
+  for(const n of nodes){
+    const title=normalizeSearch(label(n));
+    const alternatives=refs(n['skos:altLabel']).map(v=>normalizeSearch(typeof v==='string'?v:(v&&v['@value'])||''));
+    const identifier=normalizeSearch(n['dcterms:identifier']||slug(n));
+    const names=[title,...alternatives,identifier].filter(Boolean);
+    const definition=normalizeSearch(n['skos:definition']||'');
+    let score=0;
+    if(names.some(v=>v===q))score=1000;
+    else if(title.startsWith(q))score=850;
+    else if(alternatives.some(v=>v.startsWith(q)))score=800;
+    else if(names.some(v=>v.includes(q)))score=700;
+    else if(tokens.every(word=>names.some(v=>v.split(' ').some(part=>part.startsWith(word)))))score=600;
+    else if(definition.includes(q))score=250;
+    else if(tokens.every(word=>definition.includes(word)))score=100;
+    if(score)scored.push({n,score});
+  }
+  scored.sort((a,b)=>b.score-a.score||label(a.n).localeCompare(label(b.n)));
+  return scored.map(item=>item.n);
+}
+
+$('search').addEventListener('input',e=>{const val=e.target.value.trim().toLowerCase(),res=$('results');res.replaceChildren();if(!val){res.style.display='none';return}for(const n of rankedConceptSearch(val).slice(0,12)){const b=document.createElement('button');b.textContent=label(n);b.type='button';b.addEventListener('click',()=>{$('search').value='';focus(n)});res.append(b)}res.style.display=res.childNodes.length?'block':'none'});$('back').onclick=()=>{const prev=history.pop();if(prev)focus(prev,false);$('back').disabled=history.length===0};$('reset').onclick=()=>{history=[];focus(nodes.find(n=>slug(n)==='competency')||nodes[0],false)};fetch('https://id.i2idl.org/glossary.jsonld',{headers:{Accept:'application/ld+json'},cache:'no-store'}).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(onGraph).catch(err=>{$('status').textContent='Unable to load the published graph ('+err.message+'). Please try again later.';const detail=$('detail');detail.replaceChildren();const caption=document.createElement('span');caption.className='caption';caption.textContent='PREVIEW';const heading=document.createElement('h2');heading.textContent='Load the glossary graph';const explanation=document.createElement('p');explanation.textContent='This prototype reads real SKOS relationships from the published graph. If local-file browser restrictions prevent fetching it directly, use the file chooser above.';detail.append(caption,heading,explanation)})})();
 </script></body></html>
