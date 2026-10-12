@@ -21,7 +21,7 @@
       "dcterms:rights": "Mixed rights. I2IDL-original material defaults to CC BY 4.0; source-specific rights are preserved at the source and evidence level.",
       "gs:editorialStatus": "approved",
       "gs:semanticProfileVersion": "0.4.0",
-      "gs:publicationVersion": "v0.0.82",
+      "gs:publicationVersion": "v0.0.83",
       "gs:baseUri": "https://id.i2idl.org"
     },
     {
@@ -6135,7 +6135,10 @@
         {
           "@id": "https://id.i2idl.org/concepts/competency-based-learning"
         }
-      ]
+      ],
+      "skos:relatedMatch": {
+        "@id": "https://schema.org/DefinedTerm"
+      }
     },
     {
       "@id": "https://id.i2idl.org/definitions/competency-1",
@@ -7062,6 +7065,9 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
+      },
+      "skos:closeMatch": {
+        "@id": "https://schema.org/DefinedTermSet"
       }
     },
     {
@@ -9214,6 +9220,9 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/system"
+      },
+      "skos:closeMatch": {
+        "@id": "https://schema.org/EducationalOccupationalCredential"
       }
     },
     {
@@ -9502,6 +9511,9 @@
       },
       "gs:typeCollection": {
         "@id": "https://id.i2idl.org/collections/type/concept"
+      },
+      "skos:closeMatch": {
+        "@id": "https://schema.org/LearningResource"
       }
     },
     {
@@ -17932,7 +17944,10 @@
       },
       "skos:altLabel": [
         "MOOC"
-      ]
+      ],
+      "skos:closeMatch": {
+        "@id": "https://schema.org/Course"
+      }
     },
     {
       "@id": "https://id.i2idl.org/definitions/massive-open-online-course-mooc-1",
