@@ -21,7 +21,7 @@
       "dcterms:rights": "Mixed rights. I2IDL-original material defaults to CC BY 4.0; source-specific rights are preserved at the source and evidence level.",
       "gs:editorialStatus": "approved",
       "gs:semanticProfileVersion": "0.4.0",
-      "gs:publicationVersion": "v0.0.83",
+      "gs:publicationVersion": "v0.0.84",
       "gs:baseUri": "https://id.i2idl.org"
     },
     {
@@ -4537,6 +4537,19 @@
         {
           "@id": "https://id.i2idl.org/concepts/ai-pedagogy"
         }
+      ],
+      "gs:externalOntologyAssociations": [
+        {
+          "gs:target": {
+            "@id": "https://purl.org/ctdlasn/terms/CompetencyFramework"
+          },
+          "gs:vocabulary": "CTDL-ASN",
+          "gs:targetLabel": "Competency Framework",
+          "gs:targetKind": "rdfs:Class",
+          "gs:associationType": "relatedClass",
+          "gs:editorialNote": "I2IDL concept names a particular UNESCO framework; CTDL-ASN class describes general competency framework resources.",
+          "gs:reviewStatus": "proposed"
+        }
       ]
     },
     {
@@ -5534,7 +5547,20 @@
       ],
       "skos:relatedMatch": {
         "@id": "http://vocabularies.unesco.org/thesaurus/concept1050"
-      }
+      },
+      "gs:externalOntologyAssociations": [
+        {
+          "gs:target": {
+            "@id": "https://purl.org/ctdl/terms/AssessmentProfile"
+          },
+          "gs:vocabulary": "CTDL",
+          "gs:targetLabel": "Assessment Profile",
+          "gs:targetKind": "rdfs:Class",
+          "gs:associationType": "relatedClass",
+          "gs:editorialNote": "Concept denotes assessment activity and evidence; the class describes an assessment resource, not assessment itself.",
+          "gs:reviewStatus": "proposed"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/assessment-1",
@@ -6676,7 +6702,20 @@
       ],
       "skos:relatedMatch": {
         "@id": "https://schema.org/DefinedTerm"
-      }
+      },
+      "gs:externalOntologyAssociations": [
+        {
+          "gs:target": {
+            "@id": "https://purl.org/ctdlasn/terms/Competency"
+          },
+          "gs:vocabulary": "CTDL-ASN",
+          "gs:targetLabel": "Competency",
+          "gs:targetKind": "rdfs:Class",
+          "gs:associationType": "relatedClass",
+          "gs:editorialNote": "Concept denotes a capability; CTDL-ASN class describes an individually identified competency in a framework.",
+          "gs:reviewStatus": "proposed"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/competency-1",
@@ -10320,7 +10359,20 @@
       ],
       "skos:closeMatch": {
         "@id": "https://schema.org/EducationalOccupationalCredential"
-      }
+      },
+      "gs:externalOntologyAssociations": [
+        {
+          "gs:target": {
+            "@id": "https://purl.org/ctdl/terms/Credential"
+          },
+          "gs:vocabulary": "CTDL",
+          "gs:targetLabel": "Credential",
+          "gs:targetKind": "rdfs:Class",
+          "gs:associationType": "relatedClass",
+          "gs:editorialNote": "I2IDL includes digital claims beyond formal qualifications; CTDL class identifies published credentials.",
+          "gs:reviewStatus": "proposed"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/digital-credential-1",
@@ -20816,7 +20868,20 @@
       ],
       "skos:closeMatch": {
         "@id": "https://schema.org/Course"
-      }
+      },
+      "gs:externalOntologyAssociations": [
+        {
+          "gs:target": {
+            "@id": "https://purl.org/ctdl/terms/Course"
+          },
+          "gs:vocabulary": "CTDL",
+          "gs:targetLabel": "Course",
+          "gs:targetKind": "rdfs:Class",
+          "gs:associationType": "relatedClass",
+          "gs:editorialNote": "A MOOC is one kind of course; CTDL Course describes course entities in general.",
+          "gs:reviewStatus": "proposed"
+        }
+      ]
     },
     {
       "@id": "https://id.i2idl.org/definitions/massive-open-online-course-mooc-1",
@@ -21687,6 +21752,19 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/competency"
+        }
+      ],
+      "gs:externalOntologyAssociations": [
+        {
+          "gs:target": {
+            "@id": "https://purl.org/ctdl/terms/MicroCredential"
+          },
+          "gs:vocabulary": "CTDL",
+          "gs:targetLabel": "Micro-Credential",
+          "gs:targetKind": "rdfs:Class",
+          "gs:associationType": "relatedClass",
+          "gs:editorialNote": "Concept describes an achievement category; CTDL class types published credential resources. Closely aligned meanings, different semantic roles.",
+          "gs:reviewStatus": "proposed"
         }
       ]
     },

@@ -375,3 +375,27 @@ npm run validate
 The goal is not to maximize the number of external mappings.
 
 The goal is to create a defensible semantic bridge between the I2IDL knowledge graph and other authoritative vocabulary systems.
+
+## External ontology-class associations (v0.0.84 experimental)
+
+External ontology **classes** must be distinguished from external SKOS **concepts**. The custom property `gs:externalOntologyAssociations` records an editorial relationship to an external class, **without** asserting concept equivalence, class identity, instance typing, or subsumption. Do not use `skos:exactMatch`, `skos:closeMatch`, `skos:relatedMatch`, `rdf:type`, `rdfs:subClassOf`, or `owl:equivalentClass` for these associations.
+
+The experimental structured annotation is an I2IDL-specific model, not a vocabulary term defined by Credential Engine. Example:
+
+```json
+{
+  "gs:externalOntologyAssociations": [{
+    "gs:target": {"@id": "https://purl.org/ctdl/terms/MicroCredential"},
+    "gs:vocabulary": "CTDL",
+    "gs:targetLabel": "Micro-Credential",
+    "gs:targetKind": "rdfs:Class",
+    "gs:associationType": "relatedClass",
+    "gs:editorialNote": "A micro-credential concept is associated with a class describing credential resources; this is not equivalence.",
+    "gs:reviewStatus": "proposed"
+  }]
+}
+```
+
+Validation requires a single external HTTPS target URI; a compatible namespace (`https://purl.org/ctdl/terms/` for CTDL or `https://purl.org/ctdlasn/terms/` for CTDL-ASN); nonempty target label and editorial note; class kind `rdfs:Class`; association type `relatedClass`; review status `proposed`, `reviewed`, or `approved`; and no duplicate targets per concept.
+
+**Publication gate:** `proposed` means unapproved. Verify the specific class URIs and terminology with Credential Engine before treating associations as authoritative. The validator enforces syntactic constraints, not semantic endorsement or live URI resolution. The custom GS model should be formally declared in the JSON-LD context and semantic profile before claiming RDF interoperability for these structured annotations. Preserve the existing 17 SKOS crosswalks as a separate category.
