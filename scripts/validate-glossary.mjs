@@ -927,6 +927,23 @@ for (
 }
 
 // v0.0.84: experimental ontology-class associations, distinct from SKOS mappings.
+// Require the explicit JSON-LD definitions used by the experimental GS class-association profile.
+const REQUIRED_ONTOLOGY_CONTEXT = {
+  'gs:externalOntologyAssociations': { '@id': 'gs:externalOntologyAssociations', '@container': '@set' },
+  'gs:target': { '@id': 'gs:target', '@type': '@id' },
+  'gs:vocabulary': { '@id': 'gs:vocabulary' },
+  'gs:targetLabel': { '@id': 'gs:targetLabel' },
+  'gs:targetKind': { '@id': 'gs:targetKind' },
+  'gs:associationType': { '@id': 'gs:associationType' },
+  'gs:editorialNote': { '@id': 'gs:editorialNote' },
+  'gs:reviewStatus': { '@id': 'gs:reviewStatus' }
+};
+for (const [term, expected] of Object.entries(REQUIRED_ONTOLOGY_CONTEXT)) {
+  if (JSON.stringify(context?.[term]) !== JSON.stringify(expected)) {
+    fail(`@context: missing or unexpected ontology-association definition for ${term}`);
+  }
+}
+
 const ONTOLOGY_ASSOCIATION_PROPERTY = 'gs:externalOntologyAssociations';
 const ONTOLOGY_NAMESPACES = new Map([
   ['CTDL', 'https://purl.org/ctdl/terms/'],

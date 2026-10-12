@@ -5,7 +5,33 @@
     "dcterms": "http://purl.org/dc/terms/",
     "prov": "http://www.w3.org/ns/prov#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "gs": "https://glossarystudio.app/ns/"
+    "gs": "https://glossarystudio.app/ns/",
+    "gs:externalOntologyAssociations": {
+      "@id": "gs:externalOntologyAssociations",
+      "@container": "@set"
+    },
+    "gs:target": {
+      "@id": "gs:target",
+      "@type": "@id"
+    },
+    "gs:vocabulary": {
+      "@id": "gs:vocabulary"
+    },
+    "gs:targetLabel": {
+      "@id": "gs:targetLabel"
+    },
+    "gs:targetKind": {
+      "@id": "gs:targetKind"
+    },
+    "gs:associationType": {
+      "@id": "gs:associationType"
+    },
+    "gs:editorialNote": {
+      "@id": "gs:editorialNote"
+    },
+    "gs:reviewStatus": {
+      "@id": "gs:reviewStatus"
+    }
   },
   "@graph": [
     {
