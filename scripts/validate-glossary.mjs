@@ -938,9 +938,20 @@ const REQUIRED_ONTOLOGY_CONTEXT = {
   'gs:editorialNote': { '@id': 'gs:editorialNote' },
   'gs:reviewStatus': { '@id': 'gs:reviewStatus' }
 };
-for (const [term, expected] of Object.entries(REQUIRED_ONTOLOGY_CONTEXT)) {
-  if (JSON.stringify(context?.[term]) !== JSON.stringify(expected)) {
-    fail(`@context: missing or unexpected ontology-association definition for ${term}`);
+// Ontology declarations are optional when no concept carries an association.
+// If any declaration remains, require the complete and valid context profile.
+const ontologyContextTerms = Object.keys(REQUIRED_ONTOLOGY_CONTEXT);
+const graphHasOntologyAssociations = concepts.some(
+  (concept) => asArray(concept['gs:externalOntologyAssociations']).length > 0
+);
+const graphHasOntologyContext = ontologyContextTerms.some(
+  (term) => Object.prototype.hasOwnProperty.call(context, term)
+);
+if (graphHasOntologyAssociations || graphHasOntologyContext) {
+  for (const [term, expected] of Object.entries(REQUIRED_ONTOLOGY_CONTEXT)) {
+    if (JSON.stringify(context?.[term]) !== JSON.stringify(expected)) {
+      fail(`@context: missing or unexpected ontology-association definition for ${term}`);
+    }
   }
 }
 
