@@ -19,6 +19,12 @@ const INTERNAL_CONCEPT_RELATIONS = new Map([
   ['skos:related', 'skos:related']
 ]);
 
+const EXTERNAL_MAPPING_PROPERTIES = [
+  'skos:exactMatch',
+  'skos:closeMatch',
+  'skos:relatedMatch'
+];
+
 const failures = [];
 const warnings = [];
 
@@ -54,10 +60,7 @@ function isHttps(value) {
   }
 
   try {
-    return (
-      new URL(value).protocol ===
-      'https:'
-    );
+    return new URL(value).protocol === 'https:';
   } catch (_) {
     return false;
   }
@@ -744,6 +747,185 @@ for (
   }
 }
 
+let externalMappingCount = 0;
+
+const mappedConcepts =
+  new Set();
+
+for (
+  const concept
+  of concepts
+) {
+  const sourceId =
+    concept['@id'];
+
+  const mappingsByTarget =
+    new Map();
+
+  for (
+    const property
+    of EXTERNAL_MAPPING_PROPERTIES
+  ) {
+    const values =
+      asArray(
+        concept[property]
+      );
+
+    const seenTargets =
+      new Set();
+
+    for (
+      let index = 0;
+      index < values.length;
+      index += 1
+    ) {
+      const targetId =
+        refId(
+          values[index]
+        );
+
+      const label =
+        `${sourceId} ${property}[${index}]`;
+
+      if (!targetId) {
+        fail(
+          `${label}: missing @id`
+        );
+
+        continue;
+      }
+
+      if (
+        seenTargets.has(
+          targetId
+        )
+      ) {
+        fail(
+          `${sourceId}: duplicate ${property} mapping to ${targetId}`
+        );
+
+        continue;
+      }
+
+      seenTargets.add(
+        targetId
+      );
+
+      let mappingUrl;
+
+      try {
+        mappingUrl =
+          new URL(
+            targetId
+          );
+      } catch (_) {
+        fail(
+          `${label}: external mapping target must be a valid absolute URI: ${targetId}`
+        );
+
+        continue;
+      }
+
+      if (
+        mappingUrl.protocol !== 'http:' &&
+        mappingUrl.protocol !== 'https:'
+      ) {
+        fail(
+          `${label}: external mapping target must use HTTP or HTTPS: ${targetId}`
+        );
+
+        continue;
+      }
+
+      if (
+        targetId ===
+        sourceId
+      ) {
+        fail(
+          `${label}: external mapping must not point to the concept itself`
+        );
+
+        continue;
+      }
+
+      if (
+        targetId === BASE ||
+        targetId.startsWith(
+          `${BASE}/`
+        )
+      ) {
+        fail(
+          `${label}: external mapping target must be outside the I2IDL namespace`
+        );
+
+        continue;
+      }
+
+      if (
+        !mappingsByTarget.has(
+          targetId
+        )
+      ) {
+        mappingsByTarget.set(
+          targetId,
+          new Set()
+        );
+      }
+
+      mappingsByTarget
+        .get(targetId)
+        .add(
+          property
+        );
+
+      externalMappingCount += 1;
+
+      mappedConcepts.add(
+        sourceId
+      );
+    }
+  }
+
+  for (
+    const [
+      targetId,
+      properties
+    ]
+    of mappingsByTarget
+  ) {
+    if (
+      properties.has(
+        'skos:exactMatch'
+      ) &&
+      properties.has(
+        'skos:closeMatch'
+      )
+    ) {
+      fail(
+        `${sourceId}: ${targetId} must not be both skos:exactMatch and skos:closeMatch`
+      );
+    }
+
+    if (
+      properties.has(
+        'skos:relatedMatch'
+      ) &&
+      (
+        properties.has(
+          'skos:exactMatch'
+        ) ||
+        properties.has(
+          'skos:closeMatch'
+        )
+      )
+    ) {
+      fail(
+        `${sourceId}: ${targetId} must not combine skos:relatedMatch with a stronger mapping property`
+      );
+    }
+  }
+}
+
 let evidenceCount = 0;
 
 for (
@@ -1017,6 +1199,14 @@ console.log(
   `${isolatedConcepts} concepts without semantic relationships`
 );
 
+console.log(
+  `${mappedConcepts.size} concepts with external mappings`
+);
+
+console.log(
+  `${externalMappingCount} external mapping assertions`
+);
+
 console.log('');
 
 for (
@@ -1085,6 +1275,14 @@ console.log(
 
 console.log(
   'PASS: hierarchical relationships are not also asserted as skos:related'
+);
+
+console.log(
+  'PASS: external mappings use valid external HTTP/HTTPS identifiers outside the I2IDL namespace'
+);
+
+console.log(
+  'PASS: external mappings contain no duplicates or conflicting mapping assertions'
 );
 
 console.log(
