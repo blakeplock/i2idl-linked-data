@@ -926,6 +926,82 @@ for (
   }
 }
 
+// v0.0.84: experimental ontology-class associations, distinct from SKOS mappings.
+// Require the explicit JSON-LD definitions used by the experimental GS class-association profile.
+const REQUIRED_ONTOLOGY_CONTEXT = {
+  'gs:externalOntologyAssociations': { '@id': 'gs:externalOntologyAssociations', '@container': '@set' },
+  'gs:target': { '@id': 'gs:target', '@type': '@id' },
+  'gs:vocabulary': { '@id': 'gs:vocabulary' },
+  'gs:targetLabel': { '@id': 'gs:targetLabel' },
+  'gs:targetKind': { '@id': 'gs:targetKind' },
+  'gs:associationType': { '@id': 'gs:associationType' },
+  'gs:editorialNote': { '@id': 'gs:editorialNote' },
+  'gs:reviewStatus': { '@id': 'gs:reviewStatus' }
+};
+for (const [term, expected] of Object.entries(REQUIRED_ONTOLOGY_CONTEXT)) {
+  if (JSON.stringify(context?.[term]) !== JSON.stringify(expected)) {
+    fail(`@context: missing or unexpected ontology-association definition for ${term}`);
+  }
+}
+
+const ONTOLOGY_ASSOCIATION_PROPERTY = 'gs:externalOntologyAssociations';
+const ONTOLOGY_NAMESPACES = new Map([
+  ['CTDL', 'https://purl.org/ctdl/terms/'],
+  ['CTDL-ASN', 'https://purl.org/ctdlasn/terms/']
+]);
+const ontologyAssociatedConcepts = new Set();
+let ontologyAssociationCount = 0;
+
+for (const concept of concepts) {
+  const sourceId = concept['@id'];
+  const seenTargets = new Set();
+  const associations = asArray(concept[ONTOLOGY_ASSOCIATION_PROPERTY]);
+  for (const [index, item] of associations.entries()) {
+    const label = `${sourceId} ${ONTOLOGY_ASSOCIATION_PROPERTY}[${index}]`;
+    if (!item || typeof item !== 'object' || Array.isArray(item)) {
+      fail(`${label}: association must be an object`);
+      continue;
+    }
+    const target = item['gs:target'];
+    if (!target || typeof target !== 'object' || Array.isArray(target) ||
+        Object.keys(target).length !== 1 || typeof target['@id'] !== 'string') {
+      fail(`${label}: gs:target must be an object containing only @id`);
+      continue;
+    }
+    const targetId = target['@id'];
+    if (!isHttps(targetId) || targetId === BASE || targetId.startsWith(`${BASE}/`)) {
+      fail(`${label}: gs:target must be an external HTTPS URI`);
+      continue;
+    }
+    if (seenTargets.has(targetId)) {
+      fail(`${label}: duplicate ontology association target ${targetId}`);
+      continue;
+    }
+    seenTargets.add(targetId);
+    const expectedNamespace = ONTOLOGY_NAMESPACES.get(item['gs:vocabulary']);
+    if (!expectedNamespace || !targetId.startsWith(expectedNamespace) || targetId.length <= expectedNamespace.length) {
+      fail(`${label}: vocabulary and CTDL target namespace do not agree`);
+    }
+    if (typeof item['gs:targetLabel'] !== 'string' || !item['gs:targetLabel'].trim()) {
+      fail(`${label}: gs:targetLabel is required`);
+    }
+    if (item['gs:targetKind'] !== 'rdfs:Class') {
+      fail(`${label}: gs:targetKind must be rdfs:Class`);
+    }
+    if (item['gs:associationType'] !== 'relatedClass') {
+      fail(`${label}: gs:associationType must be relatedClass`);
+    }
+    if (!['proposed', 'reviewed', 'approved'].includes(item['gs:reviewStatus'])) {
+      fail(`${label}: gs:reviewStatus must be proposed, reviewed, or approved`);
+    }
+    if (typeof item['gs:editorialNote'] !== 'string' || !item['gs:editorialNote'].trim()) {
+      fail(`${label}: gs:editorialNote is required`);
+    }
+    ontologyAssociationCount += 1;
+    ontologyAssociatedConcepts.add(sourceId);
+  }
+}
+
 let evidenceCount = 0;
 
 for (
@@ -1207,6 +1283,13 @@ console.log(
   `${externalMappingCount} external mapping assertions`
 );
 
+console.log(
+  `${ontologyAssociatedConcepts.size} concepts with ontology associations`
+);
+console.log(
+  `${ontologyAssociationCount} external ontology association assertions`
+);
+
 console.log('');
 
 for (
@@ -1283,6 +1366,10 @@ console.log(
 
 console.log(
   'PASS: external mappings contain no duplicates or conflicting mapping assertions'
+);
+
+console.log(
+  'PASS: ontology associations validated independently of SKOS mappings'
 );
 
 console.log(
