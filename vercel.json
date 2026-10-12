@@ -2,6 +2,10 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
+      "source": "/explore",
+      "destination": "/graph.html"
+    },
+    {
       "source": "/sparql",
       "destination": "/api/sparql"
     },
