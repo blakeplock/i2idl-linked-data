@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: Apache-2.0
 // Bounded concept and multi-concept scholarly discovery. No results alter I2IDL assertions.
+import {recordResearch,activityConfigured} from '../lib/activity-store.mjs';
 const DOMAIN='https://api.openalex.org/works';
 const PUBLIC='https://id.i2idl.org/glossary-web.json';
 const ordering={relevant:'relevance_score:desc',foundational:'cited_by_count:desc',recent:'publication_date:desc',annual:'cited_by_count:desc'};
@@ -37,6 +38,7 @@ export default async function handler(req,res){
   if(multi)works=works.filter(w=>w.matchCount>=2);
   for(const w of works){const age=w.year===null?null:Math.max(1,thisYear-w.year+1);w.citationsPerYear=age===null?null:Number((w.citations/age).toFixed(2));}
   works.sort((a,b)=>multi&&b.matchCount!==a.matchCount?b.matchCount-a.matchCount:sort==='foundational'?b.citations-a.citations:sort==='annual'?(b.citationsPerYear??-1)-(a.citationsPerYear??-1):sort==='recent'?(b.year||0)-(a.year||0):0);
+  if(activityConfigured()){try{await recordResearch(works.slice(0,15).length)}catch(error){console.error('Research activity counter:',error.message)}}
   return res.status(200).json({concepts:ids,terms,sort,filters:{fromYear,toYear,openAccess:oaRaw},citationRateMethod:'total citations divided by inclusive years since publication, through '+thisYear,works:works.slice(0,15),provider:'OpenAlex',queriesSucceeded:good.length,queriesAttempted:searches.length,editorialStatus:'unreviewed_discovery',matchRule:multi?'At least two distinct concept preferred labels appear in indexed title or abstract':'OpenAlex keyword search'});
  }catch(err){console.error('Research discovery:',err.message);return res.status(502).json({error:'Scholarly search temporarily unavailable'})}
 }
