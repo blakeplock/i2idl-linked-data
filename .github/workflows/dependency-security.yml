@@ -41,4 +41,4 @@ jobs:
         run: npm audit
         
       - name: Review dependency licenses
-        run: node scripts/check-licenses.mjs
+        run: node scripts/check-licenses.mjs --baseline
