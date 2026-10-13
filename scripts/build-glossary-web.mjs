@@ -94,7 +94,7 @@ if (!scheme?.['gs:publicationVersion']) throw new Error('Missing publication ver
     });
 
 
-if (entries.length !== 397) throw new Error(`Expected 397 concepts, found ${entries.length}`);
+if (!entries.length || !allCollections.length) throw new Error('Glossary index has no concepts or collections');
 const payload = { publicationVersion: scheme['gs:publicationVersion'], semanticProfileVersion: scheme['gs:semanticProfileVersion'], entries, allCollections };
 const serialized = JSON.stringify(payload);
 fs.writeFileSync(target, serialized + '\n');

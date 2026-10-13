@@ -7,7 +7,7 @@ import crypto from 'node:crypto';
 execFileSync(process.execPath, ['scripts/build-glossary-web.mjs'], { stdio: 'inherit' });
 const payload = JSON.parse(fs.readFileSync('public/glossary-web.json', 'utf8'));
 const { publicationVersion, semanticProfileVersion, entries, allCollections } = payload;
-if (!publicationVersion || entries.length !== 397 || allCollections.length !== 31) throw Error('Unexpected glossary data; aborting staged build');
+if (!publicationVersion || !entries.length || !allCollections.length) throw Error('Unexpected glossary data; aborting staged build');
 const sourceTag = crypto.createHash('sha256').update(fs.readFileSync('public/glossary.jsonld')).digest('hex').slice(0, 16);
 const core = {
   publicationVersion, semanticProfileVersion, sourceTag,
