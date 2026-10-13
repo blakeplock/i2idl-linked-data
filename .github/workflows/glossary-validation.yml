@@ -37,3 +37,26 @@ jobs:
 
       - name: Validate glossary graph
         run: npm run validate
+
+      - name: Regenerate glossary presentation indexes
+        run: npm run indexes:build
+
+      - name: Check committed indexes match canonical JSON-LD
+        run: |
+          if ! git diff --quiet -- public/glossary-web.json public/glossary-core.json public/glossary-details.json; then
+            echo "ERROR: Generated glossary indexes are stale."
+            echo "Run: npm run indexes:build"
+            echo "Commit the resulting changes to all three public/glossary-*.json files."
+            git diff --stat -- public/glossary-web.json public/glossary-core.json public/glossary-details.json
+            exit 1
+          fi
+          for file in public/glossary-web.json public/glossary-core.json public/glossary-details.json; do
+            if [ ! -f "$file" ]; then
+              echo "ERROR: Missing generated file: $file"
+              exit 1
+            fi
+            if ! git ls-files --error-unmatch "$file" >/dev/null 2>&1; then
+              echo "ERROR: Generated file not committed: $file"
+              exit 1
+            fi
+          done
