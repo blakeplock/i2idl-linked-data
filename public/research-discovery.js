@@ -4,7 +4,8 @@ const status=$('research-status'),list=$('research-results'),run=$('research-run
 let selected=null,sequence=0;
 const validUrl=value=>{try{const u=new URL(value);return u.protocol==='https:'?u.href:null}catch{return null}};
 function searchLink(q){return 'https://scholar.google.com/scholar?q='+encodeURIComponent('"'+q+'"')}
-function setTopic(id,name){selected={id,name};$('research-topic').textContent='Selected concept: '+name;run.disabled=false;scholar.href=searchLink(name);list.replaceChildren();status.textContent='Ready to search '+name+'.'}
+function setTopic(id,name){if(!id||!name)return;const changed=!selected||selected.id!==id;selected={id,name};$('research-topic').textContent='Selected concept: '+name;run.disabled=false;scholar.href=searchLink(name);if(changed){++sequence;list.replaceChildren();status.textContent='Ready to search '+name+'.'}}
+document.addEventListener('i2idl:concept-selected',event=>{const topic=event.detail||{};setTopic(topic.id,topic.name)});
 document.addEventListener('click',event=>{const btn=event.target.closest('[data-research-concept]');if(!btn)return;setTopic(btn.dataset.researchConcept,btn.dataset.researchLabel);root.scrollIntoView({behavior:'smooth',block:'start'});run.click()});
 function item(work){const article=document.createElement('article');article.className='research-item';const title=document.createElement('h4');title.textContent=work.title||'Untitled publication';article.append(title);
 const authors=document.createElement('p');authors.className='small';authors.textContent=[(work.authors||[]).join(', '),work.year,work.venue].filter(Boolean).join(' · ');article.append(authors);
