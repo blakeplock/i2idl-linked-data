@@ -19,7 +19,41 @@ g.addEventListener('pointermove',e=>{if(!down||e.pointerId!==down.id||!dragGraph
 const stopDrag=e=>{if(!down||e.pointerId!==down.id)return;suppressClick=down.moved;down=null;if(g.hasPointerCapture(e.pointerId))g.releasePointerCapture(e.pointerId)};
 g.addEventListener('pointerup',stopDrag);g.addEventListener('pointercancel',stopDrag);
 g.addEventListener('click',e=>{if(suppressClick){e.preventDefault();e.stopPropagation();suppressClick=false;return}focus(n)});g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();focus(n)}});svg.append(g)}
-function details(n,links){const root=$('detail');root.replaceChildren();const kicker=document.createElement('span');kicker.className='caption';kicker.textContent='SELECTED CONCEPT';root.append(kicker);const h=document.createElement('h2');h.textContent=label(n);root.append(h);const fieldNote=document.createElement('p');fieldNote.className='small';fieldNote.textContent='Primary field: '+(fields.get(fieldId(n))||'Unclassified');root.append(fieldNote);const desc=document.createElement('p');desc.textContent=n['skos:definition']||'See the published glossary for the definition.';root.append(desc);const sl=document.createElement('div');sl.className='section';const uri=document.createElement('a');uri.href=/^https:\/\/id\.i2idl\.org\/concepts\/[a-z0-9-]+$/.test(n['@id'])?n['@id']:'#';uri.target='_blank';uri.rel='noopener';uri.textContent='Persistent URI ↗';sl.append(uri,document.createTextNode(' · '));const jump=document.createElement('a');jump.href='https://www.i2idl.org/glossary?concept='+encodeURIComponent(slug(n));jump.target='_blank';jump.rel='noopener';jump.textContent='Open glossary card ↗';sl.append(jump);root.append(sl);const researchBtn=document.createElement('button');researchBtn.type='button';researchBtn.className='button research-cta';researchBtn.textContent='Find research ↗';researchBtn.dataset.researchConcept=slug(n);researchBtn.dataset.researchLabel=label(n);root.append(researchBtn);const clusterBtn=document.createElement('button');clusterBtn.type='button';clusterBtn.className='button research-cta';clusterBtn.textContent='Add to research cluster +';clusterBtn.dataset.researchAdd=slug(n);clusterBtn.dataset.researchLabel=label(n);root.append(clusterBtn);for(const type of ['broader','narrower','related']){const items=links.filter(v=>v.type===type);if(!items.length)continue;const sec=document.createElement('section');sec.className='section';const sh=document.createElement('b');sh.textContent=({broader:'Broader concepts',narrower:'Narrower concepts',related:'Related concepts'})[type]+' ('+items.length+')';sec.append(sh);const list=document.createElement('ul');list.className='listlinks';for(const item of items){const li=document.createElement('li'),btn=document.createElement('button');btn.type='button';btn.textContent=label(item.node);btn.addEventListener('click',()=>focus(item.node));li.append(btn);list.append(li)}sec.append(list);root.append(sec)}}
+function details(n,links){
+  const root=$('detail');root.replaceChildren();
+  const heading=document.createElement('div');heading.className='concept-summary';
+  const kicker=document.createElement('span');kicker.className='caption';kicker.textContent='SELECTED CONCEPT';
+  const h=document.createElement('h2');h.textContent=label(n);
+  const field=document.createElement('p');field.className='concept-field';field.textContent=fields.get(fieldId(n))||'Unclassified';
+  const desc=document.createElement('p');desc.className='concept-definition';desc.textContent=n['skos:definition']||'See the published glossary for the definition.';
+  heading.append(kicker,h,field,desc);root.append(heading);
+  const actions=document.createElement('section');actions.className='concept-actions';
+  const actionsTitle=document.createElement('h3');actionsTitle.textContent='Explore the research';actions.append(actionsTitle);
+  const researchBtn=document.createElement('button');researchBtn.type='button';researchBtn.className='button primary concept-action-button';
+  researchBtn.textContent='Find papers on this concept';researchBtn.dataset.researchConcept=slug(n);researchBtn.dataset.researchLabel=label(n);
+  actions.append(researchBtn);
+  const researchHelp=document.createElement('p');researchHelp.className='concept-action-help';researchHelp.textContent='Search scholarly publications for this topic now.';actions.append(researchHelp);
+  const clusterBtn=document.createElement('button');clusterBtn.type='button';clusterBtn.className='button concept-action-button';
+  clusterBtn.textContent='Add to research cluster +';clusterBtn.dataset.researchAdd=slug(n);clusterBtn.dataset.researchLabel=label(n);
+  actions.append(clusterBtn);
+  const clusterHelp=document.createElement('p');clusterHelp.className='concept-action-help';clusterHelp.textContent='Collect 2–5 concepts, then find papers that connect them.';actions.append(clusterHelp);
+  root.append(actions);
+  const sections=document.createElement('div');sections.className='concept-relations';
+  for(const type of ['broader','narrower','related']){
+    const items=links.filter(v=>v.type===type);if(!items.length)continue;
+    const sec=document.createElement('section');sec.className='section';
+    const sh=document.createElement('h3');sh.textContent=({broader:'Broader concepts',narrower:'Narrower concepts',related:'Related concepts'})[type]+' ('+items.length+')';sec.append(sh);
+    const list=document.createElement('ul');list.className='listlinks';
+    for(const item of items){const li=document.createElement('li'),btn=document.createElement('button');btn.type='button';btn.textContent=label(item.node);btn.addEventListener('click',()=>focus(item.node));li.append(btn);list.append(li)}
+    sec.append(list);sections.append(sec);
+  }
+  root.append(sections);
+  const references=document.createElement('section');references.className='concept-references section';
+  const refTitle=document.createElement('h3');refTitle.textContent='Reference links';references.append(refTitle);
+  const uri=document.createElement('a');uri.href=/^https:\/\/id\.i2idl\.org\/concepts\/[a-z0-9-]+$/.test(n['@id'])?n['@id']:'#';uri.target='_blank';uri.rel='noopener noreferrer';uri.textContent='Persistent concept URI ↗';
+  const jump=document.createElement('a');jump.href='https://www.i2idl.org/glossary?concept='+encodeURIComponent(slug(n));jump.target='_blank';jump.rel='noopener noreferrer';jump.textContent='View glossary entry ↗';
+  references.append(uri,jump);root.append(references);
+}
 
 // Research tools operate on the same graph used by the explorer, never on proposed links.
 let analysisAdj=new Map(),analysisEdgeCount=0;

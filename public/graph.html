@@ -31,6 +31,24 @@
 #research-discovery .research-cta{margin-top:12px}
 #research-discovery .research-pill{background:#efe8f2;color:var(--purple);border-radius:20px;padding:4px 9px;font-size:12px}
 .research-cluster{padding:14px;border:1px solid var(--line);border-radius:8px;margin:14px 0;background:#fbf9fc}.research-cluster-header,.research-cluster-actions{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}.research-cluster-items{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0}.research-chip{display:inline-flex;align-items:center;gap:8px;border:1px solid #bba7c4;background:#efe7f3;color:var(--purple);border-radius:22px;padding:5px 8px;font-size:13px}.research-chip button{border:0;background:transparent;color:inherit;font-weight:bold;font-size:16px}.cluster-mode-label{font-size:13px;color:var(--purple)}.research-match{margin:8px 0;font-size:12px;color:#573769;font-weight:700}.research-cluster .button{font-size:13px;padding:7px 10px}
+
+/* i2idl-concept-sidebar-ux-v1 */
+.side{padding:18px;max-height:650px;overflow-y:auto;overflow-x:hidden;scrollbar-gutter:stable}
+.side .concept-summary h2{font-size:clamp(20px,2vw,24px);line-height:1.18;letter-spacing:-.02em;margin:10px 0 8px;overflow-wrap:break-word}
+.side .concept-field{color:var(--muted);font-size:12px;margin:0 0 12px;font-weight:700}
+.side .concept-definition{font-size:14px;line-height:1.58;margin:0 0 15px}
+.side .concept-actions{background:#f8f5f9;border:1px solid var(--line);border-radius:9px;padding:13px 12px;margin:14px 0 16px}
+.side .concept-actions h3,.side .concept-relations h3,.side .concept-references h3{font-size:14px;line-height:1.3;margin:0 0 11px;color:var(--ink)}
+.side .concept-action-button{display:block;width:100%;max-width:100%;padding:10px 9px;min-height:42px;font-size:13px;line-height:1.35;text-align:center;white-space:normal;overflow-wrap:normal;border-radius:6px}
+.side .concept-actions .concept-action-help{font-size:11px;line-height:1.45;color:var(--muted);margin:5px 1px 12px}
+.side .concept-actions .concept-action-help:last-child{margin-bottom:0}
+.side .concept-relations .section{padding-top:14px;margin-top:14px}
+.side .concept-relations .listlinks{margin:0}
+.side .concept-relations .listlinks li{margin:8px 0}
+.side .concept-relations .listlinks button{font-size:13px;line-height:1.4}
+.side .concept-references{margin-top:18px;padding-top:15px}
+.side .concept-references a{display:block;font-size:12px;margin:8px 0;overflow-wrap:anywhere}
+@media(max-width:800px){.side{max-height:none;scrollbar-gutter:auto}}
 </style></head><body><header><div class="eyebrow">I2IDL · KNOWLEDGE GRAPH EXPLORER</div><h1>Explore digital learning concepts</h1><p>A navigable view of the glossary's actual SKOS relationships. Explore the I2IDL knowledge graph through verified editorial relationships. No new relationships are inferred.</p><p style="margin-top:12px"><a href="https://www.i2idl.org/glossary" style="color:#fff;text-decoration:underline">Return to the I2IDL Glossary</a> · <a href="https://id.i2idl.org/glossary.jsonld" style="color:#fff;text-decoration:underline">JSON-LD dataset</a></p></header><main>
 <div id="status" class="status" role="status" aria-live="polite">Loading the I2IDL graph…</div>
 <div class="toolbar"><div class="search"><input id="search" disabled placeholder="Search 397 concepts…" aria-label="Find a concept" autocomplete="off"><div id="results" class="results" role="listbox"></div></div><label class="caption" for="depth">Depth</label><select id="depth" disabled><option value="1">1 hop</option><option value="2">2 hops</option></select><label class="caption" for="collection">Field</label><select id="collection" disabled><option value="all">All fields</option></select><label class="clusteropt"><input type="checkbox" id="cluster" checked> Cluster by field</label><button class="button" id="share" disabled title="Copy the current explorer URL">Copy view link</button><button class="button" id="back" disabled>← Back</button><button class="button" id="reset" disabled>Start at Competency</button></div>
