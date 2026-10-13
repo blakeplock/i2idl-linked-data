@@ -1,0 +1,70 @@
+{
+  "pilotVersion": "2026-10-13-01",
+  "status": "separate_unapproved_context_overlay",
+  "source": "I2IDL editorial candidates; not canonical semantic assertions",
+  "candidates": [
+    {
+      "conceptId": "artificial-intelligence-ai",
+      "conceptLabel": "Artificial intelligence (AI)",
+      "resource": "http://dbpedia.org/resource/Artificial_intelligence",
+      "page": "https://dbpedia.org/page/Artificial_intelligence",
+      "status": "review_candidate",
+      "reviewNote": "General AI topic; DBpedia covers a wider interdisciplinary field than the I2IDL operational definition.",
+      "relation": "external_context_candidate"
+    },
+    {
+      "conceptId": "machine-learning",
+      "conceptLabel": "Machine learning",
+      "resource": "http://dbpedia.org/resource/Machine_learning",
+      "page": "https://dbpedia.org/page/Machine_learning",
+      "status": "pending_endpoint_verification",
+      "reviewNote": "Strong label match; DBpedia page could not be reliably retrieved during this check.",
+      "relation": "external_context_candidate"
+    },
+    {
+      "conceptId": "open-educational-resources-oer",
+      "conceptLabel": "Open educational resources (OER)",
+      "resource": "http://dbpedia.org/resource/Open_educational_resources",
+      "page": "https://dbpedia.org/page/Open_educational_resources",
+      "status": "review_candidate",
+      "reviewNote": "Similar educational-resource scope; confirm reuse/licensing nuance before a formal mapping.",
+      "relation": "external_context_candidate"
+    },
+    {
+      "conceptId": "interoperability",
+      "conceptLabel": "Interoperability",
+      "resource": "http://dbpedia.org/resource/Interoperability",
+      "page": "https://dbpedia.org/page/Interoperability",
+      "status": "review_candidate",
+      "reviewNote": "DBpedia general systems meaning is broader than educational data interoperability.",
+      "relation": "external_context_candidate"
+    },
+    {
+      "conceptId": "unesco-curriculum",
+      "conceptLabel": "Curriculum",
+      "resource": "http://dbpedia.org/resource/Curriculum",
+      "page": "https://dbpedia.org/page/Curriculum",
+      "status": "review_candidate",
+      "reviewNote": "Similar topic; verify alignment with I2IDL UNESCO-derived definition.",
+      "relation": "external_context_candidate"
+    },
+    {
+      "conceptId": "data-mining",
+      "conceptLabel": "Data mining",
+      "resource": "http://dbpedia.org/resource/Data_mining",
+      "page": "https://dbpedia.org/page/Data_mining",
+      "status": "review_candidate",
+      "reviewNote": "Close conceptual coverage; confirm scope.",
+      "relation": "external_context_candidate"
+    },
+    {
+      "conceptId": "unesco-education-domain",
+      "conceptLabel": "Education",
+      "resource": "http://dbpedia.org/resource/Education",
+      "page": "https://dbpedia.org/page/Education",
+      "status": "pending_endpoint_verification",
+      "reviewNote": "Broad topic; DBpedia page could not be reliably retrieved during this check.",
+      "relation": "external_context_candidate"
+    }
+  ]
+}
