@@ -713,7 +713,7 @@ export default {
           }
 
           return Response.redirect(
-            `${HUMAN_GLOSSARY}#${encodeURIComponent(decodedId)}`,
+            `${HUMAN_GLOSSARY}?concept=${encodeURIComponent(decodedId)}`,
             303
           );
         }
