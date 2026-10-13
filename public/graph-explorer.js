@@ -34,51 +34,94 @@ function listLinks(ids){const ul=document.createElement('ul');for(const id of id
 function runCompare(){const a=$('compare-a').value,b=$('compare-b').value,out=$('compare-result');out.replaceChildren();if(a===b){out.textContent='Choose two different concepts.';return}const na=analysisAdj.get(a)||new Set(),nb=analysisAdj.get(b)||new Set();const shared=[...na].filter(id=>nb.has(id)).sort((x,y)=>tagName(x).localeCompare(tagName(y)));const onlyA=[...na].filter(id=>!nb.has(id)).sort((x,y)=>tagName(x).localeCompare(tagName(y)));const onlyB=[...nb].filter(id=>!na.has(id)).sort((x,y)=>tagName(x).localeCompare(tagName(y)));const container=document.createElement('div');container.className='comparison';for(const [title,items,kind] of [[`Shared neighbors (${shared.length})`,shared,'shared'],[`${tagName(a)} only (${onlyA.length})`,onlyA,'unique'],[`${tagName(b)} only (${onlyB.length})`,onlyB,'unique']]){const section=document.createElement('section');if(kind==='shared')section.className='shared';const h=document.createElement('b');h.textContent=title;section.append(h,items.length?listLinks(items):document.createTextNode(' None'));container.append(section)}const fa=new Set(refs(map.get(a)['gs:fieldCollection']).map(rid)),fb=new Set(refs(map.get(b)['gs:fieldCollection']).map(rid));const foot=document.createElement('p');foot.className='small';foot.textContent=`Direct relationship: ${na.has(b)?relationsBetween(a,b):'none'}. Shared primary field: ${fieldId(map.get(a))===fieldId(map.get(b))?'yes':'no'}. Common neighbors are based on the current graph.`;out.append(foot,container)}
 function renderGraphAnalytics(){const out=$('analytics-result');out.replaceChildren();const counts=[['Concepts',nodes.length],['Unique links',analysisEdgeCount],['Connected components',0],['Mean degree',nodes.length?(2*analysisEdgeCount/nodes.length).toFixed(2):'—']];const seen=new Set(),components=[];for(const n of nodes){const start=n['@id'];if(seen.has(start))continue;const q=[start];seen.add(start);for(let i=0;i<q.length;i++)for(const x of analysisAdj.get(q[i])||[])if(!seen.has(x)){seen.add(x);q.push(x)}components.push(q)}counts[2][1]=components.length;const grid=document.createElement('div');grid.className='stat-grid';for(const [name,v] of counts){const box=document.createElement('div');box.className='stat';const strong=document.createElement('strong');strong.textContent=v;const lab=document.createElement('span');lab.className='small';lab.textContent=name;box.append(strong,lab);grid.append(box)}out.append(grid);const deg=nodes.map(n=>({id:n['@id'],score:analysisAdj.get(n['@id']).size})).sort((a,b)=>b.score-a.score||tagName(a.id).localeCompare(tagName(b.id)));const inter=new Map();for(const n of nodes){const a=n['@id'],f=fieldId(n);for(const b of analysisAdj.get(a)){if(a>=b)continue;const g=fieldId(map.get(b));if(f===g)continue;inter.set(a,(inter.get(a)||0)+1);inter.set(b,(inter.get(b)||0)+1)}}const bridges=nodes.map(n=>({id:n['@id'],score:inter.get(n['@id'])||0})).sort((a,b)=>b.score-a.score||tagName(a.id).localeCompare(tagName(b.id)));const grid2=document.createElement('div');grid2.className='rank-list';for(const [title,arr] of [['Most connected concepts',deg],['Cross-primary-field connections',bridges]]){const card=document.createElement('div');card.className='result-card';const h=document.createElement('b');h.textContent=title;const ol=document.createElement('ol');for(const item of arr.slice(0,10)){const li=document.createElement('li');li.append(nodeButton(item.id),document.createTextNode(' — '+item.score));ol.append(li)}card.append(h,ol);grid2.append(card)}out.append(grid2);const info=document.createElement('p');info.className='muted-note';info.textContent=`Largest connected component: ${Math.max(...components.map(x=>x.length))} concepts. These metrics describe I2IDL's curated graph, not objective scholarly importance. Cross-field score uses primary field only; secondary memberships are not counted.`;out.append(info)}
 
-// Source coverage is based on the active definition's evidence records.
-// Common terminology is document frequency across distinct preferred labels.
-function renderSourceTermAnalytics(){
-  const out=$('analytics-result');
+// Source network is a weighted one-mode projection of the concept-to-source evidence graph.
+// A shared concept yields exactly one link contribution between each distinct source pair.
+function sourceCoverageData(){
   const byId=new Map(provenanceGraph.filter(x=>x&&x['@id']).map(x=>[x['@id'],x]));
-  const sources=new Map();
-  let evidenceRecords=0;
+  const sources=new Map();let evidenceRecords=0;
   for(const concept of nodes){
-    const def=byId.get(rid(concept['gs:activeDefinition']));
-    if(!def)continue;
+    const def=byId.get(rid(concept['gs:activeDefinition']));if(!def)continue;
     for(const ev of refs(def['gs:evidence'])){
-      const sourceId=rid(ev&&ev['dcterms:source']);
-      if(!sourceId)continue;
-      const source=byId.get(sourceId);
-      if(!sources.has(sourceId))sources.set(sourceId,{id:sourceId,name:source?.['dcterms:title']||ev['gs:sourceLabel']||sourceId,concepts:new Set(),records:0,direct:0,supporting:0});
-      const item=sources.get(sourceId);
-      item.concepts.add(concept['@id']);item.records++;evidenceRecords++;
+      const id=rid(ev&&ev['dcterms:source']);if(!id)continue;
+      const source=byId.get(id);
+      if(!sources.has(id))sources.set(id,{id,name:source?.['dcterms:title']||ev['gs:sourceLabel']||id,concepts:new Set(),records:0,direct:0,supporting:0});
+      const item=sources.get(id);item.concepts.add(concept['@id']);item.records++;evidenceRecords++;
       if(ev['gs:evidenceRelation']==='direct')item.direct++;
       if(ev['gs:evidenceRelation']==='supporting')item.supporting++;
     }
   }
-  const orderedSources=[...sources.values()].sort((a,b)=>b.concepts.size-a.concepts.size||a.name.localeCompare(b.name));
-  const stop=new Set('a an and are as at based by for from in into is of on or the to using via with within across between other than their this that through digital learning education educational technology technologies systems system data'.split(' '));
-  const words=new Map();
-  for(const concept of nodes){
-    const unique=new Set((label(concept).toLowerCase().match(/[a-z][a-z0-9]*/g)||[]).filter(w=>w.length>=3&&!stop.has(w)));
-    for(const word of unique){if(!words.has(word))words.set(word,new Set());words.get(word).add(concept['@id'])}
+  const ordered=[...sources.values()].sort((a,b)=>b.concepts.size-a.concepts.size||a.name.localeCompare(b.name));
+  const edges=[];
+  for(let i=0;i<ordered.length;i++)for(let j=i+1;j<ordered.length;j++){
+    const a=ordered[i],b=ordered[j],shared=[...a.concepts].filter(id=>b.concepts.has(id));
+    if(shared.length)edges.push({a,b,shared,count:shared.length});
   }
-  const common=[...words].map(([word,ids])=>({word,ids})).filter(x=>x.ids.size>1).sort((a,b)=>b.ids.size-a.ids.size||a.word.localeCompare(b.word));
-  const section=(title,description)=>{const el=document.createElement('section');el.className='result-card';const h=document.createElement('h3');h.textContent=title;h.style.margin='0 0 5px';const p=document.createElement('p');p.className='muted-note';p.textContent=description;el.append(h,p);out.append(el);return el};
+  return {ordered,edges,evidenceRecords};
+}
+function renderSourceAnalytics(){
+  const out=$('analytics-result');const {ordered,edges,evidenceRecords}=sourceCoverageData();
+  const section=(title,description)=>{const el=document.createElement('section');el.className='result-card';const hd=document.createElement('h3');hd.textContent=title;hd.style.margin='0 0 5px';const p=document.createElement('p');p.className='muted-note';p.textContent=description;el.append(hd,p);out.append(el);return el};
   const showConcepts=(holder,ids)=>{
     holder.replaceChildren();const list=document.createElement('div');list.className='source-term-concepts';
-    for(const id of [...ids].sort((a,b)=>tagName(a).localeCompare(tagName(b)))){if(map.has(id))list.append(nodeButton(id))}
+    for(const id of [...ids].sort((a,b)=>tagName(a).localeCompare(tagName(b))))if(map.has(id))list.append(nodeButton(id));
     holder.append(list);
   };
-  const sourceSection=section('Source coverage',`${orderedSources.length} cited sources · ${evidenceRecords} evidence records. Concept coverage counts each concept once per source; a concept may cite several sources. Direct and supporting records are shown separately.`);
-  const sourceRows=document.createElement('div');sourceRows.className='source-term-rows';
-  for(const s of orderedSources){const detail=document.createElement('details');const summary=document.createElement('summary');const name=document.createElement('strong');name.textContent=s.name;const count=document.createElement('span');count.className='small';count.textContent=`${s.concepts.size} concepts · ${s.records} records (${s.direct} direct, ${s.supporting} supporting)`;summary.append(name,count);const inside=document.createElement('div');inside.className='source-term-concepts';detail.addEventListener('toggle',()=>{if(detail.open&&!inside.childNodes.length)showConcepts(inside,s.concepts)});detail.append(summary,inside);sourceRows.append(detail)}
-  sourceSection.append(sourceRows);
-  const termSection=section('Common terms in concept names',`Top ${Math.min(20,common.length)} recurring words across preferred concept labels. Each count is the number of distinct concepts containing that word; common function words and generic domain words are excluded. This is lexical frequency, not SKOS relationship strength.`);
-  const termRows=document.createElement('div');termRows.className='source-term-rows';
-  for(const item of common.slice(0,20)){const detail=document.createElement('details');const summary=document.createElement('summary');const name=document.createElement('strong');name.textContent=item.word;const count=document.createElement('span');count.className='small';count.textContent=`${item.ids.size} concepts`;summary.append(name,count);const inside=document.createElement('div');inside.className='source-term-concepts';detail.addEventListener('toggle',()=>{if(detail.open&&!inside.childNodes.length)showConcepts(inside,item.ids)});detail.append(summary,inside);termRows.append(detail)}
-  termSection.append(termRows);
+  const networkSection=section('Source co-coverage network',`${ordered.length} sources · ${edges.length} shared-concept connections. Node area represents the number of distinct concepts supported by each source. Edge width represents the number of concepts both sources support. This indicates overlap within the glossary, not citations between sources or independent scholarly influence.`);
+  if(ordered.length){
+    const area=document.createElement('div');area.className='source-network-area';
+    const svg=document.createElementNS(SVG_NS,'svg');svg.setAttribute('viewBox','0 0 900 560');svg.setAttribute('role','group');svg.setAttribute('aria-label','Interactive source overlap network; choose a source or connection to inspect associated concepts');
+    const info=document.createElement('div');info.className='source-network-inspect';info.textContent='Click a source node to inspect its concepts, or a connecting line to inspect the shared concepts. Drag nodes to arrange the network.';
+    area.append(svg,info);networkSection.append(area);
+    const maxCoverage=Math.max(1,...ordered.map(x=>x.concepts.size));
+    const maxShared=Math.max(1,...edges.map(x=>x.count));
+    const points=new Map();const n=ordered.length;
+    ordered.forEach((s,i)=>{const a=(i/n)*Math.PI*2-Math.PI/2;points.set(s.id,{x:450+Math.cos(a)*205,y:265+Math.sin(a)*205,r:13+Math.sqrt(s.concepts.size/maxCoverage)*33,vx:0,vy:0})});
+    // Deterministic, bounded spring relaxation to separate labels and related source groups.
+    for(let tick=0;tick<200;tick++){
+      for(const item of points.values()){item.vx+=(450-item.x)*.0008;item.vy+=(265-item.y)*.0008}
+      for(let i=0;i<ordered.length;i++)for(let j=i+1;j<ordered.length;j++){
+        const p=points.get(ordered[i].id),q=points.get(ordered[j].id),dx=q.x-p.x,dy=q.y-p.y,d=Math.max(1,Math.hypot(dx,dy));
+        const min=p.r+q.r+39,force=d<min?-(min-d)*.012:-90/(d*d);
+        const fx=dx/d*force,fy=dy/d*force;p.vx+=fx;p.vy+=fy;q.vx-=fx;q.vy-=fy;
+      }
+      for(const e of edges){const p=points.get(e.a.id),q=points.get(e.b.id),dx=q.x-p.x,dy=q.y-p.y,d=Math.max(1,Math.hypot(dx,dy)),target=165;const f=(d-target)*(.0008+.0012*e.count/maxShared);p.vx+=dx/d*f;p.vy+=dy/d*f;q.vx-=dx/d*f;q.vy-=dy/d*f}
+      for(const p of points.values()){p.vx*=.84;p.vy*=.84;p.x=Math.max(p.r+18,Math.min(900-p.r-18,p.x+p.vx));p.y=Math.max(p.r+22,Math.min(560-p.r-45,p.y+p.vy))}
+    }
+    function inspect(title,description,ids){info.replaceChildren();const h=document.createElement('strong');h.textContent=title;const p=document.createElement('p');p.textContent=description;info.append(h,p);showConcepts(info,ids)}
+    const paths=[];
+    for(const e of edges.sort((a,b)=>a.count-b.count)){
+      const line=document.createElementNS(SVG_NS,'line');line.classList.add('source-network-edge');line.setAttribute('stroke-width',String(1.1+7*Math.sqrt(e.count/maxShared)));line.setAttribute('tabindex','0');line.setAttribute('role','button');line.setAttribute('aria-label',`${e.a.name} and ${e.b.name}: ${e.count} shared concepts`);
+      const title=document.createElementNS(SVG_NS,'title');title.textContent=`${e.a.name} / ${e.b.name}: ${e.count} shared concepts`;line.append(title);
+      const activate=()=>inspect(`${e.a.name} + ${e.b.name}`,`${e.count} distinct concept${e.count===1?'':'s'} supported by both sources.`,e.shared);
+      line.addEventListener('click',activate);line.addEventListener('keydown',ev=>{if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();activate()}});svg.append(line);paths.push({line,e});
+    }
+    const markers=[];
+    const redraw=()=>{for(const {line,e} of paths){const p=points.get(e.a.id),q=points.get(e.b.id);line.setAttribute('x1',p.x);line.setAttribute('y1',p.y);line.setAttribute('x2',q.x);line.setAttribute('y2',q.y)}for(const {g,s} of markers){const p=points.get(s.id);g.setAttribute('transform',`translate(${p.x} ${p.y})`)}};
+    for(const s of ordered){
+      const p=points.get(s.id),g=document.createElementNS(SVG_NS,'g');g.classList.add('source-network-node');g.setAttribute('tabindex','0');g.setAttribute('role','button');g.setAttribute('aria-label',`${s.name}, ${s.concepts.size} concepts`);
+      const circle=document.createElementNS(SVG_NS,'circle');circle.setAttribute('r',p.r);g.append(circle);
+      const short=s.name.length>29?s.name.slice(0,26)+'…':s.name;
+      const txt=document.createElementNS(SVG_NS,'text');txt.textContent=short;txt.setAttribute('y',p.r+15);txt.setAttribute('text-anchor','middle');g.append(txt);
+      const num=document.createElementNS(SVG_NS,'text');num.textContent=String(s.concepts.size);num.classList.add('source-network-number');num.setAttribute('text-anchor','middle');num.setAttribute('dy','5');g.append(num);
+      const tip=document.createElementNS(SVG_NS,'title');tip.textContent=`${s.name}: ${s.concepts.size} concepts, ${s.records} evidence records`;g.append(tip);
+      let drag=null,suppress=false;
+      const coordinate=ev=>{const pt=svg.createSVGPoint();pt.x=ev.clientX;pt.y=ev.clientY;const m=svg.getScreenCTM();return m?pt.matrixTransform(m.inverse()):pt};
+      g.addEventListener('pointerdown',ev=>{if(ev.button!==0)return;const xy=coordinate(ev);drag={id:ev.pointerId,x:xy.x,y:xy.y,ox:p.x,oy:p.y,moved:false};suppress=false;g.setPointerCapture(ev.pointerId)});
+      g.addEventListener('pointermove',ev=>{if(!drag||drag.id!==ev.pointerId)return;const xy=coordinate(ev),dx=xy.x-drag.x,dy=xy.y-drag.y;if(!drag.moved&&Math.hypot(dx,dy)<5)return;drag.moved=true;p.x=Math.max(p.r+18,Math.min(900-p.r-18,drag.ox+dx));p.y=Math.max(p.r+22,Math.min(560-p.r-45,drag.oy+dy));redraw()});
+      const end=ev=>{if(drag&&drag.id===ev.pointerId){suppress=drag.moved;drag=null;if(g.hasPointerCapture(ev.pointerId))g.releasePointerCapture(ev.pointerId)}};
+      g.addEventListener('pointerup',end);g.addEventListener('pointercancel',end);
+      const activate=()=>inspect(s.name,`${s.concepts.size} distinct concepts · ${s.records} evidence records (${s.direct} direct, ${s.supporting} supporting).`,s.concepts);
+      g.addEventListener('click',ev=>{if(suppress){suppress=false;ev.preventDefault();return}activate()});g.addEventListener('keydown',ev=>{if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();activate()}});
+      svg.append(g);markers.push({g,s});
+    }
+    redraw();
+  }
+  const sourceSection=section('Source coverage',`${ordered.length} cited sources · ${evidenceRecords} evidence records. Each concept is counted once per source; direct and supporting evidence records are shown separately.`);
+  const rows=document.createElement('div');rows.className='source-term-rows';
+  for(const s of ordered){const detail=document.createElement('details');const summary=document.createElement('summary');const name=document.createElement('strong');name.textContent=s.name;const count=document.createElement('span');count.className='small';count.textContent=`${s.concepts.size} concepts · ${s.records} records (${s.direct} direct, ${s.supporting} supporting)`;summary.append(name,count);const inside=document.createElement('div');inside.className='source-term-concepts';detail.addEventListener('toggle',()=>{if(detail.open&&!inside.childNodes.length)showConcepts(inside,s.concepts)});detail.append(summary,inside);rows.append(detail)}
+  sourceSection.append(rows);
 }
-function renderAnalytics(){renderGraphAnalytics();renderSourceTermAnalytics()}
+function renderAnalytics(){renderGraphAnalytics();renderSourceAnalytics()}
 
 for(const btn of document.querySelectorAll('[data-tab]'))btn.addEventListener('click',()=>{for(const b of document.querySelectorAll('[data-tab]')){const yes=b===btn;b.setAttribute('aria-selected',yes?'true':'false');$(b.dataset.tab+'-panel').hidden=!yes}if(btn.dataset.tab==='analytics'&&nodes.length)renderAnalytics()});
 $('share').addEventListener('click',()=>{const url=new URL(location.href);url.searchParams.set('concept',active?slug(active):'competency');const text=url.toString();if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(text).then(()=>{$('status').textContent='Explorer link copied.'}).catch(()=>window.prompt('Copy this explorer URL:',text))}else{window.prompt('Copy this explorer URL:',text)}});$('find-path').addEventListener('click',runPath);$('run-compare').addEventListener('click',runCompare);
