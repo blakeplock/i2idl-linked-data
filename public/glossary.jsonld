@@ -3507,6 +3507,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/accessibility-and-inclusivity-testing"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/equitable-co-design"
         }
       ]
     },
@@ -4181,6 +4184,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/meta-adaptation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learner-variability"
         }
       ]
     },
@@ -4249,6 +4255,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/education-management-information-system"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/education-data-integration"
         }
       ]
     },
@@ -4462,6 +4471,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/kanban"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/continuous-integration"
         }
       ]
     },
@@ -4536,6 +4548,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ai-pedagogy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-for-professional-development"
         }
       ]
     },
@@ -4613,6 +4628,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ai-for-professional-development"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-literacy-for-teachers"
         }
       ]
     },
@@ -4690,6 +4708,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ai-tool-validation-for-education"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learner-agency"
         }
       ]
     },
@@ -4761,6 +4782,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ai-pedagogy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-competency-framework-for-teachers-ai-cft"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-assisted-teaching"
         }
       ]
     },
@@ -4912,6 +4939,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/digital-skills"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-pedagogy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-competency-progression"
         }
       ]
     },
@@ -4992,6 +5025,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ai-for-professional-development"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-sciences"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-literacy-for-teachers"
         }
       ]
     },
@@ -5137,6 +5176,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/formative-assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-for-professional-development"
         }
       ]
     },
@@ -5208,6 +5250,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/learner-agency"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-pedagogy-integration"
         }
       ]
     },
@@ -5279,6 +5324,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/human-centered-education"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-enhanced-pedagogical-innovation"
         }
       ]
     },
@@ -5530,6 +5578,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/minimum-proficiency-level"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/shareable-competency-definition-scd"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/competency"
         }
       ],
       "skos:relatedMatch": {
@@ -5695,6 +5749,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/flipped-classroom"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/self-regulated-learning"
         }
       ]
     },
@@ -6332,6 +6389,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/attention"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/remote-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/working-memory"
         }
       ],
       "skos:narrower": [
@@ -6579,6 +6642,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/mentorship"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/social-learning"
         }
       ]
     },
@@ -6672,6 +6738,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/micro-credential"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/shareable-competency-definition-scd"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/assessment"
         }
       ],
       "skos:relatedMatch": {
@@ -6753,6 +6825,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/asset-model"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/shareable-competency-definition-scd"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/formative-assessment"
         }
       ]
     },
@@ -7471,6 +7549,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/contextually-rich-learning-environment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learner-variability"
         }
       ]
     },
@@ -7574,6 +7655,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/review-and-monitoring"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/formative-assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/feedback-loop"
         }
       ]
     },
@@ -7656,6 +7743,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/iterative-design"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/agile-development"
         }
       ]
     },
@@ -8516,6 +8606,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/data-informed-decision-making"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-organization"
         }
       ]
     },
@@ -8578,6 +8671,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/instrumentation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-event"
         }
       ]
     },
@@ -8920,6 +9016,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/learner-privacy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-analytics"
         }
       ]
     },
@@ -9039,6 +9138,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/data-availability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-stewardship"
         }
       ]
     },
@@ -9121,6 +9223,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/school-compliance-reporting"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/review-and-monitoring"
         }
       ]
     },
@@ -9325,6 +9430,12 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/data-ownership"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-quality"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-ecosystem-governance"
         }
       ]
     },
@@ -9399,6 +9510,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/resource-allocation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-informed-decision-making"
         }
       ]
     },
@@ -9479,6 +9593,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/data-culture"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-use"
         }
       ]
     },
@@ -9583,6 +9700,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/evidence-based-decision-making"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/machine-learning"
         }
       ]
     },
@@ -10242,6 +10362,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/usability-testing"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-experience-design-lxd"
         }
       ]
     },
@@ -10316,6 +10439,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ieee-1484-2-2024-learning-employment-record-ecosystems"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/shareable-competency-definition-scd"
         }
       ],
       "skos:closeMatch": {
@@ -10384,6 +10510,18 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/multi-channel-remote-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/remote-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/equity"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/open-educational-resources-oer"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/digital-literacies"
         }
       ]
     },
@@ -10458,6 +10596,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/interoperability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-systems-integration-hsi"
         }
       ]
     },
@@ -10733,6 +10874,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ieee-3527-1-2020-digital-intelligence-framework"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/digital-divide"
         }
       ]
     },
@@ -11523,6 +11667,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/education-management-information-system"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/semantic-interoperability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/administrative-data"
         }
       ]
     },
@@ -11984,6 +12134,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/testing-for-learning-impact"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-assessment"
         }
       ]
     },
@@ -12360,6 +12513,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/whole-of-government-approach"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/strategic-planning"
         }
       ],
       "skos:exactMatch": {
@@ -12663,6 +12819,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/empathy-mapping"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/user-centered-design"
         }
       ]
     },
@@ -12876,6 +13035,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/project-management"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-environment-engineering"
         }
       ]
     },
@@ -13039,6 +13201,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/social-responsibility-in-ai-education"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/digital-divide"
         }
       ]
     },
@@ -13140,6 +13305,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/privacy-by-design"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-centred-approach-to-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/safe-and-responsible-use-of-ai"
         }
       ]
     },
@@ -13214,6 +13385,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/social-responsibility-in-ai-education"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-centred-approach-to-ai"
         }
       ]
     },
@@ -13300,6 +13474,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/national-sdg-4-benchmark"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/evidence-based-practice"
         }
       ]
     },
@@ -13374,6 +13551,15 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/testing-for-learning-impact"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-sciences"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-engineering-process"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/evidence-based-decision-making"
         }
       ]
     },
@@ -13461,6 +13647,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/total-learning-architecture-tla"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-record-store-lrs"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-analytics"
         }
       ]
     },
@@ -13971,6 +14163,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/control-theory"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/continuous-improvement"
         }
       ]
     },
@@ -14180,6 +14375,24 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/formative-evaluation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/shareable-competency-definition-scd"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learner-feedback-loop"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/self-regulated-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-analytics"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/continuous-improvement"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/competency-based-learning"
         }
       ]
     },
@@ -14661,6 +14874,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/user-centered-design"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-sciences"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/usability-testing"
         }
       ]
     },
@@ -14859,6 +15078,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/social-responsibility-in-ai-education"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ethics-of-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ethics-by-design"
         }
       ]
     },
@@ -15075,6 +15300,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/systems-thinking"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/digital-engineering-for-learning-systems"
         }
       ]
     },
@@ -15707,6 +15935,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/interoperability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-record"
         }
       ]
     },
@@ -15857,6 +16088,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ieee-1484-20-2-2022-defining-competencies"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/shareable-competency-definition-scd"
         }
       ]
     },
@@ -16497,6 +16731,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/cognitive-task-analysis"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-sciences"
         }
       ]
     },
@@ -16741,6 +16978,12 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/pedagogical-agent"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/scaffolding"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learner-model"
         }
       ]
     },
@@ -17107,6 +17350,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ieee-1484-13-6-2015-oai-ore-mapping"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-metadata"
         }
       ]
     },
@@ -17390,6 +17636,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/a-b-testing"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/usability-testing"
         }
       ]
     },
@@ -17644,6 +17893,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/project-management"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/scrum"
         }
       ]
     },
@@ -17712,6 +17964,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/long-term-memory"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-sciences"
         }
       ]
     },
@@ -17932,6 +18187,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/value-stream-mapping"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/scrum"
         }
       ]
     },
@@ -18009,6 +18267,15 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/user-directed-customization"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/remote-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/co-design"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-explainability-in-education"
         }
       ]
     },
@@ -18097,6 +18364,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/continuous-improvement"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/formative-assessment"
         }
       ]
     },
@@ -18181,6 +18451,15 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/inference-modeling"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/personalization"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/intelligent-tutoring-system"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/personalized-learning"
         }
       ]
     },
@@ -18332,6 +18611,21 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/inference-modeling"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-record-store-lrs"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/experience-api-xapi"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-engineering"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-privacy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/formative-assessment"
         }
       ]
     },
@@ -18482,6 +18776,11 @@
         {
           "@id": "https://id.i2idl.org/concepts/cross-national-assessment"
         }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-evaluation"
+        }
       ]
     },
     {
@@ -18561,6 +18860,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/learning-network"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/virtual-classroom"
         }
       ]
     },
@@ -18695,6 +18997,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/edtech-ecosystem"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-stewardship"
         }
       ]
     },
@@ -18852,6 +19157,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/digital-engineering-for-learning-systems"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-analytics"
         }
       ]
     },
@@ -19070,6 +19378,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/leed-tracker"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/evidence-based-practice"
         }
       ]
     },
@@ -19259,6 +19570,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/unesco-educational-sciences-and-environment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/technology-affordance"
         }
       ]
     },
@@ -19346,6 +19660,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/digital-engineering-for-learning-systems"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/engineering-design"
         }
       ]
     },
@@ -19414,6 +19731,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/streaming-learning-data"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-instrumentation"
         }
       ]
     },
@@ -19577,6 +19897,15 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/experience-design"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-sciences"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/user-centered-design"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/design-build-cycle"
         }
       ]
     },
@@ -19686,6 +20015,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ieee-1484-13-6-2015-oai-ore-mapping"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/interoperability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/resource-description-framework-rdf"
         }
       ]
     },
@@ -19822,6 +20157,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/culture-change"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-culture"
         }
       ]
     },
@@ -19901,6 +20239,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/cross-national-assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/educational-attainment"
         }
       ]
     },
@@ -19978,6 +20319,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/verifiable-learning-and-employment-record"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1484-2-2024-learning-employment-record-ecosystems"
         }
       ]
     },
@@ -20215,6 +20559,15 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/endpoint"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/experience-api-xapi"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-document"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-analytics"
         }
       ]
     },
@@ -20328,6 +20681,30 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/unesco-educational-sciences-and-environment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/retrieval-practice"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/knowledge-retention"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/remote-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-centered-design"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-experience-design-lxd"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/instructional-designer"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/evidence-based-practice"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ai-pedagogy"
         }
       ]
     },
@@ -20500,6 +20877,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/learning-metadata"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/metadata-tagging"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-profile"
         }
       ]
     },
@@ -20633,6 +21016,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/retrieval-practice"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/working-memory"
         }
       ]
     },
@@ -20725,6 +21111,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/bias"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/decision-support"
         }
       ]
     },
@@ -20889,6 +21278,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/asset-model"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/spaced-repetition"
         }
       ]
     },
@@ -21367,6 +21759,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/metacognition"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/self-monitoring"
         }
       ]
     },
@@ -21618,6 +22013,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/internationalized-resource-identifier-iri"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/linked-data"
         }
       ]
     },
@@ -21835,6 +22233,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/competency"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/summative-assessment"
         }
       ]
     },
@@ -21974,6 +22375,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/microlearning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ubiquitous-learning"
         }
       ],
       "skos:closeMatch": {
@@ -22359,6 +22763,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/extraneous-cognitive-load"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/online-learning-modality"
         }
       ]
     },
@@ -22723,6 +23130,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/digital-learning-materials"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/multimedia-learning"
         }
       ]
     },
@@ -22796,6 +23206,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/learning-metadata"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/digital-divide"
         }
       ],
       "skos:exactMatch": {
@@ -23441,6 +23854,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/user-tailored-privacy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learner-model"
         }
       ]
     },
@@ -23529,6 +23945,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/asset-model"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learner-model"
         }
       ]
     },
@@ -23738,6 +24157,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/user-tailored-privacy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/responsible-ai"
         }
       ]
     },
@@ -24816,6 +25238,21 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/multi-channel-remote-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-sciences"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/scaffolding"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learner-agency"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/digital-divide"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/cognitive-load"
         }
       ]
     },
@@ -24990,6 +25427,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/named-graph"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-metadata"
         }
       ]
     },
@@ -25172,6 +25612,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ai-tool-validation-for-education"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/privacy-by-design"
         }
       ]
     },
@@ -25404,6 +25847,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/long-term-memory"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-sciences"
         }
       ]
     },
@@ -25491,6 +25937,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/school-compliance-reporting"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-reporting"
         }
       ]
     },
@@ -25568,6 +26017,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/data-security"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/trustworthy-ai-for-education"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ethics-by-design"
         }
       ]
     },
@@ -25716,6 +26171,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/pedagogy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/remote-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/intelligent-tutoring-system"
         }
       ]
     },
@@ -25924,6 +26385,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/project-management"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/lean-agile"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/kanban"
         }
       ]
     },
@@ -26166,6 +26633,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/self-regulated-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/metacognitive-monitoring"
         }
       ]
     },
@@ -26242,6 +26712,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ieee-2955-2025-self-learning-tutorials-side-by-side-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/asynchronous-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/formative-assessment"
         }
       ]
     },
@@ -26342,6 +26818,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/xapi-profile"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/education-data-integration"
         }
       ]
     },
@@ -26537,6 +27016,24 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/ieee-1484-20-2-2022-defining-competencies"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/competency"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/formative-assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/digital-credential"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/competency-based-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1484-20-3-2022-shareable-competency-definitions"
         }
       ]
     },
@@ -27069,6 +27566,15 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/observational-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/synchronous-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/community-of-practice"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/networked-community"
         }
       ]
     },
@@ -27368,6 +27874,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/knowledge-retention"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/mastery-learning"
         }
       ]
     },
@@ -28086,6 +28595,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/profile-based-statement-conformance"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/xapi-pattern"
         }
       ]
     },
@@ -28295,6 +28807,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/whole-of-government-approach"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-policy"
         }
       ]
     },
@@ -28628,6 +29143,11 @@
         {
           "@id": "https://id.i2idl.org/concepts/assessment"
         }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/minimum-proficiency-level"
+        }
       ]
     },
     {
@@ -28780,6 +29300,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/flipped-classroom"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/social-learning"
         }
       ]
     },
@@ -28950,6 +29473,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/modeling-and-simulation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/total-learning-architecture-tla"
         }
       ]
     },
@@ -29254,6 +29780,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/samr-model"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-environment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/technology-constraint"
         }
       ]
     },
@@ -29327,6 +29859,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/samr-model"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/technology-affordance"
         }
       ]
     },
@@ -29533,6 +30068,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/system-of-systems"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/systems-thinking"
         }
       ]
     },
@@ -29616,6 +30154,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ai-tool-validation-for-education"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/safe-and-responsible-use-of-ai"
         }
       ]
     },
@@ -29684,6 +30225,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/microlearning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/mobile-learning"
         }
       ]
     },
@@ -29764,6 +30308,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/user-centered-design"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/iterative-design"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-centered-design"
         }
       ]
     },
@@ -29894,6 +30444,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/usability-testing"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/empathy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-experience-design-lxd"
         }
       ]
     },
@@ -30330,6 +30886,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/distributed-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-community"
         }
       ]
     },
@@ -30757,6 +31316,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/short-term-memory"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/long-term-memory"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/cognitive-load"
         }
       ]
     },
@@ -31220,6 +31785,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/document-profile-resource"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-record-store-lrs"
         }
       ]
     },
@@ -31538,6 +32106,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/profile-based-statement-conformance"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/statement-template"
         }
       ]
     },
@@ -31726,6 +32297,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/named-graph"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/linked-data"
         }
       ]
     },
@@ -32340,6 +32914,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/learning-experience-design-lxd"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learner-agency"
         }
       ]
     },
@@ -32422,6 +32999,11 @@
       "skos:broader": [
         {
           "@id": "https://id.i2idl.org/concepts/co-design"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/accessibility"
         }
       ]
     },
@@ -32612,6 +33194,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/asset-model"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/contextual-factor"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/adaptive-instructional-system"
         }
       ]
     },
@@ -32879,6 +33467,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/learning-network"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/social-learning"
         }
       ]
     },
@@ -33194,6 +33785,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/evidence-based-decision-making"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-poverty"
         }
       ]
     },
