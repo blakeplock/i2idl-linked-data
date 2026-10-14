@@ -2,6 +2,14 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
+      "source": "/api/v1/concepts/:id",
+      "destination": "/api/v1?route=concept&id=:id"
+    },
+    {
+      "source": "/api/v1/concepts",
+      "destination": "/api/v1?route=concepts"
+    },
+    {
       "source": "/concepts/:id/versions/:revision.jsonld",
       "destination": "/api/version-history?kind=revision&id=:id&revision=:revision&format=jsonld"
     },
