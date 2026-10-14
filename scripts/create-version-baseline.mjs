@@ -38,7 +38,9 @@ function ntTerm(t) {
   if(t.termType === 'NamedNode') return `<${t.value}>`;
   if(t.termType === 'BlankNode') return `_:${t.value}`;
   if(t.termType === 'Literal') {
-    const value = JSON.stringify(t.value).replace(/\\u2028/g,'\\u2028');
+    const value = JSON.stringify(t.value)
+  .replaceAll('\u2028', '\\u2028')
+  .replaceAll('\u2029', '\\u2029');
     return t.language ? `${value}@${t.language}` : t.datatype?.value !== 'http://www.w3.org/2001/XMLSchema#string' ? `${value}^^<${t.datatype.value}>` : value;
   }
   throw Error(`Unsupported RDF term ${t.termType}`);
