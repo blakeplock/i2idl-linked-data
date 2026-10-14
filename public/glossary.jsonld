@@ -14,14 +14,14 @@
         "skos:ConceptScheme",
         "schema:DefinedTermSet"
       ],
-      "dcterms:title": "I2IDL Digital Learning Glossary",
+      "dcterms:title": "I2IDL Glossary of Digital Learning",
       "dcterms:publisher": {
         "@id": "https://www.i2idl.org/"
       },
       "dcterms:rights": "Mixed rights. I2IDL-original material defaults to CC BY 4.0; source-specific rights are preserved at the source and evidence level.",
       "gs:editorialStatus": "approved",
       "gs:semanticProfileVersion": "0.4.0",
-      "gs:publicationVersion": "v0.0.87",
+      "gs:publicationVersion": "v0.0.88",
       "gs:baseUri": "https://id.i2idl.org"
     },
     {
