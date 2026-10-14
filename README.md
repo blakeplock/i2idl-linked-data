@@ -9,6 +9,7 @@ Open, interoperable Linked Data publication and research services for the [I2IDL
 | Resource | Purpose |
 |---|---|
 | [Glossary of Digital Learning](https://www.i2idl.org/glossary) | Human-readable curated concepts, definitions, sources and evidence |
+| [Developer portal](https://id.i2idl.org/developers) | MCP, REST API, SPARQL, Linked Data, and Graph Explorer entry point |
 | [Knowledge Graph Explorer](https://id.i2idl.org/explore) | Navigate semantic relationships, compare concepts, analyze graph structure and discover scholarship |
 | [Explorer Activity](https://id.i2idl.org/activity) | Public 30-day aggregate engagement counts |
 | [JSON-LD graph](https://id.i2idl.org/glossary.jsonld) | Canonical machine-readable publication |
