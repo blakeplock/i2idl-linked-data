@@ -27,6 +27,7 @@ function details(n,links){
   const field=document.createElement('p');field.className='concept-field';field.textContent=fields.get(fieldId(n))||'Unclassified';
   const desc=document.createElement('p');desc.className='concept-definition';desc.textContent=n['skos:definition']||'See the published glossary for the definition.';
   heading.append(kicker,h,field,desc);root.append(heading);
+  if (window.I2IDLVersionHistory) window.I2IDLVersionHistory.render(n['@id'], root);
   const actions=document.createElement('section');actions.className='concept-actions';
   const actionsTitle=document.createElement('h3');actionsTitle.textContent='Explore the research';actions.append(actionsTitle);
   const researchBtn=document.createElement('button');researchBtn.type='button';researchBtn.className='button primary concept-action-button';
@@ -53,7 +54,6 @@ function details(n,links){
   const uri=document.createElement('a');uri.href=/^https:\/\/id\.i2idl\.org\/concepts\/[a-z0-9-]+$/.test(n['@id'])?n['@id']:'#';uri.target='_blank';uri.rel='noopener noreferrer';uri.textContent='Persistent concept URI ↗';
   const jump=document.createElement('a');jump.href='https://www.i2idl.org/glossary?concept='+encodeURIComponent(slug(n));jump.target='_blank';jump.rel='noopener noreferrer';jump.textContent='View glossary entry ↗';
   references.append(uri,jump);root.append(references);
-  if (window.I2IDLVersionHistory) window.I2IDLVersionHistory.render(n['@id'], root);
 }
 
 // Research tools operate on the same graph used by the explorer, never on proposed links.
