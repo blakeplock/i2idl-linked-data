@@ -1,6 +1,6 @@
 # I2IDL Glossary External Mappings
 
-The I2IDL Digital Learning Glossary supports editorially reviewed mappings between I2IDL concepts and concepts published by external vocabularies, standards bodies, terminology systems, and Linked Data sources.
+The I2IDL Glossary of Digital Learning supports editorially reviewed mappings between I2IDL concepts and concepts published by external vocabularies, standards bodies, terminology systems, and Linked Data sources.
 
 External mappings extend the glossary beyond its internal knowledge graph by connecting I2IDL concepts to authoritative identifiers maintained elsewhere.
 

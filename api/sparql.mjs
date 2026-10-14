@@ -814,7 +814,7 @@ WHERE {
 <body>
   <main>
     <h1>I2IDL SPARQL Endpoint</h1>
-    <p class="meta">Read-only SPARQL access to the I2IDL Digital Learning Glossary.</p>
+    <p class="meta">Read-only SPARQL access to the I2IDL Glossary of Digital Learning.</p>
     <div class="notice">Supported query forms: SELECT, ASK, CONSTRUCT, and DESCRIBE. SPARQL Update, SERVICE, and remote-dataset clauses are disabled. Queries are subject to execution, result, request-size, and rate limits.</div>
 
     <form method="get" action="/sparql">

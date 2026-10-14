@@ -17,7 +17,7 @@ function fail(message) {
   failures.push(message);
 }
 
-if (!html.trimStart().startsWith('<!-- I2IDL Digital Learning Glossary')) {
+if (!(html.trimStart().startsWith('<!-- I2IDL Glossary of Digital Learning') || html.trimStart().startsWith('<!-- I2IDL Digital Learning Glossary'))) {
   fail('opening glossary comment is missing');
 }
 

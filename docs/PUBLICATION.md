@@ -87,7 +87,7 @@ npx vercel --prod
 
 The software and deployment code in this repository are licensed under the Apache License 2.0. See `LICENSE`.
 
-The I2IDL Digital Learning Glossary data and editorial content are governed separately. Unless otherwise noted, I2IDL-original glossary definitions, editorial explanations, semantic modeling, classifications, relationships, and compilation are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).
+The I2IDL Glossary of Digital Learning data and editorial content are governed separately. Unless otherwise noted, I2IDL-original glossary definitions, editorial explanations, semantic modeling, classifications, relationships, and compilation are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).
 
 Third-party source-derived material remains subject to its original licensing and rights conditions.
 
