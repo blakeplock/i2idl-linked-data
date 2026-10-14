@@ -323,7 +323,7 @@ if (redirectResponse) {
 
   if (
     !location.startsWith(
-      'https://www.i2idl.org/glossary#'
+      'https://www.i2idl.org/glossary?concept=ai-assisted-teaching'
     )
   ) {
     fail(
