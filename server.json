@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.blakeplock/i2idl-glossary",
+  "title": "I2IDL Glossary of Digital Learning",
+  "description": "Public read-only MCP access to digital learning concepts, semantic relationships, and citations.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.i2idl.org/glossary",
+  "repository": {
+    "url": "https://github.com/blakeplock/i2idl-linked-data",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://id.i2idl.org/mcp"
+    }
+  ]
+}
