@@ -4,6 +4,39 @@ const ORIGIN = 'https://id.i2idl.org';
 const PROTOCOL = '2025-06-18';
 const SAFE_ID = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const MAX_BODY = 16384;
+const MCP_UPSTREAM_TIMEOUT_MS = 8000;
+const MCP_UPSTREAM_MAX_BYTES = 262144; // 256 KiB, measured before JSON parsing.
+// Read only a bounded upstream body, even if Content-Length is missing or false.
+async function boundedJSON(response) {
+  const length = response.headers.get('content-length');
+  if (length !== null && Number.isFinite(Number(length)) && Number(length) > MCP_UPSTREAM_MAX_BYTES)
+    throw new Error('MCP upstream response exceeded size limit');
+  if (!response.body) throw new Error('MCP upstream response has no body');
+  const reader = response.body.getReader();
+  const chunks = [];
+  let size = 0;
+  try {
+    while (true) {
+      const {done, value} = await reader.read();
+      if (done) break;
+      size += value.byteLength;
+      if (size > MCP_UPSTREAM_MAX_BYTES) {
+        await reader.cancel().catch(()=>{});
+        throw new Error('MCP upstream response exceeded size limit');
+      }
+      chunks.push(value);
+    }
+  } finally {
+    reader.releaseLock();
+  }
+  const bytes = new Uint8Array(size);
+  let position = 0;
+  for (const chunk of chunks) {bytes.set(chunk, position); position += chunk.byteLength;}
+  const data = JSON.parse(new TextDecoder('utf-8', {fatal:true}).decode(bytes));
+  if (!data || typeof data !== 'object' || Array.isArray(data))
+    throw new Error('MCP upstream response is not a JSON object');
+  return data;
+}
 const HEADERS = {
   'Content-Type': 'application/json; charset=utf-8',
   'Cache-Control': 'no-store',
@@ -13,7 +46,7 @@ const HEADERS = {
   'Access-Control-Allow-Headers': 'Content-Type, Accept, MCP-Protocol-Version'
 };
 const tool = (name, description, properties, required = []) => ({
-  name, description, inputSchema: { type:'object', additionalProperties:false, properties, required }
+  name, description, annotations: {readOnlyHint:true, destructiveHint:false, idempotentHint:true, openWorldHint:false}, inputSchema: { type:'object', additionalProperties:false, properties, required }
 });
 const str = (description, maxLength) => ({type:'string', description, minLength:1, maxLength});
 const number = (description, minimum, maximum) => ({type:'integer', description, minimum, maximum});
@@ -95,14 +128,20 @@ export default {
     try {
       // The destination is fixed to our own published API; never accept user URLs.
       const url=new URL(apiPath(name,args),ORIGIN);
-      const fetched=await fetch(url,{headers:{Accept:'application/json'}});
-      if(!fetched.ok){
-        const data=await fetched.json().catch(()=>({error:{message:'Glossary API unavailable'}}));
-        const message=String(data?.error?.message||`Glossary API returned HTTP ${fetched.status}`);
-        return rpcResult(id,{isError:true,content:[{type:'text',text:message}]});
+      const controller = new AbortController();
+      // Explicit timer also covers slow response-body streaming after headers arrive.
+      const timeout = setTimeout(() => controller.abort(), MCP_UPSTREAM_TIMEOUT_MS);
+      try {
+        const fetched = await fetch(url, {headers:{Accept:'application/json'}, signal:controller.signal});
+        if (!fetched.ok) {
+          // Do not echo arbitrary upstream error bodies to MCP clients.
+          return rpcResult(id,{isError:true,content:[{type:'text',text:'Glossary API request failed'}]});
+        }
+        const data = await boundedJSON(fetched);
+        return rpcResult(id,{content:[{type:'text',text:JSON.stringify(data)}],structuredContent:data});
+      } finally {
+        clearTimeout(timeout);
       }
-      const data=await fetched.json();
-      return rpcResult(id,{content:[{type:'text',text:JSON.stringify(data)}],structuredContent:data});
     } catch(e){console.error('MCP upstream error',e);return rpcResult(id,{isError:true,content:[{type:'text',text:'Glossary API temporarily unavailable'}]});}
   }
 };
