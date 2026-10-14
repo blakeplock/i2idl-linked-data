@@ -1,0 +1,7 @@
+[
+  {"source":"/concepts/:id/versions/:revision.jsonld","destination":"/api/version-history?kind=revision&id=:id&revision=:revision&format=jsonld"},
+  {"source":"/concepts/:id/versions/:revision.ttl","destination":"/api/version-history?kind=revision&id=:id&revision=:revision&format=ttl"},
+  {"source":"/concepts/:id/versions/:revision.nq","destination":"/api/version-history?kind=revision&id=:id&revision=:revision&format=nq"},
+  {"source":"/concepts/:id/versions/:revision","destination":"/api/version-history?kind=revision&id=:id&revision=:revision"},
+  {"source":"/concepts/:id/versions","destination":"/api/version-history?kind=history&id=:id"}
+]
