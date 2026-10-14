@@ -1,0 +1,38 @@
+<https://id.i2idl.org/collections/field/engineering-and-systems> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/privacy-by-design> <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+<https://id.i2idl.org/collections/field/enterprise-and-governance> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/privacy-by-design> <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+<https://id.i2idl.org/collections/type/practice> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/privacy-by-design> <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+<https://id.i2idl.org/concepts/privacy-by-design> <http://purl.org/dc/terms/identifier> "privacy-by-design" <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+<https://id.i2idl.org/concepts/privacy-by-design> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+<https://id.i2idl.org/concepts/privacy-by-design> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+<https://id.i2idl.org/concepts/privacy-by-design> <http://www.w3.org/2004/02/skos/core#definition> "An approach in which privacy protections are incorporated into a system's architecture and development process from the beginning rather than added after deployment." <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+<https://id.i2idl.org/concepts/privacy-by-design> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+<https://id.i2idl.org/concepts/privacy-by-design> <http://www.w3.org/2004/02/skos/core#prefLabel> "Privacy by design" <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+<https://id.i2idl.org/concepts/privacy-by-design> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/ethics-by-design> <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+<https://id.i2idl.org/concepts/privacy-by-design> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/learner-privacy> <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+<https://id.i2idl.org/concepts/privacy-by-design> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/responsible-ai> <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+<https://id.i2idl.org/concepts/privacy-by-design> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/user-tailored-privacy> <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+<https://id.i2idl.org/concepts/privacy-by-design> <https://glossarystudio.app/ns/activeDefinition> <https://id.i2idl.org/definitions/privacy-by-design-1> <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+<https://id.i2idl.org/concepts/privacy-by-design> <https://glossarystudio.app/ns/editorialExplanation> "It helps learning systems avoid privacy becoming an afterthought represented only by complicated settings or policies that users cannot realistically manage." <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+<https://id.i2idl.org/concepts/privacy-by-design> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+<https://id.i2idl.org/concepts/privacy-by-design> <https://glossarystudio.app/ns/fieldCollection> <https://id.i2idl.org/collections/field/enterprise-and-governance> <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+<https://id.i2idl.org/concepts/privacy-by-design> <https://glossarystudio.app/ns/typeCollection> <https://id.i2idl.org/collections/type/practice> <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+<https://id.i2idl.org/concepts/privacy-by-design> <https://schema.org/inDefinedTermSet> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+<https://id.i2idl.org/definitions/privacy-by-design-1> <http://purl.org/dc/terms/creator> <https://www.i2idl.org/> <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+<https://id.i2idl.org/definitions/privacy-by-design-1> <http://purl.org/dc/terms/language> "en" <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+<https://id.i2idl.org/definitions/privacy-by-design-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+<https://id.i2idl.org/definitions/privacy-by-design-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Definition> <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+<https://id.i2idl.org/definitions/privacy-by-design-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "An approach in which privacy protections are incorporated into a system's architecture and development process from the beginning rather than added after deployment." <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+<https://id.i2idl.org/definitions/privacy-by-design-1> <https://glossarystudio.app/ns/definitionSequence> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+<https://id.i2idl.org/definitions/privacy-by-design-1> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+<https://id.i2idl.org/definitions/privacy-by-design-1> <https://glossarystudio.app/ns/evidence> _:c14n0 <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+<https://id.i2idl.org/sources/modernizing-learning> <http://purl.org/dc/terms/title> "Modernizing Learning: Building the Future Learning Ecosystem" <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+_:c14n0 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/modernizing-learning> <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+_:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+_:c14n0 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/modernizing-learning> <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/citationDetail> "Ch. 8, pp. 143-145" <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/evidenceRelation> "direct" <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/host> "ERIC" <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/pdfPage> "153"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/pdfPrintedPage> "143"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/sourceLabel> "Modernizing Learning" <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .
+_:c14n0 <https://schema.org/url> "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=153" <https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1> .

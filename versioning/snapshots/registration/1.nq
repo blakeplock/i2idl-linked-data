@@ -1,0 +1,41 @@
+<https://id.i2idl.org/collections/field/standards-and-interoperability> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/registration> <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+<https://id.i2idl.org/collections/type/concept> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/registration> <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+<https://id.i2idl.org/concepts/registration> <http://purl.org/dc/terms/identifier> "registration" <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+<https://id.i2idl.org/concepts/registration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+<https://id.i2idl.org/concepts/registration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+<https://id.i2idl.org/concepts/registration> <http://www.w3.org/2004/02/skos/core#definition> "An identifier for an instance of an Actor experiencing a particular Activity." <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+<https://id.i2idl.org/concepts/registration> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+<https://id.i2idl.org/concepts/registration> <http://www.w3.org/2004/02/skos/core#prefLabel> "Registration" <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+<https://id.i2idl.org/concepts/registration> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/context-object> <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+<https://id.i2idl.org/concepts/registration> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/subregistration> <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+<https://id.i2idl.org/concepts/registration> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/xapi-statement> <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+<https://id.i2idl.org/concepts/registration> <https://glossarystudio.app/ns/activeDefinition> <https://id.i2idl.org/definitions/registration-1> <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+<https://id.i2idl.org/concepts/registration> <https://glossarystudio.app/ns/editorialExplanation> "Registrations help distinguish separate instances or runs of an experience and can be used to group related Statements without assuming that one Activity or Actor uniquely defines a session." <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+<https://id.i2idl.org/concepts/registration> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+<https://id.i2idl.org/concepts/registration> <https://glossarystudio.app/ns/fieldCollection> <https://id.i2idl.org/collections/field/standards-and-interoperability> <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+<https://id.i2idl.org/concepts/registration> <https://glossarystudio.app/ns/typeCollection> <https://id.i2idl.org/collections/type/concept> <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+<https://id.i2idl.org/concepts/registration> <https://schema.org/inDefinedTermSet> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+<https://id.i2idl.org/definitions/registration-1> <http://purl.org/dc/terms/creator> <https://www.i2idl.org/> <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+<https://id.i2idl.org/definitions/registration-1> <http://purl.org/dc/terms/language> "en" <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+<https://id.i2idl.org/definitions/registration-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+<https://id.i2idl.org/definitions/registration-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Definition> <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+<https://id.i2idl.org/definitions/registration-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "An identifier for an instance of an Actor experiencing a particular Activity." <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+<https://id.i2idl.org/definitions/registration-1> <https://glossarystudio.app/ns/definitionSequence> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+<https://id.i2idl.org/definitions/registration-1> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+<https://id.i2idl.org/definitions/registration-1> <https://glossarystudio.app/ns/evidence> _:c14n0 <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+<https://id.i2idl.org/definitions/registration-1> <https://glossarystudio.app/ns/evidence> _:c14n1 <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+<https://id.i2idl.org/sources/ieee-xapi-base-standard> <http://purl.org/dc/terms/title> "IEEE xAPI Base Standard" <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+_:c14n0 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/ieee-xapi-base-standard> <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+_:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+_:c14n0 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/ieee-xapi-base-standard> <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/citationDetail> "IEEE 9274.1.1-2023 §5.2.2.5 — Context: registration property" <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/evidenceRelation> "direct" <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/sourceLabel> "IEEE xAPI Base Standard" <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+_:c14n0 <https://schema.org/url> "https://opensource.ieee.org/xapi/xapi-base-standard-documentation/-/blob/main/9274.1.1%20xAPI%20Base%20Standard%20for%20Content.md#5225-context" <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+_:c14n1 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/ieee-xapi-base-standard> <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+_:c14n1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+_:c14n1 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/ieee-xapi-base-standard> <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/citationDetail> "IEEE 9274.1.1-2023 §3.1 — Definitions: Registration" <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/evidenceRelation> "direct" <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/sourceLabel> "IEEE xAPI Base Standard" <https://id.i2idl.org/graphs/concepts/registration/versions/1> .
+_:c14n1 <https://schema.org/url> "https://opensource.ieee.org/xapi/xapi-base-standard-documentation/-/blob/main/9274.1.1%20xAPI%20Base%20Standard%20Overview.md#31-definitions" <https://id.i2idl.org/graphs/concepts/registration/versions/1> .

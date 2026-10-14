@@ -1,0 +1,39 @@
+<https://id.i2idl.org/collections/field/education> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/unesco-curriculum> <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+<https://id.i2idl.org/collections/type/concept> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/unesco-curriculum> <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+<https://id.i2idl.org/concepts/unesco-curriculum> <http://purl.org/dc/terms/identifier> "unesco-curriculum" <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+<https://id.i2idl.org/concepts/unesco-curriculum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+<https://id.i2idl.org/concepts/unesco-curriculum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+<https://id.i2idl.org/concepts/unesco-curriculum> <http://www.w3.org/2004/02/skos/core#altLabel> "Course content" <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+<https://id.i2idl.org/concepts/unesco-curriculum> <http://www.w3.org/2004/02/skos/core#altLabel> "programme of study" <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+<https://id.i2idl.org/concepts/unesco-curriculum> <http://www.w3.org/2004/02/skos/core#altLabel> "syllabus" <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+<https://id.i2idl.org/concepts/unesco-curriculum> <http://www.w3.org/2004/02/skos/core#definition> "The planned subjects and learning content of an educational program, including how instructional time is allocated and how learning is sequenced." <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+<https://id.i2idl.org/concepts/unesco-curriculum> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://vocabularies.unesco.org/thesaurus/concept49> <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+<https://id.i2idl.org/concepts/unesco-curriculum> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+<https://id.i2idl.org/concepts/unesco-curriculum> <http://www.w3.org/2004/02/skos/core#prefLabel> "Curriculum" <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+<https://id.i2idl.org/concepts/unesco-curriculum> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/early-childhood-education-ece> <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+<https://id.i2idl.org/concepts/unesco-curriculum> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/pedagogy> <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+<https://id.i2idl.org/concepts/unesco-curriculum> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/unesco-basic-and-general-study-subjects> <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+<https://id.i2idl.org/concepts/unesco-curriculum> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/unesco-education-domain> <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+<https://id.i2idl.org/concepts/unesco-curriculum> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/unesco-technical-and-vocational-study-subjects> <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+<https://id.i2idl.org/concepts/unesco-curriculum> <https://glossarystudio.app/ns/activeDefinition> <https://id.i2idl.org/definitions/unesco-curriculum-1> <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+<https://id.i2idl.org/concepts/unesco-curriculum> <https://glossarystudio.app/ns/editorialExplanation> "Curriculum translates educational goals into an organized program of content, experiences, and progression for learners." <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+<https://id.i2idl.org/concepts/unesco-curriculum> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+<https://id.i2idl.org/concepts/unesco-curriculum> <https://glossarystudio.app/ns/fieldCollection> <https://id.i2idl.org/collections/field/education> <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+<https://id.i2idl.org/concepts/unesco-curriculum> <https://glossarystudio.app/ns/typeCollection> <https://id.i2idl.org/collections/type/concept> <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+<https://id.i2idl.org/concepts/unesco-curriculum> <https://schema.org/inDefinedTermSet> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+<https://id.i2idl.org/definitions/unesco-curriculum-1> <http://purl.org/dc/terms/creator> <https://www.i2idl.org/> <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+<https://id.i2idl.org/definitions/unesco-curriculum-1> <http://purl.org/dc/terms/language> "en" <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+<https://id.i2idl.org/definitions/unesco-curriculum-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+<https://id.i2idl.org/definitions/unesco-curriculum-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Definition> <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+<https://id.i2idl.org/definitions/unesco-curriculum-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "The planned subjects and learning content of an educational program, including how instructional time is allocated and how learning is sequenced." <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+<https://id.i2idl.org/definitions/unesco-curriculum-1> <https://glossarystudio.app/ns/definitionSequence> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+<https://id.i2idl.org/definitions/unesco-curriculum-1> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+<https://id.i2idl.org/definitions/unesco-curriculum-1> <https://glossarystudio.app/ns/evidence> _:c14n0 <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+<https://id.i2idl.org/sources/unesco-thesaurus> <http://purl.org/dc/terms/title> "UNESCO Thesaurus" <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+_:c14n0 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/unesco-thesaurus> <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+_:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+_:c14n0 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/unesco-thesaurus> <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/citationDetail> "Curriculum · Preferred term" <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/evidenceRelation> "direct" <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/sourceLabel> "UNESCO Thesaurus" <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .
+_:c14n0 <https://schema.org/url> "https://vocabularies.unesco.org/unesco/en/page/concept49" <https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/1> .

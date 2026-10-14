@@ -1,0 +1,42 @@
+<https://id.i2idl.org/collections/field/data-and-instrumentation> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/profile-server> <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+<https://id.i2idl.org/collections/field/engineering-and-systems> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/profile-server> <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+<https://id.i2idl.org/collections/field/standards-and-interoperability> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/profile-server> <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+<https://id.i2idl.org/collections/type/system> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/profile-server> <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+<https://id.i2idl.org/concepts/profile-server> <http://purl.org/dc/terms/identifier> "profile-server" <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+<https://id.i2idl.org/concepts/profile-server> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+<https://id.i2idl.org/concepts/profile-server> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+<https://id.i2idl.org/concepts/profile-server> <http://www.w3.org/2004/02/skos/core#definition> "A centralized service for finding, browsing, querying, storing, and managing xAPI Profiles, vocabulary concepts, and related Profile metadata." <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+<https://id.i2idl.org/concepts/profile-server> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+<https://id.i2idl.org/concepts/profile-server> <http://www.w3.org/2004/02/skos/core#prefLabel> "Profile server" <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+<https://id.i2idl.org/concepts/profile-server> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/named-graph> <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+<https://id.i2idl.org/concepts/profile-server> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/xapi-profile> <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+<https://id.i2idl.org/concepts/profile-server> <https://glossarystudio.app/ns/activeDefinition> <https://id.i2idl.org/definitions/profile-server-1> <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+<https://id.i2idl.org/concepts/profile-server> <https://glossarystudio.app/ns/editorialExplanation> "A Profile Server makes Profiles discoverable and queryable and provides infrastructure for working with current and historical Profile versions." <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+<https://id.i2idl.org/concepts/profile-server> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+<https://id.i2idl.org/concepts/profile-server> <https://glossarystudio.app/ns/fieldCollection> <https://id.i2idl.org/collections/field/standards-and-interoperability> <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+<https://id.i2idl.org/concepts/profile-server> <https://glossarystudio.app/ns/typeCollection> <https://id.i2idl.org/collections/type/system> <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+<https://id.i2idl.org/concepts/profile-server> <https://schema.org/inDefinedTermSet> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+<https://id.i2idl.org/definitions/profile-server-1> <http://purl.org/dc/terms/creator> <https://www.i2idl.org/> <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+<https://id.i2idl.org/definitions/profile-server-1> <http://purl.org/dc/terms/language> "en" <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+<https://id.i2idl.org/definitions/profile-server-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+<https://id.i2idl.org/definitions/profile-server-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Definition> <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+<https://id.i2idl.org/definitions/profile-server-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "A centralized service for finding, browsing, querying, storing, and managing xAPI Profiles, vocabulary concepts, and related Profile metadata." <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+<https://id.i2idl.org/definitions/profile-server-1> <https://glossarystudio.app/ns/definitionSequence> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+<https://id.i2idl.org/definitions/profile-server-1> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+<https://id.i2idl.org/definitions/profile-server-1> <https://glossarystudio.app/ns/evidence> _:c14n0 <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+<https://id.i2idl.org/definitions/profile-server-1> <https://glossarystudio.app/ns/evidence> _:c14n1 <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+<https://id.i2idl.org/sources/xapi-profiles-specification> <http://purl.org/dc/terms/title> "xAPI Profiles Specification" <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+_:c14n0 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/xapi-profiles-specification> <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+_:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+_:c14n0 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/xapi-profiles-specification> <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/citationDetail> "Part Three §1.0 — centralized Profile Server management" <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/evidenceRelation> "supporting" <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/sourceLabel> "xAPI Profiles Specification" <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+_:c14n0 <https://schema.org/url> "https://github.com/adlnet/xapi-profiles/blob/master/xapi-profiles-communication.md#prof-server:~:text=A%20Profile%20Server%20manages%20xAPI%20Profiles%20from%20a%20centralized%20location." <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+_:c14n1 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/xapi-profiles-specification> <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+_:c14n1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+_:c14n1 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/xapi-profiles-specification> <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/citationDetail> "Part One §3.0 — exact definition: Profile Server" <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/evidenceRelation> "direct" <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/sourceLabel> "xAPI Profiles Specification" <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .
+_:c14n1 <https://schema.org/url> "https://github.com/adlnet/xapi-profiles/blob/master/xapi-profiles-about.md#profileserver" <https://id.i2idl.org/graphs/concepts/profile-server/versions/1> .

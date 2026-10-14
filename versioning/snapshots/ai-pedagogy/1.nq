@@ -1,0 +1,40 @@
+<https://id.i2idl.org/collections/field/ai-and-machine-learning> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/ai-pedagogy> <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/collections/field/learning-sciences> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/ai-pedagogy> <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/collections/type/practice> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/ai-pedagogy> <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/concepts/ai-pedagogy> <http://purl.org/dc/terms/identifier> "ai-pedagogy" <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/concepts/ai-pedagogy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/concepts/ai-pedagogy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/concepts/ai-pedagogy> <http://www.w3.org/2004/02/skos/core#definition> "The competencies and practices involved in selecting, validating, and integrating AI with pedagogical methods to support teaching, learning, social interaction, care, and assessment." <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/concepts/ai-pedagogy> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/concepts/ai-pedagogy> <http://www.w3.org/2004/02/skos/core#prefLabel> "AI pedagogy" <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/concepts/ai-pedagogy> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/ai-assisted-teaching> <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/concepts/ai-pedagogy> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/ai-competency-framework-for-teachers-ai-cft> <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/concepts/ai-pedagogy> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/ai-enhanced-pedagogical-innovation> <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/concepts/ai-pedagogy> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/ai-for-professional-development> <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/concepts/ai-pedagogy> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/ai-literacy-for-teachers> <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/concepts/ai-pedagogy> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/ai-pedagogy-integration> <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/concepts/ai-pedagogy> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/deepen-ai-competency-level> <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/concepts/ai-pedagogy> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/human-centered-education> <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/concepts/ai-pedagogy> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/learning-sciences> <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/concepts/ai-pedagogy> <https://glossarystudio.app/ns/activeDefinition> <https://id.i2idl.org/definitions/ai-pedagogy-1> <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/concepts/ai-pedagogy> <https://glossarystudio.app/ns/editorialExplanation> "AI pedagogy focuses attention on when and how AI should support educational practice rather than assuming that the presence of AI creates pedagogical value." <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/concepts/ai-pedagogy> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/concepts/ai-pedagogy> <https://glossarystudio.app/ns/fieldCollection> <https://id.i2idl.org/collections/field/learning-sciences> <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/concepts/ai-pedagogy> <https://glossarystudio.app/ns/typeCollection> <https://id.i2idl.org/collections/type/practice> <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/concepts/ai-pedagogy> <https://schema.org/inDefinedTermSet> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/definitions/ai-pedagogy-1> <http://purl.org/dc/terms/creator> <https://www.i2idl.org/> <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/definitions/ai-pedagogy-1> <http://purl.org/dc/terms/language> "en" <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/definitions/ai-pedagogy-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/definitions/ai-pedagogy-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Definition> <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/definitions/ai-pedagogy-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "The competencies and practices involved in selecting, validating, and integrating AI with pedagogical methods to support teaching, learning, social interaction, care, and assessment." <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/definitions/ai-pedagogy-1> <https://glossarystudio.app/ns/definitionSequence> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/definitions/ai-pedagogy-1> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/definitions/ai-pedagogy-1> <https://glossarystudio.app/ns/evidence> _:c14n0 <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+<https://id.i2idl.org/sources/unesco-ai-competency-framework-for-teachers> <http://purl.org/dc/terms/title> "UNESCO AI Competency Framework for Teachers" <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+_:c14n0 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/unesco-ai-competency-framework-for-teachers> <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+_:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+_:c14n0 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/unesco-ai-competency-framework-for-teachers> <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/citationDetail> "PDF p. 22 · report p. 23 — §3.2.4 Aspect 4: AI pedagogy" <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/evidenceRelation> "direct" <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/sourceLabel> "UNESCO AI Competency Framework for Teachers" <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .
+_:c14n0 <https://schema.org/url> "https://www.unesco.org/en/articles/ai-competency-framework-teachers" <https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1> .

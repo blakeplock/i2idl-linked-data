@@ -1,0 +1,37 @@
+<https://id.i2idl.org/collections/field/learning-sciences> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/working-memory> <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+<https://id.i2idl.org/collections/type/concept> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/working-memory> <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+<https://id.i2idl.org/concepts/working-memory> <http://purl.org/dc/terms/identifier> "working-memory" <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+<https://id.i2idl.org/concepts/working-memory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+<https://id.i2idl.org/concepts/working-memory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+<https://id.i2idl.org/concepts/working-memory> <http://www.w3.org/2004/02/skos/core#definition> "The limited-capacity memory system in which information is consciously processed before it may be encoded into long-term memory." <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+<https://id.i2idl.org/concepts/working-memory> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+<https://id.i2idl.org/concepts/working-memory> <http://www.w3.org/2004/02/skos/core#prefLabel> "Working memory" <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+<https://id.i2idl.org/concepts/working-memory> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/attention> <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+<https://id.i2idl.org/concepts/working-memory> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/cognitive-load> <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+<https://id.i2idl.org/concepts/working-memory> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/long-term-memory> <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+<https://id.i2idl.org/concepts/working-memory> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/multimedia-learning> <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+<https://id.i2idl.org/concepts/working-memory> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/short-term-memory> <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+<https://id.i2idl.org/concepts/working-memory> <https://glossarystudio.app/ns/activeDefinition> <https://id.i2idl.org/definitions/working-memory-1> <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+<https://id.i2idl.org/concepts/working-memory> <https://glossarystudio.app/ns/editorialExplanation> "Because working memory is limited, excessive new information or unnecessary complexity can overwhelm learners and interfere with understanding." <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+<https://id.i2idl.org/concepts/working-memory> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+<https://id.i2idl.org/concepts/working-memory> <https://glossarystudio.app/ns/fieldCollection> <https://id.i2idl.org/collections/field/learning-sciences> <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+<https://id.i2idl.org/concepts/working-memory> <https://glossarystudio.app/ns/typeCollection> <https://id.i2idl.org/collections/type/concept> <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+<https://id.i2idl.org/concepts/working-memory> <https://schema.org/inDefinedTermSet> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+<https://id.i2idl.org/definitions/working-memory-1> <http://purl.org/dc/terms/creator> <https://www.i2idl.org/> <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+<https://id.i2idl.org/definitions/working-memory-1> <http://purl.org/dc/terms/language> "en" <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+<https://id.i2idl.org/definitions/working-memory-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+<https://id.i2idl.org/definitions/working-memory-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Definition> <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+<https://id.i2idl.org/definitions/working-memory-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "The limited-capacity memory system in which information is consciously processed before it may be encoded into long-term memory." <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+<https://id.i2idl.org/definitions/working-memory-1> <https://glossarystudio.app/ns/definitionSequence> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+<https://id.i2idl.org/definitions/working-memory-1> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+<https://id.i2idl.org/definitions/working-memory-1> <https://glossarystudio.app/ns/evidence> _:c14n0 <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+<https://id.i2idl.org/sources/the-science-of-remote-learning> <http://purl.org/dc/terms/title> "The Science of Remote Learning" <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+_:c14n0 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/the-science-of-remote-learning> <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+_:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+_:c14n0 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/the-science-of-remote-learning> <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/citationDetail> "How Do Learners Understand New Ideas · PDF p. 6" <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/evidenceRelation> "direct" <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/host> "MIT Open Learning" <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/pdfPage> "6"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/sourceLabel> "The Science of Remote Learning" <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .
+_:c14n0 <https://schema.org/url> "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=6" <https://id.i2idl.org/graphs/concepts/working-memory/versions/1> .

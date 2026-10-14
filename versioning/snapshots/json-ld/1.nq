@@ -1,0 +1,44 @@
+<https://id.i2idl.org/collections/field/data-and-instrumentation> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/json-ld> <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+<https://id.i2idl.org/collections/field/standards-and-interoperability> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/json-ld> <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+<https://id.i2idl.org/collections/type/standard> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/json-ld> <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+<https://id.i2idl.org/concepts/json-ld> <http://purl.org/dc/terms/identifier> "json-ld" <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+<https://id.i2idl.org/concepts/json-ld> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+<https://id.i2idl.org/concepts/json-ld> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+<https://id.i2idl.org/concepts/json-ld> <http://www.w3.org/2004/02/skos/core#altLabel> "JavaScript Object Notation for Linked Data" <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+<https://id.i2idl.org/concepts/json-ld> <http://www.w3.org/2004/02/skos/core#definition> "A JSON-based linked-data format that maps familiar JSON structures to semantic identifiers and relationships that can be interpreted as RDF." <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+<https://id.i2idl.org/concepts/json-ld> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+<https://id.i2idl.org/concepts/json-ld> <http://www.w3.org/2004/02/skos/core#prefLabel> "JSON-LD" <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+<https://id.i2idl.org/concepts/json-ld> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/json> <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+<https://id.i2idl.org/concepts/json-ld> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/linked-data> <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+<https://id.i2idl.org/concepts/json-ld> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/resource-description-framework-rdf> <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+<https://id.i2idl.org/concepts/json-ld> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/xapi-profile> <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+<https://id.i2idl.org/concepts/json-ld> <https://glossarystudio.app/ns/activeDefinition> <https://id.i2idl.org/definitions/json-ld-1> <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+<https://id.i2idl.org/concepts/json-ld> <https://glossarystudio.app/ns/editorialExplanation> "xAPI Profiles use JSON-LD so Profile documents remain approachable as JSON while also participating in linked-data and RDF tooling." <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+<https://id.i2idl.org/concepts/json-ld> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+<https://id.i2idl.org/concepts/json-ld> <https://glossarystudio.app/ns/fieldCollection> <https://id.i2idl.org/collections/field/standards-and-interoperability> <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+<https://id.i2idl.org/concepts/json-ld> <https://glossarystudio.app/ns/typeCollection> <https://id.i2idl.org/collections/type/standard> <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+<https://id.i2idl.org/concepts/json-ld> <https://schema.org/inDefinedTermSet> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+<https://id.i2idl.org/definitions/json-ld-1> <http://purl.org/dc/terms/creator> <https://www.i2idl.org/> <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+<https://id.i2idl.org/definitions/json-ld-1> <http://purl.org/dc/terms/language> "en" <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+<https://id.i2idl.org/definitions/json-ld-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+<https://id.i2idl.org/definitions/json-ld-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Definition> <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+<https://id.i2idl.org/definitions/json-ld-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "A JSON-based linked-data format that maps familiar JSON structures to semantic identifiers and relationships that can be interpreted as RDF." <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+<https://id.i2idl.org/definitions/json-ld-1> <https://glossarystudio.app/ns/definitionSequence> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+<https://id.i2idl.org/definitions/json-ld-1> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+<https://id.i2idl.org/definitions/json-ld-1> <https://glossarystudio.app/ns/evidence> _:c14n0 <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+<https://id.i2idl.org/definitions/json-ld-1> <https://glossarystudio.app/ns/evidence> _:c14n1 <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+<https://id.i2idl.org/sources/xapi-profiles-specification> <http://purl.org/dc/terms/title> "xAPI Profiles Specification" <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+_:c14n0 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/xapi-profiles-specification> <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+_:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+_:c14n0 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/xapi-profiles-specification> <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/citationDetail> "Part One §3.0 — exact definition: JSON-LD" <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/evidenceRelation> "direct" <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/sourceLabel> "xAPI Profiles Specification" <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+_:c14n0 <https://schema.org/url> "https://github.com/adlnet/xapi-profiles/blob/master/xapi-profiles-about.md#jsonld" <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+_:c14n1 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/xapi-profiles-specification> <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+_:c14n1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+_:c14n1 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/xapi-profiles-specification> <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/citationDetail> "Part Two §2.0 — JSON-LD as the Profile authoring syntax" <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/evidenceRelation> "supporting" <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/sourceLabel> "xAPI Profiles Specification" <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .
+_:c14n1 <https://schema.org/url> "https://github.com/adlnet/xapi-profiles/blob/master/xapi-profiles-structure.md#tech-foundations:~:text=This%20specification%20describes%20how%20to%20author%20an%20xAPI%20Profile.%20It%20describes%20a%20set%20of%20rules%20for%20authoring%20JSON%2C%20specifically%20JSON-LD." <https://id.i2idl.org/graphs/concepts/json-ld/versions/1> .

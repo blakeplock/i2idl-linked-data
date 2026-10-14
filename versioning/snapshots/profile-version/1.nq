@@ -1,0 +1,47 @@
+<https://id.i2idl.org/collections/field/standards-and-interoperability> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/profile-version> <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+<https://id.i2idl.org/collections/type/concept> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/profile-version> <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+<https://id.i2idl.org/concepts/profile-version> <http://purl.org/dc/terms/identifier> "profile-version" <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+<https://id.i2idl.org/concepts/profile-version> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+<https://id.i2idl.org/concepts/profile-version> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+<https://id.i2idl.org/concepts/profile-version> <http://www.w3.org/2004/02/skos/core#broader> <https://id.i2idl.org/concepts/xapi-profile> <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+<https://id.i2idl.org/concepts/profile-version> <http://www.w3.org/2004/02/skos/core#definition> "An xAPI Profile as it exists at a particular point in time, with version history that can be retained and queried independently." <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+<https://id.i2idl.org/concepts/profile-version> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+<https://id.i2idl.org/concepts/profile-version> <http://www.w3.org/2004/02/skos/core#prefLabel> "Profile version" <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+<https://id.i2idl.org/concepts/profile-version> <https://glossarystudio.app/ns/activeDefinition> <https://id.i2idl.org/definitions/profile-version-1> <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+<https://id.i2idl.org/concepts/profile-version> <https://glossarystudio.app/ns/editorialExplanation> "Versioning allows Statements and tools to refer to the exact Profile rules that applied at the time while preserving access to earlier Profile states." <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+<https://id.i2idl.org/concepts/profile-version> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+<https://id.i2idl.org/concepts/profile-version> <https://glossarystudio.app/ns/fieldCollection> <https://id.i2idl.org/collections/field/standards-and-interoperability> <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+<https://id.i2idl.org/concepts/profile-version> <https://glossarystudio.app/ns/typeCollection> <https://id.i2idl.org/collections/type/concept> <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+<https://id.i2idl.org/concepts/profile-version> <https://schema.org/inDefinedTermSet> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+<https://id.i2idl.org/definitions/profile-version-1> <http://purl.org/dc/terms/creator> <https://www.i2idl.org/> <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+<https://id.i2idl.org/definitions/profile-version-1> <http://purl.org/dc/terms/language> "en" <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+<https://id.i2idl.org/definitions/profile-version-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+<https://id.i2idl.org/definitions/profile-version-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Definition> <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+<https://id.i2idl.org/definitions/profile-version-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "An xAPI Profile as it exists at a particular point in time, with version history that can be retained and queried independently." <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+<https://id.i2idl.org/definitions/profile-version-1> <https://glossarystudio.app/ns/definitionSequence> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+<https://id.i2idl.org/definitions/profile-version-1> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+<https://id.i2idl.org/definitions/profile-version-1> <https://glossarystudio.app/ns/evidence> _:c14n0 <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+<https://id.i2idl.org/definitions/profile-version-1> <https://glossarystudio.app/ns/evidence> _:c14n1 <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+<https://id.i2idl.org/definitions/profile-version-1> <https://glossarystudio.app/ns/evidence> _:c14n2 <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+<https://id.i2idl.org/sources/xapi-profiles-specification> <http://purl.org/dc/terms/title> "xAPI Profiles Specification" <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+_:c14n0 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/xapi-profiles-specification> <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+_:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+_:c14n0 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/xapi-profiles-specification> <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/citationDetail> "Part One §3.0 — exact definition: Profile version" <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/evidenceRelation> "direct" <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/sourceLabel> "xAPI Profiles Specification" <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+_:c14n0 <https://schema.org/url> "https://github.com/adlnet/xapi-profiles/blob/master/xapi-profiles-about.md#profileversion" <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+_:c14n1 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/xapi-profiles-specification> <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+_:c14n1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+_:c14n1 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/xapi-profiles-specification> <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/citationDetail> "Part Three §1.1 — each Profile version in a Named Graph" <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/evidenceRelation> "supporting" <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/sourceLabel> "xAPI Profiles Specification" <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+_:c14n1 <https://schema.org/url> "https://github.com/adlnet/xapi-profiles/blob/master/xapi-profiles-communication.md#prof-versions:~:text=Every%20Profile%20version%20will%20be%20in%20a%20Named%20Graph" <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+_:c14n2 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/xapi-profiles-specification> <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+_:c14n2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+_:c14n2 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/xapi-profiles-specification> <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+_:c14n2 <https://glossarystudio.app/ns/citationDetail> "Part Two §6.1 — version-history purpose" <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+_:c14n2 <https://glossarystudio.app/ns/evidenceRelation> "supporting" <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+_:c14n2 <https://glossarystudio.app/ns/sourceLabel> "xAPI Profiles Specification" <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .
+_:c14n2 <https://schema.org/url> "https://github.com/adlnet/xapi-profiles/blob/master/xapi-profiles-structure.md#prof-ver-obj:~:text=Profile%20version%20objects%20make%20it%20convenient%20to%20track%20version%20history%20for%20Profiles" <https://id.i2idl.org/graphs/concepts/profile-version/versions/1> .

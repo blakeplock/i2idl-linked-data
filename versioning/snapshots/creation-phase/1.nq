@@ -1,0 +1,33 @@
+<https://id.i2idl.org/collections/field/human-centered-design> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/creation-phase> <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+<https://id.i2idl.org/collections/field/learning-engineering> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/creation-phase> <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+<https://id.i2idl.org/collections/type/practice> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/creation-phase> <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+<https://id.i2idl.org/concepts/creation-phase> <http://purl.org/dc/terms/identifier> "creation-phase" <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+<https://id.i2idl.org/concepts/creation-phase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+<https://id.i2idl.org/concepts/creation-phase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+<https://id.i2idl.org/concepts/creation-phase> <http://www.w3.org/2004/02/skos/core#altLabel> "Creation" <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+<https://id.i2idl.org/concepts/creation-phase> <http://www.w3.org/2004/02/skos/core#definition> "The part of the learning engineering process in which a team creates a response to a learning challenge by designing the solution, planning and instrumenting the needed data, and iterating the design with learners and stakeholders." <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+<https://id.i2idl.org/concepts/creation-phase> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+<https://id.i2idl.org/concepts/creation-phase> <http://www.w3.org/2004/02/skos/core#prefLabel> "Creation phase" <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+<https://id.i2idl.org/concepts/creation-phase> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/learning-engineering-process> <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+<https://id.i2idl.org/concepts/creation-phase> <https://glossarystudio.app/ns/activeDefinition> <https://id.i2idl.org/definitions/creation-phase-1> <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+<https://id.i2idl.org/concepts/creation-phase> <https://glossarystudio.app/ns/editorialExplanation> "Treating instrumentation and iteration as part of creation helps ensure that a solution is designed to generate useful evidence from the start." <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+<https://id.i2idl.org/concepts/creation-phase> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+<https://id.i2idl.org/concepts/creation-phase> <https://glossarystudio.app/ns/fieldCollection> <https://id.i2idl.org/collections/field/learning-engineering> <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+<https://id.i2idl.org/concepts/creation-phase> <https://glossarystudio.app/ns/typeCollection> <https://id.i2idl.org/collections/type/practice> <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+<https://id.i2idl.org/concepts/creation-phase> <https://schema.org/inDefinedTermSet> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+<https://id.i2idl.org/definitions/creation-phase-1> <http://purl.org/dc/terms/creator> <https://www.i2idl.org/> <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+<https://id.i2idl.org/definitions/creation-phase-1> <http://purl.org/dc/terms/language> "en" <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+<https://id.i2idl.org/definitions/creation-phase-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+<https://id.i2idl.org/definitions/creation-phase-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Definition> <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+<https://id.i2idl.org/definitions/creation-phase-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "The part of the learning engineering process in which a team creates a response to a learning challenge by designing the solution, planning and instrumenting the needed data, and iterating the design with learners and stakeholders." <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+<https://id.i2idl.org/definitions/creation-phase-1> <https://glossarystudio.app/ns/definitionSequence> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+<https://id.i2idl.org/definitions/creation-phase-1> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+<https://id.i2idl.org/definitions/creation-phase-1> <https://glossarystudio.app/ns/evidence> _:c14n0 <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+<https://id.i2idl.org/sources/ieee-icicle> <http://purl.org/dc/terms/title> "IEEE ICICLE Learning Engineering Process" <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+_:c14n0 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/ieee-icicle> <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+_:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+_:c14n0 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/ieee-icicle> <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/citationDetail> "Learning Engineering Process · Creation" <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/evidenceRelation> "direct" <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/sourceLabel> "IEEE ICICLE" <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
+_:c14n0 <https://schema.org/url> "https://sagroups.ieee.org/icicle/learning-engineering-process/" <https://id.i2idl.org/graphs/concepts/creation-phase/versions/1> .
