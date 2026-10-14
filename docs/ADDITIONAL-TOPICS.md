@@ -4,7 +4,7 @@
 
 ## Current platform: glossary, semantic services, and graph explorer
 
-The I2IDL Digital Learning Glossary has three complementary public interfaces:
+The I2IDL Glossary of Digital Learning has three complementary public interfaces:
 
 | Interface | URL | Purpose |
 | --- | --- | --- |

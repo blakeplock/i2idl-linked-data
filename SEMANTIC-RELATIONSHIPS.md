@@ -1,6 +1,6 @@
 # I2IDL Glossary Semantic Relationships
 
-The I2IDL Digital Learning Glossary publishes editorially reviewed semantic relationships among concepts as part of its Linked Data graph.
+The I2IDL Glossary of Digital Learning publishes editorially reviewed semantic relationships among concepts as part of its Linked Data graph.
 
 Beginning with release `v0.0.80`, every published glossary concept participates in at least one internal semantic relationship.
 

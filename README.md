@@ -1,6 +1,6 @@
 # I2IDL Linked Data
 
-Open, interoperable Linked Data publication and research services for the [I2IDL Digital Learning Glossary](https://www.i2idl.org/glossary). The project combines a curated semantic reference graph with browser-based exploration and experimental scholarly discovery.
+Open, interoperable Linked Data publication and research services for the [I2IDL Glossary of Digital Learning](https://www.i2idl.org/glossary). The project combines a curated semantic reference graph with browser-based exploration and experimental scholarly discovery.
 
 > **Versioning:** The GitHub release tag, the glossary's `gs:publicationVersion`, and the Squarespace embed version must be verified independently before publication. See the [release checklist](docs/RELEASE-CHECKLIST.md). The npm package version is not the glossary publication version.
 
@@ -8,7 +8,7 @@ Open, interoperable Linked Data publication and research services for the [I2IDL
 
 | Resource | Purpose |
 |---|---|
-| [Digital Learning Glossary](https://www.i2idl.org/glossary) | Human-readable curated concepts, definitions, sources and evidence |
+| [Glossary of Digital Learning](https://www.i2idl.org/glossary) | Human-readable curated concepts, definitions, sources and evidence |
 | [Knowledge Graph Explorer](https://id.i2idl.org/explore) | Navigate semantic relationships, compare concepts, analyze graph structure and discover scholarship |
 | [Explorer Activity](https://id.i2idl.org/activity) | Public 30-day aggregate engagement counts |
 | [JSON-LD graph](https://id.i2idl.org/glossary.jsonld) | Canonical machine-readable publication |

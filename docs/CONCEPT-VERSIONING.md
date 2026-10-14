@@ -1,6 +1,6 @@
 # Concept versioning and provenance (Phase 1)
 
-Status: proposed architecture and initial baseline, not yet a public historical API.
+Status: v0.0.87 immutable baseline implemented. Historical concept resolution and Explorer integration were added in Phases 4 and 5; see `CONCEPT-HISTORY-API.md` and `EXPLORER-VERSION-HISTORY.md`.
 Baseline: publication `v0.0.87`. This is the **first recorded** state, not a reconstruction of earlier edits.
 
 ## Identity and graphs
@@ -41,7 +41,7 @@ Each revision is a `prov:Entity`, with `dcterms:isVersionOf` its stable concept 
 3. Each revision's N-Quads must have exactly one graph name, matching its manifest.
 4. Every manifest snapshot exists, its digest verifies, and its concept appears in canonical v0.0.87.
 5. The baseline generator refuses to overwrite any existing snapshot or release manifest.
-6. Production continues to serve the existing current graph. Historical API/UI will follow in later PRs.
+6. Production serves the current graph independently of the immutable history API. Historical revision resolution and Explorer presentation are documented separately.
 
 ## Operational note
 
@@ -53,4 +53,4 @@ In Fuseki, each versioned N-Quads file can be imported into its named graph. RDF
 
 ## Known boundaries
 
-No claim is made about reconstructed revisions before v0.0.87. Source record revisions, collection metadata history, conceptual replacement/editorial status, full release reconstruction and an HTTP historical resolver are planned separately. Legal redactions will be explicit, exceptional governance events rather than silent mutation.
+No claim is made about reconstructed revisions before v0.0.87. Source record revisions, collection metadata history, conceptual replacement/editorial status, full release reconstruction are planned separately. The HTTP historical resolver is implemented. Legal redactions will be explicit, exceptional governance events rather than silent mutation.

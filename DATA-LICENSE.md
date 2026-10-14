@@ -1,6 +1,6 @@
-# I2IDL Digital Learning Glossary Data and Content Licensing
+# I2IDL Glossary of Digital Learning Data and Content Licensing
 
-The I2IDL Digital Learning Glossary contains original I2IDL content together with material derived from, adapted from, or referencing third-party sources.
+The I2IDL Glossary of Digital Learning contains original I2IDL content together with material derived from, adapted from, or referencing third-party sources.
 
 ## I2IDL-original content
 
@@ -26,7 +26,7 @@ The file:
 
 `public/glossary.jsonld`
 
-is a machine-readable publication of the I2IDL Digital Learning Glossary. It contains records with potentially different licensing conditions.
+is a machine-readable publication of the I2IDL Glossary of Digital Learning. It contains records with potentially different licensing conditions.
 
 Users should consult the rights, source, provenance, and licensing metadata associated with individual records before reusing source-derived material.
 
