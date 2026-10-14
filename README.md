@@ -14,6 +14,7 @@ Open, interoperable Linked Data publication and research services for the [I2IDL
 | [JSON-LD graph](https://id.i2idl.org/glossary.jsonld) | Canonical machine-readable publication |
 | [SPARQL](https://id.i2idl.org/sparql) | Read-only knowledge-graph queries |
 | [Persistent namespace](https://id.i2idl.org/) | Resolvable concept, definition, source and scheme identifiers |
+| [MCP for AI assistants](https://id.i2idl.org/mcp) | Public, read-only semantic tools ([setup guide](docs/MCP-QUICKSTART.md)) |
 
 ## What the project provides
 
@@ -42,6 +43,7 @@ See [validation](docs/VALIDATION.md), [deployment](docs/PUBLICATION.md), and the
 - [Explorer](docs/GRAPH-EXPLORER.md) and [scholarly discovery](docs/RESEARCH-DISCOVERY.md)
 - [Explorer Activity: metrics and privacy](docs/EXPLORER-ACTIVITY.md)
 - [API reference](docs/API-REFERENCE.md), [SPARQL](docs/SPARQL.md), and [security](docs/SECURITY.md)
+- [MCP Quick Start](docs/MCP-QUICKSTART.md) and [AI integration](docs/MCP-AI-INTEGRATION.md)
 - [Release checklist](docs/RELEASE-CHECKLIST.md) and [roadmap](docs/ROADMAP.md)
 
 ## Editorial boundary and licenses
