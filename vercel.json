@@ -2,6 +2,10 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
+      "source": "/api/docs",
+      "destination": "/api/docs.html"
+    },
+    {
       "source": "/api/v1/concepts/:id/relationships",
       "destination": "/api/v1-graph?route=relationships&id=:id"
     },
