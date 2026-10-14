@@ -11,6 +11,8 @@ The technical documentation is organized by topic. Existing detailed explanation
 - **[Release checklist](RELEASE-CHECKLIST.md)** — Validation, synchronization, production verification and GitHub tags.
 - **[Graph Explorer](GRAPH-EXPLORER.md)** — Interactive browser, concept links, and research tools.
 - **[Public endpoints](API-REFERENCE.md)** — Canonical URIs, representations, and content negotiation.
+- **[MCP Quick Start](MCP-QUICKSTART.md)** — Connect an AI assistant to the public read-only MCP service.
+- **[AI Integration Guide](MCP-AI-INTEGRATION.md)** — Grounded concept lookup, semantic relationships, and citation handling.
 - **[SPARQL](SPARQL.md)** — Queries, supported operations, examples, and limits.
 - **[Security](SECURITY.md)** — Threat boundaries and service hardening.
 - **[Validation](VALIDATION.md)** — Validation scripts, tests, and verification examples.
