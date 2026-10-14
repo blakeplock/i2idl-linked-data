@@ -27,6 +27,7 @@ function details(n,links){
   const field=document.createElement('p');field.className='concept-field';field.textContent=fields.get(fieldId(n))||'Unclassified';
   const desc=document.createElement('p');desc.className='concept-definition';desc.textContent=n['skos:definition']||'See the published glossary for the definition.';
   heading.append(kicker,h,field,desc);root.append(heading);
+  if (window.I2IDLVersionHistory) window.I2IDLVersionHistory.render(n['@id'], root);
   const actions=document.createElement('section');actions.className='concept-actions';
   const actionsTitle=document.createElement('h3');actionsTitle.textContent='Explore the research';actions.append(actionsTitle);
   const researchBtn=document.createElement('button');researchBtn.type='button';researchBtn.className='button primary concept-action-button';
