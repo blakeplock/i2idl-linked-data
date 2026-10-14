@@ -53,6 +53,7 @@ function details(n,links){
   const uri=document.createElement('a');uri.href=/^https:\/\/id\.i2idl\.org\/concepts\/[a-z0-9-]+$/.test(n['@id'])?n['@id']:'#';uri.target='_blank';uri.rel='noopener noreferrer';uri.textContent='Persistent concept URI ↗';
   const jump=document.createElement('a');jump.href='https://www.i2idl.org/glossary?concept='+encodeURIComponent(slug(n));jump.target='_blank';jump.rel='noopener noreferrer';jump.textContent='View glossary entry ↗';
   references.append(uri,jump);root.append(references);
+  if (window.I2IDLVersionHistory) window.I2IDLVersionHistory.render(n['@id'], root);
 }
 
 // Research tools operate on the same graph used by the explorer, never on proposed links.
