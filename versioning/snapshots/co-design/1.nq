@@ -1,0 +1,49 @@
+<https://id.i2idl.org/collections/field/human-centered-design> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/co-design> <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+<https://id.i2idl.org/collections/field/learning-engineering> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/co-design> <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+<https://id.i2idl.org/collections/type/method> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/co-design> <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+<https://id.i2idl.org/concepts/co-design> <http://purl.org/dc/terms/identifier> "co-design" <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+<https://id.i2idl.org/concepts/co-design> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+<https://id.i2idl.org/concepts/co-design> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+<https://id.i2idl.org/concepts/co-design> <http://www.w3.org/2004/02/skos/core#altLabel> "Participatory co-design" <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+<https://id.i2idl.org/concepts/co-design> <http://www.w3.org/2004/02/skos/core#definition> "A collaborative design approach in which researchers or designers work with practitioners, learners, partners, or other affected participants to shape questions, technologies, and practices." <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+<https://id.i2idl.org/concepts/co-design> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+<https://id.i2idl.org/concepts/co-design> <http://www.w3.org/2004/02/skos/core#narrower> <https://id.i2idl.org/concepts/equitable-co-design> <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+<https://id.i2idl.org/concepts/co-design> <http://www.w3.org/2004/02/skos/core#prefLabel> "Co-design" <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+<https://id.i2idl.org/concepts/co-design> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/learner-agency> <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+<https://id.i2idl.org/concepts/co-design> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/learning-experience-design-lxd> <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+<https://id.i2idl.org/concepts/co-design> <https://glossarystudio.app/ns/activeDefinition> <https://id.i2idl.org/definitions/co-design-1> <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+<https://id.i2idl.org/concepts/co-design> <https://glossarystudio.app/ns/editorialExplanation> "Co-design brings practical knowledge and user perspectives into the design process early enough to change the direction of the work rather than merely evaluate a finished solution." <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+<https://id.i2idl.org/concepts/co-design> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+<https://id.i2idl.org/concepts/co-design> <https://glossarystudio.app/ns/fieldCollection> <https://id.i2idl.org/collections/field/human-centered-design> <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+<https://id.i2idl.org/concepts/co-design> <https://glossarystudio.app/ns/typeCollection> <https://id.i2idl.org/collections/type/method> <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+<https://id.i2idl.org/concepts/co-design> <https://schema.org/inDefinedTermSet> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+<https://id.i2idl.org/definitions/co-design-1> <http://purl.org/dc/terms/creator> <https://www.i2idl.org/> <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+<https://id.i2idl.org/definitions/co-design-1> <http://purl.org/dc/terms/language> "en" <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+<https://id.i2idl.org/definitions/co-design-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+<https://id.i2idl.org/definitions/co-design-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Definition> <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+<https://id.i2idl.org/definitions/co-design-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "A collaborative design approach in which researchers or designers work with practitioners, learners, partners, or other affected participants to shape questions, technologies, and practices." <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+<https://id.i2idl.org/definitions/co-design-1> <https://glossarystudio.app/ns/definitionSequence> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+<https://id.i2idl.org/definitions/co-design-1> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+<https://id.i2idl.org/definitions/co-design-1> <https://glossarystudio.app/ns/evidence> _:c14n0 <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+<https://id.i2idl.org/definitions/co-design-1> <https://glossarystudio.app/ns/evidence> _:c14n1 <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+<https://id.i2idl.org/sources/circls-unveiling-value-of-exploration> <http://purl.org/dc/terms/title> "Unveiling the Value of Exploration: Insights from NSF-Funded Research on Emerging Technologies for Teaching and Learning" <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+_:c14n0 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/circls-unveiling-value-of-exploration> <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+_:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+_:c14n0 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/circls-unveiling-value-of-exploration> <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/citationDetail> "PDF p. 41 · report p. 41 — Equitable co-design with practitioners — teachers as active shapers of technology development and use" <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/evidenceRelation> "supporting" <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/host> "CIRCLS / Digital Promise" <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/pdfPage> "41"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/pdfPrintedPage> "41"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/sourceLabel> "CIRCLS / Digital Promise — Unveiling the Value of Exploration" <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+_:c14n0 <https://schema.org/url> "https://circls.org/wp-content/uploads/2024/11/Unveiling-the-Value-of-Exploration-Insights-from-NSF-Funded-Research-on-Emerging-Technologies-for-Teaching-and-Learning.pdf#page=41" <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+_:c14n1 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/circls-unveiling-value-of-exploration> <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+_:c14n1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+_:c14n1 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/circls-unveiling-value-of-exploration> <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/citationDetail> "PDF p. 6 · report p. 6 — Executive Summary — co-design used to envision possible futures from the perspectives of researchers, partners, practitioners, and youth" <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/evidenceRelation> "direct" <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/host> "CIRCLS / Digital Promise" <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/pdfPage> "6"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/pdfPrintedPage> "6"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/sourceLabel> "CIRCLS / Digital Promise — Unveiling the Value of Exploration" <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .
+_:c14n1 <https://schema.org/url> "https://circls.org/wp-content/uploads/2024/11/Unveiling-the-Value-of-Exploration-Insights-from-NSF-Funded-Research-on-Emerging-Technologies-for-Teaching-and-Learning.pdf#page=6" <https://id.i2idl.org/graphs/concepts/co-design/versions/1> .

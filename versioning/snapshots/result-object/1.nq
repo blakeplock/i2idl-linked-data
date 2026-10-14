@@ -1,0 +1,33 @@
+<https://id.i2idl.org/collections/field/assessment-and-measurement> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/result-object> <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+<https://id.i2idl.org/collections/field/data-and-instrumentation> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/result-object> <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+<https://id.i2idl.org/collections/type/concept> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/result-object> <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+<https://id.i2idl.org/concepts/result-object> <http://purl.org/dc/terms/identifier> "result-object" <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+<https://id.i2idl.org/concepts/result-object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+<https://id.i2idl.org/concepts/result-object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+<https://id.i2idl.org/concepts/result-object> <http://www.w3.org/2004/02/skos/core#definition> "The optional xAPI Statement component used to represent a measured outcome, including values such as score, success, completion, response, duration, and extensions." <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+<https://id.i2idl.org/concepts/result-object> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+<https://id.i2idl.org/concepts/result-object> <http://www.w3.org/2004/02/skos/core#prefLabel> "Result Object" <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+<https://id.i2idl.org/concepts/result-object> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/assessment> <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+<https://id.i2idl.org/concepts/result-object> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/xapi-statement> <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+<https://id.i2idl.org/concepts/result-object> <https://glossarystudio.app/ns/activeDefinition> <https://id.i2idl.org/definitions/result-object-1> <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+<https://id.i2idl.org/concepts/result-object> <https://glossarystudio.app/ns/editorialExplanation> "Result data lets a Statement represent more than the fact that an event occurred by carrying evidence about how the experience turned out." <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+<https://id.i2idl.org/concepts/result-object> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+<https://id.i2idl.org/concepts/result-object> <https://glossarystudio.app/ns/fieldCollection> <https://id.i2idl.org/collections/field/assessment-and-measurement> <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+<https://id.i2idl.org/concepts/result-object> <https://glossarystudio.app/ns/typeCollection> <https://id.i2idl.org/collections/type/concept> <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+<https://id.i2idl.org/concepts/result-object> <https://schema.org/inDefinedTermSet> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+<https://id.i2idl.org/definitions/result-object-1> <http://purl.org/dc/terms/creator> <https://www.i2idl.org/> <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+<https://id.i2idl.org/definitions/result-object-1> <http://purl.org/dc/terms/language> "en" <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+<https://id.i2idl.org/definitions/result-object-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+<https://id.i2idl.org/definitions/result-object-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Definition> <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+<https://id.i2idl.org/definitions/result-object-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "The optional xAPI Statement component used to represent a measured outcome, including values such as score, success, completion, response, duration, and extensions." <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+<https://id.i2idl.org/definitions/result-object-1> <https://glossarystudio.app/ns/definitionSequence> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+<https://id.i2idl.org/definitions/result-object-1> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+<https://id.i2idl.org/definitions/result-object-1> <https://glossarystudio.app/ns/evidence> _:c14n0 <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+<https://id.i2idl.org/sources/ieee-xapi-base-standard> <http://purl.org/dc/terms/title> "IEEE xAPI Base Standard" <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+_:c14n0 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/ieee-xapi-base-standard> <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+_:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+_:c14n0 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/ieee-xapi-base-standard> <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/citationDetail> "IEEE 9274.1.1-2023 §5.2.2.4 — Result" <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/evidenceRelation> "direct" <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/sourceLabel> "IEEE xAPI Base Standard" <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .
+_:c14n0 <https://schema.org/url> "https://opensource.ieee.org/xapi/xapi-base-standard-documentation/-/blob/main/9274.1.1%20xAPI%20Base%20Standard%20for%20Content.md#5224-result" <https://id.i2idl.org/graphs/concepts/result-object/versions/1> .

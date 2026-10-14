@@ -1,0 +1,33 @@
+<https://id.i2idl.org/collections/field/data-and-instrumentation> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/substatement> <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+<https://id.i2idl.org/collections/field/standards-and-interoperability> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/substatement> <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+<https://id.i2idl.org/collections/type/concept> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/substatement> <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+<https://id.i2idl.org/concepts/substatement> <http://purl.org/dc/terms/identifier> "substatement" <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+<https://id.i2idl.org/concepts/substatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+<https://id.i2idl.org/concepts/substatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+<https://id.i2idl.org/concepts/substatement> <http://www.w3.org/2004/02/skos/core#altLabel> "Sub-Statement" <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+<https://id.i2idl.org/concepts/substatement> <http://www.w3.org/2004/02/skos/core#definition> "An xAPI Statement-like Object embedded inside another Statement. It contains an Actor, Verb, and Object and may include Result, Context, Timestamp, and Attachments, but cannot itself contain another SubStatement." <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+<https://id.i2idl.org/concepts/substatement> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+<https://id.i2idl.org/concepts/substatement> <http://www.w3.org/2004/02/skos/core#prefLabel> "SubStatement" <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+<https://id.i2idl.org/concepts/substatement> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/xapi-statement> <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+<https://id.i2idl.org/concepts/substatement> <https://glossarystudio.app/ns/activeDefinition> <https://id.i2idl.org/definitions/substatement-1> <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+<https://id.i2idl.org/concepts/substatement> <https://glossarystudio.app/ns/editorialExplanation> "SubStatements let a Statement describe another structured experience as its Object while preventing unbounded nesting." <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+<https://id.i2idl.org/concepts/substatement> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+<https://id.i2idl.org/concepts/substatement> <https://glossarystudio.app/ns/fieldCollection> <https://id.i2idl.org/collections/field/data-and-instrumentation> <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+<https://id.i2idl.org/concepts/substatement> <https://glossarystudio.app/ns/typeCollection> <https://id.i2idl.org/collections/type/concept> <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+<https://id.i2idl.org/concepts/substatement> <https://schema.org/inDefinedTermSet> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+<https://id.i2idl.org/definitions/substatement-1> <http://purl.org/dc/terms/creator> <https://www.i2idl.org/> <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+<https://id.i2idl.org/definitions/substatement-1> <http://purl.org/dc/terms/language> "en" <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+<https://id.i2idl.org/definitions/substatement-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+<https://id.i2idl.org/definitions/substatement-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Definition> <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+<https://id.i2idl.org/definitions/substatement-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "An xAPI Statement-like Object embedded inside another Statement. It contains an Actor, Verb, and Object and may include Result, Context, Timestamp, and Attachments, but cannot itself contain another SubStatement." <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+<https://id.i2idl.org/definitions/substatement-1> <https://glossarystudio.app/ns/definitionSequence> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+<https://id.i2idl.org/definitions/substatement-1> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+<https://id.i2idl.org/definitions/substatement-1> <https://glossarystudio.app/ns/evidence> _:c14n0 <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+<https://id.i2idl.org/sources/ieee-xapi-base-standard> <http://purl.org/dc/terms/title> "IEEE xAPI Base Standard" <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+_:c14n0 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/ieee-xapi-base-standard> <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+_:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+_:c14n0 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/ieee-xapi-base-standard> <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/citationDetail> "IEEE 9274.1.1-2023 §5.2.2.3 — Object: SubStatement table" <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/evidenceRelation> "direct" <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/sourceLabel> "IEEE xAPI Base Standard" <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .
+_:c14n0 <https://schema.org/url> "https://opensource.ieee.org/xapi/xapi-base-standard-documentation/-/blob/main/9274.1.1%20xAPI%20Base%20Standard%20for%20Content.md#5223-object" <https://id.i2idl.org/graphs/concepts/substatement/versions/1> .

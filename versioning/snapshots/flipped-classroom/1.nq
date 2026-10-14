@@ -1,0 +1,36 @@
+<https://id.i2idl.org/collections/field/learning-engineering> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/flipped-classroom> <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+<https://id.i2idl.org/collections/type/practice> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/flipped-classroom> <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+<https://id.i2idl.org/concepts/flipped-classroom> <http://purl.org/dc/terms/identifier> "flipped-classroom" <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+<https://id.i2idl.org/concepts/flipped-classroom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+<https://id.i2idl.org/concepts/flipped-classroom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+<https://id.i2idl.org/concepts/flipped-classroom> <http://www.w3.org/2004/02/skos/core#definition> "An instructional approach that moves direct content delivery outside class time and uses shared face-to-face time for more interactive learning activities." <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+<https://id.i2idl.org/concepts/flipped-classroom> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+<https://id.i2idl.org/concepts/flipped-classroom> <http://www.w3.org/2004/02/skos/core#prefLabel> "Flipped classroom" <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+<https://id.i2idl.org/concepts/flipped-classroom> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/asynchronous-learning> <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+<https://id.i2idl.org/concepts/flipped-classroom> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/online-learning-modality> <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+<https://id.i2idl.org/concepts/flipped-classroom> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/synchronous-learning> <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+<https://id.i2idl.org/concepts/flipped-classroom> <https://glossarystudio.app/ns/activeDefinition> <https://id.i2idl.org/definitions/flipped-classroom-1> <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+<https://id.i2idl.org/concepts/flipped-classroom> <https://glossarystudio.app/ns/editorialExplanation> "The flipped classroom shows how digital delivery can change the purpose of classroom time rather than simply digitizing traditional lectures." <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+<https://id.i2idl.org/concepts/flipped-classroom> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+<https://id.i2idl.org/concepts/flipped-classroom> <https://glossarystudio.app/ns/fieldCollection> <https://id.i2idl.org/collections/field/learning-engineering> <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+<https://id.i2idl.org/concepts/flipped-classroom> <https://glossarystudio.app/ns/typeCollection> <https://id.i2idl.org/collections/type/practice> <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+<https://id.i2idl.org/concepts/flipped-classroom> <https://schema.org/inDefinedTermSet> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+<https://id.i2idl.org/definitions/flipped-classroom-1> <http://purl.org/dc/terms/creator> <https://www.i2idl.org/> <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+<https://id.i2idl.org/definitions/flipped-classroom-1> <http://purl.org/dc/terms/language> "en" <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+<https://id.i2idl.org/definitions/flipped-classroom-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+<https://id.i2idl.org/definitions/flipped-classroom-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Definition> <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+<https://id.i2idl.org/definitions/flipped-classroom-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "An instructional approach that moves direct content delivery outside class time and uses shared face-to-face time for more interactive learning activities." <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+<https://id.i2idl.org/definitions/flipped-classroom-1> <https://glossarystudio.app/ns/definitionSequence> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+<https://id.i2idl.org/definitions/flipped-classroom-1> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+<https://id.i2idl.org/definitions/flipped-classroom-1> <https://glossarystudio.app/ns/evidence> _:c14n0 <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+<https://id.i2idl.org/sources/modernizing-learning> <http://purl.org/dc/terms/title> "Modernizing Learning: Building the Future Learning Ecosystem" <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+_:c14n0 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/modernizing-learning> <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+_:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+_:c14n0 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/modernizing-learning> <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/citationDetail> "Ch. 2, p. 33" <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/evidenceRelation> "direct" <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/host> "ERIC" <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/pdfPage> "43"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/pdfPrintedPage> "33"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/sourceLabel> "Modernizing Learning" <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .
+_:c14n0 <https://schema.org/url> "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=43" <https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/1> .

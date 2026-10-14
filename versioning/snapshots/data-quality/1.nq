@@ -1,0 +1,45 @@
+<https://id.i2idl.org/collections/field/data-and-instrumentation> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/data-quality> <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+<https://id.i2idl.org/collections/type/concept> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/data-quality> <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+<https://id.i2idl.org/concepts/data-quality> <http://purl.org/dc/terms/identifier> "data-quality" <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+<https://id.i2idl.org/concepts/data-quality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+<https://id.i2idl.org/concepts/data-quality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+<https://id.i2idl.org/concepts/data-quality> <http://www.w3.org/2004/02/skos/core#definition> "The degree to which data is accurate, complete, consistent, timely, valid, and fit for its intended use." <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+<https://id.i2idl.org/concepts/data-quality> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+<https://id.i2idl.org/concepts/data-quality> <http://www.w3.org/2004/02/skos/core#prefLabel> "Data quality" <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+<https://id.i2idl.org/concepts/data-quality> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/ai-tool-validation-for-education> <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+<https://id.i2idl.org/concepts/data-quality> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/data-availability> <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+<https://id.i2idl.org/concepts/data-quality> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/data-pipeline> <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+<https://id.i2idl.org/concepts/data-quality> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/data-stewardship> <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+<https://id.i2idl.org/concepts/data-quality> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/education-data-integration> <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+<https://id.i2idl.org/concepts/data-quality> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/trustworthy-ai-for-education> <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+<https://id.i2idl.org/concepts/data-quality> <https://glossarystudio.app/ns/activeDefinition> <https://id.i2idl.org/definitions/data-quality-1> <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+<https://id.i2idl.org/concepts/data-quality> <https://glossarystudio.app/ns/editorialExplanation> "Poor-quality learning data can produce misleading analytics, weak automation, and bad decisions even when the underlying technology works correctly." <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+<https://id.i2idl.org/concepts/data-quality> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+<https://id.i2idl.org/concepts/data-quality> <https://glossarystudio.app/ns/fieldCollection> <https://id.i2idl.org/collections/field/data-and-instrumentation> <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+<https://id.i2idl.org/concepts/data-quality> <https://glossarystudio.app/ns/typeCollection> <https://id.i2idl.org/collections/type/concept> <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+<https://id.i2idl.org/concepts/data-quality> <https://schema.org/inDefinedTermSet> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+<https://id.i2idl.org/definitions/data-quality-1> <http://purl.org/dc/terms/creator> <https://www.i2idl.org/> <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+<https://id.i2idl.org/definitions/data-quality-1> <http://purl.org/dc/terms/language> "en" <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+<https://id.i2idl.org/definitions/data-quality-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+<https://id.i2idl.org/definitions/data-quality-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Definition> <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+<https://id.i2idl.org/definitions/data-quality-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "The degree to which data is accurate, complete, consistent, timely, valid, and fit for its intended use." <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+<https://id.i2idl.org/definitions/data-quality-1> <https://glossarystudio.app/ns/definitionSequence> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+<https://id.i2idl.org/definitions/data-quality-1> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+<https://id.i2idl.org/definitions/data-quality-1> <https://glossarystudio.app/ns/evidence> _:c14n0 <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+<https://id.i2idl.org/definitions/data-quality-1> <https://glossarystudio.app/ns/evidence> _:c14n1 <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+<https://id.i2idl.org/sources/lebok> <http://purl.org/dc/terms/title> "Learning Engineering Body of Knowledge (LeBOK)" <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+<https://id.i2idl.org/sources/unesco-uis-national-education-statistical-capacity-assessment> <http://purl.org/dc/terms/title> "UNESCO UIS National Education Statistical Capacity Assessment" <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+_:c14n0 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/unesco-uis-national-education-statistical-capacity-assessment> <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+_:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+_:c14n0 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/unesco-uis-national-education-statistical-capacity-assessment> <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/citationDetail> "PDF p. 51 · report p. 54 — §4.2 Unpacking LASER — Data quality and standards/disaggregation requirements" <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/evidenceRelation> "direct" <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/sourceLabel> "UNESCO UIS National Education Statistical Capacity Assessment" <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+_:c14n0 <https://schema.org/url> "https://tcg.uis.unesco.org/wp-content/uploads/sites/4/2025/02/LASER-2025-National-Education-Statistical-Capacity-Assessment-1.pdf#page=51" <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+_:c14n1 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/lebok> <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+_:c14n1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+_:c14n1 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/lebok> <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/citationDetail> "7.1.4 Data Quality and Noise Reduction" <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/evidenceRelation> "direct" <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/sourceLabel> "LeBOK" <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .
+_:c14n1 <https://schema.org/url> "https://lebok.wiki/en/knowledge-area-7-data-instrumentation/7-1-data-instrumentation-in-the-learning-engineering-process/7-1-4-data-quality-and-noise-reduction" <https://id.i2idl.org/graphs/concepts/data-quality/versions/1> .

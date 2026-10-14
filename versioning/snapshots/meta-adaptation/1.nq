@@ -1,0 +1,36 @@
+<https://id.i2idl.org/collections/field/ai-and-machine-learning> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/meta-adaptation> <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+<https://id.i2idl.org/collections/type/concept> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/meta-adaptation> <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+<https://id.i2idl.org/concepts/meta-adaptation> <http://purl.org/dc/terms/identifier> "meta-adaptation" <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+<https://id.i2idl.org/concepts/meta-adaptation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+<https://id.i2idl.org/concepts/meta-adaptation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+<https://id.i2idl.org/concepts/meta-adaptation> <http://www.w3.org/2004/02/skos/core#definition> "Adaptation across multiple learning systems or resources, where one system can use shared data to recommend or coordinate interventions beyond its own immediate instructional environment." <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+<https://id.i2idl.org/concepts/meta-adaptation> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+<https://id.i2idl.org/concepts/meta-adaptation> <http://www.w3.org/2004/02/skos/core#prefLabel> "Meta-adaptation" <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+<https://id.i2idl.org/concepts/meta-adaptation> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/adaptive-instructional-system> <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+<https://id.i2idl.org/concepts/meta-adaptation> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/learner-model> <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+<https://id.i2idl.org/concepts/meta-adaptation> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/personalization> <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+<https://id.i2idl.org/concepts/meta-adaptation> <https://glossarystudio.app/ns/activeDefinition> <https://id.i2idl.org/definitions/meta-adaptation-1> <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+<https://id.i2idl.org/concepts/meta-adaptation> <https://glossarystudio.app/ns/editorialExplanation> "Meta-adaptation is a property of connected learning ecosystems and depends on interoperable data, standardized protocols, and well-defined metadata." <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+<https://id.i2idl.org/concepts/meta-adaptation> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+<https://id.i2idl.org/concepts/meta-adaptation> <https://glossarystudio.app/ns/fieldCollection> <https://id.i2idl.org/collections/field/ai-and-machine-learning> <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+<https://id.i2idl.org/concepts/meta-adaptation> <https://glossarystudio.app/ns/typeCollection> <https://id.i2idl.org/collections/type/concept> <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+<https://id.i2idl.org/concepts/meta-adaptation> <https://schema.org/inDefinedTermSet> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+<https://id.i2idl.org/definitions/meta-adaptation-1> <http://purl.org/dc/terms/creator> <https://www.i2idl.org/> <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+<https://id.i2idl.org/definitions/meta-adaptation-1> <http://purl.org/dc/terms/language> "en" <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+<https://id.i2idl.org/definitions/meta-adaptation-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+<https://id.i2idl.org/definitions/meta-adaptation-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Definition> <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+<https://id.i2idl.org/definitions/meta-adaptation-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Adaptation across multiple learning systems or resources, where one system can use shared data to recommend or coordinate interventions beyond its own immediate instructional environment." <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+<https://id.i2idl.org/definitions/meta-adaptation-1> <https://glossarystudio.app/ns/definitionSequence> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+<https://id.i2idl.org/definitions/meta-adaptation-1> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+<https://id.i2idl.org/definitions/meta-adaptation-1> <https://glossarystudio.app/ns/evidence> _:c14n0 <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+<https://id.i2idl.org/sources/modernizing-learning> <http://purl.org/dc/terms/title> "Modernizing Learning: Building the Future Learning Ecosystem" <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+_:c14n0 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/modernizing-learning> <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+_:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+_:c14n0 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/modernizing-learning> <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/citationDetail> "Ch. 10, p. 192" <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/evidenceRelation> "direct" <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/host> "ERIC" <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/pdfPage> "202"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/pdfPrintedPage> "192"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/sourceLabel> "Modernizing Learning" <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .
+_:c14n0 <https://schema.org/url> "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=202" <https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1> .

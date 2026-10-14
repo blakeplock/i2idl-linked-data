@@ -1,0 +1,36 @@
+<https://id.i2idl.org/collections/field/learning-sciences> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/mentorship> <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+<https://id.i2idl.org/collections/type/practice> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/mentorship> <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+<https://id.i2idl.org/concepts/mentorship> <http://purl.org/dc/terms/identifier> "mentorship" <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+<https://id.i2idl.org/concepts/mentorship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+<https://id.i2idl.org/concepts/mentorship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+<https://id.i2idl.org/concepts/mentorship> <http://www.w3.org/2004/02/skos/core#altLabel> "Mentoring" <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+<https://id.i2idl.org/concepts/mentorship> <http://www.w3.org/2004/02/skos/core#definition> "A developmental relationship in which a more experienced person models knowledge or skills and gives a learner progressively more complex opportunities to participate in authentic work." <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+<https://id.i2idl.org/concepts/mentorship> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+<https://id.i2idl.org/concepts/mentorship> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mentorship" <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+<https://id.i2idl.org/concepts/mentorship> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/community-of-practice> <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+<https://id.i2idl.org/concepts/mentorship> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/observational-learning> <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+<https://id.i2idl.org/concepts/mentorship> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/scaffolding> <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+<https://id.i2idl.org/concepts/mentorship> <https://glossarystudio.app/ns/activeDefinition> <https://id.i2idl.org/definitions/mentorship-1> <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+<https://id.i2idl.org/concepts/mentorship> <https://glossarystudio.app/ns/editorialExplanation> "Mentorship can help novices build expertise by connecting explanation, modeling, guided participation, feedback, and increasing responsibility." <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+<https://id.i2idl.org/concepts/mentorship> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+<https://id.i2idl.org/concepts/mentorship> <https://glossarystudio.app/ns/fieldCollection> <https://id.i2idl.org/collections/field/learning-sciences> <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+<https://id.i2idl.org/concepts/mentorship> <https://glossarystudio.app/ns/typeCollection> <https://id.i2idl.org/collections/type/practice> <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+<https://id.i2idl.org/concepts/mentorship> <https://schema.org/inDefinedTermSet> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+<https://id.i2idl.org/definitions/mentorship-1> <http://purl.org/dc/terms/creator> <https://www.i2idl.org/> <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+<https://id.i2idl.org/definitions/mentorship-1> <http://purl.org/dc/terms/language> "en" <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+<https://id.i2idl.org/definitions/mentorship-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+<https://id.i2idl.org/definitions/mentorship-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Definition> <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+<https://id.i2idl.org/definitions/mentorship-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "A developmental relationship in which a more experienced person models knowledge or skills and gives a learner progressively more complex opportunities to participate in authentic work." <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+<https://id.i2idl.org/definitions/mentorship-1> <https://glossarystudio.app/ns/definitionSequence> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+<https://id.i2idl.org/definitions/mentorship-1> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+<https://id.i2idl.org/definitions/mentorship-1> <https://glossarystudio.app/ns/evidence> _:c14n0 <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+<https://id.i2idl.org/sources/the-science-of-remote-learning> <http://purl.org/dc/terms/title> "The Science of Remote Learning" <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+_:c14n0 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/the-science-of-remote-learning> <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+_:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+_:c14n0 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/the-science-of-remote-learning> <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/citationDetail> "Building Expertise · PDF p. 9" <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/evidenceRelation> "direct" <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/host> "MIT Open Learning" <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/pdfPage> "9"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/sourceLabel> "The Science of Remote Learning" <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .
+_:c14n0 <https://schema.org/url> "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=9" <https://id.i2idl.org/graphs/concepts/mentorship/versions/1> .

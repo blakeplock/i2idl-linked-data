@@ -1,0 +1,41 @@
+<https://id.i2idl.org/collections/field/enterprise-and-governance> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/vendor-lock-in> <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+<https://id.i2idl.org/collections/type/concept> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/vendor-lock-in> <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+<https://id.i2idl.org/concepts/vendor-lock-in> <http://purl.org/dc/terms/identifier> "vendor-lock-in" <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+<https://id.i2idl.org/concepts/vendor-lock-in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+<https://id.i2idl.org/concepts/vendor-lock-in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+<https://id.i2idl.org/concepts/vendor-lock-in> <http://www.w3.org/2004/02/skos/core#altLabel> "Technology lock-in" <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+<https://id.i2idl.org/concepts/vendor-lock-in> <http://www.w3.org/2004/02/skos/core#definition> "A condition in which earlier technology choices constrain future decisions because systems, data, or services are difficult to move, replace, or integrate." <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+<https://id.i2idl.org/concepts/vendor-lock-in> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+<https://id.i2idl.org/concepts/vendor-lock-in> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vendor lock-in" <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+<https://id.i2idl.org/concepts/vendor-lock-in> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/interoperability> <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+<https://id.i2idl.org/concepts/vendor-lock-in> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/open-standards-and-architecture-for-interoperability> <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+<https://id.i2idl.org/concepts/vendor-lock-in> <https://glossarystudio.app/ns/activeDefinition> <https://id.i2idl.org/definitions/vendor-lock-in-1> <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+<https://id.i2idl.org/concepts/vendor-lock-in> <https://glossarystudio.app/ns/editorialExplanation> "Open standards and interoperability can reduce dependence on a single technology provider and preserve future choices for education systems." <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+<https://id.i2idl.org/concepts/vendor-lock-in> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+<https://id.i2idl.org/concepts/vendor-lock-in> <https://glossarystudio.app/ns/fieldCollection> <https://id.i2idl.org/collections/field/enterprise-and-governance> <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+<https://id.i2idl.org/concepts/vendor-lock-in> <https://glossarystudio.app/ns/typeCollection> <https://id.i2idl.org/collections/type/concept> <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+<https://id.i2idl.org/concepts/vendor-lock-in> <https://schema.org/inDefinedTermSet> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+<https://id.i2idl.org/definitions/vendor-lock-in-1> <http://purl.org/dc/terms/creator> <https://www.i2idl.org/> <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+<https://id.i2idl.org/definitions/vendor-lock-in-1> <http://purl.org/dc/terms/language> "en" <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+<https://id.i2idl.org/definitions/vendor-lock-in-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+<https://id.i2idl.org/definitions/vendor-lock-in-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Definition> <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+<https://id.i2idl.org/definitions/vendor-lock-in-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "A condition in which earlier technology choices constrain future decisions because systems, data, or services are difficult to move, replace, or integrate." <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+<https://id.i2idl.org/definitions/vendor-lock-in-1> <https://glossarystudio.app/ns/definitionSequence> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+<https://id.i2idl.org/definitions/vendor-lock-in-1> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+<https://id.i2idl.org/definitions/vendor-lock-in-1> <https://glossarystudio.app/ns/evidence> _:c14n0 <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+<https://id.i2idl.org/definitions/vendor-lock-in-1> <https://glossarystudio.app/ns/evidence> _:c14n1 <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+<https://id.i2idl.org/sources/world-bank-edtech-approach> <http://purl.org/dc/terms/title> "Reimagining Human Connections: Technology and Innovation in Education at the World Bank" <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+_:c14n0 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/world-bank-edtech-approach> <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+_:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+_:c14n0 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/world-bank-edtech-approach> <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/citationDetail> "p. 16 — Be Data-Driven: technology and vendor lock-in" <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/evidenceRelation> "direct" <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/sourceLabel> "World Bank EdTech Approach" <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+_:c14n0 <https://schema.org/url> "https://documents1.worldbank.org/curated/en/829491606860379513/pdf/Reimagining-Human-Connections-Technology-and-Innovation-in-Education-at-the-World-Bank.pdf#page=16" <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+_:c14n1 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/world-bank-edtech-approach> <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+_:c14n1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+_:c14n1 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/world-bank-edtech-approach> <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/citationDetail> "p. 23 — Roadmap: Open Standards and Architecture for Interoperability" <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/evidenceRelation> "direct" <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/sourceLabel> "World Bank EdTech Approach" <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .
+_:c14n1 <https://schema.org/url> "https://documents1.worldbank.org/curated/en/829491606860379513/pdf/Reimagining-Human-Connections-Technology-and-Innovation-in-Education-at-the-World-Bank.pdf#page=23" <https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1> .

@@ -1,0 +1,48 @@
+<https://id.i2idl.org/collections/field/learning-sciences> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/meaningful-learning> <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+<https://id.i2idl.org/collections/type/concept> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/meaningful-learning> <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+<https://id.i2idl.org/concepts/meaningful-learning> <http://purl.org/dc/terms/identifier> "meaningful-learning" <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+<https://id.i2idl.org/concepts/meaningful-learning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+<https://id.i2idl.org/concepts/meaningful-learning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+<https://id.i2idl.org/concepts/meaningful-learning> <http://www.w3.org/2004/02/skos/core#definition> "Learning characterized by intentional, active, constructive, authentic, and cooperative engagement that helps learners connect experiences and build usable understanding." <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+<https://id.i2idl.org/concepts/meaningful-learning> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+<https://id.i2idl.org/concepts/meaningful-learning> <http://www.w3.org/2004/02/skos/core#prefLabel> "Meaningful learning" <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+<https://id.i2idl.org/concepts/meaningful-learning> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/cognitive-engagement> <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+<https://id.i2idl.org/concepts/meaningful-learning> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/concept-map> <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+<https://id.i2idl.org/concepts/meaningful-learning> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/conceptual-knowledge> <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+<https://id.i2idl.org/concepts/meaningful-learning> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/prior-knowledge> <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+<https://id.i2idl.org/concepts/meaningful-learning> <https://glossarystudio.app/ns/activeDefinition> <https://id.i2idl.org/definitions/meaningful-learning-1> <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+<https://id.i2idl.org/concepts/meaningful-learning> <https://glossarystudio.app/ns/editorialExplanation> "The framework provides a way to design learning for deeper understanding and transfer across varied contexts rather than for passive content exposure." <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+<https://id.i2idl.org/concepts/meaningful-learning> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+<https://id.i2idl.org/concepts/meaningful-learning> <https://glossarystudio.app/ns/fieldCollection> <https://id.i2idl.org/collections/field/learning-sciences> <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+<https://id.i2idl.org/concepts/meaningful-learning> <https://glossarystudio.app/ns/typeCollection> <https://id.i2idl.org/collections/type/concept> <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+<https://id.i2idl.org/concepts/meaningful-learning> <https://schema.org/inDefinedTermSet> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+<https://id.i2idl.org/definitions/meaningful-learning-1> <http://purl.org/dc/terms/creator> <https://www.i2idl.org/> <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+<https://id.i2idl.org/definitions/meaningful-learning-1> <http://purl.org/dc/terms/language> "en" <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+<https://id.i2idl.org/definitions/meaningful-learning-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+<https://id.i2idl.org/definitions/meaningful-learning-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Definition> <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+<https://id.i2idl.org/definitions/meaningful-learning-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Learning characterized by intentional, active, constructive, authentic, and cooperative engagement that helps learners connect experiences and build usable understanding." <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+<https://id.i2idl.org/definitions/meaningful-learning-1> <https://glossarystudio.app/ns/definitionSequence> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+<https://id.i2idl.org/definitions/meaningful-learning-1> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+<https://id.i2idl.org/definitions/meaningful-learning-1> <https://glossarystudio.app/ns/evidence> _:c14n0 <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+<https://id.i2idl.org/definitions/meaningful-learning-1> <https://glossarystudio.app/ns/evidence> _:c14n1 <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+<https://id.i2idl.org/sources/modernizing-learning> <http://purl.org/dc/terms/title> "Modernizing Learning: Building the Future Learning Ecosystem" <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+<https://id.i2idl.org/sources/the-science-of-remote-learning> <http://purl.org/dc/terms/title> "The Science of Remote Learning" <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+_:c14n0 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/the-science-of-remote-learning> <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+_:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+_:c14n0 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/the-science-of-remote-learning> <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/citationDetail> "How People Learn to Apply Knowledge · PDF p. 8" <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/evidenceRelation> "supporting" <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/host> "MIT Open Learning" <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/pdfPage> "8"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/sourceLabel> "The Science of Remote Learning" <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+_:c14n0 <https://schema.org/url> "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf#page=8" <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+_:c14n1 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/modernizing-learning> <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+_:c14n1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+_:c14n1 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/modernizing-learning> <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/citationDetail> "Ch. 12, pp. 235-240" <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/evidenceRelation> "direct" <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/host> "ERIC" <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/pdfPage> "245"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/pdfPrintedPage> "235"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/sourceLabel> "Modernizing Learning" <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .
+_:c14n1 <https://schema.org/url> "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=245" <https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1> .

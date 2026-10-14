@@ -1,0 +1,42 @@
+<https://id.i2idl.org/collections/field/data-and-instrumentation> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/data-ownership> <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+<https://id.i2idl.org/collections/field/enterprise-and-governance> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/data-ownership> <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+<https://id.i2idl.org/collections/type/concept> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/data-ownership> <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+<https://id.i2idl.org/concepts/data-ownership> <http://purl.org/dc/terms/identifier> "data-ownership" <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+<https://id.i2idl.org/concepts/data-ownership> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+<https://id.i2idl.org/concepts/data-ownership> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+<https://id.i2idl.org/concepts/data-ownership> <http://www.w3.org/2004/02/skos/core#definition> "The rights, responsibilities, and governance questions associated with control over data generated or used within education systems." <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+<https://id.i2idl.org/concepts/data-ownership> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+<https://id.i2idl.org/concepts/data-ownership> <http://www.w3.org/2004/02/skos/core#prefLabel> "Data ownership" <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+<https://id.i2idl.org/concepts/data-ownership> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/data-privacy> <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+<https://id.i2idl.org/concepts/data-ownership> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/data-stewardship> <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+<https://id.i2idl.org/concepts/data-ownership> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/education-data-ecosystem> <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+<https://id.i2idl.org/concepts/data-ownership> <https://glossarystudio.app/ns/activeDefinition> <https://id.i2idl.org/definitions/data-ownership-1> <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+<https://id.i2idl.org/concepts/data-ownership> <https://glossarystudio.app/ns/editorialExplanation> "As education systems collect more digital data, decisions about who controls that data and how it may be used become central governance questions." <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+<https://id.i2idl.org/concepts/data-ownership> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+<https://id.i2idl.org/concepts/data-ownership> <https://glossarystudio.app/ns/fieldCollection> <https://id.i2idl.org/collections/field/enterprise-and-governance> <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+<https://id.i2idl.org/concepts/data-ownership> <https://glossarystudio.app/ns/typeCollection> <https://id.i2idl.org/collections/type/concept> <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+<https://id.i2idl.org/concepts/data-ownership> <https://schema.org/inDefinedTermSet> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+<https://id.i2idl.org/definitions/data-ownership-1> <http://purl.org/dc/terms/creator> <https://www.i2idl.org/> <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+<https://id.i2idl.org/definitions/data-ownership-1> <http://purl.org/dc/terms/language> "en" <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+<https://id.i2idl.org/definitions/data-ownership-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+<https://id.i2idl.org/definitions/data-ownership-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Definition> <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+<https://id.i2idl.org/definitions/data-ownership-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "The rights, responsibilities, and governance questions associated with control over data generated or used within education systems." <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+<https://id.i2idl.org/definitions/data-ownership-1> <https://glossarystudio.app/ns/definitionSequence> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+<https://id.i2idl.org/definitions/data-ownership-1> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+<https://id.i2idl.org/definitions/data-ownership-1> <https://glossarystudio.app/ns/evidence> _:c14n0 <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+<https://id.i2idl.org/definitions/data-ownership-1> <https://glossarystudio.app/ns/evidence> _:c14n1 <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+<https://id.i2idl.org/sources/world-bank-edtech-approach> <http://purl.org/dc/terms/title> "Reimagining Human Connections: Technology and Innovation in Education at the World Bank" <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+_:c14n0 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/world-bank-edtech-approach> <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+_:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+_:c14n0 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/world-bank-edtech-approach> <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/citationDetail> "p. 10 — Data: implications for privacy and data ownership" <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/evidenceRelation> "direct" <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/sourceLabel> "World Bank EdTech Approach" <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+_:c14n0 <https://schema.org/url> "https://documents1.worldbank.org/curated/en/829491606860379513/pdf/Reimagining-Human-Connections-Technology-and-Innovation-in-Education-at-the-World-Bank.pdf#page=10" <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+_:c14n1 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/world-bank-edtech-approach> <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+_:c14n1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+_:c14n1 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/world-bank-edtech-approach> <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/citationDetail> "p. 16 — Be Data-Driven: privacy, ownership, usage, and security policy" <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/evidenceRelation> "direct" <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+_:c14n1 <https://glossarystudio.app/ns/sourceLabel> "World Bank EdTech Approach" <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .
+_:c14n1 <https://schema.org/url> "https://documents1.worldbank.org/curated/en/829491606860379513/pdf/Reimagining-Human-Connections-Technology-and-Innovation-in-Education-at-the-World-Bank.pdf#page=16" <https://id.i2idl.org/graphs/concepts/data-ownership/versions/1> .

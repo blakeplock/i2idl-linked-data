@@ -1,0 +1,37 @@
+<https://id.i2idl.org/collections/field/learning-engineering> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/samr-model> <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+<https://id.i2idl.org/collections/type/method> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/samr-model> <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+<https://id.i2idl.org/concepts/samr-model> <http://purl.org/dc/terms/identifier> "samr-model" <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+<https://id.i2idl.org/concepts/samr-model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+<https://id.i2idl.org/concepts/samr-model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+<https://id.i2idl.org/concepts/samr-model> <http://www.w3.org/2004/02/skos/core#altLabel> "Substitution, Augmentation, Modification, Redefinition" <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+<https://id.i2idl.org/concepts/samr-model> <http://www.w3.org/2004/02/skos/core#definition> "A framework describing four levels of technology use in learning: substitution, augmentation, modification, and redefinition." <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+<https://id.i2idl.org/concepts/samr-model> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+<https://id.i2idl.org/concepts/samr-model> <http://www.w3.org/2004/02/skos/core#prefLabel> "SAMR model" <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+<https://id.i2idl.org/concepts/samr-model> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/learning-experience-design-lxd> <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+<https://id.i2idl.org/concepts/samr-model> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/technology-affordance> <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+<https://id.i2idl.org/concepts/samr-model> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/technology-constraint> <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+<https://id.i2idl.org/concepts/samr-model> <https://glossarystudio.app/ns/activeDefinition> <https://id.i2idl.org/definitions/samr-model-1> <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+<https://id.i2idl.org/concepts/samr-model> <https://glossarystudio.app/ns/editorialExplanation> "SAMR helps designers distinguish between using technology to reproduce old tasks and using it to enable forms of learning that were previously difficult or impossible." <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+<https://id.i2idl.org/concepts/samr-model> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+<https://id.i2idl.org/concepts/samr-model> <https://glossarystudio.app/ns/fieldCollection> <https://id.i2idl.org/collections/field/learning-engineering> <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+<https://id.i2idl.org/concepts/samr-model> <https://glossarystudio.app/ns/typeCollection> <https://id.i2idl.org/collections/type/method> <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+<https://id.i2idl.org/concepts/samr-model> <https://schema.org/inDefinedTermSet> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+<https://id.i2idl.org/definitions/samr-model-1> <http://purl.org/dc/terms/creator> <https://www.i2idl.org/> <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+<https://id.i2idl.org/definitions/samr-model-1> <http://purl.org/dc/terms/language> "en" <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+<https://id.i2idl.org/definitions/samr-model-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+<https://id.i2idl.org/definitions/samr-model-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Definition> <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+<https://id.i2idl.org/definitions/samr-model-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "A framework describing four levels of technology use in learning: substitution, augmentation, modification, and redefinition." <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+<https://id.i2idl.org/definitions/samr-model-1> <https://glossarystudio.app/ns/definitionSequence> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+<https://id.i2idl.org/definitions/samr-model-1> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+<https://id.i2idl.org/definitions/samr-model-1> <https://glossarystudio.app/ns/evidence> _:c14n0 <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+<https://id.i2idl.org/sources/modernizing-learning> <http://purl.org/dc/terms/title> "Modernizing Learning: Building the Future Learning Ecosystem" <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+_:c14n0 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/modernizing-learning> <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+_:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+_:c14n0 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/modernizing-learning> <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/citationDetail> "Ch. 3, pp. 52-53" <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/evidenceRelation> "direct" <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/host> "ERIC" <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/pdfPage> "62"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/pdfPrintedPage> "52"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/sourceLabel> "Modernizing Learning" <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .
+_:c14n0 <https://schema.org/url> "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=62" <https://id.i2idl.org/graphs/concepts/samr-model/versions/1> .

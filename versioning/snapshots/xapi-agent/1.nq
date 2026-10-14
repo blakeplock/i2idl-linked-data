@@ -1,0 +1,37 @@
+<https://id.i2idl.org/collections/field/data-and-instrumentation> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/xapi-agent> <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+<https://id.i2idl.org/collections/field/standards-and-interoperability> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/xapi-agent> <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+<https://id.i2idl.org/collections/type/concept> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/xapi-agent> <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+<https://id.i2idl.org/concepts/xapi-agent> <http://purl.org/dc/terms/identifier> "xapi-agent" <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+<https://id.i2idl.org/concepts/xapi-agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+<https://id.i2idl.org/concepts/xapi-agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+<https://id.i2idl.org/concepts/xapi-agent> <http://www.w3.org/2004/02/skos/core#broader> <https://id.i2idl.org/concepts/actor> <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+<https://id.i2idl.org/concepts/xapi-agent> <http://www.w3.org/2004/02/skos/core#definition> "An xAPI representation of an individual Actor, identified through one of the identity properties defined by the standard and optionally accompanied by a name." <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+<https://id.i2idl.org/concepts/xapi-agent> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+<https://id.i2idl.org/concepts/xapi-agent> <http://www.w3.org/2004/02/skos/core#prefLabel> "xAPI Agent" <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+<https://id.i2idl.org/concepts/xapi-agent> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/account-object> <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+<https://id.i2idl.org/concepts/xapi-agent> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/context-agent> <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+<https://id.i2idl.org/concepts/xapi-agent> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/inverse-functional-identifier-ifi> <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+<https://id.i2idl.org/concepts/xapi-agent> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/person-object> <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+<https://id.i2idl.org/concepts/xapi-agent> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/xapi-persona> <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+<https://id.i2idl.org/concepts/xapi-agent> <https://glossarystudio.app/ns/activeDefinition> <https://id.i2idl.org/definitions/xapi-agent-1> <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+<https://id.i2idl.org/concepts/xapi-agent> <https://glossarystudio.app/ns/editorialExplanation> "Agents are the basic individual identity object in xAPI and are used as Actors, Objects, Authorities, and contextual participants." <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+<https://id.i2idl.org/concepts/xapi-agent> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+<https://id.i2idl.org/concepts/xapi-agent> <https://glossarystudio.app/ns/fieldCollection> <https://id.i2idl.org/collections/field/data-and-instrumentation> <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+<https://id.i2idl.org/concepts/xapi-agent> <https://glossarystudio.app/ns/typeCollection> <https://id.i2idl.org/collections/type/concept> <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+<https://id.i2idl.org/concepts/xapi-agent> <https://schema.org/inDefinedTermSet> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+<https://id.i2idl.org/definitions/xapi-agent-1> <http://purl.org/dc/terms/creator> <https://www.i2idl.org/> <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+<https://id.i2idl.org/definitions/xapi-agent-1> <http://purl.org/dc/terms/language> "en" <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+<https://id.i2idl.org/definitions/xapi-agent-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+<https://id.i2idl.org/definitions/xapi-agent-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Definition> <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+<https://id.i2idl.org/definitions/xapi-agent-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "An xAPI representation of an individual Actor, identified through one of the identity properties defined by the standard and optionally accompanied by a name." <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+<https://id.i2idl.org/definitions/xapi-agent-1> <https://glossarystudio.app/ns/definitionSequence> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+<https://id.i2idl.org/definitions/xapi-agent-1> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+<https://id.i2idl.org/definitions/xapi-agent-1> <https://glossarystudio.app/ns/evidence> _:c14n0 <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+<https://id.i2idl.org/sources/ieee-xapi-base-standard> <http://purl.org/dc/terms/title> "IEEE xAPI Base Standard" <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+_:c14n0 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/ieee-xapi-base-standard> <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+_:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+_:c14n0 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/ieee-xapi-base-standard> <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/citationDetail> "IEEE 9274.1.1-2023 §5.2.2.1 — Actor: Agent table" <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/evidenceRelation> "direct" <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/sourceLabel> "IEEE xAPI Base Standard" <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
+_:c14n0 <https://schema.org/url> "https://opensource.ieee.org/xapi/xapi-base-standard-documentation/-/blob/main/9274.1.1%20xAPI%20Base%20Standard%20for%20Content.md#5221-actor" <https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1> .
