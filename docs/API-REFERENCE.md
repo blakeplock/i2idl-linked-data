@@ -145,3 +145,10 @@ The service supports public cross-origin reads:
 ```text
 Access-Control-Allow-Origin: *
 ```
+
+## Scholarly discovery and aggregate activity
+
+- `GET /api/research?concepts={slug[,slug...]}&sort=relevant&openAccess=any` — bounded OpenAlex discovery, with optional `fromYear` and `toYear`; up to five I2IDL concept identifiers; unreviewed results. See [Scholarly discovery](RESEARCH-DISCOVERY.md).
+- `GET /api/activity` — public aggregate counts for a rolling 30-day UTC period.
+- `POST /api/activity` — restricted anonymous event collector for Explorer pageviews and concept selections. See [Explorer Activity](EXPLORER-ACTIVITY.md).
+- `/activity` — human-readable public activity dashboard.

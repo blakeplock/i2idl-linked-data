@@ -6,6 +6,9 @@ The technical documentation is organized by topic. Existing detailed explanation
 
 - **[Architecture](ARCHITECTURE.md)** — Hosting, repository layout, components, and infrastructure.
 - **[Semantic model](SEMANTIC-MODEL.md)** — JSON-LD, SKOS, collections, concepts, evidence, and relationships.
+- **[Scholarly discovery and exports](RESEARCH-DISCOVERY.md)** — OpenAlex research search, quality filters, citations and export limitations.
+- **[Explorer Activity](EXPLORER-ACTIVITY.md)** — Public aggregate analytics, privacy and Upstash configuration.
+- **[Release checklist](RELEASE-CHECKLIST.md)** — Validation, synchronization, production verification and GitHub tags.
 - **[Graph Explorer](GRAPH-EXPLORER.md)** — Interactive browser, concept links, and research tools.
 - **[Public endpoints](API-REFERENCE.md)** — Canonical URIs, representations, and content negotiation.
 - **[SPARQL](SPARQL.md)** — Queries, supported operations, examples, and limits.
