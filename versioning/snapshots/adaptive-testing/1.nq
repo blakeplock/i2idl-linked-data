@@ -1,0 +1,24 @@
+<https://id.i2idl.org/collections/field/assessment-and-measurement> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/adaptive-testing> <https://id.i2idl.org/graphs/concepts/adaptive-testing/versions/1> .
+<https://id.i2idl.org/collections/type/concept> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/adaptive-testing> <https://id.i2idl.org/graphs/concepts/adaptive-testing/versions/1> .
+<https://id.i2idl.org/concepts/adaptive-testing> <http://purl.org/dc/terms/identifier> "adaptive-testing" <https://id.i2idl.org/graphs/concepts/adaptive-testing/versions/1> .
+<https://id.i2idl.org/concepts/adaptive-testing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> <https://id.i2idl.org/graphs/concepts/adaptive-testing/versions/1> .
+<https://id.i2idl.org/concepts/adaptive-testing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <https://id.i2idl.org/graphs/concepts/adaptive-testing/versions/1> .
+<https://id.i2idl.org/concepts/adaptive-testing> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/adaptive-testing/versions/1> .
+<https://id.i2idl.org/concepts/adaptive-testing> <http://www.w3.org/2004/02/skos/core#prefLabel> "Adaptive Testing" <https://id.i2idl.org/graphs/concepts/adaptive-testing/versions/1> .
+<https://id.i2idl.org/concepts/adaptive-testing> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/assessment> <https://id.i2idl.org/graphs/concepts/adaptive-testing/versions/1> .
+<https://id.i2idl.org/concepts/adaptive-testing> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/personalization> <https://id.i2idl.org/graphs/concepts/adaptive-testing/versions/1> .
+<https://id.i2idl.org/concepts/adaptive-testing> <https://glossarystudio.app/ns/activeDefinition> <https://id.i2idl.org/definitions/adaptive-testing> <https://id.i2idl.org/graphs/concepts/adaptive-testing/versions/1> .
+<https://id.i2idl.org/concepts/adaptive-testing> <https://glossarystudio.app/ns/editorialExplanation> "Links test item selection to learner responses, assessment design, and adaptive systems." <https://id.i2idl.org/graphs/concepts/adaptive-testing/versions/1> .
+<https://id.i2idl.org/concepts/adaptive-testing> <https://glossarystudio.app/ns/fieldCollection> <https://id.i2idl.org/collections/field/assessment-and-measurement> <https://id.i2idl.org/graphs/concepts/adaptive-testing/versions/1> .
+<https://id.i2idl.org/concepts/adaptive-testing> <https://glossarystudio.app/ns/typeCollection> <https://id.i2idl.org/collections/type/concept> <https://id.i2idl.org/graphs/concepts/adaptive-testing/versions/1> .
+<https://id.i2idl.org/definitions/adaptive-testing> <http://purl.org/dc/terms/description> "ERIC scope note: Testing that involves selecting test items according to the examinee's ability as shown by responses to earlier test items" <https://id.i2idl.org/graphs/concepts/adaptive-testing/versions/1> .
+<https://id.i2idl.org/definitions/adaptive-testing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Definition> <https://id.i2idl.org/graphs/concepts/adaptive-testing/versions/1> .
+<https://id.i2idl.org/definitions/adaptive-testing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Assessment that selects or adjusts subsequent test items in response to information from a learner’s earlier answers." <https://id.i2idl.org/graphs/concepts/adaptive-testing/versions/1> .
+<https://id.i2idl.org/definitions/adaptive-testing> <https://glossarystudio.app/ns/evidence> _:c14n0 <https://id.i2idl.org/graphs/concepts/adaptive-testing/versions/1> .
+<https://id.i2idl.org/sources/eric-thesaurus-2025> <http://purl.org/dc/terms/title> "ERIC Thesaurus (2025)" <https://id.i2idl.org/graphs/concepts/adaptive-testing/versions/1> .
+_:c14n0 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/eric-thesaurus-2025> <https://id.i2idl.org/graphs/concepts/adaptive-testing/versions/1> .
+_:c14n0 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/eric-thesaurus-2025> <https://id.i2idl.org/graphs/concepts/adaptive-testing/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/citationDetail> "ERIC Thesaurus 2025 descriptor: Adaptive Testing" <https://id.i2idl.org/graphs/concepts/adaptive-testing/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/evidenceRelation> "supporting" <https://id.i2idl.org/graphs/concepts/adaptive-testing/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/sourceLabel> "ERIC Thesaurus (2025)" <https://id.i2idl.org/graphs/concepts/adaptive-testing/versions/1> .
+_:c14n0 <https://schema.org/url> "https://eric.ed.gov/?ti=all" <https://id.i2idl.org/graphs/concepts/adaptive-testing/versions/1> .

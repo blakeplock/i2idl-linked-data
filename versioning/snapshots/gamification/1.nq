@@ -1,0 +1,24 @@
+<https://id.i2idl.org/collections/field/learning-sciences> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/gamification> <https://id.i2idl.org/graphs/concepts/gamification/versions/1> .
+<https://id.i2idl.org/collections/type/concept> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/gamification> <https://id.i2idl.org/graphs/concepts/gamification/versions/1> .
+<https://id.i2idl.org/concepts/gamification> <http://purl.org/dc/terms/identifier> "gamification" <https://id.i2idl.org/graphs/concepts/gamification/versions/1> .
+<https://id.i2idl.org/concepts/gamification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> <https://id.i2idl.org/graphs/concepts/gamification/versions/1> .
+<https://id.i2idl.org/concepts/gamification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <https://id.i2idl.org/graphs/concepts/gamification/versions/1> .
+<https://id.i2idl.org/concepts/gamification> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/gamification/versions/1> .
+<https://id.i2idl.org/concepts/gamification> <http://www.w3.org/2004/02/skos/core#prefLabel> "Gamification" <https://id.i2idl.org/graphs/concepts/gamification/versions/1> .
+<https://id.i2idl.org/concepts/gamification> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/game-based-learning> <https://id.i2idl.org/graphs/concepts/gamification/versions/1> .
+<https://id.i2idl.org/concepts/gamification> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/motivation> <https://id.i2idl.org/graphs/concepts/gamification/versions/1> .
+<https://id.i2idl.org/concepts/gamification> <https://glossarystudio.app/ns/activeDefinition> <https://id.i2idl.org/definitions/gamification> <https://id.i2idl.org/graphs/concepts/gamification/versions/1> .
+<https://id.i2idl.org/concepts/gamification> <https://glossarystudio.app/ns/editorialExplanation> "Distinguishes game design elements in non-game settings from game-based learning." <https://id.i2idl.org/graphs/concepts/gamification/versions/1> .
+<https://id.i2idl.org/concepts/gamification> <https://glossarystudio.app/ns/fieldCollection> <https://id.i2idl.org/collections/field/learning-sciences> <https://id.i2idl.org/graphs/concepts/gamification/versions/1> .
+<https://id.i2idl.org/concepts/gamification> <https://glossarystudio.app/ns/typeCollection> <https://id.i2idl.org/collections/type/concept> <https://id.i2idl.org/graphs/concepts/gamification/versions/1> .
+<https://id.i2idl.org/definitions/gamification> <http://purl.org/dc/terms/description> "ERIC scope note: The use of game design elements in non-game contexts." <https://id.i2idl.org/graphs/concepts/gamification/versions/1> .
+<https://id.i2idl.org/definitions/gamification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Definition> <https://id.i2idl.org/graphs/concepts/gamification/versions/1> .
+<https://id.i2idl.org/definitions/gamification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "The application of game design elements, such as points, challenges, or feedback mechanisms, in contexts that are not themselves games." <https://id.i2idl.org/graphs/concepts/gamification/versions/1> .
+<https://id.i2idl.org/definitions/gamification> <https://glossarystudio.app/ns/evidence> _:c14n0 <https://id.i2idl.org/graphs/concepts/gamification/versions/1> .
+<https://id.i2idl.org/sources/eric-thesaurus-2025> <http://purl.org/dc/terms/title> "ERIC Thesaurus (2025)" <https://id.i2idl.org/graphs/concepts/gamification/versions/1> .
+_:c14n0 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/eric-thesaurus-2025> <https://id.i2idl.org/graphs/concepts/gamification/versions/1> .
+_:c14n0 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/eric-thesaurus-2025> <https://id.i2idl.org/graphs/concepts/gamification/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/citationDetail> "ERIC Thesaurus 2025 descriptor: Gamification" <https://id.i2idl.org/graphs/concepts/gamification/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/evidenceRelation> "supporting" <https://id.i2idl.org/graphs/concepts/gamification/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/sourceLabel> "ERIC Thesaurus (2025)" <https://id.i2idl.org/graphs/concepts/gamification/versions/1> .
+_:c14n0 <https://schema.org/url> "https://eric.ed.gov/?ti=all" <https://id.i2idl.org/graphs/concepts/gamification/versions/1> .

@@ -21,7 +21,7 @@
       "dcterms:rights": "Mixed rights. I2IDL-original material defaults to CC BY 4.0; source-specific rights are preserved at the source and evidence level.",
       "gs:editorialStatus": "approved",
       "gs:semanticProfileVersion": "0.4.0",
-      "gs:publicationVersion": "v0.0.89",
+      "gs:publicationVersion": "v0.0.90",
       "gs:baseUri": "https://id.i2idl.org"
     },
     {
@@ -237,6 +237,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ai-pedagogy-integration"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/natural-language-processing"
         }
       ]
     },
@@ -325,6 +328,21 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/mastery-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/adaptive-testing"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/assessment-literacy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/performance-based-assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/instructional-effectiveness"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/educational-indicators"
         }
       ]
     },
@@ -746,6 +764,30 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/formative-evaluation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/technology-integration"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/electronic-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-objectives"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/blended-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/access-to-internet"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/information-literacy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/media-literacy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/technological-literacy"
         }
       ]
     },
@@ -877,6 +919,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/xapi-client"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/instructional-systems"
         }
       ]
     },
@@ -1187,6 +1232,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/stakeholder-requirement"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/assistive-technology"
         }
       ]
     },
@@ -1509,6 +1557,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/contextually-rich-learning-environment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/instructional-design"
         }
       ]
     },
@@ -1721,6 +1772,21 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/practitioner-expertise"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-strategies"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/gamification"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/game-based-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-trajectories"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/transfer-of-training"
         }
       ]
     },
@@ -2023,6 +2089,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/xapi-timestamp"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-management-systems"
         }
       ]
     },
@@ -2577,6 +2646,75 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/childcare-gap"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-management-systems"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/technology-integration"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/electronic-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/instructional-design"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/instructional-systems"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-objectives"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-strategies"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/blended-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/gamification"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/game-based-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/adaptive-testing"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/assessment-literacy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/performance-based-assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-trajectories"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/transfer-of-training"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/assistive-technology"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/access-to-internet"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/information-literacy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/media-literacy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/technological-literacy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/natural-language-processing"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/instructional-effectiveness"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/educational-indicators"
         }
       ]
     },
@@ -3510,6 +3648,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/equitable-co-design"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/assistive-technology"
         }
       ]
     },
@@ -4187,6 +4328,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/learner-variability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/instructional-systems"
         }
       ]
     },
@@ -5462,6 +5606,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ai-foundations-and-applications"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/natural-language-processing"
         }
       ]
     },
@@ -5584,6 +5731,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/competency"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/adaptive-testing"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/performance-based-assessment"
         }
       ],
       "skos:relatedMatch": {
@@ -5752,6 +5905,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/self-regulated-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/blended-learning"
         }
       ]
     },
@@ -6831,6 +6987,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/formative-assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/performance-based-assessment"
         }
       ]
     },
@@ -6896,6 +7055,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/distributed-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/electronic-learning"
         }
       ]
     },
@@ -8326,6 +8488,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/early-childhood-education-ece"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-objectives"
         }
       ],
       "skos:exactMatch": {
@@ -9513,6 +9678,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/data-informed-decision-making"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/information-literacy"
         }
       ]
     },
@@ -10522,6 +10690,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/digital-literacies"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/access-to-internet"
         }
       ]
     },
@@ -10800,6 +10971,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ieee-2955-2025-self-learning-tutorials-side-by-side-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/media-literacy"
         }
       ],
       "skos:closeMatch": {
@@ -10843,7 +11017,7 @@
         "schema:DefinedTerm"
       ],
       "dcterms:identifier": "digital-literacies",
-      "skos:prefLabel": "Digital literacies",
+      "skos:prefLabel": "Digital Literacy",
       "skos:inScheme": {
         "@id": "https://id.i2idl.org/scheme"
       },
@@ -10863,6 +11037,7 @@
         "@id": "https://id.i2idl.org/collections/type/concept"
       },
       "skos:altLabel": [
+        "Digital literacies",
         "Digital literacy"
       ],
       "skos:related": [
@@ -10877,6 +11052,15 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/digital-divide"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/information-literacy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/media-literacy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/technological-literacy"
         }
       ]
     },
@@ -11030,6 +11214,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ieee-3527-1-2020-digital-intelligence-framework"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/technological-literacy"
         }
       ]
     },
@@ -11989,6 +12176,9 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/edtech-ecosystem"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/technology-integration"
         }
       ],
       "skos:closeMatch": {
@@ -12137,6 +12327,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/learning-assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/instructional-effectiveness"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/educational-indicators"
         }
       ]
     },
@@ -13820,6 +14016,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/learning-environment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/transfer-of-training"
         }
       ]
     },
@@ -14234,6 +14433,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/synchronous-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/blended-learning"
         }
       ]
     },
@@ -14393,6 +14595,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/competency-based-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/assessment-literacy"
         }
       ]
     },
@@ -14880,6 +15085,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/usability-testing"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/assistive-technology"
         }
       ]
     },
@@ -16734,6 +16942,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/learning-sciences"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/instructional-design"
         }
       ]
     },
@@ -17353,6 +17564,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/learning-metadata"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/technology-integration"
         }
       ]
     },
@@ -18626,6 +18840,15 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/formative-assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-management-systems"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/instructional-effectiveness"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/educational-indicators"
         }
       ]
     },
@@ -18780,6 +19003,12 @@
       "skos:related": [
         {
           "@id": "https://id.i2idl.org/concepts/unesco-educational-evaluation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-objectives"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/assessment-literacy"
         }
       ]
     },
@@ -19160,6 +19389,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/learning-analytics"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/instructional-systems"
         }
       ]
     },
@@ -19906,6 +20138,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/design-build-cycle"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/instructional-design"
         }
       ]
     },
@@ -20568,6 +20803,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/learning-analytics"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-management-systems"
         }
       ]
     },
@@ -20705,6 +20943,12 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ai-pedagogy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-trajectories"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/transfer-of-training"
         }
       ]
     },
@@ -21114,6 +21358,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/decision-support"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/natural-language-processing"
         }
       ]
     },
@@ -21281,6 +21528,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/spaced-repetition"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-trajectories"
         }
       ]
     },
@@ -22549,6 +22799,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/behavioral-economics"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/gamification"
         }
       ]
     },
@@ -23133,6 +23386,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/multimedia-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/electronic-learning"
         }
       ]
     },
@@ -23629,6 +23885,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/unesco-educational-sciences-and-environment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-strategies"
         }
       ]
     },
@@ -23857,6 +24116,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/learner-model"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/adaptive-testing"
         }
       ]
     },
@@ -25253,6 +25515,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/cognitive-load"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/access-to-internet"
         }
       ]
     },
@@ -26718,6 +26983,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/formative-assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-strategies"
         }
       ]
     },
@@ -27319,6 +27587,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/virtual-world"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/game-based-learning"
         }
       ]
     },
@@ -29303,6 +29574,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/social-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/blended-learning"
         }
       ]
     },
@@ -34570,6 +34844,1239 @@
           "@id": "https://id.i2idl.org/concepts/predictive-modeling"
         }
       ]
+    },
+    {
+      "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025",
+      "@type": [
+        "schema:CreativeWork"
+      ],
+      "dcterms:title": "ERIC Thesaurus (2025)",
+      "dcterms:publisher": "Institute of Education Sciences, U.S. Department of Education",
+      "schema:url": "https://eric.ed.gov/?download",
+      "dcterms:rights": "Public domain, confirmed by ERIC Help Desk (2026-10-15)",
+      "dcterms:issued": "2025"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/learning-management-systems",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "learning-management-systems",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:prefLabel": "Learning Management Systems",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/learning-management-systems"
+      },
+      "gs:editorialExplanation": "Connects course delivery and tracking platforms to learning records, interoperability, and analytics.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/standards-and-interoperability"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/concept"
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-record-store-lrs"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-analytics"
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/learning-management-systems",
+      "@type": [
+        "gs:Definition"
+      ],
+      "rdf:value": "Software platforms used to administer, deliver, organize, track, and report on learning activities, courses, and associated outcomes.",
+      "gs:evidence": [
+        {
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025",
+            "dcterms:title": "ERIC Thesaurus (2025)"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025"
+          },
+          "gs:sourceLabel": "ERIC Thesaurus (2025)",
+          "gs:citationDetail": "ERIC Thesaurus 2025 descriptor: Learning Management Systems",
+          "gs:evidenceRelation": "supporting",
+          "schema:url": "https://eric.ed.gov/?ti=all"
+        }
+      ],
+      "dcterms:description": "ERIC scope note: Computer software used to manage, deliver, track, and report on educational programs and their outcomes."
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/technology-integration",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "technology-integration",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:prefLabel": "Technology Integration",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/technology-integration"
+      },
+      "gs:editorialExplanation": "Addresses the organizational and instructional process of embedding technology in educational practice.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/education"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/concept"
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/education-technology-edtech"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/interoperability"
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/technology-integration",
+      "@type": [
+        "gs:Definition"
+      ],
+      "rdf:value": "The incorporation of technological tools and services into instructional practice, curricula, and educational environments.",
+      "gs:evidence": [
+        {
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025",
+            "dcterms:title": "ERIC Thesaurus (2025)"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025"
+          },
+          "gs:sourceLabel": "ERIC Thesaurus (2025)",
+          "gs:citationDetail": "ERIC Thesaurus 2025 descriptor: Technology Integration",
+          "gs:evidenceRelation": "supporting",
+          "schema:url": "https://eric.ed.gov/?ti=all"
+        }
+      ],
+      "dcterms:description": "ERIC scope note: Process of making technological tools and services, such as computer systems and the Internet, a part of the educational environment -- includes changes made to the curriculum as well as to educational facilities"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/electronic-learning",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "electronic-learning",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:prefLabel": "Electronic Learning",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/electronic-learning"
+      },
+      "gs:editorialExplanation": "Captures learning mediated by electronic devices and processes, distinct from online-only delivery modalities.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/education"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/concept"
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/online-learning-modality"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/computer-based-learning"
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/electronic-learning",
+      "@type": [
+        "gs:Definition"
+      ],
+      "rdf:value": "Learning supported through electronic devices, software, or digital processes, whether or not delivery requires the Internet.",
+      "gs:evidence": [
+        {
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025",
+            "dcterms:title": "ERIC Thesaurus (2025)"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025"
+          },
+          "gs:sourceLabel": "ERIC Thesaurus (2025)",
+          "gs:citationDetail": "ERIC Thesaurus 2025 descriptor: Electronic Learning",
+          "gs:evidenceRelation": "supporting",
+          "schema:url": "https://eric.ed.gov/?ti=all"
+        }
+      ],
+      "dcterms:description": "ERIC scope note: Using electronic devices, applications, or processes to acquire or transfer knowledge, attitudes, or skills through study, instruction, or experience. Content delivery modes include, but are not limited to, Internet, local and wide area networks, CD-ROM, audiotape and videotape, satellite broadcasts, stand-alone computers, and interactive TV. Although frequently associated with digital technologies, electronic learning may also utilize other electronic technologies."
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/instructional-design",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "instructional-design",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:prefLabel": "Instructional Design",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/instructional-design"
+      },
+      "gs:editorialExplanation": "Establishes the systematic design of instruction as a foundation for learning engineering.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/learning-engineering"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/concept"
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-experience-design-lxd"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/instructional-designer"
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/instructional-design",
+      "@type": [
+        "gs:Definition"
+      ],
+      "rdf:value": "The systematic analysis and design of learning experiences, activities, materials, and assessment approaches to support intended outcomes.",
+      "gs:evidence": [
+        {
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025",
+            "dcterms:title": "ERIC Thesaurus (2025)"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025"
+          },
+          "gs:sourceLabel": "ERIC Thesaurus (2025)",
+          "gs:citationDetail": "ERIC Thesaurus 2025 descriptor: Instructional Design",
+          "gs:evidenceRelation": "supporting",
+          "schema:url": "https://eric.ed.gov/?ti=all"
+        }
+      ],
+      "dcterms:description": "ERIC scope note: Analysis and prescription of optimal instructional methods (Note: Prior to Apr80, the use of this term was not restricted by a Scope Note)"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/instructional-systems",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "instructional-systems",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:prefLabel": "Instructional Systems",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/instructional-systems"
+      },
+      "gs:editorialExplanation": "Connects instructional components, coordination, and learning system architecture.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/engineering-and-systems"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/concept"
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/adaptive-instructional-system"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-engineering"
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/instructional-systems",
+      "@type": [
+        "gs:Definition"
+      ],
+      "rdf:value": "Coordinated arrangements of people, content, processes, resources, and technologies that support instruction and its intended objectives.",
+      "gs:evidence": [
+        {
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025",
+            "dcterms:title": "ERIC Thesaurus (2025)"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025"
+          },
+          "gs:sourceLabel": "ERIC Thesaurus (2025)",
+          "gs:citationDetail": "ERIC Thesaurus 2025 descriptor: Instructional Systems",
+          "gs:evidenceRelation": "supporting",
+          "schema:url": "https://eric.ed.gov/?ti=all"
+        }
+      ],
+      "dcterms:description": "ERIC scope note: Combination, arrangement, and management of instructional components to solve problems or achieve other educational objectives"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/learning-objectives",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "learning-objectives",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:prefLabel": "Learning Objectives",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/learning-objectives"
+      },
+      "gs:editorialExplanation": "Supports alignment among instruction, competencies, assessment, and evidence.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/education"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/concept"
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-curriculum"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-assessment"
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/learning-objectives",
+      "@type": [
+        "gs:Definition"
+      ],
+      "rdf:value": "Statements describing the knowledge, skills, or capabilities learners are expected to acquire or demonstrate through a learning activity.",
+      "gs:evidence": [
+        {
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025",
+            "dcterms:title": "ERIC Thesaurus (2025)"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025"
+          },
+          "gs:sourceLabel": "ERIC Thesaurus (2025)",
+          "gs:citationDetail": "ERIC Thesaurus 2025 descriptor: Learning Objectives",
+          "gs:evidenceRelation": "supporting",
+          "schema:url": "https://eric.ed.gov/?ti=all"
+        }
+      ],
+      "dcterms:description": "ERIC scope note: Short, clear statements describing what students are expected to learn or be able to do as a result of instruction or any learning activity. Prior to 2025, the descriptor \"Behavioral Objectives\" was used to index this subject."
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/learning-strategies",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "learning-strategies",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:prefLabel": "Learning Strategies",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/learning-strategies"
+      },
+      "gs:editorialExplanation": "Connects learner practices and instructional approaches to learning sciences.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/learning-sciences"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/concept"
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/pedagogy"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/self-regulated-learning"
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/learning-strategies",
+      "@type": [
+        "gs:Definition"
+      ],
+      "rdf:value": "Approaches, procedures, or techniques used by learners or educators to support learning across tasks and contexts.",
+      "gs:evidence": [
+        {
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025",
+            "dcterms:title": "ERIC Thesaurus (2025)"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025"
+          },
+          "gs:sourceLabel": "ERIC Thesaurus (2025)",
+          "gs:citationDetail": "ERIC Thesaurus 2025 descriptor: Learning Strategies",
+          "gs:evidenceRelation": "supporting",
+          "schema:url": "https://eric.ed.gov/?ti=all"
+        }
+      ],
+      "dcterms:description": "ERIC scope note: Rules, principles, and procedures used to facilitate learning, frequently applicable to a variety of specific learning tasks (Note: For self-discovered, self-selected learning strategies, coordinate with \"Cognitive Style\")"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/blended-learning",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "blended-learning",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:prefLabel": "Blended Learning",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/blended-learning"
+      },
+      "gs:editorialExplanation": "Provides a recognized construct for integrating multiple instructional delivery approaches.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/education"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/concept"
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/flipped-classroom"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/synchronous-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/asynchronous-learning"
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/blended-learning",
+      "@type": [
+        "gs:Definition"
+      ],
+      "rdf:value": "An instructional approach that purposefully combines multiple modes of learning delivery, often including face-to-face and electronically mediated instruction.",
+      "gs:evidence": [
+        {
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025",
+            "dcterms:title": "ERIC Thesaurus (2025)"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025"
+          },
+          "gs:sourceLabel": "ERIC Thesaurus (2025)",
+          "gs:citationDetail": "ERIC Thesaurus 2025 descriptor: Blended Learning",
+          "gs:evidenceRelation": "supporting",
+          "schema:url": "https://eric.ed.gov/?ti=all"
+        }
+      ],
+      "dcterms:description": "ERIC scope note: Variable construct describing approaches to teaching and learning that integrate, in a significant and meaningful way, more than one technique for delivering instruction. Widely associated with combinations of face-to-face and e-learning teaching methods, blended learning may also refer to other mixtures (e.g., individual and group instruction; self-paced instruction and lecture method)."
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/gamification",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "gamification",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:prefLabel": "Gamification",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/gamification"
+      },
+      "gs:editorialExplanation": "Distinguishes game design elements in non-game settings from game-based learning.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/learning-sciences"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/concept"
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/motivation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/game-based-learning"
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/gamification",
+      "@type": [
+        "gs:Definition"
+      ],
+      "rdf:value": "The application of game design elements, such as points, challenges, or feedback mechanisms, in contexts that are not themselves games.",
+      "gs:evidence": [
+        {
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025",
+            "dcterms:title": "ERIC Thesaurus (2025)"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025"
+          },
+          "gs:sourceLabel": "ERIC Thesaurus (2025)",
+          "gs:citationDetail": "ERIC Thesaurus 2025 descriptor: Gamification",
+          "gs:evidenceRelation": "supporting",
+          "schema:url": "https://eric.ed.gov/?ti=all"
+        }
+      ],
+      "dcterms:description": "ERIC scope note: The use of game design elements in non-game contexts."
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/game-based-learning",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "game-based-learning",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:prefLabel": "Game Based Learning",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/game-based-learning"
+      },
+      "gs:editorialExplanation": "Distinguishes learning through games and gameplay from gamification.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/learning-sciences"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/concept"
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/gamification"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/simulation"
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/game-based-learning",
+      "@type": [
+        "gs:Definition"
+      ],
+      "rdf:value": "An approach in which participation in games or gameplay is used to develop or apply knowledge and skills.",
+      "gs:evidence": [
+        {
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025",
+            "dcterms:title": "ERIC Thesaurus (2025)"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025"
+          },
+          "gs:sourceLabel": "ERIC Thesaurus (2025)",
+          "gs:citationDetail": "ERIC Thesaurus 2025 descriptor: Game Based Learning",
+          "gs:evidenceRelation": "supporting",
+          "schema:url": "https://eric.ed.gov/?ti=all"
+        }
+      ],
+      "dcterms:description": "ERIC scope note: Learning and teaching situations in which students gain and apply knowledge through game play."
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/adaptive-testing",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "adaptive-testing",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:prefLabel": "Adaptive Testing",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/adaptive-testing"
+      },
+      "gs:editorialExplanation": "Links test item selection to learner responses, assessment design, and adaptive systems.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/assessment-and-measurement"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/concept"
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/personalization"
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/adaptive-testing",
+      "@type": [
+        "gs:Definition"
+      ],
+      "rdf:value": "Assessment that selects or adjusts subsequent test items in response to information from a learner’s earlier answers.",
+      "gs:evidence": [
+        {
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025",
+            "dcterms:title": "ERIC Thesaurus (2025)"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025"
+          },
+          "gs:sourceLabel": "ERIC Thesaurus (2025)",
+          "gs:citationDetail": "ERIC Thesaurus 2025 descriptor: Adaptive Testing",
+          "gs:evidenceRelation": "supporting",
+          "schema:url": "https://eric.ed.gov/?ti=all"
+        }
+      ],
+      "dcterms:description": "ERIC scope note: Testing that involves selecting test items according to the examinee's ability as shown by responses to earlier test items"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/assessment-literacy",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "assessment-literacy",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:prefLabel": "Assessment Literacy",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/assessment-literacy"
+      },
+      "gs:editorialExplanation": "Connects professional assessment knowledge to design, interpretation, and learning improvement.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/assessment-and-measurement"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/concept"
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/formative-assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-assessment"
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/assessment-literacy",
+      "@type": [
+        "gs:Definition"
+      ],
+      "rdf:value": "The knowledge and skills needed to design, select, interpret, and use assessments and their results appropriately in educational practice.",
+      "gs:evidence": [
+        {
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025",
+            "dcterms:title": "ERIC Thesaurus (2025)"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025"
+          },
+          "gs:sourceLabel": "ERIC Thesaurus (2025)",
+          "gs:citationDetail": "ERIC Thesaurus 2025 descriptor: Assessment Literacy",
+          "gs:evidenceRelation": "supporting",
+          "schema:url": "https://eric.ed.gov/?ti=all"
+        }
+      ],
+      "dcterms:description": "ERIC scope note: Knowledge of the key principles, methods, standards, and other aspects of assessment; and the ability to use that knowledge to design, plan, and conduct tests and use their results to improve teaching and learning."
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/performance-based-assessment",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "performance-based-assessment",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:prefLabel": "Performance Based Assessment",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/performance-based-assessment"
+      },
+      "gs:editorialExplanation": "Links observed demonstrations of knowledge and skill to evidence of attainment.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/assessment-and-measurement"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/concept"
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/competency-based-learning"
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/performance-based-assessment",
+      "@type": [
+        "gs:Definition"
+      ],
+      "rdf:value": "Assessment requiring learners to demonstrate knowledge or skills through the production of work or completion of a task, with evaluation of the process, product, or both.",
+      "gs:evidence": [
+        {
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025",
+            "dcterms:title": "ERIC Thesaurus (2025)"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025"
+          },
+          "gs:sourceLabel": "ERIC Thesaurus (2025)",
+          "gs:citationDetail": "ERIC Thesaurus 2025 descriptor: Performance Based Assessment",
+          "gs:evidenceRelation": "supporting",
+          "schema:url": "https://eric.ed.gov/?ti=all"
+        }
+      ],
+      "dcterms:description": "ERIC scope note: Evaluation of achievement, learning, etc., that requires direct demonstration of knowledge and skills via the construction of responses, and for which scoring can be based on the processes of the response construction as well as the final product -- typically, performance-based assessments are designed to elicit and strengthen examinees' critical-thinking skills, problem-solving strategies, self-evaluation skills, and other higher-order thinking skills (Note: Do not confuse with \"Performance Tests,\" whose usage is restricted to evaluations of manual manipulations and body movements)"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/learning-trajectories",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "learning-trajectories",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:prefLabel": "Learning Trajectories",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/learning-trajectories"
+      },
+      "gs:editorialExplanation": "Connects developmental progression, curriculum sequencing, and personalized learning.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/learning-sciences"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/concept"
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-sciences"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/mastery-learning"
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/learning-trajectories",
+      "@type": [
+        "gs:Definition"
+      ],
+      "rdf:value": "Descriptions of how knowledge and skills may develop across successive stages, used to inform learning goals, instruction, and assessment.",
+      "gs:evidence": [
+        {
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025",
+            "dcterms:title": "ERIC Thesaurus (2025)"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025"
+          },
+          "gs:sourceLabel": "ERIC Thesaurus (2025)",
+          "gs:citationDetail": "ERIC Thesaurus 2025 descriptor: Learning Trajectories",
+          "gs:evidenceRelation": "supporting",
+          "schema:url": "https://eric.ed.gov/?ti=all"
+        }
+      ],
+      "dcterms:description": "ERIC scope note: The sequence of skills and knowledge students should learn as they move from one grade, age, or developmental stage to another. May also include instructional activities to support learning at each level."
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/transfer-of-training",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "transfer-of-training",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:prefLabel": "Transfer of Training",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/transfer-of-training"
+      },
+      "gs:editorialExplanation": "Addresses how prior learning influences later performance and acquisition of skills.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/learning-sciences"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/concept"
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/experiential-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-sciences"
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/transfer-of-training",
+      "@type": [
+        "gs:Definition"
+      ],
+      "rdf:value": "The influence of previously acquired knowledge or skills on learning or performing in a subsequent task or context.",
+      "gs:evidence": [
+        {
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025",
+            "dcterms:title": "ERIC Thesaurus (2025)"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025"
+          },
+          "gs:sourceLabel": "ERIC Thesaurus (2025)",
+          "gs:citationDetail": "ERIC Thesaurus 2025 descriptor: Transfer of Training",
+          "gs:evidenceRelation": "supporting",
+          "schema:url": "https://eric.ed.gov/?ti=all"
+        }
+      ],
+      "dcterms:description": "ERIC scope note: The influence that an existing habit, skill, or idea exerts on the acquisition, performance, or relearning of another similar characteristic"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/assistive-technology",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "assistive-technology",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:prefLabel": "Assistive Technology",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/assistive-technology"
+      },
+      "gs:editorialExplanation": "Supports inclusive and accessible technology design in digital learning.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/human-centered-design"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/concept"
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/accessibility"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/human-centered-design"
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/assistive-technology",
+      "@type": [
+        "gs:Definition"
+      ],
+      "rdf:value": "Devices, equipment, software, or adapted systems that support the functional capabilities and participation of people with disabilities.",
+      "gs:evidence": [
+        {
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025",
+            "dcterms:title": "ERIC Thesaurus (2025)"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025"
+          },
+          "gs:sourceLabel": "ERIC Thesaurus (2025)",
+          "gs:citationDetail": "ERIC Thesaurus 2025 descriptor: Assistive Technology",
+          "gs:evidenceRelation": "supporting",
+          "schema:url": "https://eric.ed.gov/?ti=all"
+        }
+      ],
+      "dcterms:description": "ERIC scope note: Any high- or low-technology device, piece of equipment, or product system acquired commercially off the shelf, modified, or customized, that is used by persons with disabilities to increase, maintain, or improve functional capabilities, assist them in learning, enable them to participate in the workplace, or otherwise improve their quality of life (Note: Prior to October 2002, this concept was represented by Assistive Devices (for Disabled)"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/access-to-internet",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "access-to-internet",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:prefLabel": "Access to Internet",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/access-to-internet"
+      },
+      "gs:editorialExplanation": "Distinguishes connectivity and infrastructure access from skills and participation.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/education"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/concept"
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/digital-divide"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/remote-learning"
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/access-to-internet",
+      "@type": [
+        "gs:Definition"
+      ],
+      "rdf:value": "The availability of means for individuals to connect to and use the Internet through suitable devices and network services.",
+      "gs:evidence": [
+        {
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025",
+            "dcterms:title": "ERIC Thesaurus (2025)"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025"
+          },
+          "gs:sourceLabel": "ERIC Thesaurus (2025)",
+          "gs:citationDetail": "ERIC Thesaurus 2025 descriptor: Access to Internet",
+          "gs:evidenceRelation": "supporting",
+          "schema:url": "https://eric.ed.gov/?ti=all"
+        }
+      ],
+      "dcterms:description": "ERIC scope note: The ability or means of individuals to access the Internet through computers, handheld devices, or other electronic devices."
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/information-literacy",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "information-literacy",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:prefLabel": "Information Literacy",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/information-literacy"
+      },
+      "gs:editorialExplanation": "Distinguishes information evaluation and use from broader digital literacy.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/education"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/concept"
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/digital-literacies"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/data-use"
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/information-literacy",
+      "@type": [
+        "gs:Definition"
+      ],
+      "rdf:value": "The ability to locate, evaluate, interpret, and use information appropriately across sources and contexts.",
+      "gs:evidence": [
+        {
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025",
+            "dcterms:title": "ERIC Thesaurus (2025)"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025"
+          },
+          "gs:sourceLabel": "ERIC Thesaurus (2025)",
+          "gs:citationDetail": "ERIC Thesaurus 2025 descriptor: Information Literacy",
+          "gs:evidenceRelation": "supporting",
+          "schema:url": "https://eric.ed.gov/?ti=all"
+        }
+      ],
+      "dcterms:description": "ERIC scope note: The ability to access, evaluate, and use information from a variety of sources (Note: Use the more generic term \"Information Skills,\" if appropriate)"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/media-literacy",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "media-literacy",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:prefLabel": "Media Literacy",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/media-literacy"
+      },
+      "gs:editorialExplanation": "Distinguishes critical engagement with media messages from digital-tool competence.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/education"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/concept"
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/digital-literacies"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/digital-learning-materials"
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/media-literacy",
+      "@type": [
+        "gs:Definition"
+      ],
+      "rdf:value": "The ability to access, interpret, evaluate, and create messages across different forms of media.",
+      "gs:evidence": [
+        {
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025",
+            "dcterms:title": "ERIC Thesaurus (2025)"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025"
+          },
+          "gs:sourceLabel": "ERIC Thesaurus (2025)",
+          "gs:citationDetail": "ERIC Thesaurus 2025 descriptor: Media Literacy",
+          "gs:evidenceRelation": "supporting",
+          "schema:url": "https://eric.ed.gov/?ti=all"
+        }
+      ],
+      "dcterms:description": "ERIC scope note: The ability to communicate competently in all media forms, print and electronic, as well as to access, understand, analyze and evaluate the images, words, and sounds that make up mass media messages"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/technological-literacy",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "technological-literacy",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:prefLabel": "Technological Literacy",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/technological-literacy"
+      },
+      "gs:editorialExplanation": "Addresses understanding and selecting technological innovations and their social effects.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/education"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/concept"
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/digital-literacies"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/digital-skills"
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/technological-literacy",
+      "@type": [
+        "gs:Definition"
+      ],
+      "rdf:value": "Understanding of technologies, their uses and consequences, and the ability to make informed decisions about their selection and application.",
+      "gs:evidence": [
+        {
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025",
+            "dcterms:title": "ERIC Thesaurus (2025)"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025"
+          },
+          "gs:sourceLabel": "ERIC Thesaurus (2025)",
+          "gs:citationDetail": "ERIC Thesaurus 2025 descriptor: Technological Literacy",
+          "gs:evidenceRelation": "supporting",
+          "schema:url": "https://eric.ed.gov/?ti=all"
+        }
+      ],
+      "dcterms:description": "ERIC scope note: Comprehension of technological innovation and the impact of technology on society -- may include the ability to select and use specific innovations appropriate to one's interests and needs"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/natural-language-processing",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "natural-language-processing",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:prefLabel": "Natural Language Processing",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/natural-language-processing"
+      },
+      "gs:editorialExplanation": "Connects language technologies with AI-enabled learning systems.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/ai-and-machine-learning"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/concept"
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/artificial-intelligence-ai"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/machine-learning"
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/natural-language-processing",
+      "@type": [
+        "gs:Definition"
+      ],
+      "rdf:value": "Computational methods for analyzing, interpreting, generating, or otherwise processing human language.",
+      "gs:evidence": [
+        {
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025",
+            "dcterms:title": "ERIC Thesaurus (2025)"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025"
+          },
+          "gs:sourceLabel": "ERIC Thesaurus (2025)",
+          "gs:citationDetail": "ERIC Thesaurus 2025 descriptor: Natural Language Processing",
+          "gs:evidenceRelation": "supporting",
+          "schema:url": "https://eric.ed.gov/?ti=all"
+        }
+      ],
+      "dcterms:description": "ERIC scope note: Human communication with computers using natural languages, such as English and Japanese, rather than programming languages, such as BASIC and Pascal. Note: Do not confuse with \"Computational Linguistics.\""
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/instructional-effectiveness",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "instructional-effectiveness",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:prefLabel": "Instructional Effectiveness",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/instructional-effectiveness"
+      },
+      "gs:editorialExplanation": "Provides a concept for evaluating whether instruction achieves intended outcomes.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/assessment-and-measurement"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/concept"
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-evaluation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-analytics"
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/instructional-effectiveness",
+      "@type": [
+        "gs:Definition"
+      ],
+      "rdf:value": "The degree to which instruction, materials, or educational programs support the achievement of their intended learning objectives.",
+      "gs:evidence": [
+        {
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025",
+            "dcterms:title": "ERIC Thesaurus (2025)"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025"
+          },
+          "gs:sourceLabel": "ERIC Thesaurus (2025)",
+          "gs:citationDetail": "ERIC Thesaurus 2025 descriptor: Instructional Effectiveness",
+          "gs:evidenceRelation": "supporting",
+          "schema:url": "https://eric.ed.gov/?ti=all"
+        }
+      ],
+      "dcterms:description": "ERIC scope note: Degree to which instructional materials or programs are successful in accomplishing their objectives"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/educational-indicators",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "educational-indicators",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:prefLabel": "Educational Indicators",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/educational-indicators"
+      },
+      "gs:editorialExplanation": "Connects educational measurement to evaluation, reporting, and policy.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/assessment-and-measurement"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/concept"
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/unesco-educational-evaluation"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/learning-analytics"
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/educational-indicators",
+      "@type": [
+        "gs:Definition"
+      ],
+      "rdf:value": "Measures used to describe educational conditions, activities, or outcomes and to inform evaluation, comparison, and policy decisions.",
+      "gs:evidence": [
+        {
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025",
+            "dcterms:title": "ERIC Thesaurus (2025)"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/eric-thesaurus-2025"
+          },
+          "gs:sourceLabel": "ERIC Thesaurus (2025)",
+          "gs:citationDetail": "ERIC Thesaurus 2025 descriptor: Educational Indicators",
+          "gs:evidenceRelation": "supporting",
+          "schema:url": "https://eric.ed.gov/?ti=all"
+        }
+      ],
+      "dcterms:description": "ERIC scope note: Measures of the outcomes of educational institutions, programs, and practices, where resulting statistics are intended to inform educational policy"
     }
   ]
 }

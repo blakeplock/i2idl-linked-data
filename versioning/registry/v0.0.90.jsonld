@@ -1,0 +1,1261 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "gs": "https://glossarystudio.app/ns/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://id.i2idl.org/concepts/access-to-internet/versions/1",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/access-to-internet"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "gs:revisionNumber": {
+        "@value": 1,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/access-to-internet/versions/1"
+      },
+      "gs:contentDigest": "6a4d0d106a74a33a50f9e3a54cd89db6ce939b121f0fe3e63e67b6bef5a6ed4e",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/accessibility/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/accessibility"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/accessibility/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/accessibility/versions/2"
+      },
+      "gs:contentDigest": "7e47ca826564d63119be801879cfef5a8ae0479773c4ba1941a695fa89083c59",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/adaptive-instructional-system/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/adaptive-instructional-system"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/adaptive-instructional-system/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/adaptive-instructional-system/versions/2"
+      },
+      "gs:contentDigest": "1184b3998f142983e16b0524e6c70da947def96855a85f325854dfed1da25382",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/adaptive-testing/versions/1",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/adaptive-testing"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "gs:revisionNumber": {
+        "@value": 1,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/adaptive-testing/versions/1"
+      },
+      "gs:contentDigest": "9eebdd867a223faff13776fbf12c526b9f6393396446f5a26216ecc2d34ec86a",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/artificial-intelligence-ai/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/artificial-intelligence-ai"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/artificial-intelligence-ai/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/artificial-intelligence-ai/versions/2"
+      },
+      "gs:contentDigest": "0e1bc692f81e9fb103c6284cf971f37336b0e8110efb7dce3dc09590af2aaffa",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/assessment/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/assessment"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/assessment/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/assessment/versions/2"
+      },
+      "gs:contentDigest": "cba317ded2f161aa9859e558a323e2637557b297ca2d1e3be2cb685b4545581c",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/assessment-literacy/versions/1",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/assessment-literacy"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "gs:revisionNumber": {
+        "@value": 1,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/assessment-literacy/versions/1"
+      },
+      "gs:contentDigest": "0c699c6feb173867de3a1de7763b7c92adfffea9bd84d3ca565177df45ea5c72",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/assistive-technology/versions/1",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/assistive-technology"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "gs:revisionNumber": {
+        "@value": 1,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/assistive-technology/versions/1"
+      },
+      "gs:contentDigest": "e82c70cb5f8eade99741ca198218c17ab064b31d01f7b0ec0318e7ae7150157f",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/asynchronous-learning/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/asynchronous-learning"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/asynchronous-learning/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/asynchronous-learning/versions/2"
+      },
+      "gs:contentDigest": "728fae7c3f231bfc850d69d4b0a919c09857b851b38530d70596244df8611dea",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/blended-learning/versions/1",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/blended-learning"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "gs:revisionNumber": {
+        "@value": 1,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/blended-learning/versions/1"
+      },
+      "gs:contentDigest": "f1af622ccb5fe03dd53b16d72ede0e9f225f7bd27c972bf0d6992c5a489b0a5a",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/competency-based-learning/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/competency-based-learning"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/competency-based-learning/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/competency-based-learning/versions/2"
+      },
+      "gs:contentDigest": "7fb56dfbf246791165025839e5fcab5ae3eea448bc477e02b67434d6ae136453",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/computer-based-learning/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/computer-based-learning"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/computer-based-learning/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/computer-based-learning/versions/2"
+      },
+      "gs:contentDigest": "5cc07e62f8e79a5277b578624982af54baced8d36680bcfeb887f2a697838cd3",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/data-use/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/data-use"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/data-use/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/data-use/versions/2"
+      },
+      "gs:contentDigest": "1cf9e218bbeb75df941ba4ddb98db4e5222efd1d01a1d086416cf37150afc7c9",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/digital-divide/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/digital-divide"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/digital-divide/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/digital-divide/versions/2"
+      },
+      "gs:contentDigest": "a277cc6fcce7fda80cb6da891653f2d78cbf645fb800542614a136d875bbe4b7",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/digital-learning-materials/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/digital-learning-materials"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/digital-learning-materials/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/digital-learning-materials/versions/2"
+      },
+      "gs:contentDigest": "d3dff1e0785d1dec8c1490415cdbe33923b452ceda7ee62f4a2a18efcc20ad1c",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/digital-literacies/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/digital-literacies"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/digital-literacies/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/digital-literacies/versions/2"
+      },
+      "gs:contentDigest": "e431e07ee3a9882e0603a45328f16d2ce60dd55be10e0185b23fb37d32b34cb2",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/digital-skills/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/digital-skills"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/digital-skills/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/digital-skills/versions/2"
+      },
+      "gs:contentDigest": "169baee6b858cb25f17ef92008d484b8691a1a6da65f5ea9a30e0c0a376cf5e3",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/education-technology-edtech/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/education-technology-edtech"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/education-technology-edtech/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/education-technology-edtech/versions/2"
+      },
+      "gs:contentDigest": "d470955d4c9c4e4cf3b4cbc02846e90a8d0d60c07936f4601e04e6abd6a3dcf2",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/educational-indicators/versions/1",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/educational-indicators"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "gs:revisionNumber": {
+        "@value": 1,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/educational-indicators/versions/1"
+      },
+      "gs:contentDigest": "f199b0e56993050f21621e2ae557497328744e70d29ef3a43b8e3c78512fcc9a",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/electronic-learning/versions/1",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/electronic-learning"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "gs:revisionNumber": {
+        "@value": 1,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/electronic-learning/versions/1"
+      },
+      "gs:contentDigest": "94b3c28f7b496fb366974e2fcf94d5ce677c103defaa84341aebc29d21b42bd9",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/experiential-learning/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/experiential-learning"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/experiential-learning/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/experiential-learning/versions/2"
+      },
+      "gs:contentDigest": "b5f91b28bacb5c766649db26b8544dcda6d369014979b71918b5f4571efa0fa3",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/flipped-classroom/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/flipped-classroom"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/flipped-classroom/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/2"
+      },
+      "gs:contentDigest": "0bbbed7d3e9caaf0eec03f9f84ab5f531d0d0523f957d147cdcfaf3f9e9d5aa4",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/formative-assessment/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/formative-assessment"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/formative-assessment/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/formative-assessment/versions/2"
+      },
+      "gs:contentDigest": "4b3a78fbd228724f7fd408e7367371cc0c2ff3bc7976ee0eea46fba43ea55a97",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/game-based-learning/versions/1",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/game-based-learning"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "gs:revisionNumber": {
+        "@value": 1,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/game-based-learning/versions/1"
+      },
+      "gs:contentDigest": "14520fbab6b9f699c7bd538f30ec627a6610c21f29087b396054d5f64b824280",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/gamification/versions/1",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/gamification"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "gs:revisionNumber": {
+        "@value": 1,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/gamification/versions/1"
+      },
+      "gs:contentDigest": "dbdb30185bbb043fd94cc069083d74aaecf6a1374c3e2844e5fd24022f22bcf9",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/human-centered-design/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/human-centered-design"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/human-centered-design/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/human-centered-design/versions/2"
+      },
+      "gs:contentDigest": "f6027f25fa4808296c116ee0ed2be176955c1b09d910127effa4c1a1d87a6f97",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/information-literacy/versions/1",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/information-literacy"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "gs:revisionNumber": {
+        "@value": 1,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/information-literacy/versions/1"
+      },
+      "gs:contentDigest": "154119b82fd7d5b80a85171a4d41a6969f382822b3f61681e0cde2955334775a",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/instructional-design/versions/1",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/instructional-design"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "gs:revisionNumber": {
+        "@value": 1,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/instructional-design/versions/1"
+      },
+      "gs:contentDigest": "8de63a88c80fadf6648ef9e345285cb741d865120934180693c5e6f6daa1b7dd",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/instructional-designer/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/instructional-designer"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/instructional-designer/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/instructional-designer/versions/2"
+      },
+      "gs:contentDigest": "5fb24800ce03f2a35f3d2f3d0b39b1142fa5dd9bc8ece9ff62dbe8839eba0a99",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/instructional-effectiveness/versions/1",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/instructional-effectiveness"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "gs:revisionNumber": {
+        "@value": 1,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/instructional-effectiveness/versions/1"
+      },
+      "gs:contentDigest": "e0bed1c99472c47bf5a2478926bed225da27c84deb1dd834c2df581c94f8d930",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/instructional-systems/versions/1",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/instructional-systems"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "gs:revisionNumber": {
+        "@value": 1,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/instructional-systems/versions/1"
+      },
+      "gs:contentDigest": "05d627f6bb1419983bfd27d13ed4c8b601b5ff5fbe573580b8ade6a3eb58bdd7",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/interoperability/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/interoperability"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/interoperability/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/interoperability/versions/2"
+      },
+      "gs:contentDigest": "11712f3c2e9c8502fae84b64a909d1a56d7554dc5afd2f5e68eb41ec1490e1b9",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/learning-analytics/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/learning-analytics"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/learning-analytics/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/learning-analytics/versions/2"
+      },
+      "gs:contentDigest": "fa67b45243c73d3d57465c61fa74c7f84750937dad5891d4557394920b824ab3",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/learning-assessment/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/learning-assessment"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/learning-assessment/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/learning-assessment/versions/2"
+      },
+      "gs:contentDigest": "da61ea5c00a11779a8b4f6ef9b386c9bb5c87364d89841212e9bc97ef8051f22",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/learning-engineering/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/learning-engineering"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/learning-engineering/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/learning-engineering/versions/2"
+      },
+      "gs:contentDigest": "64632f73a98841b68bae69f1cbdc2edd1e45b6148973ec5a2bb6de98e0fd5a10",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/learning-experience-design-lxd/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/learning-experience-design-lxd"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/learning-experience-design-lxd/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/learning-experience-design-lxd/versions/2"
+      },
+      "gs:contentDigest": "c8ebee7d37a24840152602f0a88ac90a4e9d9c529c3d87d8a711dc803f7034c8",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/learning-management-systems/versions/1",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/learning-management-systems"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "gs:revisionNumber": {
+        "@value": 1,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/learning-management-systems/versions/1"
+      },
+      "gs:contentDigest": "2e40c40838ebd72351b797250204efb37e1d9cdee5c39d741f052b1c846fad8b",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/learning-objectives/versions/1",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/learning-objectives"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "gs:revisionNumber": {
+        "@value": 1,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/learning-objectives/versions/1"
+      },
+      "gs:contentDigest": "d2c41948cea9c55a97d326dbc014d247b9722edf8aee42a8db6b7102313b3c7b",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/learning-record-store-lrs/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/learning-record-store-lrs"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/learning-record-store-lrs/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/learning-record-store-lrs/versions/2"
+      },
+      "gs:contentDigest": "135e98e4ba504dcb0047e82f7e8fb5b117d48e66698ffc369c1fb4dc6f8b9ae0",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/learning-sciences/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/learning-sciences"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/learning-sciences/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/learning-sciences/versions/2"
+      },
+      "gs:contentDigest": "68d61c48bd5991689cc975b7df8c428b417004ec453e8ada1fb0caeb321b85f2",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/learning-strategies/versions/1",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/learning-strategies"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "gs:revisionNumber": {
+        "@value": 1,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/learning-strategies/versions/1"
+      },
+      "gs:contentDigest": "555958063e4d9bb223167d8a95bf47c81a29b1db49f993b5be26af83e5927c27",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/learning-trajectories/versions/1",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/learning-trajectories"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "gs:revisionNumber": {
+        "@value": 1,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/learning-trajectories/versions/1"
+      },
+      "gs:contentDigest": "582da9fb4f0ceef1ce257916c5222970f2ebc0dc0cfd7d17f1bd51518842354f",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/machine-learning/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/machine-learning"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/machine-learning/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/machine-learning/versions/2"
+      },
+      "gs:contentDigest": "cd8a9deb3a346a79f45d3580e2787bed1b920d161028a1a62ab39e5aaff1a44f",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/mastery-learning/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/mastery-learning"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/mastery-learning/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/mastery-learning/versions/2"
+      },
+      "gs:contentDigest": "a54b0709d8ac29291ea80829f9fa0e8b0e02c636d6b593b7f83905856df5a8a3",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/media-literacy/versions/1",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/media-literacy"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "gs:revisionNumber": {
+        "@value": 1,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/media-literacy/versions/1"
+      },
+      "gs:contentDigest": "29c068535891f527d6485a46f62d5abf7432421491beca6b3dbc68bd70ba4e0b",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/motivation/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/motivation"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/motivation/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/motivation/versions/2"
+      },
+      "gs:contentDigest": "b2a5d4ddabd4cec89fd26f9c43ae652715874d51a914d75c18f3b569b56dd3bc",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/natural-language-processing/versions/1",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/natural-language-processing"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "gs:revisionNumber": {
+        "@value": 1,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/natural-language-processing/versions/1"
+      },
+      "gs:contentDigest": "19c93700d1e5f52d6a69b080f785da6fdd2e18b222d640e5e5357fe005b03574",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/online-learning-modality/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/online-learning-modality"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/online-learning-modality/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/online-learning-modality/versions/2"
+      },
+      "gs:contentDigest": "86eb7f90be2f0ee38a44ccd60ae939c74c1b910bcd5a91f251a9f47cd8011db8",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/pedagogy/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/pedagogy"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/pedagogy/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/pedagogy/versions/2"
+      },
+      "gs:contentDigest": "5ef1eefb6d7c6250fd1c3edf9d57f349bdf81877fc5a89399f89895ce014ce92",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/performance-based-assessment/versions/1",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/performance-based-assessment"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "gs:revisionNumber": {
+        "@value": 1,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/performance-based-assessment/versions/1"
+      },
+      "gs:contentDigest": "f2e998facce1b716c9dbf8a58a0db7982179f3b76a74569fc66294c9f4d9bbb8",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/personalization/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/personalization"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/personalization/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/personalization/versions/2"
+      },
+      "gs:contentDigest": "afb6c140afa37ef348a71c6460542da308b66e7c12ea26448a8170397f653d1c",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/remote-learning/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/remote-learning"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/remote-learning/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/remote-learning/versions/2"
+      },
+      "gs:contentDigest": "5d93fe71582b2bc86df74178e5546ef6b1328853cfca1d9d6230fcaf179c687f",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/self-regulated-learning/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/self-regulated-learning"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/self-regulated-learning/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/self-regulated-learning/versions/2"
+      },
+      "gs:contentDigest": "462a7b34030bac0942a9411aa24025da89261e13cafb341610ae5f94e2b303a6",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/simulation/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/simulation"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/simulation/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/simulation/versions/2"
+      },
+      "gs:contentDigest": "2c929419d6016f2334efec773c1c0b4190e162c47652a1d8938585ab3eda61fb",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/synchronous-learning/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/synchronous-learning"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/synchronous-learning/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/synchronous-learning/versions/2"
+      },
+      "gs:contentDigest": "f417837b430416e277ea493446b0c5689615c49d447466432df70003fa8ea6d5",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/technological-literacy/versions/1",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/technological-literacy"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "gs:revisionNumber": {
+        "@value": 1,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/technological-literacy/versions/1"
+      },
+      "gs:contentDigest": "71fb9d3b2e6ce9e3987196da0b13e7a60938abba734d6fc863f2b10dd85b82ae",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/technology-integration/versions/1",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/technology-integration"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "gs:revisionNumber": {
+        "@value": 1,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/technology-integration/versions/1"
+      },
+      "gs:contentDigest": "8a50a2867a9e6c2bd09b2480ee1ac7dcefa77a97dc6b4b425a664febaf8fbfe1",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/transfer-of-training/versions/1",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/transfer-of-training"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "gs:revisionNumber": {
+        "@value": 1,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/transfer-of-training/versions/1"
+      },
+      "gs:contentDigest": "08b39d069ef19e84228c4d81fb3733221dd629d84e887756159fef27f282e57a",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/unesco-curriculum/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/unesco-curriculum"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/unesco-curriculum/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/2"
+      },
+      "gs:contentDigest": "3511a9b533e45b0a85a80ed00f417462599471256ac2254164f560f47db3d9de",
+      "gs:publicationVersion": "v0.0.90"
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/unesco-educational-evaluation/versions/2",
+      "@type": "prov:Entity",
+      "dcterms:isVersionOf": {
+        "@id": "https://id.i2idl.org/concepts/unesco-educational-evaluation"
+      },
+      "prov:wasDerivedFrom": {
+        "@id": "https://id.i2idl.org/releases/v0.0.90"
+      },
+      "prov:wasRevisionOf": {
+        "@id": "https://id.i2idl.org/concepts/unesco-educational-evaluation/versions/1"
+      },
+      "gs:revisionNumber": {
+        "@value": 2,
+        "@type": "xsd:integer"
+      },
+      "gs:versionGraph": {
+        "@id": "https://id.i2idl.org/graphs/concepts/unesco-educational-evaluation/versions/2"
+      },
+      "gs:contentDigest": "c8e9817475b9b175e781d0994ece3fb3544a59c32430f6fddc889e2a430cf6ef",
+      "gs:publicationVersion": "v0.0.90"
+    }
+  ]
+}

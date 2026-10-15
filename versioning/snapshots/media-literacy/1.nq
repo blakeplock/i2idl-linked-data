@@ -1,0 +1,24 @@
+<https://id.i2idl.org/collections/field/education> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/media-literacy> <https://id.i2idl.org/graphs/concepts/media-literacy/versions/1> .
+<https://id.i2idl.org/collections/type/concept> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/media-literacy> <https://id.i2idl.org/graphs/concepts/media-literacy/versions/1> .
+<https://id.i2idl.org/concepts/media-literacy> <http://purl.org/dc/terms/identifier> "media-literacy" <https://id.i2idl.org/graphs/concepts/media-literacy/versions/1> .
+<https://id.i2idl.org/concepts/media-literacy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> <https://id.i2idl.org/graphs/concepts/media-literacy/versions/1> .
+<https://id.i2idl.org/concepts/media-literacy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <https://id.i2idl.org/graphs/concepts/media-literacy/versions/1> .
+<https://id.i2idl.org/concepts/media-literacy> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/media-literacy/versions/1> .
+<https://id.i2idl.org/concepts/media-literacy> <http://www.w3.org/2004/02/skos/core#prefLabel> "Media Literacy" <https://id.i2idl.org/graphs/concepts/media-literacy/versions/1> .
+<https://id.i2idl.org/concepts/media-literacy> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/digital-learning-materials> <https://id.i2idl.org/graphs/concepts/media-literacy/versions/1> .
+<https://id.i2idl.org/concepts/media-literacy> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/digital-literacies> <https://id.i2idl.org/graphs/concepts/media-literacy/versions/1> .
+<https://id.i2idl.org/concepts/media-literacy> <https://glossarystudio.app/ns/activeDefinition> <https://id.i2idl.org/definitions/media-literacy> <https://id.i2idl.org/graphs/concepts/media-literacy/versions/1> .
+<https://id.i2idl.org/concepts/media-literacy> <https://glossarystudio.app/ns/editorialExplanation> "Distinguishes critical engagement with media messages from digital-tool competence." <https://id.i2idl.org/graphs/concepts/media-literacy/versions/1> .
+<https://id.i2idl.org/concepts/media-literacy> <https://glossarystudio.app/ns/fieldCollection> <https://id.i2idl.org/collections/field/education> <https://id.i2idl.org/graphs/concepts/media-literacy/versions/1> .
+<https://id.i2idl.org/concepts/media-literacy> <https://glossarystudio.app/ns/typeCollection> <https://id.i2idl.org/collections/type/concept> <https://id.i2idl.org/graphs/concepts/media-literacy/versions/1> .
+<https://id.i2idl.org/definitions/media-literacy> <http://purl.org/dc/terms/description> "ERIC scope note: The ability to communicate competently in all media forms, print and electronic, as well as to access, understand, analyze and evaluate the images, words, and sounds that make up mass media messages" <https://id.i2idl.org/graphs/concepts/media-literacy/versions/1> .
+<https://id.i2idl.org/definitions/media-literacy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Definition> <https://id.i2idl.org/graphs/concepts/media-literacy/versions/1> .
+<https://id.i2idl.org/definitions/media-literacy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "The ability to access, interpret, evaluate, and create messages across different forms of media." <https://id.i2idl.org/graphs/concepts/media-literacy/versions/1> .
+<https://id.i2idl.org/definitions/media-literacy> <https://glossarystudio.app/ns/evidence> _:c14n0 <https://id.i2idl.org/graphs/concepts/media-literacy/versions/1> .
+<https://id.i2idl.org/sources/eric-thesaurus-2025> <http://purl.org/dc/terms/title> "ERIC Thesaurus (2025)" <https://id.i2idl.org/graphs/concepts/media-literacy/versions/1> .
+_:c14n0 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/eric-thesaurus-2025> <https://id.i2idl.org/graphs/concepts/media-literacy/versions/1> .
+_:c14n0 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/eric-thesaurus-2025> <https://id.i2idl.org/graphs/concepts/media-literacy/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/citationDetail> "ERIC Thesaurus 2025 descriptor: Media Literacy" <https://id.i2idl.org/graphs/concepts/media-literacy/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/evidenceRelation> "supporting" <https://id.i2idl.org/graphs/concepts/media-literacy/versions/1> .
+_:c14n0 <https://glossarystudio.app/ns/sourceLabel> "ERIC Thesaurus (2025)" <https://id.i2idl.org/graphs/concepts/media-literacy/versions/1> .
+_:c14n0 <https://schema.org/url> "https://eric.ed.gov/?ti=all" <https://id.i2idl.org/graphs/concepts/media-literacy/versions/1> .
