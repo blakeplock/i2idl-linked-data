@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "gs": "https://glossarystudio.app/ns/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": []
+}
