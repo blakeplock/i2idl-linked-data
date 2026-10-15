@@ -1,0 +1,84 @@
+<https://id.i2idl.org/collections/field/data-and-instrumentation> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/interoperability> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/collections/field/engineering-and-systems> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/interoperability> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/collections/field/standards-and-interoperability> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/interoperability> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/collections/type/concept> <http://www.w3.org/2004/02/skos/core#member> <https://id.i2idl.org/concepts/interoperability> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <http://purl.org/dc/terms/identifier> "interoperability" <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <http://www.w3.org/2004/02/skos/core#definition> "The ability of systems, services, and data to work together through shared interfaces, formats, semantics, and expectations." <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <http://www.w3.org/2004/02/skos/core#narrower> <https://id.i2idl.org/concepts/semantic-interoperability> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <http://www.w3.org/2004/02/skos/core#prefLabel> "Interoperability" <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/data-silo> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/digital-engineering-for-learning-systems> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/distributed-simulation> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/enterprise-learner-record> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/experience-api-xapi> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/ieee-1484-11-1-2022-content-object-communication> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/ieee-1484-11-2-2020-ecmascript-runtime-api> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/ieee-1484-13-3-2014-mpeg21-mapping> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/ieee-1484-13-4-2016-ims-content-packaging-mapping> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/ieee-1484-13-6-2015-oai-ore-mapping> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/ieee-1484-2-2024-learning-employment-record-ecosystems> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/ieee-1484-20-2-2022-defining-competencies> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/ieee-1484-20-3-2022-shareable-competency-definitions> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/ieee-1589-2020-ar-learning-experience-model> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/ieee-learning-technology-standards-committee-ltsc> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/learning-metadata> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/open-standards-and-architecture-for-interoperability> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/scalability> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/standards-compliance> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/system-of-systems> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/technology-integration> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <http://www.w3.org/2004/02/skos/core#related> <https://id.i2idl.org/concepts/vendor-lock-in> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <https://glossarystudio.app/ns/activeDefinition> <https://id.i2idl.org/definitions/interoperability-1> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <https://glossarystudio.app/ns/editorialExplanation> "Interoperability reduces dependence on one platform and allows learning data to retain value across an ecosystem." <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <https://glossarystudio.app/ns/fieldCollection> <https://id.i2idl.org/collections/field/standards-and-interoperability> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <https://glossarystudio.app/ns/typeCollection> <https://id.i2idl.org/collections/type/concept> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/concepts/interoperability> <https://schema.org/inDefinedTermSet> <https://id.i2idl.org/scheme> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/definitions/interoperability-1> <http://purl.org/dc/terms/creator> <https://www.i2idl.org/> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/definitions/interoperability-1> <http://purl.org/dc/terms/language> "en" <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/definitions/interoperability-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/definitions/interoperability-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Definition> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/definitions/interoperability-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "The ability of systems, services, and data to work together through shared interfaces, formats, semantics, and expectations." <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/definitions/interoperability-1> <https://glossarystudio.app/ns/definitionSequence> "1"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/definitions/interoperability-1> <https://glossarystudio.app/ns/editorialStatus> "approved" <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/definitions/interoperability-1> <https://glossarystudio.app/ns/evidence> _:c14n0 <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/definitions/interoperability-1> <https://glossarystudio.app/ns/evidence> _:c14n1 <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/definitions/interoperability-1> <https://glossarystudio.app/ns/evidence> _:c14n2 <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/definitions/interoperability-1> <https://glossarystudio.app/ns/evidence> _:c14n3 <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/sources/lebok> <http://purl.org/dc/terms/title> "Learning Engineering Body of Knowledge (LeBOK)" <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/sources/modernizing-learning> <http://purl.org/dc/terms/title> "Modernizing Learning: Building the Future Learning Ecosystem" <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+<https://id.i2idl.org/sources/world-bank-edtech-approach> <http://purl.org/dc/terms/title> "Reimagining Human Connections: Technology and Innovation in Education at the World Bank" <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+_:c14n0 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/modernizing-learning> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+_:c14n0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+_:c14n0 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/modernizing-learning> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+_:c14n0 <https://glossarystudio.app/ns/citationDetail> "Ch. 6, pp. 107-127" <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+_:c14n0 <https://glossarystudio.app/ns/evidenceRelation> "supporting" <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+_:c14n0 <https://glossarystudio.app/ns/host> "ERIC" <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+_:c14n0 <https://glossarystudio.app/ns/pdfPage> "117"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+_:c14n0 <https://glossarystudio.app/ns/pdfPrintedPage> "107"^^<http://www.w3.org/2001/XMLSchema#integer> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+_:c14n0 <https://glossarystudio.app/ns/sourceLabel> "Modernizing Learning" <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+_:c14n0 <https://schema.org/url> "https://files.eric.ed.gov/fulltext/ED603521.pdf#page=117" <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+_:c14n1 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/lebok> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+_:c14n1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+_:c14n1 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/lebok> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+_:c14n1 <https://glossarystudio.app/ns/citationDetail> "7.1.5 Interoperability and Standards Compliance" <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+_:c14n1 <https://glossarystudio.app/ns/evidenceRelation> "direct" <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+_:c14n1 <https://glossarystudio.app/ns/sourceLabel> "LeBOK" <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+_:c14n1 <https://schema.org/url> "https://lebok.wiki/en/knowledge-area-7-data-instrumentation/7-1-data-instrumentation-in-the-learning-engineering-process/7-1-5-interoperability-and-standards-compliance" <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+_:c14n2 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/world-bank-edtech-approach> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+_:c14n2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+_:c14n2 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/world-bank-edtech-approach> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+_:c14n2 <https://glossarystudio.app/ns/citationDetail> "p. 23 — Roadmap: Open Standards and Architecture for Interoperability" <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+_:c14n2 <https://glossarystudio.app/ns/evidenceRelation> "direct" <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+_:c14n2 <https://glossarystudio.app/ns/sourceLabel> "World Bank EdTech Approach" <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+_:c14n2 <https://schema.org/url> "https://documents1.worldbank.org/curated/en/829491606860379513/pdf/Reimagining-Human-Connections-Technology-and-Innovation-in-Education-at-the-World-Bank.pdf#page=23" <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+_:c14n3 <http://purl.org/dc/terms/source> <https://id.i2idl.org/sources/world-bank-edtech-approach> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+_:c14n3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://glossarystudio.app/ns/Evidence> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+_:c14n3 <http://www.w3.org/ns/prov#wasDerivedFrom> <https://id.i2idl.org/sources/world-bank-edtech-approach> <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+_:c14n3 <https://glossarystudio.app/ns/citationDetail> "p. 16 — Be Data-Driven: interoperability for efficient, appropriate, and safe data sharing" <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+_:c14n3 <https://glossarystudio.app/ns/evidenceRelation> "direct" <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+_:c14n3 <https://glossarystudio.app/ns/sourceLabel> "World Bank EdTech Approach" <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
+_:c14n3 <https://schema.org/url> "https://documents1.worldbank.org/curated/en/829491606860379513/pdf/Reimagining-Human-Connections-Technology-and-Innovation-in-Education-at-the-World-Bank.pdf#page=16" <https://id.i2idl.org/graphs/concepts/interoperability/versions/2> .
