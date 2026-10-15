@@ -1,6 +1,5 @@
-
 {
-  "description": "Documented dependency license reviews for I2IDL Linked Data. A review does not automatically constitute approval of a policy exception.",
+  "description": "Dependency license review and approval records. Undeclared or ambiguous lockfile licenses require explicit evidence and approval.",
   "reviews": [
     {
       "package": "negotiate",
@@ -9,8 +8,8 @@
       "declaredLicense": "FreeBSD",
       "copyright": "Copyright 2010 Gary Court",
       "source": "node_modules/negotiate/negotiate.js",
-      "status": "reviewed-pending-approval",
-      "notes": "Legacy package metadata uses a licenses array. Source header confirms the BSD-2-Clause license conditions and disclaimer. Transitive dependency of @comunica/actor-init-query."
+      "status": "approved-exception",
+      "notes": "Legacy package metadata uses a licenses array. Source header confirms the BSD-2-Clause license conditions and disclaimer. Transitive dependency of @comunica/actor-init-query. Approved under the I2IDL permissive, non-copyleft dependency license policy."
     }
   ]
 }
