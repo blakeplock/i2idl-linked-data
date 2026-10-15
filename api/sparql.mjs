@@ -809,12 +809,52 @@ WHERE {
     summary { cursor:pointer; font-weight:700; }
     pre { overflow-x:auto; white-space:pre-wrap; word-break:break-word; background:#f3f1eb; border-radius:8px; padding:14px; margin-bottom:0; }
     a { color:#3b174b; }
+
+    /* BEGIN I2IDL SPARQL HOUSE STYLE */
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Syne+Mono&display=swap');
+    :root{color-scheme:light;--i2-purple:#3b174b;--i2-deep:#24102d;--i2-ink:#151219;--i2-muted:#665f69;--i2-paper:#fbfaf8;--i2-lilac:#c9b9cf;--i2-purple-soft:#efe8f2;--i2-line:#ded8e1;--i2-orange:#ff9f1c}
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font:16px/1.55 Lato,Arial,sans-serif;background:var(--i2-paper);color:var(--i2-ink)}
+    .i2-sparql-hero{position:relative;overflow:hidden;background:var(--i2-purple);color:#fff;padding:clamp(32px,4.5vw,56px) 0 clamp(28px,4vw,48px);border-bottom:1px solid rgba(255,255,255,.16)}
+    .i2-sparql-hero::after{content:"";position:absolute;width:520px;height:520px;right:-180px;top:-260px;border:1px solid rgba(255,255,255,.16);border-radius:50%;box-shadow:0 0 0 70px rgba(255,255,255,.035),0 0 0 140px rgba(255,255,255,.025);pointer-events:none}
+    .i2-sparql-wrap{position:relative;z-index:1;max-width:1180px;margin:auto;padding:0 24px}
+    .i2-sparql-eyebrow{font:12px 'Syne Mono',monospace;letter-spacing:.055em;text-transform:uppercase;color:rgba(255,255,255,.78);margin-bottom:11px}
+    .i2-sparql-hero h1{font-size:clamp(40px,6vw,76px);line-height:.92;letter-spacing:-.055em;font-weight:700;max-width:980px;margin:0 0 17px;color:transparent;-webkit-text-stroke:1.5px white;paint-order:stroke fill}
+    @supports not (-webkit-text-stroke:1px white){.i2-sparql-hero h1{color:white;text-shadow:-1px -1px 0 var(--i2-purple),1px -1px 0 var(--i2-purple),-1px 1px 0 var(--i2-purple),1px 1px 0 var(--i2-purple)}}
+    .i2-sparql-hero .meta{font-size:clamp(17px,1.65vw,21px);line-height:1.45;color:rgba(255,255,255,.84);margin:0;max-width:800px}
+    .i2-sparql-links{display:flex;flex-wrap:wrap;gap:8px 12px;margin-top:22px}
+    .i2-sparql-links a{font:11px 'Syne Mono',monospace;text-transform:uppercase;letter-spacing:.045em;color:rgba(255,255,255,.88);border:1px solid rgba(255,255,255,.22);padding:8px 11px;border-radius:999px;text-decoration:none;background:rgba(255,255,255,.055)}
+    .i2-sparql-links a:hover{background:var(--i2-orange);color:var(--i2-deep);border-color:var(--i2-orange)}
+    main{max-width:1180px;padding:26px 24px 76px}
+    .notice{background:#fff0dc;border:1px solid #edcb91;border-left:4px solid var(--i2-orange);border-radius:10px;color:#56402c;padding:16px 18px;margin:0 0 20px}
+    form{border:1px solid var(--i2-line);border-radius:18px;padding:24px;background:white;box-shadow:0 18px 45px rgba(36,16,45,.1)}
+    label{font-weight:700;color:var(--i2-deep);font-size:15px}
+    textarea{background:white;color:var(--i2-ink);border:1px solid var(--i2-line);border-radius:10px;font:14px/1.65 'Syne Mono',ui-monospace,monospace;min-height:310px;max-width:100%}
+    textarea:focus-visible,button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--i2-orange);outline-offset:3px;box-shadow:0 0 0 5px rgba(255,159,28,.28)}
+    button{font:700 15px Lato,Arial,sans-serif;min-height:48px;border:1px solid var(--i2-deep);border-radius:10px;padding:11px 18px;background:var(--i2-deep);color:white}
+    button:hover{background:var(--i2-orange);border-color:var(--i2-orange);color:var(--i2-deep)}
+    .examples{margin-top:22px;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    details{border:1px solid var(--i2-line);border-radius:14px;background:white;padding:16px 18px;min-width:0}
+    summary{color:var(--i2-purple);cursor:pointer}
+    details[open]{border-color:var(--i2-lilac);background:var(--i2-purple-soft)}
+    pre{background:var(--i2-deep);color:#fff;white-space:pre-wrap;overflow-wrap:anywhere;border-radius:10px;font:12px/1.65 'Syne Mono',ui-monospace,monospace}
+    a{color:var(--i2-purple);text-underline-offset:3px}
+    @media(max-width:720px){.examples{grid-template-columns:1fr}.i2-sparql-hero{padding:28px 0 26px}.i2-sparql-hero h1{font-size:clamp(38px,12vw,56px)}main,.i2-sparql-wrap{padding-left:16px;padding-right:16px}form{padding:16px}textarea{min-height:250px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+    /* END I2IDL SPARQL HOUSE STYLE */
   </style>
 </head>
 <body>
+  <header class="i2-sparql-hero">
+    <div class="i2-sparql-wrap">
+      <div class="i2-sparql-eyebrow">I2IDL / Developer resources</div>
+      <h1>I2IDL SPARQL Endpoint</h1>
+      <p class="meta">Read-only SPARQL access to the I2IDL Glossary of Digital Learning.</p>
+      <div class="i2-sparql-links"><a href="/developers">Developer Portal</a><a href="/explore">Graph Explorer</a><a href="/api/docs">REST API Docs</a><a href="https://www.i2idl.org/glossary">Glossary</a></div>
+    </div>
+  </header>
   <main>
-    <h1>I2IDL SPARQL Endpoint</h1>
-    <p class="meta">Read-only SPARQL access to the I2IDL Glossary of Digital Learning.</p>
     <div class="notice">Supported query forms: SELECT, ASK, CONSTRUCT, and DESCRIBE. SPARQL Update, SERVICE, and remote-dataset clauses are disabled. Queries are subject to execution, result, request-size, and rate limits.</div>
 
     <form method="get" action="/sparql">
