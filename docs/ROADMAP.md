@@ -109,7 +109,7 @@ Provides:
 - separation of hierarchical and associative relationships
 - 397 of 397 concepts participating in the semantic graph
 - 31 broader/narrower relationship pairs
-- 644 related relationship pairs
+- 742 related relationship pairs (v0.0.88 baseline; the v0.0.80 milestone originally had fewer)
 - 100% internal semantic relationship coverage
 - permanent relationship-coverage reporting
 - human-readable concept neighborhoods
@@ -127,6 +127,14 @@ Provides:
 - human-readable collection exploration
 - machine-readable collection membership
 - separation of curated pathways from semantic hierarchy
+
+## Recently completed platform capabilities
+
+- REST API v1, interactive REST documentation, and OpenAPI 3.1 specification.
+- Public read-only MCP endpoint, registry manifest, and AI integration documentation.
+- Developer Portal unifying public machine and human interfaces.
+- Coordinated I2IDL house-style updates for Graph Explorer, Developer Portal, REST documentation, SPARQL query page, and Linked Data home.
+- Graph Explorer daily starting-concept rotation and analytics adjustment to avoid counting automatic selection as deliberate interaction.
 
 ## Next development priorities
 
@@ -156,27 +164,11 @@ Internal semantic relationships and external vocabulary mappings should remain d
 
 The objective is to make the I2IDL glossary a semantic bridge across learning-technology ecosystems while avoiding overstated equivalence.
 
-### 2. Add an ordinary-user API/query layer
+### 2. Maintain REST API v1 and MCP integration
 
-SPARQL remains the canonical graph-query interface, but most application developers and ordinary users will not write SPARQL.
+**Implemented since v0.0.88; ongoing maintenance.** The public read-only REST API v1 provides concept search, lookup, relationships, version history, sources, collections, and AI-oriented context bundles. The interactive documentation is at `https://id.i2idl.org/api/docs`. The stateless read-only MCP service at `https://id.i2idl.org/mcp` exposes four bounded semantic tools for compatible AI clients. Both are projections of the canonical graph, not independent sources of truth.
 
-A lightweight API layer could expose routes such as:
-
-```text
-/api/concepts?q=competency
-/api/concepts/data-privacy
-/api/related/data-privacy
-```
-
-This would make the glossary easier to integrate into:
-
-- applications
-- research tools
-- RAG systems
-- AI agents
-- future Glossary Studio namespaces
-
-The API should remain a projection of the same canonical graph rather than creating a second source of truth.
+Future work: test API/MCP compatibility, monitor operational limits, evaluate new integrations, and update documentation as protocols evolve.
 
 ### 3. Continue improving human-readable provenance
 

@@ -2,7 +2,7 @@
 
 Open, interoperable Linked Data publication and research services for the [I2IDL Glossary of Digital Learning](https://www.i2idl.org/glossary). The project combines a curated semantic reference graph with browser-based exploration and experimental scholarly discovery.
 
-> **Versioning:** The GitHub release tag, the glossary's `gs:publicationVersion`, and the Squarespace embed version must be verified independently before publication. See the [release checklist](docs/RELEASE-CHECKLIST.md). The npm package version is not the glossary publication version.
+> **Versioning:** I2IDL uses **one public release sequence** (`v0.0.88`, `v0.0.89`, …). Each release is classified **Content**, **Platform**, or **Combined**. The public release tag, `gs:publicationVersion`, and Squarespace displayed version are synchronized for each release, while concept revisions change only when concept-level assertions change. The npm package and MCP registry versions remain separate compatibility identifiers. See the [release policy](docs/PUBLICATION.md) and [release checklist](docs/RELEASE-CHECKLIST.md).
 
 ## Public resources
 
@@ -25,7 +25,7 @@ Open, interoperable Linked Data publication and research services for the [I2IDL
 - **Scholarly discovery:** Single-concept and two-to-five-concept OpenAlex searches with publication year, open-access, and citation ranking controls. Results remain **uncurated discovery candidates**, separate from I2IDL's assertions.
 - **Research export:** CSV and BibTeX downloads of displayed publications with DOI and selected concept identifiers.
 - **Public aggregate activity:** Daily pageviews, concept selections, successful research searches, and returned publication counts. These are not unique visitors or unique papers.
-- **Machine access:** JSON-LD and Turtle representations with content negotiation and bounded read-only SPARQL.
+- **Machine access:** Persistent identifiers, JSON-LD and Turtle, read-only REST API v1, bounded SPARQL, and four read-only MCP tools for compatible AI clients.
 
 ## Quick start
 

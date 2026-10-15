@@ -11,6 +11,10 @@ The technical documentation is organized by topic. Existing detailed explanation
 - **[Release checklist](RELEASE-CHECKLIST.md)** — Validation, synchronization, production verification and GitHub tags.
 - **[Graph Explorer](GRAPH-EXPLORER.md)** — Interactive browser, concept links, and research tools.
 - **[Public endpoints](API-REFERENCE.md)** — Canonical URIs, representations, and content negotiation.
+- **[REST API v1](REST-API-V1.md)** — Search, lookup, pagination, relationships, evidence, version history, and AI context. Interactive reference: https://id.i2idl.org/api/docs.
+- **[MCP registry publishing](MCP-REGISTRY-PUBLISHING.md)** — Registration and version-independent compatibility metadata.
+- **[MCP production readiness](MCP-PRODUCTION-READINESS.md)** — Security, testing, deployment, and operational review.
+- **[Developer Portal](https://id.i2idl.org/developers)** — Public entry point to graph exploration, REST, SPARQL, Linked Data, and MCP.
 - **[MCP Quick Start](MCP-QUICKSTART.md)** — Connect an AI assistant to the public read-only MCP service.
 - **[AI Integration Guide](MCP-AI-INTEGRATION.md)** — Grounded concept lookup, semantic relationships, and citation handling.
 - **[SPARQL](SPARQL.md)** — Queries, supported operations, examples, and limits.
