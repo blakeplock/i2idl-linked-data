@@ -6,5 +6,5 @@ function emit(type,concept){const key=type+':'+(concept||'');const now=Date.now(
   fetch('/api/activity',{method:'POST',headers:{'Content-Type':'application/json'},body,keepalive:true,credentials:'same-origin'}).catch(()=>{});
 }
 emit('page_view');
-document.addEventListener('i2idl:concept-selected',event=>{const id=event.detail?.id;if(typeof id==='string'&&/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id))emit('concept_selected',id);});
+document.addEventListener('i2idl:concept-selected',event=>{if(event.detail?.userSelected===false)return;const id=event.detail?.id;if(typeof id==='string'&&/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id))emit('concept_selected',id);});
 })();
