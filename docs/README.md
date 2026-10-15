@@ -18,6 +18,7 @@ The technical documentation is organized by topic. Existing detailed explanation
 - **[MCP Quick Start](MCP-QUICKSTART.md)** — Connect an AI assistant to the public read-only MCP service.
 - **[AI Integration Guide](MCP-AI-INTEGRATION.md)** — Grounded concept lookup, semantic relationships, and citation handling.
 - **[SPARQL](SPARQL.md)** — Queries, supported operations, examples, and limits.
+- **[Dependency license policy](DEPENDENCY-LICENSE-POLICY.md)** — Permissive licenses, evidence reviews, and CI enforcement.
 - **[Security](SECURITY.md)** — Threat boundaries and service hardening.
 - **[Validation](VALIDATION.md)** — Validation scripts, tests, and verification examples.
 - **[Publication](PUBLICATION.md)** — Local development and release workflow.

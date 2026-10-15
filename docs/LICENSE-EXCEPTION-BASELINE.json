@@ -1,25 +1,4 @@
 {
-  "description": "Recorded from v0.0.86 dependency inventory and extended for the v0.0.87 concept-versioning baseline. NOT APPROVED LICENSE EXCEPTIONS. Every unique package/version/license remains pending review.",
-  "unreviewed": [
-    "@rubensworks/saxes|6.0.1|ISC",
-    "cliui|8.0.1|ISC",
-    "domelementtype|2.3.0|BSD-2-Clause",
-    "domhandler|5.0.3|BSD-2-Clause",
-    "domutils|3.2.2|BSD-2-Clause",
-    "entities|4.5.0|BSD-2-Clause",
-    "entities|7.0.1|BSD-2-Clause",
-    "get-caller-file|2.0.5|ISC",
-    "ieee754|1.2.1|BSD-3-Clause",
-    "inherits|2.0.4|ISC",
-    "lru-cache|10.4.3|ISC",
-    "lru-cache|11.5.3|BlueOak-1.0.0",
-    "minimalistic-assert|1.0.1|ISC",
-    "negotiate|1.0.1|UNDECLARED",
-    "rdf-canonize|5.0.0|BSD-3-Clause",
-    "semver|7.8.5|ISC",
-    "spark-md5|3.0.2|(WTFPL OR MIT)",
-    "webidl-conversions|3.0.1|BSD-2-Clause",
-    "y18n|5.0.8|ISC",
-    "yargs-parser|21.1.1|ISC"
-  ]
+  "description": "Current unapproved dependency-license exception baseline. Empty after permissive-license policy review; new unapproved packages fail CI.",
+  "unreviewed": []
 }
