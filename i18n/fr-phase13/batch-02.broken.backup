@@ -1,0 +1,96 @@
+{
+  "language": "fr",
+  "status": "draft-only",
+  "batch": 2,
+  "concepts": [
+    {
+      "id": "ai-enhanced-pedagogical-innovation",
+      "canonicalUri": "https://id.i2idl.org/concepts/ai-enhanced-pedagogical-innovation",
+      "en": {
+        "prefLabel": "AI-enhanced pedagogical innovation",
+        "definition": "The critical and exploratory use of AI to develop or transform learning scenarios, pedagogical approaches, assessment, and student-centred learning while maintaining human-centred educational principles."
+      },
+      "fr": {
+        "prefLabel": "Innovation pédagogique enrichie par l’IA",
+        "definition": "Utilisation critique et exploratoire de l’IA pour élaborer ou transformer des situations d’apprentissage, des approches pédagogiques, des modalités d’évaluation et des formes d’apprentissage centrées sur les élèves, tout en préservant les principes d’une éducation centrée sur l’humain.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": "Vérifier la cohérence avec les termes employés dans le Référentiel de compétences en IA pour les enseignants de l’UNESCO."
+    },
+    {
+      "id": "ai-pedagogy-integration",
+      "canonicalUri": "https://id.i2idl.org/concepts/ai-pedagogy-integration",
+      "en": {
+        "prefLabel": "AI–pedagogy integration",
+        "definition": "The purposeful integration of AI into student-centred learning design and facilitation to support engagement, differentiated learning, teacher–student interaction, critical thinking, and problem-solving."
+      },
+      "fr": {
+        "prefLabel": "Intégration de l’IA à la pédagogie",
+        "definition": "Intégration intentionnelle de l’IA à la conception et à l’accompagnement d’apprentissages centrés sur les élèves afin de favoriser l’engagement, la différenciation des apprentissages, les interactions entre enseignants et élèves, la pensée critique et la résolution de problèmes.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": "Harmoniser avec « Pédagogie de l’IA » tout en préservant la distinction entre domaine pédagogique et démarche d’intégration."
+    },
+    {
+      "id": "anonymous-group",
+      "canonicalUri": "https://id.i2idl.org/concepts/anonymous-group",
+      "en": {
+        "prefLabel": "Anonymous Group",
+        "definition": "An xAPI Group without its own Inverse Functional Identifier, represented through the Agents listed as its members."
+      },
+      "fr": {
+        "prefLabel": "Groupe anonyme",
+        "definition": "Groupe xAPI ne possédant pas son propre identifiant fonctionnel inverse et représenté par les agents qui figurent parmi ses membres.",
+        "altLabels": [
+          "Anonymous Group"
+        ]
+      },
+      "status": "draft",
+      "reviewNotes": "Terme xAPI normatif : conserver la correspondance avec « Inverse Functional Identifier », « Group » et « Agent »."
+    },
+    {
+      "id": "artificial-intelligence-ai",
+      "canonicalUri": "https://id.i2idl.org/concepts/artificial-intelligence-ai",
+      "en": {
+        "prefLabel": "Artificial intelligence (AI)",
+        "definition": "A broad class of computational techniques used to perform tasks associated with perception, prediction, classification, generation, decision support, or other forms of intelligent behavior."
+      },
+      "fr": {
+        "prefLabel": "Intelligence artificielle (IA)",
+        "definition": "Ensemble étendu de techniques informatiques utilisées pour accomplir des tâches relevant de la perception, de la prédiction, de la classification, de la génération, de l’aide à la décision ou d’autres formes de comportement intelligent.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": ""
+    },
+    {
+      "id": "assessment",
+      "canonicalUri": "https://id.i2idl.org/concepts/assessment",
+      "en": {
+        "prefLabel": "Assessment",
+        "definition": "The collection and interpretation of evidence about knowledge, skill, performance, learner state, or learning outcomes."
+      },
+      "fr": {
+        "prefLabel": "Évaluation",
+        "definition": "Collecte et interprétation d’éléments probants concernant les connaissances, les compétences, les performances, l’état d’un apprenant ou les résultats d’apprentissage.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": "Vérifier la distinction terminologique entre évaluation des apprentissages, mesure et assessment selon le contexte."
+    },
+    {
+      "id": "asset-model",
+      "canonicalUri": "https://id.i2idl.org/concepts/asset-model",
+      "en": {
+        "prefLabel": "Asset model",
+        "definition": "An approach that begins with the capabilities and strengths a learner already possesses and focuses on adding new capabilities rather than primarily diagnosing deficits against group averages."
+      },
+      "fr": {
+        "prefLabel": "Modèle axé sur les forces",
+        "definition": "Approche qui part des capacités et des points forts qu’un apprenant possède déjà et vise à développer de nouvelles capacités plutôt qu’à diagnostiquer principalement des déficits par rapport aux moyennes d’un groupe.",
+        "altLabels": [
+          "Approche fondée sur les acquis"
+        ]
+      },

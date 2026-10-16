@@ -1,0 +1,390 @@
+{
+  "language": "fr",
+  "status": "draft-only",
+  "batch": 1,
+  "concepts": [
+    {
+      "id": "a-b-testing",
+      "canonicalUri": "https://id.i2idl.org/concepts/a-b-testing",
+      "en": {
+        "prefLabel": "A/B testing",
+        "definition": "A controlled comparison in which two versions of a learning experience, interface, message, or intervention are presented to different groups so their effects can be compared."
+      },
+      "fr": {
+        "prefLabel": "Test A/B",
+        "definition": "Comparaison contrôlée dans laquelle deux versions d’une expérience d’apprentissage, d’une interface, d’un message ou d’une intervention sont présentées à des groupes différents afin de comparer leurs effets.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": ""
+    },
+    {
+      "id": "about-resource",
+      "canonicalUri": "https://id.i2idl.org/concepts/about-resource",
+      "en": {
+        "prefLabel": "About Resource",
+        "definition": "The xAPI resource at /about that returns basic information about an LRS, including supported xAPI versions and optional extensions."
+      },
+      "fr": {
+        "prefLabel": "Ressource About",
+        "definition": "Ressource xAPI accessible à l’adresse /about qui renvoie des informations de base sur un Learning Record Store (LRS), notamment les versions de xAPI prises en charge et les extensions facultatives.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": "Conserver /about et le nom technique de la ressource ; vérifier le libellé français préféré."
+    },
+    {
+      "id": "accessibility",
+      "canonicalUri": "https://id.i2idl.org/concepts/accessibility",
+      "en": {
+        "prefLabel": "Accessibility",
+        "definition": "The practice of designing learning technologies, content, and interactions so people with a wide range of abilities can perceive, operate, understand, and use them."
+      },
+      "fr": {
+        "prefLabel": "Accessibilité",
+        "definition": "Pratique consistant à concevoir des technologies d’apprentissage, des contenus et des interactions de manière à ce que des personnes ayant des capacités diverses puissent les percevoir, les faire fonctionner, les comprendre et les utiliser.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": "La distinction technique entre « manipuler » (operate) et « utiliser » (use) mérite une vérification terminologique."
+    },
+    {
+      "id": "accessibility-and-inclusivity-testing",
+      "canonicalUri": "https://id.i2idl.org/concepts/accessibility-and-inclusivity-testing",
+      "en": {
+        "prefLabel": "Accessibility and inclusivity testing",
+        "definition": "Testing that checks whether a learning solution can be used by people with different abilities, access needs, contexts, and constraints."
+      },
+      "fr": {
+        "prefLabel": "Tests d’accessibilité et d’inclusivité",
+        "definition": "Tests visant à vérifier si une solution d’apprentissage peut être utilisée par des personnes ayant des capacités, des besoins d’accès, des contextes et des contraintes différents.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": ""
+    },
+    {
+      "id": "account-object",
+      "canonicalUri": "https://id.i2idl.org/concepts/account-object",
+      "en": {
+        "prefLabel": "Account Object",
+        "definition": "An xAPI identity structure that represents an Agent or Group through an account on an existing system using a home page for the account system and a unique account name."
+      },
+      "fr": {
+        "prefLabel": "Objet Account",
+        "definition": "Structure d’identité xAPI qui représente un Agent ou un Groupe au moyen d’un compte sur un système existant, en utilisant l’adresse de la page d’accueil du système de comptes et un nom de compte unique.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": "Conserver Account comme nom d’objet xAPI ; vérifier l’usage terminologique d’Agent et de Groupe dans la spécification."
+    },
+    {
+      "id": "acquire-ai-competency-level",
+      "canonicalUri": "https://id.i2idl.org/concepts/acquire-ai-competency-level",
+      "en": {
+        "prefLabel": "Acquire (AI competency level)",
+        "definition": "The foundational AI competency level in which teachers develop the essential knowledge, ethical awareness, and practical skills needed to evaluate, select, and use AI tools appropriately."
+      },
+      "fr": {
+        "prefLabel": "Acquérir (niveau de compétence en IA)",
+        "definition": "Niveau fondamental de compétence en intelligence artificielle dans lequel les enseignants développent les connaissances essentielles, la conscience des enjeux éthiques et les compétences pratiques nécessaires pour évaluer, sélectionner et utiliser les outils d’IA de manière appropriée.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": "Confirmer le libellé officiel du niveau dans la version française du cadre de compétences concerné."
+    },
+    {
+      "id": "activity",
+      "canonicalUri": "https://id.i2idl.org/concepts/activity",
+      "en": {
+        "prefLabel": "Activity",
+        "definition": "In xAPI, an Activity is something an Actor interacts with or experiences and that can serve as the object of a tracked Statement. Activities can represent instruction, performance, experiences, resources, events, or even physical or virtual objects."
+      },
+      "fr": {
+        "prefLabel": "Activité",
+        "definition": "Dans xAPI, une activité est un élément avec lequel un acteur interagit ou dont il fait l’expérience, et qui peut constituer l’objet d’une déclaration suivie. Les activités peuvent représenter un enseignement, une performance, des expériences, des ressources, des événements, voire des objets physiques ou virtuels.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": "Vérifier la capitalisation des termes de structure xAPI : Activity, Actor, Statement."
+    },
+    {
+      "id": "activity-definition",
+      "canonicalUri": "https://id.i2idl.org/concepts/activity-definition",
+      "en": {
+        "prefLabel": "Activity Definition",
+        "definition": "The optional metadata object within an xAPI Activity that can describe its human-readable name, description, type, more-information location, interaction details, and extensions."
+      },
+      "fr": {
+        "prefLabel": "Définition d’activité",
+        "definition": "Objet de métadonnées facultatif au sein d’une activité xAPI qui peut en décrire le nom lisible par une personne, la description, le type, l’emplacement d’informations complémentaires, les détails d’interaction et les extensions.",
+        "altLabels": [
+          "Activity Definition"
+        ]
+      },
+      "status": "draft",
+      "reviewNotes": "Terme de schéma xAPI Activity Definition ; vérifier si le libellé technique anglais doit être conservé comme variante."
+    },
+    {
+      "id": "activity-profile-resource",
+      "canonicalUri": "https://id.i2idl.org/concepts/activity-profile-resource",
+      "en": {
+        "prefLabel": "Activity Profile Resource",
+        "definition": "The xAPI resource at /activities/profile for storing and retrieving generic profile documents associated with an Activity."
+      },
+      "fr": {
+        "prefLabel": "Ressource de profil d’activité",
+        "definition": "Ressource xAPI accessible à l’adresse /activities/profile, destinée à stocker et à récupérer des documents de profil génériques associés à une activité.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": "Conserver le chemin /activities/profile sans traduction."
+    },
+    {
+      "id": "actor",
+      "canonicalUri": "https://id.i2idl.org/concepts/actor",
+      "en": {
+        "prefLabel": "Actor",
+        "definition": "The individual or group represented in an xAPI Statement as performing the action described by the Statement."
+      },
+      "fr": {
+        "prefLabel": "Acteur",
+        "definition": "Personne ou groupe représenté dans une déclaration xAPI comme accomplissant l’action décrite par cette déclaration.",
+        "altLabels": [
+          "Actor"
+        ]
+      },
+      "status": "draft",
+      "reviewNotes": "En xAPI, Actor est un terme structurel ; vérifier la préférence pour acteur versus Actor."
+    },
+    {
+      "id": "adaptive-hypermedia",
+      "canonicalUri": "https://id.i2idl.org/concepts/adaptive-hypermedia",
+      "en": {
+        "prefLabel": "Adaptive hypermedia",
+        "definition": "A hypermedia system that builds a model of the user and changes the information, links, or presentation shown to that user rather than presenting the same experience to everyone."
+      },
+      "fr": {
+        "prefLabel": "Hypermédia adaptatif",
+        "definition": "Système hypermédia qui construit un modèle de l’utilisateur et modifie les informations, les liens ou la présentation qui lui sont proposés, plutôt que d’offrir la même expérience à tout le monde.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": ""
+    },
+    {
+      "id": "adaptive-instructional-system",
+      "canonicalUri": "https://id.i2idl.org/concepts/adaptive-instructional-system",
+      "en": {
+        "prefLabel": "Adaptive instructional system",
+        "definition": "A learning system that changes content, sequencing, support, feedback, or difficulty in response to evidence about a learner or context."
+      },
+      "fr": {
+        "prefLabel": "Système pédagogique adaptatif",
+        "definition": "Système d’apprentissage qui modifie les contenus, leur séquencement, le soutien apporté, la rétroaction ou le niveau de difficulté en fonction d’informations concernant un apprenant ou le contexte.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": ""
+    },
+    {
+      "id": "administrative-data",
+      "canonicalUri": "https://id.i2idl.org/concepts/administrative-data",
+      "en": {
+        "prefLabel": "Administrative data",
+        "definition": "Data generated through the routine administration and management of an education system, commonly through education management information systems and related government records."
+      },
+      "fr": {
+        "prefLabel": "Données administratives",
+        "definition": "Données produites dans le cadre de l’administration et de la gestion courantes d’un système éducatif, généralement au moyen de systèmes d’information de gestion de l’éducation et de dossiers administratifs publics connexes.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": "Vérifier la terminologie des systèmes d’information de gestion de l’éducation dans les sources de référence francophones."
+    },
+    {
+      "id": "affective-computing",
+      "canonicalUri": "https://id.i2idl.org/concepts/affective-computing",
+      "en": {
+        "prefLabel": "Affective computing",
+        "definition": "A field of computing concerned with recognizing, modeling, or responding to human emotional states and, in some cases, simulating affective behavior in machines."
+      },
+      "fr": {
+        "prefLabel": "Informatique affective",
+        "definition": "Domaine de l’informatique consacré à la reconnaissance, à la modélisation ou à la prise en compte des états émotionnels humains et, dans certains cas, à la simulation de comportements affectifs par des machines.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": ""
+    },
+    {
+      "id": "agent-profile-resource",
+      "canonicalUri": "https://id.i2idl.org/concepts/agent-profile-resource",
+      "en": {
+        "prefLabel": "Agent Profile Resource",
+        "definition": "The xAPI resource at /agents/profile for storing and retrieving generic profile documents associated with an Agent or Identified Group, independent of a specific Activity or registration."
+      },
+      "fr": {
+        "prefLabel": "Ressource de profil d’agent",
+        "definition": "Ressource xAPI accessible à l’adresse /agents/profile, destinée à stocker et à récupérer des documents de profil génériques associés à un agent ou à un groupe identifié, indépendamment d’une activité ou d’un enregistrement particulier.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": "Conserver /agents/profile ; vérifier la traduction de registration dans le contexte xAPI."
+    },
+    {
+      "id": "agile-development",
+      "canonicalUri": "https://id.i2idl.org/concepts/agile-development",
+      "en": {
+        "prefLabel": "Agile development",
+        "definition": "An iterative approach to creating solutions in small increments, learning from feedback, and adapting plans as conditions change."
+      },
+      "fr": {
+        "prefLabel": "Développement agile",
+        "definition": "Approche itérative de création de solutions par petits incréments, qui s’appuie sur les retours d’expérience et adapte les plans à l’évolution des conditions.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": ""
+    },
+    {
+      "id": "ai-competency-framework-for-teachers-ai-cft",
+      "canonicalUri": "https://id.i2idl.org/concepts/ai-competency-framework-for-teachers-ai-cft",
+      "en": {
+        "prefLabel": "AI competency framework for teachers (AI CFT)",
+        "definition": "A reference framework describing the knowledge, skills, values, and attitudes teachers need to use artificial intelligence safely, effectively, ethically, and in ways that preserve human-centred education."
+      },
+      "fr": {
+        "prefLabel": "Référentiel de compétences en IA pour les enseignants (AI CFT)",
+        "definition": "Cadre de référence décrivant les connaissances, les compétences, les valeurs et les attitudes dont les enseignants ont besoin pour utiliser l’intelligence artificielle de manière sûre, efficace et éthique, tout en préservant une éducation centrée sur l’humain.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": "Vérifier le titre officiel en français du cadre UNESCO et le sigle AI CFT."
+    },
+    {
+      "id": "ai-competency-progression",
+      "canonicalUri": "https://id.i2idl.org/concepts/ai-competency-progression",
+      "en": {
+        "prefLabel": "AI competency progression",
+        "definition": "A scaffolded reference pathway for developing AI competency across increasing levels of capability without assuming that development is strictly linear or identical across competency areas."
+      },
+      "fr": {
+        "prefLabel": "Progression des compétences en IA",
+        "definition": "Parcours de référence structuré en paliers pour développer les compétences en IA à des niveaux de capacité croissants, sans supposer que cette progression est strictement linéaire ni identique dans tous les domaines de compétence.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": ""
+    },
+    {
+      "id": "ai-explainability-in-education",
+      "canonicalUri": "https://id.i2idl.org/concepts/ai-explainability-in-education",
+      "en": {
+        "prefLabel": "AI explainability in education",
+        "definition": "The extent to which educators can understand and critically examine how an AI system reaches outputs or conclusions sufficiently to assess its use and intervene when necessary."
+      },
+      "fr": {
+        "prefLabel": "Explicabilité de l’IA en éducation",
+        "definition": "Degré auquel les éducateurs peuvent comprendre et examiner de manière critique la façon dont un système d’IA produit ses résultats ou ses conclusions, suffisamment pour évaluer son utilisation et intervenir si nécessaire.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": ""
+    },
+    {
+      "id": "ai-for-professional-development",
+      "canonicalUri": "https://id.i2idl.org/concepts/ai-for-professional-development",
+      "en": {
+        "prefLabel": "AI for professional development",
+        "definition": "The use of AI to support teachers’ lifelong professional learning, collaborative development, reflection, assessment of learning needs, and transformation of professional practice."
+      },
+      "fr": {
+        "prefLabel": "IA pour le développement professionnel",
+        "definition": "Utilisation de l’IA pour soutenir la formation professionnelle continue des enseignants, le développement collaboratif, la réflexion sur la pratique, l’évaluation des besoins d’apprentissage et la transformation des pratiques professionnelles.",
+        "altLabels": [
+          "IA pour l’apprentissage professionnel"
+        ]
+      },
+      "status": "draft",
+      "reviewNotes": ""
+    },
+    {
+      "id": "ai-foundations-and-applications",
+      "canonicalUri": "https://id.i2idl.org/concepts/ai-foundations-and-applications",
+      "en": {
+        "prefLabel": "AI foundations and applications",
+        "definition": "The conceptual knowledge and transferable operational skills needed to understand how AI works and to evaluate, select, use, adapt, or customize AI tools for appropriate purposes."
+      },
+      "fr": {
+        "prefLabel": "Fondements et applications de l’IA",
+        "definition": "Connaissances conceptuelles et compétences opérationnelles transférables nécessaires pour comprendre le fonctionnement de l’IA et pour évaluer, sélectionner, utiliser, adapter ou personnaliser des outils d’IA à des fins appropriées.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": ""
+    },
+    {
+      "id": "ai-literacy-for-teachers",
+      "canonicalUri": "https://id.i2idl.org/concepts/ai-literacy-for-teachers",
+      "en": {
+        "prefLabel": "AI literacy for teachers",
+        "definition": "The foundational set of AI competencies teachers need to understand AI’s human-led nature, recognize benefits and risks, apply core ethical principles, understand basic AI concepts, and use appropriate AI tools in educational practice."
+      },
+      "fr": {
+        "prefLabel": "Littératie en IA pour les enseignants",
+        "definition": "Ensemble fondamental de compétences en IA dont les enseignants ont besoin pour comprendre que l’IA doit rester sous conduite humaine, reconnaître ses avantages et ses risques, appliquer des principes éthiques fondamentaux, comprendre les concepts de base de l’IA et utiliser des outils d’IA appropriés dans la pratique éducative.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": "Vérifier la correspondance avec le titre et la terminologie officiels du cadre UNESCO, notamment human-led nature."
+    },
+    {
+      "id": "ai-pedagogy",
+      "canonicalUri": "https://id.i2idl.org/concepts/ai-pedagogy",
+      "en": {
+        "prefLabel": "AI pedagogy",
+        "definition": "The competencies and practices involved in selecting, validating, and integrating AI with pedagogical methods to support teaching, learning, social interaction, care, and assessment."
+      },
+      "fr": {
+        "prefLabel": "Pédagogie de l’IA",
+        "definition": "Compétences et pratiques liées à la sélection, à la validation et à l’intégration de l’IA aux méthodes pédagogiques pour soutenir l’enseignement, l’apprentissage, les interactions sociales, l’attention portée aux personnes et l’évaluation.",
+        "altLabels": [
+          "Pédagogie intégrant l’IA"
+        ]
+      },
+      "status": "draft",
+      "reviewNotes": "Vérifier la traduction de care dans le cadre conceptuel d’origine ; « attention portée aux personnes » est provisoire."
+    },
+    {
+      "id": "ai-tool-validation-for-education",
+      "canonicalUri": "https://id.i2idl.org/concepts/ai-tool-validation-for-education",
+      "en": {
+        "prefLabel": "AI tool validation for education",
+        "definition": "The systematic evaluation of an AI system or tool before educational adoption to determine whether it is sufficiently reliable, trustworthy, safe, ethically compliant, age-appropriate, and pedagogically suitable."
+      },
+      "fr": {
+        "prefLabel": "Validation des outils d’IA pour l’éducation",
+        "definition": "Évaluation systématique d’un système ou d’un outil d’IA avant son adoption en éducation, visant à déterminer s’il est suffisamment fiable, digne de confiance, sûr, conforme aux exigences éthiques, adapté à l’âge des utilisateurs et pertinent sur le plan pédagogique.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": ""
+    },
+    {
+      "id": "ai-assisted-teaching",
+      "canonicalUri": "https://id.i2idl.org/concepts/ai-assisted-teaching",
+      "en": {
+        "prefLabel": "AI-assisted teaching",
+        "definition": "Teaching in which educators identify and use appropriate AI tools to support activities such as lesson planning, instruction, assessment, and learner support while mitigating associated risks."
+      },
+      "fr": {
+        "prefLabel": "Enseignement assisté par l’IA",
+        "definition": "Enseignement dans lequel les éducateurs identifient et utilisent des outils d’IA appropriés pour soutenir des activités telles que la planification des cours, l’enseignement, l’évaluation et l’accompagnement des apprenants, tout en atténuant les risques associés.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": ""
+    }
+  ]
+}

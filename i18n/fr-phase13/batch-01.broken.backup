@@ -1,0 +1,126 @@
+      },
+      "status": "draft",
+      "reviewNotes": "Vérifier le titre officiel en français du cadre UNESCO et le sigle AI CFT."
+    },
+    {
+      "id": "ai-competency-progression",
+      "canonicalUri": "https://id.i2idl.org/concepts/ai-competency-progression",
+      "en": {
+        "prefLabel": "AI competency progression",
+        "definition": "A scaffolded reference pathway for developing AI competency across increasing levels of capability without assuming that development is strictly linear or identical across competency areas."
+      },
+      "fr": {
+        "prefLabel": "Progression des compétences en IA",
+        "definition": "Parcours de référence structuré en paliers pour développer les compétences en IA à des niveaux de capacité croissants, sans supposer que cette progression est strictement linéaire ni identique dans tous les domaines de compétence.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": ""
+    },
+    {
+      "id": "ai-explainability-in-education",
+      "canonicalUri": "https://id.i2idl.org/concepts/ai-explainability-in-education",
+      "en": {
+        "prefLabel": "AI explainability in education",
+        "definition": "The extent to which educators can understand and critically examine how an AI system reaches outputs or conclusions sufficiently to assess its use and intervene when necessary."
+      },
+      "fr": {
+        "prefLabel": "Explicabilité de l’IA en éducation",
+        "definition": "Degré auquel les éducateurs peuvent comprendre et examiner de manière critique la façon dont un système d’IA produit ses résultats ou ses conclusions, suffisamment pour évaluer son utilisation et intervenir si nécessaire.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": ""
+    },
+    {
+      "id": "ai-for-professional-development",
+      "canonicalUri": "https://id.i2idl.org/concepts/ai-for-professional-development",
+      "en": {
+        "prefLabel": "AI for professional development",
+        "definition": "The use of AI to support teachers’ lifelong professional learning, collaborative development, reflection, assessment of learning needs, and transformation of professional practice."
+      },
+      "fr": {
+        "prefLabel": "IA pour le développement professionnel",
+        "definition": "Utilisation de l’IA pour soutenir la formation professionnelle continue des enseignants, le développement collaboratif, la réflexion sur la pratique, l’évaluation des besoins d’apprentissage et la transformation des pratiques professionnelles.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": ""
+    },
+    {
+      "id": "ai-foundations-and-applications",
+      "canonicalUri": "https://id.i2idl.org/concepts/ai-foundations-and-applications",
+      "en": {
+        "prefLabel": "AI foundations and applications",
+        "definition": "The conceptual knowledge and transferable operational skills needed to understand how AI works and to evaluate, select, use, adapt, or customize AI tools for appropriate purposes."
+      },
+      "fr": {
+        "prefLabel": "Fondements et applications de l’IA",
+        "definition": "Connaissances conceptuelles et compétences opérationnelles transférables nécessaires pour comprendre le fonctionnement de l’IA et pour évaluer, sélectionner, utiliser, adapter ou personnaliser des outils d’IA à des fins appropriées.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": ""
+    },
+    {
+      "id": "ai-literacy-for-teachers",
+      "canonicalUri": "https://id.i2idl.org/concepts/ai-literacy-for-teachers",
+      "en": {
+        "prefLabel": "AI literacy for teachers",
+        "definition": "The foundational set of AI competencies teachers need to understand AI’s human-led nature, recognize benefits and risks, apply core ethical principles, understand basic AI concepts, and use appropriate AI tools in educational practice."
+      },
+      "fr": {
+        "prefLabel": "Littératie en IA pour les enseignants",
+        "definition": "Ensemble fondamental de compétences en IA dont les enseignants ont besoin pour comprendre que l’IA doit rester sous conduite humaine, reconnaître ses avantages et ses risques, appliquer des principes éthiques fondamentaux, comprendre les concepts de base de l’IA et utiliser des outils d’IA appropriés dans la pratique éducative.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": "Vérifier la correspondance avec le titre et la terminologie officiels du cadre UNESCO, notamment human-led nature."
+    },
+    {
+      "id": "ai-pedagogy",
+      "canonicalUri": "https://id.i2idl.org/concepts/ai-pedagogy",
+      "en": {
+        "prefLabel": "AI pedagogy",
+        "definition": "The competencies and practices involved in selecting, validating, and integrating AI with pedagogical methods to support teaching, learning, social interaction, care, and assessment."
+      },
+      "fr": {
+        "prefLabel": "Pédagogie intégrant l’IA",
+        "definition": "Compétences et pratiques liées à la sélection, à la validation et à l’intégration de l’IA aux méthodes pédagogiques pour soutenir l’enseignement, l’apprentissage, les interactions sociales, l’attention portée aux personnes et l’évaluation.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": "Vérifier la traduction de care dans le cadre conceptuel d’origine ; « attention portée aux personnes » est provisoire."
+    },
+    {
+      "id": "ai-tool-validation-for-education",
+      "canonicalUri": "https://id.i2idl.org/concepts/ai-tool-validation-for-education",
+      "en": {
+        "prefLabel": "AI tool validation for education",
+        "definition": "The systematic evaluation of an AI system or tool before educational adoption to determine whether it is sufficiently reliable, trustworthy, safe, ethically compliant, age-appropriate, and pedagogically suitable."
+      },
+      "fr": {
+        "prefLabel": "Validation des outils d’IA pour l’éducation",
+        "definition": "Évaluation systématique d’un système ou d’un outil d’IA avant son adoption en éducation, visant à déterminer s’il est suffisamment fiable, digne de confiance, sûr, conforme aux exigences éthiques, adapté à l’âge des utilisateurs et pertinent sur le plan pédagogique.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": ""
+    },
+    {
+      "id": "ai-assisted-teaching",
+      "canonicalUri": "https://id.i2idl.org/concepts/ai-assisted-teaching",
+      "en": {
+        "prefLabel": "AI-assisted teaching",
+        "definition": "Teaching in which educators identify and use appropriate AI tools to support activities such as lesson planning, instruction, assessment, and learner support while mitigating associated risks."
+      },
+      "fr": {
+        "prefLabel": "Enseignement assisté par l’IA",
+        "definition": "Enseignement dans lequel les éducateurs identifient et utilisent des outils d’IA appropriés pour soutenir des activités telles que la planification des cours, l’enseignement, l’évaluation et l’accompagnement des apprenants, tout en atténuant les risques associés.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": ""
+    }
+  ]
+}
