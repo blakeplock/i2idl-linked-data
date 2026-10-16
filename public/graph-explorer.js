@@ -1,4 +1,12 @@
-(()=>{'use strict';const $=id=>document.getElementById(id),SVG_NS='http://www.w3.org/2000/svg';let provenanceGraph=[],nodes=[],map=new Map(),active=null,history=[],fields=new Map(),fieldFor=new Map();const refs=x=>x==null?[]:Array.isArray(x)?x:[x];const rid=x=>typeof x==='string'?x:x&&x['@id'];const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const label=n=>n['skos:prefLabel']||n['dcterms:identifier']||n['@id'].split('/').pop();const slug=n=>n['@id'].split('/').pop();function i2idlDailyStartConcept(){
+(()=>{'use strict';const $=id=>document.getElementById(id),SVG_NS='http://www.w3.org/2000/svg';let provenanceGraph=[],nodes=[],map=new Map(),active=null,history=[],fields=new Map(),fieldFor=new Map();const refs=x=>x==null?[]:Array.isArray(x)?x:[x];const rid=x=>typeof x==='string'?x:x&&x['@id'];const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));// i2idl-fr-explorer-phase7: reviewed translations overlay; English is authoritative fallback.
+let i2idlLocale='en';let i2idlFrench=new Map();
+const i2idlText=v=>typeof v==='string'?v:(v&&v['@value'])||'';
+const i2idlEnglish=n=>i2idlText(n['skos:prefLabel'])||n['dcterms:identifier']||n['@id'].split('/').pop();
+const label=n=>n?(i2idlLocale==='fr'?i2idlFrench.get(n['@id'])?.label:null)||i2idlEnglish(n):'';
+const i2idlDefinition=n=>(i2idlLocale==='fr'?i2idlFrench.get(n['@id'])?.definition:null)||i2idlText(n['skos:definition'])||'';
+const i2idlAliases=n=>[...refs(n['skos:altLabel']).map(i2idlText),...(i2idlFrench.get(n['@id'])?.aliases||[])];
+const i2idlUI={en:{selected:'SELECTED CONCEPT',unclassified:'Unclassified',missing:'See the published glossary for the definition.',all:'All fields',other:'Other / Unclassified',status:'Select any connected node to navigate.',research:'Explore the research',papers:'Find papers on this concept',cluster:'Add to research cluster +'},fr:{selected:'CONCEPT SÉLECTIONNÉ',unclassified:'Non classé',missing:'Consultez le glossaire publié pour obtenir la définition.',all:'Tous les domaines',other:'Autre / Non classé',status:'Sélectionnez un nœud pour naviguer.',research:'Explorer la recherche',papers:'Rechercher des publications sur ce concept',cluster:'Ajouter au groupe de recherche +'}};
+const i2idlT=key=>i2idlUI[i2idlLocale][key];const slug=n=>n['@id'].split('/').pop();function i2idlDailyStartConcept(){
   const dateParts=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());
   const date=Object.fromEntries(dateParts.filter(p=>p.type!=='literal').map(p=>[p.type,Number(p.value)]));
   const day=Math.max(0,Math.floor((Date.UTC(date.year,date.month-1,date.day)-Date.UTC(2026,8,22))/86400000));
@@ -11,7 +19,7 @@
   for(let i=ordered.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[ordered[i],ordered[j]]=[ordered[j],ordered[i]]}
   return ordered[position];
 }
-function onGraph(data){if(!data||!Array.isArray(data['@graph']))throw Error('Not a JSON-LD graph');const graph=data['@graph'];provenanceGraph=graph;nodes=graph.filter(n=>refs(n['@type']).includes('skos:Concept'));map=new Map(nodes.map(n=>[n['@id'],n]));fields=new Map(graph.filter(n=>refs(n['@type']).includes('skos:Collection')&&n['gs:facet']==='field').map(n=>[n['@id'],n['skos:prefLabel']]));fieldFor=new Map(nodes.map(n=>[n['@id'],rid(n['gs:fieldCollection'])||'other']));const select=$('collection');select.replaceChildren(new Option('All fields','all'));for(const [id,name] of [...fields].sort((a,b)=>a[1].localeCompare(b[1])))select.add(new Option(name,id));select.add(new Option('Other / Unclassified','other'));$('depth').disabled=false;select.disabled=false;populateResearch();if(nodes.length<10)throw Error('Too few concepts');$('status').textContent=`Loaded ${nodes.length} I2IDL concepts from ${'published JSON-LD'}. Select any connected node to navigate.`;$('search').disabled=false;$('reset').disabled=false;$('share').disabled=false;const requested=new URLSearchParams(location.search).get('concept');const target=nodes.find(n=>slug(n)===requested)||i2idlDailyStartConcept()||nodes[0];focus(target,false,false)}
+function onGraph(data){if(!data||!Array.isArray(data['@graph']))throw Error('Not a JSON-LD graph');const graph=data['@graph'];provenanceGraph=graph;nodes=graph.filter(n=>refs(n['@type']).includes('skos:Concept'));map=new Map(nodes.map(n=>[n['@id'],n]));fields=new Map(graph.filter(n=>refs(n['@type']).includes('skos:Collection')&&n['gs:facet']==='field').map(n=>[n['@id'],n['skos:prefLabel']]));fieldFor=new Map(nodes.map(n=>[n['@id'],rid(n['gs:fieldCollection'])||'other']));const select=$('collection');select.replaceChildren(new Option(i2idlT('all'),'all'));for(const [id,name] of [...fields].sort((a,b)=>a[1].localeCompare(b[1])))select.add(new Option(name,id));select.add(new Option(i2idlT('other'),'other'));$('depth').disabled=false;select.disabled=false;populateResearch();if(nodes.length<10)throw Error('Too few concepts');$('status').textContent=`Loaded ${nodes.length} I2IDL concepts from ${'published JSON-LD'}. Select any connected node to navigate.`;$('search').disabled=false;$('reset').disabled=false;$('share').disabled=false;const requested=new URLSearchParams(location.search).get('concept');const target=nodes.find(n=>slug(n)===requested)||i2idlDailyStartConcept()||nodes[0];focus(target,false,false)}
 function neighborItems(n){const output=new Map();for(const [prop,type] of [['skos:broader','broader'],['skos:narrower','narrower'],['skos:related','related']]){for(const r of refs(n[prop])){let id=rid(r);if(!map.has(id)||id===n['@id'])continue;const key=id+'|'+type;output.set(key,{node:map.get(id),type})}}return [...output.values()].sort((a,b)=>label(a.node).localeCompare(label(b.node)))}
 function focus(n,push=true,userSelected=true){if(!n)return;if(active&&push&&active['@id']!==n['@id'])history.push(active);active=n;$('back').disabled=history.length===0;$('title').textContent=label(n);const links=neighborItems(n);if(userSelected){try{const url=new URL(location.href);url.searchParams.set('concept',slug(n));window.history.replaceState(null,'',url)}catch(_){}}draw(n,links);details(n,links);document.dispatchEvent(new CustomEvent('i2idl:concept-selected',{detail:{id:slug(n),name:label(n),userSelected}}));$('results').style.display='none'}
 function fieldId(n){return fieldFor.get(n['@id'])||'other'}
@@ -35,20 +43,20 @@ g.addEventListener('click',e=>{if(suppressClick){e.preventDefault();e.stopPropag
 function details(n,links){
   const root=$('detail');root.replaceChildren();
   const heading=document.createElement('div');heading.className='concept-summary';
-  const kicker=document.createElement('span');kicker.className='caption';kicker.textContent='SELECTED CONCEPT';
+  const kicker=document.createElement('span');kicker.className='caption';kicker.textContent=i2idlT('selected');
   const h=document.createElement('h2');h.textContent=label(n);
-  const field=document.createElement('p');field.className='concept-field';field.textContent=fields.get(fieldId(n))||'Unclassified';
-  const desc=document.createElement('p');desc.className='concept-definition';desc.textContent=n['skos:definition']||'See the published glossary for the definition.';
+  const field=document.createElement('p');field.className='concept-field';field.textContent=fields.get(fieldId(n))||i2idlT('unclassified');
+  const desc=document.createElement('p');desc.className='concept-definition';desc.textContent=i2idlDefinition(n)||i2idlT('missing');
   heading.append(kicker,h,field,desc);root.append(heading);
   if (window.I2IDLVersionHistory) window.I2IDLVersionHistory.render(n['@id'], root);
   const actions=document.createElement('section');actions.className='concept-actions';
-  const actionsTitle=document.createElement('h3');actionsTitle.textContent='Explore the research';actions.append(actionsTitle);
+  const actionsTitle=document.createElement('h3');actionsTitle.textContent=i2idlT('research');actions.append(actionsTitle);
   const researchBtn=document.createElement('button');researchBtn.type='button';researchBtn.className='button primary concept-action-button';
-  researchBtn.textContent='Find papers on this concept';researchBtn.dataset.researchConcept=slug(n);researchBtn.dataset.researchLabel=label(n);
+  researchBtn.textContent=i2idlT('papers');researchBtn.dataset.researchConcept=slug(n);researchBtn.dataset.researchLabel=label(n);
   actions.append(researchBtn);
   const researchHelp=document.createElement('p');researchHelp.className='concept-action-help';researchHelp.textContent='Search scholarly publications for this topic now.';actions.append(researchHelp);
   const clusterBtn=document.createElement('button');clusterBtn.type='button';clusterBtn.className='button concept-action-button';
-  clusterBtn.textContent='Add to research cluster +';clusterBtn.dataset.researchAdd=slug(n);clusterBtn.dataset.researchLabel=label(n);
+  clusterBtn.textContent=i2idlT('cluster');clusterBtn.dataset.researchAdd=slug(n);clusterBtn.dataset.researchLabel=label(n);
   actions.append(clusterBtn);
   const clusterHelp=document.createElement('p');clusterHelp.className='concept-action-help';clusterHelp.textContent='Collect 2–5 concepts, then find papers that connect them.';actions.append(clusterHelp);
   root.append(actions);
@@ -255,10 +263,10 @@ function rankedConceptSearch(query){
   const scored=[];
   for(const n of nodes){
     const title=normalizeSearch(label(n));
-    const alternatives=refs(n['skos:altLabel']).map(v=>normalizeSearch(typeof v==='string'?v:(v&&v['@value'])||''));
+    const alternatives=[i2idlEnglish(n),...i2idlAliases(n),i2idlFrench.get(n['@id'])?.label||''].map(normalizeSearch);
     const identifier=normalizeSearch(n['dcterms:identifier']||slug(n));
     const names=[title,...alternatives,identifier].filter(Boolean);
-    const definition=normalizeSearch(n['skos:definition']||'');
+    const definition=normalizeSearch([i2idlDefinition(n),i2idlText(n['skos:definition']),i2idlFrench.get(n['@id'])?.definition||''].join(' '));
     let score=0;
     if(names.some(v=>v===q))score=1000;
     else if(title.startsWith(q))score=850;
@@ -273,4 +281,23 @@ function rankedConceptSearch(query){
   return scored.map(item=>item.n);
 }
 
-$('search').addEventListener('input',e=>{const val=e.target.value.trim().toLowerCase(),res=$('results');res.replaceChildren();if(!val){res.style.display='none';return}for(const n of rankedConceptSearch(val).slice(0,12)){const b=document.createElement('button');b.textContent=label(n);b.type='button';b.addEventListener('click',()=>{$('search').value='';focus(n)});res.append(b)}res.style.display=res.childNodes.length?'block':'none'});$('back').onclick=()=>{const prev=history.pop();if(prev)focus(prev,false);$('back').disabled=history.length===0};$('reset').onclick=()=>{history=[];focus(i2idlDailyStartConcept()||nodes[0],false)};fetch('/glossary.jsonld',{headers:{Accept:'application/ld+json'},cache:'default'}).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(onGraph).catch(err=>{$('status').textContent='Unable to load the published graph ('+err.message+'). Please try again later.';const detail=$('detail');detail.replaceChildren();const caption=document.createElement('span');caption.className='caption';caption.textContent='PREVIEW';const heading=document.createElement('h2');heading.textContent='Load the glossary graph';const explanation=document.createElement('p');explanation.textContent='This prototype reads real SKOS relationships from the published graph. If local-file browser restrictions prevent fetching it directly, use the file chooser above.';detail.append(caption,heading,explanation)})})();
+$('search').addEventListener('input',e=>{const val=e.target.value.trim().toLowerCase(),res=$('results');res.replaceChildren();if(!val){res.style.display='none';return}for(const n of rankedConceptSearch(val).slice(0,12)){const b=document.createElement('button');b.textContent=label(n);b.type='button';b.addEventListener('click',()=>{$('search').value='';focus(n)});res.append(b)}res.style.display=res.childNodes.length?'block':'none'});$('back').onclick=()=>{const prev=history.pop();if(prev)focus(prev,false);$('back').disabled=history.length===0};$('reset').onclick=()=>{history=[];focus(i2idlDailyStartConcept()||nodes[0],false)};const langSelect=$('i2idl-language');
+const requestedLang=new URLSearchParams(location.search).get('lang');
+i2idlLocale=requestedLang==='fr'?'fr':'en';langSelect.value=i2idlLocale;document.documentElement.lang=i2idlLocale;
+langSelect.addEventListener('change',()=>{i2idlLocale=langSelect.value;document.documentElement.lang=i2idlLocale;
+ try{const u=new URL(location.href);u.searchParams.set('lang',i2idlLocale);window.history.replaceState(null,'',u)}catch(_){}
+ if(nodes.length){const selected=active;populateResearch();const field=$('collection').value;const filter=$('collection');filter.options[0].textContent=i2idlT('all');filter.options[filter.options.length-1].textContent=i2idlT('other');filter.value=field;if(selected)focus(selected,false,false);if($('search').value)$('search').dispatchEvent(new Event('input'));}
+});
+async function i2idlLoadFrenchOverlay(){
+ try{const r=await fetch('/glossary-fr-preview.jsonld',{cache:'no-cache'});if(!r.ok)throw Error(`HTTP ${r.status}`);const doc=await r.json();
+ if(!Array.isArray(doc['@graph']))throw Error('Invalid French overlay');
+ const items=new Map();const base='https://id.i2idl.org/';
+ for(const n of doc['@graph']){const id=n['@id'];if(typeof id!=='string'||!id.startsWith(base))continue;
+ const lit=n['skos:prefLabel'];if(lit?.['@language']==='fr'&&typeof lit['@value']==='string'){
+ const item=items.get(id)||{};item.label=lit['@value'];item.aliases=refs(n['skos:altLabel']).filter(v=>v?.['@language']==='fr').map(v=>v['@value']);items.set(id,item);}
+ if(n['rdf:value']?.['@language']==='fr'&&typeof n['rdf:value']['@value']==='string'){
+ const conceptId=id.replace('/definitions/','/concepts/');const item=items.get(conceptId)||{};item.definition=n['rdf:value']['@value'];items.set(conceptId,item);}
+ }i2idlFrench=items;
+ }catch(err){console.warn('I2IDL: French overlay unavailable, using English fallback.',err);i2idlFrench=new Map();}
+}
+Promise.all([fetch('/glossary.jsonld',{headers:{Accept:'application/ld+json'},cache:'default'}),i2idlLoadFrenchOverlay()]).then(([r])=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(onGraph).catch(err=>{$('status').textContent='Unable to load the published graph ('+err.message+'). Please try again later.';const detail=$('detail');detail.replaceChildren();const caption=document.createElement('span');caption.className='caption';caption.textContent='PREVIEW';const heading=document.createElement('h2');heading.textContent='Load the glossary graph';const explanation=document.createElement('p');explanation.textContent='This prototype reads real SKOS relationships from the published graph. If local-file browser restrictions prevent fetching it directly, use the file chooser above.';detail.append(caption,heading,explanation)})})();

@@ -1,0 +1,2005 @@
+
+
+
+
+
+
+<!-- I2IDL EN/FR LANGUAGE PREVIEW | based on v0.0.90 | NOT A PUBLIC RELEASE -->
+<div id="i2idl-glossary" class="i2idl-glossary" aria-labelledby="i2idl-glossary-title" data-version="v0.0.90" data-last-updated="2026-10-15T19:06:00-04:00" data-semantic-profile-version="0.4.0" data-semantic-model="SKOS Schema.org Dublin Core PROV-O" data-semantic-namespace="https://id.i2idl.org">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Syne+Mono&display=swap");
+    #i2idl-glossary {
+      --i2-purple: #3b174b;
+      --i2-purple-deep: #24102d;
+      --i2-purple-soft: #efe8f2;
+      --i2-lilac: #c9b9cf;
+      --i2-ink: #151219;
+      --i2-muted: #665f69;
+      --i2-paper: #fbfaf8;
+      --i2-white: #ffffff;
+      --i2-line: #ded8e1;
+      --i2-orange: #ff9f1c;
+      --i2-orange-deep: #934500;
+      --i2-orange-soft: #fff0dc;
+      --i2-orange-light: #ffc46b;
+      --i2-orange-glow: rgba(255,159,28,.28);
+      --i2-shadow: 0 18px 45px rgba(36, 16, 45, .10);
+      font-family: "Lato", Arial, sans-serif;
+      color: var(--i2-ink);
+      background: var(--i2-paper);
+      width: 100%;
+      box-sizing: border-box;
+      line-height: 1.55;
+    }
+    #i2idl-glossary *, #i2idl-glossary *::before, #i2idl-glossary *::after { box-sizing: border-box; }
+    #i2idl-glossary a { color: inherit; }
+    #i2idl-glossary button, #i2idl-glossary input { font: inherit; }
+    #i2idl-glossary .i2-wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+
+    #i2idl-glossary .i2-hero {
+      position: relative;
+      overflow: hidden;
+      background: var(--i2-purple);
+      color: var(--i2-white);
+      padding: clamp(32px, 4.5vw, 56px) 0 clamp(28px, 4vw, 48px);
+      border-bottom: 1px solid rgba(255,255,255,.16);
+    }
+    #i2idl-glossary .i2-hero::after {
+      content: "";
+      position: absolute;
+      width: 520px;
+      height: 520px;
+      right: -180px;
+      top: -260px;
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 50%;
+      box-shadow: 0 0 0 70px rgba(255,255,255,.035), 0 0 0 140px rgba(255,255,255,.025);
+      pointer-events: none;
+    }
+    #i2idl-glossary .i2-eyebrow,
+    #i2idl-glossary .i2-label,
+    #i2idl-glossary .i2-chip,
+    #i2idl-glossary .i2-alpha button,
+    #i2idl-glossary .i2-meta,
+    #i2idl-glossary .i2-source-kicker {
+      font-family: "Syne Mono", "Courier New", monospace;
+      text-transform: uppercase;
+      letter-spacing: .055em;
+    }
+    #i2idl-glossary .i2-eyebrow { font-size: 12px; opacity: .78; margin-bottom: 11px; }
+    #i2idl-glossary h1 {
+      font-size: clamp(40px, 6vw, 76px);
+      line-height: .92;
+      letter-spacing: -.055em;
+      margin: 0;
+      max-width: 980px;
+      font-weight: 700;
+      color: transparent;
+      -webkit-text-stroke: 1.5px var(--i2-white);
+      paint-order: stroke fill;
+    }
+    @supports not (-webkit-text-stroke: 1px white) {
+      #i2idl-glossary h1 {
+        color: var(--i2-white);
+        text-shadow:
+          -1px -1px 0 var(--i2-purple),
+           1px -1px 0 var(--i2-purple),
+          -1px  1px 0 var(--i2-purple),
+           1px  1px 0 var(--i2-purple);
+      }
+    }
+    #i2idl-glossary .i2-hero-deck {
+      max-width: 800px;
+      font-size: clamp(17px, 1.65vw, 21px);
+      line-height: 1.45;
+      margin: 17px 0 0;
+      color: rgba(255,255,255,.84);
+    }
+    #i2idl-glossary .i2-source-note {
+      margin-top: 30px;
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 10px 16px;
+      align-items: center;
+      padding: 10px 14px;
+      border: 1px solid rgba(255,255,255,.22);
+      border-radius: 999px;
+      font-size: 14px;
+      color: rgba(255,255,255,.84);
+      background: rgba(255,255,255,.055);
+    }
+    #i2idl-glossary .i2-source-note a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    #i2idl-glossary .i2-version-meta {
+      margin-top: 13px; display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center;
+      font-family: "Syne Mono", "Courier New", monospace; text-transform: uppercase; letter-spacing: .055em;
+      font-size: 11px; color: rgba(255,255,255,.72);
+    }
+    #i2idl-glossary .i2-version-meta span {
+      display: inline-flex; align-items: center; gap: 6px; padding: 6px 9px;
+      border: 1px solid rgba(255,255,255,.18); border-radius: 999px; background: rgba(255,255,255,.045);
+    }
+
+    #i2idl-glossary .i2-feature-shell {
+      position: relative;
+      margin-top: 24px;
+      z-index: 3;
+    }
+    #i2idl-glossary .i2-feature-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.45fr) minmax(280px, .55fr);
+      gap: 24px;
+      align-items: stretch;
+    }
+    #i2idl-glossary .i2-feature-grid .i2-daily,
+    #i2idl-glossary .i2-feature-grid .i2-intro-card { height: 100%; }
+    #i2idl-glossary .i2-daily {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 26px;
+      align-items: center;
+      background: var(--i2-purple-deep);
+      color: var(--i2-white);
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 18px;
+      box-shadow: var(--i2-shadow);
+      padding: 24px 26px;
+    }
+    #i2idl-glossary .i2-daily-kicker {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      align-items: center;
+      margin-bottom: 8px;
+      font-family: "Syne Mono", "Courier New", monospace;
+      text-transform: uppercase;
+      letter-spacing: .055em;
+      font-size: 11px;
+      color: rgba(255,255,255,.78) !important;
+    }
+    #i2idl-glossary .i2-daily h2 {
+      margin: 0;
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.02;
+      letter-spacing: -.035em;
+      color: var(--i2-white) !important;
+    }
+    #i2idl-glossary .i2-daily-definition {
+      margin: 10px 0 0;
+      max-width: 820px;
+      color: rgba(255,255,255,.88) !important;
+      font-size: 16px;
+    }
+    #i2idl-glossary .i2-daily-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: 13px;
+    }
+    #i2idl-glossary .i2-daily-meta span {
+      display: inline-flex;
+      padding: 4px 7px;
+      border: 1px solid rgba(255,255,255,.20);
+      border-radius: 999px;
+      color: rgba(255,255,255,.82) !important;
+      font-family: "Syne Mono", "Courier New", monospace;
+      text-transform: uppercase;
+      letter-spacing: .045em;
+      font-size: 9px;
+    }
+    #i2idl-glossary .i2-daily-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 11px 16px;
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,.35);
+      background: var(--i2-white);
+      color: var(--i2-purple-deep);
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+    #i2idl-glossary .i2-daily-link:hover { background: var(--i2-orange); color: var(--i2-purple-deep); border-color: var(--i2-orange); }
+    #i2idl-glossary .i2-daily > div,
+    #i2idl-glossary .i2-daily > div * { color: inherit; }
+
+    /* Connected glossary discovery: presentation only; v0.0.90 canonical data served by id.i2idl.org. */
+    #i2idl-glossary .i2-discovery {position:relative;z-index:2;margin-top:24px;padding:27px;border:1px solid var(--i2-line);border-radius:18px;background:var(--i2-white);box-shadow:0 10px 26px rgba(36,16,45,.06)}
+    #i2idl-glossary .i2-discovery-head{margin-bottom:22px}
+    #i2idl-glossary .i2-discovery-head .i2-label{font-family:"Syne Mono","Courier New",monospace;color:var(--i2-purple);text-transform:uppercase;letter-spacing:.055em}
+    #i2idl-glossary .i2-discovery-head h2{margin:9px 0 9px;font-size:clamp(27px,3.1vw,38px);line-height:1.1;letter-spacing:-.035em;color:var(--i2-purple-deep)}
+    #i2idl-glossary .i2-discovery-head p{margin:0;max-width:820px;font-size:16px;line-height:1.55;color:var(--i2-muted)}
+    #i2idl-glossary .i2-discovery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    #i2idl-glossary .i2-discovery-card{display:flex;flex-direction:column;min-width:0;min-height:206px;padding:23px;border:1px solid var(--i2-line);border-radius:14px;background:var(--i2-paper);transition:border-color .15s ease,box-shadow .15s ease}
+    #i2idl-glossary .i2-discovery-card:first-child{background:var(--i2-purple-soft);border-color:var(--i2-lilac)}
+    #i2idl-glossary .i2-discovery-card:hover{border-color:var(--i2-orange);box-shadow:0 7px 20px rgba(36,16,45,.08)}
+    #i2idl-glossary .i2-discovery-tag{align-self:flex-start;border:1px solid var(--i2-lilac);border-radius:999px;padding:4px 8px;color:var(--i2-purple);font:10px/1.3 "Syne Mono","Courier New",monospace;text-transform:uppercase;letter-spacing:.045em}
+    #i2idl-glossary .i2-discovery-card h3{margin:14px 0 8px;font-size:clamp(20px,2.2vw,24px);line-height:1.18;color:var(--i2-purple-deep)}
+    #i2idl-glossary .i2-discovery-card p{margin:0 0 20px;color:var(--i2-muted);font-size:15px;line-height:1.55;flex:1}
+    #i2idl-glossary .i2-discovery-card a{align-self:flex-start;color:var(--i2-purple);font-size:15px;font-weight:700;text-decoration-thickness:1px;text-underline-offset:4px}
+    #i2idl-glossary .i2-discovery-card a:hover{color:var(--i2-orange-deep)}
+    #i2idl-glossary .i2-discovery-card a:focus-visible{outline:3px solid var(--i2-orange);outline-offset:4px;border-radius:2px}
+    @media(max-width:700px){#i2idl-glossary .i2-discovery-grid{grid-template-columns:1fr}#i2idl-glossary .i2-discovery{padding:19px;margin-top:18px}#i2idl-glossary .i2-discovery-card{min-height:0;padding:20px}}
+
+    #i2idl-glossary .i2-curated-shell {
+      position: relative;
+      margin-top: 18px;
+      z-index: 2;
+    }
+    #i2idl-glossary .i2-curated {
+      padding: 22px;
+      border: 1px solid var(--i2-line);
+      border-radius: 18px;
+      background: var(--i2-purple-soft);
+    }
+    #i2idl-glossary .i2-curated-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 14px;
+    }
+    #i2idl-glossary .i2-curated-head h2 {
+      margin: 4px 0 0;
+      font-size: clamp(24px, 3vw, 34px);
+      line-height: 1.05;
+      letter-spacing: -.03em;
+      color: var(--i2-purple-deep);
+    }
+    #i2idl-glossary .i2-curated-intro {
+      margin: 7px 0 0;
+      max-width: 760px;
+      color: var(--i2-muted);
+      font-size: 14px;
+    }
+    #i2idl-glossary .i2-curated-clear {
+      display: none;
+      flex: 0 0 auto;
+      min-height: 40px;
+      padding: 8px 12px;
+      border: 1px solid var(--i2-purple);
+      border-radius: 9px;
+      background: transparent;
+      color: var(--i2-purple);
+      font-weight: 700;
+      cursor: pointer;
+    }
+    #i2idl-glossary .i2-curated-clear.is-visible { display: inline-flex; align-items: center; }
+    #i2idl-glossary .i2-curated-clear:hover { background: var(--i2-orange); border-color: var(--i2-orange); color: var(--i2-purple-deep); }
+    #i2idl-glossary .i2-curated-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+    #i2idl-glossary .i2-curated-card {
+      width: 100%;
+      min-width: 0;
+      min-height: 100%;
+      padding: 17px 18px;
+      border: 1px solid var(--i2-lilac);
+      border-radius: 14px;
+      background: #fff;
+      color: var(--i2-ink);
+      text-align: left;
+      cursor: pointer;
+      transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease, background .15s ease;
+    }
+    #i2idl-glossary .i2-curated-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--i2-orange);
+      box-shadow: 0 10px 24px rgba(147,69,0,.10);
+    }
+    #i2idl-glossary .i2-curated-card[aria-pressed="true"] {
+      border-color: var(--i2-purple);
+      background: var(--i2-purple-deep);
+      color: #fff;
+      box-shadow: 0 10px 24px rgba(36,16,45,.16);
+    }
+    #i2idl-glossary .i2-curated-card-kicker {
+      display: block;
+      margin-bottom: 7px;
+      font-family: "Syne Mono", "Courier New", monospace;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      color: var(--i2-purple);
+    }
+    #i2idl-glossary .i2-curated-card[aria-pressed="true"] .i2-curated-card-kicker { color: var(--i2-orange-light); }
+    #i2idl-glossary .i2-curated-card-title {
+      display: block;
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 1.18;
+      letter-spacing: -.015em;
+    }
+    #i2idl-glossary .i2-curated-card-description {
+      display: block;
+      margin-top: 8px;
+      color: var(--i2-muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    #i2idl-glossary .i2-curated-card[aria-pressed="true"] .i2-curated-card-description { color: rgba(255,255,255,.78); }
+    #i2idl-glossary .i2-collection-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: 14px;
+      padding-top: 13px;
+      border-top: 1px solid var(--i2-line);
+      align-items: center;
+    }
+    #i2idl-glossary .i2-collection-label {
+      margin-right: 2px;
+      color: var(--i2-muted);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+    #i2idl-glossary .i2-collection-link {
+      display: inline-flex;
+      align-items: center;
+      padding: 5px 8px;
+      border: 1px solid var(--i2-lilac);
+      border-radius: 999px;
+      background: var(--i2-purple-soft);
+      color: var(--i2-purple);
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1;
+      cursor: pointer;
+    }
+    #i2idl-glossary .i2-collection-link:hover { background: var(--i2-orange-soft); border-color: var(--i2-orange); color: var(--i2-orange-deep); }
+
+    #i2idl-glossary .i2-control-shell {
+      position: relative;
+      margin-top: 18px;
+      z-index: 2;
+    }
+    #i2idl-glossary .i2-controls {
+      background: var(--i2-white);
+      border: 1px solid var(--i2-line);
+      box-shadow: var(--i2-shadow);
+      border-radius: 18px;
+      padding: 24px;
+    }
+    #i2idl-glossary .i2-search-row { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: stretch; }
+    #i2idl-glossary .i2-search-wrap { position: relative; }
+    #i2idl-glossary .i2-search-icon {
+      position: absolute; left: 18px; top: 50%; transform: translateY(-50%);
+      width: 20px; height: 20px; opacity: .48; pointer-events: none;
+    }
+    #i2idl-glossary #i2-search {
+      width: 100%; min-height: 56px; border: 1px solid var(--i2-line); border-radius: 10px;
+      padding: 14px 50px 14px 50px; background: #fff; color: var(--i2-ink); outline: none;
+      font-size: 17px;
+    }
+    #i2idl-glossary #i2-search:focus { border-color: var(--i2-orange); box-shadow: 0 0 0 3px var(--i2-orange-glow); }
+    #i2idl-glossary .i2-search-clear {
+      position: absolute; right: 12px; top: 50%; transform: translateY(-50%); z-index: 3;
+      width: 32px; height: 32px; display: none; place-items: center; padding: 0;
+      border: 0; border-radius: 8px; background: transparent; color: var(--i2-muted); cursor: pointer;
+      font-size: 24px; line-height: 1; font-weight: 400;
+    }
+    #i2idl-glossary .i2-search-clear.is-visible { display: grid; }
+    #i2idl-glossary .i2-search-clear:hover { background: var(--i2-orange-soft); color: var(--i2-orange-deep); }
+    #i2idl-glossary .i2-suggestions {
+      position: absolute; left: 0; right: 0; top: calc(100% + 7px); z-index: 30;
+      display: none; max-height: 360px; overflow-y: auto; background: #fff;
+      border: 1px solid var(--i2-line); border-radius: 10px; box-shadow: 0 18px 38px rgba(36,16,45,.16);
+    }
+    #i2idl-glossary .i2-suggestions.is-open { display: block; }
+    #i2idl-glossary .i2-suggestion {
+      width: 100%; display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 14px; align-items: center;
+      padding: 11px 13px; border: 0; border-bottom: 1px solid var(--i2-line); background: #fff;
+      color: var(--i2-ink); text-align: left; cursor: pointer;
+    }
+    #i2idl-glossary .i2-suggestion:last-child { border-bottom: 0; }
+    #i2idl-glossary .i2-suggestion:hover,
+    #i2idl-glossary .i2-suggestion[aria-selected="true"] { background: var(--i2-orange-soft); color: var(--i2-orange-deep); }
+    #i2idl-glossary .i2-suggestion-term { font-weight: 700; font-size: 15px; line-height: 1.25; }
+    #i2idl-glossary .i2-suggestion-aka { display: block; margin-top: 2px; color: var(--i2-muted); font-size: 12px; font-weight: 400; }
+    #i2idl-glossary .i2-suggestion-meta {
+      color: var(--i2-muted); font-family: "Syne Mono", "Courier New", monospace;
+      font-size: 9px; letter-spacing: .035em; text-transform: uppercase; white-space: nowrap;
+    }
+    #i2idl-glossary .i2-reset {
+      border: 1px solid var(--i2-purple); background: var(--i2-purple); color: #fff;
+      min-height: 56px; padding: 0 20px; border-radius: 10px; cursor: pointer; font-weight: 700;
+    }
+    #i2idl-glossary .i2-reset:hover { background: var(--i2-orange); border-color: var(--i2-orange); color: var(--i2-purple-deep); }
+
+    #i2idl-glossary .i2-filter-section { margin-top: 22px; }
+    #i2idl-glossary .i2-filter-head { display: flex; justify-content: space-between; gap: 20px; align-items: baseline; margin-bottom: 10px; }
+    #i2idl-glossary .i2-label { font-size: 12px; color: var(--i2-muted); font-weight: 700; }
+    #i2idl-glossary .i2-count { color: var(--i2-muted); font-size: 14px; }
+    #i2idl-glossary .i2-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+    #i2idl-glossary .i2-pill {
+      border: 1px solid var(--i2-line); background: var(--i2-paper); color: var(--i2-ink);
+      border-radius: 999px; padding: 8px 12px; cursor: pointer; font-size: 14px; transition: .15s ease;
+    }
+    #i2idl-glossary .i2-pill:hover { border-color: var(--i2-orange); background: var(--i2-orange-soft); color: var(--i2-orange-deep); }
+    #i2idl-glossary .i2-pill[aria-pressed="true"]:hover { background: var(--i2-orange); border-color: var(--i2-orange); color: var(--i2-purple-deep); }
+    #i2idl-glossary .i2-pill[aria-pressed="true"] { background: var(--i2-purple); border-color: var(--i2-purple); color: #fff; }
+
+    #i2idl-glossary .i2-alpha-wrap {
+      position: sticky; top: 0; z-index: 4; margin-top: 26px;
+      background: rgba(251,250,248,.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+      border-top: 1px solid var(--i2-line); border-bottom: 1px solid var(--i2-line);
+    }
+    #i2idl-glossary .i2-alpha { display: flex; gap: 3px; overflow-x: auto; scrollbar-width: thin; padding: 10px 0; }
+    #i2idl-glossary .i2-alpha button {
+      border: 0; background: transparent; color: var(--i2-purple); min-width: 34px; height: 34px;
+      border-radius: 7px; cursor: pointer; font-size: 14px;
+    }
+    #i2idl-glossary .i2-alpha button:hover:not(:disabled) { background: var(--i2-orange-soft); color: var(--i2-orange-deep); }
+    #i2idl-glossary .i2-alpha button[aria-pressed="true"] { background: var(--i2-purple); color: #fff; font-weight: 700; }
+    #i2idl-glossary .i2-alpha button[aria-pressed="true"]:hover:not(:disabled) { background: var(--i2-orange); color: var(--i2-purple-deep); }
+    #i2idl-glossary .i2-alpha button.i2-alpha-all { min-width: 48px; padding: 0 10px; font-weight: 700; }
+    #i2idl-glossary .i2-alpha button:disabled { color: #bbb2bd; cursor: default; }
+
+    #i2idl-glossary .i2-main { padding: 46px 0 80px; }
+    #i2idl-glossary .i2-intro-card { background: #fff; border: 1px solid var(--i2-line); border-radius: 14px; padding: 25px; }
+    #i2idl-glossary .i2-intro-card.dark { background: var(--i2-purple-deep); color: #fff; border-color: var(--i2-purple-deep); }
+    #i2idl-glossary .i2-intro-card h2 { margin: 0 0 10px; font-size: 25px; letter-spacing: -.02em; }
+    #i2idl-glossary .i2-intro-card p { margin: 0; color: var(--i2-muted); }
+    #i2idl-glossary .i2-intro-card.dark p { color: rgba(255,255,255,.76); }
+    #i2idl-glossary .i2-big-number { font-size: 56px; line-height: 1; font-weight: 700; letter-spacing: -.045em; margin: 6px 0 10px; }
+
+    #i2idl-glossary .i2-letter-section { scroll-margin-top: 80px; margin-top: 42px; }
+    #i2idl-glossary .i2-letter-heading {
+      display: flex; align-items: center; gap: 14px; margin: 0 0 14px;
+      font-size: 19px; color: var(--i2-purple); font-family: "Syne Mono", "Courier New", monospace;
+      text-transform: uppercase; letter-spacing: .06em;
+    }
+    #i2idl-glossary .i2-letter-heading::after { content: ""; height: 1px; background: var(--i2-line); flex: 1; }
+    #i2idl-glossary .i2-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    #i2idl-glossary .i2-entry {
+      position: relative; background: #fff; border: 1px solid var(--i2-line); border-radius: 14px;
+      padding: 22px 22px 20px; min-width: 0; scroll-margin-top: 82px;
+      transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+    }
+    #i2idl-glossary .i2-entry:hover { transform: translateY(-2px); border-color: var(--i2-orange); box-shadow: 0 10px 25px rgba(147,69,0,.10); }
+    #i2idl-glossary .i2-entry.is-selected {
+      border-color: var(--i2-orange);
+      box-shadow: 0 0 0 3px rgba(255,159,28,.30), 0 12px 32px rgba(147,69,0,.22);
+    }
+    #i2idl-glossary .i2-collection-link[aria-pressed="true"] {
+      background: var(--i2-orange);
+      border-color: var(--i2-orange-deep);
+      color: var(--i2-purple-deep);
+      box-shadow: 0 0 0 2px rgba(255,159,28,.2);
+    }
+    #i2idl-glossary .i2-entry:target { outline: 3px solid var(--i2-orange); outline-offset: 2px; border-color: var(--i2-orange); }
+    #i2idl-glossary .i2-entry-top { display: flex; gap: 12px; justify-content: space-between; align-items: flex-start; }
+    #i2idl-glossary .i2-entry h3 { margin: 8px 0 0; font-size: 24px; line-height: 1.12; letter-spacing: -.025em; }
+    #i2idl-glossary .i2-aka { color: var(--i2-muted); margin: 6px 0 0; font-size: 14px; }
+    #i2idl-glossary .i2-meta { display: flex; flex-wrap: wrap; gap: 6px; font-size: 10px; color: var(--i2-purple); }
+    #i2idl-glossary .i2-chip {
+      border: 1px solid var(--i2-lilac); background: var(--i2-purple-soft); color: var(--i2-purple);
+      padding: 4px 7px; border-radius: 999px; cursor: pointer; font: inherit; line-height: 1.2;
+      transition: background .15s ease, border-color .15s ease, color .15s ease, transform .15s ease;
+    }
+    #i2idl-glossary .i2-chip:hover { background: var(--i2-orange-soft); border-color: var(--i2-orange); color: var(--i2-orange-deep); transform: translateY(-1px); }
+    #i2idl-glossary .i2-chip[aria-pressed="true"] { background: var(--i2-purple); border-color: var(--i2-purple); color: #fff; }
+    #i2idl-glossary .i2-chip[aria-pressed="true"]:hover { background: var(--i2-orange); border-color: var(--i2-orange); color: var(--i2-purple-deep); }
+    #i2idl-glossary .i2-copy {
+      flex: 0 0 auto; width: 34px; height: 34px; border-radius: 8px; border: 1px solid var(--i2-line);
+      background: #fff; color: var(--i2-purple); cursor: pointer; display: grid; place-items: center;
+    }
+    #i2idl-glossary .i2-copy:hover { background: var(--i2-orange-soft); border-color: var(--i2-orange); color: var(--i2-orange-deep); }
+    #i2idl-glossary .i2-copy.is-copied {
+      position: relative; background: var(--i2-orange); border-color: var(--i2-orange); color: var(--i2-purple-deep);
+      box-shadow: 0 0 0 3px var(--i2-orange-glow);
+    }
+    #i2idl-glossary .i2-copy.is-copied::after {
+      content: "Link copied"; position: absolute; z-index: 20; top: calc(100% + 8px); right: 0;
+      min-width: max-content; padding: 6px 9px; border-radius: 7px; background: var(--i2-purple-deep); color: #fff;
+      font-family: "Syne Mono", "Courier New", monospace; font-size: 10px; font-weight: 700; letter-spacing: .035em;
+      line-height: 1; box-shadow: 0 8px 20px rgba(36,16,45,.18); pointer-events: none;
+    }
+    #i2idl-glossary .i2-copy.is-copied::before {
+      content: ""; position: absolute; z-index: 21; top: calc(100% + 3px); right: 11px; width: 9px; height: 9px;
+      background: var(--i2-purple-deep); transform: rotate(45deg); pointer-events: none;
+    }
+    #i2idl-glossary .i2-sr-only {
+      position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important;
+      overflow: hidden !important; clip: rect(0,0,0,0) !important; white-space: nowrap !important; border: 0 !important;
+    }
+    #i2idl-glossary .i2-definition { margin: 16px 0 0; font-size: 16px; }
+    #i2idl-glossary .i2-why { margin: 13px 0 0; padding-top: 13px; border-top: 1px solid var(--i2-line); color: var(--i2-muted); font-size: 14px; }
+    #i2idl-glossary .i2-why strong { color: var(--i2-ink); }
+    #i2idl-glossary .i2-deeper { display: inline-flex; align-items: center; gap: 7px; margin-top: 14px; font-weight: 700; color: var(--i2-purple); text-decoration: none; font-size: 14px; }
+    #i2idl-glossary .i2-deeper:hover { color: var(--i2-orange-deep); text-decoration: underline; text-underline-offset: 3px; }
+    #i2idl-glossary .i2-source-links { display: flex; flex-wrap: wrap; gap: 8px 14px; margin-top: 14px; align-items: center; }
+    #i2idl-glossary .i2-source-unit { display: inline-flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+    #i2idl-glossary .i2-source-links .i2-deeper { margin-top: 0; }
+    #i2idl-glossary .i2-neighborhood { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--i2-line); }
+    #i2idl-glossary .i2-neighborhood-title { margin: 0 0 9px; font-family: "Syne Mono", "Courier New", monospace; font-size: 10px; font-weight: 700; letter-spacing: .055em; text-transform: uppercase; color: var(--i2-muted); }
+    #i2idl-glossary .i2-neighborhood-group { display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 8px 10px; align-items: start; margin-top: 7px; }
+    #i2idl-glossary .i2-neighborhood-label { padding-top: 5px; font-family: "Syne Mono", "Courier New", monospace; font-size: 9px; font-weight: 700; letter-spacing: .045em; text-transform: uppercase; color: var(--i2-muted); }
+    #i2idl-glossary .i2-neighborhood-links { display: flex; flex-wrap: wrap; gap: 6px; }
+    #i2idl-glossary .i2-neighborhood-link { display: inline-flex; align-items: center; padding: 5px 8px; border: 1px solid var(--i2-lilac); border-radius: 999px; background: var(--i2-purple-soft); color: var(--i2-purple); font-size: 12px; font-weight: 700; line-height: 1.2; text-decoration: none; }
+    #i2idl-glossary .i2-neighborhood-link:hover { border-color: var(--i2-orange); background: var(--i2-orange-soft); color: var(--i2-orange-deep); }
+    #i2idl-glossary .i2-graph-status { display:grid; gap:6px; margin-top:16px; padding-top:14px; border-top:1px solid rgba(255,255,255,.16); }
+    #i2idl-glossary .i2-graph-status span { font-size:12px; color:rgba(255,255,255,.78); }
+    #i2idl-glossary .i2-graph-status strong { color:#fff; font-size:14px; }
+    #i2idl-glossary .i2-external-mappings { margin-top:16px; padding-top:14px; border-top:1px solid var(--i2-line); }
+    #i2idl-glossary .i2-external-title { font-family:"Syne Mono","Courier New",monospace; font-size:10px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--i2-muted); margin:0 0 5px; }
+    #i2idl-glossary .i2-external-intro { font-size:12px; line-height:1.4; color:var(--i2-muted); margin:0 0 9px; }
+    #i2idl-glossary .i2-external-list { display:grid; gap:7px; }
+    #i2idl-glossary .i2-external-link { display:grid; grid-template-columns:minmax(118px,.42fr) minmax(0,1fr); gap:10px; align-items:center; padding:9px 11px; border:1px solid var(--i2-lilac); border-radius:10px; background:#fff; color:var(--i2-ink); text-decoration:none; }
+    #i2idl-glossary .i2-external-link:hover { border-color:var(--i2-orange); background:var(--i2-orange-soft); }
+    #i2idl-glossary .i2-external-vocabulary { font-family:"Syne Mono","Courier New",monospace; font-size:9px; font-weight:700; text-transform:uppercase; color:var(--i2-purple); }
+    #i2idl-glossary .i2-external-match { min-width:0; font-size:12px; line-height:1.35; }
+    #i2idl-glossary .i2-neighborhood-intro { margin:-3px 0 9px; color:var(--i2-muted); font-size:12px; }
+    @media(max-width:680px){#i2idl-glossary .i2-external-link{grid-template-columns:1fr;gap:3px;}}
+    #i2idl-glossary .i2-semantic-links { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 14px; align-items: center; }
+    #i2idl-glossary .i2-semantic-label { font-size: 12px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; color: var(--i2-muted); margin-right: 2px; }
+    #i2idl-glossary .i2-semantic-link { display: inline-flex; align-items: center; padding: 5px 8px; border: 1px solid var(--i2-line); border-radius: 999px; background: #fff; color: var(--i2-purple); font: inherit; font-size: 12px; font-weight: 800; line-height: 1; text-decoration: none; cursor: pointer; }
+    #i2idl-glossary .i2-semantic-link:hover { border-color: var(--i2-orange); background: var(--i2-orange-soft); color: var(--i2-orange-deep); text-decoration: none; }
+    #i2idl-glossary .i2-source-detail { color: var(--i2-muted); font-weight: 400; font-size: 12px; }
+    #i2idl-glossary .i2-source-relation {
+      display: inline-flex; align-items: center; padding: 3px 6px; border-radius: 999px;
+      border: 1px solid var(--i2-line); background: var(--i2-paper); color: var(--i2-muted);
+      font-family: "Syne Mono", "Courier New", monospace; text-transform: uppercase;
+      letter-spacing: .04em; font-size: 8px; line-height: 1.2;
+    }
+    #i2idl-glossary .i2-source-relation.direct { border-color: rgba(59,23,75,.28); color: var(--i2-purple); background: var(--i2-purple-soft); }
+    #i2idl-glossary .i2-source-relation.supporting { border-style: dashed; }
+    #i2idl-glossary .i2-license-badge {
+      display: inline-flex; align-items: center; gap: 5px; margin-left: 2px; padding: 3px 7px;
+      border: 1px solid var(--i2-line); border-radius: 999px; background: var(--i2-paper); color: var(--i2-muted);
+      font-family: "Syne Mono", "Courier New", monospace; font-size: 9px; line-height: 1.25;
+      text-transform: uppercase; letter-spacing: .045em; text-decoration: none; white-space: nowrap;
+    }
+    #i2idl-glossary .i2-license-badge[href]:hover { border-color: var(--i2-orange); background: var(--i2-orange-soft); color: var(--i2-orange-deep); }
+    #i2idl-glossary .i2-no-results { display: none; padding: 50px 24px; text-align: center; border: 1px dashed var(--i2-line); border-radius: 14px; background: #fff; }
+    #i2idl-glossary .i2-no-results strong { display: block; font-size: 22px; margin-bottom: 6px; }
+
+    #i2idl-glossary .i2-contribute {
+      background: var(--i2-purple-soft); border-top: 1px solid var(--i2-lilac); padding: 34px 0;
+    }
+    #i2idl-glossary .i2-contribute-inner {
+      display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 28px; align-items: center;
+    }
+    #i2idl-glossary .i2-contribute h2 {
+      margin: 5px 0 8px; font-size: clamp(24px, 3vw, 34px); line-height: 1.08; letter-spacing: -.03em;
+    }
+    #i2idl-glossary .i2-contribute p { margin: 0; max-width: 760px; color: var(--i2-muted); font-size: 15px; }
+    #i2idl-glossary .i2-contact-btn {
+      display: inline-flex; align-items: center; justify-content: center; min-height: 50px; padding: 12px 18px;
+      border-radius: 10px; background: var(--i2-purple-deep); color: #fff; font-weight: 700; text-decoration: none;
+      white-space: nowrap; border: 1px solid var(--i2-purple-deep); transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+    }
+    #i2idl-glossary .i2-contact-btn:hover {
+      transform: translateY(-1px); background: var(--i2-orange); border-color: var(--i2-orange); color: var(--i2-purple-deep); box-shadow: 0 8px 18px rgba(147,69,0,.16);
+    }
+
+    #i2idl-glossary .i2-license-panel {
+      margin: 0 0 26px; padding: 20px 22px; border: 1px solid rgba(255,255,255,.18); border-radius: 12px;
+      background: rgba(255,255,255,.055); max-width: 920px;
+    }
+    #i2idl-glossary .i2-license-panel h2 { margin: 4px 0 10px; font-size: 20px; line-height: 1.15; letter-spacing: -.02em; color: #fff !important; }
+    #i2idl-glossary .i2-license-panel p + p { margin-top: 10px; }
+    #i2idl-glossary .i2-license-panel .i2-copyright { color: #fff; font-weight: 700; }
+    #i2idl-glossary .i2-license-legend { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 14px; }
+    #i2idl-glossary .i2-license-legend span,
+    #i2idl-glossary .i2-license-legend a {
+      display: inline-flex; padding: 5px 8px; border: 1px solid rgba(255,255,255,.20); border-radius: 999px;
+      color: rgba(255,255,255,.82); font-family: "Syne Mono", "Courier New", monospace; font-size: 9px;
+      text-transform: uppercase; letter-spacing: .045em; text-decoration: none;
+    }
+    #i2idl-glossary .i2-license-legend a:hover { border-color: var(--i2-orange-light); color: var(--i2-orange-light); background: rgba(255,159,28,.08); }
+
+    #i2idl-glossary .i2-footer { background: var(--i2-purple-deep); color: #fff; padding: 38px 0; }
+    #i2idl-glossary .i2-footer-grid { display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: end; }
+    #i2idl-glossary .i2-source-kicker { font-size: 11px; color: rgba(255,255,255,.62); margin-bottom: 8px; }
+    #i2idl-glossary .i2-footer p { margin: 0; max-width: 820px; color: rgba(255,255,255,.76); font-size: 14px; }
+    #i2idl-glossary .i2-footer .i2-source-note {
+      margin: 0 0 24px;
+      display: flex;
+      width: 100%;
+      max-width: 920px;
+      padding: 18px 20px;
+      border-radius: 12px;
+      align-items: flex-start;
+      gap: 10px 16px;
+    }
+    #i2idl-glossary .i2-footer .i2-source-note > span {
+      flex: 1 0 100%;
+      line-height: 1.5;
+    }
+    #i2idl-glossary .i2-footer .i2-source-note a {
+      display: inline-block;
+      white-space: normal;
+      overflow-wrap: anywhere;
+    }
+    #i2idl-glossary .i2-footer a { color: #fff; text-underline-offset: 3px; }
+    #i2idl-glossary .i2-footer a:hover,
+    #i2idl-glossary .i2-source-note a:hover { color: var(--i2-orange-light); }
+    #i2idl-glossary .i2-top { white-space: nowrap; font-weight: 700; text-decoration: none; }
+
+    #i2idl-glossary .i2-search-nav {
+      position: fixed; right: 26px; bottom: 26px; z-index: 40;
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      min-height: 44px; padding: 10px 14px; border: 1px solid var(--i2-orange-deep);
+      border-radius: 10px; background: var(--i2-orange); color: var(--i2-purple-deep);
+      font-family: "Syne Mono", "Courier New", monospace; font-size: 12px; font-weight: 700;
+      letter-spacing: .035em; text-transform: uppercase; cursor: pointer;
+      box-shadow: 0 10px 28px rgba(36,16,45,.20);
+      opacity: 0; visibility: hidden; transform: translateY(8px);
+      transition: opacity .18s ease, transform .18s ease, visibility .18s ease, background .18s ease;
+    }
+    #i2idl-glossary .i2-search-nav.is-visible { opacity: 1; visibility: visible; transform: translateY(0); }
+    #i2idl-glossary .i2-search-nav:hover { background: var(--i2-orange-light); }
+    #i2idl-glossary .i2-search-nav-arrow { font-size: 17px; line-height: 1; }
+
+    #i2idl-glossary button:focus-visible,
+    #i2idl-glossary a:focus-visible,
+    #i2idl-glossary input:focus-visible { outline: 3px solid var(--i2-orange); outline-offset: 3px; box-shadow: 0 0 0 5px var(--i2-orange-glow); }
+
+    @media (max-width: 820px) {
+      #i2idl-glossary .i2-grid, #i2idl-glossary .i2-feature-grid { grid-template-columns: 1fr; }
+      #i2idl-glossary .i2-curated-grid { grid-template-columns: 1fr; }
+      #i2idl-glossary .i2-curated-head { align-items: flex-start; flex-direction: column; }
+      #i2idl-glossary .i2-search-row { grid-template-columns: 1fr; }
+      #i2idl-glossary .i2-reset { min-height: 48px; }
+      #i2idl-glossary .i2-footer-grid { grid-template-columns: 1fr; align-items: start; }
+      #i2idl-glossary .i2-contribute-inner { grid-template-columns: 1fr; align-items: start; }
+      #i2idl-glossary .i2-contact-btn { width: 100%; white-space: normal; text-align: center; }
+      #i2idl-glossary .i2-daily { grid-template-columns: 1fr; align-items: start; }
+      #i2idl-glossary .i2-daily-link { width: 100%; white-space: normal; text-align: center; }
+      #i2idl-glossary .i2-search-nav { right: 14px; bottom: 14px; min-height: 42px; padding: 9px 12px; }
+    }
+    @media (max-width: 520px) {
+      #i2idl-glossary .i2-wrap { padding: 0 16px; }
+      #i2idl-glossary .i2-controls { padding: 16px; border-radius: 14px; }
+      #i2idl-glossary .i2-entry { padding: 18px; }
+      #i2idl-glossary .i2-entry h3 { font-size: 21px; }
+      #i2idl-glossary .i2-hero { padding: 28px 0 26px; }
+      #i2idl-glossary h1 { font-size: clamp(38px, 12vw, 56px); }
+      #i2idl-glossary .i2-hero-deck { font-size: 17px; margin-top: 14px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      #i2idl-glossary *, #i2idl-glossary *::before, #i2idl-glossary *::after { scroll-behavior: auto !important; transition: none !important; }
+    }
+
+    /* Mobile maintenance introduced in v0.0.87: skip layout/paint for offscreen cards. */
+    @supports (content-visibility: auto) {
+      #i2idl-glossary .i2-entry {
+        content-visibility: auto;
+        contain-intrinsic-size: auto 400px;
+      }
+    }
+    @media (max-width: 520px) {
+      #i2idl-glossary .i2-entry { contain-intrinsic-size: auto 520px; }
+    }
+  </style>
+
+  <style>
+    #i2idl-glossary .i2-lang-switch {display:inline-flex;gap:4px;margin-top:17px;padding:4px;border:1px solid rgba(255,255,255,.4);border-radius:9px}
+    #i2idl-glossary .i2-lang-switch button {background:transparent;color:white;border:0;border-radius:6px;padding:8px 13px;cursor:pointer;font-weight:800}
+    #i2idl-glossary .i2-lang-switch button[aria-pressed="true"] {background:white;color:#24102d}
+    #i2idl-glossary .i2-lang-note {font-size:12px;margin:8px 0 0;color:rgba(255,255,255,.8)}
+  </style>
+  <section class="i2-hero" id="i2-top">
+    <div class="i2-wrap">
+      <div class="i2-eyebrow">I2IDL / Reference</div>
+      <h1 id="i2idl-glossary-title">A Glossary of Digital Learning</h1>
+      <p class="i2-hero-deck">A practical reference to the language of learning engineering, data interoperability, learning science, human-centered design, analytics, standards, and the systems that connect them. This glossary is designed for practitioners, leaders, researchers, vendors, and standards communities who need a common way to talk about learning systems across disciplinary boundaries.</p>
+        <div class="i2-lang-switch" role="group" aria-label="Display language / Langue d’affichage">
+          <button type="button" data-i2-lang="en" aria-pressed="true" lang="en">English</button>
+          <button type="button" data-i2-lang="fr" aria-pressed="false" lang="fr">Français</button>
+        </div>
+        <p class="i2-lang-note" id="i2-lang-note" role="status">French translations appear when reviewed; remaining entries stay in English.</p>
+      <div class="i2-version-meta" aria-label="Glossary version information">
+        <span id="i2-version-display">Version v0.0.90</span>
+        <span id="i2-updated-display">Last updated October 15, 2026 · 7:06 PM EDT</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="i2-wrap i2-feature-shell">
+    <section class="i2-feature-grid" aria-label="Glossary highlights">
+      <section class="i2-daily" aria-labelledby="i2-daily-term">
+        <div>
+          <div class="i2-daily-kicker"><span>Concept of the day</span><span id="i2-daily-date"></span></div>
+          <h2 id="i2-daily-term">Loading…</h2>
+          <p class="i2-daily-definition" id="i2-daily-definition"></p>
+          <div class="i2-daily-meta" id="i2-daily-meta" aria-label="Concept of the day categories"></div>
+        </div>
+        <button class="i2-daily-link" id="i2-daily-link" type="button">Explore this entry →</button>
+      </section>
+      <article class="i2-intro-card dark">
+        <div class="i2-label" style="color:rgba(255,255,255,.62);">Growing reference</div>
+        <div class="i2-big-number" id="i2-total">0</div>
+        <p>curated entries spanning learning science, digital systems, design, interoperability, analytics, privacy, governance, and operations.</p>
+        <div class="i2-graph-status" aria-label="Connected knowledge graph coverage"><span><strong>420</strong> connected concepts</span><span><strong>31</strong> hierarchy pairs</span><span><strong>788</strong> related pairs</span><span><strong>17</strong> external mappings</span></div>
+      </article>
+    </section>
+  </div>
+
+  <div class="i2-wrap">
+    <section class="i2-discovery" aria-labelledby="i2-discovery-title">
+      <div class="i2-discovery-head">
+        <div class="i2-label">Explore the connected glossary</div>
+        <h2 id="i2-discovery-title">Explore beyond the definition.</h2>
+        <p>Follow connections between digital learning concepts, investigate their context, and use the reference in research, applications, and AI systems.</p>
+      </div>
+      <div class="i2-discovery-grid">
+        <article class="i2-discovery-card">
+          <span class="i2-discovery-tag">Explore &amp; research</span>
+          <h3>Knowledge Graph</h3>
+          <p>Explore connections among 420 curated concepts. Follow semantic relationships, trace paths between terms, investigate supporting sources and context, and discover connections across fields and collections.</p>
+          <a href="https://id.i2idl.org/explore" target="_blank" rel="noopener noreferrer">Open Knowledge Graph Explorer ↗</a>
+        </article>
+        <article class="i2-discovery-card">
+          <span class="i2-discovery-tag">Open infrastructure &amp; AI</span>
+          <h3>Developer Tools</h3>
+          <p>Integrate the glossary with applications and AI assistants using persistent identifiers, JSON-LD, REST, read-only SPARQL queries, and the Model Context Protocol (MCP).</p>
+          <a href="https://id.i2idl.org/developers" target="_blank" rel="noopener noreferrer">Explore Developer Tools ↗</a>
+        </article>
+      </div>
+    </section>
+  </div>
+
+  <div class="i2-wrap i2-curated-shell">
+    <section class="i2-curated" aria-labelledby="i2-curated-title">
+      <div class="i2-curated-head">
+        <div>
+          <div class="i2-label">Explore collections</div>
+          <h2 id="i2-curated-title">Start with three major collections</h2>
+          <p class="i2-curated-intro">Explore Learning Engineering, Learning Sciences, and Standards & Interoperability. Select any collection badge on a concept card to filter the glossary.</p>
+        </div>
+        <button class="i2-curated-clear" id="i2-curated-clear" type="button">Clear collection</button>
+      </div>
+      <div class="i2-curated-grid" id="i2-curated-grid" aria-label="Featured glossary collections"></div>
+    </section>
+  </div>
+
+  <div class="i2-wrap i2-control-shell">
+    <section class="i2-controls" aria-label="Glossary search and filters">
+      <div class="i2-search-row">
+        <div class="i2-search-wrap">
+          <svg class="i2-search-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <label for="i2-search" style="position:absolute;left:-9999px;">Search glossary</label>
+          <input id="i2-search" type="search" placeholder="Search terms, acronyms, definitions, or topics…" autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="i2-suggestions">
+          <button class="i2-search-clear" id="i2-search-clear" type="button" aria-label="Clear search" title="Clear search">×</button>
+          <div class="i2-suggestions" id="i2-suggestions" role="listbox" aria-label="Suggested glossary terms"></div>
+        </div>
+        <button class="i2-reset" id="i2-reset" type="button">Reset</button>
+      </div>
+      <div class="i2-filter-section">
+        <div class="i2-filter-head"><span class="i2-label">Type</span><span class="i2-count" id="i2-count" aria-live="polite"></span></div>
+        <div class="i2-pills" id="i2-type-filters" aria-label="Filter by type"></div>
+      </div>
+      <div class="i2-filter-section">
+        <div class="i2-filter-head"><span class="i2-label">Field</span></div>
+        <div class="i2-pills" id="i2-field-filters" aria-label="Filter by field"></div>
+      </div>
+      <div class="i2-filter-section">
+        <div class="i2-filter-head"><span class="i2-label">Source</span></div>
+        <div class="i2-pills" id="i2-source-filters" aria-label="Filter by source"></div>
+      </div>
+      <div class="i2-filter-section">
+        <div class="i2-filter-head"><span class="i2-label">External vocabulary</span></div>
+        <div class="i2-pills" id="i2-external-vocabulary-filters" aria-label="Filter by external vocabulary"></div>
+      </div>
+    </section>
+  </div>
+
+  <button class="i2-search-nav" id="i2-search-nav" type="button" aria-label="Go back up to search bar">
+    <span>Go back up to search bar</span><span class="i2-search-nav-arrow" id="i2-search-nav-arrow" aria-hidden="true">↑</span>
+  </button>
+
+  <div class="i2-alpha-wrap">
+    <div class="i2-wrap"><nav class="i2-alpha" id="i2-alpha" aria-label="Glossary alphabet"></nav></div>
+  </div>
+
+  <main class="i2-main">
+    <div class="i2-wrap">
+      <div id="i2-results"></div>
+      <div class="i2-no-results" id="i2-no-results"><strong>No matching entries.</strong>Try a broader search or reset the filters.</div>
+    </div>
+  </main>
+
+  <section class="i2-contribute" aria-labelledby="i2-contribute-title">
+    <div class="i2-wrap i2-contribute-inner">
+      <div>
+        <div class="i2-label">Help maintain the reference</div>
+        <h2 id="i2-contribute-title">Suggest a resource or request a removal.</h2>
+        <p>If you know an authoritative resource we should consider, or if you are a rights holder or source steward and would like a resource or adapted glossary entry reviewed or removed, contact I2IDL.</p>
+      </div>
+      <a class="i2-contact-btn" href="mailto:shelly@i2idl.org?subject=I2IDL%20Glossary%20of%20Digital%20Learning%20Resource%20Request&amp;body=Please%20tell%20us%20whether%20you%20are%20suggesting%20a%20resource%20or%20requesting%20review%20or%20removal%2C%20and%20include%20the%20relevant%20URL%20or%20glossary%20entry.%0A%0A" aria-label="Email I2IDL to suggest a glossary resource or request removal">Suggest a resource / request removal</a>
+    </div>
+  </section>
+
+  <footer class="i2-footer">
+    <div class="i2-wrap i2-footer-grid">
+      <div>
+        <section class="i2-license-panel" aria-labelledby="i2-how-title">
+          <div class="i2-source-kicker">How this glossary works</div>
+          <h2 id="i2-how-title">A human-readable glossary built on an interoperable semantic model.</h2>
+          <p><strong>The glossary operates as an explicitly connected knowledge graph.</strong> Every concept participates in collections and internal semantic relationships. External mappings connect selected concepts to authoritative vocabularies such as UNESCO Thesaurus and Schema.org.</p>
+          <p>The I2IDL Glossary of Digital Learning is designed to serve both people and machines. Readers can search, browse, filter, and explore concepts through the public glossary, while the same content is maintained underneath as structured semantic data.</p>
+          <p>Each concept has a stable identity. Definitions, source evidence, classifications, relationships, provenance, citation details, and licensing information are maintained as connected parts of the record rather than as isolated text entries.</p>
+          <p>The glossary uses JSON-LD together with established standards including SKOS, Schema.org, Dublin Core Terms, and PROV-O. This allows the same underlying content to support linked data, terminology systems, publishing workflows, semantic applications, research tools, AI-assisted discovery, and web services.</p>
+          <p>Fields and types are used as editorial groupings, while semantic relationships can connect concepts across the glossary without forcing them into a single hierarchy. Definitions retain their own provenance and source relationships so the basis for each entry remains traceable.</p>
+          <p>The public glossary is one presentation of this underlying model. Its search, filtering, navigation, source links, and concept cards are generated from the same structured data that supports the machine-readable services.</p>
+          <p><strong>Linked Data:</strong> The complete glossary is available in machine-readable JSON-LD at <a href="https://id.i2idl.org/glossary.jsonld" target="_blank" rel="noopener noreferrer">https://id.i2idl.org/glossary.jsonld</a>.</p>
+          <p><strong>Stable identifiers:</strong> Concepts, definitions, sources, and the glossary concept scheme are published under the persistent namespace <a href="https://id.i2idl.org/" target="_blank" rel="noopener noreferrer">https://id.i2idl.org/</a>.</p>
+          <p><strong>REST API:</strong> A public, read-only REST API provides structured access to glossary concepts and their semantic context for integration with applications, research systems, and other services. API reference documentation and an OpenAPI specification are available through the <a href="https://id.i2idl.org/developers" target="_blank" rel="noopener noreferrer">Developer Portal</a>.</p>
+          <p><strong>Model Context Protocol (MCP):</strong> A public MCP server enables compatible AI assistants and applications to search glossary concepts, retrieve definitions and semantic context, and explore relationships using the curated knowledge graph. The service is read-only and does not permit AI systems to modify glossary content. Connection instructions are available in the <a href="https://github.com/blakeplock/i2idl-linked-data/blob/main/docs/MCP-QUICKSTART.md" target="_blank" rel="noopener noreferrer">MCP Quick Start Guide</a>.</p>
+          <p><strong>SPARQL:</strong> The glossary can also be queried directly through a read-only SPARQL endpoint at <a href="https://id.i2idl.org/sparql" target="_blank" rel="noopener noreferrer">https://id.i2idl.org/sparql</a>.</p>
+          <p><strong>Knowledge Graph Explorer:</strong> Browse semantic relationships, investigate shortest paths, compare concepts, and discover related scholarly literature through the <a href="https://id.i2idl.org/explore" target="_blank" rel="noopener noreferrer">I2IDL Graph Explorer</a>. Each glossary concept also links directly to its graph view.</p>
+          <p><strong>Developer resources:</strong> API documentation, integration guidance, and access to the glossary's machine-readable services are available through the <a href="https://id.i2idl.org/developers" target="_blank" rel="noopener noreferrer">I2IDL Developer Portal</a>.</p>
+        </section>
+      <div class="i2-source-note"><span>Source foundations: LeBOK + <em>Modernizing Learning</em> + <em>The Science of Remote Learning</em> + <em>Exploring Learning Engineering Design Decision Tracking</em> + World Bank <em>Reimagining Human Connections</em> + UNESCO <em>AI Competency Framework for Teachers</em> + UNESCO UIS <em>National Education Statistical Capacity Assessment</em> + IEEE LTSC + IEEE xAPI Base Standard + xAPI Profiles Specification + IEEE ICICLE + UNESCO Thesaurus + CIRCLS / Digital Promise <em>Unveiling the Value of Exploration</em> + OECD <em>Education at a Glance 2026</em> + ERIC Thesaurus (2025)</span><a href="https://lebok.wiki/" target="_blank" rel="noopener noreferrer">LeBOK ↗</a><a href="https://bookstore.gpo.gov/products/modernizing-learning-building-future-learning-ecosystem" target="_blank" rel="noopener noreferrer">Modernizing Learning ↗</a><a href="https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf" target="_blank" rel="noopener noreferrer">The Science of Remote Learning ↗</a><a href="https://link.springer.com/article/10.1007/s11528-025-01076-y" target="_blank" rel="noopener noreferrer">Learning Engineering Design Decision Tracking ↗</a><a href="https://www.worldbank.org/en/topic/edutech/publication/reimagining-human-connections-technology-and-innovation-in-education-at-world-bank" target="_blank" rel="noopener noreferrer">World Bank EdTech Approach ↗</a><a href="https://www.unesco.org/en/articles/ai-competency-framework-teachers" target="_blank" rel="noopener noreferrer">UNESCO AI Competency Framework ↗</a><a href="https://www.uis.unesco.org/en/methods-and-tools/laser" target="_blank" rel="noopener noreferrer">UNESCO UIS LASER Report ↗</a><a href="https://sagroups.ieee.org/ltsc/active-standards/" target="_blank" rel="noopener noreferrer">IEEE LTSC standards ↗</a><a href="https://opensource.ieee.org/xapi/xapi-base-standard-documentation" target="_blank" rel="noopener noreferrer">IEEE xAPI Base Standard ↗</a><a href="https://github.com/adlnet/xapi-profiles" target="_blank" rel="noopener noreferrer">xAPI Profiles Specification ↗</a><a href="https://sagroups.ieee.org/icicle/learning-engineering-process/" target="_blank" rel="noopener noreferrer">IEEE ICICLE ↗</a><a href="https://vocabularies.unesco.org/unesco/en/page/domain1" target="_blank" rel="noopener noreferrer">UNESCO Education domain ↗</a><a href="https://circls.org/wp-content/uploads/2024/11/Unveiling-the-Value-of-Exploration-Insights-from-NSF-Funded-Research-on-Emerging-Technologies-for-Teaching-and-Learning.pdf" target="_blank" rel="noopener noreferrer">CIRCLS / Digital Promise report ↗</a><a href="https://www.oecd.org/en/publications/2026/09/education-at-a-glance-2026_3bce4131.html" target="_blank" rel="noopener noreferrer">OECD Education at a Glance 2026 ↗</a><a href="https://eric.ed.gov/?download" target="_blank" rel="noopener noreferrer">ERIC Thesaurus 2025 ↗</a></div>
+        <section class="i2-license-panel" aria-labelledby="i2-license-title">
+          <div class="i2-source-kicker">Copyright &amp; licensing</div>
+          <h2 id="i2-license-title">Open by default, with source licenses preserved.</h2>
+          <p class="i2-copyright">© 2026 Institute for Infrastructure and Interoperable Data in Learning (I2IDL).</p>
+          <p>Except where otherwise noted, original glossary definitions, editorial content, compilation, and organization created by I2IDL are licensed under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons Attribution 4.0 International License (CC BY 4.0)</a>.</p>
+          <p>Some entries incorporate or adapt material from third-party resources. ERIC Thesaurus 2025 is a U.S. Department of Education/Institute of Education Sciences public-domain resource, not CC BY licensed; I2IDL supplies independently authored definitions and editorial relationships, with ERIC credited as a supporting vocabulary source. Other third-party portions remain subject to the license or usage terms identified with their respective sources, including CC BY 4.0 IGO, CC BY 4.0, CC BY-NC 4.0, CC BY-NC-SA 4.0, CC BY-SA 3.0 IGO, and Apache License 2.0. Reference-only IEEE standards material remains subject to IEEE terms. The I2IDL CC BY 4.0 license does not supersede third-party rights and does not apply to third-party trademarks or source code unless separately stated.</p>
+          <div class="i2-license-legend" aria-label="Licenses represented in this glossary">
+            <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">I2IDL original: CC BY 4.0</a>
+            <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Modernizing Learning: CC BY 4.0 IGO</a>
+            <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">The Science of Remote Learning: CC BY 4.0</a>
+            <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Totino &amp; Kessler (2025): CC BY 4.0</a>
+            <a href="https://creativecommons.org/licenses/by/3.0/igo/" target="_blank" rel="noopener noreferrer">World Bank EdTech Approach: CC BY 3.0 IGO</a>
+            <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer">CIRCLS / Digital Promise: CC BY-NC 4.0</a>
+            <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">OECD Education at a Glance 2026: CC BY 4.0</a>
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">IEEE ICICLE: CC BY-NC-SA 4.0</a>
+            <a href="https://creativecommons.org/licenses/by-sa/3.0/igo/" target="_blank" rel="noopener noreferrer">UNESCO AI Competency Framework for Teachers: CC BY-SA 3.0 IGO</a>
+            <a href="https://creativecommons.org/licenses/by-sa/3.0/igo/" target="_blank" rel="noopener noreferrer">UNESCO UIS National Education Statistical Capacity Assessment: CC BY-SA 3.0 IGO</a>
+            <a href="https://creativecommons.org/licenses/by-sa/3.0/igo/" target="_blank" rel="noopener noreferrer">UNESCO Thesaurus: CC BY-SA 3.0 IGO</a>
+            <a href="https://eric.ed.gov/?download" target="_blank" rel="noopener noreferrer">ERIC Thesaurus 2025: U.S. public domain</a>
+            <span>LeBOK: used with permission</span>
+            <span>IEEE LTSC: IEEE terms apply</span>
+            <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noopener noreferrer">IEEE xAPI Base Standard: Apache 2.0</a>
+            <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noopener noreferrer">xAPI Profiles Specification: Apache 2.0</a>
+          </div>
+        </section>
+        <div class="i2-source-kicker">Source, editorial &amp; licensing note</div>
+        <p>This glossary is an I2IDL-curated reference assembled from multiple source traditions. Source and license indicators appear on individual glossary entries so downstream users can distinguish I2IDL-original material from source-specific adaptations and references.</p>
+        <p><a href="https://lebok.wiki/" target="_blank" rel="noopener noreferrer">LeBOK</a> material is used with permission. For LeBOK citations, I2IDL links to the narrowest topic or subtopic page located in the current LeBOK hierarchy rather than using a Knowledge Area landing page as evidence for an individual term. A <strong>Direct LeBOK topic</strong> indicator means the linked LeBOK page is specifically devoted to that concept; <strong>Discussed in LeBOK</strong> means the concept is substantively addressed within the linked page but does not have a standalone page of its own.</p>
+        <p><a href="https://bookstore.gpo.gov/products/modernizing-learning-building-future-learning-ecosystem" target="_blank" rel="noopener noreferrer"><em>Modernizing Learning: Building the Future Learning Ecosystem</em></a> is cited as Walcutt, J.J. &amp; Schatz, S. (Eds.) (2019), Washington, DC: Government Publishing Office, and is available under Creative Commons Attribution CC BY 4.0 IGO. Where this glossary adapts that work, the adaptation is by I2IDL; views and opinions expressed in the adaptation are the sole responsibility of I2IDL and are not endorsed by the U.S. Government. Entry-level <em>Modernizing Learning</em> citations use the ERIC-hosted PDF and open at a mapped printed page within the cited passage; where the glossary term can be located directly within the cited pages, the link opens at its first cited occurrence, otherwise at the first cited page. The U.S. Government Publishing Office record remains the canonical publication link in Source foundations.</p>
+        <p>The <a href="https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf" target="_blank" rel="noopener noreferrer"><em>The Science of Remote Learning</em></a>, cited as Goodell, J. &amp; Kessler, A. (2020), is a beta-version synthesis of cognitive science concepts and remote-learning strategies hosted by MIT Open Learning and licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>. Entry-level citations open directly to the PDF page where the cited concept or strategy is discussed.</p>
+        <p>Totino, L. &amp; Kessler, A. (2025), <a href="https://link.springer.com/article/10.1007/s11528-025-01076-y" target="_blank" rel="noopener noreferrer"><em>Exploring Learning Engineering Design Decision Tracking: Emergent Themes from Practitioners’ Work</em></a>, published in <em>TechTrends</em> 69, 816-831, is licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>. I2IDL glossary definitions may adapt concepts from that article with attribution; entry-level citations use the Springer-hosted PDF and open at the specific PDF page where the cited concept, code, or finding is discussed.</p>
+        <p>World Bank (2020), <a href="https://www.worldbank.org/en/topic/edutech/publication/reimagining-human-connections-technology-and-innovation-in-education-at-world-bank" target="_blank" rel="noopener noreferrer"><em>Reimagining Human Connections: Technology and Innovation in Education at the World Bank</em></a>, is available under <a href="https://creativecommons.org/licenses/by/3.0/igo/" target="_blank" rel="noopener noreferrer">CC BY 3.0 IGO</a>. Entry-level World Bank citations open the official World Bank-hosted PDF at the specific page containing the cited definition, principle, or supporting passage.</p>
+        <p>UNESCO (2024), <a href="https://www.unesco.org/en/articles/ai-competency-framework-teachers" target="_blank" rel="noopener noreferrer"><em>AI Competency Framework for Teachers</em></a>, ISBN 978-92-3-100707-1, is available under <a href="https://creativecommons.org/licenses/by-sa/3.0/igo/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0 IGO</a>. Entry-level citations retain the exact physical PDF page, report page, section, and relationship information for the cited framework definition, competency, principle, or supporting passage; the source link opens the official UNESCO report page, where users can access or download the publication.</p>
+        <p>UNESCO Institute for Statistics (2025), <a href="https://www.uis.unesco.org/en/methods-and-tools/laser" target="_blank" rel="noopener noreferrer"><em>National Education Statistical Capacity Assessment: Global Analysis Based on a Maturity Model</em></a>, ISBN 978-92-9189-336-2, is available under <a href="https://creativecommons.org/licenses/by-sa/3.0/igo/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0 IGO</a>. Entry-level citations open the official UNESCO Institute for Statistics PDF at the exact physical PDF page where the concept is introduced or defined, while the visible citation detail preserves both the physical PDF page and the report's printed page number.</p>
+        <p>The <a href="https://vocabularies.unesco.org/unesco/en/page/domain1" target="_blank" rel="noopener noreferrer">UNESCO Thesaurus Education domain</a> and its fourteen education microthesauri are incorporated as a structured vocabulary source. UNESCO-sourced glossary cards define the underlying education term itself; the thesaurus domain and microthesaurus structure is used for provenance and navigation rather than as the definition. This glossary contains information from The UNESCO Thesaurus which is made available by UNESCO under the <a href="https://creativecommons.org/licenses/by-sa/3.0/igo/" target="_blank" rel="noopener noreferrer">CC-BY-SA 3.0 IGO license</a>. UNESCO-derived portions retain that license and link directly to the relevant UNESCO domain or microthesaurus page.</p>
+        <p><a href="https://eric.ed.gov/?download" target="_blank" rel="noopener noreferrer">ERIC Thesaurus (2025)</a> is a public-domain vocabulary produced by the U.S. Department of Education through the Institute of Education Sciences (IES). I2IDL acknowledges ERIC and IES and preserves the 2025 source version at the source and evidence level. ERIC descriptors and scope notes serve as supporting references for 23 additional independently authored I2IDL concept definitions; I2IDL semantic relationships and editorial explanations are I2IDL assertions and should not be confused with ERIC Thesaurus assertions. The ERIC Help Desk confirmed on October 15, 2026, that the Thesaurus is not copyrighted and requested attribution, source/version preservation, and a clear distinction from independent work. The full ERIC Thesaurus is not reproduced as 11,929 I2IDL entries.</p>
+        <p>The IEEE ICICLE <a href="https://sagroups.ieee.org/icicle/learning-engineering-process/" target="_blank" rel="noopener noreferrer">Learning Engineering Process</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a>; adapted portions derived from that resource retain that license.</p>
+        <p>IEEE LTSC entries identify and link to standards represented on the <a href="https://sagroups.ieee.org/ltsc/active-standards/" target="_blank" rel="noopener noreferrer">LTSC active standards page</a> and to relevant IEEE Standards Association records; the glossary does not relicense IEEE standards text. IEEE status labels reflect the IEEE Standards Association catalog, including the Inactive-Reserved status currently shown for IEEE 1484.13.3-2014 and IEEE 1484.13.6-2015.</p>
+        <p>The <a href="https://opensource.ieee.org/xapi/xapi-base-standard-documentation" target="_blank" rel="noopener noreferrer">IEEE xAPI Base Standard documentation</a> is an IEEE SA Open Source Project licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noopener noreferrer">Apache License 2.0</a>. I2IDL adaptations based on those open-source documents identify the specific source document and section at the entry level.</p>
+        <p>The <a href="https://github.com/adlnet/xapi-profiles" target="_blank" rel="noopener noreferrer">xAPI Profiles Specification</a> is also licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noopener noreferrer">Apache License 2.0</a>; glossary entries derived from it link to the exact named definition anchor when the specification formally defines a term, or to the correct specification section plus an exact-text fragment for the operative supporting passage; broader supporting passages are labeled as supporting rather than direct definitions.</p>
+        <p>The <a href="https://circls.org/wp-content/uploads/2024/11/Unveiling-the-Value-of-Exploration-Insights-from-NSF-Funded-Research-on-Emerging-Technologies-for-Teaching-and-Learning.pdf" target="_blank" rel="noopener noreferrer"><em>Unveiling the Value of Exploration: Insights from NSF-Funded Research on Emerging Technologies for Teaching and Learning</em></a>, cited as Prado, Y. et al. (2024), Digital Promise, DOI 10.51388/20.500.12265/230, is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC 4.0</a>. I2IDL glossary definitions derived from the report are editorial adaptations for this noncommercial reference; source-derived portions remain subject to the report's noncommercial license. Entry-level citations open the CIRCLS-hosted PDF at the exact physical PDF page containing the cited concept or supporting passage; because this report's printed page numbering matches the physical PDF page numbering, the citation detail records both values explicitly.</p>
+        <p>OECD (2026), <a href="https://www.oecd.org/en/publications/2026/09/education-at-a-glance-2026_3bce4131.html" target="_blank" rel="noopener noreferrer"><em>Education at a Glance 2026: OECD Indicators</em></a>, OECD Publishing, Paris, DOI 10.1787/b4968bbc-en, is made available under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons Attribution 4.0 International License (CC BY 4.0)</a>. Where I2IDL adapts material from this source, the OECD-required adaptation notice is preserved: <strong>This is an adaptation of an original work by the OECD.</strong> The opinions expressed and arguments employed in an I2IDL adaptation should not be reported as representing the official views of the OECD or of its Member countries. The OECD license does not apply to third-party material identified within the publication; such material remains subject to the rights of its respective owners.</p>
+      </div>
+      <a class="i2-top" href="#i2-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script type="application/ld+json" id="i2idl-google-structured-data">
+  {
+    "@context": "https://schema.org",
+    "@type": "DefinedTermSet",
+    "@id": "https://id.i2idl.org/scheme",
+    "name": "I2IDL Glossary of Digital Learning",
+    "url": "https://www.i2idl.org/glossary",
+    "description": "A glossary of terms and concepts in digital learning, learning engineering, interoperability, learning science, analytics, standards, artificial intelligence, and related fields.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Institute for Infrastructure and Interoperable Data in Learning",
+      "url": "https://www.i2idl.org/"
+    },
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "isAccessibleForFree": true
+  }
+  </script>
+
+  <script>
+  (async () => {
+    'use strict';
+    const root = document.getElementById('i2idl-glossary');
+    if (!root || root.dataset.ready === 'true') return;
+    const versionDisplay = root.querySelector('#i2-version-display');
+    const updatedDisplay = root.querySelector('#i2-updated-display');
+    if (versionDisplay) versionDisplay.textContent = `Version ${root.dataset.version}`;
+    if (updatedDisplay && root.dataset.lastUpdated) {
+      const d = new Date(root.dataset.lastUpdated);
+      const parts = new Intl.DateTimeFormat('en-US', { timeZone: 'America/New_York', month: 'long', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit', hour12: true, timeZoneName: 'short' }).formatToParts(d);
+      const val = type => (parts.find(p => p.type === type) || {}).value || '';
+      updatedDisplay.textContent = `Last updated ${val('month')} ${val('day')}, ${val('year')} · ${val('hour')}:${val('minute')} ${val('dayPeriod')} ${val('timeZoneName')}`;
+    }
+    root.dataset.ready = 'true';
+
+    // Advertise the complete semantic graph separately from Google-facing structured data.
+    let alternateGraphLink = document.querySelector('link[data-i2idl-glossary-jsonld="true"]');
+    if (!alternateGraphLink) {
+      alternateGraphLink = document.createElement('link');
+      alternateGraphLink.rel = 'alternate';
+      alternateGraphLink.type = 'application/ld+json';
+      alternateGraphLink.href = 'https://id.i2idl.org/glossary.jsonld';
+      alternateGraphLink.setAttribute('data-i2idl-glossary-jsonld', 'true');
+      document.head.appendChild(alternateGraphLink);
+    }
+
+    const copyStatus = document.createElement('div');
+    copyStatus.className = 'i2-sr-only';
+    copyStatus.setAttribute('role', 'status');
+    copyStatus.setAttribute('aria-live', 'polite');
+    copyStatus.setAttribute('aria-atomic', 'true');
+    root.appendChild(copyStatus);
+
+    // Fast presentation index generated from the canonical I2IDL JSON-LD.
+    // The complete semantic graph remains available at id.i2idl.org/glossary.jsonld.
+    let entries, allCollections;
+    try {
+      const response = await fetch(`https://id.i2idl.org/glossary-core.json?release=${encodeURIComponent(root.dataset.version)}`, { cache: 'no-cache' });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const view = await response.json();
+      if (view.publicationVersion !== root.dataset.version) throw new Error('Glossary publication version mismatch');
+      if (!Array.isArray(view.entries) || view.entries.length < 420 || !Array.isArray(view.allCollections)) throw new Error('Invalid presentation index');
+      entries = view.entries.map(entry => ({broader:[],narrower:[],related:[],...entry}));
+      allCollections = view.allCollections;
+      root.dataset.indexTag = view.sourceTag;
+      root.dataset.detailsReady = 'loading';
+    } catch (error) {
+      console.error('I2IDL: unable to load the glossary presentation index.', error);
+      const title = root.querySelector('#i2-daily-term');
+      if (title) title.textContent = 'Glossary temporarily unavailable';
+      const description = root.querySelector('#i2-daily-definition');
+      if (description) description.textContent = 'The glossary data could not be loaded. Please refresh the page or try again shortly.';
+      const button = root.querySelector('#i2-daily-link');
+      if (button) button.hidden = true;
+      const count = root.querySelector('#i2-count');
+      if (count) count.textContent = 'Unable to load entries';
+      return;
+    }
+    // Separate, reviewed translations. Fetch failures leave the existing English interface intact.
+    let languageCatalog = null;
+    try {
+      const langResponse = await fetch(`https://id.i2idl.org/glossary-languages.json?release=${encodeURIComponent(root.dataset.version)}`, {cache:'no-cache'});
+      if (langResponse.ok) {
+        const candidate = await langResponse.json();
+        if (candidate.publicationVersion === root.dataset.version && candidate.conceptCount === entries.length && candidate.entries)
+          languageCatalog = candidate;
+      }
+    } catch(error) { console.warn('I2IDL language index unavailable; English fallback active.',error); }
+    for (const entry of entries) {
+      entry.i2English = {term:entry.term,definition:entry.definition,aka:entry.aka};
+      entry.i2French = languageCatalog?.entries?.[entry.id]?.fr || null;
+    }
+    let displayLanguage = 'en';
+    function applyDisplayLanguage(language) {
+      displayLanguage = language === 'fr' ? 'fr' : 'en';
+      root.lang = displayLanguage;
+      for(const entry of entries) {
+        const tr = displayLanguage === 'fr' ? entry.i2French : null;
+        entry.term = tr?.prefLabel || entry.i2English.term;
+        entry.definition = tr?.definition || entry.i2English.definition;
+        entry.aka = tr?.altLabels?.join('; ') || entry.i2English.aka;
+      }
+      for(const entry of entries) {
+        const node = nodeById?.get(`https://id.i2idl.org/concepts/${entry.id}`);
+        if(node) node['skos:prefLabel'] = entry.term;
+      }
+    }
+    const nodeById = new Map(entries.map(entry => [`https://id.i2idl.org/concepts/${entry.id}`, { 'dcterms:identifier': entry.id, 'skos:prefLabel': entry.term }]));
+    const featuredIds = ['learning-engineering','learning-sciences','standards-and-interoperability'].map(slug => `https://id.i2idl.org/collections/field/${slug}`);
+    const curatedCollections = featuredIds.map(id => allCollections.find(c => c.id === id)).filter(Boolean);
+    // Consumers needing the full RDF graph should retrieve the canonical JSON-LD endpoint.
+    const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+    const typeOrder = ['All types', 'Concept', 'Method', 'Practice', 'Standard', 'System', 'Discipline'];
+    const fieldOrder = ['All fields', 'Learning Engineering', 'Human-Centered Design', 'Learning Sciences', 'Engineering & Systems', 'Data & Instrumentation', 'Learning Analytics', 'Standards & Interoperability', 'Agile & Operations', 'Enterprise & Governance', 'Assessment & Measurement', 'AI & Machine Learning', 'Education'];
+
+    const externalVocabularyOrder = ['All vocabularies', ...Array.from(new Set(entries.flatMap(e=>e.externalMappings.map(m=>m.vocabulary)))).sort()];
+    const sourceOrder = ['All sources', 'LeBOK', 'Modernizing Learning', 'The Science of Remote Learning', 'Learning Engineering Design Decision Tracking', 'World Bank EdTech Approach', 'UNESCO AI Competency Framework for Teachers', 'UNESCO UIS National Education Statistical Capacity Assessment', 'IEEE LTSC', 'IEEE xAPI Base Standard', 'xAPI Profiles Specification', 'IEEE ICICLE', 'UNESCO Thesaurus', 'CIRCLS / Digital Promise — Unveiling the Value of Exploration', 'OECD — Education at a Glance 2026', 'ERIC Thesaurus (2025)'];
+    const sourceLicenses = {
+      'LeBOK': { prefix: 'Use', label: 'Permission granted', url: '' },
+      'Modernizing Learning': { prefix: 'License', label: 'CC BY 4.0 IGO', url: 'https://creativecommons.org/licenses/by/4.0/' },
+      'The Science of Remote Learning': { prefix: 'License', label: 'CC BY 4.0', url: 'https://creativecommons.org/licenses/by/4.0/' },
+      'Learning Engineering Design Decision Tracking': { prefix: 'License', label: 'CC BY 4.0', url: 'https://creativecommons.org/licenses/by/4.0/' },
+      'World Bank EdTech Approach': { prefix: 'License', label: 'CC BY 3.0 IGO', url: 'https://creativecommons.org/licenses/by/3.0/igo/' },
+      'UNESCO AI Competency Framework for Teachers': { prefix: 'License', label: 'CC BY-SA 3.0 IGO', url: 'https://creativecommons.org/licenses/by-sa/3.0/igo/' },
+      'UNESCO UIS National Education Statistical Capacity Assessment': { prefix: 'License', label: 'CC BY-SA 3.0 IGO', url: 'https://creativecommons.org/licenses/by-sa/3.0/igo/' },
+      'IEEE LTSC': { prefix: 'Rights', label: 'IEEE terms apply', url: '' },
+      'IEEE xAPI Base Standard': { prefix: 'License', label: 'Apache 2.0', url: 'https://www.apache.org/licenses/LICENSE-2.0' },
+      'xAPI Profiles Specification': { prefix: 'License', label: 'Apache 2.0', url: 'https://www.apache.org/licenses/LICENSE-2.0' },
+      'IEEE ICICLE': { prefix: 'License', label: 'CC BY-NC-SA 4.0', url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/' },
+      'UNESCO Thesaurus': { prefix: 'License', label: 'CC BY-SA 3.0 IGO', url: 'https://creativecommons.org/licenses/by-sa/3.0/igo/' },
+      'CIRCLS / Digital Promise — Unveiling the Value of Exploration': { prefix: 'License', label: 'CC BY-NC 4.0', url: 'https://creativecommons.org/licenses/by-nc/4.0/' },
+      'OECD — Education at a Glance 2026': { prefix: 'License', label: 'CC BY 4.0', url: 'https://creativecommons.org/licenses/by/4.0/' },
+       'ERIC Thesaurus (2025)': { prefix: 'Rights', label: 'U.S. public domain', url: 'https://eric.ed.gov/?download' }
+    };
+    const state = { query: '', type: 'All types', field: 'All fields', source: 'All sources', externalVocabulary: 'All vocabularies', letter: 'All letters', collection: null };
+    let selectedEntryId = null;
+    let pendingEntryScrollId = null;
+    // Resolve a deep link only once on initial render. Never reuse a stale hash
+    // when filters trigger subsequent progressive renders.
+    const initialConceptHash = (() => {
+      // A query parameter is stable while Squarespace and the cards initialize.
+      // Retain legacy #slug deep links for backwards compatibility.
+      try {
+        const fromQuery = new URLSearchParams(window.location.search).get('concept');
+        return fromQuery || decodeURIComponent(window.location.hash.slice(1));
+      } catch (_) { return ''; }
+    })();
+    let initialHashHandled = false;
+    // A direct concept URL opens a focused one-card view. This avoids racing
+    // Squarespace scroll restoration against progressively inserted cards.
+    let linkedEntryOnlyId = entries.some(entry => entry.id === initialConceptHash) ? initialConceptHash : null;
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+    const searchInput = root.querySelector('#i2-search');
+    const searchClear = root.querySelector('#i2-search-clear');
+    const suggestions = root.querySelector('#i2-suggestions');
+    let suggestionItems = [];
+    let activeSuggestion = -1;
+    const curatedGrid = root.querySelector('#i2-curated-grid');
+    const curatedClear = root.querySelector('#i2-curated-clear');
+    const curatedShell = root.querySelector('.i2-curated-shell');
+    const controlShell = root.querySelector('.i2-control-shell');
+    const searchNav = root.querySelector('#i2-search-nav');
+    const searchNavArrow = root.querySelector('#i2-search-nav-arrow');
+    const resetButton = root.querySelector('#i2-reset');
+    const typeFilters = root.querySelector('#i2-type-filters');
+    const fieldFilters = root.querySelector('#i2-field-filters');
+    const sourceFilters = root.querySelector('#i2-source-filters');
+    const externalVocabularyFilters = root.querySelector('#i2-external-vocabulary-filters');
+    const alphaNav = root.querySelector('#i2-alpha');
+    const results = root.querySelector('#i2-results');
+    const count = root.querySelector('#i2-count');
+    const total = root.querySelector('#i2-total');
+    const noResults = root.querySelector('#i2-no-results');
+    const dailyTerm = root.querySelector('#i2-daily-term');
+    const dailyDate = root.querySelector('#i2-daily-date');
+    const dailyDefinition = root.querySelector('#i2-daily-definition');
+    const dailyMeta = root.querySelector('#i2-daily-meta');
+    const dailyLink = root.querySelector('#i2-daily-link');
+
+    total.textContent = String(entries.length);
+
+    function activateCollection(collectionId, options = {}) {
+      const collection = allCollections.find(item => item.id === collectionId);
+      if (!collection) return;
+
+      state.collection = collectionId;
+      selectedEntryId = null;
+      pendingEntryScrollId = null;
+      state.query = '';
+      state.type = 'All types';
+      state.field = 'All fields';
+      state.source = 'All sources'; state.externalVocabulary = 'All vocabularies';
+      state.letter = 'All letters';
+      searchInput.value = '';
+      syncSearchClear();
+      closeSuggestions();
+      renderFilters();
+      render();
+
+      if (options.scroll !== false) {
+        requestAnimationFrame(() => {
+          // Collection browsing starts at its first alphabetical heading,
+          // rather than at an arbitrary card or the filter controls.
+          const target = options.scrollTarget === 'collection'
+            ? curatedShell
+            : (results.querySelector('.i2-letter-section') || results);
+          if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      }
+    }
+
+    function clearCollection(options = {}) {
+      state.collection = null;
+      selectedEntryId = null;
+      pendingEntryScrollId = null;
+      renderCuratedCollections();
+      render();
+      if (options.scroll) requestAnimationFrame(() => results.scrollIntoView({ behavior: 'smooth', block: 'start' }));
+    }
+
+    function renderCuratedCollections() {
+      if (!curatedGrid) return;
+      const cards = curatedCollections.map(collection => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'i2-curated-card';
+        const active = state.collection === collection.id;
+        button.setAttribute('aria-pressed', active ? 'true' : 'false');
+        button.setAttribute('aria-label', `${active ? 'Clear' : 'Explore'} collection: ${collection.label}`);
+
+        const kicker = document.createElement('span');
+        kicker.className = 'i2-curated-card-kicker';
+        kicker.textContent = `${collection.members.length} concepts`;
+
+        const title = document.createElement('span');
+        title.className = 'i2-curated-card-title';
+        title.textContent = collection.label;
+
+        const description = document.createElement('span');
+        description.className = 'i2-curated-card-description';
+        description.textContent = collection.description;
+
+        button.append(kicker, title, description);
+        button.addEventListener('click', () => {
+          if (state.collection === collection.id) clearCollection();
+          else activateCollection(collection.id, { scrollTarget: 'results' });
+        });
+        return button;
+      });
+      curatedGrid.replaceChildren(...cards);
+      if (curatedClear) curatedClear.classList.toggle('is-visible', Boolean(state.collection));
+    }
+
+    if (curatedClear) curatedClear.addEventListener('click', () => clearCollection());
+
+    function updateSearchNavigation() {
+      if (!controlShell || !searchNav) return;
+      const rect = controlShell.getBoundingClientRect();
+      const searchIsAbove = rect.bottom <= 72;
+      searchNav.classList.toggle('is-visible', searchIsAbove);
+    }
+
+    searchNav.addEventListener('click', () => {
+      controlShell.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      window.setTimeout(() => searchInput.focus({ preventScroll: true }), 450);
+    });
+    window.addEventListener('scroll', updateSearchNavigation, { passive: true });
+    window.addEventListener('resize', updateSearchNavigation);
+
+    function easternDateParts() {
+      const parts = new Intl.DateTimeFormat('en-US', {
+        timeZone: 'America/New_York', year: 'numeric', month: '2-digit', day: '2-digit'
+      }).formatToParts(new Date());
+      const map = Object.fromEntries(parts.filter(p => p.type !== 'literal').map(p => [p.type, p.value]));
+      return { year: Number(map.year), month: Number(map.month), day: Number(map.day) };
+    }
+
+    function dateKeyET(parts) {
+      return `${parts.year}-${String(parts.month).padStart(2,'0')}-${String(parts.day).padStart(2,'0')}`;
+    }
+
+    function dayNumberET(parts) {
+      const epoch = Date.UTC(2026, 8, 22);
+      const current = Date.UTC(parts.year, parts.month - 1, parts.day);
+      return Math.floor((current - epoch) / 86400000);
+    }
+
+    function hashString(value) {
+      let h = 2166136261;
+      for (let i = 0; i < value.length; i++) {
+        h ^= value.charCodeAt(i);
+        h = Math.imul(h, 16777619);
+      }
+      return h >>> 0;
+    }
+
+    function seededRandom(seed) {
+      return function() {
+        seed |= 0; seed = seed + 0x6D2B79F5 | 0;
+        let t = Math.imul(seed ^ seed >>> 15, 1 | seed);
+        t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+        return ((t ^ t >>> 14) >>> 0) / 4294967296;
+      };
+    }
+
+    function dailyEntryFor(parts) {
+      const ordered = [...entries].sort((a,b) => a.id.localeCompare(b.id));
+      if (!ordered.length) return null;
+      const day = Math.max(0, dayNumberET(parts));
+      const cycle = Math.floor(day / ordered.length);
+      const position = day % ordered.length;
+      const random = seededRandom(hashString(`i2idl-glossary-cycle-${cycle}`));
+      for (let i = ordered.length - 1; i > 0; i--) {
+        const j = Math.floor(random() * (i + 1));
+        [ordered[i], ordered[j]] = [ordered[j], ordered[i]];
+      }
+      return ordered[position];
+    }
+
+    function renderDailyEntry() {
+      const parts = easternDateParts();
+      const key = dateKeyET(parts);
+      let entry = null;
+      try {
+        const stored = JSON.parse(localStorage.getItem('i2idl-glossary-concept-of-day') || 'null');
+        if (stored && stored.date === key) entry = entries.find(item => item.id === stored.id) || null;
+      } catch (_) {}
+      if (!entry) {
+        entry = dailyEntryFor(parts);
+        try { if (entry) localStorage.setItem('i2idl-glossary-concept-of-day', JSON.stringify({ date: key, id: entry.id })); } catch (_) {}
+      }
+      if (!entry) return;
+      dailyLink.dataset.dailyEntryId = entry.id;
+      dailyTerm.textContent = entry.term;
+      dailyDefinition.textContent = entry.definition;
+      dailyDate.textContent = new Intl.DateTimeFormat('en-US', {
+        timeZone: 'America/New_York', month: 'long', day: 'numeric'
+      }).format(new Date());
+      dailyMeta.replaceChildren(...[entry.type, entry.field].map(value => {
+        const span = document.createElement('span'); span.textContent = value; return span;
+      }));
+      dailyLink.setAttribute('aria-label', `Explore the glossary entry for ${entry.term}`);
+      dailyLink.addEventListener('click', () => {
+        // Filter to the selected concept before scrolling. The render is progressive,
+        // so the target may not exist until a later batch.
+        state.query = entry.term;
+        state.type = 'All types'; state.field = 'All fields'; state.source = 'All sources';
+        state.externalVocabulary = 'All vocabularies'; state.letter = 'All letters'; state.collection = null;
+        searchInput.value = entry.term;
+        syncSearchClear();
+        closeSuggestions();
+        selectedEntryId = entry.id;
+        pendingEntryScrollId = entry.id;
+        renderFilters();
+        render();
+      });
+    }
+
+    const normalize = value => String(value || '').toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '');
+
+    const filterDefaults = { type: 'All types', field: 'All fields', source: 'All sources', externalVocabulary: 'All vocabularies' };
+
+    function makeButton(label, group, activeValue) {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'i2-pill';
+      btn.textContent = (group === 'source' && label === 'UNESCO Thesaurus') ? 'UNESCO' : (group === 'source' && label === 'The Science of Remote Learning') ? 'Remote Learning' : (group === 'source' && label === 'Learning Engineering Design Decision Tracking') ? 'Design Decisions' : (group === 'source' && label === 'IEEE xAPI Base Standard') ? 'IEEE xAPI' : (group === 'source' && label === 'xAPI Profiles Specification') ? 'xAPI Profiles' : (group === 'source' && label === 'World Bank EdTech Approach') ? 'World Bank EdTech' : (group === 'source' && label === 'UNESCO AI Competency Framework for Teachers') ? 'UNESCO AI CFT' : (group === 'source' && label === 'UNESCO UIS National Education Statistical Capacity Assessment') ? 'UNESCO UIS LASER' : (group === 'source' && label === 'OECD — Education at a Glance 2026') ? 'OECD' : (group === 'source' && label === 'ERIC Thesaurus (2025)') ? 'ERIC' : label;
+      const isActive = label === activeValue;
+      const defaultValue = filterDefaults[group];
+      btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+      if (label !== defaultValue) {
+        btn.setAttribute('aria-label', isActive ? `Clear ${group} filter: ${btn.textContent}` : `Filter by ${group}: ${btn.textContent}`);
+        btn.title = isActive ? 'Click again to clear this filter' : `Filter by ${group}: ${btn.textContent}`;
+      }
+      btn.addEventListener('click', () => {
+        state[group] = (label !== defaultValue && state[group] === label) ? defaultValue : label;
+        renderFilters();
+        render();
+      });
+      return btn;
+    }
+
+    function renderFilters() {
+      typeFilters.replaceChildren(...typeOrder.map(v => makeButton(v, 'type', state.type)));
+      fieldFilters.replaceChildren(...fieldOrder.map(v => makeButton(v, 'field', state.field)));
+      sourceFilters.replaceChildren(...sourceOrder.map(v => makeButton(v, 'source', state.source)));
+      externalVocabularyFilters.replaceChildren(...externalVocabularyOrder.map(v => makeButton(v, 'externalVocabulary', state.externalVocabulary)));
+    }
+
+    function suggestionScore(entry, rawQuery) {
+      const q = normalize(rawQuery);
+      if (!q) return Infinity;
+      const term = normalize(entry.term || '');
+      const aka = normalize(entry.aka || '');
+      const words = term.split(/\s+/);
+      const akaWords = aka.split(/\s+/);
+      if (term === q) return 0;
+      if (aka === q) return 1;
+      if (term.startsWith(q)) return 2;
+      if (aka.startsWith(q)) return 3;
+      if (words.some(w => w.startsWith(q))) return 4;
+      if (akaWords.some(w => w.startsWith(q))) return 5;
+      if (term.includes(q)) return 6;
+      if (aka.includes(q)) return 7;
+      return Infinity;
+    }
+
+    function closeSuggestions() {
+      suggestionItems = [];
+      activeSuggestion = -1;
+      suggestions.classList.remove('is-open');
+      suggestions.replaceChildren();
+      searchInput.setAttribute('aria-expanded', 'false');
+      searchInput.removeAttribute('aria-activedescendant');
+    }
+
+    function chooseSuggestion(entry) {
+      searchInput.value = entry.term;
+      syncSearchClear();
+      state.query = entry.term;
+      state.letter = 'All letters';
+      selectedEntryId = entry.id;
+      pendingEntryScrollId = entry.id;
+      closeSuggestions();
+      render();
+    }
+
+    function setActiveSuggestion(index) {
+      if (!suggestionItems.length) return;
+      activeSuggestion = (index + suggestionItems.length) % suggestionItems.length;
+      [...suggestions.querySelectorAll('.i2-suggestion')].forEach((btn, i) => {
+        const active = i === activeSuggestion;
+        btn.setAttribute('aria-selected', active ? 'true' : 'false');
+        if (active) {
+          searchInput.setAttribute('aria-activedescendant', btn.id);
+          btn.scrollIntoView({ block: 'nearest' });
+        }
+      });
+    }
+
+    function renderSuggestions(rawQuery) {
+      const q = rawQuery.trim();
+      if (!q) { closeSuggestions(); return; }
+
+      suggestionItems = entries
+        .map(entry => ({ entry, score: suggestionScore(entry, q) }))
+        .filter(item => Number.isFinite(item.score))
+        .sort((a,b) => a.score - b.score || a.entry.term.localeCompare(b.entry.term, undefined, { sensitivity: 'base' }))
+        .slice(0, 8)
+        .map(item => item.entry);
+
+      activeSuggestion = -1;
+      if (!suggestionItems.length) { closeSuggestions(); return; }
+
+      const buttons = suggestionItems.map((entry, index) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'i2-suggestion';
+        btn.id = `i2-suggestion-${index}`;
+        btn.setAttribute('role', 'option');
+        btn.setAttribute('aria-selected', 'false');
+
+        const text = document.createElement('span');
+        const term = document.createElement('span');
+        term.className = 'i2-suggestion-term';
+        term.textContent = entry.term;
+        text.appendChild(term);
+        if (entry.aka) {
+          const aka = document.createElement('span');
+          aka.className = 'i2-suggestion-aka';
+          aka.textContent = entry.aka;
+          text.appendChild(aka);
+        }
+
+        const meta = document.createElement('span');
+        meta.className = 'i2-suggestion-meta';
+        meta.textContent = entry.type;
+        btn.append(text, meta);
+        btn.addEventListener('mousedown', e => e.preventDefault());
+        btn.addEventListener('click', () => chooseSuggestion(entry));
+        return btn;
+      });
+
+      suggestions.replaceChildren(...buttons);
+      suggestions.classList.add('is-open');
+      searchInput.setAttribute('aria-expanded', 'true');
+    }
+
+    // Normalize searchable text once per entry, instead of rebuilding it for every keystroke.
+    const searchableText = new Map(entries.map(entry => {
+      const sourceText = (entry.sources || []).map(source => [source.name, source.detail].join(' ')).join(' ');
+      const fr = entry.i2French;
+      return [entry.id, normalize([entry.term, entry.aka, entry.definition, entry.why, entry.type, entry.field, sourceText, entry.i2English.term, entry.i2English.definition, entry.i2English.aka, fr?.prefLabel, fr?.definition, ...(fr?.altLabels || [])].join(' '))];
+    }));
+    let normalizedQuery = '';
+
+    function matchesBase(entry) {
+      if (state.collection && !entry.collections.includes(state.collection)) return false;
+      if (state.type !== 'All types' && entry.type !== state.type) return false;
+      if (state.field !== 'All fields' && entry.field !== state.field) return false;
+      if (state.source !== 'All sources' && !(entry.sources || []).some(s => s.name === state.source)) return false;
+      if (state.externalVocabulary !== 'All vocabularies' && !(entry.externalMappings || []).some(m => m.vocabulary === state.externalVocabulary)) return false;
+      if (!state.query) return true;
+      return searchableText.get(entry.id).includes(normalizedQuery);
+    }
+
+    function matches(entry) {
+      if (linkedEntryOnlyId && entry.id !== linkedEntryOnlyId) return false;
+      if (!matchesBase(entry)) return false;
+      if (state.letter !== 'All letters' && entry.term.charAt(0).toUpperCase() !== state.letter) return false;
+      return true;
+    }
+
+    function visibleEntries() {
+      return entries.filter(matches).sort((a,b) => a.term.localeCompare(b.term));
+    }
+
+    function copyLink(entry) {
+      const url = new URL(window.location.href);
+      url.searchParams.set('concept', entry.id);
+      url.hash = '';
+      if (navigator.clipboard && window.isSecureContext) {
+        return navigator.clipboard.writeText(url.toString())
+          .then(() => true)
+          .catch(() => fallbackCopy(url.toString()));
+      }
+      return Promise.resolve(fallbackCopy(url.toString()));
+    }
+
+    function safeHttpsUrl(value) {
+      if (typeof value !== 'string' || !value.trim()) return null;
+      try {
+        const parsed = new URL(value, window.location.origin);
+        return parsed.protocol === 'https:' ? parsed.href : null;
+      } catch (_) {
+        return null;
+      }
+    }
+
+    function fallbackCopy(text) {
+      const ta = document.createElement('textarea');
+      ta.value = text; ta.setAttribute('readonly',''); ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.select();
+      let copied = false;
+      try { copied = document.execCommand('copy'); } catch (_) {}
+      ta.remove();
+      return copied;
+    }
+
+    function showCopyFeedback(copy, entry, copied) {
+      clearTimeout(copy._feedbackTimer);
+      if (!copied) {
+        copyStatus.textContent = `Could not copy link to ${entry.term}.`;
+        copy.title = 'Copy failed';
+        copy._feedbackTimer = setTimeout(() => {
+          copy.title = 'Copy link';
+          copyStatus.textContent = '';
+        }, 1800);
+        return;
+      }
+
+      const linkIcon = '<svg viewBox="0 0 24 24" width="17" height="17" fill="none" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l2-2a5 5 0 0 0-7.07-7.07l-1.15 1.15M14 11a5 5 0 0 0-7.54-.54l-2 2a5 5 0 0 0 7.07 7.07l1.14-1.14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
+      const checkIcon = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="m5 12.5 4.2 4.2L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+      copy.classList.add('is-copied');
+      copy.innerHTML = checkIcon;
+      copy.title = 'Link copied';
+      copy.setAttribute('aria-label', `Link copied to ${entry.term}`);
+      copyStatus.textContent = `Link copied to ${entry.term}.`;
+
+      copy._feedbackTimer = setTimeout(() => {
+        copy.classList.remove('is-copied');
+        copy.innerHTML = linkIcon;
+        copy.title = 'Copy link';
+        copy.setAttribute('aria-label', `Copy link to ${entry.term}`);
+        copyStatus.textContent = '';
+      }, 1600);
+    }
+
+    function entryCard(entry) {
+      const card = document.createElement('article');
+      card.className = 'i2-entry';
+      card.id = entry.id;
+      if (entry.id === selectedEntryId) card.classList.add('is-selected');
+
+      const top = document.createElement('div'); top.className = 'i2-entry-top';
+      const headingWrap = document.createElement('div');
+      const meta = document.createElement('div'); meta.className = 'i2-meta';
+      [
+        { text: entry.type, group: 'type', allValue: 'All types', label: 'type' },
+        { text: entry.field, group: 'field', allValue: 'All fields', label: 'field' }
+      ].forEach(tag => {
+        const chip = document.createElement('button');
+        chip.type = 'button';
+        chip.className = 'i2-chip';
+        chip.textContent = tag.text;
+        const chipIsActive = state[tag.group] === tag.text;
+        chip.setAttribute('aria-pressed', chipIsActive ? 'true' : 'false');
+        chip.setAttribute('aria-label', chipIsActive ? `Clear ${tag.label} filter: ${tag.text}` : `Filter glossary by ${tag.label}: ${tag.text}`);
+        chip.title = chipIsActive ? 'Click again to clear this filter' : `Filter by ${tag.label}: ${tag.text}`;
+        chip.addEventListener('click', () => {
+          state[tag.group] = state[tag.group] === tag.text ? tag.allValue : tag.text;
+          state.letter = 'All letters';
+          selectedEntryId = entry.id;
+          pendingEntryScrollId = entry.id;
+          renderFilters();
+          render();
+        });
+        meta.appendChild(chip);
+      });
+      const h3 = document.createElement('h3'); h3.textContent = entry.term;
+      headingWrap.append(meta, h3);
+      if (entry.aka) { const aka = document.createElement('p'); aka.className = 'i2-aka'; aka.textContent = entry.aka; headingWrap.appendChild(aka); }
+
+      const copy = document.createElement('button'); copy.type = 'button'; copy.className = 'i2-copy'; copy.setAttribute('aria-label', `Copy link to ${entry.term}`); copy.title = 'Copy link';
+      copy.innerHTML = '<svg viewBox="0 0 24 24" width="17" height="17" fill="none" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l2-2a5 5 0 0 0-7.07-7.07l-1.15 1.15M14 11a5 5 0 0 0-7.54-.54l-2 2a5 5 0 0 0 7.07 7.07l1.14-1.14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
+      copy.addEventListener('click', async () => {
+        const copied = await copyLink(entry);
+        showCopyFeedback(copy, entry, copied);
+      });
+      top.append(headingWrap, copy);
+
+      const def = document.createElement('p'); def.className = 'i2-definition'; def.textContent = entry.definition;
+      const why = document.createElement('p'); why.className = 'i2-why';
+      const strong = document.createElement('strong'); strong.textContent = 'Why it matters: ';
+      why.append(strong, document.createTextNode(entry.why));
+      const neighborhood = document.createElement('div'); neighborhood.className = 'i2-neighborhood';
+      const relationshipGroups = [
+        { key: 'broader', label: 'Broader' },
+        { key: 'narrower', label: 'Narrower' },
+        { key: 'related', label: 'Related' }
+      ].filter(group => Array.isArray(entry[group.key]) && entry[group.key].length);
+      if (relationshipGroups.length) {
+        const neighborhoodTitle = document.createElement('p'); neighborhoodTitle.className = 'i2-neighborhood-title'; neighborhoodTitle.textContent = 'Connected concepts';
+        neighborhood.appendChild(neighborhoodTitle);
+        relationshipGroups.forEach(group => {
+          const row = document.createElement('div'); row.className = 'i2-neighborhood-group';
+          const label = document.createElement('span'); label.className = 'i2-neighborhood-label'; label.textContent = group.label;
+          const links = document.createElement('div'); links.className = 'i2-neighborhood-links';
+          entry[group.key].forEach(targetId => {
+            const targetNode = nodeById.get(targetId);
+            if (!targetNode) return;
+            const targetSlug = targetNode['dcterms:identifier'];
+            const targetLabel = targetNode['skos:prefLabel'];
+            if (!targetSlug || !targetLabel) return;
+            const link = document.createElement('a');
+            link.className = 'i2-neighborhood-link';
+            link.href = `#${targetSlug}`;
+            link.textContent = targetLabel;
+            link.setAttribute('aria-label', `Go to ${group.label.toLowerCase()} concept: ${targetLabel}`);
+            link.addEventListener('click', event => {
+              event.preventDefault();
+              const targetEntry = entries.find(item => item.id === targetSlug);
+              if (!targetEntry) return;
+              // A related concept might be in a later progressive batch.
+              // The pending target scroll fires only after its actual card exists.
+              state.query = targetEntry.term;
+              state.type = 'All types'; state.field = 'All fields';
+              state.source = 'All sources'; state.externalVocabulary = 'All vocabularies';
+              state.letter = 'All letters'; state.collection = null;
+              searchInput.value = targetEntry.term;
+              syncSearchClear();
+              closeSuggestions();
+              linkedEntryOnlyId = null;
+              selectedEntryId = targetSlug;
+              pendingEntryScrollId = targetSlug;
+              renderFilters();
+              render();
+            });
+            links.appendChild(link);
+          });
+          row.append(label, links);
+          neighborhood.appendChild(row);
+        });
+      }
+
+      const externalMappings = document.createElement('div'); externalMappings.className = 'i2-external-mappings';
+      if (entry.externalMappings.length) {
+        const title = document.createElement('p'); title.className = 'i2-external-title'; title.textContent = 'External vocabularies';
+        const intro = document.createElement('p'); intro.className = 'i2-external-intro'; intro.textContent = 'Editorially reviewed mappings to terminology maintained outside I2IDL.';
+        const list = document.createElement('div'); list.className = 'i2-external-list';
+        entry.externalMappings.forEach(mapping => {
+          const link = document.createElement(mapping.href ? 'a' : 'div'); link.className = 'i2-external-link';
+          if(mapping.href){link.href=mapping.href;link.target='_blank';link.rel='noopener noreferrer';}
+          const vocabulary = document.createElement('span'); vocabulary.className='i2-external-vocabulary';vocabulary.textContent=mapping.vocabulary;
+          const match = document.createElement('span'); match.className='i2-external-match';
+          const strength = document.createElement('strong');strength.textContent=mapping.strength;
+          match.append(strength,document.createTextNode(` · ${mapping.label}${mapping.href ? ' ↗' : ''}`));
+          link.append(vocabulary,match);list.appendChild(link);
+        });
+        externalMappings.append(title,intro,list);
+      }
+
+      const collectionLinks = document.createElement('div');
+      collectionLinks.className = 'i2-collection-links';
+      if (entry.collections.length) {
+        const collectionLabel = document.createElement('span');
+        collectionLabel.className = 'i2-collection-label';
+        collectionLabel.textContent = entry.collections.length === 1 ? 'Collection' : 'Collections';
+        collectionLinks.appendChild(collectionLabel);
+        entry.collections.forEach(collectionId => {
+          const collection = allCollections.find(item => item.id === collectionId);
+          if (!collection) return;
+          const button = document.createElement('button');
+          button.type = 'button';
+          button.className = 'i2-collection-link';
+          button.textContent = collection.label;
+          const active = state.collection === collection.id;
+          button.setAttribute('aria-pressed', active ? 'true' : 'false');
+          button.setAttribute('aria-label', `${active ? 'Selected' : 'Explore'} collection: ${collection.label}`);
+          button.addEventListener('click', () => activateCollection(collection.id, { scrollTarget: 'results' }));
+          collectionLinks.appendChild(button);
+        });
+      }
+
+      const semanticLinks = document.createElement('div'); semanticLinks.className = 'i2-semantic-links';
+      const semanticLabel = document.createElement('span'); semanticLabel.className = 'i2-semantic-label'; semanticLabel.textContent = 'Semantic data';
+      semanticLinks.appendChild(semanticLabel);
+      const conceptBase = `https://id.i2idl.org/concepts/${encodeURIComponent(entry.id)}`;
+      [
+        { label: 'JSON-LD', href: `${conceptBase}.jsonld` },
+        { label: 'Turtle', href: `${conceptBase}.ttl` }
+        ,{ label: 'Explore in Graph', href: `https://id.i2idl.org/explore?concept=${encodeURIComponent(entry.id)}` }
+      ].forEach(item => {
+        const link = document.createElement('a');
+        link.className = 'i2-semantic-link';
+        link.href = item.href;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.textContent = item.label;
+        link.setAttribute('aria-label', `${item.label} for ${entry.term}`);
+        semanticLinks.appendChild(link);
+      });
+
+      const copyUri = document.createElement('button');
+      copyUri.type = 'button';
+      copyUri.className = 'i2-semantic-link';
+      copyUri.textContent = 'Copy URI';
+      copyUri.title = conceptBase;
+      copyUri.setAttribute('aria-label', `Copy canonical concept URI for ${entry.term}`);
+      copyUri.addEventListener('click', async () => {
+        let copied = false;
+        if (navigator.clipboard && window.isSecureContext) {
+          try {
+            await navigator.clipboard.writeText(conceptBase);
+            copied = true;
+          } catch (_) {
+            copied = fallbackCopy(conceptBase);
+          }
+        } else {
+          copied = fallbackCopy(conceptBase);
+        }
+
+        clearTimeout(copyUri._feedbackTimer);
+        if (copied) {
+          copyUri.textContent = 'Copied';
+          copyStatus.textContent = `Copied canonical concept URI for ${entry.term}.`;
+          copyUri._feedbackTimer = setTimeout(() => {
+            copyUri.textContent = 'Copy URI';
+            copyStatus.textContent = '';
+          }, 1600);
+        } else {
+          copyUri.textContent = 'Copy failed';
+          copyStatus.textContent = `Could not copy canonical concept URI for ${entry.term}.`;
+          copyUri._feedbackTimer = setTimeout(() => {
+            copyUri.textContent = 'Copy URI';
+            copyStatus.textContent = '';
+          }, 1800);
+        }
+      });
+      semanticLinks.appendChild(copyUri);
+
+      const sourceLinks = document.createElement('div'); sourceLinks.className = 'i2-source-links';
+      (entry.sources || []).forEach(source => {
+        const sourceUnit = document.createElement('span'); sourceUnit.className = 'i2-source-unit';
+        const sourceHref = safeHttpsUrl(source.url);
+        const deeper = sourceHref ? document.createElement('a') : document.createElement('span');
+        deeper.className = 'i2-deeper';
+        if (sourceHref) { deeper.href = sourceHref; deeper.target = '_blank'; deeper.rel = 'noopener noreferrer'; }
+        deeper.textContent = `Source: ${source.name}`;
+        if (source.detail) {
+          const detail = document.createElement('span'); detail.className = 'i2-source-detail'; detail.textContent = ` · ${source.detail}`; deeper.appendChild(detail);
+        }
+        if (sourceHref) deeper.append(' ↗');
+        sourceUnit.appendChild(deeper);
+        if (source.name === 'LeBOK' && source.relation) {
+          const relation = document.createElement('span');
+          relation.className = `i2-source-relation ${source.relation}`;
+          relation.textContent = source.relation === 'direct' ? 'Direct LeBOK topic' : 'Discussed in LeBOK';
+          sourceUnit.appendChild(relation);
+        }
+        const license = sourceLicenses[source.name];
+        if (license) {
+          const licenseHref = safeHttpsUrl(license.url);
+          const badge = licenseHref ? document.createElement('a') : document.createElement('span');
+          badge.className = 'i2-license-badge';
+          badge.textContent = `${license.prefix}: ${license.label}`;
+          if (licenseHref) { badge.href = licenseHref; badge.target = '_blank'; badge.rel = 'noopener noreferrer'; }
+          badge.setAttribute('aria-label', `${source.name} ${license.prefix.toLowerCase()}: ${license.label}`);
+          sourceUnit.appendChild(badge);
+        }
+        sourceLinks.appendChild(sourceUnit);
+      });
+      card.append(top, def, why);
+      if (relationshipGroups.length) card.appendChild(neighborhood);
+      if (entry.externalMappings.length) card.appendChild(externalMappings);
+      if (entry.collections.length) card.appendChild(collectionLinks);
+      if (root.dataset.detailsReady !== 'true' && !entry.sources.some(source => source.url)) {
+        const waiting = document.createElement('p'); waiting.className = 'i2-source-detail';
+        waiting.textContent = 'Detailed citations and semantic links loading…';
+        card.appendChild(waiting);
+      }
+      card.append(semanticLinks, sourceLinks);
+      return card;
+    }
+
+    function renderAlpha() {
+      const baseVisible = entries.filter(matchesBase);
+      const letters = new Set(baseVisible.map(e => e.term.charAt(0).toUpperCase()).filter(ch => /[A-Z]/.test(ch)));
+
+      const allButton = document.createElement('button');
+      allButton.type = 'button';
+      allButton.textContent = 'All';
+      allButton.className = 'i2-alpha-all';
+      allButton.setAttribute('aria-pressed', state.letter === 'All letters' ? 'true' : 'false');
+      allButton.setAttribute('aria-label', 'Show entries from all letters');
+      allButton.addEventListener('click', () => {
+        state.letter = 'All letters';
+        render();
+      });
+
+      const letterButtons = alphabet.map(letter => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.textContent = letter;
+        btn.disabled = !letters.has(letter) && state.letter !== letter;
+        btn.setAttribute('aria-pressed', state.letter === letter ? 'true' : 'false');
+        btn.setAttribute('aria-label', `Filter glossary by letter ${letter}`);
+        btn.addEventListener('click', () => {
+          state.letter = state.letter === letter ? 'All letters' : letter;
+          render();
+        });
+        return btn;
+      });
+
+      alphaNav.replaceChildren(allButton, ...letterButtons);
+    }
+
+    // Build visible cards progressively. Keep only one active render generation,
+    // so a search or filter change cancels all pending batches safely.
+    let renderGeneration = 0;
+    let renderTimer = null;
+    function render() {
+      // A deliberate filter selection leaves the initial focused-link view.
+      if (state.query || state.collection || state.type !== 'All types' || state.field !== 'All fields' ||
+          state.source !== 'All sources' || state.externalVocabulary !== 'All vocabularies' ||
+          state.letter !== 'All letters') linkedEntryOnlyId = null;
+      const generation = ++renderGeneration;
+      if (renderTimer !== null) {
+        clearTimeout(renderTimer);
+        renderTimer = null;
+      }
+      renderCuratedCollections();
+      normalizedQuery = normalize(state.query);
+      const visible = visibleEntries();
+      count.textContent = `${visible.length} of ${entries.length} entries shown`;
+      noResults.style.display = visible.length ? 'none' : 'block';
+      renderAlpha();
+
+      const grouped = new Map();
+      visible.forEach(entry => {
+        const letter = entry.term.charAt(0).toUpperCase();
+        if (!grouped.has(letter)) grouped.set(letter, []);
+        grouped.get(letter).push(entry);
+      });
+      // Establish all letter anchors immediately, including deep-link targets' sections.
+      const sections = document.createDocumentFragment();
+      const buckets = [];
+      [...grouped.keys()].sort().forEach(letter => {
+        const section = document.createElement('section');
+        section.className = 'i2-letter-section';
+        section.id = `i2-letter-${letter}`;
+        const heading = document.createElement('h2');
+        heading.className = 'i2-letter-heading';
+        heading.textContent = letter;
+        const grid = document.createElement('div');
+        grid.className = 'i2-grid';
+        section.append(heading, grid);
+        sections.appendChild(section);
+        buckets.push({entries: grouped.get(letter), grid});
+      });
+      results.replaceChildren(sections);
+
+      let groupIndex = 0, itemIndex = 0;
+      // Only initial navigation may use the URL fragment. A fresh render must
+      // never scroll to an old concept from a previous navigation.
+      if (!initialHashHandled) {
+        initialHashHandled = true;
+        if (entries.some(entry => entry.id === initialConceptHash)) {
+          selectedEntryId = initialConceptHash;
+          pendingEntryScrollId = initialConceptHash;
+        }
+      }
+      function nextBatch() {
+        if (generation !== renderGeneration) return;
+        const budget = 24;
+        let built = 0;
+        while (groupIndex < buckets.length && built < budget) {
+          const bucket = buckets[groupIndex];
+          const fragment = document.createDocumentFragment();
+          while (itemIndex < bucket.entries.length && built < budget) {
+            fragment.appendChild(entryCard(bucket.entries[itemIndex++]));
+            built++;
+          }
+          bucket.grid.appendChild(fragment);
+          if (pendingEntryScrollId) {
+            const wanted = root.querySelector(`#${CSS.escape(pendingEntryScrollId)}`);
+            if (wanted) {
+              const targetId = pendingEntryScrollId;
+              pendingEntryScrollId = null;
+              try {
+                const deepLink = new URL(window.location.href);
+                deepLink.searchParams.set('concept', targetId);
+                deepLink.hash = '';
+                history.replaceState(null, '', deepLink);
+              } catch (_) {}
+              if (linkedEntryOnlyId === targetId) {
+                // Initial navigation: position only after the target exists,
+                // then correct any early layout shift from Squarespace.
+                requestAnimationFrame(() => wanted.scrollIntoView({behavior:'instant', block:'start'}));
+                setTimeout(() => {
+                  if (generation === renderGeneration && linkedEntryOnlyId === targetId) {
+                    document.getElementById(targetId)?.scrollIntoView({behavior:'instant', block:'start'});
+                  }
+                }, 350);
+              } else {
+                requestAnimationFrame(() => wanted.scrollIntoView({behavior:'smooth', block:'center'}));
+              }
+            }
+          }
+          if (itemIndex === bucket.entries.length) { groupIndex++; itemIndex = 0; }
+        }
+        if (groupIndex < buckets.length) {
+          renderTimer = setTimeout(nextBatch, 0);
+        } else {
+          renderTimer = null;
+        }
+      }
+      nextBatch();
+    }
+
+    function syncSearchClear() {
+      if (!searchClear) return;
+      searchClear.classList.toggle('is-visible', Boolean(searchInput.value));
+    }
+
+    let timer;
+    searchInput.addEventListener('input', () => {
+      linkedEntryOnlyId = null;
+      clearTimeout(timer);
+      syncSearchClear();
+      renderSuggestions(searchInput.value);
+      selectedEntryId = null;
+      pendingEntryScrollId = null;
+      timer = setTimeout(() => { state.query = searchInput.value.trim(); render(); }, 90);
+    });
+
+    searchInput.addEventListener('focus', () => {
+      if (searchInput.value.trim()) renderSuggestions(searchInput.value);
+    });
+
+    searchInput.addEventListener('keydown', event => {
+      if (event.key === 'ArrowDown') {
+        if (!suggestions.classList.contains('is-open')) renderSuggestions(searchInput.value);
+        if (suggestionItems.length) { event.preventDefault(); setActiveSuggestion(activeSuggestion + 1); }
+      } else if (event.key === 'ArrowUp') {
+        if (suggestionItems.length) { event.preventDefault(); setActiveSuggestion(activeSuggestion - 1); }
+      } else if (event.key === 'Enter' && activeSuggestion >= 0 && suggestionItems[activeSuggestion]) {
+        event.preventDefault();
+        chooseSuggestion(suggestionItems[activeSuggestion]);
+      } else if (event.key === 'Escape') {
+        closeSuggestions();
+      }
+    });
+
+    searchInput.addEventListener('blur', () => {
+      setTimeout(closeSuggestions, 120);
+    });
+
+    if (searchClear) {
+      searchClear.addEventListener('mousedown', event => event.preventDefault());
+      searchClear.addEventListener('click', () => {
+        clearTimeout(timer);
+        searchInput.value = '';
+        state.query = '';
+        state.letter = 'All letters';
+        selectedEntryId = null;
+        pendingEntryScrollId = null;
+        closeSuggestions();
+        syncSearchClear();
+        render();
+        searchInput.focus();
+      });
+    }
+
+    resetButton.addEventListener('click', () => {
+      state.query = ''; state.type = 'All types'; state.field = 'All fields'; state.source = 'All sources'; state.externalVocabulary = 'All vocabularies'; state.letter = 'All letters'; state.collection = null; searchInput.value = '';
+      selectedEntryId = null;
+      pendingEntryScrollId = null;
+      linkedEntryOnlyId = null;
+      syncSearchClear();
+      closeSuggestions();
+      if (location.hash || new URLSearchParams(location.search).has('concept')) {
+        const clean = new URL(location.href);
+        clean.searchParams.delete('concept');
+        clean.hash = '';
+        history.replaceState(null, '', clean);
+      }
+      renderFilters(); render();
+      requestAnimationFrame(() => (results.querySelector('.i2-letter-section') || results).scrollIntoView({block:'start',behavior:'smooth'}));
+    });
+
+    syncSearchClear();
+    renderFilters();
+    render();
+    if (!initialConceptHash) requestAnimationFrame(() => window.scrollTo({top:0,behavior:'instant'}));
+    renderDailyEntry();
+    const langButtons = [...root.querySelectorAll('[data-i2-lang]')];
+    const languageNote = root.querySelector('#i2-lang-note');
+    function changeLanguage(lang) {
+      applyDisplayLanguage(lang);
+      langButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.i2Lang === displayLanguage)));
+      const translated = languageCatalog?.frenchApprovedCount || 0;
+      languageNote.textContent = displayLanguage === 'fr'
+        ? `${translated} entrées disposent d’une traduction française relue sur ${entries.length}. Les autres restent en anglais.`
+        : `${translated} reviewed French translations available; English is the default for other concepts.`;
+      root.querySelector('#i2-search').placeholder = displayLanguage === 'fr'
+        ? 'Rechercher un terme, un sigle ou une définition…'
+        : 'Search terms, acronyms, definitions, or topics…';
+      if (searchInput.value.trim() && selectedEntryId) {
+        const selected = entries.find(e => e.id === selectedEntryId);
+        if (selected) { searchInput.value = selected.term; state.query = selected.term; }
+      }
+      // Search uses both language columns, regardless of selected display language.
+      normalizedQuery = normalize(state.query);
+      renderFilters();
+      render();
+      const daily = entries.find(e => e.id === dailyLink.dataset.dailyEntryId);
+      if (daily) {
+        dailyTerm.textContent = daily.term;
+        dailyDefinition.textContent = daily.definition;
+        dailyLink.setAttribute('aria-label', `Explore ${daily.term}`);
+      }
+    }
+    langButtons.forEach(button => button.addEventListener('click',() => changeLanguage(button.dataset.i2Lang)));
+    // Preview default can be set using ?lang=fr; no global storage or redirects.
+    if (new URLSearchParams(location.search).get('lang') === 'fr') changeLanguage('fr');
+    else changeLanguage('en');
+    updateSearchNavigation();
+
+    // Progressive detail hydration. Initial browsing/search works from the small core.
+    // Source evidence and semantic links become available when the second payload arrives.
+    // Do not rebuild the entire results tree, which would disrupt scroll and focus.
+    (async () => {
+      try {
+        const response = await fetch(`https://id.i2idl.org/glossary-details.json?release=${encodeURIComponent(root.dataset.version)}`, { cache: 'no-cache' });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const detail = await response.json();
+        if (detail.publicationVersion !== root.dataset.version || detail.sourceTag !== root.dataset.indexTag)
+          throw new Error('Glossary payload versions differ');
+        const detailEntries = detail.entries;
+        if (!detailEntries || Object.keys(detailEntries).length !== entries.length) throw new Error('Incomplete detail payload');
+        for (const entry of entries) {
+          const full = detailEntries[entry.id];
+          if (!full) throw new Error('Missing details for '+entry.id);
+          Object.assign(entry, full);
+          const tr = displayLanguage === 'fr' ? entry.i2French : null;
+          entry.term = tr?.prefLabel || entry.i2English.term;
+          entry.definition = tr?.definition || entry.i2English.definition;
+          entry.aka = tr?.altLabels?.join('; ') || entry.i2English.aka;
+          searchableText.set(entry.id, normalize([entry.term, entry.aka, entry.definition, entry.why, entry.type, entry.field, entry.i2English.term, entry.i2English.definition, entry.i2English.aka, entry.i2French?.prefLabel, entry.i2French?.definition, ...(entry.i2French?.altLabels || []),
+            entry.sources.map(source => [source.name,source.detail].join(' ')).join(' ')].join(' ')));
+        }
+        let position = 0;
+        function hydrateBatch() {
+          const cards = results.querySelectorAll('.i2-entry');
+          const end = Math.min(position + 20, cards.length);
+          for (; position < end; position++) {
+            const old = cards[position];
+            const entry = entries.find(e => e.id === old.id);
+            if (!entry || !old.isConnected || old.contains(document.activeElement)) continue;
+            old.replaceWith(entryCard(entry));
+          }
+          if (position < cards.length) setTimeout(hydrateBatch, 0);
+          else {
+            root.dataset.detailsReady = 'true';
+            // Revisit any card skipped because it held keyboard focus.
+            const skipped = results.querySelectorAll('.i2-entry');
+            for (const old of skipped) {
+              if (old.contains(document.activeElement)) continue;
+              if (old.querySelector('.i2-source-detail')?.textContent === 'Detailed citations and semantic links loading…') {
+                const entry = entries.find(e => e.id === old.id);
+                if (entry) old.replaceWith(entryCard(entry));
+              }
+            }
+          }
+        }
+        hydrateBatch();
+      } catch (error) {
+        console.error('I2IDL: detailed citations and relationships unavailable.', error);
+        root.dataset.detailsReady = 'error';
+      }
+    })();
+
+
+  })();
+  </script>
+</div>

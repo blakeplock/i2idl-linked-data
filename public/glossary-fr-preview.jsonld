@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "gs": "https://glossarystudio.app/ns/"
+  },
+  "@graph": [
+    {
+      "@id": "https://id.i2idl.org/concepts/learning-engineering",
+      "skos:prefLabel": {
+        "@value": "Ingénierie de l’apprentissage",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/learning-engineering-1",
+      "rdf:value": {
+        "@value": "Démarche qui mobilise les sciences de l’apprentissage, la conception centrée sur l’humain, les méthodes d’ingénierie et la prise de décision éclairée par les données pour soutenir les apprenants et leur développement.",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/learning-sciences",
+      "skos:prefLabel": {
+        "@value": "Sciences de l’apprentissage",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/learning-sciences-1",
+      "rdf:value": {
+        "@value": "Champ interdisciplinaire qui étudie la manière dont les personnes apprennent et les moyens de soutenir l’apprentissage dans ses dimensions cognitives, sociales, motivationnelles, culturelles et contextuelles.",
+        "@language": "fr"
+      }
+    }
+  ]
+}

@@ -1,0 +1,586 @@
+{
+  "schemaVersion": 1,
+  "sourcePublicationVersion": "v0.0.90",
+  "language": "fr",
+  "status": "draft-only — not for publication",
+  "concepts": [
+    {
+      "id": "learning-management-systems",
+      "en": {
+        "prefLabel": "Learning Management Systems",
+        "definition": "Software platforms used to administer, deliver, organize, track, and report on learning activities, courses, and associated outcomes."
+      },
+      "fr": {
+        "prefLabel": "Systèmes de gestion de l’apprentissage",
+        "definition": "Plateformes logicielles utilisées pour administrer, diffuser, organiser, suivre et documenter les activités d’apprentissage, les cours et leurs résultats.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "ERIC Thesaurus (2025) — English I2IDL definition; French proposed by I2IDL editorial workflow",
+      "reviewNotes": "Verify with authoritative French educational terminology; check definition fidelity and preferred term."
+    },
+    {
+      "id": "technology-integration",
+      "en": {
+        "prefLabel": "Technology Integration",
+        "definition": "The incorporation of technological tools and services into instructional practice, curricula, and educational environments."
+      },
+      "fr": {
+        "prefLabel": "Intégration des technologies",
+        "definition": "Processus d’intégration d’outils et de services technologiques aux pratiques pédagogiques, aux programmes et à l’environnement éducatif.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "ERIC Thesaurus (2025) — English I2IDL definition; French proposed by I2IDL editorial workflow",
+      "reviewNotes": "Verify with authoritative French educational terminology; check definition fidelity and preferred term."
+    },
+    {
+      "id": "electronic-learning",
+      "en": {
+        "prefLabel": "Electronic Learning",
+        "definition": "Learning supported through electronic devices, software, or digital processes, whether or not delivery requires the Internet."
+      },
+      "fr": {
+        "prefLabel": "Apprentissage électronique",
+        "definition": "Apprentissage soutenu ou dispensé au moyen de technologies électroniques et de ressources numériques.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "ERIC Thesaurus (2025) — English I2IDL definition; French proposed by I2IDL editorial workflow",
+      "reviewNotes": "Verify with authoritative French educational terminology; check definition fidelity and preferred term."
+    },
+    {
+      "id": "instructional-design",
+      "en": {
+        "prefLabel": "Instructional Design",
+        "definition": "The systematic analysis and design of learning experiences, activities, materials, and assessment approaches to support intended outcomes."
+      },
+      "fr": {
+        "prefLabel": "Conception pédagogique",
+        "definition": "Processus de conception, de développement et d’évaluation de situations, d’activités et de ressources destinées à favoriser l’apprentissage.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "ERIC Thesaurus (2025) — English I2IDL definition; French proposed by I2IDL editorial workflow",
+      "reviewNotes": "Verify with authoritative French educational terminology; check definition fidelity and preferred term."
+    },
+    {
+      "id": "instructional-systems",
+      "en": {
+        "prefLabel": "Instructional Systems",
+        "definition": "Coordinated arrangements of people, content, processes, resources, and technologies that support instruction and its intended objectives."
+      },
+      "fr": {
+        "prefLabel": "Systèmes pédagogiques",
+        "definition": "Ensembles coordonnés de méthodes, de ressources, de personnes et de technologies organisés pour soutenir l’enseignement et l’apprentissage.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "ERIC Thesaurus (2025) — English I2IDL definition; French proposed by I2IDL editorial workflow",
+      "reviewNotes": "Verify with authoritative French educational terminology; check definition fidelity and preferred term."
+    },
+    {
+      "id": "learning-objectives",
+      "en": {
+        "prefLabel": "Learning Objectives",
+        "definition": "Statements describing the knowledge, skills, or capabilities learners are expected to acquire or demonstrate through a learning activity."
+      },
+      "fr": {
+        "prefLabel": "Objectifs d’apprentissage",
+        "definition": "Énoncés décrivant les connaissances, les capacités ou les performances que les apprenants devraient acquérir ou démontrer.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "ERIC Thesaurus (2025) — English I2IDL definition; French proposed by I2IDL editorial workflow",
+      "reviewNotes": "Verify with authoritative French educational terminology; check definition fidelity and preferred term."
+    },
+    {
+      "id": "learning-strategies",
+      "en": {
+        "prefLabel": "Learning Strategies",
+        "definition": "Approaches, procedures, or techniques used by learners or educators to support learning across tasks and contexts."
+      },
+      "fr": {
+        "prefLabel": "Stratégies d’apprentissage",
+        "definition": "Démarches et techniques mobilisées par les apprenants pour comprendre, organiser, retenir et utiliser de nouvelles connaissances ou compétences.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "ERIC Thesaurus (2025) — English I2IDL definition; French proposed by I2IDL editorial workflow",
+      "reviewNotes": "Verify with authoritative French educational terminology; check definition fidelity and preferred term."
+    },
+    {
+      "id": "blended-learning",
+      "en": {
+        "prefLabel": "Blended Learning",
+        "definition": "An instructional approach that purposefully combines multiple modes of learning delivery, often including face-to-face and electronically mediated instruction."
+      },
+      "fr": {
+        "prefLabel": "Apprentissage hybride",
+        "definition": "Modalité d’apprentissage combinant des activités en présence et des activités à distance ou en ligne, selon une conception pédagogique coordonnée.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "ERIC Thesaurus (2025) — English I2IDL definition; French proposed by I2IDL editorial workflow",
+      "reviewNotes": "Verify with authoritative French educational terminology; check definition fidelity and preferred term."
+    },
+    {
+      "id": "gamification",
+      "en": {
+        "prefLabel": "Gamification",
+        "definition": "The application of game design elements, such as points, challenges, or feedback mechanisms, in contexts that are not themselves games."
+      },
+      "fr": {
+        "prefLabel": "Ludification",
+        "definition": "Utilisation d’éléments empruntés au jeu dans des activités qui ne sont pas des jeux afin de soutenir l’engagement et l’apprentissage.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "ERIC Thesaurus (2025) — English I2IDL definition; French proposed by I2IDL editorial workflow",
+      "reviewNotes": "Verify with authoritative French educational terminology; check definition fidelity and preferred term."
+    },
+    {
+      "id": "game-based-learning",
+      "en": {
+        "prefLabel": "Game Based Learning",
+        "definition": "An approach in which participation in games or gameplay is used to develop or apply knowledge and skills."
+      },
+      "fr": {
+        "prefLabel": "Apprentissage par le jeu",
+        "definition": "Approche pédagogique qui utilise un jeu comme environnement ou activité centrale pour atteindre des objectifs d’apprentissage.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "ERIC Thesaurus (2025) — English I2IDL definition; French proposed by I2IDL editorial workflow",
+      "reviewNotes": "Verify with authoritative French educational terminology; check definition fidelity and preferred term."
+    },
+    {
+      "id": "adaptive-testing",
+      "en": {
+        "prefLabel": "Adaptive Testing",
+        "definition": "Assessment that selects or adjusts subsequent test items in response to information from a learner’s earlier answers."
+      },
+      "fr": {
+        "prefLabel": "Évaluation adaptative",
+        "definition": "Méthode d’évaluation qui ajuste la sélection ou la difficulté des questions en fonction des réponses ou de la performance de la personne évaluée.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "ERIC Thesaurus (2025) — English I2IDL definition; French proposed by I2IDL editorial workflow",
+      "reviewNotes": "Verify with authoritative French educational terminology; check definition fidelity and preferred term."
+    },
+    {
+      "id": "assessment-literacy",
+      "en": {
+        "prefLabel": "Assessment Literacy",
+        "definition": "The knowledge and skills needed to design, select, interpret, and use assessments and their results appropriately in educational practice."
+      },
+      "fr": {
+        "prefLabel": "Littératie en évaluation",
+        "definition": "Ensemble des connaissances et des compétences permettant de concevoir, d’interpréter et d’utiliser les évaluations et leurs résultats de manière appropriée.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "ERIC Thesaurus (2025) — English I2IDL definition; French proposed by I2IDL editorial workflow",
+      "reviewNotes": "Verify with authoritative French educational terminology; check definition fidelity and preferred term."
+    },
+    {
+      "id": "performance-based-assessment",
+      "en": {
+        "prefLabel": "Performance Based Assessment",
+        "definition": "Assessment requiring learners to demonstrate knowledge or skills through the production of work or completion of a task, with evaluation of the process, product, or both."
+      },
+      "fr": {
+        "prefLabel": "Évaluation fondée sur la performance",
+        "definition": "Évaluation dans laquelle les apprenants démontrent leurs acquis en réalisant une tâche ou une performance observable.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "ERIC Thesaurus (2025) — English I2IDL definition; French proposed by I2IDL editorial workflow",
+      "reviewNotes": "Verify with authoritative French educational terminology; check definition fidelity and preferred term."
+    },
+    {
+      "id": "learning-trajectories",
+      "en": {
+        "prefLabel": "Learning Trajectories",
+        "definition": "Descriptions of how knowledge and skills may develop across successive stages, used to inform learning goals, instruction, and assessment."
+      },
+      "fr": {
+        "prefLabel": "Trajectoires d’apprentissage",
+        "definition": "Descriptions de la progression des connaissances ou des compétences au fil d’étapes de développement ou d’apprentissage.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "ERIC Thesaurus (2025) — English I2IDL definition; French proposed by I2IDL editorial workflow",
+      "reviewNotes": "Verify with authoritative French educational terminology; check definition fidelity and preferred term."
+    },
+    {
+      "id": "transfer-of-training",
+      "en": {
+        "prefLabel": "Transfer of Training",
+        "definition": "The influence of previously acquired knowledge or skills on learning or performing in a subsequent task or context."
+      },
+      "fr": {
+        "prefLabel": "Transfert des acquis de formation",
+        "definition": "Application, dans une autre situation ou dans la pratique, de connaissances et de compétences acquises en formation.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "ERIC Thesaurus (2025) — English I2IDL definition; French proposed by I2IDL editorial workflow",
+      "reviewNotes": "Verify with authoritative French educational terminology; check definition fidelity and preferred term."
+    },
+    {
+      "id": "assistive-technology",
+      "en": {
+        "prefLabel": "Assistive Technology",
+        "definition": "Devices, equipment, software, or adapted systems that support the functional capabilities and participation of people with disabilities."
+      },
+      "fr": {
+        "prefLabel": "Technologies d’assistance",
+        "definition": "Outils, équipements ou logiciels destinés à soutenir l’autonomie et l’accès aux activités des personnes ayant des besoins fonctionnels particuliers.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "ERIC Thesaurus (2025) — English I2IDL definition; French proposed by I2IDL editorial workflow",
+      "reviewNotes": "Verify with authoritative French educational terminology; check definition fidelity and preferred term."
+    },
+    {
+      "id": "access-to-internet",
+      "en": {
+        "prefLabel": "Access to Internet",
+        "definition": "The availability of means for individuals to connect to and use the Internet through suitable devices and network services."
+      },
+      "fr": {
+        "prefLabel": "Accès à Internet",
+        "definition": "Possibilité de se connecter à Internet et d’en utiliser les services, compte tenu de la disponibilité, de l’équipement et des conditions d’accès.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "ERIC Thesaurus (2025) — English I2IDL definition; French proposed by I2IDL editorial workflow",
+      "reviewNotes": "Verify with authoritative French educational terminology; check definition fidelity and preferred term."
+    },
+    {
+      "id": "information-literacy",
+      "en": {
+        "prefLabel": "Information Literacy",
+        "definition": "The ability to locate, evaluate, interpret, and use information appropriately across sources and contexts."
+      },
+      "fr": {
+        "prefLabel": "Littératie informationnelle",
+        "definition": "Capacité à repérer, évaluer, organiser et utiliser l’information de façon critique et appropriée.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "ERIC Thesaurus (2025) — English I2IDL definition; French proposed by I2IDL editorial workflow",
+      "reviewNotes": "Verify with authoritative French educational terminology; check definition fidelity and preferred term."
+    },
+    {
+      "id": "media-literacy",
+      "en": {
+        "prefLabel": "Media Literacy",
+        "definition": "The ability to access, interpret, evaluate, and create messages across different forms of media."
+      },
+      "fr": {
+        "prefLabel": "Éducation aux médias",
+        "definition": "Capacité à accéder aux contenus médiatiques, à les analyser, à les évaluer et à les produire de manière réfléchie.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "ERIC Thesaurus (2025) — English I2IDL definition; French proposed by I2IDL editorial workflow",
+      "reviewNotes": "Verify with authoritative French educational terminology; check definition fidelity and preferred term."
+    },
+    {
+      "id": "technological-literacy",
+      "en": {
+        "prefLabel": "Technological Literacy",
+        "definition": "Understanding of technologies, their uses and consequences, and the ability to make informed decisions about their selection and application."
+      },
+      "fr": {
+        "prefLabel": "Culture technologique",
+        "definition": "Compréhension des technologies et capacité à les utiliser et à en évaluer les effets dans divers contextes.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "ERIC Thesaurus (2025) — English I2IDL definition; French proposed by I2IDL editorial workflow",
+      "reviewNotes": "Verify with authoritative French educational terminology; check definition fidelity and preferred term."
+    },
+    {
+      "id": "natural-language-processing",
+      "en": {
+        "prefLabel": "Natural Language Processing",
+        "definition": "Computational methods for analyzing, interpreting, generating, or otherwise processing human language."
+      },
+      "fr": {
+        "prefLabel": "Traitement automatique des langues",
+        "definition": "Domaine de l’intelligence artificielle qui développe des méthodes informatiques pour analyser, interpréter ou produire le langage humain.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "ERIC Thesaurus (2025) — English I2IDL definition; French proposed by I2IDL editorial workflow",
+      "reviewNotes": "Verify with authoritative French educational terminology; check definition fidelity and preferred term."
+    },
+    {
+      "id": "instructional-effectiveness",
+      "en": {
+        "prefLabel": "Instructional Effectiveness",
+        "definition": "The degree to which instruction, materials, or educational programs support the achievement of their intended learning objectives."
+      },
+      "fr": {
+        "prefLabel": "Efficacité pédagogique",
+        "definition": "Degré auquel un enseignement ou un dispositif pédagogique contribue à l’atteinte des objectifs d’apprentissage visés.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "ERIC Thesaurus (2025) — English I2IDL definition; French proposed by I2IDL editorial workflow",
+      "reviewNotes": "Verify with authoritative French educational terminology; check definition fidelity and preferred term."
+    },
+    {
+      "id": "educational-indicators",
+      "en": {
+        "prefLabel": "Educational Indicators",
+        "definition": "Measures used to describe educational conditions, activities, or outcomes and to inform evaluation, comparison, and policy decisions."
+      },
+      "fr": {
+        "prefLabel": "Indicateurs de l’éducation",
+        "definition": "Mesures utilisées pour décrire, suivre ou comparer des caractéristiques, des ressources, des processus ou des résultats de systèmes éducatifs.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "ERIC Thesaurus (2025) — English I2IDL definition; French proposed by I2IDL editorial workflow",
+      "reviewNotes": "Verify with authoritative French educational terminology; check definition fidelity and preferred term."
+    },
+    {
+      "id": "learning-engineering",
+      "en": {
+        "prefLabel": "Learning engineering",
+        "definition": "A process and practice that applies learning sciences, human-centered and engineering design methods, and data-informed decision making to support learners and their development."
+      },
+      "fr": {
+        "prefLabel": "Ingénierie de l’apprentissage",
+        "definition": "Démarche qui mobilise les sciences de l’apprentissage, la conception centrée sur l’humain, les méthodes d’ingénierie et la prise de décision éclairée par les données pour soutenir les apprenants et leur développement.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "I2IDL glossary v0.0.90 English canonical text; French editorial proposal",
+      "reviewNotes": "Check French standards terminology and definition equivalence."
+    },
+    {
+      "id": "learning-sciences",
+      "en": {
+        "prefLabel": "Learning sciences",
+        "definition": "An interdisciplinary field that studies how people learn and how learning can be supported across cognitive, social, motivational, cultural, and contextual dimensions."
+      },
+      "fr": {
+        "prefLabel": "Sciences de l’apprentissage",
+        "definition": "Champ interdisciplinaire qui étudie la manière dont les personnes apprennent et les moyens de soutenir l’apprentissage dans ses dimensions cognitives, sociales, motivationnelles, culturelles et contextuelles.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "I2IDL glossary v0.0.90 English canonical text; French editorial proposal",
+      "reviewNotes": "Check French standards terminology and definition equivalence."
+    },
+    {
+      "id": "experience-api-xapi",
+      "en": {
+        "prefLabel": "Experience API (xAPI)",
+        "definition": "A learning technology specification standardized in the IEEE 9274 family for representing and exchanging records of learning and performance experiences."
+      },
+      "fr": {
+        "prefLabel": "Experience API (xAPI)",
+        "definition": "Spécification de technologies d’apprentissage normalisée dans la famille IEEE 9274, servant à représenter et à échanger des enregistrements d’expériences d’apprentissage et de performance.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "I2IDL glossary v0.0.90 English canonical text; French editorial proposal",
+      "reviewNotes": "Check French standards terminology and definition equivalence."
+    },
+    {
+      "id": "learning-record-store-lrs",
+      "en": {
+        "prefLabel": "Learning Record Store (LRS)",
+        "definition": "A system that receives, stores, and provides access to xAPI learning records."
+      },
+      "fr": {
+        "prefLabel": "Entrepôt d’enregistrements d’apprentissage (LRS)",
+        "definition": "Système qui reçoit, stocke et rend accessibles des enregistrements d’apprentissage conformes à xAPI.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "I2IDL glossary v0.0.90 English canonical text; French editorial proposal",
+      "reviewNotes": "Check French standards terminology and definition equivalence."
+    },
+    {
+      "id": "interoperability",
+      "en": {
+        "prefLabel": "Interoperability",
+        "definition": "The ability of systems, services, and data to work together through shared interfaces, formats, semantics, and expectations."
+      },
+      "fr": {
+        "prefLabel": "Interopérabilité",
+        "definition": "Capacité de systèmes, de services et de données à fonctionner ensemble grâce à des interfaces, des formats, des sémantiques et des attentes partagés.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "I2IDL glossary v0.0.90 English canonical text; French editorial proposal",
+      "reviewNotes": "Check French standards terminology and definition equivalence."
+    },
+    {
+      "id": "semantic-interoperability",
+      "en": {
+        "prefLabel": "Semantic interoperability",
+        "definition": "The ability of independently developed systems to exchange data in ways that preserve shared meaning, so equivalent concepts and activity descriptions can be interpreted consistently across implementations."
+      },
+      "fr": {
+        "prefLabel": "Interopérabilité sémantique",
+        "definition": "Capacité de systèmes développés indépendamment à échanger des données tout en préservant leur signification commune.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "I2IDL glossary v0.0.90 English canonical text; French editorial proposal",
+      "reviewNotes": "Check French standards terminology and definition equivalence."
+    },
+    {
+      "id": "human-centered-design",
+      "en": {
+        "prefLabel": "Human-centered design",
+        "definition": "An approach to design that grounds decisions in an understanding of people, their goals, contexts, constraints, and experiences, using iterative research and testing."
+      },
+      "fr": {
+        "prefLabel": "Conception centrée sur l’humain",
+        "definition": "Approche de conception fondée sur la compréhension des personnes, de leurs objectifs, de leurs contextes, de leurs contraintes et de leurs expériences, à travers une démarche itérative de recherche et d’essai.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "I2IDL glossary v0.0.90 English canonical text; French editorial proposal",
+      "reviewNotes": "Check French standards terminology and definition equivalence."
+    },
+    {
+      "id": "learning-record",
+      "en": {
+        "prefLabel": "Learning record",
+        "definition": "A machine-readable record representing evidence about a learning, training, or performance event, state, milestone, or achievement."
+      },
+      "fr": {
+        "prefLabel": "Enregistrement d’apprentissage",
+        "definition": "Enregistrement lisible par machine représentant des éléments probants relatifs à un événement, un état, une étape ou une réalisation d’apprentissage ou de performance.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "I2IDL glossary v0.0.90 English canonical text; French editorial proposal",
+      "reviewNotes": "Check French standards terminology and definition equivalence."
+    },
+    {
+      "id": "xapi-statement",
+      "en": {
+        "prefLabel": "xAPI Statement",
+        "definition": "The core xAPI data structure used to represent an experience, typically centered on an actor, verb, and object with optional context, result, authority, and attachments."
+      },
+      "fr": {
+        "prefLabel": "Déclaration xAPI",
+        "definition": "Structure de données fondamentale de xAPI utilisée pour représenter une expérience, généralement autour d’un acteur, d’un verbe et d’un objet, avec des informations contextuelles facultatives.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "I2IDL glossary v0.0.90 English canonical text; French editorial proposal",
+      "reviewNotes": "Check French standards terminology and definition equivalence."
+    },
+    {
+      "id": "xapi-profile",
+      "en": {
+        "prefLabel": "xAPI Profile",
+        "definition": "Human- and/or machine-readable documentation of application-specific Concepts, Statement Templates, Patterns, and extensions used when implementing xAPI in a particular context."
+      },
+      "fr": {
+        "prefLabel": "Profil xAPI",
+        "definition": "Documentation lisible par des humains ou des machines qui décrit des concepts, des modèles de déclarations, des motifs et des extensions propres à une mise en œuvre de xAPI.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "I2IDL glossary v0.0.90 English canonical text; French editorial proposal",
+      "reviewNotes": "Check French standards terminology and definition equivalence."
+    },
+    {
+      "id": "learning-engineering-process",
+      "en": {
+        "prefLabel": "Learning engineering process",
+        "definition": "An iterative, concurrent process for addressing learning challenges by framing the context and stakeholders, creating and instrumenting a solution, implementing it in authentic settings, investigating outcomes with data, and refining the work continuously."
+      },
+      "fr": {
+        "prefLabel": "Processus d’ingénierie de l’apprentissage",
+        "definition": "Processus itératif visant à définir un défi d’apprentissage, concevoir et instrumenter une solution, la mettre en œuvre, examiner les résultats à l’aide de données et améliorer la démarche.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewer": "",
+      "reviewedOn": "",
+      "sourceProvenance": "I2IDL glossary v0.0.90 English canonical text; French editorial proposal",
+      "reviewNotes": "Check French standards terminology and definition equivalence."
+    }
+  ]
+}

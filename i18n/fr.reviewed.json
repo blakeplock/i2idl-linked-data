@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "sourcePublicationVersion": "v0.0.90",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "concepts": {
+    "learning-engineering": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Ingénierie de l’apprentissage",
+        "definition": "Démarche qui mobilise les sciences de l’apprentissage, la conception centrée sur l’humain, les méthodes d’ingénierie et la prise de décision éclairée par les données pour soutenir les apprenants et leur développement.",
+        "altLabels": []
+      }
+    },
+    "learning-sciences": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Sciences de l’apprentissage",
+        "definition": "Champ interdisciplinaire qui étudie la manière dont les personnes apprennent et les moyens de soutenir l’apprentissage dans ses dimensions cognitives, sociales, motivationnelles, culturelles et contextuelles.",
+        "altLabels": []
+      }
+    }
+  }
+}
