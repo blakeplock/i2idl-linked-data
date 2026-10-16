@@ -35,5 +35,6 @@ function researchFooter(){return locale()==='fr'?' Les résultats ne font pas l�
 function publicationMeta(work){const citations=(Number(work.citations)||0).toLocaleString(locale()==='fr'?'fr-FR':'en-US');const rate=work.citationsPerYear==null?t('rateUnavailable'):Number(work.citationsPerYear).toLocaleString(locale()==='fr'?'fr-FR':'en-US',{maximumFractionDigits:2})+' '+t('perYear');return citations+' '+t('totalCitations')+' (OpenAlex) · '+rate+(work.openAccess?' · '+t('openAccess'):'')}
 function matchedText(work,total){const n=work.matchedTerms?.length||0;return locale()==='fr'?`${n} sur ${total} concepts trouvés dans le texte indexé : ${(work.matchedTerms||[]).join(', ')}`:`${n} of ${total} concepts matched in indexed text: ${(work.matchedTerms||[]).join(', ')}`}
 
-window.I2IDLDynamicI18n={t,pathCount,comparison,componentNote,paperFound,locale,researchReady,researchTopic,researchStatus,researchCount,researchSearching,researchError,researchYears,researchOutcome,researchFooter,publicationMeta,matchedText};
+function graphCount(n,links,depth){return locale()==="fr"?`${n} concepts visibles, ${links} liens · ${depth} degré${depth>1?"s":""}`:`${n} visible concepts, ${links} links · ${depth} hop${depth>1?"s":""}`}
+window.I2IDLDynamicI18n={graphCount,t,pathCount,comparison,componentNote,paperFound,locale,researchReady,researchTopic,researchStatus,researchCount,researchSearching,researchError,researchYears,researchOutcome,researchFooter,publicationMeta,matchedText};
 })();
