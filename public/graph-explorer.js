@@ -298,7 +298,8 @@ const requestedLang=new URLSearchParams(location.search).get('lang');
 i2idlLocale=requestedLang==='fr'?'fr':'en';langSelect.value=i2idlLocale;document.documentElement.lang=i2idlLocale;
 langSelect.addEventListener('change',()=>{i2idlLocale=langSelect.value;document.documentElement.lang=i2idlLocale;
  try{const u=new URL(location.href);u.searchParams.set('lang',i2idlLocale);window.history.replaceState(null,'',u)}catch(_){}
- if(nodes.length){const selected=active;populateResearch();const field=$('collection').value;const filter=$('collection');filter.options[0].textContent=i2idlT('all');filter.options[filter.options.length-1].textContent=i2idlT('other');filter.value=field;if(selected)focus(selected,false,false);if($('search').value)$('search').dispatchEvent(new Event('input'));}
+ if(nodes.length){const selected=active;populateResearch();const field=$('collection').value;const filter=$('collection');filter.options[0].textContent=i2idlT('all');filter.options[filter.options.length-1].textContent=i2idlT('other');filter.value=field;if(selected)focus(selected,false,false);if($('search').value)$('search').dispatchEvent(new Event('input'));
+  if($('path-result').children.length)runPath();if($('compare-result').children.length)runCompare();if(!$('analytics-panel').hidden)renderAnalytics();}
 });
 async function i2idlLoadFrenchOverlay(){
  try{const r=await fetch('/glossary-fr-preview.jsonld',{cache:'no-cache'});if(!r.ok)throw Error(`HTTP ${r.status}`);const doc=await r.json();
