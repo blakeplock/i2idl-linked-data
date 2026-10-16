@@ -17,7 +17,10 @@ for(const [id,item] of Object.entries(decisions.concepts)){
  assert(byProposal.has(id),`Unknown proposal ${id}`);
  assert(['pending','approved','rejected'].includes(item.status),`Invalid decision status ${id}`);
  if(item.status!=='approved')continue;
- assert(!reviewed.concepts[id],`Already approved: ${id}; do not overwrite`);
+ if(reviewed.concepts[id]){
+   assert.deepEqual(reviewed.concepts[id].fr,item.fr,`Approved translation differs: ${id}`);
+   continue;
+ }
  assert(typeof item.reviewer==='string'&&item.reviewer.trim(),`Missing reviewer ${id}`);
  assert(/^\d{4}-\d{2}-\d{2}$/.test(item.reviewedOn)&&!Number.isNaN(Date.parse(item.reviewedOn)),`Invalid review date ${id}`);
  assert(item.fr?.prefLabel?.trim()&&item.fr?.definition?.trim(),`Missing French content ${id}`);

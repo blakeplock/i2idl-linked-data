@@ -175,6 +175,176 @@
         "definition": "Enregistrement lisible par machine représentant des éléments probants relatifs à un événement, à un état, à une étape ou à une réalisation en matière d’apprentissage, de formation ou de performance.",
         "altLabels": []
       }
+    },
+    "learning-management-systems": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Systèmes de gestion de l’apprentissage",
+        "definition": "Plateformes logicielles utilisées pour administrer, diffuser, organiser et suivre les activités d’apprentissage et les cours, ainsi que pour produire des rapports sur ces activités et les résultats qui leur sont associés.",
+        "altLabels": []
+      }
+    },
+    "technology-integration": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Intégration des technologies",
+        "definition": "Processus d’intégration d’outils et de services technologiques aux pratiques pédagogiques, aux programmes et à l’environnement éducatif.",
+        "altLabels": []
+      }
+    },
+    "electronic-learning": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Apprentissage électronique",
+        "definition": "Apprentissage soutenu par des appareils électroniques, des logiciels ou des processus numériques, que sa mise en œuvre nécessite ou non une connexion à Internet.",
+        "altLabels": []
+      }
+    },
+    "blended-learning": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Apprentissage hybride",
+        "definition": "Approche pédagogique combinant délibérément plusieurs modes de formation, notamment, mais pas exclusivement, des activités en présence et des activités soutenues par des technologies électroniques.",
+        "altLabels": []
+      }
+    },
+    "adaptive-testing": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Évaluation adaptative",
+        "definition": "Évaluation qui sélectionne ou adapte les questions suivantes en fonction des informations tirées des réponses précédentes de l’apprenant.",
+        "altLabels": []
+      }
+    },
+    "assessment-literacy": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Littératie en évaluation",
+        "definition": "Connaissances et compétences nécessaires pour concevoir, sélectionner, interpréter et utiliser de manière appropriée les évaluations et leurs résultats dans la pratique éducative.",
+        "altLabels": []
+      }
+    },
+    "transfer-of-training": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Transfert des acquis de formation",
+        "definition": "Influence de connaissances ou de compétences acquises antérieurement sur l’apprentissage ou la réalisation d’une tâche dans un contexte ultérieur.",
+        "altLabels": []
+      }
+    },
+    "assistive-technology": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Technologies d’assistance",
+        "definition": "Appareils, équipements, logiciels ou systèmes adaptés qui soutiennent les capacités fonctionnelles et la participation des personnes en situation de handicap.",
+        "altLabels": []
+      }
+    },
+    "access-to-internet": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Accès à Internet",
+        "definition": "Disponibilité des moyens permettant aux personnes de se connecter à Internet et d’en utiliser les services, au moyen d’appareils adaptés et de services de réseau appropriés.",
+        "altLabels": []
+      }
+    },
+    "media-literacy": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Littératie médiatique",
+        "definition": "Capacité à accéder à des messages médiatiques, à les interpréter, à les évaluer et à en créer sous différentes formes de médias.",
+        "altLabels": []
+      }
+    },
+    "technological-literacy": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Culture technologique",
+        "definition": "Compréhension des technologies, de leurs usages et de leurs conséquences, ainsi que capacité à prendre des décisions éclairées quant à leur sélection et à leur utilisation.",
+        "altLabels": []
+      }
+    },
+    "experience-api-xapi": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Experience API (xAPI)",
+        "definition": "Spécification de technologies d’apprentissage normalisée dans la famille IEEE 9274, servant à représenter et à échanger des enregistrements d’expériences d’apprentissage et de performance.",
+        "altLabels": []
+      }
+    },
+    "learning-record-store-lrs": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Learning Record Store (LRS)",
+        "definition": "Système qui reçoit, stocke et rend accessibles des enregistrements d’apprentissage conformes à xAPI.",
+        "altLabels": []
+      }
+    },
+    "human-centered-design": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Conception centrée sur l’humain",
+        "definition": "Approche de conception fondée sur la compréhension des personnes, de leurs objectifs, de leurs contextes, de leurs contraintes et de leurs expériences, à travers une démarche itérative de recherche et d’essai.",
+        "altLabels": []
+      }
+    },
+    "xapi-statement": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Déclaration xAPI",
+        "definition": "Structure de données fondamentale de xAPI utilisée pour représenter une expérience, généralement autour d’un acteur, d’un verbe et d’un objet, avec, de façon facultative, un contexte, un résultat, une autorité et des pièces jointes.",
+        "altLabels": []
+      }
+    },
+    "xapi-profile": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Profil xAPI",
+        "definition": "Documentation lisible par des personnes et/ou des machines décrivant les concepts, les modèles de déclarations, les motifs et les extensions propres à une application, utilisés lors de la mise en œuvre de xAPI dans un contexte particulier.",
+        "altLabels": []
+      }
+    },
+    "learning-engineering-process": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Processus d’ingénierie de l’apprentissage",
+        "definition": "Processus itératif et mené de façon concomitante pour répondre à des défis d’apprentissage : définir le contexte et les parties prenantes, concevoir et instrumenter une solution, la mettre en œuvre dans des situations authentiques, étudier les résultats à l’aide de données et améliorer continuellement la démarche.",
+        "altLabels": []
+      }
     }
   }
 }
