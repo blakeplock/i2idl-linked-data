@@ -9,6 +9,20 @@
   },
   "@graph": [
     {
+      "@id": "https://id.i2idl.org/concepts/interoperability",
+      "skos:prefLabel": {
+        "@value": "Interopérabilité",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/interoperability-1",
+      "rdf:value": {
+        "@value": "Capacité de systèmes, de services et de données à fonctionner ensemble grâce à des interfaces, des formats, des sémantiques et des attentes partagés.",
+        "@language": "fr"
+      }
+    },
+    {
       "@id": "https://id.i2idl.org/concepts/learning-engineering",
       "skos:prefLabel": {
         "@value": "Ingénierie de l’apprentissage",
@@ -23,6 +37,20 @@
       }
     },
     {
+      "@id": "https://id.i2idl.org/concepts/learning-record",
+      "skos:prefLabel": {
+        "@value": "Enregistrement d’apprentissage",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/learning-record-1",
+      "rdf:value": {
+        "@value": "Enregistrement lisible par machine représentant des éléments probants relatifs à un événement, à un état, à une étape ou à une réalisation en matière d’apprentissage, de formation ou de performance.",
+        "@language": "fr"
+      }
+    },
+    {
       "@id": "https://id.i2idl.org/concepts/learning-sciences",
       "skos:prefLabel": {
         "@value": "Sciences de l’apprentissage",
@@ -33,6 +61,188 @@
       "@id": "https://id.i2idl.org/definitions/learning-sciences-1",
       "rdf:value": {
         "@value": "Champ interdisciplinaire qui étudie la manière dont les personnes apprennent et les moyens de soutenir l’apprentissage dans ses dimensions cognitives, sociales, motivationnelles, culturelles et contextuelles.",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/semantic-interoperability",
+      "skos:prefLabel": {
+        "@value": "Interopérabilité sémantique",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/semantic-interoperability-1",
+      "rdf:value": {
+        "@value": "Capacité de systèmes développés indépendamment à échanger des données en préservant une signification commune, de sorte que des concepts équivalents et des descriptions d’activités puissent être interprétés de manière cohérente entre différentes mises en œuvre.",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/instructional-design",
+      "skos:prefLabel": {
+        "@value": "Conception pédagogique",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/instructional-design",
+      "rdf:value": {
+        "@value": "Analyse et conception systématiques d’expériences d’apprentissage, d’activités, de ressources et de démarches d’évaluation visant à soutenir l’atteinte des résultats attendus.",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/instructional-systems",
+      "skos:prefLabel": {
+        "@value": "Systèmes pédagogiques",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/instructional-systems",
+      "rdf:value": {
+        "@value": "Ensembles coordonnés de personnes, de contenus, de processus, de ressources et de technologies qui soutiennent l’enseignement et ses objectifs visés.",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/learning-objectives",
+      "skos:prefLabel": {
+        "@value": "Objectifs d’apprentissage",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/learning-objectives",
+      "rdf:value": {
+        "@value": "Énoncés décrivant les connaissances, les compétences ou les capacités que les apprenants sont censés acquérir ou démontrer dans le cadre d’une activité d’apprentissage.",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/learning-strategies",
+      "skos:prefLabel": {
+        "@value": "Stratégies d’apprentissage",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/learning-strategies",
+      "rdf:value": {
+        "@value": "Approches, démarches ou techniques utilisées par les apprenants ou les éducateurs pour soutenir l’apprentissage dans différentes tâches et différents contextes.",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/gamification",
+      "skos:prefLabel": {
+        "@value": "Ludification",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/gamification",
+      "rdf:value": {
+        "@value": "Application d’éléments de conception de jeux, tels que des points, des défis ou des mécanismes de rétroaction, à des contextes qui ne sont pas eux-mêmes des jeux.",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/game-based-learning",
+      "skos:prefLabel": {
+        "@value": "Apprentissage par le jeu",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/game-based-learning",
+      "rdf:value": {
+        "@value": "Approche dans laquelle la participation à des jeux ou à des activités de jeu sert à développer ou à appliquer des connaissances et des compétences.",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/performance-based-assessment",
+      "skos:prefLabel": {
+        "@value": "Évaluation fondée sur la performance",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/performance-based-assessment",
+      "rdf:value": {
+        "@value": "Évaluation demandant aux apprenants de démontrer leurs connaissances ou leurs compétences par la réalisation d’un travail ou l’accomplissement d’une tâche, le processus, le produit ou les deux faisant l’objet de l’évaluation.",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/learning-trajectories",
+      "skos:prefLabel": {
+        "@value": "Trajectoires d’apprentissage",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/learning-trajectories",
+      "rdf:value": {
+        "@value": "Descriptions de la manière dont les connaissances et les compétences peuvent se développer au fil d’étapes successives, utilisées pour éclairer les objectifs d’apprentissage, l’enseignement et l’évaluation.",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/information-literacy",
+      "skos:prefLabel": {
+        "@value": "Littératie informationnelle",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/information-literacy",
+      "rdf:value": {
+        "@value": "Capacité à repérer, évaluer, interpréter et utiliser l’information de manière appropriée, à partir de diverses sources et dans différents contextes.",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/natural-language-processing",
+      "skos:prefLabel": {
+        "@value": "Traitement automatique des langues",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/natural-language-processing",
+      "rdf:value": {
+        "@value": "Méthodes informatiques permettant d’analyser, d’interpréter, de générer ou de traiter de toute autre manière le langage humain.",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/instructional-effectiveness",
+      "skos:prefLabel": {
+        "@value": "Efficacité pédagogique",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/instructional-effectiveness",
+      "rdf:value": {
+        "@value": "Degré auquel l’enseignement, les ressources ou les programmes éducatifs soutiennent l’atteinte de leurs objectifs d’apprentissage visés.",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/educational-indicators",
+      "skos:prefLabel": {
+        "@value": "Indicateurs de l’éducation",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/educational-indicators",
+      "rdf:value": {
+        "@value": "Mesures utilisées pour décrire les conditions, les activités ou les résultats en éducation et pour éclairer l’évaluation, la comparaison et les décisions de politique éducative.",
         "@language": "fr"
       }
     }
