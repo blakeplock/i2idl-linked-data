@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const $=id=>document.getElementById(id),root=$('research-discovery');if(!root)return;
+const ri=()=>window.I2IDLDynamicI18n;const $=id=>document.getElementById(id),root=$('research-discovery');if(!root)return;
 const status=$('research-status'),list=$('research-results'),run=$('research-run'),sort=$('research-sort'),scholar=$('research-scholar'),tray=$('research-cluster-items'),add=$('research-add'),clear=$('research-clear'),mode=$('research-cluster-mode'),fromYear=$('research-from-year'),toYear=$('research-to-year'),oa=$('research-open-access');
 let selected=null,cluster=[],sequence=0;
 let exportSnapshot=null;const exportCSV=$('research-export-csv'),exportBib=$('research-export-bib');
@@ -31,6 +31,6 @@ function downloadExport(format){if(!exportSnapshot||!exportSnapshot.works.length
 exportCSV.addEventListener('click',()=>downloadExport('csv'));
 exportBib.addEventListener('click',()=>downloadExport('bib'));
 // Any changed search controls invalidate the export until the user runs a new search.
-for(const control of [sort,fromYear,toYear,oa])control.addEventListener('change',()=>{clearExport();status.textContent='Search settings changed. Find papers again to export the updated results.'});
+for(const control of [sort,fromYear,toYear,oa])control.addEventListener('change',()=>{clearExport();status.textContent=ri().t('searchChanged')});
 renderTray();
 })();
