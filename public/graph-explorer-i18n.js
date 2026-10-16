@@ -62,6 +62,10 @@ function apply(){const select=document.getElementById('i2idl-language');const la
  for(const [selector,pair] of Object.entries(options)){const el=document.querySelector(selector);if(el)el.textContent=pair[lang==='fr'?1:0]}
  for(const [selector,fields] of Object.entries(attrs)){const el=document.querySelector(selector);if(!el)continue;for(const [attr,pair] of Object.entries(fields))el.setAttribute(attr,pair[lang==='fr'?1:0])}
 }
-function init(){const select=document.getElementById('i2idl-language');if(!select)return;select.addEventListener('change',apply);apply();}
+function init(){const select=document.getElementById('i2idl-language');if(!select)return;
+ const requested=new URLSearchParams(window.location.search).get('lang');
+ select.value=requested==='fr'?'fr':'en';
+ select.addEventListener('change',apply);apply();
+}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();
