@@ -298,7 +298,23 @@ const requestedLang=new URLSearchParams(location.search).get('lang');
 i2idlLocale=requestedLang==='fr'?'fr':'en';langSelect.value=i2idlLocale;document.documentElement.lang=i2idlLocale;
 langSelect.addEventListener('change',()=>{i2idlLocale=langSelect.value;document.documentElement.lang=i2idlLocale;
  try{const u=new URL(location.href);u.searchParams.set('lang',i2idlLocale);window.history.replaceState(null,'',u)}catch(_){}
- if(nodes.length){const selected=active;populateResearch();const field=$('collection').value;const filter=$('collection');filter.options[0].textContent=i2idlT('all');filter.options[filter.options.length-1].textContent=i2idlT('other');filter.value=field;if(selected)focus(selected,false,false);if($('search').value)$('search').dispatchEvent(new Event('input'));}
+ if(nodes.length){
+  const selected=active;
+  const field=$('collection').value;
+  const ids=['path-a','path-b','compare-a','compare-b'];
+  const selections=Object.fromEntries(ids.map(id=>[id,$(id).value]));
+  const hadPath=$('path-result').childNodes.length>0;
+  const hadComparison=$('compare-result').childNodes.length>0;
+  const hadAnalytics=!$('analytics-panel').hidden && $('analytics-result').childNodes.length>0;
+  populateResearch();
+  for(const id of ids){if([...$(id).options].some(option=>option.value===selections[id]))$(id).value=selections[id]}
+  const filter=$('collection');filter.options[0].textContent=i2idlT('all');filter.options[filter.options.length-1].textContent=i2idlT('other');filter.value=field;
+  if(selected)focus(selected,false,false);
+  if($('search').value)$('search').dispatchEvent(new Event('input'));
+  if(hadPath)runPath();
+  if(hadComparison)runCompare();
+  if(hadAnalytics)renderAnalytics();
+}
 });
 async function i2idlLoadFrenchOverlay(){
  try{const r=await fetch('/glossary-fr-preview.jsonld',{cache:'no-cache'});if(!r.ok)throw Error(`HTTP ${r.status}`);const doc=await r.json();
