@@ -1,0 +1,396 @@
+{
+  "language": "fr",
+  "status": "draft-only",
+  "batch": 2,
+  "concepts": [
+    {
+      "id": "ai-enhanced-pedagogical-innovation",
+      "canonicalUri": "https://id.i2idl.org/concepts/ai-enhanced-pedagogical-innovation",
+      "en": {
+        "prefLabel": "AI-enhanced pedagogical innovation",
+        "definition": "The critical and exploratory use of AI to develop or transform learning scenarios, pedagogical approaches, assessment, and student-centred learning while maintaining human-centred educational principles."
+      },
+      "fr": {
+        "prefLabel": "Innovation pédagogique enrichie par l’IA",
+        "definition": "Utilisation critique et exploratoire de l’IA pour élaborer ou transformer des situations d’apprentissage, des approches pédagogiques, des modalités d’évaluation et des formes d’apprentissage centrées sur les élèves, tout en préservant les principes d’une éducation centrée sur l’humain.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": "Vérifier la cohérence avec les termes employés dans le Référentiel de compétences en IA pour les enseignants de l’UNESCO."
+    },
+    {
+      "id": "ai-pedagogy-integration",
+      "canonicalUri": "https://id.i2idl.org/concepts/ai-pedagogy-integration",
+      "en": {
+        "prefLabel": "AI–pedagogy integration",
+        "definition": "The purposeful integration of AI into student-centred learning design and facilitation to support engagement, differentiated learning, teacher–student interaction, critical thinking, and problem-solving."
+      },
+      "fr": {
+        "prefLabel": "Intégration de l’IA à la pédagogie",
+        "definition": "Intégration intentionnelle de l’IA à la conception et à l’accompagnement d’apprentissages centrés sur les élèves afin de favoriser l’engagement, la différenciation des apprentissages, les interactions entre enseignants et élèves, la pensée critique et la résolution de problèmes.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": "Harmoniser avec « Pédagogie de l’IA » tout en préservant la distinction entre domaine pédagogique et démarche d’intégration."
+    },
+    {
+      "id": "anonymous-group",
+      "canonicalUri": "https://id.i2idl.org/concepts/anonymous-group",
+      "en": {
+        "prefLabel": "Anonymous Group",
+        "definition": "An xAPI Group without its own Inverse Functional Identifier, represented through the Agents listed as its members."
+      },
+      "fr": {
+        "prefLabel": "Groupe anonyme",
+        "definition": "Groupe xAPI ne possédant pas son propre identifiant fonctionnel inverse et représenté par les agents qui figurent parmi ses membres.",
+        "altLabels": [
+          "Anonymous Group"
+        ]
+      },
+      "status": "draft",
+      "reviewNotes": "Terme xAPI normatif : conserver la correspondance avec « Inverse Functional Identifier », « Group » et « Agent »."
+    },
+    {
+      "id": "artificial-intelligence-ai",
+      "canonicalUri": "https://id.i2idl.org/concepts/artificial-intelligence-ai",
+      "en": {
+        "prefLabel": "Artificial intelligence (AI)",
+        "definition": "A broad class of computational techniques used to perform tasks associated with perception, prediction, classification, generation, decision support, or other forms of intelligent behavior."
+      },
+      "fr": {
+        "prefLabel": "Intelligence artificielle (IA)",
+        "definition": "Ensemble étendu de techniques informatiques utilisées pour accomplir des tâches relevant de la perception, de la prédiction, de la classification, de la génération, de l’aide à la décision ou d’autres formes de comportement intelligent.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": ""
+    },
+    {
+      "id": "assessment",
+      "canonicalUri": "https://id.i2idl.org/concepts/assessment",
+      "en": {
+        "prefLabel": "Assessment",
+        "definition": "The collection and interpretation of evidence about knowledge, skill, performance, learner state, or learning outcomes."
+      },
+      "fr": {
+        "prefLabel": "Évaluation",
+        "definition": "Collecte et interprétation d’éléments probants concernant les connaissances, les compétences, les performances, l’état d’un apprenant ou les résultats d’apprentissage.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": "Vérifier la distinction terminologique entre évaluation des apprentissages, mesure et assessment selon le contexte."
+    },
+    {
+      "id": "asset-model",
+      "canonicalUri": "https://id.i2idl.org/concepts/asset-model",
+      "en": {
+        "prefLabel": "Asset model",
+        "definition": "An approach that begins with the capabilities and strengths a learner already possesses and focuses on adding new capabilities rather than primarily diagnosing deficits against group averages."
+      },
+      "fr": {
+        "prefLabel": "Modèle axé sur les forces",
+        "definition": "Approche qui part des capacités et des points forts qu’un apprenant possède déjà et vise à développer de nouvelles capacités plutôt qu’à diagnostiquer principalement des déficits par rapport aux moyennes d’un groupe.",
+        "altLabels": [
+          "Approche fondée sur les acquis"
+        ]
+      },
+      "status": "draft",
+      "reviewNotes": "Asset model renvoie ici aux ressources et forces de l’apprenant, non aux actifs matériels ou numériques ; vérifier le choix du terme préféré."
+    },
+    {
+      "id": "asynchronous-learning",
+      "canonicalUri": "https://id.i2idl.org/concepts/asynchronous-learning",
+      "en": {
+        "prefLabel": "Asynchronous learning",
+        "definition": "Learning activity that can occur at different times, allowing learners to engage with materials or tasks without everyone participating simultaneously."
+      },
+      "fr": {
+        "prefLabel": "Apprentissage asynchrone",
+        "definition": "Activité d’apprentissage pouvant se dérouler à des moments différents, permettant aux apprenants d’interagir avec des ressources ou de réaliser des tâches sans que tous participent simultanément.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": ""
+    },
+    {
+      "id": "attachment",
+      "canonicalUri": "https://id.i2idl.org/concepts/attachment",
+      "en": {
+        "prefLabel": "Attachment",
+        "definition": "A file or other binary resource logically associated with an xAPI Statement, described by metadata including usage type, display name, content type, length, SHA-2 hash, and optionally a file URL."
+      },
+      "fr": {
+        "prefLabel": "Pièce jointe",
+        "definition": "Fichier ou autre ressource binaire associé logiquement à une déclaration xAPI, décrit par des métadonnées comprenant le type d’utilisation, le nom affiché, le type de contenu, la taille, l’empreinte SHA-2 et, facultativement, une URL de fichier.",
+        "altLabels": [
+          "Attachment"
+        ]
+      },
+      "status": "draft",
+      "reviewNotes": "Vérifier les dénominations exactes des champs d’une pièce jointe xAPI ; ne pas modifier les noms de propriétés du schéma."
+    },
+    {
+      "id": "attention",
+      "canonicalUri": "https://id.i2idl.org/concepts/attention",
+      "en": {
+        "prefLabel": "Attention",
+        "definition": "The selective allocation of cognitive resources to information, tasks, or stimuli."
+      },
+      "fr": {
+        "prefLabel": "Attention",
+        "definition": "Allocation sélective de ressources cognitives à des informations, à des tâches ou à des stimuli.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": ""
+    },
+    {
+      "id": "unesco-basic-and-general-study-subjects",
+      "canonicalUri": "https://id.i2idl.org/concepts/unesco-basic-and-general-study-subjects",
+      "en": {
+        "prefLabel": "Basic and general study subjects",
+        "definition": "Foundational and broad fields of study intended to develop general knowledge, literacies, cultural understanding, and core academic capabilities across areas such as language, mathematics, science, humanities, arts, health, and civic learning."
+      },
+      "fr": {
+        "prefLabel": "Disciplines d’études fondamentales et générales",
+        "definition": "Domaines d’études fondamentaux et étendus visant à développer les connaissances générales, les littératies, la compréhension culturelle et les compétences scolaires essentielles dans des domaines tels que les langues, les mathématiques, les sciences, les sciences humaines, les arts, la santé et l’éducation à la citoyenneté.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": "Vérifier le libellé privilégié dans la nomenclature officielle française de la source UNESCO correspondante."
+    },
+    {
+      "id": "behavioral-economics",
+      "canonicalUri": "https://id.i2idl.org/concepts/behavioral-economics",
+      "en": {
+        "prefLabel": "Behavioral economics",
+        "definition": "A field that studies systematic biases, heuristics, and decision patterns that cause people to make choices that depart from purely rational models."
+      },
+      "fr": {
+        "prefLabel": "Économie comportementale",
+        "definition": "Domaine qui étudie les biais systématiques, les heuristiques et les schémas de décision qui conduisent les personnes à faire des choix s’écartant des modèles de rationalité pure.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": ""
+    },
+    {
+      "id": "bias",
+      "canonicalUri": "https://id.i2idl.org/concepts/bias",
+      "en": {
+        "prefLabel": "Bias",
+        "definition": "A systematic distortion in data, measurement, analysis, models, processes, or decisions that can produce unfair or misleading results."
+      },
+      "fr": {
+        "prefLabel": "Biais",
+        "definition": "Distorsion systématique dans les données, la mesure, l’analyse, les modèles, les processus ou les décisions, susceptible de produire des résultats injustes ou trompeurs.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": ""
+    },
+    {
+      "id": "building-expertise",
+      "canonicalUri": "https://id.i2idl.org/concepts/building-expertise",
+      "en": {
+        "prefLabel": "Building expertise",
+        "definition": "The development of increasingly organized, retrievable, and usable knowledge and skill within a domain through experience and practice."
+      },
+      "fr": {
+        "prefLabel": "Développement de l’expertise",
+        "definition": "Développement, au sein d’un domaine, de connaissances et de compétences de plus en plus organisées, faciles à mobiliser et utilisables, grâce à l’expérience et à la pratique.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": ""
+    },
+    {
+      "id": "challenge-identification",
+      "canonicalUri": "https://id.i2idl.org/concepts/challenge-identification",
+      "en": {
+        "prefLabel": "Challenge identification",
+        "definition": "The stage of learning engineering in which a team frames the problem, context, stakeholders, constraints, and evidence before designing a solution."
+      },
+      "fr": {
+        "prefLabel": "Identification du défi",
+        "definition": "Étape de l’ingénierie de l’apprentissage au cours de laquelle une équipe définit le problème, le contexte, les parties prenantes, les contraintes et les éléments probants avant de concevoir une solution.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": "Harmoniser avec la terminologie française du processus d’ingénierie de l’apprentissage."
+    },
+    {
+      "id": "childcare-gap",
+      "canonicalUri": "https://id.i2idl.org/concepts/childcare-gap",
+      "en": {
+        "prefLabel": "Childcare gap",
+        "definition": "The period between the end of paid parental leave and the age at which children become legally entitled to access early childhood education and care services."
+      },
+      "fr": {
+        "prefLabel": "Période sans droit d’accès aux services d’accueil de la petite enfance",
+        "definition": "Période comprise entre la fin du congé parental rémunéré et l’âge auquel les enfants acquièrent légalement le droit d’accéder aux services d’éducation et d’accueil de la petite enfance.",
+        "altLabels": [
+          "Déficit de couverture des services d’accueil de la petite enfance"
+        ]
+      },
+      "status": "draft",
+      "reviewNotes": "Terme institutionnel « childcare gap » : la définition décrit un intervalle temporel précis, et non simplement une pénurie de places ; vérifier l’équivalent institutionnel."
+    },
+    {
+      "id": "classroom-teacher",
+      "canonicalUri": "https://id.i2idl.org/concepts/classroom-teacher",
+      "en": {
+        "prefLabel": "Classroom teacher",
+        "definition": "Professional teaching personnel primarily responsible for planning, organising, and conducting group learning activities that guide students' learning experiences."
+      },
+      "fr": {
+        "prefLabel": "Enseignant en classe",
+        "definition": "Personnel enseignant professionnel principalement chargé de planifier, d’organiser et d’animer des activités d’apprentissage en groupe qui orientent les expériences d’apprentissage des élèves.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": "Comparer avec la terminologie statistique internationale pour « classroom teacher »."
+    },
+    {
+      "id": "co-design",
+      "canonicalUri": "https://id.i2idl.org/concepts/co-design",
+      "en": {
+        "prefLabel": "Co-design",
+        "definition": "A collaborative design approach in which researchers or designers work with practitioners, learners, partners, or other affected participants to shape questions, technologies, and practices."
+      },
+      "fr": {
+        "prefLabel": "Co-conception",
+        "definition": "Approche collaborative de conception dans laquelle des chercheurs ou des concepteurs travaillent avec des praticiens, des apprenants, des partenaires ou d’autres participants concernés afin de définir les questions, les technologies et les pratiques.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": ""
+    },
+    {
+      "id": "cognitive-engagement",
+      "canonicalUri": "https://id.i2idl.org/concepts/cognitive-engagement",
+      "en": {
+        "prefLabel": "Cognitive engagement",
+        "definition": "The degree to which a learner actively thinks about, applies, analyzes, and connects knowledge rather than only receiving or memorizing information."
+      },
+      "fr": {
+        "prefLabel": "Engagement cognitif",
+        "definition": "Degré auquel un apprenant réfléchit activement aux connaissances, les applique, les analyse et établit des liens entre elles, plutôt que de se limiter à recevoir ou à mémoriser de l’information.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": ""
+    },
+    {
+      "id": "cognitive-load",
+      "canonicalUri": "https://id.i2idl.org/concepts/cognitive-load",
+      "en": {
+        "prefLabel": "Cognitive load",
+        "definition": "The mental effort required to process information in working memory during a task."
+      },
+      "fr": {
+        "prefLabel": "Charge cognitive",
+        "definition": "Effort mental nécessaire pour traiter de l’information dans la mémoire de travail au cours d’une tâche.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": ""
+    },
+    {
+      "id": "cognitive-task-analysis",
+      "canonicalUri": "https://id.i2idl.org/concepts/cognitive-task-analysis",
+      "en": {
+        "prefLabel": "Cognitive task analysis",
+        "definition": "A family of methods for identifying the knowledge, decisions, cues, strategies, and mental processes involved in performing complex tasks."
+      },
+      "fr": {
+        "prefLabel": "Analyse cognitive des tâches",
+        "definition": "Ensemble de méthodes permettant de déterminer les connaissances, les décisions, les indices, les stratégies et les processus mentaux mobilisés dans l’exécution de tâches complexes.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": ""
+    },
+    {
+      "id": "cognitive-walkthrough",
+      "canonicalUri": "https://id.i2idl.org/concepts/cognitive-walkthrough",
+      "en": {
+        "prefLabel": "Cognitive walkthrough",
+        "definition": "A usability inspection method in which evaluators step through a task from the perspective of a user and ask whether each action is understandable and discoverable."
+      },
+      "fr": {
+        "prefLabel": "Parcours cognitif",
+        "definition": "Méthode d’inspection de l’utilisabilité dans laquelle des évaluateurs parcourent les étapes d’une tâche du point de vue d’un utilisateur et examinent si chaque action est compréhensible et facile à découvrir.",
+        "altLabels": [
+          "Inspection cognitive pas à pas"
+        ]
+      },
+      "status": "draft",
+      "reviewNotes": "Vérifier la terminologie ergonomique privilégiée pour « cognitive walkthrough »."
+    },
+    {
+      "id": "community-of-practice",
+      "canonicalUri": "https://id.i2idl.org/concepts/community-of-practice",
+      "en": {
+        "prefLabel": "Community of practice",
+        "definition": "A community in which people learn through social participation in a shared practice, developing knowledge through interaction with others engaged in related work or activity."
+      },
+      "fr": {
+        "prefLabel": "Communauté de pratique",
+        "definition": "Communauté au sein de laquelle les personnes apprennent par la participation sociale à une pratique commune, en développant leurs connaissances grâce aux interactions avec d’autres personnes engagées dans un travail ou une activité connexe.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": ""
+    },
+    {
+      "id": "competency",
+      "canonicalUri": "https://id.i2idl.org/concepts/competency",
+      "en": {
+        "prefLabel": "Competency",
+        "definition": "A defined capability, skill, knowledge area, or observable performance that can be described, assessed, developed, or referenced across systems."
+      },
+      "fr": {
+        "prefLabel": "Compétence",
+        "definition": "Capacité, aptitude, domaine de connaissances ou performance observable défini, pouvant être décrit, évalué, développé ou référencé dans différents systèmes.",
+        "altLabels": []
+      },
+      "status": "draft",
+      "reviewNotes": "Harmoniser avec les distinctions existantes entre compétence, capacité, aptitude et habileté dans les normes de compétences."
+    },
+    {
+      "id": "competency-based-learning",
+      "canonicalUri": "https://id.i2idl.org/concepts/competency-based-learning",
+      "en": {
+        "prefLabel": "Competency-based learning",
+        "definition": "An approach in which progress is organized around demonstrated mastery of defined competencies rather than primarily around time spent in a course or program."
+      },
+      "fr": {
+        "prefLabel": "Apprentissage fondé sur les compétences",
+        "definition": "Approche dans laquelle la progression est organisée autour de la maîtrise démontrée de compétences définies, plutôt que principalement autour du temps passé dans un cours ou un programme.",
+        "altLabels": [
+          "Apprentissage par compétences"
+        ]
+      },
+      "status": "draft",
+      "reviewNotes": "Vérifier l’usage privilégié entre « fondé sur les compétences » et « par compétences » selon la portée du concept."
+    },
+    {
+      "id": "computer-based-learning",
+      "canonicalUri": "https://id.i2idl.org/concepts/computer-based-learning",
+      "en": {
+        "prefLabel": "Computer-based learning",
+        "definition": "The use of computers to access training or education through synchronous or asynchronous activities delivered on networked or standalone systems."
+      },
+      "fr": {
+        "prefLabel": "Apprentissage assisté par ordinateur",
+        "definition": "Utilisation d’ordinateurs pour accéder à une formation ou à un enseignement au moyen d’activités synchrones ou asynchrones proposées sur des systèmes connectés en réseau ou autonomes.",
+        "altLabels": [
+          "Apprentissage sur ordinateur"
+        ]
+      },
+      "status": "draft",
+      "reviewNotes": "« Assisté par ordinateur » peut suggérer une fonction tutorielle plus étroite que « computer-based » ; examiner le terme préféré."
+    }
+  ]
+}
