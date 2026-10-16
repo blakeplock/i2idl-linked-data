@@ -9,6 +9,34 @@
   },
   "@graph": [
     {
+      "@id": "https://id.i2idl.org/concepts/experience-api-xapi",
+      "skos:prefLabel": {
+        "@value": "Experience API (xAPI)",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/experience-api-xapi-1",
+      "rdf:value": {
+        "@value": "Spécification de technologies d’apprentissage normalisée dans la famille IEEE 9274, servant à représenter et à échanger des enregistrements d’expériences d’apprentissage et de performance.",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/human-centered-design",
+      "skos:prefLabel": {
+        "@value": "Conception centrée sur l’humain",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/human-centered-design-1",
+      "rdf:value": {
+        "@value": "Approche de conception fondée sur la compréhension des personnes, de leurs objectifs, de leurs contextes, de leurs contraintes et de leurs expériences, à travers une démarche itérative de recherche et d’essai.",
+        "@language": "fr"
+      }
+    },
+    {
       "@id": "https://id.i2idl.org/concepts/interoperability",
       "skos:prefLabel": {
         "@value": "Interopérabilité",
@@ -37,6 +65,20 @@
       }
     },
     {
+      "@id": "https://id.i2idl.org/concepts/learning-engineering-process",
+      "skos:prefLabel": {
+        "@value": "Processus d’ingénierie de l’apprentissage",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/learning-engineering-process-1",
+      "rdf:value": {
+        "@value": "Processus itératif et mené de façon concomitante pour répondre à des défis d’apprentissage : définir le contexte et les parties prenantes, concevoir et instrumenter une solution, la mettre en œuvre dans des situations authentiques, étudier les résultats à l’aide de données et améliorer continuellement la démarche.",
+        "@language": "fr"
+      }
+    },
+    {
       "@id": "https://id.i2idl.org/concepts/learning-record",
       "skos:prefLabel": {
         "@value": "Enregistrement d’apprentissage",
@@ -47,6 +89,20 @@
       "@id": "https://id.i2idl.org/definitions/learning-record-1",
       "rdf:value": {
         "@value": "Enregistrement lisible par machine représentant des éléments probants relatifs à un événement, à un état, à une étape ou à une réalisation en matière d’apprentissage, de formation ou de performance.",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/learning-record-store-lrs",
+      "skos:prefLabel": {
+        "@value": "Learning Record Store (LRS)",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/learning-record-store-lrs-1",
+      "rdf:value": {
+        "@value": "Système qui reçoit, stocke et rend accessibles des enregistrements d’apprentissage conformes à xAPI.",
         "@language": "fr"
       }
     },
@@ -75,6 +131,76 @@
       "@id": "https://id.i2idl.org/definitions/semantic-interoperability-1",
       "rdf:value": {
         "@value": "Capacité de systèmes développés indépendamment à échanger des données en préservant une signification commune, de sorte que des concepts équivalents et des descriptions d’activités puissent être interprétés de manière cohérente entre différentes mises en œuvre.",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/xapi-profile",
+      "skos:prefLabel": {
+        "@value": "Profil xAPI",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/xapi-profile-1",
+      "rdf:value": {
+        "@value": "Documentation lisible par des personnes et/ou des machines décrivant les concepts, les modèles de déclarations, les motifs et les extensions propres à une application, utilisés lors de la mise en œuvre de xAPI dans un contexte particulier.",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/xapi-statement",
+      "skos:prefLabel": {
+        "@value": "Déclaration xAPI",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/xapi-statement-1",
+      "rdf:value": {
+        "@value": "Structure de données fondamentale de xAPI utilisée pour représenter une expérience, généralement autour d’un acteur, d’un verbe et d’un objet, avec, de façon facultative, un contexte, un résultat, une autorité et des pièces jointes.",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/learning-management-systems",
+      "skos:prefLabel": {
+        "@value": "Systèmes de gestion de l’apprentissage",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/learning-management-systems",
+      "rdf:value": {
+        "@value": "Plateformes logicielles utilisées pour administrer, diffuser, organiser et suivre les activités d’apprentissage et les cours, ainsi que pour produire des rapports sur ces activités et les résultats qui leur sont associés.",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/technology-integration",
+      "skos:prefLabel": {
+        "@value": "Intégration des technologies",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/technology-integration",
+      "rdf:value": {
+        "@value": "Processus d’intégration d’outils et de services technologiques aux pratiques pédagogiques, aux programmes et à l’environnement éducatif.",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/electronic-learning",
+      "skos:prefLabel": {
+        "@value": "Apprentissage électronique",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/electronic-learning",
+      "rdf:value": {
+        "@value": "Apprentissage soutenu par des appareils électroniques, des logiciels ou des processus numériques, que sa mise en œuvre nécessite ou non une connexion à Internet.",
         "@language": "fr"
       }
     },
@@ -135,6 +261,20 @@
       }
     },
     {
+      "@id": "https://id.i2idl.org/concepts/blended-learning",
+      "skos:prefLabel": {
+        "@value": "Apprentissage hybride",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/blended-learning",
+      "rdf:value": {
+        "@value": "Approche pédagogique combinant délibérément plusieurs modes de formation, notamment, mais pas exclusivement, des activités en présence et des activités soutenues par des technologies électroniques.",
+        "@language": "fr"
+      }
+    },
+    {
       "@id": "https://id.i2idl.org/concepts/gamification",
       "skos:prefLabel": {
         "@value": "Ludification",
@@ -159,6 +299,34 @@
       "@id": "https://id.i2idl.org/definitions/game-based-learning",
       "rdf:value": {
         "@value": "Approche dans laquelle la participation à des jeux ou à des activités de jeu sert à développer ou à appliquer des connaissances et des compétences.",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/adaptive-testing",
+      "skos:prefLabel": {
+        "@value": "Évaluation adaptative",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/adaptive-testing",
+      "rdf:value": {
+        "@value": "Évaluation qui sélectionne ou adapte les questions suivantes en fonction des informations tirées des réponses précédentes de l’apprenant.",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/assessment-literacy",
+      "skos:prefLabel": {
+        "@value": "Littératie en évaluation",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/assessment-literacy",
+      "rdf:value": {
+        "@value": "Connaissances et compétences nécessaires pour concevoir, sélectionner, interpréter et utiliser de manière appropriée les évaluations et leurs résultats dans la pratique éducative.",
         "@language": "fr"
       }
     },
@@ -191,6 +359,48 @@
       }
     },
     {
+      "@id": "https://id.i2idl.org/concepts/transfer-of-training",
+      "skos:prefLabel": {
+        "@value": "Transfert des acquis de formation",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/transfer-of-training",
+      "rdf:value": {
+        "@value": "Influence de connaissances ou de compétences acquises antérieurement sur l’apprentissage ou la réalisation d’une tâche dans un contexte ultérieur.",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/assistive-technology",
+      "skos:prefLabel": {
+        "@value": "Technologies d’assistance",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/assistive-technology",
+      "rdf:value": {
+        "@value": "Appareils, équipements, logiciels ou systèmes adaptés qui soutiennent les capacités fonctionnelles et la participation des personnes en situation de handicap.",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/access-to-internet",
+      "skos:prefLabel": {
+        "@value": "Accès à Internet",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/access-to-internet",
+      "rdf:value": {
+        "@value": "Disponibilité des moyens permettant aux personnes de se connecter à Internet et d’en utiliser les services, au moyen d’appareils adaptés et de services de réseau appropriés.",
+        "@language": "fr"
+      }
+    },
+    {
       "@id": "https://id.i2idl.org/concepts/information-literacy",
       "skos:prefLabel": {
         "@value": "Littératie informationnelle",
@@ -201,6 +411,34 @@
       "@id": "https://id.i2idl.org/definitions/information-literacy",
       "rdf:value": {
         "@value": "Capacité à repérer, évaluer, interpréter et utiliser l’information de manière appropriée, à partir de diverses sources et dans différents contextes.",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/media-literacy",
+      "skos:prefLabel": {
+        "@value": "Littératie médiatique",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/media-literacy",
+      "rdf:value": {
+        "@value": "Capacité à accéder à des messages médiatiques, à les interpréter, à les évaluer et à en créer sous différentes formes de médias.",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/technological-literacy",
+      "skos:prefLabel": {
+        "@value": "Culture technologique",
+        "@language": "fr"
+      }
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/technological-literacy",
+      "rdf:value": {
+        "@value": "Compréhension des technologies, de leurs usages et de leurs conséquences, ainsi que capacité à prendre des décisions éclairées quant à leur sélection et à leur utilisation.",
         "@language": "fr"
       }
     },
