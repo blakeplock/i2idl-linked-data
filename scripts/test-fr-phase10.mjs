@@ -3,7 +3,11 @@ import fs from 'node:fs';import assert from 'node:assert/strict';import vm from 
 const graph=fs.readFileSync('public/graph-explorer.js','utf8');
 const research=fs.readFileSync('public/research-discovery.js','utf8');
 const helper=fs.readFileSync('public/i2idl-dynamic-i18n.js','utf8');
-for(const token of ["if($('path-result').children.length)runPath()","if($('compare-result').children.length)runCompare()","if(!$('analytics-panel').hidden)renderAnalytics()"]){assert(graph.includes(token),token)}
+// State preservation is verified by the behavioral regression test.
+import { execFileSync } from 'node:child_process';
+execFileSync(process.execPath, ['scripts/test-fr-phase10-preserve.mjs'], {
+  stdio: 'inherit'
+});
 for(const token of ['function renderDisplayedResearch()','if(displayedWorks)renderDisplayedResearch()','ri().publicationMeta(work)','ri().researchOutcome(displayedWorks','ri().researchYears(thisYear+1)'])assert(research.includes(token),token);
 let lang='fr';const win={};vm.runInNewContext(helper,{window:win,document:{getElementById:()=>({value:lang})}});
 const x=win.I2IDLDynamicI18n;assert.equal(x.researchCount(2),'2 sur 5 sélectionnés');assert(x.researchOutcome([{title:'A'}],'Apprentissage',false).includes('publication'));assert(x.publicationMeta({citations:10,openAccess:true}).includes('Accès ouvert'));
