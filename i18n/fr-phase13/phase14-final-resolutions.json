@@ -1,0 +1,93 @@
+{
+  "phase": 14,
+  "status": "editorial-resolutions-applied",
+  "resolvedCount": 7,
+  "remainingHolds": [],
+  "resolutions": [
+    {
+      "id": "minimum-proficiency-level",
+      "previous": {
+        "prefLabel": "Seuil minimal de compétence",
+        "definition": "Repère indiquant les connaissances ou compétences de base attendues dans un domaine, comme la lecture ou les mathématiques, à un âge ou niveau scolaire donné."
+      },
+      "approved": {
+        "prefLabel": "Niveau de compétence minimal",
+        "definition": "Repère indiquant les connaissances ou compétences de base attendues dans un domaine, comme la lecture ou les mathématiques, à un âge ou niveau scolaire donné."
+      },
+      "resolution": "editorial-decision-applied"
+    },
+    {
+      "id": "review-and-monitoring",
+      "previous": {
+        "prefLabel": "Examen et suivi",
+        "definition": "Publication, examen et suivi systématiques des informations éducatives par rapport aux plans, indicateurs, cibles et références, afin de soutenir transparence, responsabilité et amélioration continue."
+      },
+      "approved": {
+        "prefLabel": "Examen et suivi",
+        "definition": "Publication, examen et suivi systématiques des informations éducatives par rapport aux plans, indicateurs, cibles et valeurs de référence, afin de favoriser la transparence, la responsabilité et l’amélioration continue."
+      },
+      "resolution": "editorial-decision-applied"
+    },
+    {
+      "id": "unesco-basic-and-general-study-subjects",
+      "previous": {
+        "prefLabel": "Disciplines d’études fondamentales et générales",
+        "definition": "Domaines d’études fondamentaux et étendus visant à développer les connaissances générales, les littératies, la compréhension culturelle et les compétences scolaires essentielles dans des domaines tels que les langues, les mathématiques, les sciences, les sciences humaines, les arts, la santé et l’éducation à la citoyenneté."
+      },
+      "approved": {
+        "prefLabel": "Matières de l’enseignement de base et général",
+        "definition": "Domaines d’études fondamentaux et généraux visant à développer les connaissances générales, les littératies, la compréhension culturelle et les compétences scolaires essentielles dans des domaines tels que les langues, les mathématiques, les sciences, les sciences humaines, les arts, la santé et l’éducation à la citoyenneté."
+      },
+      "resolution": "editorial-decision-applied"
+    },
+    {
+      "id": "unesco-educational-sciences-and-environment",
+      "previous": {
+        "prefLabel": "Sciences de l’éducation et environnement éducatif",
+        "definition": "Étude interdisciplinaire de l’éducation et des environnements d’enseignement et d’apprentissage, intégrant les influences pédagogiques, psychologiques, sociales, historiques, philosophiques, culturelles et contextuelles."
+      },
+      "approved": {
+        "prefLabel": "Sciences de l’éducation et milieu éducatif",
+        "definition": "Étude interdisciplinaire de l’éducation et des milieux dans lesquels se déroulent l’enseignement et l’apprentissage, intégrant les influences pédagogiques, psychologiques, sociales, historiques, philosophiques, culturelles et contextuelles."
+      },
+      "resolution": "editorial-decision-applied"
+    },
+    {
+      "id": "xapi-concurrency-control",
+      "previous": {
+        "prefLabel": "Contrôle de concurrence xAPI",
+        "definition": "Utilisation par xAPI d’étiquettes d’entité HTTP et d’en-têtes de requête conditionnelle pour empêcher des modifications ou suppressions de ressources d’état ou de profil fondées sur des données périmées."
+      },
+      "approved": {
+        "prefLabel": "Contrôle de concurrence xAPI",
+        "definition": "Utilisation par xAPI des étiquettes d’entité HTTP (ETags) et des en-têtes de requête conditionnelle, notamment If-Match et If-None-Match, pour empêcher que des mises à jour ou des suppressions de ressources State, Agent Profile ou Activity Profile reposent sur des données périmées."
+      },
+      "resolution": "editorial-decision-applied"
+    },
+    {
+      "id": "profile-based-statement-conformance",
+      "previous": {
+        "prefLabel": "Conformité des déclarations à un profil",
+        "definition": "Conformité où les déclarations respectent les modèles et motifs correspondants d’une version de profil, celle-ci étant indiquée comme activité de contexte de catégorie lorsqu’elles sont produites par un fournisseur d’enregistrements conforme."
+      },
+      "approved": {
+        "prefLabel": "Conformité des déclarations à un profil",
+        "definition": "Conformité selon laquelle les Statements respectent les Statement Templates et les Patterns applicables définis par une version d’un profil xAPI. Lorsqu’un Learning Record Provider indique cette version au moyen d’une category context activity, les Statements doivent respecter les exigences correspondantes. Les fournisseurs conformes devraient indiquer la version conforme la plus récente du profil lorsqu’ils produisent des Statements respectant ses modèles et motifs."
+      },
+      "resolution": "editorial-decision-applied"
+    },
+    {
+      "id": "unesco-technical-and-vocational-study-subjects",
+      "previous": {
+        "prefLabel": "Domaines d’études techniques et professionnels",
+        "definition": "Domaines centrés sur les connaissances et compétences professionnelles, techniques et vocationnelles, y compris la préparation à des métiers et professions qualifiés particuliers."
+      },
+      "approved": {
+        "prefLabel": "Matières de l’enseignement technique et professionnel",
+        "definition": "Domaines d’études axés sur les connaissances et compétences techniques et professionnelles, y compris la préparation à des métiers qualifiés et à des professions spécifiques."
+      },
+      "resolution": "editorial-decision-applied"
+    }
+  ],
+  "publicationStatus": "not-published"
+}

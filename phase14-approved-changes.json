@@ -1,0 +1,551 @@
+{
+  "schemaVersion": 1,
+  "phase": 14,
+  "source": "Phase 13 consolidated French draft",
+  "status": "draft-only",
+  "changes": {
+    "data-privacy": {
+      "expected": {
+        "prefLabel": "Protection de la vie privée dans les données",
+        "definition": "Principes et pratiques régissant la collecte, l’utilisation, le partage, la conservation, la protection et la suppression de renseignements sur les personnes."
+      },
+      "set": {
+        "prefLabel": "Protection des données personnelles",
+        "definition": "Principes et pratiques régissant la collecte, l’utilisation, le partage, la conservation, la protection et la suppression des informations concernant les personnes."
+      },
+      "addAltLabels": [],
+      "reason": "approved AI/data-governance refinement"
+    },
+    "responsible-ai": {
+      "expected": {
+        "prefLabel": "IA responsable",
+        "definition": "Conception, utilisation et gouvernance des systèmes d’IA prenant en compte preuves, sécurité, vie privée, équité, transparence, responsabilité et conséquences humaines."
+      },
+      "set": {
+        "prefLabel": "IA responsable",
+        "definition": "Conception, utilisation et gouvernance des systèmes d’IA tenant compte des données probantes, de la sécurité, de la protection de la vie privée, de l’équité, de la transparence, de la responsabilité et des conséquences pour les personnes."
+      },
+      "addAltLabels": [],
+      "reason": "approved AI/data-governance refinement"
+    },
+    "safe-and-responsible-use-of-ai": {
+      "expected": {
+        "prefLabel": "Utilisation sûre et responsable de l’IA",
+        "definition": "Utilisation de l’IA respectant les règles éthiques, la vie privée et la propriété intellectuelle, les obligations légales, la réduction des biais et préjudices et la responsabilité humaine."
+      },
+      "set": {
+        "prefLabel": "Utilisation sûre et responsable de l’IA",
+        "definition": "Utilisation de l’IA conformément aux règles éthiques et aux exigences juridiques applicables, dans le respect de la vie privée et de la propriété intellectuelle, en atténuant les biais et les préjudices et en préservant la responsabilité humaine."
+      },
+      "addAltLabels": [],
+      "reason": "approved AI/data-governance refinement"
+    },
+    "user-tailored-privacy": {
+      "expected": {
+        "prefLabel": "Confidentialité adaptée à l’utilisateur",
+        "definition": "Approche où un système modélise les préoccupations de confidentialité d’un apprenant et adapte les informations, recommandations ou aides à la décision en conséquence."
+      },
+      "set": {
+        "prefLabel": "Protection de la vie privée adaptée à l’utilisateur",
+        "definition": "Approche de protection de la vie privée dans laquelle un système modélise les préoccupations d’un apprenant en la matière et adapte les informations, les recommandations ou l’aide à la décision à cet utilisateur."
+      },
+      "addAltLabels": [],
+      "reason": "approved AI/data-governance refinement"
+    },
+    "computer-based-learning": {
+      "expected": {
+        "prefLabel": "Apprentissage assisté par ordinateur",
+        "definition": "Utilisation d’ordinateurs pour accéder à une formation ou à un enseignement au moyen d’activités synchrones ou asynchrones proposées sur des systèmes connectés en réseau ou autonomes."
+      },
+      "set": {
+        "prefLabel": "Apprentissage sur ordinateur",
+        "definition": "Utilisation d’ordinateurs pour accéder à une formation ou à un enseignement au moyen d’activités synchrones ou asynchrones proposées sur des systèmes en réseau ou autonomes."
+      },
+      "addAltLabels": [],
+      "reason": "approved learning-sciences refinement"
+    },
+    "shareable-competency-definition-scd": {
+      "expected": {
+        "prefLabel": "Définition de compétence partageable (SCD)",
+        "definition": "Méthode lisible par machine pour définir et échanger des compétences selon la norme IEEE 1484.20.3."
+      },
+      "set": {
+        "prefLabel": "Shareable Competency Definition (SCD)",
+        "definition": "Représentation exploitable par machine permettant de définir et d’échanger des compétences conformément à la norme IEEE 1484.20.3."
+      },
+      "addAltLabels": [],
+      "reason": "approved learning-sciences refinement"
+    },
+    "about-resource": {
+      "expected": {
+        "prefLabel": "Ressource About",
+        "definition": "Ressource xAPI accessible à l’adresse /about qui renvoie des informations de base sur un Learning Record Store (LRS), notamment les versions de xAPI prises en charge et les extensions facultatives."
+      },
+      "set": {
+        "prefLabel": "About Resource"
+      },
+      "addAltLabels": [
+        "Ressource About"
+      ],
+      "reason": "approved terminology policy"
+    },
+    "account-object": {
+      "expected": {
+        "prefLabel": "Objet Account",
+        "definition": "Structure d’identité xAPI qui représente un Agent ou un Groupe au moyen d’un compte sur un système existant, en utilisant l’adresse de la page d’accueil du système de comptes et un nom de compte unique."
+      },
+      "set": {
+        "prefLabel": "Account Object"
+      },
+      "addAltLabels": [
+        "Objet Account"
+      ],
+      "reason": "approved terminology policy"
+    },
+    "activity": {
+      "expected": {
+        "prefLabel": "Activité",
+        "definition": "Dans xAPI, une activité est un élément avec lequel un acteur interagit ou dont il fait l’expérience, et qui peut constituer l’objet d’une déclaration suivie. Les activités peuvent représenter un enseignement, une performance, des expériences, des ressources, des événements, voire des objets physiques ou virtuels."
+      },
+      "set": {
+        "prefLabel": "Activity"
+      },
+      "addAltLabels": [
+        "Activité"
+      ],
+      "reason": "approved terminology policy"
+    },
+    "activity-definition": {
+      "expected": {
+        "prefLabel": "Définition d’activité",
+        "definition": "Objet de métadonnées facultatif au sein d’une activité xAPI qui peut en décrire le nom lisible par une personne, la description, le type, l’emplacement d’informations complémentaires, les détails d’interaction et les extensions."
+      },
+      "set": {
+        "prefLabel": "Activity Definition"
+      },
+      "addAltLabels": [
+        "Définition d’activité"
+      ],
+      "reason": "approved terminology policy"
+    },
+    "actor": {
+      "expected": {
+        "prefLabel": "Acteur",
+        "definition": "Personne ou groupe représenté dans une déclaration xAPI comme accomplissant l’action décrite par cette déclaration."
+      },
+      "set": {
+        "prefLabel": "Actor"
+      },
+      "addAltLabels": [
+        "Acteur"
+      ],
+      "reason": "approved terminology policy"
+    },
+    "anonymous-group": {
+      "expected": {
+        "prefLabel": "Groupe anonyme",
+        "definition": "Groupe xAPI ne possédant pas son propre identifiant fonctionnel inverse et représenté par les agents qui figurent parmi ses membres."
+      },
+      "set": {
+        "prefLabel": "Anonymous Group"
+      },
+      "addAltLabels": [
+        "Groupe anonyme"
+      ],
+      "reason": "approved terminology policy"
+    },
+    "attachment": {
+      "expected": {
+        "prefLabel": "Pièce jointe",
+        "definition": "Fichier ou autre ressource binaire associé logiquement à une déclaration xAPI, décrit par des métadonnées comprenant le type d’utilisation, le nom affiché, le type de contenu, la taille, l’empreinte SHA-2 et, facultativement, une URL de fichier."
+      },
+      "set": {
+        "prefLabel": "Attachment"
+      },
+      "addAltLabels": [
+        "Pièce jointe"
+      ],
+      "reason": "approved terminology policy"
+    },
+    "childcare-gap": {
+      "expected": {
+        "prefLabel": "Période sans droit d’accès aux services d’accueil de la petite enfance",
+        "definition": "Période comprise entre la fin du congé parental rémunéré et l’âge auquel les enfants acquièrent légalement le droit d’accéder aux services d’éducation et d’accueil de la petite enfance."
+      },
+      "set": {
+        "prefLabel": "Période entre congé parental et droit d’accès à l’EPPE"
+      },
+      "addAltLabels": [
+        "Période sans droit d’accès aux services d’accueil de la petite enfance"
+      ],
+      "reason": "approved terminology policy"
+    },
+    "digital-credential": {
+      "expected": {
+        "prefLabel": "Attestation numérique",
+        "definition": "Assertion représentée numériquement concernant une réalisation, qualification, compétence, identité, participation ou autorisation, pouvant être émise et vérifiée par voie électronique."
+      },
+      "set": {
+        "prefLabel": "Justificatif numérique"
+      },
+      "addAltLabels": [
+        "Attestation numérique"
+      ],
+      "reason": "approved terminology policy"
+    },
+    "interaction-activity": {
+      "expected": {
+        "prefLabel": "Activité d’interaction",
+        "definition": "Définition d’activité xAPI décrivant une interaction, par exemple vrai-faux, choix, réponse à compléter, association, performance, mise en ordre, échelle de Likert ou réponse numérique."
+      },
+      "set": {
+        "prefLabel": "Interaction Activity"
+      },
+      "addAltLabels": [
+        "Activité d’interaction"
+      ],
+      "reason": "approved terminology policy"
+    },
+    "internationalized-resource-locator-irl": {
+      "expected": {
+        "prefLabel": "Localisateur internationalisé de ressource (IRL)",
+        "definition": "Dans la norme xAPI, IRI pouvant être converti en URI ayant la fonction d’une URL."
+      },
+      "set": {
+        "prefLabel": "Internationalized Resource Locator (IRL)"
+      },
+      "addAltLabels": [
+        "Localisateur internationalisé de ressource (IRL)"
+      ],
+      "reason": "approved terminology policy"
+    },
+    "language-map": {
+      "expected": {
+        "prefLabel": "Carte linguistique",
+        "definition": "Dictionnaire xAPI dont les clés sont des étiquettes de langue RFC 5646 et les valeurs des chaînes de caractères dans les langues correspondantes."
+      },
+      "set": {
+        "prefLabel": "Language Map"
+      },
+      "addAltLabels": [
+        "Carte linguistique"
+      ],
+      "reason": "approved terminology policy"
+    },
+    "pattern-validation": {
+      "expected": {
+        "prefLabel": "Validation des motifs",
+        "definition": "Processus de validation d’une série de déclarations partageant une inscription et, le cas échéant, une sous-inscription, afin de vérifier leur conformité à un motif de profil donné."
+      },
+      "set": {
+        "prefLabel": "Validation des Patterns"
+      },
+      "addAltLabels": [
+        "Validation des motifs"
+      ],
+      "reason": "approved terminology policy"
+    },
+    "person-object": {
+      "expected": {
+        "prefLabel": "Objet Person",
+        "definition": "Objet de réponse xAPI combinant les identifiants connus d’un agent en tableaux de valeurs, présentant les données dans une perspective centrée sur la personne tout en restant distinct d’une persona d’agent."
+      },
+      "set": {
+        "prefLabel": "Person Object"
+      },
+      "addAltLabels": [
+        "Objet Person"
+      ],
+      "reason": "approved terminology policy"
+    },
+    "registration": {
+      "expected": {
+        "prefLabel": "Inscription xAPI",
+        "definition": "Identifiant d’une occurrence dans laquelle un acteur fait l’expérience d’une activité particulière."
+      },
+      "set": {
+        "prefLabel": "registration"
+      },
+      "addAltLabels": [
+        "Inscription xAPI"
+      ],
+      "reason": "approved terminology policy"
+    },
+    "result-object": {
+      "expected": {
+        "prefLabel": "Objet de résultat",
+        "definition": "Composant facultatif d’une déclaration xAPI représentant un résultat mesuré, notamment score, réussite, achèvement, réponse, durée ou extensions."
+      },
+      "set": {
+        "prefLabel": "Result Object"
+      },
+      "addAltLabels": [
+        "Objet de résultat"
+      ],
+      "reason": "approved terminology policy"
+    },
+    "state-resource": {
+      "expected": {
+        "prefLabel": "Ressource d’état",
+        "definition": "Ressource xAPI située à /activities/state pour stocker et récupérer des documents d’état associés à un agent ou groupe identifié dans une activité, éventuellement liés à une inscription."
+      },
+      "set": {
+        "prefLabel": "State Resource"
+      },
+      "addAltLabels": [
+        "Ressource d’état"
+      ],
+      "reason": "approved terminology policy"
+    },
+    "subregistration": {
+      "expected": {
+        "prefLabel": "Sous-inscription",
+        "definition": "Extension des profils xAPI distinguant plusieurs motifs suivis dans une même inscription xAPI."
+      },
+      "set": {
+        "prefLabel": "subregistration"
+      },
+      "addAltLabels": [
+        "Sous-inscription"
+      ],
+      "reason": "approved terminology policy"
+    },
+    "verb": {
+      "expected": {
+        "prefLabel": "Verbe xAPI",
+        "definition": "Élément xAPI identifiant l’action d’un acteur, défini par un IRI ; une carte linguistique peut fournir un libellé lisible par les personnes."
+      },
+      "set": {
+        "prefLabel": "Verb"
+      },
+      "addAltLabels": [
+        "Verbe xAPI"
+      ],
+      "reason": "approved terminology policy"
+    },
+    "ai-competency-framework-for-teachers-ai-cft": {
+      "expected": {
+        "prefLabel": "Référentiel de compétences en IA pour les enseignants (AI CFT)",
+        "definition": "Cadre de référence décrivant les connaissances, les compétences, les valeurs et les attitudes dont les enseignants ont besoin pour utiliser l’intelligence artificielle de manière sûre, efficace et éthique, tout en préservant une éducation centrée sur l’humain."
+      },
+      "set": {
+        "prefLabel": "Cadre de compétences en IA pour les enseignants"
+      },
+      "addAltLabels": [
+        "Référentiel de compétences en IA pour les enseignants (AI CFT)"
+      ],
+      "reason": "approved UNESCO label"
+    },
+    "national-sdg-4-benchmark": {
+      "expected": {
+        "prefLabel": "Référence nationale de l’ODD 4",
+        "definition": "Repère quantitatif défini nationalement traduisant les ambitions mondiales de l’ODD 4 en cibles adaptées au contexte pour le suivi des progrès, la responsabilité, la planification et le dialogue politique."
+      },
+      "set": {
+        "prefLabel": "Valeur de référence nationale pour le SDG 4"
+      },
+      "addAltLabels": [],
+      "reason": "explicit SDG 4 editorial override"
+    },
+    "ieee-1484-11-1-2022-content-object-communication": {
+      "expected": {
+        "prefLabel": "IEEE 1484.11.1-2022 — Modèle de données de communication des objets de contenu",
+        "definition": "Norme IEEE définissant le modèle de données pour échanger des renseignements sur apprenant, interactions, objectifs, statut, temps, préférences et résultats entre un objet de contenu pédagogique et un service d’exécution, généralement au sein d’un LMS."
+      },
+      "set": {
+        "prefLabel": "IEEE 1484.11.1-2022 — Data Model for Content Object Communication"
+      },
+      "addAltLabels": [],
+      "reason": "official IEEE titles remain English"
+    },
+    "ieee-1484-11-2-2020-ecmascript-runtime-api": {
+      "expected": {
+        "prefLabel": "IEEE 1484.11.2-2020 — API ECMAScript de communication entre contenu et environnement d’exécution",
+        "definition": "Norme IEEE définissant une interface de programmation ECMAScript entre contenu pédagogique et service d’exécution, généralement fourni par un LMS, et normalisant les services d’API pour l’échange de données d’apprentissage en cours d’exécution."
+      },
+      "set": {
+        "prefLabel": "IEEE 1484.11.2-2020 — ECMAScript API for Content-to-Runtime Communication"
+      },
+      "addAltLabels": [],
+      "reason": "official IEEE titles remain English"
+    },
+    "ieee-1484-12-1-2020-learning-object-metadata": {
+      "expected": {
+        "prefLabel": "IEEE 1484.12.1-2020 — Métadonnées des objets pédagogiques",
+        "definition": "Norme IEEE définissant le schéma conceptuel des métadonnées décrivant les objets pédagogiques, notamment cycle de vie, usage éducatif, exigences techniques, droits, relations, annotations et classifications."
+      },
+      "set": {
+        "prefLabel": "IEEE 1484.12.1-2020 — Learning Object Metadata"
+      },
+      "addAltLabels": [],
+      "reason": "official IEEE titles remain English"
+    },
+    "ieee-1484-12-3-2020-xml-binding-learning-object-metadata": {
+      "expected": {
+        "prefLabel": "IEEE 1484.12.3-2020 — Liaison XML des métadonnées des objets pédagogiques",
+        "definition": "Norme IEEE définissant une liaison de schéma XML du W3C pour le modèle LOM afin d’encoder les instances de métadonnées en XML et de les échanger de façon cohérente entre systèmes."
+      },
+      "set": {
+        "prefLabel": "IEEE 1484.12.3-2020 — XML Binding for Learning Object Metadata"
+      },
+      "addAltLabels": [],
+      "reason": "official IEEE titles remain English"
+    },
+    "ieee-1484-13-3-2014-mpeg21-mapping": {
+      "expected": {
+        "prefLabel": "IEEE 1484.13.3-2014 — Correspondance avec la déclaration d’élément numérique MPEG-21",
+        "definition": "Pratique recommandée IEEE reliant éléments et attributs du modèle MPEG-21 Digital Item Declaration au modèle conceptuel IEEE d’agrégation de ressources d’apprentissage, d’éducation et de formation."
+      },
+      "set": {
+        "prefLabel": "IEEE 1484.13.3-2014 — MPEG-21 Digital Item Declaration Mapping"
+      },
+      "addAltLabels": [],
+      "reason": "official IEEE titles remain English"
+    },
+    "ieee-1484-13-4-2016-ims-content-packaging-mapping": {
+      "expected": {
+        "prefLabel": "IEEE 1484.13.4-2016 — Correspondance avec le paquetage de contenu IMS",
+        "definition": "Pratique recommandée IEEE reliant les éléments et attributs du modèle d’information IMS Content Packaging version 1.2 au modèle conceptuel IEEE d’agrégation de ressources éducatives et de formation."
+      },
+      "set": {
+        "prefLabel": "IEEE 1484.13.4-2016 — IMS Content Packaging Mapping"
+      },
+      "addAltLabels": [],
+      "reason": "official IEEE titles remain English"
+    },
+    "ieee-1484-13-6-2015-oai-ore-mapping": {
+      "expected": {
+        "prefLabel": "IEEE 1484.13.6-2015 — Correspondance avec l’agrégation de ressources OAI-ORE",
+        "definition": "Pratique recommandée IEEE reliant le modèle abstrait OAI-ORE et sa représentation de carte de ressources RDF/XML au modèle conceptuel IEEE d’agrégation de ressources."
+      },
+      "set": {
+        "prefLabel": "IEEE 1484.13.6-2015 — OAI-ORE Resource Aggregation Mapping"
+      },
+      "addAltLabels": [],
+      "reason": "official IEEE titles remain English"
+    },
+    "ieee-1484-2-2024-learning-employment-record-ecosystems": {
+      "expected": {
+        "prefLabel": "IEEE 1484.2-2024 — Écosystèmes de dossiers d’apprentissage et d’emploi",
+        "definition": "Pratique recommandée IEEE pour les systèmes à l’échelle d’un écosystème émettant, conservant, présentant et échangeant des dossiers d’apprentissage et d’emploi (LER) à l’aide d’attestations numériques interopérables et de services partagés."
+      },
+      "set": {
+        "prefLabel": "IEEE 1484.2-2024 — Learning and Employment Record Ecosystems"
+      },
+      "addAltLabels": [],
+      "reason": "official IEEE titles remain English"
+    },
+    "ieee-1484-20-2-2022-defining-competencies": {
+      "expected": {
+        "prefLabel": "IEEE 1484.20.2-2022 — Définition des compétences",
+        "definition": "Pratique recommandée IEEE pour définir compétences et référentiels, incluant les informations décrivant savoir-faire, connaissances, capacités, attitudes, habitudes professionnelles, comportements et acquis d’apprentissage favorisant l’interopérabilité des données."
+      },
+      "set": {
+        "prefLabel": "IEEE 1484.20.2-2022 — Defining Competencies"
+      },
+      "addAltLabels": [],
+      "reason": "official IEEE titles remain English"
+    },
+    "ieee-1484-20-3-2022-shareable-competency-definitions": {
+      "expected": {
+        "prefLabel": "IEEE 1484.20.3-2022 — Définitions de compétences partageables",
+        "definition": "Norme IEEE définissant un modèle de données pour décrire, référencer et partager définitions et référentiels de compétences ainsi que rubriques d’évaluation entre systèmes d’apprentissage, de certification, de main-d’œuvre et d’emploi."
+      },
+      "set": {
+        "prefLabel": "IEEE 1484.20.3-2022 — Shareable Competency Definitions"
+      },
+      "addAltLabels": [],
+      "reason": "official IEEE titles remain English"
+    },
+    "ieee-1589-2020-ar-learning-experience-model": {
+      "expected": {
+        "prefLabel": "IEEE 1589-2020 — Modèle d’expérience d’apprentissage en réalité augmentée",
+        "definition": "Norme IEEE pour des systèmes interopérables d’apprentissage en réalité augmentée, définissant les liens entre monde physique, apprenant, informations numériques, activités et environnement, ainsi que des modèles de données et liaisons XML/JSON représentant activités et contexte."
+      },
+      "set": {
+        "prefLabel": "IEEE 1589-2020 — Augmented Reality Learning Experience Model"
+      },
+      "addAltLabels": [],
+      "reason": "official IEEE titles remain English"
+    },
+    "ieee-2881-2025-learning-metadata-terms": {
+      "expected": {
+        "prefLabel": "IEEE 2881-2025 — Termes des métadonnées d’apprentissage",
+        "definition": "Norme IEEE définissant des classes et propriétés de métadonnées extensibles pour décrire ressources et événements d’apprentissage, compatibles avec les approches RDF et représentables notamment sous forme de graphes."
+      },
+      "set": {
+        "prefLabel": "IEEE 2881-2025 — Learning Metadata Terms"
+      },
+      "addAltLabels": [],
+      "reason": "official IEEE titles remain English"
+    },
+    "ieee-2955-2025-self-learning-tutorials-side-by-side-learning": {
+      "expected": {
+        "prefLabel": "IEEE 2955-2025 — Tutoriels d’autoformation et apprentissage côte à côte",
+        "definition": "Pratique recommandée IEEE décrivant des méthodes de création de tutoriels d’autoformation, notamment par captures vidéo commentées ou narration orale, et des techniques d’apprentissage côte à côte."
+      },
+      "set": {
+        "prefLabel": "IEEE 2955-2025 — Self-Learning Tutorials and Side-by-Side Learning"
+      },
+      "addAltLabels": [],
+      "reason": "official IEEE titles remain English"
+    },
+    "ieee-3527-1-2020-digital-intelligence-framework": {
+      "expected": {
+        "prefLabel": "IEEE 3527.1-2020 — Référentiel d’intelligence numérique (DQ)",
+        "definition": "Norme IEEE définissant un référentiel d’intelligence numérique, dont littératie, compétences et préparation numériques, dans huit domaines : identité, utilisation, sûreté, sécurité, intelligence émotionnelle, littératie, communication et droits, selon les niveaux de citoyenneté, créativité et compétitivité."
+      },
+      "set": {
+        "prefLabel": "IEEE 3527.1-2020 — Digital Intelligence (DQ) Framework"
+      },
+      "addAltLabels": [],
+      "reason": "official IEEE titles remain English"
+    },
+    "ieee-learning-technology-standards-committee-ltsc": {
+      "expected": {
+        "prefLabel": "Comité IEEE de normalisation des technologies d’apprentissage (LTSC)",
+        "definition": "Comité de normalisation IEEE élaborant et maintenant les normes relatives aux technologies d’apprentissage et à l’interopérabilité des données associées."
+      },
+      "set": {
+        "prefLabel": "IEEE Learning Technology Standards Committee (LTSC)"
+      },
+      "addAltLabels": [],
+      "reason": "official IEEE titles remain English"
+    },
+    "activity-profile-resource": {
+      "expected": {
+        "prefLabel": "Ressource de profil d’activité",
+        "definition": "Ressource xAPI accessible à l’adresse /activities/profile, destinée à stocker et à récupérer des documents de profil génériques associés à une activité."
+      },
+      "set": {
+        "prefLabel": "Activity Profile Resource"
+      },
+      "addAltLabels": [
+        "Ressource de profil d’activité"
+      ],
+      "reason": "technical xAPI construct"
+    },
+    "agent-profile-resource": {
+      "expected": {
+        "prefLabel": "Ressource de profil d’agent",
+        "definition": "Ressource xAPI accessible à l’adresse /agents/profile, destinée à stocker et à récupérer des documents de profil génériques associés à un agent ou à un groupe identifié, indépendamment d’une activité ou d’un enregistrement particulier."
+      },
+      "set": {
+        "prefLabel": "Agent Profile Resource"
+      },
+      "addAltLabels": [
+        "Ressource de profil d’agent"
+      ],
+      "reason": "technical xAPI construct"
+    }
+  },
+  "heldForVerification": {
+    "minimum-proficiency-level": "Verify official UIS French term",
+    "review-and-monitoring": "Verify official institutional source term",
+    "unesco-basic-and-general-study-subjects": "Verify source-taxonomy label",
+    "unesco-educational-sciences-and-environment": "Verify source-taxonomy label",
+    "xapi-concurrency-control": "Confirm precise State / Agent Profile / Activity Profile wording against xAPI spec",
+    "profile-based-statement-conformance": "Confirm category context activity and LRP semantics against xAPI Profile spec",
+    "unesco-technical-and-vocational-study-subjects": "Check French definition for professionnel vs vocationnel"
+  }
+}
