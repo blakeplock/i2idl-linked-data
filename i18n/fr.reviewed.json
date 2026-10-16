@@ -25,6 +25,156 @@
         "definition": "Champ interdisciplinaire qui étudie la manière dont les personnes apprennent et les moyens de soutenir l’apprentissage dans ses dimensions cognitives, sociales, motivationnelles, culturelles et contextuelles.",
         "altLabels": []
       }
+    },
+    "instructional-design": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Conception pédagogique",
+        "definition": "Analyse et conception systématiques d’expériences d’apprentissage, d’activités, de ressources et de démarches d’évaluation visant à soutenir l’atteinte des résultats attendus.",
+        "altLabels": []
+      }
+    },
+    "instructional-systems": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Systèmes pédagogiques",
+        "definition": "Ensembles coordonnés de personnes, de contenus, de processus, de ressources et de technologies qui soutiennent l’enseignement et ses objectifs visés.",
+        "altLabels": []
+      }
+    },
+    "learning-objectives": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Objectifs d’apprentissage",
+        "definition": "Énoncés décrivant les connaissances, les compétences ou les capacités que les apprenants sont censés acquérir ou démontrer dans le cadre d’une activité d’apprentissage.",
+        "altLabels": []
+      }
+    },
+    "learning-strategies": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Stratégies d’apprentissage",
+        "definition": "Approches, démarches ou techniques utilisées par les apprenants ou les éducateurs pour soutenir l’apprentissage dans différentes tâches et différents contextes.",
+        "altLabels": []
+      }
+    },
+    "gamification": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Ludification",
+        "definition": "Application d’éléments de conception de jeux, tels que des points, des défis ou des mécanismes de rétroaction, à des contextes qui ne sont pas eux-mêmes des jeux.",
+        "altLabels": []
+      }
+    },
+    "game-based-learning": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Apprentissage par le jeu",
+        "definition": "Approche dans laquelle la participation à des jeux ou à des activités de jeu sert à développer ou à appliquer des connaissances et des compétences.",
+        "altLabels": []
+      }
+    },
+    "performance-based-assessment": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Évaluation fondée sur la performance",
+        "definition": "Évaluation demandant aux apprenants de démontrer leurs connaissances ou leurs compétences par la réalisation d’un travail ou l’accomplissement d’une tâche, le processus, le produit ou les deux faisant l’objet de l’évaluation.",
+        "altLabels": []
+      }
+    },
+    "learning-trajectories": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Trajectoires d’apprentissage",
+        "definition": "Descriptions de la manière dont les connaissances et les compétences peuvent se développer au fil d’étapes successives, utilisées pour éclairer les objectifs d’apprentissage, l’enseignement et l’évaluation.",
+        "altLabels": []
+      }
+    },
+    "information-literacy": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Littératie informationnelle",
+        "definition": "Capacité à repérer, évaluer, interpréter et utiliser l’information de manière appropriée, à partir de diverses sources et dans différents contextes.",
+        "altLabels": []
+      }
+    },
+    "natural-language-processing": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Traitement automatique des langues",
+        "definition": "Méthodes informatiques permettant d’analyser, d’interpréter, de générer ou de traiter de toute autre manière le langage humain.",
+        "altLabels": []
+      }
+    },
+    "instructional-effectiveness": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Efficacité pédagogique",
+        "definition": "Degré auquel l’enseignement, les ressources ou les programmes éducatifs soutiennent l’atteinte de leurs objectifs d’apprentissage visés.",
+        "altLabels": []
+      }
+    },
+    "educational-indicators": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Indicateurs de l’éducation",
+        "definition": "Mesures utilisées pour décrire les conditions, les activités ou les résultats en éducation et pour éclairer l’évaluation, la comparaison et les décisions de politique éducative.",
+        "altLabels": []
+      }
+    },
+    "interoperability": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Interopérabilité",
+        "definition": "Capacité de systèmes, de services et de données à fonctionner ensemble grâce à des interfaces, des formats, des sémantiques et des attentes partagés.",
+        "altLabels": []
+      }
+    },
+    "semantic-interoperability": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Interopérabilité sémantique",
+        "definition": "Capacité de systèmes développés indépendamment à échanger des données en préservant une signification commune, de sorte que des concepts équivalents et des descriptions d’activités puissent être interprétés de manière cohérente entre différentes mises en œuvre.",
+        "altLabels": []
+      }
+    },
+    "learning-record": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Enregistrement d’apprentissage",
+        "definition": "Enregistrement lisible par machine représentant des éléments probants relatifs à un événement, à un état, à une étape ou à une réalisation en matière d’apprentissage, de formation ou de performance.",
+        "altLabels": []
+      }
     }
   }
 }
