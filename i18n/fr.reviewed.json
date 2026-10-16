@@ -345,6 +345,3927 @@
         "definition": "Processus itératif et mené de façon concomitante pour répondre à des défis d’apprentissage : définir le contexte et les parties prenantes, concevoir et instrumenter une solution, la mettre en œuvre dans des situations authentiques, étudier les résultats à l’aide de données et améliorer continuellement la démarche.",
         "altLabels": []
       }
+    },
+    "a-b-testing": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Test A/B",
+        "definition": "Comparaison contrôlée dans laquelle deux versions d’une expérience d’apprentissage, d’une interface, d’un message ou d’une intervention sont présentées à des groupes différents afin de comparer leurs effets.",
+        "altLabels": []
+      }
+    },
+    "about-resource": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "About Resource",
+        "definition": "Ressource xAPI accessible à l’adresse /about qui renvoie des informations de base sur un Learning Record Store (LRS), notamment les versions de xAPI prises en charge et les extensions facultatives.",
+        "altLabels": [
+          "Ressource About"
+        ]
+      }
+    },
+    "accessibility": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Accessibilité",
+        "definition": "Pratique consistant à concevoir des technologies d’apprentissage, des contenus et des interactions de manière à ce que des personnes ayant des capacités diverses puissent les percevoir, les faire fonctionner, les comprendre et les utiliser.",
+        "altLabels": []
+      }
+    },
+    "accessibility-and-inclusivity-testing": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Tests d’accessibilité et d’inclusivité",
+        "definition": "Tests visant à vérifier si une solution d’apprentissage peut être utilisée par des personnes ayant des capacités, des besoins d’accès, des contextes et des contraintes différents.",
+        "altLabels": []
+      }
+    },
+    "account-object": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Account Object",
+        "definition": "Structure d’identité xAPI qui représente un Agent ou un Groupe au moyen d’un compte sur un système existant, en utilisant l’adresse de la page d’accueil du système de comptes et un nom de compte unique.",
+        "altLabels": [
+          "Objet Account"
+        ]
+      }
+    },
+    "acquire-ai-competency-level": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Acquérir (niveau de compétence en IA)",
+        "definition": "Niveau fondamental de compétence en intelligence artificielle dans lequel les enseignants développent les connaissances essentielles, la conscience des enjeux éthiques et les compétences pratiques nécessaires pour évaluer, sélectionner et utiliser les outils d’IA de manière appropriée.",
+        "altLabels": []
+      }
+    },
+    "activity": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Activity",
+        "definition": "Dans xAPI, une activité est un élément avec lequel un acteur interagit ou dont il fait l’expérience, et qui peut constituer l’objet d’une déclaration suivie. Les activités peuvent représenter un enseignement, une performance, des expériences, des ressources, des événements, voire des objets physiques ou virtuels.",
+        "altLabels": [
+          "Activité"
+        ]
+      }
+    },
+    "activity-definition": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Activity Definition",
+        "definition": "Objet de métadonnées facultatif au sein d’une activité xAPI qui peut en décrire le nom lisible par une personne, la description, le type, l’emplacement d’informations complémentaires, les détails d’interaction et les extensions.",
+        "altLabels": [
+          "Activity Definition",
+          "Définition d’activité"
+        ]
+      }
+    },
+    "activity-profile-resource": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Activity Profile Resource",
+        "definition": "Ressource xAPI accessible à l’adresse /activities/profile, destinée à stocker et à récupérer des documents de profil génériques associés à une activité.",
+        "altLabels": [
+          "Ressource de profil d’activité"
+        ]
+      }
+    },
+    "actor": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Actor",
+        "definition": "Personne ou groupe représenté dans une déclaration xAPI comme accomplissant l’action décrite par cette déclaration.",
+        "altLabels": [
+          "Actor",
+          "Acteur"
+        ]
+      }
+    },
+    "adaptive-hypermedia": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Hypermédia adaptatif",
+        "definition": "Système hypermédia qui construit un modèle de l’utilisateur et modifie les informations, les liens ou la présentation qui lui sont proposés, plutôt que d’offrir la même expérience à tout le monde.",
+        "altLabels": []
+      }
+    },
+    "adaptive-instructional-system": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Système pédagogique adaptatif",
+        "definition": "Système d’apprentissage qui modifie les contenus, leur séquencement, le soutien apporté, la rétroaction ou le niveau de difficulté en fonction d’informations concernant un apprenant ou le contexte.",
+        "altLabels": []
+      }
+    },
+    "administrative-data": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Données administratives",
+        "definition": "Données produites dans le cadre de l’administration et de la gestion courantes d’un système éducatif, généralement au moyen de systèmes d’information de gestion de l’éducation et de dossiers administratifs publics connexes.",
+        "altLabels": []
+      }
+    },
+    "affective-computing": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Informatique affective",
+        "definition": "Domaine de l’informatique consacré à la reconnaissance, à la modélisation ou à la prise en compte des états émotionnels humains et, dans certains cas, à la simulation de comportements affectifs par des machines.",
+        "altLabels": []
+      }
+    },
+    "agent-profile-resource": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Agent Profile Resource",
+        "definition": "Ressource xAPI accessible à l’adresse /agents/profile, destinée à stocker et à récupérer des documents de profil génériques associés à un agent ou à un groupe identifié, indépendamment d’une activité ou d’un enregistrement particulier.",
+        "altLabels": [
+          "Ressource de profil d’agent"
+        ]
+      }
+    },
+    "agile-development": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Développement agile",
+        "definition": "Approche itérative de création de solutions par petits incréments, qui s’appuie sur les retours d’expérience et adapte les plans à l’évolution des conditions.",
+        "altLabels": []
+      }
+    },
+    "ai-competency-framework-for-teachers-ai-cft": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Cadre de compétences en IA pour les enseignants",
+        "definition": "Cadre de référence décrivant les connaissances, les compétences, les valeurs et les attitudes dont les enseignants ont besoin pour utiliser l’intelligence artificielle de manière sûre, efficace et éthique, tout en préservant une éducation centrée sur l’humain.",
+        "altLabels": [
+          "Référentiel de compétences en IA pour les enseignants (AI CFT)"
+        ]
+      }
+    },
+    "ai-competency-progression": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Progression des compétences en IA",
+        "definition": "Parcours de référence structuré en paliers pour développer les compétences en IA à des niveaux de capacité croissants, sans supposer que cette progression est strictement linéaire ni identique dans tous les domaines de compétence.",
+        "altLabels": []
+      }
+    },
+    "ai-explainability-in-education": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Explicabilité de l’IA en éducation",
+        "definition": "Degré auquel les éducateurs peuvent comprendre et examiner de manière critique la façon dont un système d’IA produit ses résultats ou ses conclusions, suffisamment pour évaluer son utilisation et intervenir si nécessaire.",
+        "altLabels": []
+      }
+    },
+    "ai-for-professional-development": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "IA pour le développement professionnel",
+        "definition": "Utilisation de l’IA pour soutenir la formation professionnelle continue des enseignants, le développement collaboratif, la réflexion sur la pratique, l’évaluation des besoins d’apprentissage et la transformation des pratiques professionnelles.",
+        "altLabels": [
+          "IA pour l’apprentissage professionnel"
+        ]
+      }
+    },
+    "ai-foundations-and-applications": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Fondements et applications de l’IA",
+        "definition": "Connaissances conceptuelles et compétences opérationnelles transférables nécessaires pour comprendre le fonctionnement de l’IA et pour évaluer, sélectionner, utiliser, adapter ou personnaliser des outils d’IA à des fins appropriées.",
+        "altLabels": []
+      }
+    },
+    "ai-literacy-for-teachers": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Littératie en IA pour les enseignants",
+        "definition": "Ensemble fondamental de compétences en IA dont les enseignants ont besoin pour comprendre que l’IA doit rester sous conduite humaine, reconnaître ses avantages et ses risques, appliquer des principes éthiques fondamentaux, comprendre les concepts de base de l’IA et utiliser des outils d’IA appropriés dans la pratique éducative.",
+        "altLabels": []
+      }
+    },
+    "ai-pedagogy": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Pédagogie de l’IA",
+        "definition": "Compétences et pratiques liées à la sélection, à la validation et à l’intégration de l’IA aux méthodes pédagogiques pour soutenir l’enseignement, l’apprentissage, les interactions sociales, l’attention portée aux personnes et l’évaluation.",
+        "altLabels": [
+          "Pédagogie intégrant l’IA"
+        ]
+      }
+    },
+    "ai-tool-validation-for-education": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Validation des outils d’IA pour l’éducation",
+        "definition": "Évaluation systématique d’un système ou d’un outil d’IA avant son adoption en éducation, visant à déterminer s’il est suffisamment fiable, digne de confiance, sûr, conforme aux exigences éthiques, adapté à l’âge des utilisateurs et pertinent sur le plan pédagogique.",
+        "altLabels": []
+      }
+    },
+    "ai-assisted-teaching": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Enseignement assisté par l’IA",
+        "definition": "Enseignement dans lequel les éducateurs identifient et utilisent des outils d’IA appropriés pour soutenir des activités telles que la planification des cours, l’enseignement, l’évaluation et l’accompagnement des apprenants, tout en atténuant les risques associés.",
+        "altLabels": []
+      }
+    },
+    "ai-enhanced-pedagogical-innovation": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Innovation pédagogique enrichie par l’IA",
+        "definition": "Utilisation critique et exploratoire de l’IA pour élaborer ou transformer des situations d’apprentissage, des approches pédagogiques, des modalités d’évaluation et des formes d’apprentissage centrées sur les élèves, tout en préservant les principes d’une éducation centrée sur l’humain.",
+        "altLabels": []
+      }
+    },
+    "ai-pedagogy-integration": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Intégration de l’IA à la pédagogie",
+        "definition": "Intégration intentionnelle de l’IA à la conception et à l’accompagnement d’apprentissages centrés sur les élèves afin de favoriser l’engagement, la différenciation des apprentissages, les interactions entre enseignants et élèves, la pensée critique et la résolution de problèmes.",
+        "altLabels": []
+      }
+    },
+    "anonymous-group": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Anonymous Group",
+        "definition": "Groupe xAPI ne possédant pas son propre identifiant fonctionnel inverse et représenté par les agents qui figurent parmi ses membres.",
+        "altLabels": [
+          "Anonymous Group",
+          "Groupe anonyme"
+        ]
+      }
+    },
+    "artificial-intelligence-ai": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Intelligence artificielle (IA)",
+        "definition": "Ensemble étendu de techniques informatiques utilisées pour accomplir des tâches relevant de la perception, de la prédiction, de la classification, de la génération, de l’aide à la décision ou d’autres formes de comportement intelligent.",
+        "altLabels": []
+      }
+    },
+    "assessment": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Évaluation",
+        "definition": "Collecte et interprétation d’éléments probants concernant les connaissances, les compétences, les performances, l’état d’un apprenant ou les résultats d’apprentissage.",
+        "altLabels": []
+      }
+    },
+    "asset-model": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Modèle axé sur les forces",
+        "definition": "Approche qui part des capacités et des points forts qu’un apprenant possède déjà et vise à développer de nouvelles capacités plutôt qu’à diagnostiquer principalement des déficits par rapport aux moyennes d’un groupe.",
+        "altLabels": [
+          "Approche fondée sur les acquis"
+        ]
+      }
+    },
+    "asynchronous-learning": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Apprentissage asynchrone",
+        "definition": "Activité d’apprentissage pouvant se dérouler à des moments différents, permettant aux apprenants d’interagir avec des ressources ou de réaliser des tâches sans que tous participent simultanément.",
+        "altLabels": []
+      }
+    },
+    "attachment": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Attachment",
+        "definition": "Fichier ou autre ressource binaire associé logiquement à une déclaration xAPI, décrit par des métadonnées comprenant le type d’utilisation, le nom affiché, le type de contenu, la taille, l’empreinte SHA-2 et, facultativement, une URL de fichier.",
+        "altLabels": [
+          "Attachment",
+          "Pièce jointe"
+        ]
+      }
+    },
+    "attention": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Attention",
+        "definition": "Allocation sélective de ressources cognitives à des informations, à des tâches ou à des stimuli.",
+        "altLabels": []
+      }
+    },
+    "unesco-basic-and-general-study-subjects": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Matières de l’enseignement de base et général",
+        "definition": "Domaines d’études fondamentaux et généraux visant à développer les connaissances générales, les littératies, la compréhension culturelle et les compétences scolaires essentielles dans des domaines tels que les langues, les mathématiques, les sciences, les sciences humaines, les arts, la santé et l’éducation à la citoyenneté.",
+        "altLabels": []
+      }
+    },
+    "behavioral-economics": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Économie comportementale",
+        "definition": "Domaine qui étudie les biais systématiques, les heuristiques et les schémas de décision qui conduisent les personnes à faire des choix s’écartant des modèles de rationalité pure.",
+        "altLabels": []
+      }
+    },
+    "bias": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Biais",
+        "definition": "Distorsion systématique dans les données, la mesure, l’analyse, les modèles, les processus ou les décisions, susceptible de produire des résultats injustes ou trompeurs.",
+        "altLabels": []
+      }
+    },
+    "building-expertise": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Développement de l’expertise",
+        "definition": "Développement, au sein d’un domaine, de connaissances et de compétences de plus en plus organisées, faciles à mobiliser et utilisables, grâce à l’expérience et à la pratique.",
+        "altLabels": []
+      }
+    },
+    "challenge-identification": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Identification du défi",
+        "definition": "Étape de l’ingénierie de l’apprentissage au cours de laquelle une équipe définit le problème, le contexte, les parties prenantes, les contraintes et les éléments probants avant de concevoir une solution.",
+        "altLabels": []
+      }
+    },
+    "childcare-gap": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Période entre congé parental et droit d’accès à l’EPPE",
+        "definition": "Période comprise entre la fin du congé parental rémunéré et l’âge auquel les enfants acquièrent légalement le droit d’accéder aux services d’éducation et d’accueil de la petite enfance.",
+        "altLabels": [
+          "Déficit de couverture des services d’accueil de la petite enfance",
+          "Période sans droit d’accès aux services d’accueil de la petite enfance"
+        ]
+      }
+    },
+    "classroom-teacher": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Enseignant en classe",
+        "definition": "Personnel enseignant professionnel principalement chargé de planifier, d’organiser et d’animer des activités d’apprentissage en groupe qui orientent les expériences d’apprentissage des élèves.",
+        "altLabels": []
+      }
+    },
+    "co-design": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Co-conception",
+        "definition": "Approche collaborative de conception dans laquelle des chercheurs ou des concepteurs travaillent avec des praticiens, des apprenants, des partenaires ou d’autres participants concernés afin de définir les questions, les technologies et les pratiques.",
+        "altLabels": []
+      }
+    },
+    "cognitive-engagement": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Engagement cognitif",
+        "definition": "Degré auquel un apprenant réfléchit activement aux connaissances, les applique, les analyse et établit des liens entre elles, plutôt que de se limiter à recevoir ou à mémoriser de l’information.",
+        "altLabels": []
+      }
+    },
+    "cognitive-load": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Charge cognitive",
+        "definition": "Effort mental nécessaire pour traiter de l’information dans la mémoire de travail au cours d’une tâche.",
+        "altLabels": []
+      }
+    },
+    "cognitive-task-analysis": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Analyse cognitive des tâches",
+        "definition": "Ensemble de méthodes permettant de déterminer les connaissances, les décisions, les indices, les stratégies et les processus mentaux mobilisés dans l’exécution de tâches complexes.",
+        "altLabels": []
+      }
+    },
+    "cognitive-walkthrough": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Parcours cognitif",
+        "definition": "Méthode d’inspection de l’utilisabilité dans laquelle des évaluateurs parcourent les étapes d’une tâche du point de vue d’un utilisateur et examinent si chaque action est compréhensible et facile à découvrir.",
+        "altLabels": [
+          "Inspection cognitive pas à pas"
+        ]
+      }
+    },
+    "community-of-practice": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Communauté de pratique",
+        "definition": "Communauté au sein de laquelle les personnes apprennent par la participation sociale à une pratique commune, en développant leurs connaissances grâce aux interactions avec d’autres personnes engagées dans un travail ou une activité connexe.",
+        "altLabels": []
+      }
+    },
+    "competency": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Compétence",
+        "definition": "Capacité, aptitude, domaine de connaissances ou performance observable défini, pouvant être décrit, évalué, développé ou référencé dans différents systèmes.",
+        "altLabels": []
+      }
+    },
+    "competency-based-learning": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Apprentissage fondé sur les compétences",
+        "definition": "Approche dans laquelle la progression est organisée autour de la maîtrise démontrée de compétences définies, plutôt que principalement autour du temps passé dans un cours ou un programme.",
+        "altLabels": [
+          "Apprentissage par compétences"
+        ]
+      }
+    },
+    "computer-based-learning": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Apprentissage sur ordinateur",
+        "definition": "Utilisation d’ordinateurs pour accéder à une formation ou à un enseignement au moyen d’activités synchrones ou asynchrones proposées sur des systèmes en réseau ou autonomes.",
+        "altLabels": [
+          "Apprentissage sur ordinateur"
+        ]
+      }
+    },
+    "concept-map": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Carte conceptuelle",
+        "definition": "Représentation montrant les liens entre des concepts ou des idées abstraites.",
+        "altLabels": []
+      }
+    },
+    "conceptual-knowledge": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Connaissances conceptuelles",
+        "definition": "Connaissance des idées, des relations et des raisons sous-jacentes expliquant le fonctionnement d’une procédure, d’un principe ou d’une solution.",
+        "altLabels": []
+      }
+    },
+    "connectivism": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Connectivisme",
+        "definition": "Théorie de l’apprentissage selon laquelle les connaissances sont réparties dans des réseaux de connexions, mettant l’accent sur l’apprentissage continu, l’actualité de l’information et la capacité à reconnaître des liens entre sources et domaines.",
+        "altLabels": []
+      }
+    },
+    "connectivist-mooc-cmooc": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "MOOC connectiviste (cMOOC)",
+        "definition": "Cours en ligne ouvert et massif fondé sur les principes du connectivisme, privilégiant les réseaux, l’apprentissage social, la coopération et la construction collaborative des connaissances.",
+        "altLabels": []
+      }
+    },
+    "context-activities": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Activités de contexte",
+        "definition": "Références à des activités incluses dans le contexte d’une déclaration xAPI pour exprimer les liens entre l’expérience enregistrée et des activités plus larges ou associées.",
+        "altLabels": []
+      }
+    },
+    "context-agent": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Agent de contexte",
+        "definition": "Structure de contexte xAPI représentant une relation propre à une déclaration entre celle-ci et un agent pertinent, éventuellement caractérisée par un ou plusieurs IRI de type de relation.",
+        "altLabels": []
+      }
+    },
+    "context-group": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Groupe de contexte",
+        "definition": "Structure de contexte xAPI représentant une relation propre à une déclaration entre celle-ci et un groupe pertinent, éventuellement caractérisée par un ou plusieurs IRI de type de relation.",
+        "altLabels": []
+      }
+    },
+    "context-object": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Objet de contexte",
+        "definition": "Composant facultatif d’une déclaration xAPI ajoutant des renseignements contextuels sur une expérience, tels que l’inscription, les activités associées, les agents ou groupes pertinents, la langue, la plateforme, une autre déclaration ou des extensions.",
+        "altLabels": []
+      }
+    },
+    "contextual-factor": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Facteur contextuel",
+        "definition": "Condition entourant une conception, notamment les besoins des apprenants, le programme, les délais, les ressources ou les technologies, qui influe sur les possibilités et la pertinence des choix.",
+        "altLabels": []
+      }
+    },
+    "contextually-rich-learning-environment": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Environnement d’apprentissage riche en contexte",
+        "definition": "Environnement d’apprentissage conçu en tenant compte des personnes, pratiques, technologies, contraintes et situations particulières dans lesquelles l’apprentissage se déroule.",
+        "altLabels": []
+      }
+    },
+    "continuous-improvement": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Amélioration continue",
+        "definition": "Pratique permanente consistant à utiliser les données probantes et la rétroaction pour perfectionner progressivement les expériences, systèmes, processus et opérations d’apprentissage.",
+        "altLabels": []
+      }
+    },
+    "continuous-integration": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Intégration continue",
+        "definition": "Pratique de développement logiciel consistant à intégrer et tester fréquemment les modifications plutôt qu’à les accumuler dans de rares livraisons volumineuses.",
+        "altLabels": []
+      }
+    },
+    "control-theory": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Théorie de la commande",
+        "definition": "Domaine de l’ingénierie qui étudie comment les systèmes utilisent la rétroaction pour réguler leur comportement et atteindre des états souhaités.",
+        "altLabels": []
+      }
+    },
+    "controlled-vocabulary": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Vocabulaire contrôlé",
+        "definition": "Ensemble administré de termes définis et d’identifiants employés de façon cohérente dans un domaine afin que personnes et machines désignent les mêmes concepts de la même manière.",
+        "altLabels": []
+      }
+    },
+    "coordination-network": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Réseau de coordination",
+        "definition": "Réseau durable ou structure de coordination reliant les participants, facilitant les relations et le travail collectif, synthétisant les résultats et favorisant la circulation des connaissances entre projets et communautés.",
+        "altLabels": []
+      }
+    },
+    "create-ai-competency-level": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Créer (niveau de compétence en IA)",
+        "definition": "Niveau avancé de compétence en IA où les enseignants configurent, adaptent ou coconçoivent, avec esprit critique et créativité, des approches, outils, politiques et pratiques pédagogiques mobilisant l’IA pour transformer l’éducation.",
+        "altLabels": []
+      }
+    },
+    "creation-phase": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Phase de création",
+        "definition": "Étape du processus d’ingénierie de l’apprentissage où une équipe conçoit une solution à un défi d’apprentissage, planifie et instrumente les données nécessaires et fait évoluer la conception avec les apprenants et les parties prenantes.",
+        "altLabels": []
+      }
+    },
+    "cross-domain-collaboration": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Collaboration interdisciplinaire",
+        "definition": "Collaboration entre personnes de différentes disciplines professionnelles apportant des expertises distinctes à un défi d’ingénierie de l’apprentissage.",
+        "altLabels": []
+      }
+    },
+    "cross-national-assessment": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Évaluation transnationale",
+        "definition": "Évaluation des apprentissages régionale ou internationale utilisant un cadre commun convenu et des procédures comparables entre systèmes participants afin de produire des données comparables sur les acquis.",
+        "altLabels": []
+      }
+    },
+    "culture-change": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Changement culturel",
+        "definition": "Effort délibéré visant à transformer les hypothèses, comportements, normes, incitations et façons de travailler partagés pour qu’une organisation adopte et pérennise un nouveau modèle d’apprentissage.",
+        "altLabels": []
+      }
+    },
+    "unesco-curriculum": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Programme d’études",
+        "definition": "Ensemble planifié des matières et contenus d’un programme éducatif, comprenant la répartition du temps d’enseignement et l’ordre des apprentissages.",
+        "altLabels": []
+      }
+    },
+    "data-analysis": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Analyse des données",
+        "definition": "Interprétation de données visant à dégager des enseignements, identifier des tendances, évaluer des résultats, diagnostiquer leurs facteurs explicatifs et apprécier les effets des politiques.",
+        "altLabels": []
+      }
+    },
+    "data-analytics": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Analytique des données",
+        "definition": "Emploi de méthodes et d’outils pour examiner des données, décrire des tendances, tester des hypothèses, repérer des relations ou éclairer des décisions.",
+        "altLabels": []
+      }
+    },
+    "data-availability": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Disponibilité des données",
+        "definition": "Situation dans laquelle les données existent et peuvent être consultées ou récupérées, indépendamment de leur publication officielle ou de leur qualité pour un usage particulier.",
+        "altLabels": []
+      }
+    },
+    "data-culture": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Culture des données",
+        "definition": "Environnement organisationnel et institutionnel dans lequel la transparence, la collaboration, la participation, l’ouverture, les définitions partagées et l’usage régulier de preuves soutiennent la prise de décision.",
+        "altLabels": []
+      }
+    },
+    "data-instrumentation": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Instrumentation des données",
+        "definition": "Conception et mise en place intentionnelles de mécanismes capturant événements, états, contexte et autres données nécessaires à la compréhension d’un système d’apprentissage.",
+        "altLabels": []
+      }
+    },
+    "data-mining": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Fouille de données",
+        "definition": "Utilisation de méthodes informatiques pour découvrir des motifs, structures, associations ou relations prédictives dans de grands ensembles de données.",
+        "altLabels": []
+      }
+    },
+    "data-ownership": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Propriété et contrôle des données",
+        "definition": "Droits, responsabilités et enjeux de gouvernance liés au contrôle des données produites ou utilisées au sein des systèmes éducatifs.",
+        "altLabels": []
+      }
+    },
+    "data-pipeline": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Pipeline de données",
+        "definition": "Suite de processus qui transportent, valident, transforment, enrichissent, stockent ou acheminent des données depuis des systèmes sources vers leurs destinations.",
+        "altLabels": []
+      }
+    },
+    "data-privacy": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Protection des données personnelles",
+        "definition": "Principes et pratiques régissant la collecte, l’utilisation, le partage, la conservation, la protection et la suppression des informations concernant les personnes.",
+        "altLabels": []
+      }
+    },
+    "data-quality": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Qualité des données",
+        "definition": "Degré d’exactitude, d’exhaustivité, de cohérence, d’actualité, de validité et d’adéquation des données à leur usage prévu.",
+        "altLabels": []
+      }
+    },
+    "data-reporting": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Communication officielle des données",
+        "definition": "Diffusion officielle de données disponibles auprès du public, d’organisations internationales ou d’autres parties prenantes.",
+        "altLabels": []
+      }
+    },
+    "data-security": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Sécurité des données",
+        "definition": "Pratiques et mesures de contrôle protégeant les données d’apprentissage, systèmes, interfaces, stockages et communications contre les accès non autorisés, altérations, pertes ou perturbations.",
+        "altLabels": []
+      }
+    },
+    "data-silo": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Silo de données",
+        "definition": "Réservoir de données isolé qui échange difficilement des renseignements avec d’autres applications, systèmes ou sources de données organisationnelles.",
+        "altLabels": []
+      }
+    },
+    "data-stewardship": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Intendance des données",
+        "definition": "Responsabilité organisationnelle de gouverner la détention, la protection, l’accès, le partage, la maintenance et l’utilisation des données tout au long de leur cycle de vie.",
+        "altLabels": []
+      }
+    },
+    "data-use": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Utilisation des données",
+        "definition": "Application de données et de résultats analytiques à l’élaboration de politiques et programmes, à l’allocation des ressources, à la planification, à la mise en œuvre et à d’autres décisions visant à améliorer l’éducation.",
+        "altLabels": []
+      }
+    },
+    "data-informed-decision-making": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Prise de décision éclairée par les données",
+        "definition": "Processus décisionnel utilisant les données pertinentes comme éléments probants tout en tenant compte du contexte, de l’expertise, des objectifs et des contraintes.",
+        "altLabels": []
+      }
+    },
+    "decision-support": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Aide à la décision",
+        "definition": "Emploi de données, d’analyses, de modèles ou de logiciels pour aider les personnes à prendre des décisions éclairées sans nécessairement automatiser la décision elle-même.",
+        "altLabels": []
+      }
+    },
+    "decision-tracking": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Suivi des décisions",
+        "definition": "Pratique consistant à consigner les décisions de conception, leurs justifications, leurs influences et leurs révisions pendant toute la durée d’un projet.",
+        "altLabels": []
+      }
+    },
+    "deepen-ai-competency-level": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Approfondir (niveau de compétence en IA)",
+        "definition": "Niveau intermédiaire de compétence en IA où les enseignants intègrent l’IA à la pratique éducative en accordant davantage d’attention à la responsabilité humaine, à l’utilisation sûre et responsable, à l’évaluation éthique et à la conception pédagogique.",
+        "altLabels": []
+      }
+    },
+    "design-decision": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Décision de conception",
+        "definition": "Choix portant sur les éléments à inclure dans une conception pédagogique et leur mise en œuvre, en fonction des objectifs, des données probantes, de l’expérience, des contraintes et du contexte.",
+        "altLabels": []
+      }
+    },
+    "design-decision-making": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Processus décisionnel en conception",
+        "definition": "Processus consistant à formuler, appliquer, communiquer, réexaminer et parfois réviser des choix de conception pédagogique en tenant compte des apprenants, parties prenantes, données, technologies et contextes.",
+        "altLabels": []
+      }
+    },
+    "design-judgment": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Jugement de conception",
+        "definition": "Raisonnement permettant de déterminer pourquoi un choix de conception convient à une situation donnée, en mobilisant connaissances, expérience, théorie et facteurs contextuels.",
+        "altLabels": []
+      }
+    },
+    "design-justification": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Justification de conception",
+        "definition": "Raison, preuve ou source d’influence consignée expliquant pourquoi une décision de conception a été prise ou révisée.",
+        "altLabels": []
+      }
+    },
+    "design-pattern": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Patron de conception",
+        "definition": "Description réutilisable d’un problème de conception récurrent et d’une manière éprouvée ou généralement utile d’y répondre.",
+        "altLabels": []
+      }
+    },
+    "design-revision": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Révision de conception",
+        "definition": "Modification d’une décision antérieure ou d’un élément existant d’une conception pédagogique.",
+        "altLabels": []
+      }
+    },
+    "design-build-cycle": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Cycle conception-réalisation",
+        "definition": "Cycle itératif dans lequel une solution d’apprentissage est conçue, réalisée, essayée avec des apprenants ou parties prenantes, examinée à l’aide de preuves puis révisée, plutôt que considérée comme achevée après une seule conception.",
+        "altLabels": []
+      }
+    },
+    "digital-credential": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Justificatif numérique",
+        "definition": "Assertion représentée numériquement concernant une réalisation, qualification, compétence, identité, participation ou autorisation, pouvant être émise et vérifiée par voie électronique.",
+        "altLabels": [
+          "Attestation numérique"
+        ]
+      }
+    },
+    "digital-divide": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Fracture numérique",
+        "definition": "Inégalité d’accès aux infrastructures technologiques et aux compétences nécessaires pour tirer parti des technologies numériques.",
+        "altLabels": []
+      }
+    },
+    "digital-engineering-for-learning-systems": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Ingénierie numérique des systèmes d’apprentissage",
+        "definition": "Application de méthodes, modèles, interfaces et approches de cycle de vie de l’ingénierie numérique à la conception et au fonctionnement des systèmes d’apprentissage.",
+        "altLabels": []
+      }
+    },
+    "digital-footprint": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Empreinte numérique",
+        "definition": "Données produites par l’utilisation des technologies dans l’enseignement et l’apprentissage, qui peuvent être recueillies, analysées et partagées.",
+        "altLabels": []
+      }
+    },
+    "digital-global-public-goods": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Biens publics numériques mondiaux",
+        "definition": "Ressources numériques réutilisables destinées à l’intérêt général, notamment recherches, ressources et applications numériques, bases de données, dépôts, normes, algorithmes et plateformes adaptables à différents contextes.",
+        "altLabels": []
+      }
+    },
+    "digital-learning-materials": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Ressources pédagogiques numériques",
+        "definition": "Contenus et ressources numériques soutenant l’enseignement et l’apprentissage, dont manuels numériques, simulations, jeux, contenus créés par les utilisateurs et ressources éducatives libres.",
+        "altLabels": []
+      }
+    },
+    "digital-literacies": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Littératie numérique",
+        "definition": "Capacités nécessaires pour bénéficier des technologies numériques et les utiliser efficacement pour enseigner et apprendre, y compris les pédagogies numériques au-delà du simple usage technique.",
+        "altLabels": []
+      }
+    },
+    "digital-security": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Sécurité numérique",
+        "definition": "Protection des systèmes numériques et des données éducatives contre les risques compromettant confidentialité, intégrité, disponibilité ou sécurité d’utilisation.",
+        "altLabels": []
+      }
+    },
+    "digital-skills": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Compétences numériques",
+        "definition": "Compétences permettant d’utiliser les technologies numériques, des capacités techniques élémentaires aux compétences avancées telles que programmation, pensée informatique et éthique.",
+        "altLabels": []
+      }
+    },
+    "distributed-learning": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Apprentissage distribué",
+        "definition": "Apprentissage dispensé au-delà d’une salle de classe unique au moyen de technologies et environnements distribués, dont formation à distance, apprentissage en ligne, simulations, apprentissage mobile et autres expériences en réseau.",
+        "altLabels": []
+      }
+    },
+    "distributed-simulation": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Simulation distribuée",
+        "definition": "Simulation réalisée sur des systèmes en réseau permettant à plusieurs participants ou entités simulées d’interagir dans un scénario ou environnement synthétique partagé.",
+        "altLabels": []
+      }
+    },
+    "document-profile-resource": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Ressource de profil documentaire",
+        "definition": "Structure xAPI stockant des informations de type document sur un agent ou une activité sous forme de paires nom-document utiles à un composant du système pédagogique, distincte d’un profil xAPI.",
+        "altLabels": []
+      }
+    },
+    "early-childhood-education-ece": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Éducation de la petite enfance (EPE)",
+        "definition": "Volet éducatif de l’éducation et de la protection de la petite enfance, comprenant les programmes de niveau 0 de la CITE et leurs activités d’apprentissage organisées et intentionnelles soutenant le développement cognitif, physique, social et émotionnel des enfants.",
+        "altLabels": []
+      }
+    },
+    "early-childhood-education-and-care-ecec": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Éducation et protection de la petite enfance (EPPE)",
+        "definition": "Services et programmes soutenant l’éducation, le développement, le bien-être et la prise en charge des jeunes enfants avant l’enseignement primaire, y compris les programmes CITE 0 et les services de garde réglementés extérieurs à l’enseignement formel.",
+        "altLabels": []
+      }
+    },
+    "edtech-ecosystem": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Écosystème des technologies éducatives",
+        "definition": "Réseau d’acteurs publics, privés, universitaires, associatifs, donateurs, scolaires, familiaux et apprenants participant au développement, à la fourniture, à la gouvernance et à l’utilisation des technologies éducatives.",
+        "altLabels": []
+      }
+    },
+    "unesco-education-domain": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Éducation",
+        "definition": "Processus par lequel les personnes développent des aptitudes, attitudes, connaissances et comportements valorisés par la société où elles vivent.",
+        "altLabels": []
+      }
+    },
+    "education-data-cycle": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Cycle des données éducatives",
+        "definition": "Séquence récurrente où les données éducatives sont produites et rendues disponibles, communiquées et partagées, analysées puis utilisées pour éclairer les décisions et les besoins ultérieurs en données.",
+        "altLabels": []
+      }
+    },
+    "education-data-ecosystem": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Écosystème des données éducatives",
+        "definition": "Ensemble interconnecté de sources de données, processus de production et de diffusion, pratiques analytiques, institutions et usages appuyant la prise de décision fondée sur des preuves dans un système éducatif.",
+        "altLabels": []
+      }
+    },
+    "education-data-integration": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Intégration des données éducatives",
+        "definition": "Combinaison et mise en relation de données provenant de différentes sources éducatives ou connexes pour obtenir une vision plus cohérente, combler des lacunes et permettre des analyses impossibles à partir d’une seule source.",
+        "altLabels": []
+      }
+    },
+    "education-expenditure-data": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Données sur les dépenses d’éducation",
+        "definition": "Données financières sur les recettes et dépenses éducatives de sources publiques, privées, ménagères et autres, comprenant infrastructures, personnel et autres coûts éducatifs.",
+        "altLabels": []
+      }
+    },
+    "education-management-information-system": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Système d’information pour la gestion de l’éducation (SIGE)",
+        "definition": "Système utilisé par les autorités éducatives pour recueillir, traiter, analyser, suivre et diffuser des données administratives aux fins de la gestion et de la planification de l’éducation.",
+        "altLabels": []
+      }
+    },
+    "education-statistical-capacity": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Capacité statistique en éducation",
+        "definition": "Capacité d’un système éducatif à produire, communiquer, évaluer et utiliser des données suffisamment complètes et fiables pour établir des indicateurs et soutenir politiques et gouvernance.",
+        "altLabels": []
+      }
+    },
+    "education-technology-edtech": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Technologies éducatives (EdTech)",
+        "definition": "Utilisation de matériels, logiciels, contenus numériques, données et systèmes d’information dans l’éducation pour soutenir enseignement, apprentissage, gestion et prestation des services éducatifs.",
+        "altLabels": []
+      }
+    },
+    "unesco-educational-administration": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Administration de l’éducation",
+        "definition": "Organisation et administration d’une partie ou de la totalité d’un système éducatif, y compris les structures et processus de coordination, réglementation, supervision et soutien des activités éducatives.",
+        "altLabels": []
+      }
+    },
+    "educational-attainment": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Niveau d’instruction atteint",
+        "definition": "Niveau d’enseignement le plus élevé achevé avec succès par une personne.",
+        "altLabels": []
+      }
+    },
+    "unesco-educational-evaluation": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Évaluation éducative",
+        "definition": "Appréciation systématique des performances ou de la qualité de l’éducation, y compris l’évaluation des apprenants, enseignants, programmes, acquis antérieurs, établissements et résultats éducatifs.",
+        "altLabels": []
+      }
+    },
+    "unesco-educational-facilities": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Installations éducatives",
+        "definition": "Ressources physiques et matérielles soutenant l’éducation, notamment bâtiments, équipements, supports d’apprentissage, terrains de jeu et autres installations scolaires ou universitaires.",
+        "altLabels": []
+      }
+    },
+    "educational-institution": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Établissement d’enseignement",
+        "definition": "Entité dont l’objectif unique ou principal est de fournir des services d’enseignement ou des services connexes cliniques, communautaires ou de recherche.",
+        "altLabels": []
+      }
+    },
+    "unesco-educational-institutions": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Établissements d’enseignement",
+        "definition": "Organisations et structures dispensant l’éducation, notamment écoles, établissements supérieurs, centres de formation, établissements d’éducation des adultes et autres lieux d’apprentissage organisé.",
+        "altLabels": []
+      }
+    },
+    "unesco-educational-management": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Gestion des établissements d’enseignement",
+        "definition": "Gestion des établissements éducatifs et de leurs activités pédagogiques, opérationnelles, humaines, matérielles, financières, administratives et de suivi de l’assiduité.",
+        "altLabels": []
+      }
+    },
+    "unesco-educational-planning": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Planification de l’éducation",
+        "definition": "Processus systématique d’analyse des besoins éducatifs, de définition des objectifs et priorités, d’anticipation des besoins futurs et d’organisation des ressources et actions pour améliorer un système éducatif.",
+        "altLabels": []
+      }
+    },
+    "unesco-educational-policy": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Politique éducative",
+        "definition": "Ensemble des objectifs, principes et orientations officielles guidant un système éducatif et les décisions relatives à l’accès, aux droits, aux priorités, aux normes, aux ressources et aux réformes.",
+        "altLabels": []
+      }
+    },
+    "unesco-educational-population": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Population éducative",
+        "definition": "Personnes participant aux systèmes éducatifs et les soutenant, notamment apprenants, enseignants, administrateurs, conseillers, planificateurs, personnel de soutien et autres professionnels de l’éducation.",
+        "altLabels": []
+      }
+    },
+    "unesco-educational-sciences-and-environment": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Sciences de l’éducation et milieu éducatif",
+        "definition": "Étude interdisciplinaire de l’éducation et des milieux dans lesquels se déroulent l’enseignement et l’apprentissage, intégrant les influences pédagogiques, psychologiques, sociales, historiques, philosophiques, culturelles et contextuelles.",
+        "altLabels": []
+      }
+    },
+    "unesco-educational-systems-and-levels": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Systèmes et niveaux d’enseignement",
+        "definition": "Structures organisées de l’éducation formelle et non formelle, comprenant établissements, programmes, parcours et étapes ou niveaux successifs constituant un système éducatif.",
+        "altLabels": []
+      }
+    },
+    "emergent-impact": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Impact émergent",
+        "definition": "Effets, usages, résultats ou prolongements de travaux exploratoires qui dépassent ce qui était prévu ou anticipé au début d’un projet.",
+        "altLabels": []
+      }
+    },
+    "empathy": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Empathie",
+        "definition": "Effort pour comprendre les besoins, expériences, contraintes, motivations et contextes des utilisateurs de leur propre point de vue.",
+        "altLabels": []
+      }
+    },
+    "empathy-mapping": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Carte d’empathie",
+        "definition": "Technique structurée organisant les observations sur ce que les utilisateurs disent, font, pensent, ressentent, nécessitent ou vivent.",
+        "altLabels": []
+      }
+    },
+    "endpoint": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Point de terminaison",
+        "definition": "Point d’entrée permettant de communiquer avec un service. Dans xAPI, les ressources sont accessibles par des IRI ou URL rattachés au point de terminaison d’un LRS.",
+        "altLabels": []
+      }
+    },
+    "engineering-design": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Conception en ingénierie",
+        "definition": "Processus de résolution de problèmes élaborant et évaluant des solutions au regard des exigences, données probantes, contraintes, interfaces et compromis.",
+        "altLabels": []
+      }
+    },
+    "enterprise-learner-record": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Dossier d’apprentissage d’entreprise",
+        "definition": "Dossier organisationnel intégrant les données sur un apprenant à travers différentes expériences, systèmes, programmes ou périodes.",
+        "altLabels": []
+      }
+    },
+    "equitable-co-design": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Co-conception équitable",
+        "definition": "Co-conception réduisant volontairement les obstacles à la participation, intégrant des perspectives sous-représentées et des identités et besoins croisés, et donnant aux praticiens ou utilisateurs une influence réelle sur les choix de conception.",
+        "altLabels": []
+      }
+    },
+    "equity": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Équité",
+        "definition": "Examen de la manière dont les occasions d’apprentissage, technologies, processus et résultats tiennent équitablement compte de besoins et conditions différents.",
+        "altLabels": []
+      }
+    },
+    "ethics-by-design": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Éthique dès la conception",
+        "definition": "Approche intégrant délibérément les exigences éthiques dans la conception et la validation des systèmes d’IA, plutôt que seulement après leur déploiement.",
+        "altLabels": []
+      }
+    },
+    "ethics-of-ai": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Éthique de l’IA",
+        "definition": "Ensemble de valeurs, principes, réglementations, règles institutionnelles et orientations pratiques servant à évaluer et gouverner la conception et l’usage de l’intelligence artificielle.",
+        "altLabels": []
+      }
+    },
+    "evidence-based-decision-making": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Prise de décision fondée sur des données probantes",
+        "definition": "Utilisation de données et de preuves pour éclairer les décisions relatives à l’enseignement, à l’apprentissage, aux programmes, aux politiques et à la gestion des systèmes éducatifs.",
+        "altLabels": []
+      }
+    },
+    "evidence-based-practice": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Pratique fondée sur des données probantes",
+        "definition": "Utilisation de recherches crédibles et de preuves empiriques pour guider la conception, la mise en œuvre et l’amélioration des expériences et systèmes d’apprentissage.",
+        "altLabels": []
+      }
+    },
+    "experience-design": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Conception d’expérience",
+        "definition": "Pratique de conception visant à façonner les qualités sensorielles, émotionnelles, cognitives, comportementales et sociales d’une expérience pour la rendre plus significative et mémorable.",
+        "altLabels": []
+      }
+    },
+    "experiential-learning": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Apprentissage expérientiel",
+        "definition": "Apprentissage où les connaissances se construisent par l’expérience et la réflexion, souvent décrit comme un processus récursif d’expérience, réflexion, conceptualisation et action.",
+        "altLabels": []
+      }
+    },
+    "exploratory-research": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Recherche exploratoire",
+        "definition": "Recherche portant sur des questions ouvertes, des possibilités émergentes et des champs de conception incertains, où les questions, méthodes ou résultats évoluent à mesure que les preuves s’accumulent.",
+        "altLabels": []
+      }
+    },
+    "extended-mooc-xmooc": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "MOOC transmissif (xMOOC)",
+        "definition": "Modèle de cours en ligne ouvert à grande échelle conservant libre accès et participation massive tout en adoptant généralement des structures pédagogiques instructivistes plus traditionnelles.",
+        "altLabels": []
+      }
+    },
+    "external-representation": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Représentation externe",
+        "definition": "Objet concret, tel qu’un croquis, modèle, carte conceptuelle ou prototype, qui rend visible le raisonnement de conception pour soutenir réflexion, communication, collaboration et itération.",
+        "altLabels": []
+      }
+    },
+    "extraneous-cognitive-load": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Charge cognitive extrinsèque",
+        "definition": "Effort mental provoqué par des caractéristiques de la tâche ou de sa présentation ne contribuant pas directement à l’objectif d’apprentissage.",
+        "altLabels": []
+      }
+    },
+    "fairness": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Équité de traitement",
+        "definition": "Évaluation visant à déterminer si données, modèles, évaluations, processus ou décisions traitent les personnes et groupes de façon appropriée selon des critères pertinents.",
+        "altLabels": []
+      }
+    },
+    "feedback-loop": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Boucle de rétroaction",
+        "definition": "Cycle où les informations sur les résultats ou le comportement du système sont transmises aux apprenants, enseignants, concepteurs ou systèmes pour influencer les actions suivantes.",
+        "altLabels": []
+      }
+    },
+    "flipped-classroom": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Classe inversée",
+        "definition": "Approche pédagogique déplaçant la transmission directe des contenus hors du temps de classe et consacrant les rencontres en présence à des activités d’apprentissage plus interactives.",
+        "altLabels": []
+      }
+    },
+    "flow": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "État de flux",
+        "definition": "État d’engagement profond où défi et compétences sont bien ajustés et où l’attention se concentre fortement sur l’activité.",
+        "altLabels": []
+      }
+    },
+    "formative-assessment": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Évaluation formative des apprentissages",
+        "definition": "Évaluation réalisée pendant l’apprentissage pour recueillir des informations guidant l’amélioration, la rétroaction, l’enseignement ou les étapes suivantes, plutôt que de seulement certifier un résultat final.",
+        "altLabels": []
+      }
+    },
+    "formative-evaluation": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Évaluation formative",
+        "definition": "Évaluation visant principalement à fournir une rétroaction utilisable pour améliorer l’enseignement, la gestion, la mise en œuvre ou l’efficacité scolaire.",
+        "altLabels": []
+      }
+    },
+    "full-time-equivalent-teacher-fte": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Enseignant en équivalent temps plein (ETP)",
+        "definition": "Mesure normalisée de la charge de travail d’un enseignant par rapport à un emploi à temps plein, rapportée aux heures de travail réglementaires habituelles de la période de référence.",
+        "altLabels": []
+      }
+    },
+    "fully-qualified-teacher": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Enseignant pleinement qualifié",
+        "definition": "Enseignant ayant satisfait toutes les exigences de formation et administratives prévues par la réglementation nationale pour enseigner à un niveau et dans une matière donnés.",
+        "altLabels": []
+      }
+    },
+    "future-learning-ecosystem": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Écosystème d’apprentissage du futur",
+        "definition": "Vision de l’apprentissage comme continuum connecté tout au long de la vie, plutôt qu’une succession d’épisodes isolés, avec des expériences adaptées aux individus à travers lieux, médias, organisations et périodes.",
+        "altLabels": []
+      }
+    },
+    "growth-mindset": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "État d’esprit de développement",
+        "definition": "Conviction que les capacités peuvent se développer au fil du temps grâce aux efforts, stratégies efficaces, rétroactions et apprentissages.",
+        "altLabels": []
+      }
+    },
+    "human-accountability-in-ai": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Responsabilité humaine en matière d’IA",
+        "definition": "Principe selon lequel les personnes restent responsables des décisions et résultats des boucles décisionnelles humain-IA et ne peuvent transférer cette responsabilité à un système d’IA.",
+        "altLabels": []
+      }
+    },
+    "human-agency-in-ai": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Pouvoir d’agir humain face à l’IA",
+        "definition": "Capacité des personnes à conserver une autonomie, un jugement et une maîtrise réels dans l’évaluation et l’utilisation des systèmes d’IA, sans laisser l’IA remplacer les décisions humaines.",
+        "altLabels": []
+      }
+    },
+    "human-support-system": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Système de soutien humain",
+        "definition": "Ensemble de personnes, rôles, pratiques et structures organisationnelles offrant conseils, accompagnement, enseignement, facilitation ou autres formes de soutien aux apprenants.",
+        "altLabels": []
+      }
+    },
+    "human-centered-education": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Éducation centrée sur l’humain",
+        "definition": "Approche considérant l’apprentissage comme une activité profondément humaine et sociale et utilisant la technologie pour soutenir les relations entre apprenants, éducateurs et communautés.",
+        "altLabels": []
+      }
+    },
+    "human-centred-approach-to-ai": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Approche de l’IA centrée sur l’humain",
+        "definition": "Approche plaçant capacités et droits humains, inclusion, sécurité, responsabilité et développement durable au cœur de la conception, sélection, utilisation et surveillance des systèmes d’IA.",
+        "altLabels": []
+      }
+    },
+    "human-centred-mindset": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "État d’esprit centré sur l’humain",
+        "definition": "Orientation fondée sur des valeurs et attitudes envers l’interaction humain-IA, maintenant droits, épanouissement, pouvoir d’agir et responsabilité humains au centre de l’usage de l’IA.",
+        "altLabels": []
+      }
+    },
+    "human-controlled-ai-in-education": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "IA sous contrôle humain dans l’éducation",
+        "definition": "Principe selon lequel la sélection, l’utilisation, la surveillance et les décisions importantes impliquant l’IA restent soumises à un contrôle et à une responsabilité humains effectifs.",
+        "altLabels": []
+      }
+    },
+    "human-systems-integration-hsi": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Intégration humain-systèmes (HSI)",
+        "definition": "Philosophie et ensemble de processus traitant de la performance humaine au niveau du système pendant sa conception, son développement, son exploitation et son cycle de vie élargi.",
+        "altLabels": []
+      }
+    },
+    "identified-group": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Groupe identifié",
+        "definition": "Groupe xAPI possédant son propre identifiant fonctionnel inverse, permettant de le reconnaître indépendamment de sa liste actuelle de membres.",
+        "altLabels": []
+      }
+    },
+    "ieee-1484-11-1-2022-content-object-communication": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "IEEE 1484.11.1-2022 — Data Model for Content Object Communication",
+        "definition": "Norme IEEE définissant le modèle de données pour échanger des renseignements sur apprenant, interactions, objectifs, statut, temps, préférences et résultats entre un objet de contenu pédagogique et un service d’exécution, généralement au sein d’un LMS.",
+        "altLabels": []
+      }
+    },
+    "ieee-1484-11-2-2020-ecmascript-runtime-api": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "IEEE 1484.11.2-2020 — ECMAScript API for Content-to-Runtime Communication",
+        "definition": "Norme IEEE définissant une interface de programmation ECMAScript entre contenu pédagogique et service d’exécution, généralement fourni par un LMS, et normalisant les services d’API pour l’échange de données d’apprentissage en cours d’exécution.",
+        "altLabels": []
+      }
+    },
+    "ieee-1484-12-1-2020-learning-object-metadata": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "IEEE 1484.12.1-2020 — Learning Object Metadata",
+        "definition": "Norme IEEE définissant le schéma conceptuel des métadonnées décrivant les objets pédagogiques, notamment cycle de vie, usage éducatif, exigences techniques, droits, relations, annotations et classifications.",
+        "altLabels": []
+      }
+    },
+    "ieee-1484-12-3-2020-xml-binding-learning-object-metadata": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "IEEE 1484.12.3-2020 — XML Binding for Learning Object Metadata",
+        "definition": "Norme IEEE définissant une liaison de schéma XML du W3C pour le modèle LOM afin d’encoder les instances de métadonnées en XML et de les échanger de façon cohérente entre systèmes.",
+        "altLabels": []
+      }
+    },
+    "ieee-1484-13-3-2014-mpeg21-mapping": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "IEEE 1484.13.3-2014 — MPEG-21 Digital Item Declaration Mapping",
+        "definition": "Pratique recommandée IEEE reliant éléments et attributs du modèle MPEG-21 Digital Item Declaration au modèle conceptuel IEEE d’agrégation de ressources d’apprentissage, d’éducation et de formation.",
+        "altLabels": []
+      }
+    },
+    "ieee-1484-13-4-2016-ims-content-packaging-mapping": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "IEEE 1484.13.4-2016 — IMS Content Packaging Mapping",
+        "definition": "Pratique recommandée IEEE reliant les éléments et attributs du modèle d’information IMS Content Packaging version 1.2 au modèle conceptuel IEEE d’agrégation de ressources éducatives et de formation.",
+        "altLabels": []
+      }
+    },
+    "ieee-1484-13-6-2015-oai-ore-mapping": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "IEEE 1484.13.6-2015 — OAI-ORE Resource Aggregation Mapping",
+        "definition": "Pratique recommandée IEEE reliant le modèle abstrait OAI-ORE et sa représentation de carte de ressources RDF/XML au modèle conceptuel IEEE d’agrégation de ressources.",
+        "altLabels": []
+      }
+    },
+    "ieee-1484-2-2024-learning-employment-record-ecosystems": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "IEEE 1484.2-2024 — Learning and Employment Record Ecosystems",
+        "definition": "Pratique recommandée IEEE pour les systèmes à l’échelle d’un écosystème émettant, conservant, présentant et échangeant des dossiers d’apprentissage et d’emploi (LER) à l’aide d’attestations numériques interopérables et de services partagés.",
+        "altLabels": []
+      }
+    },
+    "ieee-1484-20-2-2022-defining-competencies": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "IEEE 1484.20.2-2022 — Defining Competencies",
+        "definition": "Pratique recommandée IEEE pour définir compétences et référentiels, incluant les informations décrivant savoir-faire, connaissances, capacités, attitudes, habitudes professionnelles, comportements et acquis d’apprentissage favorisant l’interopérabilité des données.",
+        "altLabels": []
+      }
+    },
+    "ieee-1484-20-3-2022-shareable-competency-definitions": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "IEEE 1484.20.3-2022 — Shareable Competency Definitions",
+        "definition": "Norme IEEE définissant un modèle de données pour décrire, référencer et partager définitions et référentiels de compétences ainsi que rubriques d’évaluation entre systèmes d’apprentissage, de certification, de main-d’œuvre et d’emploi.",
+        "altLabels": []
+      }
+    },
+    "ieee-1589-2020-ar-learning-experience-model": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "IEEE 1589-2020 — Augmented Reality Learning Experience Model",
+        "definition": "Norme IEEE pour des systèmes interopérables d’apprentissage en réalité augmentée, définissant les liens entre monde physique, apprenant, informations numériques, activités et environnement, ainsi que des modèles de données et liaisons XML/JSON représentant activités et contexte.",
+        "altLabels": []
+      }
+    },
+    "ieee-2881-2025-learning-metadata-terms": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "IEEE 2881-2025 — Learning Metadata Terms",
+        "definition": "Norme IEEE définissant des classes et propriétés de métadonnées extensibles pour décrire ressources et événements d’apprentissage, compatibles avec les approches RDF et représentables notamment sous forme de graphes.",
+        "altLabels": []
+      }
+    },
+    "ieee-2955-2025-self-learning-tutorials-side-by-side-learning": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "IEEE 2955-2025 — Self-Learning Tutorials and Side-by-Side Learning",
+        "definition": "Pratique recommandée IEEE décrivant des méthodes de création de tutoriels d’autoformation, notamment par captures vidéo commentées ou narration orale, et des techniques d’apprentissage côte à côte.",
+        "altLabels": []
+      }
+    },
+    "ieee-3527-1-2020-digital-intelligence-framework": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "IEEE 3527.1-2020 — Digital Intelligence (DQ) Framework",
+        "definition": "Norme IEEE définissant un référentiel d’intelligence numérique, dont littératie, compétences et préparation numériques, dans huit domaines : identité, utilisation, sûreté, sécurité, intelligence émotionnelle, littératie, communication et droits, selon les niveaux de citoyenneté, créativité et compétitivité.",
+        "altLabels": []
+      }
+    },
+    "ieee-9274-1-1-2023-xapi": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "IEEE 9274.1.1-2023 — Experience API (xAPI)",
+        "definition": "Norme IEEE définissant le modèle de données xAPI et le service web REST permettant de communiquer les données d’expériences d’apprentissage et de performance humaine entre activités et Learning Record Store (LRS), selon un modèle JSON et des comportements dérivés de xAPI 1.0.3.",
+        "altLabels": []
+      }
+    },
+    "ieee-learning-technology-standards-committee-ltsc": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "IEEE Learning Technology Standards Committee (LTSC)",
+        "definition": "Comité de normalisation IEEE élaborant et maintenant les normes relatives aux technologies d’apprentissage et à l’interopérabilité des données associées.",
+        "altLabels": []
+      }
+    },
+    "implementation": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Mise en œuvre",
+        "definition": "Étape où une solution d’apprentissage est déployée dans son environnement prévu, surveillée, soutenue et ajustée selon les données probantes.",
+        "altLabels": []
+      }
+    },
+    "inference-modeling": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Modélisation des inférences",
+        "definition": "Utilisation de modèles pour inférer des états latents, relations ou explications à partir de données observées.",
+        "altLabels": []
+      }
+    },
+    "instructional-designer": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Concepteur pédagogique",
+        "definition": "Professionnel analysant les besoins d’apprentissage et concevant, développant, mettant en œuvre et évaluant enseignement, expériences pédagogiques, supports et systèmes connexes.",
+        "altLabels": []
+      }
+    },
+    "instructor-facilitated-learning": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Apprentissage accompagné par un formateur",
+        "definition": "Apprentissage où un formateur guide, structure, soutient les apprenants ou répond à leurs besoins pendant leurs activités.",
+        "altLabels": []
+      }
+    },
+    "instrumentation": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Instrumentation",
+        "definition": "Capteurs, logiciels, schémas, définitions d’événements, identifiants et processus permettant d’observer et de consigner ce qui se passe dans un système.",
+        "altLabels": []
+      }
+    },
+    "intelligent-tutoring-system": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Système tutoriel intelligent",
+        "definition": "Système pédagogique informatisé utilisant des procédures automatisées pour guider les apprenants dans la résolution de problèmes, fournir des indices et des rétroactions et adapter le soutien à leurs performances.",
+        "altLabels": []
+      }
+    },
+    "interaction-activity": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Interaction Activity",
+        "definition": "Définition d’activité xAPI décrivant une interaction, par exemple vrai-faux, choix, réponse à compléter, association, performance, mise en ordre, échelle de Likert ou réponse numérique.",
+        "altLabels": [
+          "Activité d’interaction"
+        ]
+      }
+    },
+    "interdisciplinary-exploratory-research": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Recherche exploratoire interdisciplinaire",
+        "definition": "Recherche exploratoire réunissant expertises, méthodes et perspectives de plusieurs disciplines pour étudier des questions émergentes et élaborer des approches inédites.",
+        "altLabels": []
+      }
+    },
+    "interdisciplinary-research-identity": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Identité de recherche interdisciplinaire",
+        "definition": "Identité professionnelle par laquelle les chercheurs situent leurs travaux au-delà des frontières disciplinaires et participent à des collaborations, méthodes et communautés traversant les domaines établis.",
+        "altLabels": []
+      }
+    },
+    "internationalized-resource-identifier-iri": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Identifiant internationalisé de ressource (IRI)",
+        "definition": "Format d’identifiant globalement unique utilisé dans xAPI pour identifier verbes, activités, types d’activités, extensions et concepts de vocabulaire ; les IRI peuvent contenir des caractères internationaux et comprennent un schéma.",
+        "altLabels": []
+      }
+    },
+    "internationalized-resource-locator-irl": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Internationalized Resource Locator (IRL)",
+        "definition": "Dans la norme xAPI, IRI pouvant être converti en URI ayant la fonction d’une URL.",
+        "altLabels": [
+          "Localisateur internationalisé de ressource (IRL)"
+        ]
+      }
+    },
+    "inverse-functional-identifier-ifi": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Identifiant fonctionnel inverse (IFI)",
+        "definition": "Identifiant utilisé par xAPI pour identifier de manière unique une persona d’agent ou un groupe, comme une adresse électronique, son empreinte, un OpenID ou un compte.",
+        "altLabels": []
+      }
+    },
+    "investigation-phase": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Phase d’investigation",
+        "definition": "Étape du processus d’ingénierie de l’apprentissage où les données recueillies sont analysées pour examiner les résultats et déterminer dans quelle mesure une solution répond au défi d’apprentissage.",
+        "altLabels": []
+      }
+    },
+    "iterative-design": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Conception itérative",
+        "definition": "Approche de conception dans laquelle les solutions sont créées, testées, évaluées et améliorées de façon répétée.",
+        "altLabels": []
+      }
+    },
+    "json": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "JSON",
+        "definition": "Format textuel léger représentant des données structurées au moyen d’objets, de tableaux, de noms et de valeurs.",
+        "altLabels": []
+      }
+    },
+    "json-ld": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "JSON-LD",
+        "definition": "Format de données liées fondé sur JSON, associant les structures JSON habituelles à des identifiants et relations sémantiques interprétables en RDF.",
+        "altLabels": []
+      }
+    },
+    "kanban": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Kanban",
+        "definition": "Méthode de gestion des flux de travail qui visualise les tâches, limite le travail en cours et favorise un flux continu.",
+        "altLabels": []
+      }
+    },
+    "knowledge-retention": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Rétention des connaissances",
+        "definition": "Persistance des connaissances ou compétences acquises dans le temps afin de pouvoir les retrouver et les utiliser ultérieurement.",
+        "altLabels": []
+      }
+    },
+    "language-map": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Language Map",
+        "definition": "Dictionnaire xAPI dont les clés sont des étiquettes de langue RFC 5646 et les valeurs des chaînes de caractères dans les langues correspondantes.",
+        "altLabels": [
+          "Carte linguistique"
+        ]
+      }
+    },
+    "laser-national-education-statistical-capacity-assessment": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "LASER",
+        "definition": "Cadre d’évaluation de l’Institut de statistique de l’UNESCO permettant d’apprécier et de renforcer les écosystèmes nationaux de données éducatives : évaluations des acquis, données administratives, enquêtes, dépenses, examen et suivi.",
+        "altLabels": []
+      }
+    },
+    "lean-agile": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Approche lean-agile",
+        "definition": "Famille d’approches associant développement itératif, fluidité, réduction des gaspillages, rétroaction rapide et création de valeur.",
+        "altLabels": []
+      }
+    },
+    "learner-agency": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Pouvoir d’agir de l’apprenant",
+        "definition": "Capacité et possibilité pour les apprenants de faire des choix, d’exercer un contrôle et de participer activement à l’orientation de leur apprentissage.",
+        "altLabels": []
+      }
+    },
+    "learner-feedback-loop": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Boucle de rétroaction de l’apprenant",
+        "definition": "Cycle dans lequel les données sur l’activité ou les résultats d’un apprenant éclairent les conseils, exercices, soutiens ou comportements ultérieurs du système.",
+        "altLabels": []
+      }
+    },
+    "learner-model": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Modèle de l’apprenant",
+        "definition": "Représentation de caractéristiques pertinentes d’un apprenant, comme connaissances, compétences, performances, préférences, objectifs, contexte ou états, utilisée pour guider l’enseignement ou la personnalisation.",
+        "altLabels": []
+      }
+    },
+    "learner-privacy": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Protection de la vie privée des apprenants",
+        "definition": "Protection et gestion des intérêts de confidentialité liés à la collecte, la modélisation, au partage, au stockage et à l’utilisation de données sur les apprenants et leurs activités.",
+        "altLabels": []
+      }
+    },
+    "learner-variability": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Variabilité des apprenants",
+        "definition": "Différences entre apprenants concernant besoins, origines, capacités, contextes, expériences et manières d’interagir avec un système d’apprentissage ou de l’utiliser.",
+        "altLabels": []
+      }
+    },
+    "learning-analytics": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Analytique de l’apprentissage",
+        "definition": "Analyse et utilisation des données d’environnements d’apprentissage pour comprendre et améliorer les expériences, stratégies pédagogiques et décisions connexes.",
+        "altLabels": []
+      }
+    },
+    "learning-analytics-dashboard": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Tableau de bord d’analytique de l’apprentissage",
+        "definition": "Interface visuelle présentant analyses d’apprentissage, profils d’activité, indicateurs de performance, relations ou interventions recommandées aux apprenants et autres parties prenantes.",
+        "altLabels": []
+      }
+    },
+    "learning-assessment": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Évaluation des acquis d’apprentissage",
+        "definition": "Processus structuré mesurant connaissances et compétences des apprenants dans des matières définies à certains âges ou niveaux scolaires, souvent pour estimer les acquis d’un système éducatif plus large.",
+        "altLabels": []
+      }
+    },
+    "learning-community": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Communauté d’apprentissage",
+        "definition": "Groupe d’apprenants collaborant sur des problèmes ou objectifs dans des espaces physiques ou virtuels, avec des normes, processus et soutiens communs.",
+        "altLabels": []
+      }
+    },
+    "learning-design-practitioner": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Professionnel de la conception d’apprentissage (LDP)",
+        "definition": "Terme générique désignant les personnes qui conçoivent ressources ou expériences d’apprentissage, notamment concepteurs pédagogiques, ingénieurs de l’apprentissage et technologues de l’éducation.",
+        "altLabels": []
+      }
+    },
+    "learning-ecosystem-governance": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Gouvernance de l’écosystème d’apprentissage",
+        "definition": "Structures et processus coordonnant autorités, politiques, ressources, normes, soutien, expérimentation et décisions à travers un écosystème d’apprentissage.",
+        "altLabels": []
+      }
+    },
+    "learning-engineer": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Ingénieur de l’apprentissage",
+        "definition": "Professionnel appliquant à grande échelle les preuves sur l’apprentissage et le développement humains pour créer des environnements d’apprentissage fiables, abordables et riches en données dans des contextes réels.",
+        "altLabels": []
+      }
+    },
+    "leed-tracker": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Registre LEED des preuves et décisions en ingénierie de l’apprentissage",
+        "definition": "Structure documentaire consignant décisions de conception, justifications, sources d’influence et révisions dans le cadre du processus d’ingénierie de l’apprentissage.",
+        "altLabels": []
+      }
+    },
+    "learning-engineering-team": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Équipe d’ingénierie de l’apprentissage",
+        "definition": "Personne ou groupe interdisciplinaire réuni pour répondre à un défi d’apprentissage, dont les compétences et connaissances dépendent du problème, du contexte, des apprenants, parties prenantes et besoins techniques.",
+        "altLabels": []
+      }
+    },
+    "learning-environment": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Environnement d’apprentissage",
+        "definition": "Ensemble des conditions physiques, numériques, sociales, organisationnelles et pédagogiques dans lesquelles l’apprentissage se déroule.",
+        "altLabels": []
+      }
+    },
+    "learning-environment-engineering": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Ingénierie des environnements d’apprentissage",
+        "definition": "Application de méthodes d’ingénierie et de systèmes à la conception, à l’intégration et à l’amélioration des environnements d’apprentissage.",
+        "altLabels": []
+      }
+    },
+    "learning-event": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Événement d’apprentissage",
+        "definition": "Occurrence ou interaction ponctuelle observable ou enregistrable dans le cadre d’une expérience d’apprentissage ou de performance.",
+        "altLabels": []
+      }
+    },
+    "learning-experience": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Expérience d’apprentissage",
+        "definition": "Événement lié à l’apprentissage, incluant au sens large cours, lecture, terrain, travail autonome, obtention d’un certificat et autres expériences formelles ou informelles.",
+        "altLabels": []
+      }
+    },
+    "learning-experience-design-lxd": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Conception d’expériences d’apprentissage (LXD)",
+        "definition": "Conception d’expériences, environnements, interactions et soutiens destinés à aider les personnes à apprendre.",
+        "altLabels": []
+      }
+    },
+    "learning-metadata": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Métadonnées d’apprentissage",
+        "definition": "Informations descriptives structurées sur les ressources, activités, compétences ou autres entités liées à l’apprentissage.",
+        "altLabels": []
+      }
+    },
+    "learning-network": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Réseau d’apprentissage",
+        "definition": "Réseau de relations entre apprenants, enseignants, parents et communautés élargies favorisant enseignement et apprentissage au-delà des frontières institutionnelles.",
+        "altLabels": []
+      }
+    },
+    "learning-organization": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Organisation apprenante",
+        "definition": "Organisation développant sa capacité à apprendre des preuves et expérimentations, à tester des solutions itératives et à adapter ses pratiques selon les enseignements tirés.",
+        "altLabels": []
+      }
+    },
+    "learning-poverty": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Pauvreté des apprentissages",
+        "definition": "Indicateur mesurant la proportion d’enfants de dix ans incapables de lire et comprendre une histoire simple.",
+        "altLabels": []
+      }
+    },
+    "learning-record-consumer-lrc": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Learning Record Consumer (LRC)",
+        "definition": "Client xAPI récupérant des enregistrements d’apprentissage auprès d’un ou plusieurs LRS pour les interpréter, analyser, traduire, diffuser ou agréger.",
+        "altLabels": []
+      }
+    },
+    "learning-record-provider-lrp": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Learning Record Provider (LRP)",
+        "definition": "Logiciel ou composant système observant des activités et envoyant à un LRS des enregistrements d’événements d’apprentissage conformes aux normes.",
+        "altLabels": []
+      }
+    },
+    "lifelong-learning": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Apprentissage tout au long de la vie",
+        "definition": "Vision de l’apprentissage comme activité continue durant toute l’existence et dans des contextes formels, non formels, informels, professionnels, communautaires et vécus.",
+        "altLabels": []
+      }
+    },
+    "linked-data": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Données liées",
+        "definition": "Méthode de publication et de connexion de données structurées sur le Web à l’aide d’identifiants persistants et de relations lisibles par machine, reliant l’information entre jeux de données et systèmes.",
+        "altLabels": []
+      }
+    },
+    "locus-of-control": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Lieu de contrôle",
+        "definition": "Croyance selon laquelle les résultats dépendent principalement de ses propres actions ou de forces indépendantes de sa volonté.",
+        "altLabels": []
+      }
+    },
+    "long-term-memory": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Mémoire à long terme",
+        "definition": "Système de mémoire permettant le stockage durable puis la récupération de connaissances et de compétences sur des périodes prolongées.",
+        "altLabels": []
+      }
+    },
+    "machine-learning": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Apprentissage automatique",
+        "definition": "Méthodes informatiques apprenant des régularités à partir de données pour produire prédictions, classifications, recommandations ou autres résultats.",
+        "altLabels": []
+      }
+    },
+    "massive-open-online-course-mooc": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Cours en ligne ouvert et massif (MOOC)",
+        "definition": "Cours en ligne conçu pour l’accès ouvert et la participation à grande échelle, souvent auprès d’apprenants de différents établissements et régions.",
+        "altLabels": []
+      }
+    },
+    "mastery-learning": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Apprentissage de maîtrise",
+        "definition": "Approche pédagogique exigeant des apprenants la démonstration d’un niveau défini de maîtrise avant de passer à des contenus ou compétences plus avancés.",
+        "altLabels": []
+      }
+    },
+    "maturity-model": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Modèle de maturité",
+        "definition": "Cadre par étapes servant à évaluer les capacités actuelles et orienter leur amélioration progressive, sans faire de la conformité au niveau maximal l’unique objectif.",
+        "altLabels": []
+      }
+    },
+    "meaningful-learning": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Apprentissage significatif",
+        "definition": "Apprentissage marqué par un engagement intentionnel, actif, constructif, authentique et coopératif permettant de relier les expériences et de construire des compréhensions utilisables.",
+        "altLabels": []
+      }
+    },
+    "mentorship": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Mentorat",
+        "definition": "Relation de développement où une personne expérimentée montre des connaissances ou compétences et propose progressivement à un apprenant des occasions plus complexes de participer à un travail authentique.",
+        "altLabels": []
+      }
+    },
+    "meta-adaptation": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Méta-adaptation",
+        "definition": "Adaptation couvrant plusieurs systèmes ou ressources d’apprentissage, où un système utilise des données partagées pour recommander ou coordonner des interventions au-delà de son propre environnement pédagogique.",
+        "altLabels": []
+      }
+    },
+    "metacognition": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Métacognition",
+        "definition": "Conscience et régulation par l’apprenant de sa pensée, compréhension, de ses stratégies et processus d’apprentissage.",
+        "altLabels": []
+      }
+    },
+    "metacognitive-monitoring": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Surveillance métacognitive",
+        "definition": "Processus d’observation et d’évaluation de sa propre compréhension, performance, de ses stratégies et progrès pendant un apprentissage ou une tâche.",
+        "altLabels": []
+      }
+    },
+    "metadata-consumer": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Consommateur de métadonnées",
+        "definition": "Personne, organisation, logiciel ou autre entité déterminant la signification d’un IRI ou récupérant des métadonnées à son sujet.",
+        "altLabels": []
+      }
+    },
+    "metadata-provider": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Fournisseur de métadonnées",
+        "definition": "Personne, organisation, logiciel ou autre entité créant des IRI destinés à xAPI ou hébergeant les métadonnées décrivant ces IRI.",
+        "altLabels": []
+      }
+    },
+    "metadata-tagging": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Étiquetage par métadonnées",
+        "definition": "Pratique consistant à associer des termes descriptifs ou identifiants structurés à des ressources, événements, compétences ou autres entités d’apprentissage.",
+        "altLabels": []
+      }
+    },
+    "micro-credential": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Microcertification",
+        "definition": "Attestation d’une réalisation démontrée dans une unité d’apprentissage ou compétence plus petite qu’un diplôme ou qualification majeure traditionnelle.",
+        "altLabels": []
+      }
+    },
+    "microlearning": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Microapprentissage",
+        "definition": "Apprentissage proposé en unités courtes et ciblées, souvent autonomes, souples et utilisables au moment du besoin.",
+        "altLabels": []
+      }
+    },
+    "minimum-proficiency-level": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Niveau de compétence minimal",
+        "definition": "Repère indiquant les connaissances ou compétences de base attendues dans un domaine, comme la lecture ou les mathématiques, à un âge ou niveau scolaire donné.",
+        "altLabels": []
+      }
+    },
+    "mixed-reality": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Réalité mixte",
+        "definition": "Continuum de technologies immersives comprenant réalité virtuelle et augmentée, combinant expériences physiques et numériques à différents degrés.",
+        "altLabels": []
+      }
+    },
+    "mobile-learning": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Apprentissage mobile",
+        "definition": "Apprentissage dispensé ou soutenu par des appareils mobiles, permettant souvent un accès généralisé et adapté au contexte au moment du besoin.",
+        "altLabels": []
+      }
+    },
+    "modeling-and-simulation": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Modélisation et simulation",
+        "definition": "Utilisation de représentations abstraites ou informatiques pour étudier le fonctionnement de systèmes, scénarios, comportements ou conceptions dans différentes conditions.",
+        "altLabels": []
+      }
+    },
+    "motivation": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Motivation",
+        "definition": "Processus influençant le déclenchement, l’orientation, la persévérance et la valeur accordée par un apprenant à une activité.",
+        "altLabels": []
+      }
+    },
+    "multi-channel-remote-learning": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Apprentissage à distance multicanal",
+        "definition": "Apprentissage à distance utilisant plusieurs canaux, tels que radio, télévision, appareils mobiles et plateformes en ligne, pour atteindre les apprenants malgré des niveaux d’accès différents.",
+        "altLabels": []
+      }
+    },
+    "multi-stakeholder-approach": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Approche multipartite",
+        "definition": "Approche réunissant des acteurs internes et externes au système éducatif pour concevoir et mettre en œuvre des programmes et politiques de technologies éducatives.",
+        "altLabels": []
+      }
+    },
+    "multimedia-learning": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Apprentissage multimédia",
+        "definition": "Apprentissage utilisant plusieurs modes de présentation, par exemple mots, narration, images, animations ou autres médias dans un environnement pédagogique.",
+        "altLabels": []
+      }
+    },
+    "named-graph": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Graphe nommé",
+        "definition": "Dans le modèle de serveur de profils xAPI, graphe RDF stockant une version de profil sous son URI afin qu’elle puisse être interrogée directement.",
+        "altLabels": []
+      }
+    },
+    "national-sdg-4-benchmark": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Valeur de référence nationale pour le SDG 4",
+        "definition": "Repère quantitatif défini nationalement traduisant les ambitions mondiales de l’ODD 4 en cibles adaptées au contexte pour le suivi des progrès, la responsabilité, la planification et le dialogue politique.",
+        "altLabels": []
+      }
+    },
+    "networked-community": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Communauté en réseau",
+        "definition": "Communauté connectée de chercheurs, praticiens et autres participants partageant leurs expertises, tissant des relations, favorisant la collaboration et prolongeant les travaux entre projets et disciplines.",
+        "altLabels": []
+      }
+    },
+    "nudge": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Coup de pouce comportemental",
+        "definition": "Intervention de conception discrète visant à orienter un comportement vers un choix souhaité sans supprimer d’options ni imposer de directive explicite.",
+        "altLabels": []
+      }
+    },
+    "observational-learning": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Apprentissage par observation",
+        "definition": "Apprentissage résultant de l’observation des comportements, stratégies, actions ou conséquences vécues par d’autres personnes.",
+        "altLabels": []
+      }
+    },
+    "online-learning-modality": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Modalité d’apprentissage en ligne",
+        "definition": "Mode d’apprentissage en ligne ou à distance caractérisable notamment par la participation synchrone ou asynchrone et par un accompagnement assuré par un formateur ou des ressources.",
+        "altLabels": []
+      }
+    },
+    "open-educational-resources-oer": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Ressources éducatives libres (REL)",
+        "definition": "Ressources d’apprentissage mises à disposition librement pour être utilisées, partagées et souvent adaptées selon des licences ouvertes.",
+        "altLabels": []
+      }
+    },
+    "open-standards-and-architecture-for-interoperability": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Normes ouvertes et architecture d’interopérabilité",
+        "definition": "Utilisation de normes technologiques ouvertes et d’architectures interopérables pour partager les données entre applications, systèmes et organisations de façon efficace, appropriée et sûre.",
+        "altLabels": []
+      }
+    },
+    "operational-feasibility": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Faisabilité opérationnelle",
+        "definition": "Degré auquel une solution d’apprentissage envisagée peut être mise en œuvre, soutenue, gouvernée, maintenue et pérennisée dans son environnement réel d’exploitation.",
+        "altLabels": []
+      }
+    },
+    "organizational-leadership": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Leadership organisationnel",
+        "definition": "Pratique consistant à fixer une orientation, mobiliser les personnes et ressources, façonner la culture et permettre à une organisation d’atteindre des objectifs communs.",
+        "altLabels": []
+      }
+    },
+    "pattern-validation": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Validation des Patterns",
+        "definition": "Processus de validation d’une série de déclarations partageant une inscription et, le cas échéant, une sous-inscription, afin de vérifier leur conformité à un motif de profil donné.",
+        "altLabels": [
+          "Validation des motifs"
+        ]
+      }
+    },
+    "pedagogical-agent": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Agent pédagogique",
+        "definition": "Personnage animé ou informatique conçu pour jouer le rôle de tuteur, pair, guide ou autre présence sociale dans une technologie pédagogique.",
+        "altLabels": []
+      }
+    },
+    "pedagogy": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Pédagogie",
+        "definition": "Théorie et pratique de l’enseignement, comprenant les choix de méthodes, progression, interaction, explication, exercices et soutien.",
+        "altLabels": []
+      }
+    },
+    "person-object": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Person Object",
+        "definition": "Objet de réponse xAPI combinant les identifiants connus d’un agent en tableaux de valeurs, présentant les données dans une perspective centrée sur la personne tout en restant distinct d’une persona d’agent.",
+        "altLabels": [
+          "Objet Person"
+        ]
+      }
+    },
+    "persona": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Persona",
+        "definition": "Représentation d’un type d’utilisateur fondée sur la recherche, aidant les équipes à raisonner sur ses objectifs, comportements, contextes et besoins.",
+        "altLabels": []
+      }
+    },
+    "personalization": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Personnalisation",
+        "definition": "Adaptation du contenu, de la progression, du soutien, de l’interface ou des objectifs d’apprentissage aux caractéristiques ou besoins d’un apprenant donné.",
+        "altLabels": []
+      }
+    },
+    "personalized-learning": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Apprentissage personnalisé",
+        "definition": "Apprentissage conçu autour des besoins d’un élève et visant à offrir des possibilités adaptées dans les contextes scolaires et familiaux.",
+        "altLabels": []
+      }
+    },
+    "practitioner-expertise": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Expertise du praticien",
+        "definition": "Connaissances et jugement professionnel acquis par la pratique directe, notamment compréhension des apprenants, milieux, processus, contraintes et mises en œuvre.",
+        "altLabels": []
+      }
+    },
+    "predictive-modeling": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Modélisation prédictive",
+        "definition": "Utilisation de modèles statistiques ou d’apprentissage automatique pour estimer des résultats, probabilités ou comportements futurs à partir de données disponibles.",
+        "altLabels": []
+      }
+    },
+    "prior-knowledge": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Connaissances antérieures",
+        "definition": "Connaissances et compréhension dont un apprenant dispose déjà et qu’il mobilise pour interpréter de nouvelles idées.",
+        "altLabels": []
+      }
+    },
+    "privacy-by-design": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Protection de la vie privée dès la conception",
+        "definition": "Approche intégrant les protections de la vie privée dès l’architecture et le développement du système plutôt qu’après son déploiement.",
+        "altLabels": []
+      }
+    },
+    "privacy-nudging": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Incitation à la protection de la vie privée",
+        "definition": "Utilisation d’indices d’interface, de paramètres par défaut, d’explications ou d’autres interventions de conception pour aider les utilisateurs à faire des choix de confidentialité mieux éclairés.",
+        "altLabels": []
+      }
+    },
+    "problem-space": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Espace du problème",
+        "definition": "Cadre contextuel d’un défi d’apprentissage, réunissant conditions, contraintes, apprenants, parties prenantes, systèmes et incertitudes façonnant les solutions possibles.",
+        "altLabels": []
+      }
+    },
+    "procedural-knowledge": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Connaissances procédurales",
+        "definition": "Connaissances permettant de suivre une procédure, d’exécuter une tâche ou de résoudre un problème.",
+        "altLabels": []
+      }
+    },
+    "productive-mindset": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "État d’esprit productif",
+        "definition": "Ensemble de croyances et d’attitudes favorisant effort, persévérance, recours aux stratégies et engagement face aux défis d’apprentissage.",
+        "altLabels": []
+      }
+    },
+    "profile-author": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Auteur de profil",
+        "definition": "Personne ou groupe rédigeant un profil xAPI.",
+        "altLabels": []
+      }
+    },
+    "profile-server": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Serveur de profils",
+        "definition": "Service centralisé permettant de rechercher, consulter, interroger, stocker et gérer des profils xAPI, concepts de vocabulaire et métadonnées de profils associées.",
+        "altLabels": []
+      }
+    },
+    "profile-validator": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Validateur de profils",
+        "definition": "Personne ou machine vérifiant qu’un ensemble donné de données xAPI respecte les règles d’un profil.",
+        "altLabels": []
+      }
+    },
+    "profile-version": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Version de profil",
+        "definition": "État d’un profil xAPI à un moment donné, avec un historique des versions conservable et interrogeable séparément.",
+        "altLabels": []
+      }
+    },
+    "profile-based-statement-conformance": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Conformité des déclarations à un profil",
+        "definition": "Conformité selon laquelle les Statements respectent les Statement Templates et les Patterns applicables définis par une version d’un profil xAPI. Lorsqu’un Learning Record Provider indique cette version au moyen d’une category context activity, les Statements doivent respecter les exigences correspondantes. Les fournisseurs conformes devraient indiquer la version conforme la plus récente du profil lorsqu’ils produisent des Statements respectant ses modèles et motifs.",
+        "altLabels": []
+      }
+    },
+    "project-management": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Gestion de projet",
+        "definition": "Discipline consistant à planifier, coordonner, suivre et maîtriser le travail pour atteindre des objectifs sous contraintes de portée, délais, coûts, qualité et ressources.",
+        "altLabels": []
+      }
+    },
+    "prototype": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Prototype",
+        "definition": "Représentation préliminaire d’une solution envisagée servant à explorer des idées, tester des hypothèses, recueillir des avis ou réduire l’incertitude.",
+        "altLabels": []
+      }
+    },
+    "rapid-prototyping": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Prototypage rapide",
+        "definition": "Pratique de création rapide de versions limitées ou peu coûteuses d’une solution afin de les tester et de les modifier.",
+        "altLabels": []
+      }
+    },
+    "reflective-design-documentation": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Documentation réflexive de la conception",
+        "definition": "Documentation utilisée pendant la conception pour expliciter les décisions, raisonnements et contextes afin de pouvoir réfléchir au travail et y revenir au fil de son évolution.",
+        "altLabels": []
+      }
+    },
+    "registration": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "registration",
+        "definition": "Identifiant d’une occurrence dans laquelle un acteur fait l’expérience d’une activité particulière.",
+        "altLabels": [
+          "Inscription xAPI"
+        ]
+      }
+    },
+    "remote-learning": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Apprentissage à distance",
+        "definition": "Apprentissage où apprenants et enseignants peuvent être séparés dans le temps ou l’espace et interagissent au moyen d’ordinateurs ou de technologies de télécommunication.",
+        "altLabels": []
+      }
+    },
+    "resource-allocation": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Allocation des ressources",
+        "definition": "Affectation de personnes, budgets, temps, technologies et autres ressources à des travaux ou objectifs.",
+        "altLabels": []
+      }
+    },
+    "resource-description-framework-rdf": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Resource Description Framework (RDF)",
+        "definition": "Modèle de données sémantiques représentant l’information par des relations sujet-prédicat-objet, permettant de combiner identifiants et relations entre jeux de données.",
+        "altLabels": []
+      }
+    },
+    "resource-facilitated-learning": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Apprentissage soutenu par des ressources",
+        "definition": "Apprentissage où ressources structurées, outils, contenus ou systèmes automatisés assurent une grande partie du soutien guidant l’activité des apprenants.",
+        "altLabels": []
+      }
+    },
+    "responsible-ai": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "IA responsable",
+        "definition": "Conception, utilisation et gouvernance des systèmes d’IA tenant compte des données probantes, de la sécurité, de la protection de la vie privée, de l’équité, de la transparence, de la responsabilité et des conséquences pour les personnes.",
+        "altLabels": []
+      }
+    },
+    "rest-api": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "API REST",
+        "definition": "Style d’interface web où les logiciels échangent ressources et données au moyen des méthodes HTTP standard et conventions réseau.",
+        "altLabels": []
+      }
+    },
+    "result-object": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Result Object",
+        "definition": "Composant facultatif d’une déclaration xAPI représentant un résultat mesuré, notamment score, réussite, achèvement, réponse, durée ou extensions.",
+        "altLabels": [
+          "Objet de résultat"
+        ]
+      }
+    },
+    "retrieval-practice": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Pratique de récupération en mémoire",
+        "definition": "Stratégie d’apprentissage amenant les apprenants à se remémorer activement des informations plutôt qu’à simplement les relire ou les réviser.",
+        "altLabels": []
+      }
+    },
+    "review-and-monitoring": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Examen et suivi",
+        "definition": "Publication, examen et suivi systématiques des informations éducatives par rapport aux plans, indicateurs, cibles et valeurs de référence, afin de favoriser la transparence, la responsabilité et l’amélioration continue.",
+        "altLabels": []
+      }
+    },
+    "safe-and-responsible-use-of-ai": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Utilisation sûre et responsable de l’IA",
+        "definition": "Utilisation de l’IA conformément aux règles éthiques et aux exigences juridiques applicables, dans le respect de la vie privée et de la propriété intellectuelle, en atténuant les biais et les préjudices et en préservant la responsabilité humaine.",
+        "altLabels": []
+      }
+    },
+    "samr-model": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Modèle SAMR",
+        "definition": "Cadre décrivant quatre niveaux d’utilisation des technologies dans l’apprentissage : substitution, augmentation, modification et redéfinition.",
+        "altLabels": []
+      }
+    },
+    "scaffolding": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Étayage pédagogique",
+        "definition": "Soutien temporaire aidant les apprenants à réaliser des tâches ou comprendre des idées dépassant encore leurs capacités autonomes.",
+        "altLabels": []
+      }
+    },
+    "scalability": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Passage à l’échelle",
+        "definition": "Capacité d’une solution, d’un système ou d’un processus d’apprentissage à absorber une croissance des utilisateurs, données, complexité, portée ou demande sans dégradation inacceptable.",
+        "altLabels": []
+      }
+    },
+    "school-compliance-reporting": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Rapports réglementaires des établissements scolaires",
+        "definition": "Rapports et formulaires transmis aux autorités supérieures dans le cadre des obligations réglementaires de reddition de comptes.",
+        "altLabels": []
+      }
+    },
+    "scrum": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Scrum",
+        "definition": "Cadre agile organisant le travail en cycles courts avec des rôles définis, de la planification, des bilans et des adaptations.",
+        "altLabels": []
+      }
+    },
+    "security": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Sécurité",
+        "definition": "Protection des systèmes et données contre les accès, modifications, divulgations, interruptions ou destructions non autorisés.",
+        "altLabels": []
+      }
+    },
+    "self-efficacy": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Sentiment d’efficacité personnelle",
+        "definition": "Conviction d’une personne quant à sa capacité à accomplir une tâche précise ou à réussir dans un contexte donné.",
+        "altLabels": []
+      }
+    },
+    "self-monitoring": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Autosurveillance",
+        "definition": "Observation continue par un apprenant de son temps, de ses tâches, de sa compréhension, de son stress, de ses progrès et de ses comportements afin d’identifier les ajustements nécessaires.",
+        "altLabels": []
+      }
+    },
+    "self-regulated-learning": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Apprentissage autorégulé",
+        "definition": "Apprentissage où les personnes planifient, surveillent, évaluent et adaptent leurs objectifs, stratégies, efforts et comportements.",
+        "altLabels": []
+      }
+    },
+    "sensemaking": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Construction du sens",
+        "definition": "Processus social et cognitif d’interprétation d’informations complexes ou ambiguës en reliant observations, expériences, récits et contexte partagé.",
+        "altLabels": []
+      }
+    },
+    "sensor": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Capteur",
+        "definition": "Mécanisme matériel ou logiciel détectant un événement, état, signal ou condition et le rendant disponible pour enregistrement ou traitement.",
+        "altLabels": []
+      }
+    },
+    "shareable-competency-definition-scd": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Shareable Competency Definition (SCD)",
+        "definition": "Représentation exploitable par machine permettant de définir et d’échanger des compétences conformément à la norme IEEE 1484.20.3.",
+        "altLabels": []
+      }
+    },
+    "short-term-memory": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Mémoire à court terme",
+        "definition": "Mémoire conservant temporairement une quantité limitée d’informations pour un usage immédiat.",
+        "altLabels": []
+      }
+    },
+    "signed-statement": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Déclaration signée",
+        "definition": "Déclaration xAPI incluant une signature web JSON (JWS) en pièce jointe afin de vérifier l’authenticité et l’intégrité de sa sérialisation originale.",
+        "altLabels": []
+      }
+    },
+    "simple-knowledge-organization-system-skos": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Simple Knowledge Organization System (SKOS)",
+        "definition": "Vocabulaire du W3C représentant les concepts et leurs relations sémantiques sous une forme lisible par machine.",
+        "altLabels": []
+      }
+    },
+    "simulation": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Simulation",
+        "definition": "Représentation d’un environnement, processus ou système réel ou imaginaire utilisée pour la pratique, l’expérimentation, l’analyse ou les essais.",
+        "altLabels": []
+      }
+    },
+    "social-constructivism": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Socioconstructivisme",
+        "definition": "Conception de l’apprentissage insistant sur le rôle de l’interaction, du langage, de la culture et de l’activité collective dans la construction des connaissances.",
+        "altLabels": []
+      }
+    },
+    "social-hardening": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Renforcement social de la sécurité",
+        "definition": "Recours à la formation, aux exercices et à l’apprentissage organisationnel pour renforcer la capacité des personnes à reconnaître, prévenir, contenir et gérer les menaces de sécurité.",
+        "altLabels": []
+      }
+    },
+    "social-learning": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Apprentissage social",
+        "definition": "Apprentissage se développant par l’interaction avec d’autres personnes et communautés, notamment observation, conversation, collaboration, participation et construction collective du sens.",
+        "altLabels": []
+      }
+    },
+    "social-responsibility-in-ai-education": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Responsabilité sociale dans l’éducation à l’IA",
+        "definition": "Responsabilité de considérer les effets plus larges de l’IA sur le bien-être humain, l’inclusion, la justice sociale, la vie civique et l’environnement, et d’agir en conséquence.",
+        "altLabels": []
+      }
+    },
+    "software-engineering": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Génie logiciel",
+        "definition": "Conception, développement, test, déploiement, maintenance et évolution systématiques des systèmes logiciels.",
+        "altLabels": []
+      }
+    },
+    "source-of-influence": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Source d’influence",
+        "definition": "Facteur cité pour éclairer ou justifier une décision de conception, tel que données, recherche, expérience, besoins des parties prenantes, technologies ou contexte.",
+        "altLabels": []
+      }
+    },
+    "spaced-repetition": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Répétition espacée",
+        "definition": "Stratégie d’apprentissage réexaminant les informations à des intervalles croissants ou choisis stratégiquement plutôt que de concentrer les exercices en une seule séance.",
+        "altLabels": []
+      }
+    },
+    "sparql": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "SPARQL",
+        "definition": "Langage de requête pour données RDF permettant d’interroger des jeux de données sémantiques selon leurs entités, propriétés et relations.",
+        "altLabels": []
+      }
+    },
+    "stakeholder-engagement": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Mobilisation des parties prenantes",
+        "definition": "Pratique associant les personnes touchées par un défi ou une solution d’apprentissage, qui en sont responsables ou peuvent les influencer.",
+        "altLabels": []
+      }
+    },
+    "stakeholder-requirement": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Exigence d’une partie prenante",
+        "definition": "Objectif, exigence, recommandation ou idée exprimé par une partie prenante et influençant une décision de conception.",
+        "altLabels": []
+      }
+    },
+    "standards-compliance": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Conformité aux normes",
+        "definition": "Degré de respect des exigences d’une norme ou spécification publiée par un système, une mise en œuvre ou un jeu de données.",
+        "altLabels": []
+      }
+    },
+    "state-resource": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "State Resource",
+        "definition": "Ressource xAPI située à /activities/state pour stocker et récupérer des documents d’état associés à un agent ou groupe identifié dans une activité, éventuellement liés à une inscription.",
+        "altLabels": [
+          "Ressource d’état"
+        ]
+      }
+    },
+    "statement-immutability": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Immutabilité des déclarations",
+        "definition": "Principe xAPI selon lequel les parties sémantiques essentielles d’une déclaration ne changent pas après stockage ; la norme distingue les propriétés immuables et celles qui peuvent varier sans en modifier le sens fondamental.",
+        "altLabels": []
+      }
+    },
+    "statement-reference": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Référence de déclaration",
+        "definition": "Objet xAPI référençant une autre déclaration par son UUID et utilisant le type d’objet StatementRef.",
+        "altLabels": []
+      }
+    },
+    "statement-resource": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Ressource de déclarations",
+        "definition": "Ressource LRS située à /statements pour stocker et récupérer des déclarations xAPI seules, en lots ou sous forme de résultats filtrés.",
+        "altLabels": []
+      }
+    },
+    "statement-result": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Résultat de requête de déclarations",
+        "definition": "Structure de réponse renvoyée lorsqu’une requête LRS récupère plusieurs déclarations, contenant ces déclarations et, si nécessaire, un lien vers la suite des résultats.",
+        "altLabels": []
+      }
+    },
+    "statement-template": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Modèle de déclaration",
+        "definition": "Ensemble de règles décrivant une structure possible des déclarations utilisant des concepts particuliers conformément à un profil.",
+        "altLabels": []
+      }
+    },
+    "statement-template-rule": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Règle de modèle de déclaration",
+        "definition": "Restriction d’un modèle de déclaration désignant un ou plusieurs emplacements par JSONPath et limitant les valeurs ou leur présence à ces emplacements.",
+        "altLabels": []
+      }
+    },
+    "statement-template-validation": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Validation des modèles de déclaration",
+        "definition": "Processus vérifiant une déclaration par rapport aux modèles de déclaration d’un profil pour déterminer les modèles correspondants et vérifier le respect de leurs règles.",
+        "altLabels": []
+      }
+    },
+    "strategic-planning": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Planification stratégique",
+        "definition": "Processus structuré définissant un état futur souhaité, analysant les conditions présentes, identifiant priorités et contraintes, puis organisant actions et ressources pour atteindre les objectifs organisationnels.",
+        "altLabels": []
+      }
+    },
+    "streaming-learning-data": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Flux continu de données d’apprentissage",
+        "definition": "Flux continu de données d’activités et d’événements générées quand les apprenants interagissent avec des systèmes, contenus, personnes et environnements numériques.",
+        "altLabels": []
+      }
+    },
+    "subject-matter-expert-sme": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Expert du domaine (SME)",
+        "definition": "Personne possédant des connaissances approfondies ou une expertise de performance dans le domaine auquel s’adresse une solution d’apprentissage.",
+        "altLabels": []
+      }
+    },
+    "subregistration": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "subregistration",
+        "definition": "Extension des profils xAPI distinguant plusieurs motifs suivis dans une même inscription xAPI.",
+        "altLabels": [
+          "Sous-inscription"
+        ]
+      }
+    },
+    "substatement": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Sous-déclaration (SubStatement)",
+        "definition": "Objet xAPI semblable à une déclaration, intégré à une autre déclaration, contenant acteur, verbe et objet, éventuellement résultat, contexte, horodatage et pièces jointes, mais ne pouvant contenir une autre sous-déclaration.",
+        "altLabels": []
+      }
+    },
+    "summative-assessment": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Évaluation sommative",
+        "definition": "Évaluation utilisée pour juger ou documenter les acquis à la fin d’une période, d’un cours ou d’une séquence d’enseignement définie.",
+        "altLabels": []
+      }
+    },
+    "survey-data": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Données d’enquête",
+        "definition": "Données éducatives recueillies notamment par enquêtes auprès des ménages, enquêtes sur la population active et recensements, fournissant souvent des informations absentes des systèmes administratifs.",
+        "altLabels": []
+      }
+    },
+    "synchronous-learning": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Apprentissage synchrone",
+        "definition": "Activité d’apprentissage en temps réel où les participants interviennent simultanément, souvent dans un environnement physique ou virtuel partagé.",
+        "altLabels": []
+      }
+    },
+    "system-of-systems": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Système de systèmes",
+        "definition": "Capacité globale constituée de plusieurs systèmes indépendants ou semi-indépendants dont les interactions produisent des comportements et résultats à l’échelle de l’organisation.",
+        "altLabels": []
+      }
+    },
+    "systems-thinking": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Pensée systémique",
+        "definition": "Approche de compréhension des problèmes examinant composants, relations, rétroactions, frontières et comportements de l’ensemble du système.",
+        "altLabels": []
+      }
+    },
+    "task-analysis": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Analyse des tâches",
+        "definition": "Méthode identifiant actions, connaissances, décisions, conditions, outils et exigences de performance nécessaires à l’exécution d’une tâche.",
+        "altLabels": []
+      }
+    },
+    "unesco-teaching-and-training": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Enseignement et formation",
+        "definition": "Méthodes et processus organisés facilitant l’apprentissage et le développement de connaissances ou compétences par l’enseignement, la pratique, l’accompagnement et la formation.",
+        "altLabels": []
+      }
+    },
+    "unesco-technical-and-vocational-study-subjects": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Matières de l’enseignement technique et professionnel",
+        "definition": "Domaines d’études axés sur les connaissances et compétences techniques et professionnelles, y compris la préparation à des métiers qualifiés et à des professions spécifiques.",
+        "altLabels": []
+      }
+    },
+    "technology-affordance": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Possibilité offerte par une technologie",
+        "definition": "Fonction ou capacité d’une technologie mobilisable stratégiquement pour soutenir une décision de conception pédagogique.",
+        "altLabels": []
+      }
+    },
+    "technology-constraint": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Contrainte technologique",
+        "definition": "Limite d’une technologie ou plateforme restreignant ou délimitant un choix de conception.",
+        "altLabels": []
+      }
+    },
+    "testing-for-learning-impact": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Évaluation de l’impact sur les apprentissages",
+        "definition": "Évaluation cherchant à déterminer si une solution modifie apprentissage, rétention, transfert, performance ou autres résultats visés, au-delà de la seule utilisabilité ou satisfaction.",
+        "altLabels": []
+      }
+    },
+    "total-cost-of-ownership-tco": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Coût total de possession (CTP)",
+        "definition": "Coût sur l’ensemble du cycle de vie de l’acquisition, intégration, exploitation, soutien, modification et retrait d’une technologie ou d’un système.",
+        "altLabels": []
+      }
+    },
+    "total-learning-architecture-tla": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Total Learning Architecture (TLA)",
+        "definition": "Approche fondée sur des normes pour des écosystèmes d’apprentissage interopérables, reliant données d’activités, informations sur les apprenants, compétences, analyses et autres services entre systèmes.",
+        "altLabels": []
+      }
+    },
+    "trustworthy-ai-for-education": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "IA digne de confiance pour l’éducation",
+        "definition": "IA utilisée dans l’éducation qui soit fiable, sûre, résistante aux manipulations, protectrice de la vie privée et des données sensibles et adaptée à l’âge des apprenants et aux besoins pédagogiques.",
+        "altLabels": []
+      }
+    },
+    "ubiquitous-learning": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Apprentissage ubiquitaire",
+        "definition": "Vision de l’apprentissage présent dans de multiples lieux, moments, appareils et contextes, formels, non formels, informels, professionnels et quotidiens.",
+        "altLabels": []
+      }
+    },
+    "usability-testing": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Test d’utilisabilité",
+        "definition": "Évaluation où des utilisateurs représentatifs accomplissent des tâches afin d’observer les réussites, incompréhensions et difficultés d’une interface ou expérience.",
+        "altLabels": []
+      }
+    },
+    "user-testing": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Test auprès des utilisateurs",
+        "definition": "Évaluation directe d’une conception ou d’un système avec ses utilisateurs prévus ou représentatifs.",
+        "altLabels": []
+      }
+    },
+    "user-centered-design": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Conception centrée sur l’utilisateur",
+        "definition": "Approche partant des besoins, contextes et expériences des utilisateurs finaux et parties prenantes pour concevoir des solutions souples et inclusives.",
+        "altLabels": []
+      }
+    },
+    "user-directed-customization": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Personnalisation pilotée par l’utilisateur",
+        "definition": "Possibilité pour les utilisateurs d’adapter le comportement ou la configuration d’une technologie d’apprentissage selon leurs besoins, expérience, contexte ou niveau de soutien souhaité.",
+        "altLabels": []
+      }
+    },
+    "user-tailored-privacy": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Protection de la vie privée adaptée à l’utilisateur",
+        "definition": "Approche de protection de la vie privée dans laquelle un système modélise les préoccupations d’un apprenant en la matière et adapte les informations, les recommandations ou l’aide à la décision à cet utilisateur.",
+        "altLabels": []
+      }
+    },
+    "value-stream-mapping": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Cartographie de la chaîne de valeur",
+        "definition": "Méthode lean visualisant le flux de travail pour repérer retards, transferts, goulets d’étranglement et activités sans valeur ajoutée.",
+        "altLabels": []
+      }
+    },
+    "vendor-lock-in": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Dépendance envers un fournisseur",
+        "definition": "Situation où des choix technologiques antérieurs limitent les décisions futures, car systèmes, données ou services sont difficiles à déplacer, remplacer ou intégrer.",
+        "altLabels": []
+      }
+    },
+    "verb": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Verb",
+        "definition": "Élément xAPI identifiant l’action d’un acteur, défini par un IRI ; une carte linguistique peut fournir un libellé lisible par les personnes.",
+        "altLabels": [
+          "Verbe xAPI"
+        ]
+      }
+    },
+    "verifiable-learning-and-employment-record": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Dossier vérifiable d’apprentissage et d’emploi",
+        "definition": "Dossier contenant informations sur apprentissages, compétences, réalisations ou emploi, conçu pour que d’autres parties puissent vérifier les assertions.",
+        "altLabels": []
+      }
+    },
+    "virtual-classroom": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Classe virtuelle",
+        "definition": "Environnement d’apprentissage collectif créé par logiciel et soutenu par des communications informatiques en réseau plutôt que par une salle physique partagée.",
+        "altLabels": []
+      }
+    },
+    "virtual-world": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Monde virtuel",
+        "definition": "Environnement persistant en réseau où les personnes sont représentées par des avatars et interagissent entre elles et avec l’environnement par ordinateur.",
+        "altLabels": []
+      }
+    },
+    "voided-statement": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Déclaration invalidée",
+        "definition": "Déclaration xAPI antérieure marquée comme invalide par une déclaration distincte d’invalidation qui la cible au moyen d’une référence de déclaration.",
+        "altLabels": []
+      }
+    },
+    "whole-of-government-approach": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Approche pangouvernementale",
+        "definition": "Approche où plusieurs ministères et autorités coordonnent leurs actions face à une politique ou un défi de mise en œuvre commun, plutôt que de le confier à un seul organisme.",
+        "altLabels": []
+      }
+    },
+    "whole-person-development": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Développement global de la personne",
+        "definition": "Approche du développement considérant les capacités cognitives, sociales, émotionnelles et physiques comme des dimensions interdépendantes de l’apprentissage tout au long de la vie.",
+        "altLabels": []
+      }
+    },
+    "worked-example": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Exemple résolu",
+        "definition": "Démonstration détaillée des étapes d’une tâche ou résolution d’un problème, montrant aux apprenants comment construire une solution complète.",
+        "altLabels": []
+      }
+    },
+    "working-memory": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Mémoire de travail",
+        "definition": "Système de mémoire à capacité limitée dans lequel l’information est traitée consciemment avant une éventuelle consolidation dans la mémoire à long terme.",
+        "altLabels": []
+      }
+    },
+    "x-experience-api-version": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "X-Experience-API-Version",
+        "definition": "En-tête HTTP utilisé dans les requêtes et réponses xAPI pour déclarer la version xAPI employée.",
+        "altLabels": []
+      }
+    },
+    "xapi-agent": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Agent xAPI",
+        "definition": "Représentation xAPI d’un acteur individuel, identifié par une propriété d’identité définie par la norme et éventuellement accompagné d’un nom.",
+        "altLabels": []
+      }
+    },
+    "xapi-authority": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Autorité xAPI",
+        "definition": "Agent ou groupe présenté dans une déclaration comme attestant sa véracité ; le LRS vérifie ou définit cette autorité selon l’authentification et les relations de confiance.",
+        "altLabels": []
+      }
+    },
+    "xapi-client": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Client xAPI",
+        "definition": "Toute entité interagissant avec les services xAPI par des requêtes, notamment fournisseurs ou consommateurs d’enregistrements, LRS et autres systèmes.",
+        "altLabels": []
+      }
+    },
+    "xapi-concurrency-control": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Contrôle de concurrence xAPI",
+        "definition": "Utilisation par xAPI des étiquettes d’entité HTTP (ETags) et des en-têtes de requête conditionnelle, notamment If-Match et If-None-Match, pour empêcher que des mises à jour ou des suppressions de ressources State, Agent Profile ou Activity Profile reposent sur des données périmées.",
+        "altLabels": []
+      }
+    },
+    "xapi-document": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Document xAPI",
+        "definition": "Données documentaires stockées au moyen des ressources xAPI État, Profil d’agent ou Profil d’activité, sous forme générique liée à une activité, un agent ou groupe identifié et, pour l’état, éventuellement à une inscription.",
+        "altLabels": []
+      }
+    },
+    "xapi-duration": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Durée xAPI",
+        "definition": "Valeur représentant le temps écoulé d’une expérience ou d’un résultat, au format de durée ISO 8601 référencé par xAPI.",
+        "altLabels": []
+      }
+    },
+    "xapi-extension": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Extension xAPI",
+        "definition": "Propriété personnalisée d’une carte d’extensions xAPI utilisant un IRI comme clé et une valeur ou structure JSON quelconque comme valeur, pouvant figurer dans les définitions d’activité, contextes ou résultats de déclaration.",
+        "altLabels": []
+      }
+    },
+    "xapi-group": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Groupe xAPI",
+        "definition": "Représentation xAPI d’un ensemble d’agents en tant qu’acteur ; le groupe peut disposer de son propre identifiant ou être anonyme et représenté par ses membres.",
+        "altLabels": []
+      }
+    },
+    "xapi-pattern": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Motif xAPI",
+        "definition": "Description de groupes de déclarations xAPI correspondant à certains modèles de déclaration et organisées suivant des structures d’ordre définies.",
+        "altLabels": []
+      }
+    },
+    "xapi-persona": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Persona xAPI",
+        "definition": "Ensemble d’une ou plusieurs représentations d’identité décrivant de façon unique un acteur dans un contexte particulier, distinct de la personne réelle plus large.",
+        "altLabels": []
+      }
+    },
+    "xapi-timestamp": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Horodatage xAPI",
+        "definition": "Moment où l’événement décrit par une déclaration s’est produit, représenté selon les règles d’horodatage xAPI, notamment les formats ISO 8601 et RFC 3339.",
+        "altLabels": []
+      }
+    },
+    "yerkes-dodson-law": {
+      "status": "approved",
+      "reviewer": "Shelly Blake-Plock",
+      "reviewedOn": "2026-10-16",
+      "fr": {
+        "prefLabel": "Loi de Yerkes-Dodson",
+        "definition": "Principe selon lequel la performance varie avec l’activation ou le stress, souvent représenté par une courbe en U inversé dont l’optimum dépend des caractéristiques de la tâche.",
+        "altLabels": []
+      }
     }
   }
 }
