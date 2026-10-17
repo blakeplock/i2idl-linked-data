@@ -1,0 +1,41 @@
+/* I2IDL static concept pages — design aligned with glossary v0.0.92 */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Syne+Mono&display=swap");
+:root{--i2-purple:#3b174b;--i2-purple-deep:#24102d;--i2-purple-soft:#efe8f2;--i2-lilac:#c9b9cf;--i2-ink:#151219;--i2-muted:#665f69;--i2-paper:#fbfaf8;--i2-white:#ffffff;--i2-line:#ded8e1;--i2-orange:#ff9f1c;--i2-orange-deep:#934500}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--i2-paper);color:var(--i2-ink);font:16px/1.6 "Lato",Arial,sans-serif}
+a{color:var(--i2-purple);text-underline-offset:4px}
+a:hover{color:var(--i2-orange-deep)}
+a:focus-visible{outline:3px solid var(--i2-orange);outline-offset:4px}
+.concept-header{background:var(--i2-purple);color:var(--i2-white);padding:23px 24px}
+.concept-header-inner{max-width:1000px;margin:auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px}
+.concept-header-actions{display:flex;align-items:center;justify-content:flex-end;gap:18px;flex-wrap:wrap}
+.concept-brand{color:#fff;font-weight:900;font-size:18px;line-height:1.25;text-decoration:none;max-width:350px}
+.concept-brand:hover{color:var(--i2-orange)}
+.concept-glossary-button{display:inline-block;padding:10px 18px;border-radius:999px;background:var(--i2-orange);color:var(--i2-purple-deep);font-weight:900;text-decoration:none}
+.concept-glossary-button:hover{background:#ffc46b;color:var(--i2-purple-deep)}
+.concept-language{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:12px}
+.concept-language span{font:11px "Syne Mono","Courier New",monospace;color:#e7dae9}
+.concept-language a{color:#fff;text-decoration:none;padding:5px 7px;border:1px solid rgba(255,255,255,.25);border-radius:7px}
+.concept-language a[aria-current="page"]{background:#fff;color:var(--i2-purple-deep);font-weight:900}
+main{max-width:1000px;margin:32px auto 64px;padding:0 24px}
+h1,h2,h3{color:var(--i2-purple-deep)}
+h1{font-size:clamp(34px,5vw,56px);line-height:1.12;letter-spacing:-.035em;margin:12px 0 28px;font-weight:900}
+h2{font-size:23px;line-height:1.25;margin:0 0 16px}
+section{padding:28px;margin-bottom:20px;background:#fff;border:1px solid var(--i2-line);border-radius:18px}
+.concept-definition{border-top:5px solid var(--i2-orange)}
+.definition{font-size:clamp(20px,2.4vw,26px);line-height:1.5;color:var(--i2-purple-deep);margin:0}
+.muted{color:var(--i2-muted);font-size:14px}
+.concept-kicker,.concept-definition-label{font-family:"Syne Mono","Courier New",monospace;text-transform:uppercase;letter-spacing:.055em;font-size:11px}
+.concept-kicker{margin:0 0 8px;color:var(--i2-purple)}
+.concept-definition-label{color:var(--i2-orange-deep)}
+.concept-continue{background:var(--i2-purple-soft);border-color:var(--i2-lilac)}
+.concept-continue a{display:inline-block;margin-top:6px;font-weight:900}
+.concept-related{display:flex;gap:10px;flex-wrap:wrap;list-style:none;padding:0;margin:0}
+.concept-related li{margin:0}
+.concept-related a{display:inline-block;padding:7px 12px;background:var(--i2-purple-soft);border:1px solid var(--i2-lilac);border-radius:999px;text-decoration:none;font-weight:700;font-size:14px}
+ul{padding-left:22px}li{margin-bottom:12px}
+.concept-data{font-size:14px}
+footer{border-top:1px solid var(--i2-line);max-width:1000px;margin:0 auto;padding:30px 24px 48px;color:var(--i2-muted);font-size:13px}
+@media(max-width:640px){.concept-header{padding:22px 20px}.concept-header-actions{justify-content:flex-start}main{padding:0 16px;margin-top:24px}section{padding:22px 18px}h1{font-size:35px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

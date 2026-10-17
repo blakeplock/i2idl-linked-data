@@ -27,3 +27,6 @@ for (const [filename, obj] of [['public/glossary-core.json',core],['public/gloss
   fs.writeFileSync(filename,text);
   console.log(`${filename}: ${(Buffer.byteLength(text)/1024).toFixed(1)} KB`);
 }
+// Generate and verify static bilingual HTML from the same publication snapshot.
+execFileSync(process.execPath, ['scripts/build-concept-pages.mjs', '--all'], { stdio:'inherit' });
+execFileSync(process.execPath, ['scripts/validate-concept-pages.mjs'], { stdio:'inherit' });
