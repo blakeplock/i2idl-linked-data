@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://id.i2idl.org/sitemap.xml

@@ -898,6 +898,9 @@ WHERE {
       </a>
     </p>
   </main>
+  <footer class="i2idl-copyright" style="max-width:1180px;margin:0 auto;padding:20px 24px 36px;border-top:1px solid #ded8e1;color:#665f69;font-size:12px">
+    © 2026 Institute for Infrastructure and Interoperable Data in Learning (I2IDL) · Developer resources
+  </footer>
   <script src="/sparql-i18n.js" defer></script>
 </body>
 </html>`;

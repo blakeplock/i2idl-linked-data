@@ -92,10 +92,10 @@
     "Copied": "Copié",
     "Select URL to copy": "Sélectionnez l’URL à copier",
     "Primary": "Navigation principale",
-    "© I2IDL · Glossary of Digital Learning · Developer resources": "© Institut pour l’infrastructure et les données interopérables dans l’apprentissage (I2IDL) · Glossaire de l’apprentissage numérique · Ressources pour les développeurs",
     "QUERY": "REQUÊTE",
     "VISUAL": "VISUEL",
-    "Query curated concepts, navigate semantic relationships, and ground AI applications in source-attributed knowledge. One public glossary, five interoperable interfaces.": "Interrogez des concepts sélectionnés et validés, explorez leurs relations sémantiques et fondez les applications d’IA sur des connaissances accompagnées de leurs sources. Un glossaire public, cinq interfaces interopérables."
+    "Query curated concepts, navigate semantic relationships, and ground AI applications in source-attributed knowledge. One public glossary, five interoperable interfaces.": "Interrogez des concepts sélectionnés et validés, explorez leurs relations sémantiques et fondez les applications d’IA sur des connaissances accompagnées de leurs sources. Un glossaire public, cinq interfaces interopérables.",
+    "© 2026 Institute for Infrastructure and Interoperable Data in Learning (I2IDL) · Developer resources": "© 2026 Institute for Infrastructure and Interoperable Data in Learning (I2IDL) · Ressources pour les développeurs"
 };
 
   const originals = new WeakMap();

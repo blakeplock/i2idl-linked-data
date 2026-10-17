@@ -34,7 +34,8 @@
   "List collections": "Lister les collections",
   "Collection members": "Membres de la collection",
   "List sources": "Lister les sources",
-  "Retrieve source": "Récupérer une source"
+  "Retrieve source": "Récupérer une source",
+  "© 2026 Institute for Infrastructure and Interoperable Data in Learning (I2IDL) · Developer resources": "© 2026 Institute for Infrastructure and Interoperable Data in Learning (I2IDL) · Ressources pour les développeurs"
 };
   const originals = new WeakMap();
   const originalAttributes = new WeakMap();

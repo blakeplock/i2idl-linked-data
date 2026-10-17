@@ -3,6 +3,7 @@
 import ParserJsonld from '@rdfjs/parser-jsonld';
 import { Writer } from 'n3';
 import { Readable } from 'node:stream';
+import { readFile } from 'node:fs/promises';
 
 const BASE = 'https://id.i2idl.org';
 const HUMAN_GLOSSARY = 'https://www.i2idl.org/glossary';
@@ -228,28 +229,12 @@ function assertInlineContext(data) {
   }
 }
 
-async function loadGraph(request) {
-  // Fixed same-origin URL only. Request parameters never influence this fetch.
-  const url =
-    new URL(
-      '/glossary.jsonld',
-      request.url
-    );
-
-  const response =
-    await fetch(url);
-
-  if (!response.ok) {
-    throw new Error(
-      `Unable to load glossary graph (${response.status})`
-    );
-  }
-
-  const graph =
-    await response.json();
-
+async function loadGraph() {
+  // Use the bundled publication snapshot, avoiding protected preview self-fetches.
+  const graph = JSON.parse(
+    await readFile(new URL('../public/glossary.jsonld', import.meta.url), 'utf8')
+  );
   assertInlineContext(graph);
-
   return graph;
 }
 
@@ -713,7 +698,7 @@ export default {
           }
 
           return Response.redirect(
-            `${HUMAN_GLOSSARY}?concept=${encodeURIComponent(decodedId)}`,
+            new URL(`/terms/${encodeURIComponent(decodedId)}/`, url.origin).href,
             303
           );
         }

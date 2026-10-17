@@ -19,7 +19,8 @@
   "Example CONSTRUCT query": "Exemple de requête CONSTRUCT",
   "Example DESCRIBE query": "Exemple de requête DESCRIBE",
   "Full JSON-LD graph:": "Graphe JSON-LD complet :",
-  "Human-readable glossary:": "Glossaire destiné aux lecteurs :"
+  "Human-readable glossary:": "Glossaire destiné aux lecteurs :",
+  "© 2026 Institute for Infrastructure and Interoperable Data in Learning (I2IDL) · Developer resources": "© 2026 Institute for Infrastructure and Interoperable Data in Learning (I2IDL) · Ressources pour les développeurs"
 };
   const originals = new WeakMap();
   const originalTitle = document.title;

@@ -27,7 +27,7 @@ export default async function handler(req,res){
   const index=await graphResponse.json();const entries=ids.map(id=>index.entries?.find(e=>e.id===id));if(entries.some(x=>!x))return res.status(404).json({error:'Unknown concept'});
   const terms=entries.map(e=>cleanTitle(e.term));if(terms.some(x=>!x||x.length>150))throw Error('Invalid concept label');
   const multi=terms.length>1;const searches=multi?terms.slice(1).map(term=>[terms[0],term].join(' ')):[terms[0]];
-  const datasets=await Promise.allSettled(searches.map(async query=>{const url=new URL(DOMAIN);url.searchParams.set('search',query);url.searchParams.set('per_page',multi?'25':'15');url.searchParams.set('sort',multi?'relevance_score:desc':ordering[sort]);
+  const datasets=await Promise.allSettled(searches.map(async query=>{const url=new URL(DOMAIN);url.searchParams.set('search',query);url.searchParams.set('per_page',sort==='relevant'?(multi?'25':'15'):'100');url.searchParams.set('sort','relevance_score:desc');
     const filters=[];if(fromYear)filters.push('from_publication_date:'+fromYear+'-01-01');if(toYear)filters.push('to_publication_date:'+toYear+'-12-31');if(oaRaw==='only')filters.push('is_oa:true');if(filters.length)url.searchParams.set('filter',filters.join(','));
     if(process.env.OPENALEX_API_KEY)url.searchParams.set('api_key',process.env.OPENALEX_API_KEY);const response=await fetch(url,{headers:{Accept:'application/json'},signal:AbortSignal.timeout(9500)});if(!response.ok)throw Error('OpenAlex HTTP '+response.status);const data=await response.json();return Array.isArray(data.results)?data.results:[]}));
   const good=datasets.filter(x=>x.status==='fulfilled');if(!good.length)return res.status(503).json({error:'OpenAlex queries unavailable or rate limited'});
@@ -36,6 +36,8 @@ export default async function handler(req,res){
   // Defense in depth: do not depend solely on upstream filtering.
   works=works.filter(w=>(!fromYear||(w.year!==null&&w.year>=fromYear))&&(!toYear||(w.year!==null&&w.year<=toYear))&&(oaRaw!=='only'||w.openAccess));
   if(multi)works=works.filter(w=>w.matchCount>=2);
+  else if(sort!=="relevant")works=works.filter(w=>w.matchCount>=1);
+  if(sort!=="relevant")works=works.filter(w=>w.year!==null&&w.year<=thisYear);
   for(const w of works){const age=w.year===null?null:Math.max(1,thisYear-w.year+1);w.citationsPerYear=age===null?null:Number((w.citations/age).toFixed(2));}
   works.sort((a,b)=>multi&&b.matchCount!==a.matchCount?b.matchCount-a.matchCount:sort==='foundational'?b.citations-a.citations:sort==='annual'?(b.citationsPerYear??-1)-(a.citationsPerYear??-1):sort==='recent'?(b.year||0)-(a.year||0):0);
   if(activityConfigured()){try{await recordResearch(works.slice(0,15).length)}catch(error){console.error('Research activity counter:',error.message)}}

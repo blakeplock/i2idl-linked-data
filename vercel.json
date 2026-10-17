@@ -287,6 +287,9 @@
     }
   ],
   "functions": {
+    "api/resolve.mjs": {
+      "includeFiles": "public/glossary.jsonld"
+    },
     "api/version-history.mjs": {
       "includeFiles": "versioning/**"
     }
