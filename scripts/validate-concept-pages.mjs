@@ -36,3 +36,4 @@ for (const e of entries) {
   }
 }
 console.log(`PASS: ${entries.length} concepts, ${urls.length} bilingual static pages, sitemap, robots and metadata`);
+import './validate-concept-seo.mjs';
