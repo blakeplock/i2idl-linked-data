@@ -66,14 +66,17 @@
     selector.id = "i2idl-language-selector";
     selector.setAttribute("aria-label", "Language / Langue");
     selector.innerHTML =
-      `<option value="en">EN</option><option value="fr">FR</option>`;
+      `<option value="en">English</option><option value="fr">Français</option>`;
 
-    selector.style.cssText =
-      "width:auto;min-width:78px;min-height:38px;padding:6px 10px;" +
-      "background:white;color:#30103e;border:1px solid #ded6e1;" +
-      "border-radius:6px;margin:0 0 16px;";
+    const control = document.createElement("div");
+    control.className = "i2idl-language-control";
 
-    header.prepend(selector);
+    const label = document.createElement("label");
+    label.htmlFor = selector.id;
+    label.textContent = "Language / Langue";
+
+    control.append(label, selector);
+    header.prepend(control);
 
     let lang = "en";
     try {
