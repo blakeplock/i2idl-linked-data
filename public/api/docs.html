@@ -37,17 +37,48 @@ response.raise_for_status()
 print(response.json()['items'])</pre></div><div class="card"><strong>cURL</strong><pre>curl --get \
   'https://id.i2idl.org/api/v1/concepts' \
   --data-urlencode 'q=learning'</pre></div><div class="card"><strong>Semantic identifiers</strong><p>Each concept retains its permanent URI. Use the JSON-LD and Turtle links in concept responses when you need RDF, and the historical versions endpoint for immutable revision metadata.</p></div></div></section></main>
+<script src="/api/docs-i18n.js" defer></script>
+<script src="/api/docs-i18n.js" defer></script>
 <script>
 'use strict';
 const route=document.getElementById('route'),inputs=document.getElementById('inputs'),result=document.getElementById('result'),status=document.getElementById('status'),urlOut=document.getElementById('url');
 let spec=null, selected=null;
 const name=s=>document.createTextNode(s);
-function render(){selected=route.value;inputs.replaceChildren();const op=spec.paths[selected].get;for(const param of op.parameters||[]){const wrap=document.createElement('div'),label=document.createElement('label'),input=document.createElement('input');input.id='p_'+param.name;label.htmlFor=input.id;label.append(name(param.name+(param.required?' (required)':'')));input.dataset.param=param.name;input.placeholder=param.name==='id'?'learning-engineering':param.name==='type'&&selected.includes('{type}')?'field':'';if(param.name==='id')input.value=selected.includes('/sources/')?'':selected.includes('/collections/')?'learning-engineering':'learning-engineering';if(param.name==='type'&&selected.includes('{type}'))input.value='field';if(param.name==='limit')input.placeholder='20';if(param.name==='offset')input.placeholder='0';wrap.append(label,input);inputs.append(wrap);input.addEventListener('input',updateUrl);}updateUrl();}
+const tr=s=>window.I2IDLDocsI18n?.translate(s,document.documentElement.lang)||s;
+function render(){selected=route.value;inputs.replaceChildren();const op=spec.paths[selected].get;for(const param of op.parameters||[]){const wrap=document.createElement('div'),label=document.createElement('label'),input=document.createElement('input');input.id='p_'+param.name;label.htmlFor=input.id;label.append(name(param.name+(param.required?(tr(' (required)') ):'')));input.dataset.param=param.name;input.placeholder=param.name==='id'?'learning-engineering':param.name==='type'&&selected.includes('{type}')?'field':'';if(param.name==='id')input.value=selected.includes('/sources/')?'':selected.includes('/collections/')?'learning-engineering':'learning-engineering';if(param.name==='type'&&selected.includes('{type}'))input.value='field';if(param.name==='limit')input.placeholder='20';if(param.name==='offset')input.placeholder='0';wrap.append(label,input);inputs.append(wrap);input.addEventListener('input',updateUrl);}updateUrl();}
 function makeURL(){let path=selected;const params=new URLSearchParams();for(const input of inputs.querySelectorAll('input')){const v=input.value.trim();if(!v)continue;const param=input.dataset.param;if(path.includes('{'+param+'}'))path=path.replace('{'+param+'}',encodeURIComponent(v));else params.append(param,v);}const base=new URL(path,location.origin);base.search=params.toString();return base;}
 function updateUrl(){urlOut.textContent=makeURL().href;}
-async function send(){const u=makeURL();if(u.pathname.includes('{')||u.pathname.includes('%7B')){status.textContent='Fill in required identifiers first.';return;}status.textContent='Loading…';result.textContent='';try{const res=await fetch(u.href,{headers:{Accept:'application/json'}});const data=await res.json();status.textContent='HTTP '+res.status+(res.ok?' · Success':' · Error');result.textContent=JSON.stringify(data,null,2);}catch(e){status.textContent='Request failed. Check network or endpoint.';result.textContent=String(e.message||e);}}
+async function send(){const u=makeURL();if(u.pathname.includes('{')||u.pathname.includes('%7B')){status.textContent=tr('Fill in required identifiers first.');return;}status.textContent=tr('Loading…');result.textContent='';try{const res=await fetch(u.href,{headers:{Accept:'application/json'}});const data=await res.json();status.textContent='HTTP '+res.status+(res.ok?tr(' · Success'):tr(' · Error'));result.textContent=JSON.stringify(data,null,2);}catch(e){status.textContent=tr('Request failed. Check network or endpoint.');result.textContent=String(e.message||e);}}
 document.getElementById('send').addEventListener('click',send);
-document.getElementById('copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(makeURL().href);status.textContent='URL copied';}catch{status.textContent='Copy from the URL shown above';}});
+document.getElementById('copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(makeURL().href);status.textContent=tr('URL copied');}catch{status.textContent=tr('Copy from the URL shown above');}});
 route.addEventListener('change',render);
-(async()=>{try{const res=await fetch('/api/openapi.json');if(!res.ok)throw Error('Specification unavailable');spec=await res.json();for(const [path,obj] of Object.entries(spec.paths)){if(!obj.get)continue;const option=document.createElement('option');option.value=path;option.textContent='GET '+path+' — '+obj.get.summary;route.append(option);}render();}catch(e){status.textContent='Unable to load OpenAPI specification';result.textContent=String(e);}})();
+
+function refreshLanguage() {
+  if (!spec) return;
+  const previousPath = route.value;
+  const previousValues = new Map(
+    [...inputs.querySelectorAll("input")].map(input => [
+      input.dataset.param, input.value
+    ])
+  );
+
+  for (const option of route.options) {
+    const summary = spec.paths[option.value]?.get?.summary || "";
+    option.textContent = "GET " + option.value + " — " + tr(summary);
+  }
+
+  route.value = previousPath;
+  render();
+
+  for (const input of inputs.querySelectorAll("input")) {
+    if (previousValues.has(input.dataset.param)) {
+      input.value = previousValues.get(input.dataset.param);
+    }
+  }
+  updateUrl();
+}
+
+document.addEventListener("i2idl-language-change", refreshLanguage);
+
+(async()=>{try{const res=await fetch('/api/openapi.json');if(!res.ok)throw Error('Specification unavailable');spec=await res.json();for(const [path,obj] of Object.entries(spec.paths)){if(!obj.get)continue;const option=document.createElement('option');option.value=path;option.textContent='GET '+path+' — '+obj.get.summary;route.append(option);}refreshLanguage();}catch(e){status.textContent=tr('Unable to load OpenAPI specification');result.textContent=String(e);}})();
 </script></body></html>
