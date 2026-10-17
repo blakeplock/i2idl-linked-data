@@ -928,6 +928,18 @@
   (function(){'use strict';
     const root=document.getElementById('i2idl-glossary');
     if(!root)return;
+    // Squarespace can intercept ordinary fragment-link navigation.
+    // Retain the real href for keyboard and no-JavaScript fallback.
+    const aboutJump = root.querySelector('.i2-about-jump');
+    if (aboutJump) {
+      aboutJump.addEventListener('click', function(event) {
+        const target = root.querySelector('#i2-how-title');
+        if (!target) return;
+        event.preventDefault();
+        event.stopPropagation();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, true);
+    }
     const select=root.querySelector('#i2-language');
     const params=new URLSearchParams(location.search);
     const requested=params.get('lang');
