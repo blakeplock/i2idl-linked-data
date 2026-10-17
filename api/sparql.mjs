@@ -113,7 +113,7 @@ function htmlResponse(html, status = 200) {
       'Content-Security-Policy': [
         "default-src 'self'",
         "style-src 'self' 'unsafe-inline'",
-        "script-src 'none'",
+        "script-src 'self'",
         "img-src 'none'",
         "connect-src 'self'",
         "object-src 'none'",
@@ -897,6 +897,7 @@ WHERE {
       </a>
     </p>
   </main>
+  <script src="/sparql-i18n.js" defer></script>
 </body>
 </html>`;
 }
