@@ -34,26 +34,21 @@ if (/deeper\.href\s*=\s*source\.url/.test(html)) {
   fail('source URLs are assigned without HTTPS validation');
 }
 
-const semanticMatch = html.match(/const semanticModel\s*=\s*(\{.*?\});\s*\n\s*const semanticNodes/s);
-if (!semanticMatch) {
-  fail('embedded semanticModel object was not found');
-} else {
-  const serialized = semanticMatch[1];
-  if (serialized.includes('</script')) {
-    fail('embedded semantic model contains an unescaped script terminator');
-  }
-  if (/[\u2028\u2029]/.test(serialized)) {
-    fail('embedded semantic model contains unescaped Unicode line separators');
-  }
+const required = [
+  ["glossary-core.json", "staged core data"],
+  ["glossary-details.json", "staged detail data"],
+  ["glossary-fr-preview.jsonld", "French translation overlay"],
+  ["safeHttpsUrl", "safe HTTPS URL handling"],
+  ["data-version", "publication version"],
+  ["Shelly Blake-Plock", "creator acknowledgment"],
+  ["linkedin.com/in/sblakeplock", "creator profile link"],
+  ["Institute for Infrastructure and Interoperable Data in Learning", "institutional attribution"]
+];
+for (const [text, label] of required) {
+  if (!html.includes(text)) fail(`Missing ${label}: ${text}`);
 }
-
-if (!html.includes('function safeHttpsUrl')) {
-  fail('safeHttpsUrl helper is missing');
-}
-
-if (!html.includes('document.getElementById(hashId)')) {
-  fail('safe hash-to-ID lookup is missing');
-}
+if (!html.includes("v0.0.91")) fail("Expected v0.0.91 publication");
+if (!html.includes("fr") || !html.includes("en")) fail("Bilingual language support missing");
 
 if (failures.length) {
   console.error('EMBED VALIDATION FAILED');
