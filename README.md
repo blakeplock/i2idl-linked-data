@@ -4,6 +4,8 @@ Open, interoperable Linked Data publication and research services for the [I2IDL
 
 > **Versioning:** I2IDL uses **one public release sequence** (`v0.0.88`, `v0.0.89`, …). Each release is classified **Content**, **Platform**, or **Combined**. The public release tag, `gs:publicationVersion`, and Squarespace displayed version are synchronized for each release, while concept revisions change only when concept-level assertions change. The npm package and MCP registry versions remain separate compatibility identifiers. See the [release policy](docs/PUBLICATION.md) and [release checklist](docs/RELEASE-CHECKLIST.md).
 
+**Current publication:** `v0.0.93` (Platform release; 420 concepts unchanged). Includes bilingual crawlable concept pages, structured metadata, improved research rankings, and automated SEO regression checks.
+
 ## Public resources
 
 | Resource | Purpose |
