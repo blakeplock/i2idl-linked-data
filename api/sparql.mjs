@@ -792,6 +792,7 @@ WHERE {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
   <title>I2IDL SPARQL Endpoint</title>
+  <link rel="stylesheet" href="/i2idl-language-selector.css">
   <style>
     :root { color-scheme: light; font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
     body { margin:0; background:#f7f5f0; color:#1f1f1f; }

@@ -47,7 +47,7 @@ const required = [
 for (const [text, label] of required) {
   if (!html.includes(text)) fail(`Missing ${label}: ${text}`);
 }
-if (!html.includes("v0.0.91")) fail("Expected v0.0.91 publication");
+if (!html.includes("v0.0.92")) fail("Expected v0.0.92 publication");
 if (!html.includes("fr") || !html.includes("en")) fail("Bilingual language support missing");
 
 if (failures.length) {

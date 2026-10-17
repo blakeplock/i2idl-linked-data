@@ -1,0 +1,59 @@
+.i2idl-language-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  padding: 6px 8px 6px 12px;
+  border: 1px solid rgba(255,255,255,.25);
+  border-radius: 8px;
+  background: rgba(255,255,255,.05);
+}
+.i2idl-language-control label {
+  color: #e7dae9;
+  font: 700 11px/1.3 Lato,Arial,sans-serif;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.i2idl-language-control select {
+  width: auto;
+  min-width: 112px;
+  min-height: 38px;
+  margin: 0;
+  padding: 6px 30px 6px 12px;
+  border: 1px solid rgba(255,255,255,.35);
+  border-radius: 6px;
+  background: rgba(255,255,255,.08);
+  color: white;
+  font: 700 13px Lato,Arial,sans-serif;
+  cursor: pointer;
+}
+.i2idl-language-control select option {
+  color: #3b174b;
+  background: white;
+}
+.i2idl-language-control select:focus-visible {
+  outline: 2px solid #ff9f1c;
+  outline-offset: 3px;
+}
+@media (max-width: 520px) {
+  .i2idl-language-control {
+    max-width: 100%;
+  }
+  .i2idl-language-control select {
+    min-width: 100px;
+  }
+}
+
+
+/* Shared placement for developer interface headers */
+header .i2idl-language-control {
+  margin: 0 0 24px auto;
+}
+
+@media (max-width: 520px) {
+  header .i2idl-language-control {
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
+}
