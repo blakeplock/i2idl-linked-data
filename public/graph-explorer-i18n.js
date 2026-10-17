@@ -71,7 +71,13 @@ function translateFooter(lang){const footer=document.querySelector('footer');if(
 
 function translateResearchIntro(lang){const p=document.querySelector('#research-discovery .workspace > p:first-child');if(!p)return;const nodes=[...p.childNodes].filter(n=>n.nodeType===Node.TEXT_NODE);const bold=p.querySelector('b');if(nodes.length!==2||!bold)return;nodes[0].nodeValue=lang==='fr'?'Sélectionnez un concept dans l’explorateur et cliquez sur ':'Select a concept in the Explorer and click ';bold.textContent=lang==='fr'?'Rechercher des publications':'Find research';nodes[1].nodeValue=lang==='fr'?' pour découvrir des publications dans OpenAlex. Le nombre de citations indique l’attention reçue, sans constituer une preuve de qualité.':' to discover publications in OpenAlex. Citation counts are indicators of attention, not proof of quality.';}
 
-function apply(){const select=document.getElementById('i2idl-language');const lang=select?.value==='fr'?'fr':'en';
+function updateCopyright() {
+  const notice = document.querySelector(".i2idl-copyright");
+  if (!notice) return;
+  const lang = document.getElementById("i2idl-language")?.value;
+  notice.setAttribute("lang", lang === "fr" ? "fr" : "en");
+}
+function apply(){updateCopyright();const select=document.getElementById('i2idl-language');const lang=select?.value==='fr'?'fr':'en';
  for(const [selector,pair] of Object.entries(copy))translateLeaf(selector,lang,pair);
   translateFooter(lang);
   translateResearchIntro(lang);
