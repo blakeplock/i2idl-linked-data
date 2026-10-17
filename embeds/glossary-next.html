@@ -933,7 +933,7 @@
     const aboutJump = root.querySelector('.i2-about-jump');
     if (aboutJump) {
       aboutJump.addEventListener('click', function(event) {
-        const target = root.querySelector('#i2-how-title');
+        const target = root.querySelector('#i2-how-title')?.closest('.i2-license-panel');
         if (!target) return;
         event.preventDefault();
         event.stopPropagation();
@@ -941,7 +941,7 @@
         // scrolling across unrendered sections can stop short as layout settles.
         // Jump immediately and correct against the target's live position.
         const alignAbout = () => {
-          const top = window.scrollY + target.getBoundingClientRect().top - 24;
+          const top = window.scrollY + target.getBoundingClientRect().top - 40;
           window.scrollTo({ top: Math.max(0, top), behavior: 'instant' });
         };
         alignAbout();
