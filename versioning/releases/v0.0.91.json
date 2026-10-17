@@ -1,0 +1,3370 @@
+{
+  "schemaVersion": 1,
+  "release": "v0.0.91",
+  "source": "https://id.i2idl.org/glossary.jsonld",
+  "conceptCount": 420,
+  "hashAlgorithm": "sha256",
+  "canonicalization": "RDFC-1.0",
+  "entries": [
+    {
+      "concept": "https://id.i2idl.org/concepts/a-b-testing",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/a-b-testing/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/a-b-testing/versions/1",
+      "sha256": "7c2a36bdaac7040c8a73338104d97de4c205035e28ac950baed17b2e56fd8604",
+      "path": "snapshots/a-b-testing/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/about-resource",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/about-resource/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/about-resource/versions/1",
+      "sha256": "c1b1a4bc7b0c3a02675a37bfc30a6d11a2abd546c16c97ba8cdda728414cda03",
+      "path": "snapshots/about-resource/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/access-to-internet",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/access-to-internet/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/access-to-internet/versions/1",
+      "sha256": "6a4d0d106a74a33a50f9e3a54cd89db6ce939b121f0fe3e63e67b6bef5a6ed4e",
+      "path": "snapshots/access-to-internet/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/accessibility",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/accessibility/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/accessibility/versions/2",
+      "sha256": "7e47ca826564d63119be801879cfef5a8ae0479773c4ba1941a695fa89083c59",
+      "path": "snapshots/accessibility/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/accessibility-and-inclusivity-testing",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/accessibility-and-inclusivity-testing/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/accessibility-and-inclusivity-testing/versions/1",
+      "sha256": "76e16ffd0899134273d4d6d2b11a9d671dce3cd62450b3fb212aea6cbdedbf5d",
+      "path": "snapshots/accessibility-and-inclusivity-testing/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/account-object",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/account-object/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/account-object/versions/1",
+      "sha256": "9fd64d993c02375491b8e36ec2b712c04d13257b292efcb4ea6b0c2d65f1df66",
+      "path": "snapshots/account-object/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/acquire-ai-competency-level",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/acquire-ai-competency-level/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/acquire-ai-competency-level/versions/1",
+      "sha256": "1e2ce7091b3bb40087c25f47e259cb682207f105e5a2fdac979d5fd324941309",
+      "path": "snapshots/acquire-ai-competency-level/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/activity",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/activity/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/activity/versions/1",
+      "sha256": "5c82b692ee6f9cbb1e74dd607994c2ac2c75a4d9256017ccc74fe010d1480fcc",
+      "path": "snapshots/activity/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/activity-definition",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/activity-definition/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/activity-definition/versions/1",
+      "sha256": "2bdcf268895a88b41fb2824d0961a3773daaaad5bad66fc5b3a74c6d16f1ec16",
+      "path": "snapshots/activity-definition/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/activity-profile-resource",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/activity-profile-resource/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/activity-profile-resource/versions/1",
+      "sha256": "8b7975b9fe7ca20b728eb20eb94c58e3ab9058bf7ec5daa72ea449d2a46c8c38",
+      "path": "snapshots/activity-profile-resource/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/actor",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/actor/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/actor/versions/1",
+      "sha256": "7fadab64ab5fa881baf0f20cd8e4552cb55a016fc8220478f4f7fc88cef75362",
+      "path": "snapshots/actor/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/adaptive-hypermedia",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/adaptive-hypermedia/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/adaptive-hypermedia/versions/1",
+      "sha256": "0229220bcebae47b2f32c7f500af0f208319969638828c510b4a44fbcccbe025",
+      "path": "snapshots/adaptive-hypermedia/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/adaptive-instructional-system",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/adaptive-instructional-system/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/adaptive-instructional-system/versions/2",
+      "sha256": "1184b3998f142983e16b0524e6c70da947def96855a85f325854dfed1da25382",
+      "path": "snapshots/adaptive-instructional-system/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/adaptive-testing",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/adaptive-testing/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/adaptive-testing/versions/1",
+      "sha256": "9eebdd867a223faff13776fbf12c526b9f6393396446f5a26216ecc2d34ec86a",
+      "path": "snapshots/adaptive-testing/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/administrative-data",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/administrative-data/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/administrative-data/versions/1",
+      "sha256": "68189369ed61fa9d33f6ee9d5394cf12cfe934d618ff3e6af5d279360e607e04",
+      "path": "snapshots/administrative-data/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/affective-computing",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/affective-computing/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/affective-computing/versions/1",
+      "sha256": "f59644f93270cb8b0521a77bf3c2eb7dbf495b4dc67ad17d2bcfbb3d56c7162a",
+      "path": "snapshots/affective-computing/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/agent-profile-resource",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/agent-profile-resource/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/agent-profile-resource/versions/1",
+      "sha256": "00592dea94a0eb98fde26bdfeb01e7389ffa750a430e78eb5a5d69a180032527",
+      "path": "snapshots/agent-profile-resource/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/agile-development",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/agile-development/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/agile-development/versions/1",
+      "sha256": "36323202cb2552ae599b4649d75cebb3ffbf98a62127af170096422b5ecc9332",
+      "path": "snapshots/agile-development/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/ai-assisted-teaching",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/ai-assisted-teaching/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/ai-assisted-teaching/versions/1",
+      "sha256": "438c4cd356f4a138bd312592c3b216d8b6e39bb202b12b12ea6317017cf0dbde",
+      "path": "snapshots/ai-assisted-teaching/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/ai-competency-framework-for-teachers-ai-cft",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/ai-competency-framework-for-teachers-ai-cft/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/ai-competency-framework-for-teachers-ai-cft/versions/1",
+      "sha256": "637ebd21e706b012aabd4a9b3e44cb641b919e4d312ec6de434056de706240b9",
+      "path": "snapshots/ai-competency-framework-for-teachers-ai-cft/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/ai-competency-progression",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/ai-competency-progression/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/ai-competency-progression/versions/1",
+      "sha256": "04d62d3d3ec24fb5f34f4b28b2a58c3d6146d3d2f33b24c7112fb265dfd8f70d",
+      "path": "snapshots/ai-competency-progression/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/ai-enhanced-pedagogical-innovation",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/ai-enhanced-pedagogical-innovation/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/ai-enhanced-pedagogical-innovation/versions/1",
+      "sha256": "d7af6ad4e5cc50ad39fd526da0cf8a18cebe19b2adef3bf8fd81526351f442ed",
+      "path": "snapshots/ai-enhanced-pedagogical-innovation/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/ai-explainability-in-education",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/ai-explainability-in-education/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/ai-explainability-in-education/versions/1",
+      "sha256": "541fdcbe160ca348b8b9e1b747d32db4d855f76079344198c7fa9764e400b8f7",
+      "path": "snapshots/ai-explainability-in-education/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/ai-for-professional-development",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/ai-for-professional-development/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/ai-for-professional-development/versions/1",
+      "sha256": "5375b2a11c56cdd77780fd785a07ad9eb0b3b12fbf97dbb9ff22270116618728",
+      "path": "snapshots/ai-for-professional-development/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/ai-foundations-and-applications",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/ai-foundations-and-applications/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/ai-foundations-and-applications/versions/1",
+      "sha256": "b85d43367943d4ea89db46d857e3aab86b05200f0d2e5141766bcbc009fcaa5f",
+      "path": "snapshots/ai-foundations-and-applications/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/ai-literacy-for-teachers",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/ai-literacy-for-teachers/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/ai-literacy-for-teachers/versions/1",
+      "sha256": "759ccb6acb9ca6ab8c769b0c1c089fef35f7daff2e9b1a8bb773ec76fa69ebe2",
+      "path": "snapshots/ai-literacy-for-teachers/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/ai-pedagogy",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/ai-pedagogy/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/ai-pedagogy/versions/1",
+      "sha256": "856c3b3fa4ffa0592db6972670a5fc6755ddb38d15b8e4acac857c4ac00c30c4",
+      "path": "snapshots/ai-pedagogy/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/ai-pedagogy-integration",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/ai-pedagogy-integration/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/ai-pedagogy-integration/versions/1",
+      "sha256": "d3327bac730aae59266dfc920fc55b5db101db03199a255c83c41637f8e63270",
+      "path": "snapshots/ai-pedagogy-integration/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/ai-tool-validation-for-education",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/ai-tool-validation-for-education/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/ai-tool-validation-for-education/versions/1",
+      "sha256": "e33e0978016186320d1f6b79efced276890a355af07649ceebfc6b2e39286442",
+      "path": "snapshots/ai-tool-validation-for-education/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/anonymous-group",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/anonymous-group/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/anonymous-group/versions/1",
+      "sha256": "c4ae5c3db89478e3250b49394ae720dfe2fcbe90787e59c7398dab9bfdcc3705",
+      "path": "snapshots/anonymous-group/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/artificial-intelligence-ai",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/artificial-intelligence-ai/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/artificial-intelligence-ai/versions/2",
+      "sha256": "0e1bc692f81e9fb103c6284cf971f37336b0e8110efb7dce3dc09590af2aaffa",
+      "path": "snapshots/artificial-intelligence-ai/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/assessment",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/assessment/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/assessment/versions/2",
+      "sha256": "cba317ded2f161aa9859e558a323e2637557b297ca2d1e3be2cb685b4545581c",
+      "path": "snapshots/assessment/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/assessment-literacy",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/assessment-literacy/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/assessment-literacy/versions/1",
+      "sha256": "0c699c6feb173867de3a1de7763b7c92adfffea9bd84d3ca565177df45ea5c72",
+      "path": "snapshots/assessment-literacy/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/asset-model",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/asset-model/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/asset-model/versions/1",
+      "sha256": "3f34a287ba49389770f3418ec7a422665cef836b61000954c1a85b0ed8839afb",
+      "path": "snapshots/asset-model/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/assistive-technology",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/assistive-technology/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/assistive-technology/versions/1",
+      "sha256": "e82c70cb5f8eade99741ca198218c17ab064b31d01f7b0ec0318e7ae7150157f",
+      "path": "snapshots/assistive-technology/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/asynchronous-learning",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/asynchronous-learning/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/asynchronous-learning/versions/2",
+      "sha256": "728fae7c3f231bfc850d69d4b0a919c09857b851b38530d70596244df8611dea",
+      "path": "snapshots/asynchronous-learning/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/attachment",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/attachment/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/attachment/versions/1",
+      "sha256": "43496a7400ed417e2edd547ac6cb17c66f31df25ba196c70ecfc758c731b747c",
+      "path": "snapshots/attachment/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/attention",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/attention/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/attention/versions/1",
+      "sha256": "390314cf1062cbe32800d6832bf21a8a69ed5bb487bf3ddc6be52eaaa0bdf963",
+      "path": "snapshots/attention/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/behavioral-economics",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/behavioral-economics/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/behavioral-economics/versions/1",
+      "sha256": "034433caf5624afe76d8c6c2c6054c45ba9af0399abc56a6694a6e7736b9c23c",
+      "path": "snapshots/behavioral-economics/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/bias",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/bias/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/bias/versions/1",
+      "sha256": "72a59da90d3fbd0ca52f46aa41c62ce261a1a9a4f0378e3339eb03a305f767ce",
+      "path": "snapshots/bias/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/blended-learning",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/blended-learning/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/blended-learning/versions/1",
+      "sha256": "f1af622ccb5fe03dd53b16d72ede0e9f225f7bd27c972bf0d6992c5a489b0a5a",
+      "path": "snapshots/blended-learning/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/building-expertise",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/building-expertise/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/building-expertise/versions/1",
+      "sha256": "e9e5b4c5684c363dd0d3f1ca49a35d763f180339d50100e0cf337eba11bf440c",
+      "path": "snapshots/building-expertise/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/challenge-identification",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/challenge-identification/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/challenge-identification/versions/1",
+      "sha256": "d02cc98082583156da9569a787acb7ea8c155f96624c47400b20cc4462626b33",
+      "path": "snapshots/challenge-identification/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/childcare-gap",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/childcare-gap/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/childcare-gap/versions/1",
+      "sha256": "4afe20f82c56bf8671537a9b048ac77a706316c633cf6299f16463c5974b9e11",
+      "path": "snapshots/childcare-gap/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/classroom-teacher",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/classroom-teacher/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/classroom-teacher/versions/1",
+      "sha256": "ce96e34fb66c0091e3ba81038d407d2748370658080811b23e3dc1dbf26d9725",
+      "path": "snapshots/classroom-teacher/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/co-design",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/co-design/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/co-design/versions/1",
+      "sha256": "eb1fbda1f32e029a4c792a62a4c2cd16b5fbaafe758eacdd97bf2db70d5e6bb7",
+      "path": "snapshots/co-design/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/cognitive-engagement",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/cognitive-engagement/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/cognitive-engagement/versions/1",
+      "sha256": "ca3b77b29f2eceef6705bee57e50d49ae6de6a11b84167a7aba9961850f7405f",
+      "path": "snapshots/cognitive-engagement/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/cognitive-load",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/cognitive-load/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/cognitive-load/versions/1",
+      "sha256": "4bab7580ad3a05611a503696b6a2c4a0ce2ade70a3d7c6e34885a34186c2d7ec",
+      "path": "snapshots/cognitive-load/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/cognitive-task-analysis",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/cognitive-task-analysis/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/cognitive-task-analysis/versions/1",
+      "sha256": "32e0e85a332481dfaad6d70ad3e3f16ddd07de69a7e5d02fdfca3ac313f193c2",
+      "path": "snapshots/cognitive-task-analysis/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/cognitive-walkthrough",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/cognitive-walkthrough/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/cognitive-walkthrough/versions/1",
+      "sha256": "10354e96978a924afe26e29fead53a2f6af3406eb322d5cff5fd18679eff8023",
+      "path": "snapshots/cognitive-walkthrough/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/community-of-practice",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/community-of-practice/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/community-of-practice/versions/1",
+      "sha256": "6c529eac0393610b25f08522c1ec084525de5a4555414375a6b9edb6071b80a4",
+      "path": "snapshots/community-of-practice/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/competency",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/competency/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/competency/versions/1",
+      "sha256": "aa4b0a3f30695e798f773ddf7b92bb95b7467e5a5ed55391c241122b75b995d8",
+      "path": "snapshots/competency/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/competency-based-learning",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/competency-based-learning/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/competency-based-learning/versions/2",
+      "sha256": "7fb56dfbf246791165025839e5fcab5ae3eea448bc477e02b67434d6ae136453",
+      "path": "snapshots/competency-based-learning/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/computer-based-learning",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/computer-based-learning/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/computer-based-learning/versions/2",
+      "sha256": "5cc07e62f8e79a5277b578624982af54baced8d36680bcfeb887f2a697838cd3",
+      "path": "snapshots/computer-based-learning/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/concept-map",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/concept-map/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/concept-map/versions/1",
+      "sha256": "cd4e038a6a5df88a49066f3603045d98384b8e8918a0e1b2a64baf6374ee6ad4",
+      "path": "snapshots/concept-map/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/conceptual-knowledge",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/conceptual-knowledge/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/conceptual-knowledge/versions/1",
+      "sha256": "081c89dfeae3b0fe04b8b80574f4b11e8057fd9d5d6d6c284371c37db3684fe1",
+      "path": "snapshots/conceptual-knowledge/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/connectivism",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/connectivism/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/connectivism/versions/1",
+      "sha256": "43183925e425ccdc5dcb25ef8ff0ede2ebf6b825ce032a17106a8d77155d8581",
+      "path": "snapshots/connectivism/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/connectivist-mooc-cmooc",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/connectivist-mooc-cmooc/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/connectivist-mooc-cmooc/versions/1",
+      "sha256": "1536dd0558800091d28bac7e10c9e014ffaf122654dd06a371449d0dba13b763",
+      "path": "snapshots/connectivist-mooc-cmooc/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/context-activities",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/context-activities/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/context-activities/versions/1",
+      "sha256": "161514a7823f3e4002394dac773f4b7126fcaa05cf81db51286a3f61a3394ad6",
+      "path": "snapshots/context-activities/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/context-agent",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/context-agent/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/context-agent/versions/1",
+      "sha256": "b82d9962ac56c15178105db0c17a8f5b58201f8634b976000f4467000a4ffbbd",
+      "path": "snapshots/context-agent/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/context-group",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/context-group/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/context-group/versions/1",
+      "sha256": "04ff1a3070947703f2886df3505113b087506e2701c158bafe51e45ef695863f",
+      "path": "snapshots/context-group/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/context-object",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/context-object/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/context-object/versions/1",
+      "sha256": "ede9fad064c14960c97ba5454266c30cf66ee029bf032a0d52bbe3c7012e1686",
+      "path": "snapshots/context-object/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/contextual-factor",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/contextual-factor/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/contextual-factor/versions/1",
+      "sha256": "24ff5cfbd71166de0fe6bd213cc05073a73dd9e89a207899fbe429251c0c4144",
+      "path": "snapshots/contextual-factor/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/contextually-rich-learning-environment",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/contextually-rich-learning-environment/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/contextually-rich-learning-environment/versions/1",
+      "sha256": "6fd08415b9630b5727b16c4f6a7bb267f6b6cf9cf305e6224bcbb87467f741e9",
+      "path": "snapshots/contextually-rich-learning-environment/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/continuous-improvement",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/continuous-improvement/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/continuous-improvement/versions/1",
+      "sha256": "ed71275bb07a90c4a2ca51c593b130888afff53c6b257a2ac99548e7d964c184",
+      "path": "snapshots/continuous-improvement/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/continuous-integration",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/continuous-integration/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/continuous-integration/versions/1",
+      "sha256": "2211f6cf97bfb7739db5d860b67d80070fa0ae4b9822038d70f1ad8ccc2549be",
+      "path": "snapshots/continuous-integration/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/control-theory",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/control-theory/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/control-theory/versions/1",
+      "sha256": "76ff5ddfb6f4efc09d5125d2ffae52474224da8725cca5a091611278e319772b",
+      "path": "snapshots/control-theory/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/controlled-vocabulary",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/controlled-vocabulary/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/controlled-vocabulary/versions/1",
+      "sha256": "26332667d70cbb57eb0c203f7539cfe61f3379cbfa65a2d3b6ff45788f4fb759",
+      "path": "snapshots/controlled-vocabulary/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/coordination-network",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/coordination-network/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/coordination-network/versions/1",
+      "sha256": "f380e8db8db6b99397036af9c4e2ad085f9b4836c42d5063dd5d24f7f2d73d60",
+      "path": "snapshots/coordination-network/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/create-ai-competency-level",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/create-ai-competency-level/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/create-ai-competency-level/versions/1",
+      "sha256": "2c0c03870a5a11cef684c46fad94c051b091c3e9147efe9cf14d382d6756feb8",
+      "path": "snapshots/create-ai-competency-level/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/creation-phase",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/creation-phase/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/creation-phase/versions/1",
+      "sha256": "40a273ab403e22af4b548c3d98825831da4c0f4b3c334c23d94c3034f65a3d23",
+      "path": "snapshots/creation-phase/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/cross-domain-collaboration",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/cross-domain-collaboration/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/cross-domain-collaboration/versions/1",
+      "sha256": "2ccd58cd60144aa8b42c5cb6fe1b6e26a41bca90fb936cd5765f44ce2f852578",
+      "path": "snapshots/cross-domain-collaboration/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/cross-national-assessment",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/cross-national-assessment/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/cross-national-assessment/versions/1",
+      "sha256": "5b71b3397b9d7dfdf562688c3b67cf8fcfacd5ef75906804c61c557eee6412ea",
+      "path": "snapshots/cross-national-assessment/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/culture-change",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/culture-change/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/culture-change/versions/1",
+      "sha256": "76a4a4c88aa98d8d6ffebe83947b8b46d29302ef83b0c5c693a5fce77ac7ccf4",
+      "path": "snapshots/culture-change/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/data-analysis",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/data-analysis/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/data-analysis/versions/1",
+      "sha256": "3bda01b45efd184035ad8f82e39ad7217a28b518bc6b48414231a7e62f4ea204",
+      "path": "snapshots/data-analysis/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/data-analytics",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/data-analytics/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/data-analytics/versions/1",
+      "sha256": "83da2398c4ff9c283e156c91e7dcde85c0474ba0035368a951d20fbdbef08942",
+      "path": "snapshots/data-analytics/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/data-availability",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/data-availability/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/data-availability/versions/1",
+      "sha256": "d014747953bd492fc18d47e18aa6934c7c0aa946224d993df2979e86aa91965d",
+      "path": "snapshots/data-availability/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/data-culture",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/data-culture/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/data-culture/versions/1",
+      "sha256": "1b2a1671050574b8c2aa01783adda3dd78d51581e60c2e74e7994acec5064d6f",
+      "path": "snapshots/data-culture/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/data-informed-decision-making",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/data-informed-decision-making/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/data-informed-decision-making/versions/1",
+      "sha256": "09bc5828d3f4664892948204d9c6c9ea06c875ecd1f5bc85c9f89b695a117862",
+      "path": "snapshots/data-informed-decision-making/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/data-instrumentation",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/data-instrumentation/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/data-instrumentation/versions/1",
+      "sha256": "57be77f2e859a5c395a47e813d5d7bfd4fed6eda3746b41509b68fb2b329b59c",
+      "path": "snapshots/data-instrumentation/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/data-mining",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/data-mining/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/data-mining/versions/1",
+      "sha256": "77bedaa6314769eea691e638fa76578d7daf884d47c1bb98a4157b27e8bf4bdd",
+      "path": "snapshots/data-mining/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/data-ownership",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/data-ownership/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/data-ownership/versions/1",
+      "sha256": "f49af3bb994d90be89c87260a6037957e79bdc893c93640546bc72b55caaf501",
+      "path": "snapshots/data-ownership/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/data-pipeline",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/data-pipeline/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/data-pipeline/versions/1",
+      "sha256": "4574c9d94146c814f0a98a8adb0de81aa43050bdbde867c9d0be06f9e6b94a4b",
+      "path": "snapshots/data-pipeline/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/data-privacy",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/data-privacy/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/data-privacy/versions/1",
+      "sha256": "ddb1e4601b72e6ee2856caac5f55f78f0795d2d2dfade58de8a8f88f4014c41b",
+      "path": "snapshots/data-privacy/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/data-quality",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/data-quality/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/data-quality/versions/1",
+      "sha256": "d071a060284cd972031e408aed1749949b91b9eccbdfbf3321564f7b76ec9bd4",
+      "path": "snapshots/data-quality/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/data-reporting",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/data-reporting/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/data-reporting/versions/1",
+      "sha256": "548bb81b056cf6196ad3a4ecb7ab5aa2e81f4fc5cf3e6661334e01867c678efc",
+      "path": "snapshots/data-reporting/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/data-security",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/data-security/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/data-security/versions/1",
+      "sha256": "ceb0cb8ab4516cde14682d1cb3f407766578285f7bb25b66d0e21cde16b2168e",
+      "path": "snapshots/data-security/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/data-silo",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/data-silo/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/data-silo/versions/1",
+      "sha256": "148d57ede369d92a1857f1a7f11eaa3700bff55f2e40658329dd40ff9fefece2",
+      "path": "snapshots/data-silo/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/data-stewardship",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/data-stewardship/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/data-stewardship/versions/1",
+      "sha256": "d01264f3232bde1cce292333ff780df935ccd0f2df410c7864496a942bc37b77",
+      "path": "snapshots/data-stewardship/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/data-use",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/data-use/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/data-use/versions/2",
+      "sha256": "1cf9e218bbeb75df941ba4ddb98db4e5222efd1d01a1d086416cf37150afc7c9",
+      "path": "snapshots/data-use/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/decision-support",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/decision-support/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/decision-support/versions/1",
+      "sha256": "6f6f303aadf1c5de71135e84504db6ded91c60584a7ed1f06f3d29898c517d1e",
+      "path": "snapshots/decision-support/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/decision-tracking",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/decision-tracking/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/decision-tracking/versions/1",
+      "sha256": "e2f66f7b5126f0a0f1f88bc6ce4e0a049fdbeb01806bce6df1c8b734ef5d6ac9",
+      "path": "snapshots/decision-tracking/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/deepen-ai-competency-level",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/deepen-ai-competency-level/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/deepen-ai-competency-level/versions/1",
+      "sha256": "4be9b8e69fcea5eb1d3c9a3c0ea71278c88a070941e39b29d30ae3d8e3a0a1c4",
+      "path": "snapshots/deepen-ai-competency-level/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/design-build-cycle",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/design-build-cycle/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/design-build-cycle/versions/1",
+      "sha256": "2efff00411725699903efa746eef30866b3c05f3ac7c06b53c327c61781f92e7",
+      "path": "snapshots/design-build-cycle/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/design-decision",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/design-decision/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/design-decision/versions/1",
+      "sha256": "53a98f7b8cf3cf7d6e0b4ce3cb827e59937c2357ccd899e0f8091f6309c6087d",
+      "path": "snapshots/design-decision/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/design-decision-making",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/design-decision-making/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/design-decision-making/versions/1",
+      "sha256": "2eea1e6fa3dee8e25339bb72ea6a7890acb407177edca79f6ef7e9914ae0af76",
+      "path": "snapshots/design-decision-making/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/design-judgment",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/design-judgment/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/design-judgment/versions/1",
+      "sha256": "b7327defe54187ae89c883854dc86b48ae20087dc203498f47d78ed96757215c",
+      "path": "snapshots/design-judgment/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/design-justification",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/design-justification/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/design-justification/versions/1",
+      "sha256": "1e2dc5cba1c12d3194adb075efbd066fb6c747aac4ff45b67da542f0ad8eb9e4",
+      "path": "snapshots/design-justification/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/design-pattern",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/design-pattern/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/design-pattern/versions/1",
+      "sha256": "b12d3134fe3d9fd8ca3aed66e8e031cd8282ac141b8a61cf3f72ef094ee1111f",
+      "path": "snapshots/design-pattern/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/design-revision",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/design-revision/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/design-revision/versions/1",
+      "sha256": "2ee64b37d88818b470ea18c954f275d7c6853feb62832b7eacd4761b5c98a6f9",
+      "path": "snapshots/design-revision/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/digital-credential",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/digital-credential/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/digital-credential/versions/1",
+      "sha256": "ac8943caf5689b7f596e9fa5b75f66f1e4d651a8eb79cc10844ed2f9b714888a",
+      "path": "snapshots/digital-credential/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/digital-divide",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/digital-divide/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/digital-divide/versions/2",
+      "sha256": "a277cc6fcce7fda80cb6da891653f2d78cbf645fb800542614a136d875bbe4b7",
+      "path": "snapshots/digital-divide/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/digital-engineering-for-learning-systems",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/digital-engineering-for-learning-systems/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/digital-engineering-for-learning-systems/versions/1",
+      "sha256": "fd4fca966f707f0491b8985f780a8cea9938cf3bd08d8c7be07b5719d0a07a45",
+      "path": "snapshots/digital-engineering-for-learning-systems/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/digital-footprint",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/digital-footprint/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/digital-footprint/versions/1",
+      "sha256": "7e1b2c43bd6d9835e87a5884db12afb593e051012598043c9c55fa7ab9b37563",
+      "path": "snapshots/digital-footprint/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/digital-global-public-goods",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/digital-global-public-goods/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/digital-global-public-goods/versions/1",
+      "sha256": "622795dcac51df3788c2474cc77e718eb0ddb13ac479e4a41cae77937b098267",
+      "path": "snapshots/digital-global-public-goods/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/digital-learning-materials",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/digital-learning-materials/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/digital-learning-materials/versions/2",
+      "sha256": "d3dff1e0785d1dec8c1490415cdbe33923b452ceda7ee62f4a2a18efcc20ad1c",
+      "path": "snapshots/digital-learning-materials/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/digital-literacies",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/digital-literacies/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/digital-literacies/versions/2",
+      "sha256": "e431e07ee3a9882e0603a45328f16d2ce60dd55be10e0185b23fb37d32b34cb2",
+      "path": "snapshots/digital-literacies/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/digital-security",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/digital-security/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/digital-security/versions/1",
+      "sha256": "fc79a20ab54c026cc616d1019845d3e1d6bd1fe82aa065da5805beefb477c9f4",
+      "path": "snapshots/digital-security/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/digital-skills",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/digital-skills/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/digital-skills/versions/2",
+      "sha256": "169baee6b858cb25f17ef92008d484b8691a1a6da65f5ea9a30e0c0a376cf5e3",
+      "path": "snapshots/digital-skills/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/distributed-learning",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/distributed-learning/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/distributed-learning/versions/1",
+      "sha256": "5c94cd5e15678018b24c534c3a1c2bd1570b874d015f0aebbc34a2254dedd1f2",
+      "path": "snapshots/distributed-learning/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/distributed-simulation",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/distributed-simulation/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/distributed-simulation/versions/1",
+      "sha256": "f7c8a541978ed179d1cf5c4a85cd1b972948dd7ad1bacc8eca98f2efff92d1e8",
+      "path": "snapshots/distributed-simulation/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/document-profile-resource",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/document-profile-resource/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/document-profile-resource/versions/1",
+      "sha256": "869da71fbaebd9c2d062911d7ea5a6117b893957cf94a8032cd0db26a24a1234",
+      "path": "snapshots/document-profile-resource/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/early-childhood-education-and-care-ecec",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/early-childhood-education-and-care-ecec/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/early-childhood-education-and-care-ecec/versions/1",
+      "sha256": "159306e6ca7a375cc5d239cffacd7d7a58f14d07e0a20bff3099049116bfece4",
+      "path": "snapshots/early-childhood-education-and-care-ecec/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/early-childhood-education-ece",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/early-childhood-education-ece/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/early-childhood-education-ece/versions/1",
+      "sha256": "50471db67e834fd0d6b8f566ea85daabd5542d41ed8111b6b2687605fa5dfe8d",
+      "path": "snapshots/early-childhood-education-ece/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/edtech-ecosystem",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/edtech-ecosystem/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/edtech-ecosystem/versions/1",
+      "sha256": "44570fe72231016e2dca158b93d18ed4f93a36ba01d371750d1c7e9d78b29e68",
+      "path": "snapshots/edtech-ecosystem/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/education-data-cycle",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/education-data-cycle/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/education-data-cycle/versions/1",
+      "sha256": "b7e2bd83ca624fb240914144b37939519b50de5fd8c6844b0cbdbba7a4353dc6",
+      "path": "snapshots/education-data-cycle/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/education-data-ecosystem",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/education-data-ecosystem/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/education-data-ecosystem/versions/1",
+      "sha256": "7d023a765e461f13efec7ea40da5dd1d36a1ebe8eb2f29dec87e1dc878e0fc9b",
+      "path": "snapshots/education-data-ecosystem/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/education-data-integration",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/education-data-integration/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/education-data-integration/versions/1",
+      "sha256": "c6757d26d16233fb957bef26f1d049c02bbaf1b75e5a424d57127c8b0ee56475",
+      "path": "snapshots/education-data-integration/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/education-expenditure-data",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/education-expenditure-data/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/education-expenditure-data/versions/1",
+      "sha256": "318a25a7c024ba96cfd65031afeb91bd62c002b9d7fc3b0b3d796567e5894e31",
+      "path": "snapshots/education-expenditure-data/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/education-management-information-system",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/education-management-information-system/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/education-management-information-system/versions/1",
+      "sha256": "94d3615b39a3503e8955755e6496b77c1981a40b07da0cd0faebfc990138e5b1",
+      "path": "snapshots/education-management-information-system/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/education-statistical-capacity",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/education-statistical-capacity/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/education-statistical-capacity/versions/1",
+      "sha256": "09d11b2cd1510d8c1a2bfc42fbe38abdf437498e22fe4e5b37c39431ce35fcd1",
+      "path": "snapshots/education-statistical-capacity/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/education-technology-edtech",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/education-technology-edtech/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/education-technology-edtech/versions/2",
+      "sha256": "d470955d4c9c4e4cf3b4cbc02846e90a8d0d60c07936f4601e04e6abd6a3dcf2",
+      "path": "snapshots/education-technology-edtech/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/educational-attainment",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/educational-attainment/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/educational-attainment/versions/1",
+      "sha256": "bfbd75e8ef8609c0a0015fd4531c526113fc0ae608edf6672995770f8a6438c6",
+      "path": "snapshots/educational-attainment/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/educational-indicators",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/educational-indicators/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/educational-indicators/versions/1",
+      "sha256": "f199b0e56993050f21621e2ae557497328744e70d29ef3a43b8e3c78512fcc9a",
+      "path": "snapshots/educational-indicators/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/educational-institution",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/educational-institution/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/educational-institution/versions/1",
+      "sha256": "6fd979115e8dcae63315ad3ff8d366c92050c30942243e79c48d279df3c7e984",
+      "path": "snapshots/educational-institution/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/electronic-learning",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/electronic-learning/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/electronic-learning/versions/1",
+      "sha256": "94b3c28f7b496fb366974e2fcf94d5ce677c103defaa84341aebc29d21b42bd9",
+      "path": "snapshots/electronic-learning/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/emergent-impact",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/emergent-impact/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/emergent-impact/versions/1",
+      "sha256": "6671409c1e52b1a76616a3545da203f8ebd3248dfbf39bfbaf3cbef08cf36c19",
+      "path": "snapshots/emergent-impact/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/empathy",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/empathy/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/empathy/versions/1",
+      "sha256": "825d2f061764c9e1fb811c9da6e3fffb155a88e0757c96d0fe532e8a874999b3",
+      "path": "snapshots/empathy/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/empathy-mapping",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/empathy-mapping/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/empathy-mapping/versions/1",
+      "sha256": "bffa23da0bb0c964921081d1bc5e93dc4ac5f9c5d3dc688cde585d99ce7567e1",
+      "path": "snapshots/empathy-mapping/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/endpoint",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/endpoint/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/endpoint/versions/1",
+      "sha256": "fa9754b3970af077fd184620ac994220c10f14012b088f1b9b05f8aea0fc975b",
+      "path": "snapshots/endpoint/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/engineering-design",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/engineering-design/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/engineering-design/versions/1",
+      "sha256": "7934ad3084a8f2ee85392d028c6965349d0bef6afbf100020e90447c6e7cee1e",
+      "path": "snapshots/engineering-design/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/enterprise-learner-record",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/enterprise-learner-record/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/enterprise-learner-record/versions/1",
+      "sha256": "b83bcefa7d40723c0e8bfed3edebd5058529c0f23a369a3c728de51298cce0f0",
+      "path": "snapshots/enterprise-learner-record/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/equitable-co-design",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/equitable-co-design/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/equitable-co-design/versions/1",
+      "sha256": "14c36f1a06c3c85547f79224fd868cd4e64a9224c1b8fa0b07c1cdd9fadc25bc",
+      "path": "snapshots/equitable-co-design/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/equity",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/equity/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/equity/versions/1",
+      "sha256": "d8cd8c75e33cf2007c8d04fc1329ba053b013905eb0645aa881c11612f672187",
+      "path": "snapshots/equity/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/ethics-by-design",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/ethics-by-design/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/ethics-by-design/versions/1",
+      "sha256": "ac0177fd87e53c889f1bb8493c16ece8581aa0191c752c7c750b3ddcb8b77020",
+      "path": "snapshots/ethics-by-design/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/ethics-of-ai",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/ethics-of-ai/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/ethics-of-ai/versions/1",
+      "sha256": "cb51ca6a0923aeba0b36be5f4f83364ff879c3eb978b3994f41148368208523b",
+      "path": "snapshots/ethics-of-ai/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/evidence-based-decision-making",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/evidence-based-decision-making/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/evidence-based-decision-making/versions/1",
+      "sha256": "31f258489c75c88e396cad8a5f4b42b9a3a9c45e9e67d51452324883d19c59b4",
+      "path": "snapshots/evidence-based-decision-making/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/evidence-based-practice",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/evidence-based-practice/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/evidence-based-practice/versions/1",
+      "sha256": "3457103456f2db92e48c2ee16f722f837cd6bcb2d16cab3ff8fa6b08b653471a",
+      "path": "snapshots/evidence-based-practice/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/experience-api-xapi",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/experience-api-xapi/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/experience-api-xapi/versions/1",
+      "sha256": "1102d4cf1494100cd7bd2f64cd32c7c9ea4a2967825df1261d9d921a6b721aa8",
+      "path": "snapshots/experience-api-xapi/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/experience-design",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/experience-design/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/experience-design/versions/1",
+      "sha256": "a6cbbe71a283a6d2fee10dd9357a1b65a38c9226f55a2c38c6b302555da1bcf6",
+      "path": "snapshots/experience-design/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/experiential-learning",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/experiential-learning/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/experiential-learning/versions/2",
+      "sha256": "b5f91b28bacb5c766649db26b8544dcda6d369014979b71918b5f4571efa0fa3",
+      "path": "snapshots/experiential-learning/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/exploratory-research",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/exploratory-research/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/exploratory-research/versions/1",
+      "sha256": "b8199f830bb206f2c1b786887fcbaa650bde381049201734eeec121cfa21006d",
+      "path": "snapshots/exploratory-research/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/extended-mooc-xmooc",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/extended-mooc-xmooc/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/extended-mooc-xmooc/versions/1",
+      "sha256": "49e86fa4fcee871a2afcd14afb5ca30bf4df58dca657772ecda00b0feedaaa7f",
+      "path": "snapshots/extended-mooc-xmooc/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/external-representation",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/external-representation/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/external-representation/versions/1",
+      "sha256": "bb1a1f7c59ec9bcc11d8722715cbe571a0af3591a440fc338c8e22b0c326fb0f",
+      "path": "snapshots/external-representation/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/extraneous-cognitive-load",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/extraneous-cognitive-load/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/extraneous-cognitive-load/versions/1",
+      "sha256": "e7234065572e1a02a484db16c64b779bb2522b08daf3122eb3c283413b27b3c7",
+      "path": "snapshots/extraneous-cognitive-load/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/fairness",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/fairness/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/fairness/versions/1",
+      "sha256": "269f8a33b2bb50ac7043899133246a5139d25078e5ad9b4b33062f1d39235ae6",
+      "path": "snapshots/fairness/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/feedback-loop",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/feedback-loop/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/feedback-loop/versions/1",
+      "sha256": "24837d6f6352b014dfefbd4c632679e54fa9de8601565965dfff25600faf4017",
+      "path": "snapshots/feedback-loop/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/flipped-classroom",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/flipped-classroom/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/flipped-classroom/versions/2",
+      "sha256": "0bbbed7d3e9caaf0eec03f9f84ab5f531d0d0523f957d147cdcfaf3f9e9d5aa4",
+      "path": "snapshots/flipped-classroom/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/flow",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/flow/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/flow/versions/1",
+      "sha256": "3ac6840042966d365a0aba05e61607d2336585788dd385d21e46ab2a1a61c436",
+      "path": "snapshots/flow/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/formative-assessment",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/formative-assessment/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/formative-assessment/versions/2",
+      "sha256": "4b3a78fbd228724f7fd408e7367371cc0c2ff3bc7976ee0eea46fba43ea55a97",
+      "path": "snapshots/formative-assessment/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/formative-evaluation",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/formative-evaluation/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/formative-evaluation/versions/1",
+      "sha256": "6151eb76f9258216de4e1a4664c672c025fe4bbf604136e6923fd9cc0aa0d4ee",
+      "path": "snapshots/formative-evaluation/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/full-time-equivalent-teacher-fte",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/full-time-equivalent-teacher-fte/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/full-time-equivalent-teacher-fte/versions/1",
+      "sha256": "c4c65e1c153691af5c8f5460213dc29c7849ba2232a2685d2a05d846862c96f3",
+      "path": "snapshots/full-time-equivalent-teacher-fte/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/fully-qualified-teacher",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/fully-qualified-teacher/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/fully-qualified-teacher/versions/1",
+      "sha256": "e10698b9bd4cc44448d0db080dd63b67def19d30e2a98d30160ebc9b734d4770",
+      "path": "snapshots/fully-qualified-teacher/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/future-learning-ecosystem",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/future-learning-ecosystem/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/future-learning-ecosystem/versions/1",
+      "sha256": "fcb4d9fa037798ab88d6393391c46d894df7d58fc599caceb1665eb7650b0988",
+      "path": "snapshots/future-learning-ecosystem/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/game-based-learning",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/game-based-learning/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/game-based-learning/versions/1",
+      "sha256": "14520fbab6b9f699c7bd538f30ec627a6610c21f29087b396054d5f64b824280",
+      "path": "snapshots/game-based-learning/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/gamification",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/gamification/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/gamification/versions/1",
+      "sha256": "dbdb30185bbb043fd94cc069083d74aaecf6a1374c3e2844e5fd24022f22bcf9",
+      "path": "snapshots/gamification/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/growth-mindset",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/growth-mindset/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/growth-mindset/versions/1",
+      "sha256": "0cda10370648fd9ba20e7c070bba240daa36285126553ffee0c137da65139e94",
+      "path": "snapshots/growth-mindset/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/human-accountability-in-ai",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/human-accountability-in-ai/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/human-accountability-in-ai/versions/1",
+      "sha256": "4fba24616c23d88082115bfbaff071311811fb97d56c3a409fa17221202ec14c",
+      "path": "snapshots/human-accountability-in-ai/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/human-agency-in-ai",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/human-agency-in-ai/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/human-agency-in-ai/versions/1",
+      "sha256": "b0b82993a5446ae0860d2a06a6da93557d18f7c8e24ce105dd60d091e8bcdee6",
+      "path": "snapshots/human-agency-in-ai/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/human-centered-design",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/human-centered-design/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/human-centered-design/versions/2",
+      "sha256": "f6027f25fa4808296c116ee0ed2be176955c1b09d910127effa4c1a1d87a6f97",
+      "path": "snapshots/human-centered-design/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/human-centered-education",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/human-centered-education/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/human-centered-education/versions/1",
+      "sha256": "23e86ad014611d7991ac78af20b73614a0c8a5d347e61c08dd0bc11a1da37b76",
+      "path": "snapshots/human-centered-education/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/human-centred-approach-to-ai",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/human-centred-approach-to-ai/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/human-centred-approach-to-ai/versions/1",
+      "sha256": "ca66e016e510185ccbcbf43710edbec7d3e884e129fe20f1bf6f1d5395bbc022",
+      "path": "snapshots/human-centred-approach-to-ai/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/human-centred-mindset",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/human-centred-mindset/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/human-centred-mindset/versions/1",
+      "sha256": "2308a0d1763d60edb54970989790abfbc291315184dc04b9f2c2163a6ac835dc",
+      "path": "snapshots/human-centred-mindset/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/human-controlled-ai-in-education",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/human-controlled-ai-in-education/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/human-controlled-ai-in-education/versions/1",
+      "sha256": "cb1f2104288d6478f3d1bd99ac6e1a6524be5ce9146c63d06634704572dfed26",
+      "path": "snapshots/human-controlled-ai-in-education/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/human-support-system",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/human-support-system/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/human-support-system/versions/1",
+      "sha256": "67bb00206c9c29fa1b7a7b181aeadeaee677c3cd0b7abb48de2ebd1170b8d87b",
+      "path": "snapshots/human-support-system/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/human-systems-integration-hsi",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/human-systems-integration-hsi/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/human-systems-integration-hsi/versions/1",
+      "sha256": "5517809bf27d1101db37289eb7381fba9bae4a9c6ab16ee8aa91c67d26c59e08",
+      "path": "snapshots/human-systems-integration-hsi/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/identified-group",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/identified-group/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/identified-group/versions/1",
+      "sha256": "d79e7bc0c7ba34941bdaceb59a154a413ca39c72cf39ec56681f235f1b00af90",
+      "path": "snapshots/identified-group/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/ieee-1484-11-1-2022-content-object-communication",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/ieee-1484-11-1-2022-content-object-communication/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/ieee-1484-11-1-2022-content-object-communication/versions/1",
+      "sha256": "89eb8da1996cbf17f93d03ac177491be296fdfbb38771d02eb652cb9645c9e17",
+      "path": "snapshots/ieee-1484-11-1-2022-content-object-communication/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/ieee-1484-11-2-2020-ecmascript-runtime-api",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/ieee-1484-11-2-2020-ecmascript-runtime-api/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/ieee-1484-11-2-2020-ecmascript-runtime-api/versions/1",
+      "sha256": "8b8cf4b124c457d81d5f8e51ecb460a4a0263b5cfd9857cdd8c0aa65039865b9",
+      "path": "snapshots/ieee-1484-11-2-2020-ecmascript-runtime-api/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/ieee-1484-12-1-2020-learning-object-metadata",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/ieee-1484-12-1-2020-learning-object-metadata/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/ieee-1484-12-1-2020-learning-object-metadata/versions/1",
+      "sha256": "36fe68838f54f8b85fef08fb5bcbb1e5b97e1df8f7741cb1b59073cf1b8bdcc9",
+      "path": "snapshots/ieee-1484-12-1-2020-learning-object-metadata/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/ieee-1484-12-3-2020-xml-binding-learning-object-metadata",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/ieee-1484-12-3-2020-xml-binding-learning-object-metadata/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/ieee-1484-12-3-2020-xml-binding-learning-object-metadata/versions/1",
+      "sha256": "cf9dcfd8d62fdd0e72b540cccf864f6908219f62d69fe21e4fcef51217205717",
+      "path": "snapshots/ieee-1484-12-3-2020-xml-binding-learning-object-metadata/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/ieee-1484-13-3-2014-mpeg21-mapping",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/ieee-1484-13-3-2014-mpeg21-mapping/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/ieee-1484-13-3-2014-mpeg21-mapping/versions/1",
+      "sha256": "3b20917692ab1b191ae648157072fe82c7fdfe6a068d7e9c169572979748b776",
+      "path": "snapshots/ieee-1484-13-3-2014-mpeg21-mapping/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/ieee-1484-13-4-2016-ims-content-packaging-mapping",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/ieee-1484-13-4-2016-ims-content-packaging-mapping/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/ieee-1484-13-4-2016-ims-content-packaging-mapping/versions/1",
+      "sha256": "ad8e58b0abc403585cacd299f4a169c0318b57471eb73d87ee159279e819e859",
+      "path": "snapshots/ieee-1484-13-4-2016-ims-content-packaging-mapping/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/ieee-1484-13-6-2015-oai-ore-mapping",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/ieee-1484-13-6-2015-oai-ore-mapping/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/ieee-1484-13-6-2015-oai-ore-mapping/versions/1",
+      "sha256": "ebf80d5439828914d42a0db744ddfea9675fe0219eed82e36dbfcf380647afd6",
+      "path": "snapshots/ieee-1484-13-6-2015-oai-ore-mapping/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/ieee-1484-2-2024-learning-employment-record-ecosystems",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/ieee-1484-2-2024-learning-employment-record-ecosystems/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/ieee-1484-2-2024-learning-employment-record-ecosystems/versions/1",
+      "sha256": "25a2b5c42d96dd9aa5cba1762ec94745c4454d9ba8980568659f018917addd2f",
+      "path": "snapshots/ieee-1484-2-2024-learning-employment-record-ecosystems/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/ieee-1484-20-2-2022-defining-competencies",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/ieee-1484-20-2-2022-defining-competencies/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/ieee-1484-20-2-2022-defining-competencies/versions/1",
+      "sha256": "e1e232c63a1c94194119dead9ccb30aea9868f2e210fe969b4cd94ab8adf8f03",
+      "path": "snapshots/ieee-1484-20-2-2022-defining-competencies/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/ieee-1484-20-3-2022-shareable-competency-definitions",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/ieee-1484-20-3-2022-shareable-competency-definitions/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/ieee-1484-20-3-2022-shareable-competency-definitions/versions/1",
+      "sha256": "1c8f22305c58e852f34a89ab8c2e43b3f67b27b49ff1c3ed92e34f6c182e7e19",
+      "path": "snapshots/ieee-1484-20-3-2022-shareable-competency-definitions/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/ieee-1589-2020-ar-learning-experience-model",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/ieee-1589-2020-ar-learning-experience-model/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/ieee-1589-2020-ar-learning-experience-model/versions/1",
+      "sha256": "b65e7132c1b254dd4341a06e6473702ece40a2f5239c61209d242aa6b31c7dda",
+      "path": "snapshots/ieee-1589-2020-ar-learning-experience-model/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/ieee-2881-2025-learning-metadata-terms",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/ieee-2881-2025-learning-metadata-terms/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/ieee-2881-2025-learning-metadata-terms/versions/1",
+      "sha256": "e1a2c3f9afb311b4cca6e2c145169b1fefdbd0b91a6f09227e79d3c3713ca10a",
+      "path": "snapshots/ieee-2881-2025-learning-metadata-terms/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/ieee-2955-2025-self-learning-tutorials-side-by-side-learning",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/ieee-2955-2025-self-learning-tutorials-side-by-side-learning/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/ieee-2955-2025-self-learning-tutorials-side-by-side-learning/versions/1",
+      "sha256": "5868d610cfc6443642eee314e4b68362a5d2c11cb2e13b577a3e614ec47e3b18",
+      "path": "snapshots/ieee-2955-2025-self-learning-tutorials-side-by-side-learning/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/ieee-3527-1-2020-digital-intelligence-framework",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/ieee-3527-1-2020-digital-intelligence-framework/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/ieee-3527-1-2020-digital-intelligence-framework/versions/1",
+      "sha256": "4837649b4b97e9b8dabd9640ad2c4272ad4850f9f00e345aa4ee2d8bc5268ab8",
+      "path": "snapshots/ieee-3527-1-2020-digital-intelligence-framework/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/ieee-9274-1-1-2023-xapi",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/ieee-9274-1-1-2023-xapi/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/ieee-9274-1-1-2023-xapi/versions/1",
+      "sha256": "dade3587c2bdee1a3e8735c4c6148f73ccd3d3189b083942472724b816f54635",
+      "path": "snapshots/ieee-9274-1-1-2023-xapi/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/ieee-learning-technology-standards-committee-ltsc",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/ieee-learning-technology-standards-committee-ltsc/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/ieee-learning-technology-standards-committee-ltsc/versions/1",
+      "sha256": "0a6cb8afdee2a857b75c09e26dc544cc6e73b8753131b9832b51f2d1659b8f51",
+      "path": "snapshots/ieee-learning-technology-standards-committee-ltsc/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/implementation",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/implementation/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/implementation/versions/1",
+      "sha256": "3fb9a0ea409966ab6b36c8de3305913bcf26eeb6e2763705a1e0429d37058231",
+      "path": "snapshots/implementation/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/inference-modeling",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/inference-modeling/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/inference-modeling/versions/1",
+      "sha256": "8f3ff5c5d404d5ae246dcf3124471e5a53fcf043a133a5ed7bf2ddc575aa9984",
+      "path": "snapshots/inference-modeling/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/information-literacy",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/information-literacy/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/information-literacy/versions/1",
+      "sha256": "154119b82fd7d5b80a85171a4d41a6969f382822b3f61681e0cde2955334775a",
+      "path": "snapshots/information-literacy/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/instructional-design",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/instructional-design/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/instructional-design/versions/1",
+      "sha256": "8de63a88c80fadf6648ef9e345285cb741d865120934180693c5e6f6daa1b7dd",
+      "path": "snapshots/instructional-design/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/instructional-designer",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/instructional-designer/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/instructional-designer/versions/2",
+      "sha256": "5fb24800ce03f2a35f3d2f3d0b39b1142fa5dd9bc8ece9ff62dbe8839eba0a99",
+      "path": "snapshots/instructional-designer/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/instructional-effectiveness",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/instructional-effectiveness/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/instructional-effectiveness/versions/1",
+      "sha256": "e0bed1c99472c47bf5a2478926bed225da27c84deb1dd834c2df581c94f8d930",
+      "path": "snapshots/instructional-effectiveness/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/instructional-systems",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/instructional-systems/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/instructional-systems/versions/1",
+      "sha256": "05d627f6bb1419983bfd27d13ed4c8b601b5ff5fbe573580b8ade6a3eb58bdd7",
+      "path": "snapshots/instructional-systems/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/instructor-facilitated-learning",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/instructor-facilitated-learning/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/instructor-facilitated-learning/versions/1",
+      "sha256": "393c8c20863e03c9e253984675988eeb38ff1e6c0ff8999619b60502038ac0cf",
+      "path": "snapshots/instructor-facilitated-learning/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/instrumentation",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/instrumentation/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/instrumentation/versions/1",
+      "sha256": "7e92660ff83c4b5a976737b7e82f7b61e507142d4a3d4b16c072ef2eda0a34d0",
+      "path": "snapshots/instrumentation/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/intelligent-tutoring-system",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/intelligent-tutoring-system/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/intelligent-tutoring-system/versions/1",
+      "sha256": "3ceb84141482fea509e8bc8f4de73c3f73b2657f22ae6d26cf7b2b5e361da8b4",
+      "path": "snapshots/intelligent-tutoring-system/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/interaction-activity",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/interaction-activity/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/interaction-activity/versions/1",
+      "sha256": "2c8827cdc269652323d9ef6c041ae17738e92f170b66c1eee771d3077115335f",
+      "path": "snapshots/interaction-activity/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/interdisciplinary-exploratory-research",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/interdisciplinary-exploratory-research/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/interdisciplinary-exploratory-research/versions/1",
+      "sha256": "20c4b1bf51bc20c488a62d27ea61254bb0fb71ebd3a894cbcee82c88efd4b432",
+      "path": "snapshots/interdisciplinary-exploratory-research/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/interdisciplinary-research-identity",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/interdisciplinary-research-identity/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/interdisciplinary-research-identity/versions/1",
+      "sha256": "322e611a6bea3840defe1c7715750418a9ea69ccdbbff34bf6b5e64ac1e88746",
+      "path": "snapshots/interdisciplinary-research-identity/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/internationalized-resource-identifier-iri",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/internationalized-resource-identifier-iri/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/internationalized-resource-identifier-iri/versions/1",
+      "sha256": "f130c110d30901ef70f9e6ec5f5026ea6d8e8bb47e2e27fc4630ba18eb6289a3",
+      "path": "snapshots/internationalized-resource-identifier-iri/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/internationalized-resource-locator-irl",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/internationalized-resource-locator-irl/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/internationalized-resource-locator-irl/versions/1",
+      "sha256": "ad35ad35b27028707236f85252281b5bc713b7755a475bf52d7d460a6b3833ca",
+      "path": "snapshots/internationalized-resource-locator-irl/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/interoperability",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/interoperability/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/interoperability/versions/2",
+      "sha256": "11712f3c2e9c8502fae84b64a909d1a56d7554dc5afd2f5e68eb41ec1490e1b9",
+      "path": "snapshots/interoperability/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/inverse-functional-identifier-ifi",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/inverse-functional-identifier-ifi/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/inverse-functional-identifier-ifi/versions/1",
+      "sha256": "30ea7ac65c4c51d7c5aecde45d3593cbe358f8869f422a3b30884d5d0c38f379",
+      "path": "snapshots/inverse-functional-identifier-ifi/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/investigation-phase",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/investigation-phase/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/investigation-phase/versions/1",
+      "sha256": "2492d2f6dcd210bf7a4a364fa42abaa15ebec2e2a8491ffa77d713789a8ff502",
+      "path": "snapshots/investigation-phase/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/iterative-design",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/iterative-design/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/iterative-design/versions/1",
+      "sha256": "d20c76139c98c2022a8b264302cbd1814dba4683f2a1ded0758ffb7ec48a5112",
+      "path": "snapshots/iterative-design/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/json",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/json/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/json/versions/1",
+      "sha256": "9c44c0272ed13266176fe86a2ef9762cab7d5cc80c7140da88f1cc942462086e",
+      "path": "snapshots/json/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/json-ld",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/json-ld/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/json-ld/versions/1",
+      "sha256": "fff8df41fdeee97329798ea595709bae8e8409366cb94c3e3161235d5757e614",
+      "path": "snapshots/json-ld/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/kanban",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/kanban/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/kanban/versions/1",
+      "sha256": "ed7ded153c864678f68e1597fbf2f61a183b736b1ee894e51fa78372dadb33e5",
+      "path": "snapshots/kanban/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/knowledge-retention",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/knowledge-retention/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/knowledge-retention/versions/1",
+      "sha256": "4e19bd824ec8ae68c2d43d47d910e4a73b1b853190b8ea0abb49ee1b30af8606",
+      "path": "snapshots/knowledge-retention/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/language-map",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/language-map/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/language-map/versions/1",
+      "sha256": "1104c458177e0b0b17772341bccae8523c7eda42ef9eb5a56226f0b5427202ed",
+      "path": "snapshots/language-map/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/laser-national-education-statistical-capacity-assessment",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/laser-national-education-statistical-capacity-assessment/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/laser-national-education-statistical-capacity-assessment/versions/1",
+      "sha256": "66cb1888548894f9136bfcba2226f179911ea5c574defab921738f6f0f7f478a",
+      "path": "snapshots/laser-national-education-statistical-capacity-assessment/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/lean-agile",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/lean-agile/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/lean-agile/versions/1",
+      "sha256": "3b57cd2306ee3007508662ce50b6162f28d914aa5872254f4e3b105dfecc629f",
+      "path": "snapshots/lean-agile/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learner-agency",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/learner-agency/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/learner-agency/versions/1",
+      "sha256": "134151b9b7c9c0af5d8655e393f746ca4d954f073a3f30a3f15712930111d6d3",
+      "path": "snapshots/learner-agency/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learner-feedback-loop",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/learner-feedback-loop/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/learner-feedback-loop/versions/1",
+      "sha256": "96cdb652ca9a5f3562a68aa3fb2dd0a9e060faabce78b87107e15f4178ae5ea2",
+      "path": "snapshots/learner-feedback-loop/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learner-model",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/learner-model/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/learner-model/versions/1",
+      "sha256": "b5b392a1819ebf2c558dc105cfeec0d189e9f6eae66e0329f17ace2faa3e6030",
+      "path": "snapshots/learner-model/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learner-privacy",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/learner-privacy/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/learner-privacy/versions/1",
+      "sha256": "f73a58ec9b250d9b67d0e5975942e42d4e4e19c9545ece4557d6a01b0f59ee21",
+      "path": "snapshots/learner-privacy/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learner-variability",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/learner-variability/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/learner-variability/versions/1",
+      "sha256": "d9cd54c53874f39e12562ff8108bc5157fde188167deae865b3a5e426d6b09d6",
+      "path": "snapshots/learner-variability/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learning-analytics",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/learning-analytics/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/learning-analytics/versions/2",
+      "sha256": "fa67b45243c73d3d57465c61fa74c7f84750937dad5891d4557394920b824ab3",
+      "path": "snapshots/learning-analytics/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learning-analytics-dashboard",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/learning-analytics-dashboard/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/learning-analytics-dashboard/versions/1",
+      "sha256": "6b69941548530417c3f53bb661a01ed83b706e3c84ca1c6f11d0d3dd478e2396",
+      "path": "snapshots/learning-analytics-dashboard/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learning-assessment",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/learning-assessment/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/learning-assessment/versions/2",
+      "sha256": "da61ea5c00a11779a8b4f6ef9b386c9bb5c87364d89841212e9bc97ef8051f22",
+      "path": "snapshots/learning-assessment/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learning-community",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/learning-community/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/learning-community/versions/1",
+      "sha256": "338bdb2e810ca985d27061210248a76b03798556e2e1ea48ec9c953f76064bf1",
+      "path": "snapshots/learning-community/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learning-design-practitioner",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/learning-design-practitioner/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/learning-design-practitioner/versions/1",
+      "sha256": "a67cfd07469c36ea34593ad3985314a9c0bd05b64f1b7408a0acdc5de3106a14",
+      "path": "snapshots/learning-design-practitioner/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learning-ecosystem-governance",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/learning-ecosystem-governance/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/learning-ecosystem-governance/versions/1",
+      "sha256": "7cc1d3aac5d2e33319cafcc73ef2f1f287fca0431e0bf5a0dbeff4ab59e54a73",
+      "path": "snapshots/learning-ecosystem-governance/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learning-engineer",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/learning-engineer/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/learning-engineer/versions/1",
+      "sha256": "bf11084dd422e230676880e9f7cd1849c6e62fedca6b1efb696f98c8e36f6dc2",
+      "path": "snapshots/learning-engineer/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learning-engineering",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/learning-engineering/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/learning-engineering/versions/2",
+      "sha256": "64632f73a98841b68bae69f1cbdc2edd1e45b6148973ec5a2bb6de98e0fd5a10",
+      "path": "snapshots/learning-engineering/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learning-engineering-process",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/learning-engineering-process/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/learning-engineering-process/versions/1",
+      "sha256": "0bc897e641624d82593383eeae25494c12f95d109e03682510916629018f57d9",
+      "path": "snapshots/learning-engineering-process/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learning-engineering-team",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/learning-engineering-team/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/learning-engineering-team/versions/1",
+      "sha256": "2c91bb809395debf826ec8a2bab49701aa0fbd5f7b7785d840e77b83a67cbe68",
+      "path": "snapshots/learning-engineering-team/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learning-environment",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/learning-environment/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/learning-environment/versions/1",
+      "sha256": "3e3961461e6cdb2fd344c15f71d17446c3a6feacbc800240a0fd6d12a8649087",
+      "path": "snapshots/learning-environment/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learning-environment-engineering",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/learning-environment-engineering/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/learning-environment-engineering/versions/1",
+      "sha256": "d9c979ec08fbf354e774e03c7bc076ae359d6125407a0eb5984aa15722b29e06",
+      "path": "snapshots/learning-environment-engineering/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learning-event",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/learning-event/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/learning-event/versions/1",
+      "sha256": "628d6770c9d00948f2515498fcc31f7e21fab73eb4a63c2fe1839859b2852a18",
+      "path": "snapshots/learning-event/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learning-experience",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/learning-experience/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/learning-experience/versions/1",
+      "sha256": "6ce5f20d147ed32eccfe6cac0c1b39ea83db9edab4377cb0d3c0b60010d19058",
+      "path": "snapshots/learning-experience/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learning-experience-design-lxd",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/learning-experience-design-lxd/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/learning-experience-design-lxd/versions/2",
+      "sha256": "c8ebee7d37a24840152602f0a88ac90a4e9d9c529c3d87d8a711dc803f7034c8",
+      "path": "snapshots/learning-experience-design-lxd/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learning-management-systems",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/learning-management-systems/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/learning-management-systems/versions/1",
+      "sha256": "2e40c40838ebd72351b797250204efb37e1d9cdee5c39d741f052b1c846fad8b",
+      "path": "snapshots/learning-management-systems/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learning-metadata",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/learning-metadata/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/learning-metadata/versions/1",
+      "sha256": "382db3eb8c8e215470d003dbea3cc6f3f971feb2b21bfff2453465699b0f742a",
+      "path": "snapshots/learning-metadata/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learning-network",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/learning-network/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/learning-network/versions/1",
+      "sha256": "5b7c2900150b47e863b2ff53dfba835490d8a368b994aa67a9444f5fd155ae42",
+      "path": "snapshots/learning-network/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learning-objectives",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/learning-objectives/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/learning-objectives/versions/1",
+      "sha256": "d2c41948cea9c55a97d326dbc014d247b9722edf8aee42a8db6b7102313b3c7b",
+      "path": "snapshots/learning-objectives/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learning-organization",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/learning-organization/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/learning-organization/versions/1",
+      "sha256": "275f4b7ebcf73e2d250521367a37448075d9ddf7c9df898268ce4d74b3608307",
+      "path": "snapshots/learning-organization/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learning-poverty",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/learning-poverty/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/learning-poverty/versions/1",
+      "sha256": "4b12a41c5a59597243ba87484e71f65d7b2a7f972cc39cb55017e12dc75152be",
+      "path": "snapshots/learning-poverty/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learning-record",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/learning-record/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/learning-record/versions/1",
+      "sha256": "ebe4c85ffaeda57c8da12bfe7aee5aeca2eb037c0352cbd2b4414bb428e04d72",
+      "path": "snapshots/learning-record/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learning-record-consumer-lrc",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/learning-record-consumer-lrc/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/learning-record-consumer-lrc/versions/1",
+      "sha256": "dec6adca2ba1b087911d30b1c7c0af115e0691e5803dc5152f65b613ed37c574",
+      "path": "snapshots/learning-record-consumer-lrc/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learning-record-provider-lrp",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/learning-record-provider-lrp/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/learning-record-provider-lrp/versions/1",
+      "sha256": "0e2e9ab475252860978be5b65d7dd761c91826733ccb26788cfd94f00804449f",
+      "path": "snapshots/learning-record-provider-lrp/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learning-record-store-lrs",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/learning-record-store-lrs/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/learning-record-store-lrs/versions/2",
+      "sha256": "135e98e4ba504dcb0047e82f7e8fb5b117d48e66698ffc369c1fb4dc6f8b9ae0",
+      "path": "snapshots/learning-record-store-lrs/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learning-sciences",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/learning-sciences/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/learning-sciences/versions/2",
+      "sha256": "68d61c48bd5991689cc975b7df8c428b417004ec453e8ada1fb0caeb321b85f2",
+      "path": "snapshots/learning-sciences/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learning-strategies",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/learning-strategies/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/learning-strategies/versions/1",
+      "sha256": "555958063e4d9bb223167d8a95bf47c81a29b1db49f993b5be26af83e5927c27",
+      "path": "snapshots/learning-strategies/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/learning-trajectories",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/learning-trajectories/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/learning-trajectories/versions/1",
+      "sha256": "582da9fb4f0ceef1ce257916c5222970f2ebc0dc0cfd7d17f1bd51518842354f",
+      "path": "snapshots/learning-trajectories/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/leed-tracker",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/leed-tracker/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/leed-tracker/versions/1",
+      "sha256": "68d407537fc9f7ab7064f7fc9b9eee08510592b559eb8239b003e71b76ef410a",
+      "path": "snapshots/leed-tracker/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/lifelong-learning",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/lifelong-learning/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/lifelong-learning/versions/1",
+      "sha256": "b24f1a0172ea48379dac8858f4a18f77fb6e035abeb01dfb1cb6b67aea67755d",
+      "path": "snapshots/lifelong-learning/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/linked-data",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/linked-data/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/linked-data/versions/1",
+      "sha256": "2fb7c80cf399ce2f3e273c8e83ac76331fc17be18070754f4fc1247ad0fbb045",
+      "path": "snapshots/linked-data/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/locus-of-control",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/locus-of-control/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/locus-of-control/versions/1",
+      "sha256": "0007a0a816c9f6d81e234684d19e74ad0a139d080ae3f2f4c7206ebc2dac0197",
+      "path": "snapshots/locus-of-control/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/long-term-memory",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/long-term-memory/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/long-term-memory/versions/1",
+      "sha256": "6b24ecfcbc61d7e848d63edec888aa127e1b586a4ebdbc68429f40f7338537aa",
+      "path": "snapshots/long-term-memory/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/machine-learning",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/machine-learning/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/machine-learning/versions/2",
+      "sha256": "cd8a9deb3a346a79f45d3580e2787bed1b920d161028a1a62ab39e5aaff1a44f",
+      "path": "snapshots/machine-learning/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/massive-open-online-course-mooc",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/massive-open-online-course-mooc/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/massive-open-online-course-mooc/versions/1",
+      "sha256": "7edf0dd459f5b35d6943d22636149846c21df31610ce39de12c92fe8d3ef13a0",
+      "path": "snapshots/massive-open-online-course-mooc/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/mastery-learning",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/mastery-learning/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/mastery-learning/versions/2",
+      "sha256": "a54b0709d8ac29291ea80829f9fa0e8b0e02c636d6b593b7f83905856df5a8a3",
+      "path": "snapshots/mastery-learning/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/maturity-model",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/maturity-model/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/maturity-model/versions/1",
+      "sha256": "1a49da75ac7f3a0874eef41742d996e7844b5a0d1182c633303921ee04806194",
+      "path": "snapshots/maturity-model/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/meaningful-learning",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/meaningful-learning/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/meaningful-learning/versions/1",
+      "sha256": "db22554ad55c6a5146a0ad73b1151f29454080e2d2065b0415c079285bcba74a",
+      "path": "snapshots/meaningful-learning/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/media-literacy",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/media-literacy/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/media-literacy/versions/1",
+      "sha256": "29c068535891f527d6485a46f62d5abf7432421491beca6b3dbc68bd70ba4e0b",
+      "path": "snapshots/media-literacy/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/mentorship",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/mentorship/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/mentorship/versions/1",
+      "sha256": "cebc9ae8e5ca21225c934bc62bd5778d8f3882656aa2f69dad1591a366afd1c4",
+      "path": "snapshots/mentorship/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/meta-adaptation",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/meta-adaptation/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/meta-adaptation/versions/1",
+      "sha256": "7c414c50aed620779384a885389e81566cbe3d7aeb4241b7cad477e7181389c2",
+      "path": "snapshots/meta-adaptation/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/metacognition",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/metacognition/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/metacognition/versions/1",
+      "sha256": "a95acd09d6edf8ea92919f502833a3ebfefb61af6d76c17820e0f564ade48022",
+      "path": "snapshots/metacognition/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/metacognitive-monitoring",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/metacognitive-monitoring/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/metacognitive-monitoring/versions/1",
+      "sha256": "1934317ecc7f281b46414f2a0131f1b7237a8f6bb51bfd58364175fbde827138",
+      "path": "snapshots/metacognitive-monitoring/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/metadata-consumer",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/metadata-consumer/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/metadata-consumer/versions/1",
+      "sha256": "f7c72b58564ca7082614bb5926101b0ba52d6f569be2b4fafdb4ca86d412a429",
+      "path": "snapshots/metadata-consumer/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/metadata-provider",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/metadata-provider/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/metadata-provider/versions/1",
+      "sha256": "8a56e15591a150e8ddefbb99e453d85b377d5e232c63691ffffe65d6fe4f50aa",
+      "path": "snapshots/metadata-provider/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/metadata-tagging",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/metadata-tagging/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/metadata-tagging/versions/1",
+      "sha256": "8768c0e182ff7760c266c1d38820085160058579163f65125662498c2182aa7d",
+      "path": "snapshots/metadata-tagging/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/micro-credential",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/micro-credential/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/micro-credential/versions/1",
+      "sha256": "b1dcaa96ac370f6ab0b3b00f41033b8903f8bbff5aa9081d30a1ba532eff67bb",
+      "path": "snapshots/micro-credential/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/microlearning",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/microlearning/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/microlearning/versions/1",
+      "sha256": "98b4fc96b5c41445c2ae05d44900ff46ef8c38d3ceb104ad0a17f51f025d7bc2",
+      "path": "snapshots/microlearning/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/minimum-proficiency-level",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/minimum-proficiency-level/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/minimum-proficiency-level/versions/1",
+      "sha256": "ef7a1bcefcda6f5ac5ec95c043ce2634d204427c38f4cdf8b1ce4f3ee9835eeb",
+      "path": "snapshots/minimum-proficiency-level/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/mixed-reality",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/mixed-reality/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/mixed-reality/versions/1",
+      "sha256": "cd98f7cf46ad88ffcbcb6be044b83d2487bdc5a227bf655ab95f3ed8203ccb92",
+      "path": "snapshots/mixed-reality/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/mobile-learning",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/mobile-learning/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/mobile-learning/versions/1",
+      "sha256": "e0ca8b8b7a5f259515b3614750d8afaac65479a30e8fa4ccf31dc086e47ee2e7",
+      "path": "snapshots/mobile-learning/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/modeling-and-simulation",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/modeling-and-simulation/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/modeling-and-simulation/versions/1",
+      "sha256": "b0bc8de660583e47fd7828cf0e56c71c09dbe570c9e0bbf4ab1993166be2ae5b",
+      "path": "snapshots/modeling-and-simulation/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/motivation",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/motivation/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/motivation/versions/2",
+      "sha256": "b2a5d4ddabd4cec89fd26f9c43ae652715874d51a914d75c18f3b569b56dd3bc",
+      "path": "snapshots/motivation/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/multi-channel-remote-learning",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/multi-channel-remote-learning/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/multi-channel-remote-learning/versions/1",
+      "sha256": "7f7e8c0213091a5dc2ad8c31df5ebeebf0afd49af965c0b9d3a6631cad62c96f",
+      "path": "snapshots/multi-channel-remote-learning/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/multi-stakeholder-approach",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/multi-stakeholder-approach/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/multi-stakeholder-approach/versions/1",
+      "sha256": "027b1a69cca3a5f8497af23c7b36892d0249442237249f4b417ff3536b29b493",
+      "path": "snapshots/multi-stakeholder-approach/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/multimedia-learning",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/multimedia-learning/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/multimedia-learning/versions/1",
+      "sha256": "ec96234768a0d9fe4c2dffa8e2698420a8be554f8b5495084721d3256d05d8e5",
+      "path": "snapshots/multimedia-learning/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/named-graph",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/named-graph/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/named-graph/versions/1",
+      "sha256": "df28d9c69a64db2dba9d962c255db2ba87ffd02aa506699f8c51c1b513e22085",
+      "path": "snapshots/named-graph/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/national-sdg-4-benchmark",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/national-sdg-4-benchmark/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/national-sdg-4-benchmark/versions/1",
+      "sha256": "bad92796b3853b52a1645dd9718b9db1f86c78c2fe771242646fde0c1cd6f8fb",
+      "path": "snapshots/national-sdg-4-benchmark/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/natural-language-processing",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/natural-language-processing/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/natural-language-processing/versions/1",
+      "sha256": "19c93700d1e5f52d6a69b080f785da6fdd2e18b222d640e5e5357fe005b03574",
+      "path": "snapshots/natural-language-processing/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/networked-community",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/networked-community/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/networked-community/versions/1",
+      "sha256": "d3b53843270223d3068870e945b2e5ef3c74902aae4f34e7ec23fdd95887a512",
+      "path": "snapshots/networked-community/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/nudge",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/nudge/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/nudge/versions/1",
+      "sha256": "796dc6a7927a76882d0d5bf1b02b7e691a389c3063d2698447d966c93ca12132",
+      "path": "snapshots/nudge/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/observational-learning",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/observational-learning/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/observational-learning/versions/1",
+      "sha256": "f4de4ad230c732f17163a240e414ebba33028f3209dc46ebd3823cb929dd1350",
+      "path": "snapshots/observational-learning/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/online-learning-modality",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/online-learning-modality/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/online-learning-modality/versions/2",
+      "sha256": "86eb7f90be2f0ee38a44ccd60ae939c74c1b910bcd5a91f251a9f47cd8011db8",
+      "path": "snapshots/online-learning-modality/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/open-educational-resources-oer",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/open-educational-resources-oer/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/open-educational-resources-oer/versions/1",
+      "sha256": "12326d3595fd97bde6050f03f14493b6ee5a7e07440bfe9288dcf2683f70b64d",
+      "path": "snapshots/open-educational-resources-oer/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/open-standards-and-architecture-for-interoperability",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/open-standards-and-architecture-for-interoperability/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/open-standards-and-architecture-for-interoperability/versions/1",
+      "sha256": "1066e1dc1d871d14b23852d9085a90ca7e41c5a62c02e84b9042343c3138f0a5",
+      "path": "snapshots/open-standards-and-architecture-for-interoperability/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/operational-feasibility",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/operational-feasibility/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/operational-feasibility/versions/1",
+      "sha256": "a6cfc1a5a9a85a3ee5113278ea61efdfbb361367b0788eb463ac95aa67216cea",
+      "path": "snapshots/operational-feasibility/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/organizational-leadership",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/organizational-leadership/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/organizational-leadership/versions/1",
+      "sha256": "d7d5b319c2db0e7a628ae1132d272745ee0270b5b93ad8b5c1697da00535f9fe",
+      "path": "snapshots/organizational-leadership/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/pattern-validation",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/pattern-validation/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/pattern-validation/versions/1",
+      "sha256": "6919e59ab7aacacce316d7a58ffa361d127ff02540ab875d177adbf9b5d4feb8",
+      "path": "snapshots/pattern-validation/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/pedagogical-agent",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/pedagogical-agent/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/pedagogical-agent/versions/1",
+      "sha256": "6d7304cfe390c902a0467cd9c1a2e86c5ad0915c16b119c406848d5ac3f37cc7",
+      "path": "snapshots/pedagogical-agent/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/pedagogy",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/pedagogy/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/pedagogy/versions/2",
+      "sha256": "5ef1eefb6d7c6250fd1c3edf9d57f349bdf81877fc5a89399f89895ce014ce92",
+      "path": "snapshots/pedagogy/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/performance-based-assessment",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/performance-based-assessment/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/performance-based-assessment/versions/1",
+      "sha256": "f2e998facce1b716c9dbf8a58a0db7982179f3b76a74569fc66294c9f4d9bbb8",
+      "path": "snapshots/performance-based-assessment/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/person-object",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/person-object/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/person-object/versions/1",
+      "sha256": "255cb0f5d0685923302e0710b00623630213367816c25a327490b16b0851ca58",
+      "path": "snapshots/person-object/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/persona",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/persona/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/persona/versions/1",
+      "sha256": "5be71095b55eb48a125e83a52902e97d6c842c21ff4f4742d453303c9ff0c65d",
+      "path": "snapshots/persona/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/personalization",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/personalization/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/personalization/versions/2",
+      "sha256": "afb6c140afa37ef348a71c6460542da308b66e7c12ea26448a8170397f653d1c",
+      "path": "snapshots/personalization/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/personalized-learning",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/personalized-learning/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/personalized-learning/versions/1",
+      "sha256": "a795bceb97105d4cbdf9d3d63b88f92af70d5a0fe2ac8a7db26eb74635d4ddf8",
+      "path": "snapshots/personalized-learning/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/practitioner-expertise",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/practitioner-expertise/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/practitioner-expertise/versions/1",
+      "sha256": "d9eabe0a520cca0722d5ac2754a566b8b87295a6ea487e6b0da2968d5e14c1b9",
+      "path": "snapshots/practitioner-expertise/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/predictive-modeling",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/predictive-modeling/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/predictive-modeling/versions/1",
+      "sha256": "12fc6dcff66d3b12429f6a3490978daf8ef3f0a7f782efc02afb7d9daa393be3",
+      "path": "snapshots/predictive-modeling/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/prior-knowledge",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/prior-knowledge/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/prior-knowledge/versions/1",
+      "sha256": "70714893142659632c4ce6b890647624d9ddb48f2958b3e979504667dfe7432c",
+      "path": "snapshots/prior-knowledge/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/privacy-by-design",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/privacy-by-design/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/privacy-by-design/versions/1",
+      "sha256": "6979ff6d86713fd60b7b0c2823ec804ace47ad415df46edc17f1045734b8d6d5",
+      "path": "snapshots/privacy-by-design/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/privacy-nudging",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/privacy-nudging/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/privacy-nudging/versions/1",
+      "sha256": "dd2a6131dbf2511e0211cbaa749f0f48e153c0866a28965e030d2ca5975f2cdd",
+      "path": "snapshots/privacy-nudging/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/problem-space",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/problem-space/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/problem-space/versions/1",
+      "sha256": "1e2d685eaec2e8fc066a0b2b81a7acf5c82acd6957cd6b6462839639e47cfedc",
+      "path": "snapshots/problem-space/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/procedural-knowledge",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/procedural-knowledge/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/procedural-knowledge/versions/1",
+      "sha256": "07f4944baf74df356d6f416f74a9a08a216056f16bc5f7259f5c2f724da2a14a",
+      "path": "snapshots/procedural-knowledge/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/productive-mindset",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/productive-mindset/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/productive-mindset/versions/1",
+      "sha256": "34a4ff8bb6d08a4e5dd674a879dbb0eb6ef1716a17eda6392babec443896f977",
+      "path": "snapshots/productive-mindset/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/profile-author",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/profile-author/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/profile-author/versions/1",
+      "sha256": "01d5423cdd435398d4540c33a415f43d00fad80908c073e40624f08bae181e13",
+      "path": "snapshots/profile-author/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/profile-based-statement-conformance",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/profile-based-statement-conformance/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/profile-based-statement-conformance/versions/1",
+      "sha256": "8a9fc19e2b95a2fe823d65b980dd8d160900112603f80319510afcd8558a773c",
+      "path": "snapshots/profile-based-statement-conformance/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/profile-server",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/profile-server/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/profile-server/versions/1",
+      "sha256": "12f7f778d3e979a8cc9c97146a9c27e226709e9fe3fe1c75a223e978cc70329d",
+      "path": "snapshots/profile-server/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/profile-validator",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/profile-validator/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/profile-validator/versions/1",
+      "sha256": "c9a8018ca85ad1373d7453ee095b60aa7eed9eb93b02b0db3f6a9cfb08867608",
+      "path": "snapshots/profile-validator/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/profile-version",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/profile-version/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/profile-version/versions/1",
+      "sha256": "b4a3efaae561eb55ed475ced6723d54a7142986543a95a71541341b697dd1caa",
+      "path": "snapshots/profile-version/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/project-management",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/project-management/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/project-management/versions/1",
+      "sha256": "0f4553287a811d3d4aa34b4ee07ea08c6262e9730af666bbf48d181b06e3a6b2",
+      "path": "snapshots/project-management/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/prototype",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/prototype/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/prototype/versions/1",
+      "sha256": "edb0ace6d175744b5efa62c8f190776d630e605facce0e8ff9b70e7230a3ed7b",
+      "path": "snapshots/prototype/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/rapid-prototyping",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/rapid-prototyping/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/rapid-prototyping/versions/1",
+      "sha256": "c416efcf00236c1af63f9e8634425eb63a118f1e514546edbf8ebc66da3cbd1b",
+      "path": "snapshots/rapid-prototyping/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/reflective-design-documentation",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/reflective-design-documentation/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/reflective-design-documentation/versions/1",
+      "sha256": "5cf1e5a960ac6b626cb23b07555da5f88d391cde24dbaeb52fe68410ee17b132",
+      "path": "snapshots/reflective-design-documentation/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/registration",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/registration/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/registration/versions/1",
+      "sha256": "3fedfc9ca98c386761d4172d71dc4cef414561026692b2048ed77c22efdef278",
+      "path": "snapshots/registration/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/remote-learning",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/remote-learning/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/remote-learning/versions/2",
+      "sha256": "5d93fe71582b2bc86df74178e5546ef6b1328853cfca1d9d6230fcaf179c687f",
+      "path": "snapshots/remote-learning/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/resource-allocation",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/resource-allocation/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/resource-allocation/versions/1",
+      "sha256": "f829f80133bceeeb834ef495446345e9126f4dbeca08e95b28dde772ddfa3855",
+      "path": "snapshots/resource-allocation/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/resource-description-framework-rdf",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/resource-description-framework-rdf/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/resource-description-framework-rdf/versions/1",
+      "sha256": "29c4ef0414acaf62be112908efc23a12b91bd4ebd29c06c0d876ef7cdd29fe85",
+      "path": "snapshots/resource-description-framework-rdf/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/resource-facilitated-learning",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/resource-facilitated-learning/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/resource-facilitated-learning/versions/1",
+      "sha256": "621dcccbc892e5daec8955036b53f67c7e12224b4244bea9ecb4847835f770c2",
+      "path": "snapshots/resource-facilitated-learning/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/responsible-ai",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/responsible-ai/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/responsible-ai/versions/1",
+      "sha256": "f5af5ab37635ca3130fb7b0c329e62a6e864b0bc9ee1d6891aa2c67ed8246248",
+      "path": "snapshots/responsible-ai/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/rest-api",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/rest-api/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/rest-api/versions/1",
+      "sha256": "bccf0233f460a9cb79d58dac82aeda137090a1d363dbce4c0e5a25dbc35f2cfa",
+      "path": "snapshots/rest-api/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/result-object",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/result-object/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/result-object/versions/1",
+      "sha256": "dc0330f03a136ac82a3660454ee5451c83fd6678f2dc9f4b49eb6c7ae19dc682",
+      "path": "snapshots/result-object/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/retrieval-practice",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/retrieval-practice/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/retrieval-practice/versions/1",
+      "sha256": "81365513e92c646ce1a770d7216823d2983736fbaaef3a5507fd03207faef68a",
+      "path": "snapshots/retrieval-practice/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/review-and-monitoring",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/review-and-monitoring/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/review-and-monitoring/versions/1",
+      "sha256": "544b67d6c4d67e09ee2777ab02b2712fa1ffdad7da298fd8c0704dac9f9ed1df",
+      "path": "snapshots/review-and-monitoring/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/safe-and-responsible-use-of-ai",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/safe-and-responsible-use-of-ai/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/safe-and-responsible-use-of-ai/versions/1",
+      "sha256": "c4e4af489763cab072245d031418ee2aa1e193fed12cff7d7968d41624ca1ddb",
+      "path": "snapshots/safe-and-responsible-use-of-ai/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/samr-model",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/samr-model/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/samr-model/versions/1",
+      "sha256": "00dc9becb4894fd63337fadd42194bcec6d03c55fb872d078759e7f98cd5ebd4",
+      "path": "snapshots/samr-model/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/scaffolding",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/scaffolding/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/scaffolding/versions/1",
+      "sha256": "e91106e564b9d3410d7d19744c043eecc41a6afe6f446dce68bf1e7f36e6ea6d",
+      "path": "snapshots/scaffolding/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/scalability",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/scalability/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/scalability/versions/1",
+      "sha256": "f2f13c297c367b96da1aeb93a78b62d271cf457d12d6211892e78d2f46ca39a4",
+      "path": "snapshots/scalability/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/school-compliance-reporting",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/school-compliance-reporting/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/school-compliance-reporting/versions/1",
+      "sha256": "5af8ee7fcfd5ac62b46e10e427cd6616eaa1c96c49a874590c0e2e2dacdc0ffb",
+      "path": "snapshots/school-compliance-reporting/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/scrum",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/scrum/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/scrum/versions/1",
+      "sha256": "37797563b3265067cdd080e09b4abe79a5c1d06f6d4b1e3577209708bc7d0796",
+      "path": "snapshots/scrum/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/security",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/security/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/security/versions/1",
+      "sha256": "c439ceb2e7fa8332c5fe4f260fb942b080435e3fd0c320df67f3f57344e4b3dc",
+      "path": "snapshots/security/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/self-efficacy",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/self-efficacy/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/self-efficacy/versions/1",
+      "sha256": "651e8534789367670e2014ead13eb346e1759d620b7a9aa7a43585182bea4299",
+      "path": "snapshots/self-efficacy/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/self-monitoring",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/self-monitoring/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/self-monitoring/versions/1",
+      "sha256": "e1e1cae5b083c8b932fadfd8c59b75164bd119ead8b0923d80416c8055d928b2",
+      "path": "snapshots/self-monitoring/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/self-regulated-learning",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/self-regulated-learning/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/self-regulated-learning/versions/2",
+      "sha256": "462a7b34030bac0942a9411aa24025da89261e13cafb341610ae5f94e2b303a6",
+      "path": "snapshots/self-regulated-learning/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/semantic-interoperability",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/semantic-interoperability/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/semantic-interoperability/versions/1",
+      "sha256": "cf0ff9b097987703887c75b8267a9cc6779def57292b4c003651b1166d67abb7",
+      "path": "snapshots/semantic-interoperability/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/sensemaking",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/sensemaking/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/sensemaking/versions/1",
+      "sha256": "54d0cddbd771d41e0446481d98ef340afd05864ea2b621062787fd4297afe50b",
+      "path": "snapshots/sensemaking/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/sensor",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/sensor/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/sensor/versions/1",
+      "sha256": "0ba4f02708609b4f971c227319b3453e682cbb9139e32b4fe113fd64e3076c24",
+      "path": "snapshots/sensor/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/shareable-competency-definition-scd",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/shareable-competency-definition-scd/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/shareable-competency-definition-scd/versions/1",
+      "sha256": "a484c849f5b0d711ac0f189394c51774032a6fc55e6dce7c03093a2724e39ac6",
+      "path": "snapshots/shareable-competency-definition-scd/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/short-term-memory",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/short-term-memory/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/short-term-memory/versions/1",
+      "sha256": "7f8e36c6c66d9efe717a9dd6c793cdcb60de61f175a93092188c92246f32c034",
+      "path": "snapshots/short-term-memory/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/signed-statement",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/signed-statement/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/signed-statement/versions/1",
+      "sha256": "79ef70b1f57770408d2391fdeb530893ceae4fe8ba35db403d9deb3d78479b7c",
+      "path": "snapshots/signed-statement/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/simple-knowledge-organization-system-skos",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/simple-knowledge-organization-system-skos/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/simple-knowledge-organization-system-skos/versions/1",
+      "sha256": "68960e65e587e9a52daec0926aaafe15018b8e09531da4321ae50d2797ea9a81",
+      "path": "snapshots/simple-knowledge-organization-system-skos/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/simulation",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/simulation/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/simulation/versions/2",
+      "sha256": "2c929419d6016f2334efec773c1c0b4190e162c47652a1d8938585ab3eda61fb",
+      "path": "snapshots/simulation/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/social-constructivism",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/social-constructivism/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/social-constructivism/versions/1",
+      "sha256": "de9ae141bc746b84b92e3d136d13e86bfc91948267685917446ca6f2e6606d4e",
+      "path": "snapshots/social-constructivism/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/social-hardening",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/social-hardening/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/social-hardening/versions/1",
+      "sha256": "aa74059c3ecdf0bc89ea60753dc4b0945682d69374c80f4bfea6a9973920d724",
+      "path": "snapshots/social-hardening/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/social-learning",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/social-learning/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/social-learning/versions/1",
+      "sha256": "72064befc4bff1122291316ff76d523cb56be3481db986254fcac91b91edee55",
+      "path": "snapshots/social-learning/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/social-responsibility-in-ai-education",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/social-responsibility-in-ai-education/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/social-responsibility-in-ai-education/versions/1",
+      "sha256": "d6642da896d1122bc891ba447160ea187466969b8a689b723304fdf9e9be042f",
+      "path": "snapshots/social-responsibility-in-ai-education/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/software-engineering",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/software-engineering/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/software-engineering/versions/1",
+      "sha256": "98396ef22d62310a18e06459a080e6f3604703438400943d8bbf4d2061b0f407",
+      "path": "snapshots/software-engineering/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/source-of-influence",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/source-of-influence/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/source-of-influence/versions/1",
+      "sha256": "e06324ccb405b0af96fdeb9ea105910b39639b0357880071904204867da8f322",
+      "path": "snapshots/source-of-influence/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/spaced-repetition",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/spaced-repetition/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/spaced-repetition/versions/1",
+      "sha256": "fed58f9a5e41c4ce98aa2c286cedb186e49b8699f2142bb2ad02db69765802ec",
+      "path": "snapshots/spaced-repetition/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/sparql",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/sparql/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/sparql/versions/1",
+      "sha256": "c78e2a7c4e28fe50aa8443c670a2cee4117e9d80e70c10dad6e854e3c7ae7831",
+      "path": "snapshots/sparql/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/stakeholder-engagement",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/stakeholder-engagement/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/stakeholder-engagement/versions/1",
+      "sha256": "f062fed6f8b7cacc648e95e48f432d338f4d1316f4c9ea7c2087c24c8f3ccabf",
+      "path": "snapshots/stakeholder-engagement/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/stakeholder-requirement",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/stakeholder-requirement/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/stakeholder-requirement/versions/1",
+      "sha256": "885f52c61b8b02e0aaa11a3bca2534db89440d2b70357fc0a2a8737c073fa22e",
+      "path": "snapshots/stakeholder-requirement/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/standards-compliance",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/standards-compliance/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/standards-compliance/versions/1",
+      "sha256": "ce4a559dbfc0407754d0a037da629dd2e8e358f6648f66de0b21c9e412f37d68",
+      "path": "snapshots/standards-compliance/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/state-resource",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/state-resource/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/state-resource/versions/1",
+      "sha256": "490ad7d67b6c96fd0e6a498a437a9236066b1fe30ffde4b79d517a3028fd21b4",
+      "path": "snapshots/state-resource/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/statement-immutability",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/statement-immutability/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/statement-immutability/versions/1",
+      "sha256": "6f5ca29a631822337a9cce5dd9f9c1ff6f261649467c848d1c34c67ea61276e2",
+      "path": "snapshots/statement-immutability/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/statement-reference",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/statement-reference/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/statement-reference/versions/1",
+      "sha256": "11947c3c0992beb71e8b6cf7a6023b7000b691308904965c73891964e6a8568a",
+      "path": "snapshots/statement-reference/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/statement-resource",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/statement-resource/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/statement-resource/versions/1",
+      "sha256": "73556aa35a370d5ffe06743f3e3627cd8148c3d61ea1273fecd35b37ebeba234",
+      "path": "snapshots/statement-resource/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/statement-result",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/statement-result/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/statement-result/versions/1",
+      "sha256": "ae5b70406e00b6ec35f19ef51227ab1028c42d6b87dc5bc6be77f8bbce2c3b54",
+      "path": "snapshots/statement-result/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/statement-template",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/statement-template/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/statement-template/versions/1",
+      "sha256": "56e685eb28245800f931f798af668e6f54b55905b246fbca7a655915f118718a",
+      "path": "snapshots/statement-template/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/statement-template-rule",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/statement-template-rule/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/statement-template-rule/versions/1",
+      "sha256": "acf6ade74905e4d65eeef7a0ad4f47043fad73c119eefed4779cbec19dc4c3f1",
+      "path": "snapshots/statement-template-rule/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/statement-template-validation",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/statement-template-validation/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/statement-template-validation/versions/1",
+      "sha256": "6e8299681ebf7c49ee684683a3190ac07bc5e9a5808117b04a0753a9b7ca554d",
+      "path": "snapshots/statement-template-validation/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/strategic-planning",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/strategic-planning/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/strategic-planning/versions/1",
+      "sha256": "ebab8cbf78cc2eb7a369bb07051f22d068241d635edb6c47ff91cb69e06a3ecd",
+      "path": "snapshots/strategic-planning/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/streaming-learning-data",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/streaming-learning-data/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/streaming-learning-data/versions/1",
+      "sha256": "0f5314bb3e7008534e6071bb039a74c0f66b73ebc2fb6d87fb524edd9e8acacc",
+      "path": "snapshots/streaming-learning-data/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/subject-matter-expert-sme",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/subject-matter-expert-sme/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/subject-matter-expert-sme/versions/1",
+      "sha256": "665341cd6fc9d8523aaebb6ecb17453b82c0e85cc9361cd22f79f15ea2f7ed3f",
+      "path": "snapshots/subject-matter-expert-sme/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/subregistration",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/subregistration/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/subregistration/versions/1",
+      "sha256": "f69fb083a19922a4c6fd3cb237e6975a1484f7566f928317ddabe6c0b2fb0e28",
+      "path": "snapshots/subregistration/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/substatement",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/substatement/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/substatement/versions/1",
+      "sha256": "61a021461c7ebae035b741eb97290783d25c6464a9b865dfc12897fcf55b9308",
+      "path": "snapshots/substatement/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/summative-assessment",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/summative-assessment/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/summative-assessment/versions/1",
+      "sha256": "b61fb174afd803bc4bbe19cbe2e01af5ce7b5ecc2e86f5f97d39b39e9c66f652",
+      "path": "snapshots/summative-assessment/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/survey-data",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/survey-data/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/survey-data/versions/1",
+      "sha256": "aac81c85268edf280a8c0422ccc4551f89e2f86ce967955b7d8e3b8906939111",
+      "path": "snapshots/survey-data/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/synchronous-learning",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/synchronous-learning/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/synchronous-learning/versions/2",
+      "sha256": "f417837b430416e277ea493446b0c5689615c49d447466432df70003fa8ea6d5",
+      "path": "snapshots/synchronous-learning/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/system-of-systems",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/system-of-systems/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/system-of-systems/versions/1",
+      "sha256": "fdb4b0386525d245b1f585aed0a716f384f1ecaab580b1629aab9c0ea8067aa5",
+      "path": "snapshots/system-of-systems/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/systems-thinking",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/systems-thinking/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/systems-thinking/versions/1",
+      "sha256": "9ad45d578bfc7416ccf8f5fe5268d857e15a3293e271a6cacef64ebc811bcd12",
+      "path": "snapshots/systems-thinking/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/task-analysis",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/task-analysis/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/task-analysis/versions/1",
+      "sha256": "10c998d4aebf09e3096aed276d87f7fa0b14cf4c998a647fdb3ce41c5c7780f3",
+      "path": "snapshots/task-analysis/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/technological-literacy",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/technological-literacy/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/technological-literacy/versions/1",
+      "sha256": "71fb9d3b2e6ce9e3987196da0b13e7a60938abba734d6fc863f2b10dd85b82ae",
+      "path": "snapshots/technological-literacy/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/technology-affordance",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/technology-affordance/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/technology-affordance/versions/1",
+      "sha256": "50aa28b80c60004800107af1d6c857ecb32d2a9352aeacd68b02417e269c7bb0",
+      "path": "snapshots/technology-affordance/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/technology-constraint",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/technology-constraint/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/technology-constraint/versions/1",
+      "sha256": "ae64606e3653cde1408f6d4078fc13ae1141f988f16678dd3218b0efeae7ef31",
+      "path": "snapshots/technology-constraint/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/technology-integration",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/technology-integration/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/technology-integration/versions/1",
+      "sha256": "8a50a2867a9e6c2bd09b2480ee1ac7dcefa77a97dc6b4b425a664febaf8fbfe1",
+      "path": "snapshots/technology-integration/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/testing-for-learning-impact",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/testing-for-learning-impact/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/testing-for-learning-impact/versions/1",
+      "sha256": "ba3dffa42aeafc6226bb194f1243347eb03894c391185ce33e851f621427a36c",
+      "path": "snapshots/testing-for-learning-impact/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/total-cost-of-ownership-tco",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/total-cost-of-ownership-tco/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/total-cost-of-ownership-tco/versions/1",
+      "sha256": "389b5348be5153cee47df006fed7da5a8cd6f72cd9053322e07cc36dd4814f99",
+      "path": "snapshots/total-cost-of-ownership-tco/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/total-learning-architecture-tla",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/total-learning-architecture-tla/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/total-learning-architecture-tla/versions/1",
+      "sha256": "f27c7b91dbed076870a9c42c8983cb3623fa00c789998c7351bf6a5b4942930e",
+      "path": "snapshots/total-learning-architecture-tla/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/transfer-of-training",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/transfer-of-training/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/transfer-of-training/versions/1",
+      "sha256": "08b39d069ef19e84228c4d81fb3733221dd629d84e887756159fef27f282e57a",
+      "path": "snapshots/transfer-of-training/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/trustworthy-ai-for-education",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/trustworthy-ai-for-education/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/trustworthy-ai-for-education/versions/1",
+      "sha256": "dfe391f203c2de783103dfcb37b23abcc88a5fc85f4e8e70097bcb3383282f1d",
+      "path": "snapshots/trustworthy-ai-for-education/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/ubiquitous-learning",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/ubiquitous-learning/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/ubiquitous-learning/versions/1",
+      "sha256": "417242adeea70dcf5d2708bab9919f3d59fb5fbf81b3c429c8f89d1788b45fef",
+      "path": "snapshots/ubiquitous-learning/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/unesco-basic-and-general-study-subjects",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/unesco-basic-and-general-study-subjects/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/unesco-basic-and-general-study-subjects/versions/1",
+      "sha256": "800c1840498f80ffa14b3b0a37b18ff5b2d484a15ba5eba18ed1299a85280c59",
+      "path": "snapshots/unesco-basic-and-general-study-subjects/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/unesco-curriculum",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/unesco-curriculum/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/unesco-curriculum/versions/2",
+      "sha256": "3511a9b533e45b0a85a80ed00f417462599471256ac2254164f560f47db3d9de",
+      "path": "snapshots/unesco-curriculum/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/unesco-education-domain",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/unesco-education-domain/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/unesco-education-domain/versions/1",
+      "sha256": "40426df1f9194d2ef7762ef964bceb9e9cd4f8090d05ba6a3833f41059d39408",
+      "path": "snapshots/unesco-education-domain/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/unesco-educational-administration",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/unesco-educational-administration/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/unesco-educational-administration/versions/1",
+      "sha256": "8a7bd8eabb99031594221ed6c8dc0811d43326185e1b7b6f6daefe9506121fc1",
+      "path": "snapshots/unesco-educational-administration/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/unesco-educational-evaluation",
+      "revision": 2,
+      "revisionUri": "https://id.i2idl.org/concepts/unesco-educational-evaluation/versions/2",
+      "graph": "https://id.i2idl.org/graphs/concepts/unesco-educational-evaluation/versions/2",
+      "sha256": "c8e9817475b9b175e781d0994ece3fb3544a59c32430f6fddc889e2a430cf6ef",
+      "path": "snapshots/unesco-educational-evaluation/2.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/unesco-educational-facilities",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/unesco-educational-facilities/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/unesco-educational-facilities/versions/1",
+      "sha256": "f072165b864ca1e63df43d32a7cefb08b72b4cc6842f27e4ff2b350a2d633902",
+      "path": "snapshots/unesco-educational-facilities/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/unesco-educational-institutions",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/unesco-educational-institutions/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/unesco-educational-institutions/versions/1",
+      "sha256": "8f6e27cd549388edde781b192792a1150ca0e0dbd31d00213105443968aab899",
+      "path": "snapshots/unesco-educational-institutions/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/unesco-educational-management",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/unesco-educational-management/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/unesco-educational-management/versions/1",
+      "sha256": "2a7ad5bfb1ccbeeece0419f5b612e3c2468374c750224ca6885a201ecac1de8c",
+      "path": "snapshots/unesco-educational-management/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/unesco-educational-planning",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/unesco-educational-planning/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/unesco-educational-planning/versions/1",
+      "sha256": "cef5282c072bc3bf0e337f27a6c6417afa8ddafe0da801bd110d129117f97663",
+      "path": "snapshots/unesco-educational-planning/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/unesco-educational-policy",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/unesco-educational-policy/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/unesco-educational-policy/versions/1",
+      "sha256": "bbbe880b3993826df0d2284b3f57c8dc0ecfb4c59f2b4ccc3f51c511a4a4e03f",
+      "path": "snapshots/unesco-educational-policy/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/unesco-educational-population",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/unesco-educational-population/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/unesco-educational-population/versions/1",
+      "sha256": "f269ec09c8cec7fe710354122865b8a76b6ca68a4d10efb7696a608fb27ac953",
+      "path": "snapshots/unesco-educational-population/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/unesco-educational-sciences-and-environment",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/unesco-educational-sciences-and-environment/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/unesco-educational-sciences-and-environment/versions/1",
+      "sha256": "9b0707e4471d8c2c0676a8d38a988935dbdaecd4b027c73769d46305f9c03f7d",
+      "path": "snapshots/unesco-educational-sciences-and-environment/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/unesco-educational-systems-and-levels",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/unesco-educational-systems-and-levels/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/unesco-educational-systems-and-levels/versions/1",
+      "sha256": "0cb91599ae37abdeadb15c89061d93feab7174f81c4a5290e0399c7ce23de249",
+      "path": "snapshots/unesco-educational-systems-and-levels/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/unesco-teaching-and-training",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/unesco-teaching-and-training/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/unesco-teaching-and-training/versions/1",
+      "sha256": "a4d2a34ee0642306ad3b0588779177b3010b9fff55ee8204ba22567d547a9103",
+      "path": "snapshots/unesco-teaching-and-training/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/unesco-technical-and-vocational-study-subjects",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/unesco-technical-and-vocational-study-subjects/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/unesco-technical-and-vocational-study-subjects/versions/1",
+      "sha256": "bb439c1b7894a799bee3c88bef49be15ffd74625a71dc9b8592be4789658f89f",
+      "path": "snapshots/unesco-technical-and-vocational-study-subjects/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/usability-testing",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/usability-testing/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/usability-testing/versions/1",
+      "sha256": "d523993045e31f29d08ec375a49dc8ce3b01169bd5492d258fc424671808b744",
+      "path": "snapshots/usability-testing/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/user-centered-design",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/user-centered-design/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/user-centered-design/versions/1",
+      "sha256": "04b7d79b62a075add3f602a79a9d48911fda280a112e5e75e06b04f3e3ae567f",
+      "path": "snapshots/user-centered-design/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/user-directed-customization",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/user-directed-customization/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/user-directed-customization/versions/1",
+      "sha256": "b013fb820d5761455e5c2b907135a7882a1d76daedf7cbe72216c5466d8ceca9",
+      "path": "snapshots/user-directed-customization/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/user-tailored-privacy",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/user-tailored-privacy/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/user-tailored-privacy/versions/1",
+      "sha256": "ed12869b93c7024fa12816084195125ff098e5d0c342bcd240de7a2730bcffdb",
+      "path": "snapshots/user-tailored-privacy/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/user-testing",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/user-testing/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/user-testing/versions/1",
+      "sha256": "ac3dac76aaa95a79266b79bab5c5799041ae0f9caf03d00c1a5d38e0b75fc9a2",
+      "path": "snapshots/user-testing/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/value-stream-mapping",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/value-stream-mapping/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/value-stream-mapping/versions/1",
+      "sha256": "f33faaea7edc0efad4a1032325ae8beed86c95bd827457f5efbc5a10c11ac796",
+      "path": "snapshots/value-stream-mapping/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/vendor-lock-in",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/vendor-lock-in/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/vendor-lock-in/versions/1",
+      "sha256": "0a8c954107b3bfc79a2726dc87616e94edf75d1c2af10db790a51452780e470d",
+      "path": "snapshots/vendor-lock-in/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/verb",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/verb/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/verb/versions/1",
+      "sha256": "a08de64b07fe41ad08b92d9c5f90132ee53034131e738ae57170e207a9f647e3",
+      "path": "snapshots/verb/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/verifiable-learning-and-employment-record",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/verifiable-learning-and-employment-record/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/verifiable-learning-and-employment-record/versions/1",
+      "sha256": "3a62d0e92692c5eafb8219ef7e6cb721aa42c287ea1bec316558c3a2a0a6fe34",
+      "path": "snapshots/verifiable-learning-and-employment-record/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/virtual-classroom",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/virtual-classroom/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/virtual-classroom/versions/1",
+      "sha256": "cc8bb637d3fdc2683829268ef219bb3e28365755504106460e46bd7fca4f2ffb",
+      "path": "snapshots/virtual-classroom/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/virtual-world",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/virtual-world/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/virtual-world/versions/1",
+      "sha256": "03c522a6164408427027064ab0456443dc514cac343621a6ffe675124cf547ff",
+      "path": "snapshots/virtual-world/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/voided-statement",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/voided-statement/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/voided-statement/versions/1",
+      "sha256": "1e5c2cde297cff2518c1429c05118772209342a3c3501ec1788ae6ee7da88c1e",
+      "path": "snapshots/voided-statement/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/whole-of-government-approach",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/whole-of-government-approach/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/whole-of-government-approach/versions/1",
+      "sha256": "a6f48f2b29085e6abdd188ca9bede0fd0b49cedf7dd31f693841b527dae6452e",
+      "path": "snapshots/whole-of-government-approach/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/whole-person-development",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/whole-person-development/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/whole-person-development/versions/1",
+      "sha256": "20e2aca58cc47579369805175ff8649076c501a09a96df40f37ae07ab8715f06",
+      "path": "snapshots/whole-person-development/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/worked-example",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/worked-example/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/worked-example/versions/1",
+      "sha256": "148bc53e589eadf09e114b015d1adb6017c039d97289051e19f138d865aa36fe",
+      "path": "snapshots/worked-example/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/working-memory",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/working-memory/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/working-memory/versions/1",
+      "sha256": "3011465ae81b1413c651452d2b56266bbb527e7aa653aa078090936d9a93e1f5",
+      "path": "snapshots/working-memory/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/x-experience-api-version",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/x-experience-api-version/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/x-experience-api-version/versions/1",
+      "sha256": "7a496f457534a84e17ba7cb6a9b0fa8ea0d78ce39e5dd8d7c4c3516001dae080",
+      "path": "snapshots/x-experience-api-version/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/xapi-agent",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/xapi-agent/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/xapi-agent/versions/1",
+      "sha256": "b2e5e97d7ea6681d83acde36efc3cf0cd73b6cb84a9517f3bd6821e4810534d7",
+      "path": "snapshots/xapi-agent/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/xapi-authority",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/xapi-authority/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/xapi-authority/versions/1",
+      "sha256": "da89defef9ac0236e00ff3d9f81646696d6c682d296c2164b7da1b56f5b620e9",
+      "path": "snapshots/xapi-authority/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/xapi-client",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/xapi-client/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/xapi-client/versions/1",
+      "sha256": "73dfb437ff04434de8933c7650326840ee54195dad834d59609090c1d833d60b",
+      "path": "snapshots/xapi-client/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/xapi-concurrency-control",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/xapi-concurrency-control/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/xapi-concurrency-control/versions/1",
+      "sha256": "852b7c0586ff7bc48086662cc7d967174e9fea57b2a02a51951d8dea9f8a0cf0",
+      "path": "snapshots/xapi-concurrency-control/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/xapi-document",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/xapi-document/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/xapi-document/versions/1",
+      "sha256": "8ca9dc34360466bfdf8758b04807d6e5378d661ad3e24df05021880a5fcef9bb",
+      "path": "snapshots/xapi-document/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/xapi-duration",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/xapi-duration/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/xapi-duration/versions/1",
+      "sha256": "45f918abefe3b2d0afeee6992345a4e278a21af271e3cac91b889609528151d4",
+      "path": "snapshots/xapi-duration/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/xapi-extension",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/xapi-extension/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/xapi-extension/versions/1",
+      "sha256": "e306d6f6bec55f1cf883b5f14cf6c31f6c762fdc43125e5f482a2ff6c8e80d84",
+      "path": "snapshots/xapi-extension/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/xapi-group",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/xapi-group/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/xapi-group/versions/1",
+      "sha256": "bb6e2d9ab20ef4a8d4d7ae441da008dbe2a7a29b10ae391ccb99c7025425836c",
+      "path": "snapshots/xapi-group/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/xapi-pattern",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/xapi-pattern/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/xapi-pattern/versions/1",
+      "sha256": "8fd6b450cd8f9ca48fcd74a179ee1ed303d0dcf9311dea368ba9d28439228505",
+      "path": "snapshots/xapi-pattern/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/xapi-persona",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/xapi-persona/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/xapi-persona/versions/1",
+      "sha256": "b67b4fdfe6a1e99605218497e05728683e4c29beffcd90a51850161824733ee3",
+      "path": "snapshots/xapi-persona/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/xapi-profile",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/xapi-profile/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/xapi-profile/versions/1",
+      "sha256": "95fd2fe97d154db48792d19981ac527cecf635f6e2d037c427093c9de3aa8932",
+      "path": "snapshots/xapi-profile/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/xapi-statement",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/xapi-statement/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/xapi-statement/versions/1",
+      "sha256": "851645a666f513bfec4cd44e8a0d873fd97f12923e18717e962073d62426e446",
+      "path": "snapshots/xapi-statement/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/xapi-timestamp",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/xapi-timestamp/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/xapi-timestamp/versions/1",
+      "sha256": "44bf83e52742113f5492d2aabc25aa8c697881ec3a36e0dccd66a263a6223294",
+      "path": "snapshots/xapi-timestamp/1.nq"
+    },
+    {
+      "concept": "https://id.i2idl.org/concepts/yerkes-dodson-law",
+      "revision": 1,
+      "revisionUri": "https://id.i2idl.org/concepts/yerkes-dodson-law/versions/1",
+      "graph": "https://id.i2idl.org/graphs/concepts/yerkes-dodson-law/versions/1",
+      "sha256": "481e92455c8ffe33095b91fa715ca55df1081651627bc0a1beeaa9a71e204823",
+      "path": "snapshots/yerkes-dodson-law/1.nq"
+    }
+  ]
+}
