@@ -937,7 +937,17 @@
         if (!target) return;
         event.preventDefault();
         event.stopPropagation();
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // The glossary is long and uses content-visibility: auto. Smooth
+        // scrolling across unrendered sections can stop short as layout settles.
+        // Jump immediately and correct against the target's live position.
+        const alignAbout = () => {
+          const top = window.scrollY + target.getBoundingClientRect().top - 24;
+          window.scrollTo({ top: Math.max(0, top), behavior: 'instant' });
+        };
+        alignAbout();
+        requestAnimationFrame(alignAbout);
+        window.setTimeout(alignAbout, 100);
+        window.setTimeout(alignAbout, 400);
       }, true);
     }
     const select=root.querySelector('#i2-language');
