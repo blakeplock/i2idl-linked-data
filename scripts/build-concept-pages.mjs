@@ -74,9 +74,26 @@ function buildPage(entry, lang) {
   const related = relatedItems(entry, lang);
   const sources = sourceItems(entry);
   const metadata = {
-    '@context':'https://schema.org', '@type':'DefinedTerm', '@id':conceptURI,
-    name:tr.term, description:tr.definition, inLanguage:lang, url:htmlURL,
-    inDefinedTermSet:`${BASE}/scheme`, mainEntityOfPage:htmlURL
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebPage',
+        '@id': htmlURL,
+        url: htmlURL,
+        name: `${tr.term} | ${t.glossary}`,
+        inLanguage: lang,
+        mainEntity: { '@id': conceptURI }
+      },
+      {
+        '@type': 'DefinedTerm',
+        '@id': conceptURI,
+        name: tr.term,
+        description: tr.definition,
+        url: htmlURL,
+        inDefinedTermSet: `${BASE}/scheme`,
+        mainEntityOfPage: { '@id': htmlURL }
+      }
+    ]
   };
   const jsonLD = JSON.stringify(metadata).replace(/</g, '\\u003c');
   const explanation = entry.why ? `<section><h2>${esc(t.why)}</h2>${lang === 'fr' ? `<p class="muted">${esc(t.untranslated)}</p>` : ''}<p${lang === 'fr' ? ' lang="en"' : ''}>${esc(entry.why)}</p></section>` : '';
