@@ -12,9 +12,10 @@ assert(scheme,'Canonical scheme absent');
 const version = scheme['gs:publicationVersion'];
 assert.equal(catalog.publicationVersion,version,'Catalog/canonical version mismatch');
 assert.equal(reviewed.sourcePublicationVersion,version,'Review/canonical version mismatch');
-assert.equal(catalog.conceptCount,420,'Unexpected concept count');
 const all = new Map(canonical['@graph'].map(n=>[n['@id'],n]));
 const concepts = canonical['@graph'].filter(n=>[n['@type']].flat().includes('skos:Concept'));
+assert.ok(concepts.length,'Canonical glossary must contain concepts');
+assert.equal(catalog.conceptCount,concepts.length,'Language catalog/canonical concept count mismatch');
 const approved = reviewed.concepts || {};
 const overlay = [];
 for(const c of concepts){

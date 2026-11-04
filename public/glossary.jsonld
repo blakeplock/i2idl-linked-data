@@ -5,7 +5,33 @@
     "dcterms": "http://purl.org/dc/terms/",
     "prov": "http://www.w3.org/ns/prov#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "gs": "https://glossarystudio.app/ns/"
+    "gs": "https://glossarystudio.app/ns/",
+    "gs:externalOntologyAssociations": {
+      "@id": "gs:externalOntologyAssociations",
+      "@container": "@set"
+    },
+    "gs:target": {
+      "@id": "gs:target",
+      "@type": "@id"
+    },
+    "gs:vocabulary": {
+      "@id": "gs:vocabulary"
+    },
+    "gs:targetLabel": {
+      "@id": "gs:targetLabel"
+    },
+    "gs:targetKind": {
+      "@id": "gs:targetKind"
+    },
+    "gs:associationType": {
+      "@id": "gs:associationType"
+    },
+    "gs:editorialNote": {
+      "@id": "gs:editorialNote"
+    },
+    "gs:reviewStatus": {
+      "@id": "gs:reviewStatus"
+    }
   },
   "@graph": [
     {
@@ -129,6 +155,14 @@
       "schema:url": "https://circls.org/wp-content/uploads/2024/11/Unveiling-the-Value-of-Exploration-Insights-from-NSF-Funded-Research-on-Emerging-Technologies-for-Teaching-and-Learning.pdf",
       "dcterms:rights": "CC BY-NC 4.0",
       "gs:rightsUrl": "https://creativecommons.org/licenses/by-nc/4.0/"
+    },
+    {
+      "@id": "https://id.i2idl.org/sources/ctdl-asn-schema",
+      "@type": "dcterms:BibliographicResource",
+      "dcterms:title": "Credential Engine CTDL-ASN Schema (2024-08-30 release)",
+      "schema:url": "https://www.credreg.com/ctdlasn/terms?releaseid=20240830",
+      "dcterms:rights": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "gs:rightsUrl": "https://creativecommons.org/licenses/by/4.0/"
     },
     {
       "@id": "https://id.i2idl.org/collections/field/ai-and-machine-learning",
@@ -286,6 +320,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/asset-model"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/competency-framework"
         },
         {
           "@id": "https://id.i2idl.org/concepts/cross-national-assessment"
@@ -1298,6 +1335,9 @@
           "@id": "https://id.i2idl.org/concepts/competency-based-learning"
         },
         {
+          "@id": "https://id.i2idl.org/concepts/competency-framework"
+        },
+        {
           "@id": "https://id.i2idl.org/concepts/computer-based-learning"
         },
         {
@@ -1804,6 +1844,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/competency"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/competency-framework"
         },
         {
           "@id": "https://id.i2idl.org/concepts/controlled-vocabulary"
@@ -2816,6 +2859,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ai-competency-progression"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/competency-framework"
         },
         {
           "@id": "https://id.i2idl.org/concepts/create-ai-competency-level"
@@ -5737,6 +5783,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/performance-based-assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/competency-framework"
         }
       ],
       "skos:relatedMatch": {
@@ -6900,6 +6949,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/competency-framework"
         }
       ],
       "skos:relatedMatch": {
@@ -6990,6 +7042,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/performance-based-assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/competency-framework"
         }
       ]
     },
@@ -7023,6 +7078,135 @@
           "gs:pdfPrintedPage": 243,
           "gs:host": "ERIC",
           "gs:evidenceRelation": "direct"
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/concepts/competency-framework",
+      "@type": [
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dcterms:identifier": "competency-framework",
+      "skos:prefLabel": "Competency framework",
+      "skos:inScheme": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "schema:inDefinedTermSet": {
+        "@id": "https://id.i2idl.org/scheme"
+      },
+      "skos:definition": "A structured set of related competency definitions, organized by grouping, hierarchy or progression and often paired with proficiency levels or performance indicators, used as a shared reference to plan learning, assess performance and judge readiness.",
+      "gs:editorialStatus": "proposed",
+      "gs:activeDefinition": {
+        "@id": "https://id.i2idl.org/definitions/competency-framework-1"
+      },
+      "gs:editorialExplanation": "A competency framework organizes the capabilities used to plan learning and interpret performance evidence. It is distinct from an individual competency, the specification used to encode it, and a claim that a learner has demonstrated it.",
+      "gs:fieldCollection": {
+        "@id": "https://id.i2idl.org/collections/field/standards-and-interoperability"
+      },
+      "gs:typeCollection": {
+        "@id": "https://id.i2idl.org/collections/type/framework"
+      },
+      "skos:related": [
+        {
+          "@id": "https://id.i2idl.org/concepts/competency"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/competency-based-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/mastery-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/minimum-proficiency-level"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1484-20-2-2022-defining-competencies"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/ieee-1484-20-3-2022-shareable-competency-definitions"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/shareable-competency-definition-scd"
+        }
+      ],
+      "gs:externalOntologyAssociations": [
+        {
+          "gs:target": {
+            "@id": "https://purl.org/ctdlasn/terms/CompetencyFramework"
+          },
+          "gs:vocabulary": "CTDL-ASN",
+          "gs:targetLabel": "Competency Framework",
+          "gs:targetKind": "rdfs:Class",
+          "gs:associationType": "relatedClass",
+          "gs:editorialNote": "Candidate association between the glossary concept and the CTDL-ASN class for resources containing a related set of competencies. This proposed annotation asserts no concept equivalence, class identity, instance typing or subsumption.",
+          "gs:reviewStatus": "proposed"
+        }
+      ]
+    },
+    {
+      "@id": "https://id.i2idl.org/definitions/competency-framework-1",
+      "@type": [
+        "prov:Entity",
+        "gs:Definition"
+      ],
+      "rdf:value": "A structured set of related competency definitions, organized by grouping, hierarchy or progression and often paired with proficiency levels or performance indicators, used as a shared reference to plan learning, assess performance and judge readiness.",
+      "dcterms:language": "en",
+      "dcterms:creator": [
+        {
+          "@id": "did:web:identity.interego.xwisee.com:agents:chatgpt-u-pk-731e988c2c5b"
+        },
+        {
+          "@id": "did:web:identity.interego.xwisee.com:agents:claude-u-pk-33d42e6b33dc"
+        }
+      ],
+      "gs:editorialStatus": "proposed",
+      "gs:definitionSequence": 1,
+      "gs:evidence": [
+        {
+          "@type": "gs:Evidence",
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/ctdl-asn-schema",
+            "dcterms:title": "Credential Engine CTDL-ASN Schema (2024-08-30 release)"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/ctdl-asn-schema"
+          },
+          "gs:sourceLabel": "Credential Engine CTDL-ASN",
+          "gs:citationDetail": "2024-08-30 release: CompetencyFramework class definition and container scope; hasProgressionModel and ProficiencyScale supply optional progression/level context.",
+          "schema:url": "https://www.credreg.com/ctdlasn/terms?releaseid=20240830",
+          "gs:evidenceRelation": "direct"
+        },
+        {
+          "@type": "gs:Evidence",
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/ieee-ltsc",
+            "dcterms:title": "IEEE Learning Technology Standards Committee (LTSC) Active Standards"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/ieee-ltsc"
+          },
+          "gs:sourceLabel": "IEEE LTSC",
+          "gs:citationDetail": "IEEE 1484.20.2-2022 public abstract: disciplined definitions of competencies and their interoperable information.",
+          "schema:url": "https://standards.ieee.org/ieee/1484.20.2/10743/",
+          "gs:evidenceRelation": "supporting"
+        },
+        {
+          "@type": "gs:Evidence",
+          "dcterms:source": {
+            "@id": "https://id.i2idl.org/sources/ieee-ltsc",
+            "dcterms:title": "IEEE Learning Technology Standards Committee (LTSC) Active Standards"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://id.i2idl.org/sources/ieee-ltsc"
+          },
+          "gs:sourceLabel": "IEEE LTSC",
+          "gs:citationDetail": "IEEE 1484.20.3-2022 public abstract: shared competency definitions, frameworks and rubrics; the representation standard is distinct from a framework instance.",
+          "schema:url": "https://standards.ieee.org/ieee/1484.20.3/10749/",
+          "gs:evidenceRelation": "supporting"
         }
       ]
     },
@@ -16221,6 +16405,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/interoperability"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/competency-framework"
         }
       ]
     },
@@ -16299,6 +16486,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/shareable-competency-definition-scd"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/competency-framework"
         }
       ]
     },
@@ -21531,6 +21721,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/learning-trajectories"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/competency-framework"
         }
       ]
     },
@@ -22486,6 +22679,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/summative-assessment"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/competency-framework"
         }
       ]
     },
@@ -27302,6 +27498,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/ieee-1484-20-3-2022-shareable-competency-definitions"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/competency-framework"
         }
       ]
     },
@@ -34800,6 +34999,9 @@
         },
         {
           "@id": "https://id.i2idl.org/concepts/competency-based-learning"
+        },
+        {
+          "@id": "https://id.i2idl.org/concepts/competency-framework"
         },
         {
           "@id": "https://id.i2idl.org/concepts/cross-national-assessment"

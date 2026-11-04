@@ -38,6 +38,9 @@ jobs:
       - name: Validate glossary graph
         run: npm run validate
 
+      - name: Verify canonical page membership and translation refusal
+        run: node scripts/test-concept-page-count.mjs
+
       - name: Regenerate glossary presentation indexes
         run: npm run indexes:build
 

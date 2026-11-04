@@ -7,12 +7,16 @@ import assert from 'node:assert/strict';
 const BASE = 'https://id.i2idl.org';
 const data = JSON.parse(fs.readFileSync('public/glossary-web.json','utf8'));
 const entries = data.entries;
-assert.equal(entries.length, 420, 'Expected 420 glossary concepts');
+const canonical = JSON.parse(fs.readFileSync('public/glossary.jsonld','utf8'));
+const canonicalIds = canonical['@graph'].filter(n => [n['@type']].flat().includes('skos:Concept')).map(n => n['dcterms:identifier']);
+assert.ok(canonicalIds.length, 'Canonical glossary must contain concepts');
+assert.equal(new Set(canonicalIds).size, canonicalIds.length, 'Duplicate canonical concept IDs');
+assert.deepEqual(entries.map(e => e.id).sort(), canonicalIds.sort(), 'Page index must contain exactly the canonical concept identifiers');
 assert.equal(new Set(entries.map(e => e.id)).size, entries.length, 'Duplicate concept IDs');
 
 const sitemap = fs.readFileSync('public/sitemap.xml','utf8');
 const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
-assert.equal(urls.length, entries.length * 2, 'Sitemap must list 840 HTML pages');
+assert.equal(urls.length, entries.length * 2, 'Sitemap must list two HTML pages per canonical concept');
 assert.equal(new Set(urls).size, urls.length, 'Duplicate sitemap URLs');
 assert.match(sitemap, /xmlns:xhtml="http:\/\/www.w3.org\/1999\/xhtml"/);
 const robots = fs.readFileSync('public/robots.txt','utf8');
@@ -36,4 +40,4 @@ for (const e of entries) {
   }
 }
 console.log(`PASS: ${entries.length} concepts, ${urls.length} bilingual static pages, sitemap, robots and metadata`);
-import './validate-concept-seo.mjs';
+await import('./validate-concept-seo.mjs');

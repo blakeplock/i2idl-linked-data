@@ -8,7 +8,6 @@ import path from 'node:path';
 const BASE = 'https://id.i2idl.org';
 const GLOSSARY = 'https://www.i2idl.org/glossary';
 const OUTPUT = 'public';
-const EXPECTED_CONCEPTS = 420;
 const ID_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const index = JSON.parse(fs.readFileSync('public/glossary-web.json', 'utf8'));
 const overlay = JSON.parse(fs.readFileSync('public/glossary-fr-preview.jsonld', 'utf8'));
@@ -19,6 +18,11 @@ if (byId.size !== entries.length || entries.some(e => !ID_PATTERN.test(e.id))) t
 const french = new Map(overlay['@graph'].map(n => [n['@id'], n]));
 const canonical = new Map(graph['@graph'].map(n => [n['@id'], n]));
 const asArray = v => v == null ? [] : Array.isArray(v) ? v : [v];
+const canonicalIds = graph['@graph'].filter(n => asArray(n['@type']).includes('skos:Concept')).map(n => n['dcterms:identifier']);
+const EXPECTED_CONCEPTS = canonicalIds.length;
+if (!EXPECTED_CONCEPTS || new Set(canonicalIds).size !== EXPECTED_CONCEPTS || canonicalIds.some(id => !ID_PATTERN.test(id)) || entries.length !== EXPECTED_CONCEPTS || canonicalIds.some(id => !byId.has(id))) {
+  throw Error('Presentation index must contain exactly the canonical concept identifiers');
+}
 const ref = v => typeof v === 'string' ? v : v?.['@id'];
 const literal = v => typeof v === 'string' ? v : v?.['@value'];
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
