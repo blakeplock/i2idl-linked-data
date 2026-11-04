@@ -7100,7 +7100,7 @@
       "gs:activeDefinition": {
         "@id": "https://id.i2idl.org/definitions/competency-framework-1"
       },
-      "gs:editorialExplanation": "A competency framework organizes the capabilities used to plan learning and interpret performance evidence. It is distinct from an individual competency, the specification used to encode it, and a claim that a learner has demonstrated it.",
+      "gs:editorialExplanation": "A competency framework organizes competency definitions used to plan learning and interpret performance evidence. It is distinct from an individual competency, the specification used to encode it, and a claim that a learner has demonstrated it.",
       "gs:fieldCollection": {
         "@id": "https://id.i2idl.org/collections/field/standards-and-interoperability"
       },
