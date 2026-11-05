@@ -162,7 +162,7 @@
       "dcterms:title": "Credential Engine CTDL-ASN Schema (2024-08-30 release)",
       "schema:url": "https://www.credreg.com/ctdlasn/terms?releaseid=20240830",
       "dcterms:rights": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
-      "gs:rightsUrl": "https://creativecommons.org/licenses/by/4.0/"
+      "gs:rightsUrl": "https://www.credreg.com/ctdlasn/terms?releaseid=20240830"
     },
     {
       "@id": "https://id.i2idl.org/collections/field/ai-and-machine-learning",
@@ -7176,7 +7176,7 @@
             "@id": "https://id.i2idl.org/sources/ctdl-asn-schema"
           },
           "gs:sourceLabel": "Credential Engine CTDL-ASN",
-          "gs:citationDetail": "2024-08-30 release: CompetencyFramework class definition and container scope; hasProgressionModel and ProficiencyScale supply optional progression/level context.",
+          "gs:citationDetail": "2024-08-30 release: ceasn:CompetencyFramework class definition and container scope (stable); asn:hasProgressionModel links a framework to an optional progression model of increasing levels of competence.",
           "schema:url": "https://www.credreg.com/ctdlasn/terms?releaseid=20240830",
           "gs:evidenceRelation": "direct"
         },
