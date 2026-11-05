@@ -161,8 +161,8 @@
       "@type": "dcterms:BibliographicResource",
       "dcterms:title": "Credential Engine CTDL-ASN Schema (2024-08-30 release)",
       "schema:url": "https://www.credreg.com/ctdlasn/terms?releaseid=20240830",
-      "dcterms:rights": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
-      "gs:rightsUrl": "https://www.credreg.com/ctdlasn/terms?releaseid=20240830"
+      "dcterms:rights": "CC BY 4.0",
+      "gs:rightsUrl": "https://creativecommons.org/licenses/by/4.0/"
     },
     {
       "@id": "https://id.i2idl.org/collections/field/ai-and-machine-learning",
